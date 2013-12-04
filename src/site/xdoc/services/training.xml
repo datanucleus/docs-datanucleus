@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Training</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Training">
+            <p>
+                DataNucleus is Open Source software. It is provided by a focussed team of highly experienced individuals
+                to perform complex operations. While a company could deploy personnel to understand and extend
+                DataNucleus themselves, it is often best to consult the experts in that software to maximise the benefits
+                of its use. No other company can provide the training to the same level as we can.
+            </p>
+            <p>
+                <b>DataNucleus</b> provides on-site training focussing on the needs of customers staff.
+                The backbone of DataNucleus training consists of:
+            </p>
+            <ul>
+                <li>Architectural Persistence Concepts</li>
+                <li>Object-Relational Mapping</li>
+                <li>Best practices, scalability, performance tuning and capacity planning</li>
+                <li>Administering and monitoring DataNucleus-based applications</li>
+                <li>Testing, debugging and troubleshooting</li>
+                <li>Process Lifecycle : project planning, design and implementation</li>
+            </ul>
+            <p>
+                <b>Cost</b> : Please <a href="mailto:support@datanucleus.com">Contact Us</a> for details.
+            </p>
+            <p>
+                <b>Conditions</b>
+            </p>
+            <ul>
+                <li>There is no guarantee of service availability.
+                    Training would only be available in a location convenient for ourselves, such as Europe.
+                    Training is not currently available in the USA.
+                </li>
+                <li>DataNucleus experts are English, and Spanish speakers, however training material
+                    is only written in the English language.</li>
+                <li>Customers must provide the resources necessary and in a timely manner to enable the DataNucleus expert(s) 
+                    to perform the engagement.</li>
+            </ul>
+            <br/>
+        </section>
+    </body>
+</document>

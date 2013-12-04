@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 2.0.2 Released">
+            <p>
+                <b>March 6th 2010</b>- DataNucleus Access Platform 2.0.2 is released ("Bohr").
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 2.0.2</i> includes the following changes
+            </p>
+            <ul>
+                <li>Fix to the auto-generation of PK classes by the enhancer for some field types.</li>
+                <li>Fixes to generic compilation of collection.contains when using variables</li>
+                <li>Support for in-memory query evaluation of Enum.toString() and Enum.ordinal()</li>
+                <li>Fixes to in-memory query evaluation of boolean predicates, and loading of fields</li>
+                <li>Fix to use of result class with constructor with arguments when one argument is null</li>
+                <li>Support for use of encrypted passwords in persistence properties</li>
+                <li>RDBMS : Fix to handling of FKs when specified on fields</li>
+                <li>Support for persisting java.awt.Color/Point/Rectangle and java.util.BitSet field types as String</li>
+                <li>RDBMS : JDOQL2 - Fixes to use of Extent for no concrete classes, subclass-table inheritance,
+                    and persistence interface cases</li>
+                <li>RDBMS : JDOQL2 - Support for use of variables</li>
+                <li>RDBMS : JDOQL2 - Support for Collection.contains on embedded fields</li>
+                <li>RDBMS : JDOQL2 - Support for binding parameter type via Collection.contains, Map.containsXXX methods</li>
+                <li>RDBMS : JDOQL2 - Detect result clauses that are multi-valued and throw exception</li>
+                <li>RDBMS : JDOQL2 - Fixes to allow many complex queries that failed with "JDOQL" to work
+                    with this new implementation.</li>
+                <li>RDBMS : JDOQL2 - Fix to String.matches escape clause</li>
+                <li>JPA : Support for CONCAT methods with Criteria Query</li>
+                <li>JPA : Support for COALESCE methods with Criteria Query</li>
+                <li>JPA : Support for function() method with Criteria Query</li>
+                <li>JPA : Support for joins specified using string name with Criteria Query</li>
+                <li>JPA : Support for negated predicates with Criteria Query</li>
+                <li>JPA : Support for subqueries with Criteria Query</li>
+                <li>Excel : Support persistence of Enum fields</li>
+                <li>Excel : Support for persistence of relation fields (as per ODF plugin)</li>
+                <li>Excel : Fixes to persistence of Date/Calendar types</li>
+                <li>Excel : Fixes to handling of SCO fields so they are wrapped correctly</li>
+                <li>Excel : Upgrade Apache POI requirement to 3.6+</li>
+                <li>ODF : Fixes to handling of SCO fields so they are wrapped correctly</li>
+                <li>ODF : Fixes to persistence of Date/Calendar types</li>
+                <li>ODF : Support persistence of Enum fields</li>
+                <li>XML : Fix to persistence of Enum fields</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

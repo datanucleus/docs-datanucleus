@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0.7 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.0.7 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_0_7.html';</script>
+		        <script language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Feb 10th 2012</b>- DataNucleus Access Platform 3.0.7 ("Newton") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 3.0.7</i> includes the following changes over 3.0.6
+            </p>
+            <ul>
+                <li>Fix to use of persistence property "datanucleus.storeManagerType"</li>
+                <li>JPA : Support for JPA2.1 Type Convertors</li>
+                <li>JPA : Fix to EM.find to also work for datastore-identity</li>
+                <li>JPA : Update to detection of 1-N UNI FK relations to avoid the need for JPA 'level' persistence
+                    property</li>
+                <li>JPA : Add numeric conversion capabilities to EM.find key argument.</li>
+                <li>JDO : Fix to duplicate close of query results when using Extent on non-RDBMS datastores</li>
+                <li>Fix to load of metadata for persistence unit when persistable inner classes present</li>
+                <li>Fix to instantiation of object from identity when root class is abstract and using single-field id</li>
+                <li>RDBMS : Fix to JPQL "INDEX" SQL generation for join table case</li>
+                <li>MongoDB : fix to query with no filter</li>
+                <li>JSON, HBase, MongoDB, Excel, ODF, RDBMS : fix to version of core usable to prohibit v3.1</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

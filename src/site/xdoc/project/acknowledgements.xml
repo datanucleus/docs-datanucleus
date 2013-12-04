@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Acknowledgements</title>
+    </properties>
+
+    <body>
+        <section name="Acknowledgements">
+            <subsection name="Hosting">
+                <p>
+                    DataNucleus wishes to thank the hosts for our site.<br/>
+                    <a href="http://www.nightlabs.com" target="_blank">NightLabs</a> supported the predecessor to 
+                    DataNucleus (JPOX) virtually from its inception in 2003, and they also provided hosting for 
+                    DataNucleus until May 2013.<br/>
+                    <a href="http://www.codewizards.co" target="blank">Codewizards.co</a> (former NightLabs members) 
+                    provide hosting for DataNucleus from May 2013.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Tooling">
+                <p>
+                    DataNucleus also wishes to thank the companies/developers who have granted our project use of
+                    their great software/services allowing us to work much quicker and in a more enjoyable way.
+                </p>
+                <table>
+                    <tr>
+                        <td><a href="http://www.atlassian.com/jira" target="_blank"><img src="../images/thirdparty/jira_logo.png" border="0" alt=""/></a></td>
+                        <td><a href="http://www.atlassian.com/confluence" target="_blank"><img src="../images/thirdparty/confluence_logo.png" border="0" alt=""/></a></td>
+                        <td><a href="http://www.yourkit.com/" target="_blank"><img src="../images/thirdparty/yourkit_logo.gif" border="0" alt=""/></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.mvnforum.com/" target="_blank"><img src="../images/thirdparty/mvnforum_logo.gif" border="0" alt=""/></a></td>
+                        <td><a href="http://www.sf.net/projects/datanucleus/" target="_blank"><img src="http://sourceforge.net/sflogo.php?group_id=86139&amp;type=2" border="0" alt=""/></a></td>
+                    </tr>
+                </table>
+                <p>
+                    We would also like to thank
+                </p>
+                <ul>
+                    <li><a href="http://www.lwis.net/free-css-drop-down-menu/">LWIS.net</a> for providing a great 
+                    CSS drop-down menu capability used on some of our docs.</li>
+                    <li><a href="http://www.mclelun.com/blog/2010/01/jquery-rotating-banner/">mclelun.com</a> for 
+                    providing some excellent JQuery utility used on the front page of datanucleus.org allowing
+                    smoothly scrolling product info slides</li>
+                </ul>
+            </subsection>
+        </section>
+
+    </body>
+</document>

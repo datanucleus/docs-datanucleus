@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus AccessPlatform 3.2.2 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus AccessPlatform 3.2.2 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_2_2.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>May 14th 2013</b>- DataNucleus Access Platform 3.2.2 ("Copernicus") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
+                <i>Version 3.2.2</i> includes the following changes over 3.2.1
+            </p>
+            <ul>
+                <li>JPA : support for JPA2.1 EM.isJoinedToTransaction</li>
+                <li>JPA : support for JPA2.1 EMF.addNamedQuery</li>
+                <li>JDOQL : support more usages of DyadicExpression</li>
+                <li>Make operation queue more flexible so can contain any type of operation</li>
+                <li>Fix bug in operation queue optimisation</li>
+                <li>Add support for L2 cache storeMode/retrieveMode</li>
+                <li>Fix to bug with embedded 1-1 with no "embedded" block of mappings</li>
+                <li>Add support for specifying the ObjectProvider class name</li>
+                <li>Add optimisation to operation queue to detect Map put+remove of same key in succession</li>
+                <li>Fix JDOStateManager to throw API-specific exception rather than JDOException</li>
+                <li>RDBMS : fix to JDOQL getHour, getMinute, getSecond for SQLServer (Ivan Badia)</li>
+                <li>RDBMS : support evaluation of "(dyadicExpr).method()"</li>
+                <li>RDBMS : Fix to Map preDelete to better handle situation where a value was removed from the map before deletion</li>
+                <li>Spatial : fix to concurrency issue (Jan Heuer)</li>
+                <li>Move to release via Sonatype</li>
+                <li>Various other bug fixes and minor improvements</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

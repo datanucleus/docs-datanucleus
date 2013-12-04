@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 1.1.6 Released">
+            <p>
+                <b>October 11th 2009</b>- DataNucleus Access Platform 1.1.6 ("Rutherford") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, Excel, ODF and BigTable.
+                <i>Version 1.1.6</i> includes the following changes over 1.1.5
+            </p>
+            <ul>
+                <li>Bug fix to PersistenceManager proxy in multithreaded environments</li>
+                <li>Bug fix to interface mapping strategy "xcalia"</li>
+                <li>LDAP : Add support for enums</li>
+                <li>RDBMS : Bug fix to instanceof when handling possible subclasses</li>
+                <li>RDBMS : Bug fix to detection of discriminator when handling superclasses</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Plugins</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Plugins">
+            <p>
+                DataNucleus products are built from a series of plugins. Each plugin is an OSGi bundle. 
+                Each plugin provides a level of functionality to the overall DataNucleus platform. This 
+                section documents the available provided plugins, and their purpose and state.
+                The plugins can be individually downloaded if required rather than waiting for the next
+                full release of a product, but if doing that always be careful of cross-compatibility of
+                versions of plugins.
+            </p>
+        </section>
+
+    </body>
+</document>

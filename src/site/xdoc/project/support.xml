@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Support</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Support : Free and Commercial">
+            <p>
+                With any software, there are times when you need assistance to make full use of it. Here at DataNucleus
+                we want you to make the best of the software that we provide. For that reason we provide both
+                commercial and free support facilities.
+            </p>
+            <subsection name="Commercial Support">
+                <p>
+                    Where you or your company require timely support when you need it without having to wait for
+                    somebody to respond on a forum we provide commercial support. You could, for example, have a
+                    preference for email support, or maybe phone support. If this is the case then we can discuss
+                    what would be possible. Please refer to 
+                    <a href="../services/index.html#support">our Support services</a> for details.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Free Support">
+                <p>
+                    DataNucleus provides its own <a href="http://forum.datanucleus.org">online forums</a>
+                    providing a place to discuss issues you are having. We don't guarantee to provide answers on this
+                    forum. It is simply a place where you could get some level of support when people have time.
+                    This may not be adequate for some people hence why we provide the commercial version above.
+                </p>
+                <ol>
+                    <li>Check the Documentation for 
+                        <a href="../products/accessplatform/index.html">DataNucleus Access Platform</a> before 
+                        anything else. The answer is usually there, either in a tutorial/example, or in one of 
+                        the many guides.</li>
+                    <li>Look in the <a href="../products/accessplatform/logging.html">DataNucleus Log</a>. 
+                        This usually contains a lot of information that may answer the issue. 
+                        You can always configure the log to give more output.</li>
+                    <li>Try a recent build to see if your version is out of date and the expected result is achieved 
+                        with the latest nightly builds.</li>
+                    <li>Go to the <a href="http://forum.datanucleus.org" target="_blank">Online Forum</a> and ask. 
+                        Always try to give as clear a description of the problem as possible, together with your input 
+                        data, and any associated log output.
+                        <b>Please be aware that we have very little time for this type of support and 
+                        contributors to DataNucleus are more likely to get any available free support</b></li>
+                </ol>
+                <p>
+                    <i>Please note that due to attempts by spammers to post links as well as attempts by 
+                        some internet domains to flood the DataNucleus Forum it has been necessary to block
+                        particular IP addresses. If you find yourself on one of these IP addresses then you need
+                        to consider how your IP address has been used in this way, and that it means you will not
+                        have access to this free resource. Apologies for the inconvenience if that is the case
+                        but its a free forum and we don't have time to tolerate such nonsense.</i>
+                </p>
+                <br/>
+            </subsection>
+        </section>
+    </body>
+</document>

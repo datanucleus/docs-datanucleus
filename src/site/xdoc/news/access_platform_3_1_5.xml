@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus AccessPlatform 3.1.5 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus AccessPlatform 3.1.4 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_1_4.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>May 23rd 2013</b>- DataNucleus AccessPlatform 3.1.5 ("Kepler") is released.
+                DataNucleus AccessPlatform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
+                <i>Version 3.1.5</i> includes the following changes over 3.1.4
+            </p>
+            <ul>
+                <li>JDO : Fix to Localiser creation to avoid problem under OSGi</li>
+                <li>RDBMS : Fix to SQL query execution to avoid connection close problem</li>
+                <li>RDBMS : Fix to pessimistic locking for SQLServer</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Project Charter</title>
+    </properties>
+
+    <body>
+        <section name="Project Charter">
+            <subsection name="Scope">        
+                <p>
+                    DataNucleus shall be standards driven, implementing all associated persistence specifications, 
+                    extending into whatever related areas the market demand requires. Initially such implementation 
+                    will be for java persistence specifications. Further on we will implement the Data Mining API. 
+                    DataNucleus will support persistence to RDBMS and db4o and LDAP datastores initially, moving
+                    into other datastores in the future.
+                </p>
+            </subsection>
+
+            <subsection name="Subprojects">
+                <p>
+                    The work of the Project is organized into subprojects. New subprojects must be significant works 
+                    consistent with the mission of the DataNucleus Project, be recommended by the PMC, and confirmed by the 
+                    Board. Subprojects can be discontinued by decision of the Board.
+                </p>
+                <p>
+                    When a new subproject is created, the PMC appoints a subproject lead to act as the technical 
+                    leader and names the initial set of Committers for the subproject. Thereafter the PMC may 
+                    appoint a new subproject lead from time to time as required, but the new subproject lead must 
+                    be confirmed by a majority of the other Committers of the subproject. Subproject leads 
+                    are accountable to the PMC for the success of their project.
+                </p>                    
+            </subsection>
+            <subsection name="Subproject Components">
+                <p>
+                    The PMC may decide to divide subproject further into components. If a subproject is divided 
+                    into components, commit privileges are normally granted at the component level, and the 
+                    committers for a given component vote on issues specific to that component. Components are 
+                    established and discontinued by the PMC. When the PMC creates a component it appoints a 
+                    component lead to act as the technical leader and names the initial set of Committers for the 
+                    component. The component lead is designated as a committer for the subproject and represents 
+                    the component in discussions and votes pertaining to the subproject as a whole. Component 
+                    Committers do not participate in votes at the level of the subproject as a whole, unless they 
+                    are also the component lead.
+                </p>
+            </subsection>
+        </section>        
+        <section name="Roles">
+
+            <subsection name="Project Management Committee">
+                <p>
+                    The DataNucleus Project is managed by a small group known as the DataNucleus Project Management 
+                    Committee [DataNucleus PMC].
+                </p>
+            </subsection>
+                <p>
+                    The DataNucleus Project is a meritocracy -- the more you contribute, and the higher the quality 
+                    of your contribution, the more you are allowed to do. However with this comes increased 
+                    responsibility. If you do not take on extra responsibilities then your opinion will have less 
+                    weight in the DataNucleus meritocracy. The DataNucleus Project allows everyone to demonstrate 
+                    their worth and adopt new responsibilities and have more influence over the development process.
+                </p>
+            <subsection name="Users">
+                <p>
+                    Users are the people who use the products that the Project produces. People in this role aren't 
+                    contributing code, but they are using the products, reporting bugs, and making feature requests 
+                    and suggestions. Users are encouraged to participate through the user maillist(s), asking 
+                    questions, providing suggestions, and helping other users. Users are also encouraged to report 
+                    problem reports using the bug tracking system. 
+                </p>
+            </subsection>
+            <subsection name="Developers">
+                <p>
+                    Users who contribute code or documentation become developers. Developers are the people who 
+                    contribute code, fixes, documentation, or other work that goes into the product. Developers are 
+                    also encouraged to participate in the user maillist(s), and should monitor the developer Forum 
+                    associated with their area of contribution. When appropriate, developers may also contribute to 
+                    development design discussions related to their area of contribution. Developers are expected 
+                    to be proactive in reporting problems in the bug tracking system.
+                </p>
+            </subsection>
+            <subsection name="Committers">
+                <p>
+                    Developers who give frequent and valuable contributions to a subproject, or component of a 
+                    subproject (in the case of large subprojects), can have their status promoted to that of a 
+                    "Committer" for that subproject or component respectively. A Committer has write access to the 
+                    source code repository for the associated subproject (or component), and gains voting 
+                    rights allowing them to affect the future of the subproject (or component).
+                </p>
+                <p>
+                    Active participation in the user maillist and the appropriate developer Forum is a responsibility
+                    of all Committers, and is critical to the success of the project. Committers are required to 
+                    monitor and contribute to the user maillist.
+                </p>
+                <p>
+                    Committers are required to monitor the developer Forum associated with all subprojects and 
+                    components for which they have commit privileges. This is a condition of being granted commit 
+                    rights to the subproject or component. It is mandatory because committers must participate in 
+                    votes (which in some cases require a certain minimum number of votes) and must respond to the 
+                    Forum in a timely fashion in order to facilitate the smooth operation of the project. When a 
+                    Committer is granted commit rights they will be added to the appropriate Forum. A Committer must
+                    not be unsubscribed from a developer Forum unless their associated commit privileges are also 
+                    removed.
+                </p>
+                <p>
+                    Committers are required to track, participate in, and vote on, relevant discussions in their 
+                    associated subprojects and components. There are three voting responses: +1 (yes), -1 (no, or 
+                    veto), and 0 (abstain).
+                </p>
+                <p>
+                    Committers are responsible for proactively reporting problems in the bug tracking system, 
+                    and annotating problem reports with status information, explanations, clarifications, or 
+                    requests for more information from the submitter. Committers are responsible for updating 
+                    problem reports when they have done work related to the problem.
+                </p>
+            </subsection>
+        </section>
+        <section name="Architecture Team">
+            <p>
+                The Core, "api.jdo", "store.rdbms" etc will have coordinated release plans, milestone dates, freeze cycles, 
+                builds, and ship dates. These subprojects will be coordinated by a group consisting of the subproject 
+                leads, the component leads from these subprojects, and the members of the PMC. This group will 
+                be called the DataNucleus Project Architecture Team.
+            </p>
+        </section>
+        <section name="Infrastructure">
+            <p>
+                The infrastructure required to support the development process is the responsibility of the PMC.
+            </p>
+        </section>
+        <section name="The Development Process">
+            <p>
+                Each subproject lead must produce a development plan for the release cycle, and the development 
+                plan must be approved by the PMC and by a majority of Committers of the subproject.
+            </p>
+            <p>
+                Each subproject must identify, and make available on its web site, the requirements and 
+                prioritizations it is working against in the current release cycle. In addition, each subproject 
+                must post a release plan showing the date and content of the next major release, including any 
+                major milestones, and must keep this plan up to date.
+            </p>
+            <p>
+                The Committers of a subproject or component decide which changes may be committed to the master code 
+                base of a subproject or component respectively. Three +1 ('yes' votes) with no -1 ('no' votes or 
+                vetoes) are needed to approve a code change. Vetoes must be followed by an explanation for the veto 
+                within 24 hours or the veto becomes invalid. All votes are conducted via the developer Forum 
+                associated with the subproject or component.
+            </p>
+            <p>
+                Special rules may be established for subprojects or components with fewer than three Committers. 
+                For efficiency, some code changes from some contributors (e.g. feature additions, bug fixes) may be 
+                approved in advance, or approved in principle based on an outline of the work, in which case they may 
+                be committed first and changed as needed, with conflicts resolved by majority vote of the Committers 
+                of the subproject or component, as applicable. More restrictive rules for releasing changes may be 
+                established by the PMC near the end of release cycles or for maintenance streams.
+            </p>
+            <p>
+                The master copy of the code base must reside on the project web site where it is accessible to all 
+                developers and committers. Committers must check their changes and new work into the master code base 
+                as promptly as possible (subject to any check-in voting rules that may be in effect) in order to 
+                foster collaboration among widely distributed groups and so that the latest work is always available 
+                to everyone. The PMC is responsible for establishing a release engineering and build process to 
+                ensure that builds can be reliably produced on a regular and frequent basis from the master code 
+                base and made available for download from the project web site.
+            </p>
+            <p>
+                The PMC is responsible for establishing the level of testing appropriate for each subproject, and
+                approving the test plans.
+            </p>
+            <p>
+                All development technical discussions are conducted using the development Forums. If discussions are 
+                held offline, then a summary must be posted to the Forum to keep the other committers informed.
+            </p>
+        </section>
+    </body>
+</document>

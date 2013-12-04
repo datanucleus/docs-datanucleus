@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>org.datanucleus.store.db4o</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus DB4O">
+            <p>
+                <i>datanucleus-db4o</i> provides persistence of Java objects to DB4O datastores. It builds on top 
+                of the basic persistence provided by <i>datanucleus-core</i>
+                <b>This plugin was part of AccessPlatform upto and including 3.0 and is no longer developed</b>
+            </p>
+            <ul>
+                <li>Compile Requirement : JDK1.5+</li>
+                <li>Runtime Requirement : JDK1.5+</li>
+                <li>Latest version : 3.0.2</li>
+                <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCDBFO?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
+                <li>License : <a href="../../project/license.html">Apache 2</a></li>
+                <li>Javadocs : <a href="../../javadocs/store.db4o/3.0">3.0</a>,
+                               <a href="../../javadocs/store.db4o/2.1">2.1</a>,
+                               <a href="../../javadocs/store.db4o/2.0">2.0</a>,
+                               <a href="../../javadocs/store.db4o/1.1">1.1</a>,
+                               <a href="../../javadocs/store.db4o/1.0">1.0</a></li>
+                <li>Source : <a href="http://datanucleus.svn.sourceforge.net/viewvc/datanucleus/platform/store.db4o/trunk/">latest</a></li>
+            </ul>
+
+            <subsection name="Download">
+                <p><i>datanucleus-db4o</i> is downloadable as following</p>
+                <ul>
+                    <li><b>Releases</b> <a href="http://repo1.maven.org/maven2/org/datanucleus/datanucleus-db4o/" target="_blank">from Maven Central</a></li>
+                    <li><b>Nightly builds</b> <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus/datanucleus-db4o/" target="_blank">from Maven2 Nightly Repository</a></li>
+                </ul>
+                <br/>
+            </subsection>
+
+            <subsection name="Dependencies">
+                <p>
+                    <i>datanucleus-db4o</i> is dependent on the following packages of software. 
+                    Click on the name to go to the home page for that software to download it.
+                </p>
+                <table>
+                    <tr>
+                        <th>Package</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th width="150">Required?</th>
+                    </tr>
+                    <tr>
+                        <td><a href="../core/index.html">datanucleus-core</a></td>
+                        <td>3.0+</td>
+                        <td>Provides logging, localisation, and other framework facilities for DataNucleus</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.db4o.com" target="_blank">DB4O</a></td>
+                        <td>7.0+</td>
+                        <td>DB4O Datastore</td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+                <br/>
+                <br/>
+            </subsection>
+        </section>
+
+        <section name="DB4O : Persistence">
+            <p>
+                DataNucleus started providing persistence to DB4O datastores in the JPOX 1.2 release cycle. When 
+                persisting to RDBMS datastores DataNucleus had to perform significant work to provide persistence 
+                of objects due to provision of O/R mapping. With DB4O it is all much simpler.
+            </p>
+
+            <subsection name="Datastore Connection">
+                <p>
+                    DataNucleus supports 3 modes of operation of <i>db4o</i> - file-based, and embedded server based
+                    and client-server based. That is
+                </p>
+                <ul>
+                    <li>db4o:file:{filename}</li>
+                    <li>db4o:server:{filename}</li>
+                    <li>db4o:{host}:{port}</li>
+                </ul>
+                <p>
+                    DB4O doesn't itself use such URLs so it was necessary to define this DataNucleus-specific way of 
+                    addressing DB4O.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Object Persistence">
+                <p>
+                    When persisting objects to DB4O, the <i>PersistenceManager</i> will assign a StateManager to 
+                    the object and call "makePersistent" on the StateManager. This in turn calls DB4OManager.insert().
+                    The process here is very simple. A <i>PersistFieldManager</i> will check through all fields of 
+                    the object to persist and if any are PersistenceCapable will try to persist them too. This in 
+                    turn assigns StateManagers to these objects and the DB4OManager.insert() is called again. 
+                    This means that, for a transaction, the DB4OManager.insert() builds up a list of objects to 
+                    persist in its insert process, and when all dependent objects are processed (assigned StateManagers
+                    and called DB4OManager.insert) will then do the actual persistence for the original object. 
+                    This will persist all objects in the object graph (DB4O provides this).
+                </p>
+                <p>
+                    After the use of DB4O's <i>ObjectContainer.set()</i> to persist the object graph any datastore 
+                    identities are assigned (using DB4O's internal id as basis), and any versions are retrieved for 
+                    those objects that require version handling.
+                </p>
+                <p>
+                    After persistence of the objects all mutable SCO fields are replaced with their wrapper types. 
+                    This is done after persistence so that we dont store SCO types in DB4O (which would work, but is 
+                    easier to handle elsewhere if we only have real JDK types stored).
+                </p>
+            </subsection>
+
+            <subsection name="Object Retrieval">
+                <p>
+                    When a user calls a method like <i>PersistenceManager.getObjectById()</i> a call will be passed to
+                    DB4OManager.fetch() and this retrieves an object (and its object graph, down to DB4O's fetch depth).
+                    Before handing these objects back to the user the graph is traversed and StateManagers assigned 
+                    to all objects (in lifecycle state PERSISTENT CLEAN). Any fields that have an object that is not 
+                    "activated" by DB4O (due to being at the edge of DB4O's object graph) will be set as not loaded 
+                    with the intention of loading it when/if it is accessed later. 
+                </p>
+            </subsection>
+
+        </section>
+    </body>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>DataNucleus Analysis Platform</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Analysis Platform">
+            <img src="../images/logos/DataNucleus_AnalysisPlatform_85.jpg" alt=""/>
+            <p>
+                Data Analysis Platform is a Data Quality and Data Profiling product that supports RDBMS datastores,
+                flat File, XML and MS Excel file formats for analysis. This product can be used for profiling of 
+                data, quality check (and correction), and analysis of data (statistical analysis, charts). 
+                You can use this product to check cardinality between different tables within one data source. 
+                All the above mention formats are interchangeable – like from database query, XLS can be generated 
+                or an XML file can be mapped to XLS.
+            </p>
+            <p>
+                This product can also be used for random generation of data, populating database values, looking 
+                into database Metadata, fetching and storing data from/to database. In its present form it supports
+                only one data source at runtime but in future - it will support multiple data source simultaneous.
+            </p>       
+            <table>
+                <tr>
+                    <td>
+                        <b>DataNucleus AnalysisPlatform Checklist</b>
+                        <ul>
+                            <li><b>Latest version</b> : not yet released</li>
+                            <li><b>License</b> : <a href="../project/license.html">Apache 2</a></li>
+                            <li><b>APIs Supported</b> : </li>
+                            <li><b>Datastores Supported</b> : RDBMS</li>
+                            <li><b>JRE required</b> : 1.5 or above</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table> 
+        </section>
+    </body>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.2 M3 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.2 M3 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_2_m3.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>February 1st 2013</b>- DataNucleus Access Platform 3.2 ("Copernicus") Milestone 3 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including relational, web-based, map-based, and documents.
+                <i>Version 3.2 Milestone 3</i> includes the following changes
+            </p>
+            <ul>
+                <li>Introduction of a 2-phase flush process for corner cases that discover extra objects to be persisted
+                    during the first phase of flush</li>
+                <li>Support for JTA TransactionSynchronizationRegistry</li>
+                <li>Support for JTA transactions without auto-join</li>
+                <li>Fixes to JTA support for JBoss 7 (Nicolas Seyvet)</li>
+                <li>Fix to JDOQL bulk update bug</li>
+                <li>Various fixes to integration of Bean Validation</li>
+                <li>Support ability to precompile all named queries during PMF/EMF creation</li>
+                <li>Improvements to L2 cache update process to only update particular fields</li>
+                <li>Fix to XML auto-start mechanism to avoid duplicate entries</li>
+                <li>JPA2.1 : support for FROM "ON" clause</li>
+                <li>JPA : Support for multi-object usage of EntityManager persist(), merge(), remove() and detach() - vendor extension</li>
+                <li>JDO : Move JDO Typesafe classes to "datanucleus-api-jdo" plugin</li>
+                <li>RDBMS : Fix to getGeneratedKeys for MySQL (10-15% speed up for some cases)</li>
+                <li>RDBMS : Fix to pessimistic locking for SQLServer (Vladimir Konkov)</li>
+                <li>RDBMS : Improvements to bulk update to cope with inheritance and multiple tables</li>
+                <li>RDBMS : Improvements to bulk delete to cope with inheritance and multiple tables</li>
+                <li>RDBMS : Fix to query compilation caching to allow for serialize-read setting (Graham Stewart)</li>
+                <li>RDBMS : Support for Virtuoso database (Emmanuel Poitier)</li>
+                <li>RDBMS : Bug fix so that any HAVING clause is applied to all UNIONs</li>
+                <li>RDBMS : Change DB2 to use UNION ALL instead of UNION</li>
+                <li>HBase : fix to use of HTable (Nicolas Seyvet)</li>
+                <li>HBase : fix to extensions handling (Nicolas Seyvet)</li>
+                <li>Excel : allow connectionURL prefix of "xls" as alias for "excel"</li>
+                <li>MongoDB : fix to logger argument to be String</li>
+                <li>Various minor bug fixes and improvements</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

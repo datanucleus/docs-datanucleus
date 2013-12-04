@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.2 M4 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.2 M4 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_2_m4.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>February 20th 2013</b>- DataNucleus Access Platform 3.2 ("Copernicus") Milestone 4 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including relational, web-based, map-based, and documents.
+                <i>Version 3.2 Milestone 4</i> includes the following changes
+            </p>
+            <ul>
+                <li>Upgrade support for javax.cache to v0.61</li>
+                <li>Add support for javax.cache "readThrough", "writeThrough", "statisticsEnabled" and "storeByValue"</li>
+                <li>Fix bug where user had JPA inheritance tree with MappedSuperclass part way through tree
+                    and no discriminator value specified.</li>
+                <li>JDO : Fix to JDO PM.getProperties to present the properties in the case they are in the JDO spec.</li>
+                <li>Support disabling of L2 cache on a PM basis</li>
+                <li>Add synchronisation to evict method on query results cache</li>
+                <li>Much code refactoring around the enhancer and restricting JDO classes to just two places specific
+                    to the bytecode enhancement contract.</li>
+                <li>JPA : Support for JPA2.1 XSD (Proposed Final Draft (PFD))</li>
+                <li>JPA : Update support for "generate-schema" to match JPA2.1 PFD</li>
+                <li>JPA : Fix bug in XML &lt;collection-table name=...&gt; processing</li>
+                <li>JPA : Add missing support for @MapKeyTemporal and associated XML variant.</li>
+                <li>JPA : Cater for missing @OneToOne on persistable field</li>
+                <li>JDO : Fix initialisation of a Localiser that caused problems in OSGi</li>
+                <li>RDBMS : Fix to NPE in UpdateRequest/DeleteRequest for corner-case version handling</li>
+                <li>RDBMS : Fix to not setting version when class was read in and has no DFG fields</li>
+                <li>RDBMS : Fix to bulk update for SQLServer</li>
+                <li>RDBMS : Support for Tomcat connection pool (Marshall Reeske)</li>
+                <li>RDBMS : Better control over how statements are logged</li>
+                <li>RDBMS : Fix bug in HAVING clause application</li>
+                <li>RDBMS : Omit class from discriminator restriction when class is abstract</li>
+                <li>Various minor bug fixes and improvements</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

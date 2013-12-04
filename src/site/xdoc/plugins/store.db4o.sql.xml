@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>org.datanucleus.sql4o</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus db4o sql">
+            <p>
+                <i>datanucleus-db4o-sql</i> provides support for SQL querying of db4o datastores. It can be used
+                outside of a DataNucleus environment, and originated as a GoogleCode project.
+                Version 1.0 is for use with JDK1.5 (JDBC 2/3). Version 1.1 is for use with JDK1.6+ (JDBC4).
+                <b>In DataNucleus versions 1 and 2 it was called "datanucleus-sql4o"</b>
+                <b>This plugin was part of AccessPlatform upto and including 3.0 and is no longer developed</b>
+            </p>
+            <ul>
+                <li>Compile Requirement : JDK1.5+</li>
+                <li>Runtime Requirement : JDK1.5+</li>
+                <li>Latest version : 3.0.0.release</li>
+                <li>Roadmap : <a href="http://issues.datanucleus.org/browse/SQLFO?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
+                <li>License : <a href="../project/license.html">Apache 2</a></li>
+                <li>Javadocs : <a href="../javadocs/store.db4o.sql/3.0">3.0</a>, 
+                               <a href="../javadocs/sql4o/2.0">2.0</a>, 
+                               <a href="../javadocs/sql4o/1.1">1.1</a>, 
+                               <a href="../javadocs/sql4o/1.0">1.0</a></li>
+                <li>Source : <a href="http://datanucleus.svn.sourceforge.net/viewvc/datanucleus/platform/sql4o/trunk/">latest</a></li>
+            </ul>
+
+            <subsection name="Download">
+                <p><i>datanucleus-db4o-sql</i> is downloadable as following</p>
+                <ul>
+                    <li><b>Releases</b> <a href="http://www.datanucleus.org/downloads/maven2/org/datanucleus/datanucleus-sql4o/" target="_blank">from Maven2 Repository</a></li>
+                    <li><b>Nightly builds</b> <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus/datanucleus-sql4o/" target="_blank">from Maven2 Nightly Repository</a></li>
+                </ul>
+                <br/>
+            </subsection>
+
+            <subsection name="Dependencies">
+                <p>
+                    <i>datanucleus-db4o-sql</i> is dependent on the following packages of software. 
+                    Click on the name to go to the home page for that software to download it.
+                </p>
+                <table>
+                    <tr>
+                        <th>Package</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th width="150">Required?</th>
+                    </tr>
+                    <tr>
+                        <td><a href="store.db4o.html" target="_blank">datanucleus-db4o</a></td>
+                        <td>3.0+</td>
+                        <td>DataNucleus DB4O support</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.db4objects.com" target="_blank">db4o</a></td>
+                        <td>7.0+</td>
+                        <td>DB4O object datastore</td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+                <br/>
+                <br/>
+            </subsection>
+        </section>
+
+    </body>
+</document>

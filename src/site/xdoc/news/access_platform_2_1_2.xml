@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 2.1.2 Released">
+            <p>
+                <b>October 20th 2010</b>- DataNucleus Access Platform 2.1.2 ("Thomson") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 2.1.2</i> includes the following changes over 2.1.1
+            </p>
+            <ul>
+                <li>Improved merge of metadata information when sequence or cascade info specified in annotations</li>
+                <li>Fix to PMF startup process so that persistence properties are registered before enablement
+                    of some services</li>
+                <li>RDBMS : fix to use of positional parameters</li>
+                <li>RDBMS : fix to validation of candidate keys, that prevented creation of some unique keys under
+                    some circumstances</li>
+                <li>RDBMS : fix to List.get() when used in result clause of JDOQL query</li>
+                <li>RDBMS : fix to creation of sequences with SchemaTool to take extension props</li>
+                <li>JPA : fix to case where sequence name not set</li>
+                <li>JPA : fix to EM.getReference to not validate the object</li>
+                <li>JPA : fix to use of @Enumerated with @Column</li>
+                <li>Enhancer : fix to runtime enhancement, class loading problem</li>
+                <li>Enhancer : fix to error message of override of invalid field</li>
+                <li>Cache : add option to allow retention of cached objects after close of PMF/EMF, for the case
+                    where used by other instances</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

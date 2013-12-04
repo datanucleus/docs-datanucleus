@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0 M2 Released">
+            <p>
+                <b>March 1st 2011</b>- DataNucleus Access Platform 3.0 ("Newton") Milestone 2 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including relational, web-based, map-based, and documents.
+                <i>Version 3.0 Milestone 2</i> includes the following changes
+            </p>
+            <ul>
+                <li>Change plugin startup process to use DataNucleus plugins only (by default), to ignore
+                    any plugins that have invalid MANIFESTs, and by default to omit the validation of
+                    bundle dependencies.</li>
+                <li>Add associated value logic to FK maps, to potentially reduce SQL invoked</li>
+                <li>Reduced memory utilisation by dropping ObjectProviderImpl, ExecutionContextImpl</li>
+                <li>Fix to use of embedded objects which was creating too many objects</li>
+                <li>Support marking some classes as "read-only"</li>
+                <li>JDO : Official support for "complete-table" (now part of JDO3.1)</li>
+                <li>JPA : Fix to compilation of JPQL "NOT IN (subquery)" syntax</li>
+                <li>JPA : Support for @MapKeyEnumerated</li>
+                <li>JPA : Fix to Query.setLockMode when "SELECT" - throw exception</li>
+                <li>JPA : EntityManager.close throws IllegalStateException if container managed</li>
+                <li>JPA : Fix metamodel to handle recursion and static fields</li>
+                <li>JPA : Fix processing of &lt;column&gt; within unique-constraints in <i>orm.xml</i></li>
+                <li>JPA : Add support for setting properties on EntityManager</li>
+                <li>JPA : Fix to &lt;embeddable&gt; trailing tag processing</li>
+                <li>JPA : Fix to use of listeners when specified via annotations and <i>orm.xml</i></li>
+                <li>RDBMS : Support for JDOQL "interfaceField = :implValue"</li>
+                <li>RDBMS : Fix to race condition in statement batching (Gerd Behrmann)</li>
+                <li>RDBMS : Fix to "count" result size method to allow for ranges</li>
+                <li>RDBMS : Support for PostgreSQL "SIMILAR TO" method in JDOQL ("String.similarTo")</li>
+                <li>Excel : Support for querying interfaces</li>
+                <li>Excel : Support access to native connection</li>
+                <li>ODF : Support for querying interfaces</li>
+                <li>ODF : Support access to native connection</li>
+                <li>XML : Support for querying interfaces</li>
+                <li>HBase : Support for querying interfaces</li>
+                <li>HBase : Support for cascade delete with pessimistic txns</li>
+                <li>HBase : Support discriminators</li>
+                <li>HBase : Support fetch plan on retrieve of objects</li>
+                <li>HBase : Support optimistic checks</li>
+                <li>HBase : Support polymorphic queries</li>
+                <li>HBase : Fix to use of server URL</li>
+                <li>MongoDB : Support for querying interfaces</li>
+                <li>MongoDB : Support access to native connection</li>
+                <li>MongoDB : Support polymorphic queries</li>
+                <li>MongoDB : Support optimistic checks</li>
+                <li>MongoDB : Support for SchemaTool</li>
+                <li>MongoDB : Support "increment"/"table" value generator</li>
+                <li>MongoDB : Support nested embedded persistable fields</li>
+                <li>MongoDB : Support authentication of connections</li>
+                <li>MongoDB : Support cascade delete for pessimistic txns</li>
+                <li>MongoDB : Support embedded 1-1/N-1 as embedded document</li>
+                <li>MongoDB : Support embedded 1-N/M-N as embedded array</li>
+                <li>MongoDB : Support fetch plan on retrieve of objects</li>
+                <li>MongoDB : Support persistence of maps</li>
+                <li>MongoDB : Support embedded maps as embedded array</li>
+                <li>MongoDB : Support versions</li>
+                <li>MongoDB : Support "identity" value generator using MongoDB "_id" field</li>
+                <li>LDAP : Support for "native"/"auto" value generation strategy (to use uuid-hex)</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

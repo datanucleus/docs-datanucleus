@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Plugins : Identity Key Translators</title>
+    </properties>
+
+    <body>
+        <section name="Plugins : Identity Key Translators">
+            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+            <p>
+                DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is 
+                translation of identities. When you call <i>pm.getObjectById(cls, key)</i> you pass in the "key". 
+                This object can be the toString() form of an identity, or the key of a single-string form. 
+                Some store managers (e.g GAE/J) allow non-standard key input and this allows for the translation
+                into a standardised key form. Alternatively you could do this in your own code, but the facility 
+                is provided. This means that in your application you only use your own form of identities.
+            </p>
+            <p>
+                You can extend DataNucleus's capabilities using the plugin extension 
+                <i>org.datanucleus.identity_key_translator</i>.
+            </p>
+            <br/>
+
+            <subsection name="Interface">
+                <p>
+                    Any identifier factory plugin will need to implement <i>org.datanucleus.store.IdentifierKeyFactory</i>.
+                    <a href="http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/identity/IdentityKeyTranslator.html" target="_blank"><img src="../../images/javadoc.gif" alt=""/></a>
+                    So you need to implement the following interface
+                </p>
+                <source>
+package org.datanucleus.identity;
+
+public interface IdentityKeyTranslator
+{
+    /**
+     * Method to translate the string into the identity.
+     * @param ec ExecutionContext
+     * @param cls The persistable class
+     * @param key The input key
+     * @return The returned key
+     */
+    Object getKey(ObjectManager om, Class cls, Object key);
+}</source>
+                <br/>
+            </subsection>
+
+            <subsection name="Plugin Specification">
+                <p>
+                    When we have defined our "IdentityKeyTranslator" we just need to make it into a DataNucleus 
+                    plugin. To do this you simply add a file <i>plugin.xml</i> to your JAR at the root. The file
+                    <i>plugin.xml</i> should look like this
+                </p>
+                <source><![CDATA[
+<?xml version="1.0"?>
+<plugin id="mydomain" name="DataNucleus plug-ins" provider-name="My Company">
+    <extension point="org.datanucleus.identity_key_translator">
+        <identitykeytranslator name="mytranslator" class-name="mydomain.MyIdKeyTranslator"/>
+    </extension>
+</plugin>]]></source>
+                <p>
+                    Note that you also require a MANIFEST.MF file as per the
+                    <a href="plugins.html">Plugins Guide</a>.
+                </p>
+            </subsection>
+
+            <subsection name="Plugin Usage">
+                <p>
+                    The only thing remaining is to use your new <i>IdentityStringTranslator</i> plugin. 
+                    You do this by having your plugin in the CLASSPATH at runtime, and setting the persistence property 
+                    <b>datanucleus.identityKeyTranslatorType</b> to <i>mytranslator</i>
+                    (the name you specified in the plugin.xml file).
+                </p>
+            </subsection>
+        </section>
+    </body>
+</document>

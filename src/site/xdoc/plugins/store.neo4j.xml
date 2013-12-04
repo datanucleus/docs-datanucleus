@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>org.datanucleus.store.neo4j</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Neo4j">
+            <p>
+                <i>datanucleus-neo4j</i> provides persistence of Java objects to the Neo4j graph database. 
+                It builds on top of the basic persistence provided by <i>datanucleus-core</i>.
+            </p>
+            <ul>
+                <li>Compile Requirement : JDK1.5+</li>
+                <li>Runtime Requirement : JDK1.5+</li>
+                <li>Latest version : 3.2.3</li>
+                <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCNEOFORJ?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
+                <li>License : <a href="../project/license.html">Apache 2</a></li>
+                <li>Javadocs : <a href="../javadocs/store.neo4j/3.2">3.2</a>,
+                               <a href="../javadocs/store.neo4j/3.1">3.1</a></li>
+                <li>Source : <a href="https://sourceforge.net/p/datanucleus/code/HEAD/tree/platform/store.neo4j/trunk/">latest</a></li>
+            </ul>
+
+            <subsection name="Source Code">
+                <p>trunk can be checked out as follows</p>
+<source>svn co https://svn.code.sf.net/p/datanucleus/code/platform/store.neo4j/trunk store.neo4j</source>
+                <br/>
+            </subsection>
+
+            <subsection name="Download">
+                <p><i>datanucleus-neo4j</i> is downloadable as following</p>
+                <ul>
+                    <li><b>Releases</b> <a href="http://repo1.maven.org/maven2/org/datanucleus/datanucleus-neo4j/" target="_blank">from Maven Central</a></li>
+                    <li><b>Nightly builds</b> <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus/datanucleus-neo4j/" target="_blank">from Maven2 Nightly Repository</a></li>
+                </ul>
+                <br/>
+            </subsection>
+
+            <subsection name="Dependencies">
+                <p>
+                    <i>datanucleus-mongodb</i> is dependent on the following packages of software. 
+                    Click on the name to go to the home page for that software to download it.
+                </p>
+                <table>
+                    <tr>
+                        <th>Package</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th width="150">Required?</th>
+                    </tr>
+                    <tr>
+                        <td><a href="core/index.html">datanucleus-core</a></td>
+                        <td>3.1+</td>
+                        <td>Provides persistence, logging, localisation, and other framework facilities for DataNucleus.</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.neo4j.org/">Neo4j</a></td>
+                        <td>1.7.2</td>
+                        <td>Neo4j</td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+                <br/>
+                <br/>
+            </subsection>
+        </section>
+
+    </body>
+</document>

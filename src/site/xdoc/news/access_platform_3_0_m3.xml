@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0 M3 Released">
+            <p>
+                <b>April 2nd 2011</b>- DataNucleus Access Platform 3.0 ("Newton") Milestone 3 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including relational, web-based, map-based, and documents.
+                <i>Version 3.0 Milestone 3</i> includes the following changes
+            </p>
+            <ul>
+                <li>JDO : Support for JDO 3.1 PersistenceManager property methods.</li>
+                <li>JDO : Support bulk update/delete via typesafe API (extension)</li>
+                <li>JPA : Support &lt;association-override&gt;</li>
+                <li>JPA : Support &lt;discriminator-column&gt; "length"</li>
+                <li>JPA : Support EMF singleton pattern</li>
+                <li>JPA : Bug fixes to @CollectionTable, &lt;inheritance&gt;, and user specification of
+                    detachXXX persistence properties</li>
+                <li>OSGi : add optional import of log4j</li>
+                <li>Bug fix so that calls to PC.setXXX for SCO field immediately wraps the field and so can detect
+                    subsequent changes</li>
+                <li>Various changes to default values for persistence properties to better suit all supported
+                    datastores</li>
+                <li>Fixes to 300+ possible errors shown up by "FindBugs"</li>
+                <li>Improvements to nontransactional persistence process</li>
+                <li>Fixes for JDOQL/JPQL querying with subqueries to correctly cache the compilation, and to cater
+                    for nested subqueries</li>
+                <li>Fixes to persistence of nested embedded fields to be independent of ordering</li>
+                <li>Support for "optimised flush" process, particularly for datastores that don't support
+                    referential integrity (so we can do bulk inserts, bulk deletes etc)</li>
+                <li>Support for detachAllOnCommit, pbrAtCommit, serializeRead to be specifiable during
+                    the lifecycle of a PM/EM</li>
+                <li>Rewrite Query execution process to not use a separate thread</li>
+                <li>SchemaTool : ability to just generate tables, or just generate constraints</li>
+                <li>Cache : support for xmemcached</li>
+                <li>Cache : support for latest versions of EHCache</li>
+                <li>ODF : Upgrade to ODFDOM 0.8.7</li>
+                <li>RDBMS : Enable prepared statement caching, and fix related issue for C3P0</li>
+                <li>RDBMS : Updates to JPQL to support joins relative to joined tables</li>
+                <li>RDBMS : Checks for List.set when using ordered list</li>
+                <li>RDBMS : Fix to table generator to use the initial-value</li>
+                <li>RDBMS : Fix to use of parameters in query ORDER BY clause</li>
+                <li>HBase : support optimised delete of obejcts</li>
+                <li>HBase : support persistence of primitives as raw bytes</li>
+                <li>MongoDB : support optimised insert of objects</li>
+                <li>Enhancer : ability to turn off all System.out</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

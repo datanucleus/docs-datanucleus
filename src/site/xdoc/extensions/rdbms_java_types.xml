@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Plugins : User-Defined Data Types</title>
+    </properties>
+
+    <body>
+        <section name="Plugins : RDBMS Java Types">
+            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+            <p>
+                When persisting a class to an RDBMS datastore there is a <i>mapping</i> process from class/field
+                to table/column. DataNucleus provides a mapping process and allows users to define their own
+                mappings where required. Each field is of a particular type, and where a field is to be persisted
+                as a second-class object you need to define a mapping. DataNucleus defines mappings for all of 
+                the required JDO/JPA types but you want to persist some of your own types as second-class objects.
+                This extension is not required for other datastores, just RDBMS.
+            </p>
+            <p>
+                A <i>type mapping</i> defines the way to convert between an object of the Java type and its 
+                datastore representation (namely a column or columns in a datastore table). There are 2 types 
+                of Java types that can be mapped. These are <b>mutable</b> (something that can be updated, such as 
+                java.util.Date) and <b>immutable</b> (something that is fixed from the point of construction, 
+                such as java.awt.Color).
+            </p>
+            <p>
+                <b>The examples in this guide relate to current DataNucleus SVN. Please consult the DataNucleus 
+                source code if you are using an earlier version since things have changed recently for user type 
+                mapping</b>
+            </p>
+            <br/>
+
+            <subsection name="Java type to single column mapping">
+                <p>
+                    To map any Java type to a datastore column you need this mapping class we've mentioned.
+                    The simplest way to describe how to define your own mapping is to give an example. 
+                    Lets assume we have our own class <b>IPAddress</b> that represents an address such as 
+                    192.168.1.1 and we want to map this to a <u>single VARCHAR column</u> in the datastore
+                </p>
+                <source>
+public class IPAddress
+{
+    String ipAddress;
+
+    public IPAddress(String ipAddr)
+    {
+        ipAddress = ipAddr;
+    }
+
+    public String toString()
+    {
+        return ipAddress;
+    }
+}</source>
+                <p>
+                    We start by defining a <i>JavaTypeMapping</i> for this type.
+                </p>
+                <source>
+import org.datanucleus.store.rdbms.mapping.java.ObjectAsStringMapping;
+
+public class IPAddressMapping extends ObjectAsStringMapping
+{
+    private static IPAddress mappingSampleValue = new IPAddress("192.168.1.1");
+
+    public Object getSampleValue(ClassLoaderResolver clr)
+    {
+        return mappingSampleValue;
+    }
+
+    /**
+     * Method to return the Java type being represented
+     * @return The Java type we represent
+     */
+    public Class getJavaType()
+    {
+        return IPAddress.class;
+    }
+
+    /**
+     * Method to return the default length of this type in the datastore.
+     * An IP address can be maximum of 15 characters ("WWW.XXX.YYY.ZZZ")
+     * @return The default length
+     */
+    public int getDefaultLength(int index)
+    {
+        return 15;
+    }
+
+    /**
+     * Method to set the datastore string value based on the object value.
+     * @param object The object
+     * @return The string value to pass to the datastore
+     */
+    protected String objectToString(Object object)
+    {
+        String ipaddr;
+        if (object instanceof IPAddress)
+        {
+            ipaddr = ((IPAddress)object).toString();
+        }
+        else
+        {
+            ipaddr = (String)object;
+        }
+        return ipaddr;
+    }
+
+    /**
+     * Method to extract the objects value from the datastore string value.
+     * @param datastoreValue Value obtained from the datastore
+     * @return The value of this object (derived from the datastore string value)
+     */
+    protected Object stringToObject(String datastoreValue)
+    {
+        return new IPAddress(datastoreValue.trim());
+    }
+}</source>
+                <p>
+                    We have extended the DataNucleus convenience class <i>ObjectAsStringMapping</i> 
+                    <a href="http://www.datanucleus.org/javadocs/store.rdbms/latest/org/datanucleus/store/rdbms/mapping/java/ObjectAsStringMapping.html" target="_blank"><img src="../images/javadoc.gif" alt=""/></a>
+                    and this provides the majority of the mapping for us (including JDOQL capabilities). 
+                    We have defined a default length of 15 so that when an IP Address is to be mapped, if the 
+                    user doesnt specify a length in the metadata it will be assigned a column of length 15. 
+                    Finally we define the methods of converting the IPAddress into a String and back again.
+                </p>
+                <p>
+                    The only remaining thing we need to do is enable use of this Java type when running 
+                    DataNucleus. To do this we create a "plugin.xml" at the root of the CLASSPATH, like this.
+                </p>
+                <source><![CDATA[
+<?xml version="1.0"?>
+<plugin>
+    <extension point="org.datanucleus.store_mapping">
+        <mapping java-type="mydomain.IPAddress" mapping-class="mydomain.IPAddressMapping"/>
+    </extension>
+</plugin>]]></source>
+                <p>
+                    When using the DataNucleus Enhancer, SchemaTool or Core, DataNucleus automatically searches 
+                    for the <i>mapping definition</i> at <b>/plugin.xml</b> files in the classpath.
+                </p>
+                <p>
+                    The most common user-type will map to a String and so can just take this as a template. 
+                    If the user-type maps to a Long then they can use <i>ObjectAsLongMapping</i> - the other 
+                    convenience mapping available. Note that you also need a MANIFEST.MF as per the 
+                    <a href="plugins.html">Plugins Guide</a>.
+                </p>
+                <p>
+                    This is downloadable as a DataNucleus sample from the 
+                    <a href="../../../project/download.html">Download Page</a></p>
+                <p>
+                    From this point onwards once you have a field of that type you simply specify the field as 
+                    this
+                </p>
+                <source><![CDATA[<field name="myfield" persistence-modifier="persistent"/>]]></source>
+                <p>
+                    and it will be persisted using your user-type mapping.
+                </p>
+                <br/>
+            </subsection>
+ 
+            <subsection name="Java Type to multiple column mapping">
+                <p>
+                    To map any Java type to multiple datastore columns you need also mapping class.
+                    The simplest way to describe how to define your own mapping is to give an example.
+                    Here we'll use the examle of the Java AWT class <i>Color</i>. This has 3 colour components 
+                    (red, green, and blue) as well as an alpha component. So here we want to map the Java type 
+                    java.awt.Color to 4 datastore columns - one for each of the red, green, blue, and alpha 
+                    components of the colour. To do this we define a mapping class extending the DataNucleus class 
+                    <i>org.datanucleus.store.rdbms.mapping.java.SingleFieldMultiMapping</i>
+                    <a href="http://www.datanucleus.org/javadocs/store.rdbms/latest/org/datanucleus/store/rdbms/mapping/java/SingleFieldMultiMapping.html" target="_blank"><img src="../images/javadoc.gif" alt=""/></a>
+                </p>
+                <source>
+package org.mydomain;
+
+import org.datanucleus.PersistenceManager;
+import org.datanucleus.metadata.AbstractPropertyMetaData;
+import org.datanucleus.store.rdbms.mapping.java.SingleFieldMultiMapping;
+import org.datanucleus.store.rdbms.mapping.java.JavaTypeMapping;
+import org.datanucleus.store.rdbms.table.Table;
+
+public class ColorMapping extends SingleFieldMultiMapping
+{
+    /**
+     * Initialize this JavaTypeMapping with the given DatastoreAdapter for the given FieldMetaData.
+     * @param dba The Datastore Adapter that this Mapping should use.
+     * @param fmd FieldMetaData for the field to be mapped (if any)
+     * @param table The table holding this mapping
+     * @param clr the ClassLoaderResolver
+     */
+    public void initialize(AbstractMemberMetaData fmd, Table table, ClassLoaderResolver clr)
+    {
+		super.initialize(fmd, table, clr);
+
+        addDatastoreField(ClassNameConstants.INT); // Red
+        addDatastoreField(ClassNameConstants.INT); // Green
+        addDatastoreField(ClassNameConstants.INT); // Blue
+        addDatastoreField(ClassNameConstants.INT); // Alpha
+    }
+
+    public Class getJavaType()
+    {
+        return Color.class;
+    }
+
+    public Object getSampleValue(ClassLoaderResolver clr)
+    {
+        return java.awt.Color.red;
+    }
+
+    public void setObject(PersistenceManager pm, Object preparedStatement, int[] exprIndex, Object value)
+    {
+        Color color = (Color) value;
+        if (color == null)
+        {
+            getDataStoreMapping(0).setObject(preparedStatement, exprIndex[0], null);
+            getDataStoreMapping(1).setObject(preparedStatement, exprIndex[1], null);
+            getDataStoreMapping(2).setObject(preparedStatement, exprIndex[2], null);
+            getDataStoreMapping(3).setObject(preparedStatement, exprIndex[3], null);
+        }
+        else
+        {
+            getDataStoreMapping(0).setInt(preparedStatement,exprIndex[0],color.getRed());
+            getDataStoreMapping(1).setInt(preparedStatement,exprIndex[1],color.getGreen());
+            getDataStoreMapping(2).setInt(preparedStatement,exprIndex[2],color.getBlue());
+            getDataStoreMapping(3).setInt(preparedStatement,exprIndex[3],color.getAlpha());
+        }
+    }
+
+    public Object getObject(PersistenceManager pm, Object resultSet, int[] exprIndex)
+    {
+        try
+        {
+            // Check for null entries
+            if (((ResultSet)resultSet).getObject(exprIndex[0]) == null)
+            {
+                return null;
+            }
+        }
+        catch (Exception e)
+        {
+            // Do nothing
+        }
+
+        int red = getDataStoreMapping(0).getInt(resultSet,exprIndex[0]); 
+        int green = getDataStoreMapping(1).getInt(resultSet,exprIndex[1]); 
+        int blue = getDataStoreMapping(2).getInt(resultSet,exprIndex[2]); 
+        int alpha = getDataStoreMapping(3).getInt(resultSet,exprIndex[3]);
+        return new Color(red,green,blue,alpha);
+    }
+}</source>
+                <p>
+                    In the initialize() method we've created 4 columns - one for each of the red, green, blue, 
+                    alpha components of the colour. The argument passed in when constructing these columns is 
+                    the Java type name of the column data being stored. The other 2 methods of relevance are 
+                    the setObject() and getObject(). These have the task of mapping between the <i>Color</i> 
+                    object and its datastore representation (the 4 columns). That's all there is to it.
+                </p>
+                <p>
+                    The only thing we need to do is enable use of this Java type when running DataNucleus. 
+                    To do this we create a <i>plugin.xml</i> (at the root of our CLASSPATH) to contain our mappings.
+                </p>
+                <source><![CDATA[
+<?xml version="1.0"?>
+<plugin>
+    <extension point="org.datanucleus.store_mapping">
+        <mapping java-type="java.awt.Color" mapping-class="org.mydomain.MyColorMapping"/>
+    </extension>
+</plugin>]]></source>
+                <p>
+                    Note that we also require a MANIFEST.MF file as per the
+                    <a href="plugins.html">Plugins Guide</a>.
+                    When using the DataNucleus Enhancer, SchemaTool or Core, DataNucleus automatically searches 
+                    for the <i>mapping definition</i> at <b>/plugin.xml</b> files in the CLASSPATH.
+                </p>
+                <p>
+                    Obviously, since DataNucleus already supports <i>java.awt.Color</i> there is no need to add this 
+                    particular mapping to DataNucleus yourself, but this demonstrates the way you should do it for any 
+                    type you wish to add.
+                </p>
+                <p>
+                    If your Java type that you want to map maps direct to a single column then you would instead 
+                    extend org.datanucleus.store.mapping.SingleFieldMapping and wouldn't need to add the columns 
+                    yourself. Look
+                    at <a href="http://datanucleus.svn.sourceforge.net/viewvc/datanucleus/platform/store.rdbms/trunk/src/java/org/datanucleus/store/rdbms/mapping/java/" target="_blank">DataNucleus SVN</a>
+                    for many examples of doing it this way.
+                </p>
+                <br/>
+            </subsection>
+        </section>
+
+    </body>
+</document>

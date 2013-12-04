@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Meta-Data creation using Javelin</title>
+    </properties>
+
+    <body>
+        <section name="Javelin : Automated, model driven generation of DataNucleus Meta-Data">
+
+		<subsection name="DataNucleus and the need for Meta-Data">
+			<p>
+			    DataNucleus Access Platform relies on the use of Meta-Data for the classes to be persisted. 
+			    The Meta-Data file(s) define how a class is persisted, from the basic information like which fields are 
+			    persisted, down to whether the user wants to specify what column names are used in the database etc.
+			</p>
+			<p>
+			    Generating JDO Meta-Data files can be time consuming and laborious if done by hand. Meta-Data file creation
+			    is an ideal candidate for automation to increase developer productivity and reduce human error. That, among other 
+			    things, is what Javelin can provide.
+			</p>
+		</subsection>
+
+		<subsection name="Javelin: What is it?">
+			<p>
+			    From the Javelin website: <i>"Javelin is a lightweight, visual, intuitive, non invasive, modeling and coding productivity tool. It 
+			    automatically and silently facilitates the creation and management of the Java source files that implement
+			    the classes and relationships assembled in its class diagram editor. Javelin, because of its intimate knowledge
+			    of the software models designed within it, is also capable of automatically generating Meta-Data for a variety of persistence 
+			    technologies, including DataNucleus/JDO2."</i>
+			</p>
+			<p>
+			    Javelin is well matched to newer software projects that do not yet have an established database schema design and where
+			    the object model will "drive" the form of the database schema. Luckily these tend to be the interesting projects. In contrast, 
+			    retrofitting an object model to an existing schema is more likely to be a frustrating, more mechanical and less artistic persuit 
+			    because the level of freedom and expressiveness realized in your object model may be constrained by the existing schema. If required 
+			    Javelin will allow you to persist to an existing schema via the use of "Persistence directives" customizations in various components 
+			    of the design that allow the developer to, for example, specify column names instead of using the default field name assignments.
+			</p>
+			<p>
+			    Javelin will, by default, create and manage Java source files for any new classes that you create in its class diagram editor but 
+			    it also has an import facility to allow you to import an existing set of Java source files in an existing project and start taking 
+			    advantage of the productivity benefits of Javelin on that project.
+			</p>
+			<p>
+			    <a href="http://www.regnow.com/softsell/nph-softsell.cgi?item=12403-4&amp;affiliate=58563">Purchase Javelin</a> online.
+			</p>
+		</subsection>
+
+		<subsection name="Turning on DataNucleus support">
+			<p>
+			    After you turn on the DataNucleus persistence support Javelin creates and maintains a set of DataNucleus Meta-Data files that specify how 
+			    your object model is to be persisted. Whenever you add class, edit an attribute, change a name, create or edit a relationship etc.
+			    Javelin creates or updates the relevent mapping files, silently and automatically, to reflect those model changes in DataNucleus 1.1 
+			    specific Meta-Data files (.jdo).
+			</p>
+
+			<p><b>To turn on DataNucleus support in a Javelin project:</b></p>
+			<p>1. With the project open select Options > Persistence and the Persistence Options dialog box will appear.</p>
+			<p>2. Click the radio button next to Java Data Objects (JDO) Specification.</p>
+			<p>3. In the drop down list box of JDO implementations choose DataNucleus 1.1 (JDO2)</p>
+			<p>In this same dialog box are options to configure:</p>
+			<p><b>Default Inheritance Mapping Strategy:</b> flat, vertical or horizontal. This setting applies to all classes that do not 
+				override the default strategy. You can do comparitive performance analysis of various inheritance strategies quickly and 
+				easily by changing the strategy and regenerating all mapping files by selecting "Synchronization > Force resynchronization of 
+				all classes". Recreate your schema and run your application - nothing else needs to be done to change inheritance strategies.</p>
+			<p>In the "Class details" dialog box of any individual class you can override the default strategy.</p>
+
+			<p><b>Usage of a Join table for 1-N relationships</b></p>
+			<p><b>Usage of 2 Join tables for M-N relationships</b></p>
+		</subsection>
+
+		<subsection name="Getting Javelin">
+			<p>
+			    Javelin is a Windows application but obviously because it deals with Java files your software projects can be deployed on any 
+			    platform with a JVM. It may work with Wine on Linux but we await verification of this.
+			</p>
+			<p>
+			    Download a 15 day trial of Javelin or read more about it at the 
+			    <a href="http://www.regnow.com/softsell/visitor.cgi?affiliate=58563&amp;action=site&amp;vendor=12403">
+			    Step Ahead Software</a> web site.
+            </p>
+			<p>
+			    <a href="http://www.regnow.com/softsell/nph-softsell.cgi?item=12403-4&amp;affiliate=58563">Purchase Javelin</a> online.
+			</p>
+            <p>
+                <b>Disclaimer : DataNucleus does not provide support for nor endorse the use of Javelin. We simply provide visibility of its 
+			    existence and potential benefits for your organisation. You can obtain support for Javelin from the
+			    <a href="http://www.regnow.com/softsell/visitor.cgi?affiliate=58563&amp;action=site&amp;vendor=12403">Step Ahead Software</a> 
+			    web site.</b>
+			</p>
+		</subsection>
+
+	</section>
+    </body>
+</document>

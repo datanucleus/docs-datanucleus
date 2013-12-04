@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 2.0 M3 Released">
+            <p>
+                <b>October 24th 2009</b>- DataNucleus Access Platform 2.0 ("Bohr") Milestone 3 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 2.0 Milestone 3</i> includes the following changes
+            </p>
+            <ul>
+                <li>Allow override of basic settings of DFG, default persistent for java types</li>
+                <li>Fix to L2 cache handling to evict deleted object</li>
+                <li>Level 2 Cache is now enabled by default (soft)</li>
+                <li>Level 1 Cache default is now changed to soft</li>
+                <li>Support for max size on weak/soft Level 2 caches</li>
+                <li>Generic compile updated for JPQL "EMPTY"/"LIKE"/"SIZE" to allow for multi-level primaries</li>
+                <li>Generic compile updated for JPQL "FROM" to chain nodes correctly</li>
+                <li>Generic compile updated for JPQL Object/Sum/Avg/Min/Max/Count to allow for case-insensitive</li>
+                <li>Generic compile updated for JPQL to allow for case-insensitive aliases</li>
+                <li>Generic compile updated for JPQL to fix escape sequence</li>
+                <li>Generic compile of JPQL subqueries to correctly allow for ALL/ANY/SOME/EXISTS forms</li>
+                <li>Generic compile support for AS aliases in result clause</li>
+                <li>Generic compile support for "new XXX().method" constructs</li>
+                <li>Generic compile support for JPQL "IN" taking multi-value parameters (JPA2)</li>
+                <li>Generic compile fix for JPQL "MOD"</li>
+                <li>Generic compile fix for JPQL "NOT" being applied incorrectly</li>
+                <li>Generic compile support for JPQL "TYPE" syntax (JPA2)</li>
+                <li>Generic compile fix for specification of result class in single-string form not being respected</li>
+                <li>Ignore all unsupported annotations</li>
+                <li>Rewrite of query in-memory method invocations handler to match the RDBMS style type-method</li>
+                <li>Fix to handling of non-transactional objects at pm close to move through lifecycle correctly</li>
+                <li>Support for JDO Query.cancel(Thread)</li>
+                <li>JPA : fix to mark transaction for rollback only on error</li>
+                <li>JPA : Support @Column length correctly</li>
+                <li>RDBMS : JDOQL2 support for String concatenation, and support for parameter defined
+                    as supertype but passed in as subtype</li>
+                <li>RDBMS : JDOQL2/JPQL2 support for Oracle NLS sorting</li>
+                <li>RDBMS : JDOQL2/JPQL2 support for result of type DyadicExpression</li>
+                <li>RDBMS : JDOQL2/JPQL2 support for result expression aliases</li>
+                <li>RDBMS : JDOQL2/JPQL2 fix handling of result new object to handle objects with composite PKs</li>
+                <li>RDBMS : JDOQL2/JPQL2 fix to handling of boolean expressions in ==/!=</li>
+                <li>RDBMS : JDOQL2/JPQL2 fix to handling of mappings using non-default datastore mapping
+                    (e.g Date persisted as VARCHAR)</li>
+                <li>RDBMS : JPQL2 fix to handling of ANY/ALL/SOME/EXISTS</li>
+                <li>RDBMS : JPQL2 fix to bulk update to allow DyadicExpression/PrimaryExpression in SET clause</li>
+                <li>RDBMS : Fix to Schematool to remove possible dups with bidirectional relations</li>
+                <li>RDBMS : Support for user-defined primary key constraints on join tables</li>
+                <li>RDBMS : Fix to support persisting Boolean as SMALLINT/TINYINT</li>
+                <li>JSON : support for Amazon S3 datastores</li>
+                <li>HBase : upgrade to HBase 0.20</li>
+                <li>HBase : performance improvements, including connection pooling and create schema
+                    only once</li>
+                <li>HBase : support for column families</li>
+                <li>Excel : Use lazy loading when retrieving candidate instances</li>
+                <li>ODF : Fix to delete of an object</li>
+                <li>ODF : Use lazy loading when retrieving candidate instances</li>
+                <li>ODF : Support for persistence of null fields and retrieval as null</li>
+                <li>ODF : Support for persistence/retrieval of Date fields</li>
+                <li>XML : Use lazy loading when retrieving candidate instances</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

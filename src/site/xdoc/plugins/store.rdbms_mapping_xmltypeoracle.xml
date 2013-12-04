@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>org.datanucleus.store.rdbms.mapping.xmltypeoracle</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus RDBMS XMLTypeOracle">
+            <p>
+                <i>datanucleus-xmltypeoracle</i> provides support for persisting the Oracle type "XMLType"
+                to Oracle RDBMS datastores, when using the <i>datanucleus-rdbms</i> plugin.
+                <b>It is merged into the <i>datanucleus-rdbms</i> plugin as of version 3.1.0.m2 and, as such,
+                is now inactive</b>.
+            </p>
+            <ul>
+                <li>Compile Requirement : JDK1.3+</li>
+                <li>Runtime Requirement : JDK1.3+</li>
+                <li>Latest version : 3.0.0.release</li>
+                <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCXMLTYPE?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
+                <li>License : <a href="../project/license.html">Apache 2</a></li>
+                <li>Javadocs : <a href="../javadocs/store.rdbms.mapping.xmltypeoracle/3.0">3.0</a>,
+                               <a href="../javadocs/store.rdbms.mapping.xmltypeoracle/2.0">2.0</a>,
+                               <a href="../javadocs/store.rdbms.mapping.xmltypeoracle/1.0">1.0</a></li>
+                <li>Source : <a href="http://datanucleus.svn.sourceforge.net/viewvc/datanucleus/platform/store.rdbms.mapping.xmltypeoracle/trunk/">latest</a></li>
+            </ul>
+
+            <subsection name="Download">
+                <p><i>datanucleus-xmltypeoracle</i> is downloadable as following</p>
+                <ul>
+                    <li><b>Releases</b> <a href="http://www.datanucleus.org/downloads/maven2/org/datanucleus/datanucleus-xmltypeoracle/" target="_blank">from Maven2 Repository</a></li>
+                    <li><b>Nightly builds</b> <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus/datanucleus-xmltypeoracle/" target="_blank">from Maven2 Nightly Repository</a></li>
+                </ul>
+                <br/>
+            </subsection>
+
+            <subsection name="Dependencies">
+                <p>
+                    <i>datanucleus-xmltypeoracle</i> is dependent on the following packages of software. 
+                    Click on the name to go to the home page for that software to download it.
+                </p>
+                <table>
+                    <tr>
+                        <th>Package</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th width="150">Required?</th>
+                    </tr>
+                    <tr>
+                        <td><a href="core/index.html">datanucleus-core</a></td>
+                        <td>3.0+</td>
+                        <td>Provides logging, localisation, and other framework facilities for DataNucleus</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><a href="store.rdbms/index.html">datanucleus-rdbms</a></td>
+                        <td>3.0+</td>
+                        <td>Persistence to RDBMS datastores</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Oracle XDB</td>
+                        <td></td>
+                        <td>Oracle XDB</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Oracle XMLParServ</td>
+                        <td></td>
+                        <td>Oracle XMLParServ</td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+                <br/>
+                <br/>
+            </subsection>
+        </section>
+
+    </body>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 1.1.4 Released">
+            <p>
+                <b>June 17th 2009</b>- DataNucleus Access Platform 1.1.4 ("Rutherford") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, Excel, ODF and BigTable.
+                <i>Version 1.1.4</i> includes the following changes over 1.1.3
+            </p>
+            <ul>
+                <li>Make the query cache pluggable, allowing use of external caching products</li>
+                <li>Add support for use of Memcache, javax.cache, and EHCache for the query cache</li>
+                <li>Addition of upfront checks on whether the datastore supports particular features
+                    so allowing quick fail</li>
+                <li>Bug fix to datastores which don't provide non-transactional connections</li>
+                <li>Simplification of specification of L2 caching, for consistency with L1 cache and
+                    Query cache.</li>
+                <li>Improvement to classloading for RDBMS "requests" for use in OSGi containers</li>
+                <li>Change JPA default for discriminator value to use "class name" when no value specified.</li>
+                <li>Improvements to fallback process for persisting a type as a String</li>
+                <li>Add control over cascade delete of map keys, and minor change in default</li>
+                <li>Bug fix to JPQL "LOWER"/"UPPER" compilation</li>
+                <li>Bug fix to List.set() methods when using cascade delete</li>
+                <li>Respect JPA "fetch" setting on 1-1 relations</li>
+                <li>Support JPA "columnDefinition" in a minimalistic way</li>
+                <li>RDBMS : Change fetch process to allow fetching of related (1-1, N-1) objects in same SQL</li>
+                <li>RDBSM : Change to Oracle BLOB/CLOB handling to use new SQL API instead of legacy code.</li>
+                <li>XML : Bug fix to addition of elements to collection of persistent object</li>
+                <li>LDAP : Bug fix to JNDI connection pooling</li>
+                <li>LDAP : Support for persisting embedded elements as child entries</li>
+                <li>LDAP : Support for inheritance in relationships</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

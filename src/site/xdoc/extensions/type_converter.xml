@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Plugins : Type Converter</title>
+    </properties>
+
+    <body>
+        <section name="Plugins : Type Converter">
+            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+            <p>
+                DataNucleus allows you to provide alternate ways of persisting Java types. Whilst it includes the
+                majority of normal converters built-in, you can extend DataNucleus's capabilities using the plugin 
+                extension <i>org.datanucleus.type_converter</i>.
+            </p>
+            <subsection name="Interface">
+                <p>
+                    Any value generator plugin will need to implement <i>org.datanucleus.store.types.converters.TypeConverter</i>
+                    <a href="http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/store/types/converters/TypeConverter.html" target="_blank"><img src="../images/javadoc.gif" alt=""/></a>
+                    So you need to implement the following interface
+                </p>
+<source><![CDATA[
+public interface TypeConverter<X, Y> extends Serializable
+{
+    /**
+     * Method to convert the passed member value to the datastore type.
+     * @param memberValue Value from the member
+     * @return Value for the datastore
+     */
+    Y toDatastoreType(X memberValue);
+
+    /**
+     * Method to convert the passed datastore value to the member type.
+     * @param datastoreValue Value from the datastore
+     * @return Value for the member
+     */
+    X toMemberType(Y datastoreValue);
+}]]></source>
+            </subsection>
+
+            <subsection name="Implementation">
+                <p>
+                    Let's take an example. If we look at the Java type URI we want to persist it as a String
+                    since a native URI type isn't present in datastores. We define our class as
+                </p>
+<source><![CDATA[
+public class URIStringConverter implements TypeConverter<URI, String>
+{
+    public URI toMemberType(String str)
+    {
+        if (str == null)
+        {
+            return null;
+        }
+
+        return java.net.URI.create(str.trim());
+    }
+
+    public String toDatastoreType(URI uri)
+    {
+        return uri != null ? uri.toString() : null;
+    }
+}]]></source>
+                <p>
+                    So when converting it for the datastore it will use the <i>toString()</i> form of the URI,
+                    and will be converted back to a URI (on retrieval from the datastore) using the <i>URI.create</i>
+                    method. Obviously this particular TypeConverter is included in DataNucleus, but hopefully it
+                    gives an idea of what to do to provide your own.
+                </p>
+            </subsection>
+
+            <subsection name="Plugin Specification">
+                <p>
+                    So we now have our custom "value generator" and we just need to make this into a DataNucleus plugin. To do this
+                    you simply add a file <i>plugin.xml</i> to your JAR at the root. The file
+                    <i>plugin.xml</i> should look like this
+                </p>
+                <source><![CDATA[
+<?xml version="1.0"?>
+<plugin id="mydomain" name="DataNucleus plug-ins" provider-name="My Company">
+    <extension point="org.datanucleus.type_converter">
+        <type-converter name="dn.uri-string" member-type="java.net.URI" datastore-type="java.lang.String"
+            converter-class="mydomain.converters.URIStringConverter"/>
+    </extension>
+</plugin>]]></source>
+                <p>
+                    Note that you also require a MANIFEST.MF file as per the
+                    <a href="plugins.html">Plugins Guide</a>.
+                </p>
+                <p>
+                    The name "dn.uri-string" can be used to refer to this converter from within a 
+                    <a href="java_types.html">java_types extension point</a> definition for the default converter
+                    to use for a Java type.
+                </p>
+            </subsection>
+        </section>
+    </body>
+</document>

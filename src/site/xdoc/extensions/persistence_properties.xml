@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Plugins : Connection Pooling</title>
+    </properties>
+
+    <body>
+        <section name="Plugins : Persistence Properties">
+            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+            <p>
+                DataNucleus is developed as a plugin-driven framework and one of the components that is 
+                pluggable is to allow definition of persistence properties. These properties are used by plugins
+                and allow configurability of behaviour. Any plugin can define its own properties.
+            </p>
+            <p>
+                You can define persistence properties using the plugin extension 
+                <i>org.datanucleus.persistence_properties</i>.
+            </p>
+
+            <subsection name="Plugin Specification">
+                <p>
+                    The only thing required is to register the persistence property with DataNucleus via the 
+                    <i>plugin.xml</i>. Here's an example
+                </p>
+                <source><![CDATA[
+<?xml version="1.0"?>
+<plugin id="mydomain" name="DataNucleus plug-ins" provider-name="My Company">
+    <extension point="org.datanucleus.persistence_properties
+        <persistence-property name="datanucleus.magicBehaviour" value="false"
+            validator="org.datanucleus.properties.BooleanPropertyValidator"/>">
+    </extension>
+</plugin>]]></source>
+                <p>
+                    Note that you also require a MANIFEST.MF file as per the
+                    <a href="plugins.html">Plugins Guide</a>.
+                </p>
+                <p>
+                    Note also
+                </p>
+                <ul>
+                    <li>If you specify the attribute <b>datastore</b> as <i>true</i> in the plugin.xml
+                        then your property will be stored with the StoreManager (instead of NucleusContext where it
+                        would normally be stored).</li>
+                    <li>If you specify the attribute <b>manager-overrideable</b> as <i>true</i> in the plugin.xml
+                        then the user can specify this property additionally on the PM/EM (rather than just
+                        on the PMF/EMF)</li>
+                    <li>The <b>validator</b> attribute is optional but allows you to define a class that validates
+                        the values it can be set to.</li>
+                </ul>
+            </subsection>
+
+            <subsection name="Plugin Usage">
+                <p>
+                    Now you can access this property from within your DataNucleus plugin via
+                </p>
+                <source><![CDATA[
+boolean magic = nucleusCtx.getPersistenceConfiguration().getBooleanProperty("datanucleus.magicBehaviour");
+
+// or from the StoreManager
+boolean magic = storeMgr.getBooleanProperty("datanucleus.magicBehaviour");
+]]></source>
+            </subsection>
+        </section>
+
+    </body>
+</document>

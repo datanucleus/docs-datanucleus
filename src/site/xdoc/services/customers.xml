@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Customers</title>
+    </properties>
+
+    <body>
+        <section name="Customers">
+            <p>
+                We have several clients to whom we have provided services.
+                Below are a small subset.
+            </p>
+            <table>
+                <tr>
+                    <td width="50%"><a href="http://www.nightlabs.com" target="_blank">
+                        <img src="../images/companies/nightlabs.png" border="0" alt="Nightlabs"/></a></td>
+                    <td width="50%"><a href="http://www.metamicro.com" target="_blank">
+                        <img src="../images/companies/metamicro.jpg" border="0" alt="Metamicro"/></a></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#36526c"><a href="http://www.bmc.com" target="_blank">
+                        <img src="../images/companies/bmc.gif" border="0" alt="BMC"/></a></td>
+                    <td><a href="http://www.transcore.com" target="_blank">
+                        <img src="../images/companies/transcore.png" border="0" alt="Transcore"/></a></td>
+                </tr>
+                <tr>
+                    <td width="50%"><a href="http://www.yahoo.com" target="_blank">
+                        <img src="../images/companies/yahoo.gif" border="0" alt="Yahoo"/></a></td>
+                    <td width="50%"><a href="http://www.w4global.com" target="_blank">
+                        <img src="../images/companies/w4.png" border="0" alt="W4"/></a></td>
+                </tr>
+                <tr>
+                    <td width="50%"><a href="http://ge.geglobalresearch.com/" target="_blank">
+                        <img src="../images/companies/ge.png" border="0" alt="General Electric"/></a></td>
+                    <td width="50%"><a href="http://www.lockheedmartin.com/" target="_blank">
+                        <img src="../images/companies/lockheed.png" border="0" alt="Lockheed Martin"/></a></td>
+                </tr>
+                <tr>
+                    <td width="50%"><a href="http://www.seismicexchange.com/" target="_blank">
+                        <img src="../images/companies/seismicexchange.gif" border="0" alt="Seismic Exchange"/></a></td>
+                    <td width="50%"><a href="http://www.livestream.com/" target="_blank">
+                        <img src="../images/companies/livestream.jpg" border="0" alt="LiveStream"/></a></td>
+                </tr>
+            </table>
+        </section>
+
+    </body>
+</document>

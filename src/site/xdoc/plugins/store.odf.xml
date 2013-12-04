@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>org.datanucleus.store.odf</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus ODF (OpenOffice)">
+            <p>
+                <i>datanucleus-odf</i> provides persistence of Java objects to ODF (OpenOffice) documents. 
+                It builds on top of the basic persistence provided by <i>datanucleus-core</i>.
+            </p>
+            <ul>
+                <li>Compile Requirement : JDK1.5+</li>
+                <li>Runtime Requirement : JDK1.5+</li>
+                <li>Latest version : 3.2.1</li>
+                <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCODF?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
+                <li>License : <a href="../project/license.html">Apache 2</a></li>
+                <li>Javadocs : <a href="../javadocs/store.odf/3.2">3.2</a>,
+                               <a href="../javadocs/store.odf/3.1">3.1</a>,
+                               <a href="../javadocs/store.odf/3.0">3.0</a>,
+                               <a href="../javadocs/store.odf/2.1">2.1</a>,
+                               <a href="../javadocs/store.odf/2.0">2.0</a>,
+                               <a href="../javadocs/store.odf/1.0">1.0</a></li>
+                <li>Source : <a href="https://sourceforge.net/p/datanucleus/code/HEAD/tree/platform/store.odf/trunk/">latest</a></li>
+            </ul>
+
+            <subsection name="Source Code">
+                <p>trunk can be checked out as follows</p>
+<source>svn co https://svn.code.sf.net/p/datanucleus/code/platform/store.odf/trunk store.odf</source>
+                <br/>
+            </subsection>
+
+            <subsection name="Download">
+                <p><i>datanucleus-odf</i> is downloadable as following</p>
+                <ul>
+                    <li><b>Releases</b> <a href="http://repo1.maven.org/maven2/org/datanucleus/datanucleus-odf/" target="_blank">from Maven Central</a></li>
+                    <li><b>Nightly builds</b> <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus/datanucleus-odf/" target="_blank">from Maven2 Nightly Repository</a></li>
+                </ul>
+                <br/>
+            </subsection>
+
+            <subsection name="Dependencies">
+                <p>
+                    <i>datanucleus-odf</i> is dependent on the following packages of software. 
+                    Click on the name to go to the home page for that software to download it.
+                </p>
+                <table>
+                    <tr>
+                        <th>Package</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th width="150">Required?</th>
+                    </tr>
+                    <tr>
+                        <td><a href="core/index.html">datanucleus-core</a></td>
+                        <td>3.0+</td>
+                        <td>Provides persistence, logging, localisation, and other framework facilities for DataNucleus.</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://odftoolkit.org//" target="_blank">ODFDOM (ODF Toolkit)</a></td>
+                        <td>0.8.7</td>
+                        <td>ODF Toolkit</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://xerces.apache.org//" target="_blank">Apache Xerces</a></td>
+                        <td>2.8.1</td>
+                        <td>Xerces XML parser, required by ODF Toolkit</td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+                <br/>
+                <br/>
+            </subsection>
+        </section>
+
+    </body>
+</document>

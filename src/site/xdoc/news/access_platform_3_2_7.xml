@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus AccessPlatform 3.2.7 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus AccessPlatform 3.2.7 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_2_7.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Oct 23rd 2013</b>- DataNucleus Access Platform 3.2.7 ("Copernicus") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
+                <i>Version 3.2.7</i> includes the following changes over 3.2.6
+            </p>
+            <ul>
+                <li>JPA : fix to metamodel SimpleAttributeImpl.isVersion (Adrian Ber)</li>
+                <li>JPA : add support for multi-field join syntax in JPQL FROM clause</li>
+                <li>JPA : update to handling of JPQL range when just first result set</li>
+                <li>RDBMS : fix for SQLServer schema name problem (Shanyu Zhao)</li>
+                <li>RDBMS : add support for using FetchPlan when querying over "complete-table" candidate (previous just retrieved primary key)</li>
+                <li>RDBMS : improvement in process to determine class name when no subclasses known about, to avoid SQL</li>
+                <li>RDBMS : support for persisting Double type into SQLServer FLOAT datastore type (Shuaishai Nie)</li>
+                <li>JSON : fix to retrieval of objects in query so that application-identity cases have id assigned</li>
+                <li>MongoDB : add support for query ordering being processed in the datastore (Marcin Jurkowski))</li>
+                <li>Rename "google-collections" plugin to "guava"</li>
+                <li>JDO : distribute jdo-api 3.1-rc1</li>
+                <li>Some other bug fixes and minor improvements</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

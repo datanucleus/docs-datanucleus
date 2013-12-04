@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 2.0 M2 Released">
+            <p>
+                <b>September 11th 2009</b>- DataNucleus Access Platform 2.0 ("Bohr") Milestone 2 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 2.0 Milestone 2</i> includes the following changes
+            </p>
+            <ul>
+                <li>Addition of control over the Locale used for logging messages</li>
+                <li>Add support for "embedded='true'" to mean embed the field - so the user doesn't have to
+                    specify the 'embedded' element also</li>
+                <li>Bug fix to handling of embedded collections</li>
+                <li>Fix to generic query compilation for words starting "new"</li>
+                <li>Fix to JDOQL compilation of subquery FROM clause</li>
+                <li>Fix to the attach of nested embedded objects</li>
+                <li>Improvements to the query results cache to allow pinning/unpinning and to not validate</li>
+                <li>Fix to JTA handling introduced in M1 release</li>
+                <li>Add support for "detachAllOnRollback"</li>
+                <li>Removal of unnecessary flush on 1-1 relation</li>
+                <li>Bug fix to usage when invoked path has "+" symbol</li>
+                <li>Addition of plugin for persistence of primary JodaTime types, and simple querying for RDBMS</li>
+                <li>Cache : Support for pinning/unpinning of query results with Memcache/javax.cache</li>
+                <li>Enhancer : Bug fix to return code from enhancer when run from command line</li>
+                <li>JPA : Support for JPA "extended persistence context"</li>
+                <li>JPA : Fix to use of @EmbeddedId in extended persistence context</li>
+                <li>JPA : Support for optional attribute of @ManyToOne</li>
+                <li>LDAP : Support for persistence of recursive object graph to hierarchical structure</li>
+                <li>RDBMS : Addition of support for persistence to Oracle TimesTen datastore (Anton Troshin)</li>
+                <li>RDBMS : JDOQL2 support for "SELECT this" queries, and DISTINCT</li>
+                <li>RDBMS : JDOQL2 support for temporal queries</li>
+                <li>RDBMS : JDOQL2 support for subqueries</li>
+                <li>RDBMS : JPQL2 support for subqueries</li>
+                <li>RDBMS : JPQL2 support for bulk update/delete by query</li>
+                <li>RDBMS : SQL API fixes to cater for composite PKs and ordering of expressions</li>
+                <li>RDBMS : Improvements to choice of whether to use UNION or discriminator for inheritance
+                    detection</li>
+                <li>RDBMS : Some fixes to handling of temporal types to add more flexibility</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

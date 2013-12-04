@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0.4 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.0.4 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_0_4.html';</script>
+		        <script language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Dec 10th 2011</b>- DataNucleus Access Platform 3.0.4 ("Newton") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 3.0.4</i> includes the following changes over 3.0.3
+            </p>
+            <ul>
+                <li>AccessPlatform : drop support for ZIP distributions for db4o and NeoDatis datastores</li>
+                <li>AccessPlatform : add Maven POM artifacts for main AccessPlatform combinations (JDO-RDBMS, JPA-RDBMS, etc)</li>
+                <li>Add ability to turn off Metadata support for XML or annotations, for performance</li>
+                <li>Parameterise all persistence property names for easy referencing</li>
+                <li>Split support for java.awt geometry types into a separate plugin, and complete support for persisting in String form</li>
+                <li>Improve startup process so that NucleusContext, PluginManager are more modular, and so that
+                    JPA doesn't create multiple working contexts</li>
+                <li>SchemaTool : improvement to class resolution process when not forking the JVM process</li>
+                <li>Support for Atomikos transaction manager (Matthew Adams)</li>
+                <li>Support batching of L2 cache updates</li>
+                <li>Support L2 cache "mode" to determine which classes are cacheable (JPA "sharedCache.Mode")</li>
+                <li>RDBMS : Improvement to handling of result classes when single column selected</li>
+                <li>RDBMS : Support for embedded inherited objects (likely part of JDO3.1/3.2)</li>
+                <li>MongoDB : fix to handling of bidirectional relations when using IDENTITY strategy</li>
+                <li>HBase : fix problem in table management</li>
+                <li>Cache : support for javax.cache v0.3+ (in datanucleus-cache v3.1.0, while support for the earlier
+                    version is in datanucleus-cache v3.0)</li>
+                <li>Eclipse : update to the plugin to move API to general preferences and drop the enhancer "type"
+                    since it was not being used</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

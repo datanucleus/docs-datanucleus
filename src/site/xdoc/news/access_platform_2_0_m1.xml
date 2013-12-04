@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 2.0 M1 Released">
+            <p>
+                <b>July 30th 2009</b>- DataNucleus Access Platform 2.0 ("Bohr") Milestone 1 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 2.0 Milestone 1</i> includes the following changes
+            </p>
+            <ul>
+                <li>Addition of plugin for persistence to HBase (HADOOP) datastores</li>
+                <li>Allow query execution in separate thread to allow for cancel/timeout hooks</li>
+                <li>Change default for non-transactional read/write to true for JDO</li>
+                <li>Support atomic non-transactional write persist/delete operations</li>
+                <li>Support for in-memory evaluation of queries with variables</li>
+                <li>Support for in-memory evaluation of queries with List.get(), and ranges using parameters</li>
+                <li>Drop support for various extensions that were standardised during version 1.1 timeframe</li>
+                <li>Split query cache into 3 components : generic compilation, datastore compilation
+                    and query results. Added API for managing caching of query results (using JDO or JPA).</li>
+                <li>Internal changes to implementation of StoreManager making it even easier to provide
+                    support for new datastores</li>
+                <li>Bug fix for annotation of unmapped columns in JDO</li>
+                <li>Refactor all legacy query classes into own package for removal during 2.0 timeline</li>
+                <li>Bug fix to JDO Metadata "index" when unique flag not defined</li>
+                <li>RDBMS : Fix to COMPLETE_TABLE inheritance when used with JDOQL2</li>
+                <li>RDBMS : Change default auto-start mechanism to "None"</li>
+                <li>RDBMS : JDOQL2 support for input params with multiple columns</li>
+                <li>RDBMS : JDOQL2 support for List.get()</li>
+                <li>RDBMS : JDOQL2 support for range defined with input parameters</li>
+                <li>RDBMS : JDOQL2/JPQL2 support for views</li>
+                <li>RDBMS : Revised handling of nullability on joins</li>
+                <li>RDBMS : Support for table creation with columns having default of NULL</li>
+                <li>RDBMS : Support for specifying the order of columns in DDL</li>
+                <li>Much internal refactoring has also been performed to remove unneeded components
+                    or to simplify the API's for things needed in the 2.0 timeline. Any use of internal
+                    API's by applications will likely need changes.</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

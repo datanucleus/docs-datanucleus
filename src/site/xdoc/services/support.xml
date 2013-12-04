@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Support</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Support">
+            <p>
+                DataNucleus is Open Source software. It is provided by a focussed team of highly experienced 
+                individuals to perform complex operations. Whilst it is Open Source and an amount of support can
+                be obtained from the community for supporting deployment of such a technology, companies often
+                wish to have something more specialised from people who know the product inside out.
+            </p>
+            <p>
+                DataNucleus can provide a level of support to meet your requirements, and rather than having
+                fixed off-the-shelf arrangements we prefer to tailor them to your needs. Below we outline some
+                typical options that could suit your needs. Please contact us to discuss details.
+            </p>
+            <ul>
+                <li><i>General Support</i> for the most common issues on API usage, defect reporting and bug 
+                    fixing. It's available for free and on availability on our online forums though
+                    has absolutely no guarantee of availability. If you want to receive support when
+                    it is needed, then consider the options below</li>
+                <li><i>Incident Support</i> for dedicated support for a single incident.</li>
+                <li><i>Bronze/Gold Support</i> for dedicate support covering multiple incidents over an extended
+                    period.</li>
+            </ul>
+            <p>
+                These are detailed below.
+                <a href="mailto:support@datanucleus.com">Contact Us</a> for details.
+            </p>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th width="120">General<br/>Support</th>
+                    <th width="120">Incident<br/>Support</th>
+                    <th width="120">Bronze<br/>Support</th>
+                    <th width="120">Gold<br/>Support</th>
+                </tr>
+                <tr>
+                    <td>Software supported</td>
+                    <td><a href="http://www.datanucleus.org/products/accessplatform">AccessPlatform</a></td>
+                    <td><a href="http://www.datanucleus.org/products/accessplatform">AccessPlatform</a></td>
+                    <td><a href="http://www.datanucleus.org/products/accessplatform">AccessPlatform</a></td>
+                    <td><a href="http://www.datanucleus.org/products/accessplatform">AccessPlatform</a></td>
+                </tr>
+                <tr>
+                    <td>Support via Public Forum</td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                </tr>
+                <tr>
+                    <td>Support via Email</td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                </tr>
+                <tr>
+                    <td>Support via Phone</td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                </tr>
+                <tr>
+                    <td>Usage Support</td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                </tr>
+                <tr>
+                    <td>Design Support</td>
+                    <td><img src="../images/icon_warning_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                </tr>
+                <tr>
+                    <td>Priority Bug Fix</td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                </tr>
+                <tr>
+                    <td>New Feature Support</td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_error_sml.gif" border="0" alt=""/></td>
+                    <td><img src="../images/icon_success_sml.gif" border="0" alt=""/></td>
+                </tr>
+                <tr>
+                    <td>Languages</td>
+                    <td>English</td>
+                    <td>English, Spanish</td>
+                    <td>English, Spanish</td>
+                    <td>English, Spanish</td>
+                </tr>
+                <tr>
+                    <td>Support Days</td>
+                    <td>N/A</td>
+                    <td>Mon-Fri</td>
+                    <td>Mon-Fri</td>
+                    <td>Mon-Fri</td>
+                </tr>
+                <tr>
+                    <td>Max Response Time</td>
+                    <td>No limit</td>
+                    <td>3 days</td>
+                    <td>2 days</td>
+                    <td>2 days</td>
+                </tr>
+                <tr>
+                    <td>Number of incidents</td>
+                    <td>N/A</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Support validity</td>
+                    <td>N/A</td>
+                    <td>1 month</td>
+                    <td>6 months</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>Price (without tax)</td>
+                    <td>Free</td>
+                    <td>£300</td>
+                    <td>£1050 [1]</td>
+                    <td>£2000 [2]</td>
+                </tr>
+            </table>
+            <ul>
+                <li>[1] subsequent incidents charged at £230 each</li>
+                <li>[2] subsequent incidents charged at £210 each</li>
+            </ul>
+            <p><b>Note that all amounts are specified in GBP (symbolised by the £ symbol)</b></p>
+            <br/>
+            <p>
+                It should be noted that DataNucleus support is "offered" by the likes of OpenLogic.
+                They <b>do not</b> have access to DataNucleus committers, nor any DataNucleus experience, and
+                that aside they charge a lot more for such support than what we do. You cannot get better value
+                and a higher level of DataNucleus experience than from us.
+            </p>
+        </section>
+    </body>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0.6 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.0.6 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_0_6.html';</script>
+		        <script language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Jan 29th 2012</b>- DataNucleus Access Platform 3.0.6 ("Newton") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 3.0.6</i> includes the following changes over 3.0.5
+            </p>
+            <ul>
+                <li>Fix to clear/removeAll methods of backed SCOs for non-RDBMS datastores (e.g GAE)</li>
+                <li>Fix to embedded inheritance mapping treatment of members</li>
+                <li>Add code for generic type converter, compatible with JPA2.1 converters</li>
+                <li>Fix to JPA @EmbeddedId when used in a relation</li>
+                <li>Add validation of "jdbc-type" to only accept valid values</li>
+                <li>Allow for custom scanning for annotated classes (Ales Justin)</li>
+                <li>JDO3.1 : add check for invalid javax.jdo persistence properties</li>
+                <li>JDO3.1 : add security check on PMF.getManagedClasses calls</li>
+                <li>JPA extension : add annotation to support specification of column "position"</li>
+                <li>JPA2.1 : support stored procedure API</li>
+                <li>RDBMS : add support for serialisation of query results</li>
+                <li>RDBMS : fix use of JDOQL cast/instanceof for embedded inherited fields</li>
+                <li>MongoDB : support nondurable identity</li>
+                <li>Excel : support nondurable identity</li>
+                <li>Excel : support embedded PK fields</li>
+                <li>Excel : drop support for extension "sheet" and use standard only now</li>
+                <li>ODF : support embedded PK fields</li>
+                <li>ODF : drop support for extension "sheet" and use standard only now</li>
+                <li>HBase : fix reuse of HTable so we can use HBase 0.90.1+</li>
+                <li>HBase : dont allow table creation/validation if persistence properties not set</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

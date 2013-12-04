@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Events</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Events">
+            <p>
+                DataNucleus is an open source project and, as such, we do not have resources for regularly presenting
+                DataNucleus at conferences etc. On occasion however we will present DataNucleus when it is of 
+                relevance to a particular subject matter, and some company in that field invites us to present. 
+                Below are some of the presentations that we have made on JPOX/DataNucleus.
+                <b>If you or your company are interested in DataNucleus presenting at a particular conference
+                you could sponsor us to do this. Please contact us for details</b>
+            </p>
+            <table>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Presenter</th>
+                    <th>Title</th>
+                    <th>Downloads</th>
+                </tr>
+                <tr>
+                    <td>JavaHispano PodCast 2010</td>
+                    <td>Oct 21, 2010</td>
+                    <td></td>
+                    <td>Andy Jefferson</td>
+                    <td></td>
+                    <td><a href="http://www.javahispano.org/contenidos/es/javahispano_podcast__094__introduccion_a_datanucleus_entrevista_a_andy_jefferson/?menuId=JH_PODCASTS" target="_blank">JavaHispano Podcast</a></td>
+                </tr>
+                <tr>
+                    <td>2nd International Conference on LDAP,<br/>
+                        LDAPCon 2009</td>
+                    <td>Sep 20-21, 2009</td>
+                    <td>Portland, OR</td>
+                    <td>Stefan Seelmann</td>
+                    <td>Java LDAP Persistence with DataNucleus</td>
+                    <td><a href="LdapCon2009_Seelmann_DataNucleus_Paper.pdf"><img src="../images/downloads/pdf.gif" border="0" alt=""/></a> |
+                        <a href="LdapCon2009_Seelmann_DataNucleus_Example.zip"><img src="../images/downloads/zip.gif" border="0" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td>db4o User Conference 2008,<br/>
+                        ICOODB 2008</td>
+                    <td>Mar 12-14, 2008</td>
+                    <td>Berlin</td>
+                    <td>Andy Jefferson</td>
+                    <td>Use of Standardised APIs with db4o</td>
+                    <td><a href="jpox-db4o_icoodb_2008.pdf"><img src="../images/downloads/pdf.gif" border="0" alt=""/></a> |
+                        <a href="jpox-db4o-icoodb-1.0-src.zip"><img src="../images/downloads/zip.gif" border="0" alt=""/></a></td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</document>

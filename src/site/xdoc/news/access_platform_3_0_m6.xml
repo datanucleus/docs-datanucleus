@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0 M6 Released">
+            <p>
+                <b>July 10th 2011</b>- DataNucleus Access Platform 3.0 ("Newton") Milestone 6 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including relational, web-based, map-based, and documents.
+                <i>Version 3.0 Milestone 6</i> includes the following changes
+            </p>
+            <ul>
+                <li>Added the ability to persist transient objects as a way of updating existing persistent objects
+                    (application identity only).</li>
+                <li>Added persistence property for control over what is detached (for APIs without fetch groups)</li>
+                <li>Fix to delete of a detached object</li>
+                <li>Fix to SortedSet use of comparator in detaching</li>
+                <li>Evict entries from the query cache when objects of the candidate type are updated/deleted/persisted</li>
+                <li>Fix to use of Collection.add so that it checks on contains() before performing any action</li>
+                <li>Change to make non-transactional operations as not "queued"</li>
+                <li>Allow "detach-on-close" to be run non-transactional</li>
+                <li>Add support for object identity translators for the key value</li>
+                <li>Enhancer : add support for custom detach field access behaviour</li>
+                <li>JPA : Add support for JPA2.1 EMF.unwrap, Cache.unwrap</li>
+                <li>JPA : Set "RetainValues" to default to true for cleaner user feedback</li>
+                <li>JPA : Various fixes around metamodel methods, and exception handling</li>
+                <li>REST : Fix to respect "persistence-unit" definition like it did in v2</li>
+                <li>RDBMS : Initial support for SQLite</li>
+                <li>RDBMS : Fully implements JDOQL String.startsWith(str, int) for Derby, MSSQL</li>
+                <li>RDBMS : Fix Derby handling of composite indexes</li>
+                <li>RDBMS : Fix to make use of connection pool properties</li>
+                <li>MongoDB : Fix to use of IDENTITY fields</li>
+                <li>MongoDB : Fix to authentication handling</li>
+                <li>Many other bug fixes and clean ups</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

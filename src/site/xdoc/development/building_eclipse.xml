@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Building with Eclipse</title>
+    </properties>
+
+    <body>
+        <section name="Building DataNucleus with Eclipse">
+            <p>
+                DataNucleus can be easily developed using Eclipse 3.2+ (Eclipse classic, or RCP/Plugin - you 
+                need a version that supports "plugin development").
+                You also require JDK 1.6 and an SVN plug-in for Eclipse (Subclipse or Subversive).
+            </p>
+            <p>
+                To develop DataNucleus using Eclipse you need to checkout the DataNucleus projects from SVN. 
+                It's highly recommended to use a new Eclipse Workspace for DataNucleus projects.
+            </p>
+
+            <subsection name="Importing DataNucleus from SVN using Team Project Set">
+                <p>
+                    The quickest way to start is via the <i>Team Project Set</i> Eclipse feature. 
+                    You need to download one of the below files and in Eclipse go to 
+                    "File" -> "Import" -> "Team" -> "Team Project Set", then select the file downloaded and then 
+                    "Finish".
+                </p>
+                <ul>
+                    <li><a href="datanucleus-eclipse-projectSet.psf">File for Subeclipse</a></li>
+                    <li><a href="datanucleus-eclipse-projectSet-subversive.psf">File for Subversive</a></li> 
+                </ul>
+                <p>
+                    Once importing has finished, you can develop DataNucleus.
+                </p>
+            </subsection>
+
+            <subsection name="Importing DataNucleus from SVN">
+                <p>
+                    Assuming that you dont have DataNucleus already checked out from SVN, in Eclipse go to
+                    "File" -> "Import" -> "Other" -> "Checkout Projects from SVN", and select the projects in SVN
+                    that you want to import. Repeat the process for all projects that you want to work with.
+                </p>
+                <p>
+                    Once you have all of these projects imported then all can be built and you can develop DataNucleus.
+                </p>
+            </subsection>
+
+            <subsection name="Importing Checked-Out DataNucleus">
+                <p>
+                    Assuming that you already have DataNucleus checked out from SVN, in Eclipse go to 
+                    "File" -> "Import" -> "Existing Projects" and specify the location where you have, for example, 
+                    DataNucleus "core". This will then import the already created Eclipse project for "core".
+                </p>
+                <p>
+                    Once you have all of these projects imported then all can be built and you can develop DataNucleus.
+                </p>
+            </subsection>
+        </section>
+    </body>
+</document>

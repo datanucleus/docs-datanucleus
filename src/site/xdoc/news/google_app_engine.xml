@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="Google AppEngine for Java released, using DataNucleus">
+            <p>
+                <b>Apr 7th 2009</b> - Google AppEngine for Java is released.
+                Google AppEngine for Java provides persistence to their BigTable-based Datastore using
+                DataNucleus, via a new DataNucleus plugin (written by Google with assistance from 
+                DataNucleus). AppEngine provides access to both JDO and JPA APIs allowing developers 
+                to port across their existing data access layer.
+                You can read more on this <a href="http://code.google.com/appengine/">here</a>.
+            </p>
+            <a href="http://code.google.com/appengine/"><img src="../images/companies/appengine.png" border="0" alt=""/></a>
+            <p>
+                <i>"Congratulations to Google on realising the power and potential of the DataNucleus
+                    architecture. This is a major demonstration of the structure we spent the last several
+                    years putting in place. In this case Google are leveraging it to provide persistence 
+                    to cloud-based applications, providing cloud users with the power of both JDO and JPA, 
+                    hence avoiding accusations of lock in to proprietary APIs. Not only do Google
+                    provide access to both APIs but in this release they are actually pushing the 
+                    JDO API, as a further demonstration that the JDO API, whilst maintaining 
+                    its superiority via <a href="http://db.apache.org/jdo" target="_blank">Apache JDO</a>, 
+                    is very much alive and kicking."</i>
+            </p>
+            <p>
+                <i>"We wish them well in their new direction and look forward to future collaboration to 
+                    further extend and improve the DataNucleus product offering."</i>
+            </p>
+            <p>
+                - Andy Jefferson (DataNucleus).
+            </p>
+        </section>
+    </body>
+</document>

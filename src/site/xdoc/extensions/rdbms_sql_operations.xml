@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Plugins : RDBMS SQL Operations</title>
+    </properties>
+
+    <body>
+        <section name="Plugins : RDBMS SQL Operations Support">
+            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+            <p>
+                DataNucleus is developed as a plugin-driven framework and one of the components that is 
+                pluggable is the support for JDOQL/JPQL operations in the "new" query mechanism. 
+                DataNucleus provides support for all major operations typically handling them internally
+                but occasionally handing off to an SQL function where one is more appropriate. However
+                the codebase is structured so that you could add on support for your own easily enough
+            </p>
+            <p>
+                The following sections describe how to create your own SQL Operation plugin for DataNucleus.
+            </p>
+            <subsection name="Interface">
+                <p>
+                    Any SQL operation plugin will need to implement <i>org.datanucleus.store.rdbms.sql.operation.SQLOperation</i>
+                    <a href="http://www.datanucleus.org/javadocs/store.rdbms/latest/org/datanucleus/store/rdbms/sql/operation/SQLOperation.html" target="_blank"><img src="../images/javadoc.gif" alt=""/></a>
+                    So you need to implement the following interface
+                </p>
+                <source>
+import org.datanucleus.store.rdbms.sql.method;
+
+public interface SQLOperation
+{
+    /**
+     * Return the expression for this SQL function.
+     * @param expr Left hand expression
+     * @param expr2 Right hand expression
+     * @return The SQL expression for the operation
+     */
+    public SQLExpression getExpression(SQLExpression expr, SQLExpression expr2);
+}</source>
+                <br/>
+            </subsection>
+
+            <subsection name="Implementation">
+                <p>
+                    So there is only one method to provide in your implementation. The arguments to this are
+                </p>
+                <ul>
+                    <li>The expression on the left hand side of the operation. So if you have 
+                        <i>{expr1} {operation} {expr2}</i> then the first argument will be <i>{expr1}</i></li>
+                    <li>The expression on the right hand side of the operation. So if you have 
+                        <i>{expr1} {operation} {expr2}</i> then the first argument will be <i>{expr2}</i></li>
+                </ul>
+                <p>
+                    So if we wanted to support <i>modulus (%)</i> (so something like <b>expr1 % expr2</b>)
+                    and wanted to use the SQL function "MOD" to provide this then we define our class as
+                </p>
+                <source><![CDATA[
+package mydomain;
+
+import java.util.ArrayList;
+
+import org.datanucleus.exceptions.NucleusException;
+import org.datanucleus.store.rdbms.sql.operation.SQLOperation;
+import org.datanucleus.store.rdbms.sql.expression.SQLExpression;
+import org.datanucleus.store.rdbms.sql.expression.NumericExpression;
+
+public class MyModOperation implements SQLOperation
+{
+    public SQLExpression getExpression(SQLExpression expr, SQLExpression expr2)
+    {
+        ArrayList args = new ArrayList();
+        args.add(expr);
+        args.add(expr2);
+        return new NumericExpression("MOD", args);
+    }
+}]]></source>
+                <p>
+                    So in this implementation when the user includes <i>{expr1} % {expr2}</i>
+                    this is translated into the SQL <b>MOD({expr1}, {expr2})</b> which will certainly
+                    work on some RDBMS. Obviously you could use this extension mechanism to support a
+                    different underlying SQL function.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Plugin Specification">
+                <p>
+                    So we now have our custom SQL method and we just need to make this into a DataNucleus 
+                    plugin. To do this you simply add a file <i>plugin.xml</i> to your JAR at the root. 
+                    The file <i>plugin.xml</i> should look like this
+                </p>
+                <source><![CDATA[
+<?xml version="1.0"?>
+<plugin id="mydomain" name="DataNucleus plug-ins" provider-name="My Company">
+    <extension point="org.datanucleus.store.rdbms.sql_operation">
+        <sql-operation name="mod" datastore="hsql"
+            evaluator="mydomain.MyModOperation"/>
+    </extension>
+</plugin>]]></source>
+                <p>
+                    Note that you also require a MANIFEST.MF file as per the
+                    <a href="plugins.html">Plugins Guide</a>.
+                </p>
+                <p>
+                    So we defined calls to an operation <i>mod</i> for the datastore "hsql" to use our 
+                    evaluator. Simple! Whenever this operation is encountered in a query from then on for
+                    the HSQL database it will use our operation evaluator.
+                </p>
+            </subsection>
+        </section>
+    </body>
+</document>

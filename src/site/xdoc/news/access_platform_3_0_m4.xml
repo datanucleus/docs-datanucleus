@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0 M4 Released">
+            <p>
+                <b>May 9th 2011</b>- DataNucleus Access Platform 3.0 ("Newton") Milestone 4 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including relational, web-based, map-based, and documents.
+                <i>Version 3.0 Milestone 4</i> includes the following changes
+            </p>
+            <ul>
+                <li>Fix to embedded field handling for RDBMS where an embedded object has a relation to a
+                    non-embedded object.</li>
+                <li>Allow property methods (getter/setter) to be final and still handle persistence</li>
+                <li>Fix to single-string parse for JDOQL/JPQL when using multiple subqueries</li>
+                <li>Fix to JDOQL parse for typesafe query to allow for null literal</li>
+                <li>Fix to persistence of Date as String for those datastores that need it</li>
+                <li>Fix to corner case on retrieval by identity to check inheritance via discriminator</li>
+                <li>Provide mechanism for allowing persistence properties to be specifiable on the EM/PM</li>
+                <li>SchemaTool : support additional properties on delete/validate, and allow DDL for RDBMS on delete</li>
+                <li>Support use with JBoss 6.0</li>
+                <li>OSGi : Fix to handle invalid MANIFEST.MF in external bundles</li>
+                <li>Enhancer : fix to javaagent enhancer to use the same class-loader for all enhancement</li>
+                <li>Enhancer : fix minor FindBugs issues in enhanced code</li>
+                <li>JPA : Fix to caseof mapped-superclass with first child entity using SINGLE_TABLE</li>
+                <li>JPA : Fix to not cache query results with any query since JPA has no mechanism to free them</li>
+                <li>JPA : Fixes to ManagedType.getXXXAttributes</li>
+                <li>JPA : Improvement to Validator exceptions</li>
+                <li>JPA : Fix to selection of aggregate and use of query.getResultList()</li>
+                <li>JDO : Fix to annotation reader for ArrayIndexOutOfBounds</li>
+                <li>MongoDB : Support persistence of Enum fields</li>
+                <li>MongoDB : Fix persistence of Date fields</li>
+                <li>MongoDB : Fix to make sure all SCO fields are wrapped</li>
+                <li>HBase : Change JDOQL/JPQL to evaluate simple filters in the datastore</li>
+                <li>HBase : Support persistence of Enum fields</li>
+                <li>HBase : Fix persistence of Date fields</li>
+                <li>HBase : Fix to make sure all SCO fields are wrapped</li>
+                <li>Excel : Support persistence of Map fields</li>
+                <li>ODF : Support persistence of Map fields</li>
+                <li>ODF : Support SchemaTool creation</li>
+                <li>RDBMS : Fix to use of range in caching of queries</li>
+                <li>RDBMS : Support JDOQL String.equalsIgnoreCase()</li>
+                <li>RDBMS : Fix to when query results are read-in (i.e at commit, rather than at flush) matching
+                    when any connection is closing</li>
+                <li>RDBMS : Fix JDOQL/JPQL to check for reference to non-persistent field</li>
+                <li>RDBMS : Support for subqueries in result and order clauses of JDOQL/JPQL queries</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

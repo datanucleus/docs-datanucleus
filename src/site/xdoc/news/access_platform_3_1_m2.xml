@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.1 M2 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.1 M2 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_1_m2.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>April 6th 2012</b>- DataNucleus Access Platform 3.1 ("Kepler") Milestone 2 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including relational, web-based, map-based, and documents.
+                <i>Version 3.1 Milestone 2</i> includes the following changes
+            </p>
+            <ul>
+                <li>Merge "store.rdbms.xmltypeoracle" plugin into DataNucleus "store.rdbms" jar</li>
+                <li>Merge "management" plugin into DataNucleus "core" jar</li>
+                <li>Add Statistics API for persistence, adding on number of reads/writes etc to what JMX already provided.
+                    Supported by RDBMS, MongoDB, HBase, Excel, ODF, JSON, LDAP, NeoDatis plugins</li>
+                <li>Change Set proxy to not do clear+addAll on an update</li>
+                <li>Fix bug in removeAll() method of Set proxies</li>
+                <li>Fix to persist of 1-N uni FK Lists to not to update the FK even though already set (less SQL calls)</li>
+                <li>Fix to delete of N side of a 1-N bidir catering for relation not loaded</li>
+                <li>JPA : fix to javax.persistence.XXXDataSource persistence properties</li>
+                <li>Cache : move support for latest version of javax.cache into "core". Old version of javax.cache is
+                    now in the "cache" plugin as "jcache".</li>
+                <li>Provide helper method to do ordering of candidates based on a JPA style ordering clause, usable
+                    by all non-RDBMS store plugins</li>
+                <li>Remove old ObjectXXXConverter code now that we are using TypeConverter API</li>
+                <li>RDBMS : Fix to Oracle Range handling to cater for related class with same named fields</li>
+                <li>RDBMS : Support for NCHAR/NVARCHAR jdbc types (MSSQL)</li>
+                <li>RDBMS : Support inheritance check on input identity for abstract base class where we have 
+                    multiple possible subclasses</li>
+                <li>MongoDB : support for using query input parameters in the datastore evaluation (Chris Rued)</li>
+                <li>MongoDB : support for query COUNT in the datastore (Chris Rued)</li>
+                <li>MongoDB : Fix to version field update process</li>
+                <li>MongoDB : Support for enum persisted as numeric</li>
+                <li>MongoDB : Support for inherited embedded objects</li>
+                <li>MongoDB : Support for inheritance determination using pm.getObjectById/em.find</li>
+                <li>Excel : Support for enum persisted as numeric</li>
+                <li>Excel : Fix to version field update process</li>
+                <li>ODF : Support for enum persisted as numeric</li>
+                <li>ODF : Fix to version field update process</li>
+                <li>HBase : Support for enum persisted as numeric</li>
+                <li>HBase : Fix to version field update process</li>
+                <li>JSON : Fix to version field update process</li>
+                <li>Various minor bug fixes and improvements</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

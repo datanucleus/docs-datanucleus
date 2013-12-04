@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0.1 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.0.1 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_0_1.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Aug 27th 2011</b>- DataNucleus Access Platform 3.0.1 ("Newton") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 3.0.1</i> includes the following changes over 3.0.0
+            </p>
+            <ul>
+                <li>Improved support for DataNucleus in non-Eclipse OSGi environments (Alexey Sushko)</li>
+                <li>Separate synchronisation of PM/EM access into separate class so not used for majority of use-cases</li>
+                <li>Support for embedded "null-indicator" column/value for JPA (extension)</li>
+                <li>Fix bug in detach() of newly-persistent object that was causing NPE on commit (JPA)</li>
+                <li>Change access to StoreManager to better facilitate data federation</li>
+                <li>JSON : minor change to URL processing</li>
+                <li>RDBMS : Support for JDOQL "JDOHelper.getVersion()"</li>
+                <li>RDBMS : Support SQLServer with table names having spaces</li>
+                <li>RDBMS : Improve support for indexes under SQLServer</li>
+                <li>ODF : Support retrieval of interface field</li>
+                <li>Excel : Support retrieval of interface field</li>
+                <li>MongoDB : Support retrieval of interface field</li>
+                <li>JDO JCA : Better support for JBoss 7</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

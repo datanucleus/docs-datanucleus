@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 1.1.0 Released">
+            <p>
+                <b>Feb 23rd 2009</b>- DataNucleus Access Platform 1.1.0 ("Rutherford") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 1.1</i> includes the following changes over 1.1 M4
+            </p>
+            <ul>
+                <li>Add support for JDK1.6+ enhancement during the compilation.</li>
+                <li>Add support for persistence to Open Document Format (ODF) spreadsheets.</li>
+            </ul>
+            <p>
+                <i>Version 1.1</i> includes the following over 1.0
+            </p>
+            <ul>
+                <li>Requires JDK1.5+</li>
+                <li>Support for in-memory evaluation of JDOQL/JPQL subqueries</li>
+                <li>Support for JDO2 PersistenceManager proxy</li>
+                <li>Support for JDO2.3 Metadata API</li>
+                <li>Support for JDO2.3 Enhancer API</li>
+                <li>Support for JDO2.3 query timeout/cancel API</li>
+                <li>Support for JDO2.2 transaction isolation control</li>
+                <li>JPA2 preview support for datastore cache, @OrderColumn, standardised properties, and various
+                    new query methods</li>
+                <li>RDBMS : rewrite of locate, fetch and some select SQL using a new SQL API</li>
+                <li>RDBMS : start of an alternative JDOQL implementation using a new SQL API</li>
+                <li>RDBMS : Support for persistence of interface fields into a single column</li>
+                <li>ODF : Support for persistence/querying of OpenDocument format spreadsheets</li>
+                <li>XML : Added support for 1-1, 1-N, M-N relations</li>
+                <li>XML : Added many improvements in configurability</li>
+                <li>LDAP : Support for various new mapping configurations.</li>
+                <li>LDAP : Support for native querying</li>
+                <li>Support for enhancement as part of the compilation process (JDK1.6+)</li>
+                <li>Dropped support for NucleusSQL query language</li>
+                <li>Dropped support for BCEL enhancer</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

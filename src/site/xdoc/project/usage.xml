@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Usage</title>
+    </properties>
+
+    <body>
+        <section name="Usage">
+            <p>
+                DataNucleus is used by many companies and groups in their own software.
+                Below are a short subset of those publicisable.
+            </p>
+            <table>
+                <tr>
+                    <td width="33%"><a href="http://code.google.com/appengine/" target="_blank"><img src="../images/usage/appengine.gif" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://www.vmforce.com/" target="_blank"><img src="../images/usage/vmforce.png" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://www.redbooks.ibm.com/abstracts/REDP4512.html?Open" target="_blank"><img src="../images/usage/tivoli.gif" border="0" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td width="33%"><a href="http://www.yahoo.com" target="_blank"><img src="../images/companies/yahoo.gif" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://www.romaframework.org" target="_blank"><img src="../images/usage/roma.jpg" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://www.projectocolibri.com/" target="_blank"><img src="../images/usage/colibri.jpg" border="0" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td width="33%"><a href="http://www.jfire.org" target="_blank"><img src="../images/usage/jfire.png" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://www.metamicro.com" target="_blank"><img src="http://www.datanucleus.com/images/companies/metamicro.jpg" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://www.travelmuse.com" target="_blank"><img src="http://www.datanucleus.org/images/companies/travelmuse.png" border="0" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td width="33%"><a href="http://www.hp.com" target="_blank"><img src="http://www.datanucleus.org/images/companies/hp.jpg" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://www.livestream.com" target="_blank"><img src="http://www.datanucleus.org/images/companies/livestream.jpg" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://ge.geglobalresearch.com/" target="_blank"><img src="http://www.datanucleus.org/images/companies/ge.png" border="0" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td width="33%"><a href="http://www.stepaheadsoftware.com" target="_blank"><img src="../images/companies/stepahead.gif" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://www.ridgetop-group.com/" target="_blank"><img src="../images/companies/ridgetop.jpg" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://www.seismicexchange.com/" target="_blank"><img src="../images/companies/seismicexchange.gif" border="0" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td width="33%"><a href="http://hive.apache.org/" target="_blank"><img src="../images/companies/apache_hive.jpg" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://isis.apache.org/" target="_blank"><img src="../images/companies/apache_isis.png" border="0" alt=""/></a></td>
+                    <td width="33%"><a href="http://www.bmc.com" target="_blank"><img src="../images/companies/bmc.gif" border="0" alt=""/></a></td>
+                </tr>
+                <tr>
+                    <td width="33%"><a href="http://www.lockheedmartin.com/" target="_blank"><img src="../images/companies/lockheed.png" border="0" alt=""/></a></td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</document>

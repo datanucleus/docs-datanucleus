@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0.3 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.0.3 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_0_3.html';</script>
+		        <script language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Nov 5th 2011</b>- DataNucleus Access Platform 3.0.3 ("Newton") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 3.0.3</i> includes the following changes over 3.0.2
+            </p>
+            <ul>
+                <li>Rewrite of significant parts of the L2 cache to now store a map of field values rather than a
+                    detached persistable object. This means no locking is needed.</li>
+                <li>Fix to metadata identification of some Object and interface field relation types</li>
+                <li>Fix to query result cache evict-by-class process</li>
+                <li>Fix to generic compilation of implicit query parameters when repeated in the query</li>
+                <li>Change ObjectStringConverter/ObjectLongConverter to use generics for type safety</li>
+                <li>OSGi : Add export version to many MANIFEST entries</li>
+                <li>JDO : Add support for use of javax.validation</li>
+                <li>JDO : Respect persistence-unit "validation-mode" setting</li>
+                <li>JPA : Respect persistence-unit "validation-mode" setting</li>
+                <li>JPA : Add DataNucleus variant of orm.xsd so we can add on vendor specifics</li>
+                <li>Cache : Fix to use of Memcached caches so they can handle all "identity" types</li>
+                <li>Cache : Support Cacheonix as a query result cache</li>
+                <li>RDBMS : Fix to PostgreSQL ESCAPE syntax support</li>
+                <li>RDBMS : Fix to JDOQL "equalsIgnoreCase" handling</li>
+                <li>RDBMS : Fix to query serializeRead to only apply it when in a transaction</li>
+                <li>MongoDB : Support multitenancy via discriminator</li>
+                <li>MongoDB : Only evaluate query filter in-memory if not done completely in-datastore</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

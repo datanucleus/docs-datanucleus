@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>org.datanucleus.core</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Core">
+            <p>
+                <i>datanucleus-core</i> is the base persistence implementation of DataNucleus. 
+                All other DataNucleus projects build on top of this, and so it is the pre-requisite for any 
+                DataNucleus-enabled application.
+            </p>
+            <ul>
+                <li>Compile Requirement : JDK1.5+</li>
+                <li>Runtime Requirement : JDK1.5+</li>
+                <li>Latest version : 3.2.9</li>
+                <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCCORE?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
+                <li>License : <a href="../../project/license.html">Apache 2</a></li>
+                <li>Javadocs : <a href="../../javadocs/core/3.2">3.2</a>,
+                               <a href="../../javadocs/core/3.1">3.1</a>,
+                               <a href="../../javadocs/core/3.0">3.0</a>,
+                               <a href="../../javadocs/core/2.2">2.2</a>,
+                               <a href="../../javadocs/core/2.1">2.1</a>,
+                               <a href="../../javadocs/core/2.0">2.0</a>,
+                               <a href="../../javadocs/core/1.1">1.1</a>,
+                               <a href="../../javadocs/core/1.0">1.0</a></li>
+                <li>Source : <a href="https://sourceforge.net/p/datanucleus/code/HEAD/tree/platform/core/trunk/">latest</a></li>
+            </ul>
+
+            <subsection name="Source Code">
+                <p>trunk can be checked out as follows</p>
+<source>svn co https://svn.code.sf.net/p/datanucleus/code/platform/core/trunk core</source>
+                <br/>
+            </subsection>
+
+            <subsection name="Download">
+                <p><i>datanucleus-core</i> is downloadable as following</p>
+                <ul>
+                    <li><b>Releases</b> <a href="http://repo1.maven.org/maven2/org/datanucleus/datanucleus-core/" target="_blank">from Maven Central</a></li>
+                    <li><b>Nightly builds</b> <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus/datanucleus-core/" target="_blank">from Maven2 Nightly Repository</a></li>
+                </ul>
+                <br/>
+            </subsection>
+
+            <subsection name="Dependencies">
+                <p>
+                    <i>datanucleus-core</i> is dependent on the following packages of software. 
+                    Click on the name to go to the home page for that software to download it. 
+                </p>
+                <table>
+                    <tr>
+                        <th>Package</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th width="150">Required?</th>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.ibiblio.org/maven/javax.jdo/jars/" target="_blank">JDO</a></td>
+                        <td>3.0+</td>
+                        <td>Apache JDO API.</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://jakarta.apache.org/log4j/" target="_blank">log4j</a></td>
+                        <td>1.2.x+</td>
+                        <td>Apache Log4J Logging framework.</td>
+                        <td>No. Use it or JDK1.4 logging</td>
+                    </tr>
+                </table>
+                <br/>
+                <br/>
+            </subsection>
+        </section>
+
+        <section name="Core : Persistence Process">
+            <p>
+                <i>datanucleus-core</i> provides the framework for the persistence process.
+                Whether you are using <i>optimistic</i> or <i>pessimistic</i> transactions governs which persistence
+                process is followed.
+            </p>
+            <subsection name="Optimistic">
+                <p>
+                    With the <i>optimistic</i> route, when a user tries to persist an object, the object will not
+                    reach the datastore immediately. ObjectManager will call <i>StateManager.makePersistent</i>
+                    and this will run reachability on the object to make this object and any reachable persistable
+                    objects provisionally persistent. This means that their lifecycle state is PERSISTENT_NEW, but
+                    they haven't been flushed to the datastore.
+                </p>
+                <p>
+                    When a user tries to delete an object, the object will not be removed from the datastore
+                    immediately. ObjectManager will call <i>StateManager.deletePersistent</i> and this will run 
+                    reachability on the object to make this object and any reachable persistable
+                    objects provisionally deleted. This means that their lifecycle state is PERSISTENT_DELETED, but
+                    they haven't been flushed to the datastore.
+                </p>
+                <p>
+                    When the user calls <i>flush</i> or <i>tx.commit</i> then the list of objects with outstanding
+                    changes will be processed one by one. Any outstanding persists will effect a call to 
+                    <i>StorePersistenceHandler.insertObject</i> for each object. Similarly any oustanding deletes
+                    will effect a call to <i>StorePersistenceHandler.deleteObject</i> for each object. The same goes
+                    for any updates.
+                    Obviously within each datastore persistence handler they can detect that the related object(s) 
+                    are provisionally persistent or provisionally deleted and so not to cascade to them.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Pessimistic">
+                <p>
+                    With the <i>pessimistic</i> route, when a user tries to persist an object, the object <b>will</b>
+                    reach the datastore immediately. ObjectManager will call <i>StateManager.makePersistent</i>
+                    and this will change the lifecycle state to PERSISTENT_NEW, and will relay the call to 
+                    <i>StorePersistenceHandler.insertObject</i>. It is the responsibility of this method to 
+                    handle cascading to related objects.
+                </p>
+                <p>
+                    When a user tries to delete an object, the object <b>will be</b> removed from the datastore
+                    immediately. ObjectManager will call <i>StateManager.deletePersistent</i> and this will change
+                    the lifecycle state to PERSISTENT_DELETED, and relay the call to 
+                    <i>StorePersistenceHandler.deleteObject</i>. It is the responsibility of this method to handle
+                    cascading to related objects.
+                </p>
+                <p>
+                    When the user calls <i>flush</i> or <i>tx.commit</i> then the list of objects with outstanding
+                    changes will be processed one by one. In general for the <i>pessimistic</i> route there will
+                    be little to do here.
+                </p>
+                <br/>
+            </subsection>
+        </section>
+
+        <section name="Logging">
+            <p>
+                DataNucleus provides flexibility with logging. You can choose whether
+                to use the popular <a href="http://jakarta.apache.org/log4j/" target="_blank">Log4J</a> 
+                or JDK1.4 logging for example. Moreover, DataNucleus allows you to log messages to various 
+                categories, allowing users to filter the logged messages by these categories.
+            </p>
+
+            <subsection name="org.datanucleus.util.NucleusLogger">
+                <p>
+                    The <b>NucleusLogger</b> class provides the central registry of logging categories used by 
+                    DataNucleus. It provides an accessor for retrieving a particular logging category -- used as 
+                    follows
+                </p>
+                <source>NucleusLogger.METADATA.info("my log message");</source>
+                <p>
+                    There are the various categories defined in the DataNucleusLogger class. 
+                    Only add new ones after discussion with other developers. 
+                    NucleusLogger will decide if Log4J, or JDK14 logging or other should be used - you don't 
+                    need to do anything in your code.
+                </p>
+            </subsection>
+
+            <subsection name="Logging messages">
+                <p>
+                    NucleusLogger allows you to log messages at various severity levels. These are <b>DEBUG</b>, <b>INFO</b>, 
+                    <b>WARN</b>, <b>ERROR</b>, <b>FATAL</b>. Each message is logged at a particular level to a 
+                    <b>category</b> (as described above).
+                </p>
+                <p>
+                    To log a message is very simple. See below for a few examples
+                </p>
+                <source>
+    NucleusLogger.DATASTORE_SCHEMA.info("my log message");
+    NucleusLogger.DATASTORE_SCHEMA.error("my log message");
+    if (NucleusLogger.DATASTORE_SCHEMA.isDebugEnabled())
+    {
+        NucleusLogger.DATASTORE_SCHEMA.debug("my log message at debug level");
+    }</source>
+                <p>
+                    Please refer to 
+                    <a href="http://jakarta.apache.org/log4j/docs/manual.html" target="_blank">Log4J Manual</a> 
+                    for details of what you can do with a Log4J Logger To see how you can use the logging from 
+                    a users perspective, refer to the User Logging Guide for 
+                    <a href="http://www.datanucleus.org/products/accessplatform/logging.html">DataNucleus AccessPlatform</a>.
+                </p>
+            </subsection>
+
+            <subsection name="Using other logging mechanisms">
+                <p>
+                    DataNucleus provides an interface for allowing other types of logging if you so wish.
+                </p>
+                <br/>
+                <br/>
+            </subsection>
+        </section>
+
+        <section name="Internationalisation of Messages">
+            <p>
+                The DataNucleus system is internationalisable hence messages (to log files or exceptions) can
+                be displayed in multiple languages. Currently DataNucleus contains localisation files in the 
+                default locale (English), but can be extended easily by adding localisationfiles in languages 
+                such as Spanish, French, etc. The internationalisation operates around the 
+                <i>org.datanucleus.util.Localiser</i> class that is responsible for generating the 
+                messages in the specified locale. Each class needs to instantiate a Localiser
+                <source>
+private static final Localiser LOCALISER=Localiser.getInstance("org.datanucleus.store.Localisation",
+                    MyClass.class);</source>
+                and then output messages via
+                <source>
+LOCALISER.msg("012345", schemaName, autoStartMechanism)</source>
+                The messages themselves are contained in a file for each package. For example, with the above example,
+                we have org.datanucleus.store.Localisation.properties. This contains entries such as
+                <source>
+012345=Initialising Schema "{0}" using "{1}" auto-start option</source>
+                So the 2 parameters specified in the LOCALISER.msg call are inserted into the message. The 
+                language-specific parts are always contained in the Localisation.properties file.
+                To extend the current system to internationalise in, for example, Spanish you would add a file 
+                org.datanucleus.store.Localisation_es.properties and add an entry such as
+                <source>
+012345=Inicializando la esquema "{0}" con la opción de empezar "{1}"</source>
+                With this file installed, anybody running an application where the JDK is running in Spanish as 
+                default locale would see the above Spanish message. It is intended to include such files in a 
+                future release.
+            </p>
+            <p>
+                If you want to extend this to another language and contribute the files for your language
+                you need to find all files "Localisation.properties" and provide an alternative variant.
+                The key ones are
+            </p>
+            <ul>
+                <li>core : org/datanucleus/Localisation.properties</li>
+                <li>api.jdo : org/datanucleus/api/jdo/Localisation.properties</li>
+                <li>store.rdbms : org/datanucleus/store/rdbms/Localisation.properties</li>
+            </ul>
+            <p>
+                <b>Note that the second argument used in constructing the Localiser is important for OSGi. It has
+                to be a class in the same OSGi bundle as the Localisation.properties file</b>
+            </p>
+            <p>
+                You will find alternates in Spanish already present named "Localisation_es.properties", so if
+                you wanted to create a French localisation then provide "Localisation_fr.properties".
+            </p>
+            <p>
+		    	Further references: <a target="_blank" href="http://oss.software.ibm.com/icu4j/">International Components for Unicode for Java</a>
+            </p>
+            <br/>
+            <br/>
+        </section>
+
+        <section name="Query Compilation and Evaluation">
+            <p>
+                DataNucleus provides a <i>generic</i> query processing engine. It provides for compilation
+                of <b>string-based query languages</b>. Additionally it allows <i>in-memory evaluation</i>
+                of these queries. This is very useful when providing support for new datastores which either
+                don't have a native query language and so the only alternative is for DataNucleus to
+                evaluate the queries, or where it will take some time to map the compiled query to the
+                equivalent query in the native language of the datastore.
+            </p>
+
+            <subsection name="Input Processing">
+                <p>
+                    When a user invokes a query, using the JDO/JPA APIs, they are providing either
+                </p>
+                <ul>
+                    <li>A single-string query made up of keywords and clauses</li>
+                    <li>A query object that has the clauses specified directly</li>
+                </ul>
+                <p>
+                    The first step is to convert these two forms into the constituent clauses. It is assumed
+                    that a string-based query is of the form
+                </p>
+                <source><![CDATA[
+SELECT {resultClause} FROM {fromClause} WHERE {filterClause}
+GROUP BY {groupingClause} HAVING {havingClause}
+ORDER BY {orderClause}]]></source>
+                <p>
+                    The two primary supported query languages have helper classes to provide this migration from
+                    the <i>single-string query form</i> into the individual clauses. These can be found in
+                    <i>org.datanucleus.query.JDOQLSingleStringParser</i>
+                    <a href="http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/query/JDOQLSingleStringParser.html" target="_blank"><img src="../../images/javadoc.gif" alt=""/></a>
+                    and <i>org.datanucleus.query.JPQLSingleStringParser</i>
+                    <a href="http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/query/JPQLSingleStringParser.html" target="_blank"><img src="../../images/javadoc.gif" alt=""/></a>
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Compilation">
+                <p>
+                    So we have a series of clauses and we want to compile them. So what does this mean?
+                    Well, in simple terms, we are going to convert the individual clauses from above into
+                    expression tree(s) so that they can be evaluated. The end result of a compilation is
+                    a <i>org.datanucleus.query.compiler.QueryCompilation</i>
+                    <a href="http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/query/QueryCompilation.html" target="_blank"><img src="../../images/javadoc.gif" alt=""/></a>
+                </p>
+                <p>
+                    So if you think about a typical query you may have
+                    <source>SELECT field1, field2 FROM MyClass</source>
+                    This has 2 result expressions - field1, and field2 (where they are each a "PrimaryExpression"
+                    meaning a representation of a field).
+                </p>
+                <p>
+                    The query compilation of a particular clauses has 2 stages
+                </p>
+                <ol>
+                    <li>Compilation into a Node tree, with operations between the nodes</li>
+                    <li>Compilation of the Node tree into an Expression tree of supported expressions</li>
+                </ol>
+                <p>
+                    and compilation is performed by a JavaQueryCompiler, so look at
+                    <i>org.datanucleus.query.compiler.JDOQLCompiler</i>
+                    <a href="http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/query/compiler/JDOQLCompiler.html" target="_blank"><img src="../../images/javadoc.gif" alt=""/></a>
+                    and <i>org.datanucleus.query.compiler.JPQLCompiler</i>
+                    <a href="http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/query/compiler/JPQLCompiler.html" target="_blank"><img src="../../images/javadoc.gif" alt=""/></a>
+                    These each have a Parser that performs the extraction of the different components of the 
+                    clauses and generation of the Node tree. Once a Node tree is generated it can then be converted
+                    into the compiled Expression tree; this is handled inside the JavaQueryCompiler.
+                </p>
+                <p>
+                    The other part of a query compilation is the
+                    <i>org.datanucleus.query.symbol.SymbolTable</i>
+                    <a href="http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/query/symbol/SymbolTable.html" target="_blank"><img src="../../images/javadoc.gif" alt=""/></a>
+                    which is a lookup table (map) of identifiers and their value. So, for example, an input
+                    parameter will have a name, so has an entry in the table, and its value is stored there.
+                    This is then used during evaluation.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Evaluation : In-datastore">
+                <p>
+                    Intuitively it is more efficient to evaluate a query within the datastore since it means
+                    that fewer actual result objects need instantiating in order to determine the result objects.
+                    To evaluate a compiled query in the datastore there needs to be a compiler for taking the
+                    generic expression compilation and converting it into a native query. Additionally it should
+                    be noted that you aren't forced to evaluate the whole of the query in the datastore, maybe
+                    just the filter clause. This would be done where the datastore native language maybe only
+                    provides a limited amount of query capabilities. For example with db4o we evaluate the
+                    <i>filter</i> and <i>ordering</i> in the datastore, using their SODA query language.
+                    The remaining clauses can be evaluated on the resultant objects <i>in-memory</i> (see below).
+                    Obviously for a datastore like RDBMS it should be possible to evaluate the whole query
+                    in-datastore.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Evaluation : In-memory">
+                <p>
+                    Evaluation of queries in-memory assumes that we have a series of "candidate" objects.
+                    These are either user-input to the query itself, or retrieved from the datastore. We then
+                    use the in-memory evaluator
+                    <i>org.datanucleus.query.evaluator.memory.InMemoryExpressionEvaluator</i>
+                    <a href="http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/query/evaluator/memory/InMemoryExpressionEvaluator.html" target="_blank"><img src="../../images/javadoc.gif" alt=""/></a>.
+                    This takes in each candidate object one-by-one and evaluates whichever of the query clauses
+                    are desired to be evaluated. For example we could just evaluate the filter clause.
+                    Evaluation makes use of the values of the fields of the candidate objects (and related objects)
+                    and uses the SymbolTable for values of parameters etc. Where a candidate fails a particular
+                    clause in the filter then it is excluded from the results.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Results">
+                <p>
+                    There are two primary ways to return results to the user.
+                </p>
+                <ul>
+                    <li>Instantiate all into memory and return a (java.util.)List. This
+                        is the simplest, but obviously can impact on memory footprint.</li>
+                    <li>Return a wrapper to a List, and intercept calls so that you can load objects
+                        as they are accessed. This is more complex, but has the advantage of not
+                        imposing a large footprint on the application.</li>
+                </ul>
+                <p>
+                    To make use of the second route, consider extending the class
+                    <i>org.datanucleus.store.query.AbstractQueryResult</i> and implement the key methods.
+                    Also, for the iterator, you can extend 
+                    <i>org.datanucleus.store.query.AbstractQueryResultIterator</i>.
+                </p>
+                <br/>
+                <br/>
+            </subsection>
+        </section>
+
+        <section name="Second-Class Objects">
+            <p>
+                When a persistable class is persisted and has a field of a second-class type (Collection, Map,
+                Date, etc) then DataNucleus needs to know when the user calls operations on it to change the 
+                contents of the object. To do this, at the first reference to the field once enlisted 
+                in a transaction, DataNucleus will replace the field value with a <i>proxy wrapper</i> 
+                wrapping the real object. This has no effect for the user in that the field is still castable to 
+                the same type as they had in that field, but all operations are intercepted.
+            </p>
+
+            <subsection name="Container fields : Caching of Values">
+                <p>
+                    By default when a container field is replaced by a second-class object (SCO) wrapper it will 
+                    be enabled to cache the values in that field. This means that once the values are loaded in 
+                    that field there will be no need to make any call to the datastore unless changing the 
+                    container. This gives significant speed ups when compared to relaying all calls via the 
+                    datastore. You can change to <b>not</b> use caching by setting either
+                </p>
+                <ul>
+                    <li>Globally for the PersistenceManagerFactory - this is controlled by setting the PMF property 
+                        <b>org.datanucleus.cache.collections</b>. Set it to false to pass through to the datastore.</li>
+                    <li>For the specific Collection/Map - add a MetaData &lt;collection&gt; or &lt;map&gt; extension 
+                        <i>cache</i> setting it to false to pass through to the datastore.</li>
+                </ul>
+                <p>
+                    This is implemented in a typical SCO proxy wrapper by using the SCOUtils method 
+                    <i>useContainerCache()</i> which determines if caching is required, and by having a method
+                    <i>load()</i> on all proxy wrapper container classes.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Container fields : Lazy Loading">
+                <p>
+                    JDO and JPA provide mechanisms for specifying whether fields are loaded lazily (when required)
+                    or whether they are loaded eagerly (when the object is first met). DataNucleus follows these 
+                    specifications but also allows the user to override the lazy loading for a SCO container. For 
+                    example if a collection field was marked as being part of the default fetch group it should be 
+                    loaded eagerly which means that when the owning object is instantiated the collection is 
+                    loaded up too. If the user overrides the lazy loading for that field in that situation to make 
+                    it lazy, DataNucleus will instantiate the owning object and instantiate the collection but 
+                    leave it marked as "to be loaded" and the elements will be loaded up when needed. 
+                    You can change the lazy loading setting via
+                </p>
+                <ul>
+                    <li>Globally for the PersistenceManagerFactory - this is controlled by setting the PMF 
+                        property <b>org.datanucleus.cache.collections.lazy</b>. Set it to true to use lazy loading,
+                        and set it to false to load the elements when the collection/map is initialised.</li>
+                    <li>For the specific Collection/Map - add a MetaData &lt;collection&gt; or &lt;map&gt; extension 
+                        <b>cache-lazy-loading</b>. Set it to true to use lazy loading, and false to load once at 
+                        initialisation.</li>
+                </ul>
+                <br/>
+            </subsection>
+
+            <subsection name="Containg fields : Queuing operations">
+                <p>
+                    When DataNucleus is using an optimistic transaction it attempts to delay all datastore operations
+                    until <i>commit</i> is called on the transaction or <i>flush</i> is called on the
+                    PersistenceManager/EntityManager. This implies a change to operation of SCO proxy wrappers
+                    in that they must <b>queue</b> up all mutating operations (add, clear, remove etc) until
+                    such a time as they need to be sent to the datastore. All SCO proxy wrappers have a List of
+                    queued operations for this purpose.
+                </p>
+                <p>
+                    All code for the actual queued operations are stored under <i>org.datanucleus.sco.queued</i>.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Simple SCO interceptors">
+                <p>
+                    There are actually two sets of SCO wrappers in DataNucleus. The first set provide lazy loading,
+                    queueing, etc etc. The second set are simple wrappers that intercept operations and mark the
+                    field as dirty in the StateManager. This second set are for use with datastores such as 
+                    <i>db4o</i> that don't utilise backing stores and just want to know when the field is dirty
+                    and hence should be written.
+                </p>
+                <p>
+                    All code for the simple SCO wrappers are stored under <i>org.datanucleus.sco.simple</i>.
+                </p>
+            </subsection>
+        </section>
+
+        <section name="Enhancer">
+            <p>
+                DataNucleus relies on classes implementing <i>PersistenceCapable</i>, and <i>Detachable</i>. 
+                Users could clearly do this manually but we provide the byte-code enhancement option. The 
+                DataNucleus Enhancer is structured to firstly determine from the input which classes are 
+                required to be enhanced, and secondly to enhance each class using the selected 
+                <b>ClassEnhancer</b>. DataNucleus has the <i>JDOClassEnhancer</i> providing enhancement to the
+                JDO bytecode enhancement contract.
+            </p>
+
+            <subsection name="JDOClassEnhancer">
+                <p>
+                    ASM is very lightweight and operates using the same pattern as a SAX Parser and much faster. 
+                    It uses a Visitor pattern. First the class is visited, then fields and methods, and finally an 
+                    "end" point where you can add on any new fields/methods etc. The <i>JDOClassEnhancer</i> uses the 
+                    <i>JDOClassVisitor</i> to obtain information about a class to be enhanced and adds on all 
+                    required fields/methods.
+                </p>
+                <p>
+                    A very useful utility when developing with ASM is its "Bytecode Outline" Eclipse plugin.
+                    To install it simply add an "Eclipse Update site" to your Eclipse config
+                    as "http://download.forge.objectweb.org/eclipse-update/" and the name "ObjectWeb".
+                    You then install the "Bytecode Outline" plugin. Once you have it installed select
+                    "Window" -> "Show View" -> "Other" -> "Java : Bytecode". This provides a window showing the 
+                    Java bytecode for the class being edited. If you click on the "ASM" button on this window it 
+                    shows you the ASM commands you would need to create the class, or a particular method/field!.
+                    This makes developing new <i>ASMClassMethod</i> implementations a doddle - just create a 
+                    class with the method you want generating and then cut and paste the ASM code in.
+                </p>
+                <ul>
+                    <li><a href="http://asm.objectweb.org/index.html" target="_blank">ASM Home Page</a></li>
+                    <li><a href="http://asm.objectweb.org/current/doc/javadoc/user/index.html" target="_blank">ASM 4.0 Javadocs</a></li>
+                    <li><a href="http://www.onjava.com/pub/a/onjava/2004/10/06/asm1.html" target="_blank">OnJava : ASM</a></li>
+                    <li><a href="http://www-128.ibm.com/developerworks/java/library/j-cwt05125/index.html" target="_blank">IBM Alphaworks : ASM</a></li>
+                </ul>
+            </subsection>
+
+            <subsection name="Decompiling Classes">
+                <p>
+                    If you ever need to check the byte-code enhanced class for correctness you can always 
+                    decompile it back to the Java file. This can be done with a bytecode decompiler such as
+                    <a href="http://java.decompiler.free.fr/">JD</a>. 
+                    Unpack the JD-GUI download so that you have the following
+                </p>
+                <ul>
+                    <li>jd-gui</li>
+                    <li>readme.txt</li>
+                </ul>
+                <p>
+                    and invoke the following command
+                </p>
+                <source>jd-gui</source>
+                <p>
+                    and select "Open", choosing a class file, and it shows the java code
+                </p>
+            </subsection>
+        </section>
+
+    </body>
+</document>

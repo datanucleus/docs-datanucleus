@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0.2 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.0.2 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_0_2.html';</script>
+		        <script language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Oct 1st 2011</b>- DataNucleus Access Platform 3.0.2 ("Newton") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 3.0.2</i> includes the following changes over 3.0.1
+            </p>
+            <ul>
+                <li>Fix to L2 caching of fields of types Map&lt;PC, NonPC&gt;, Map&lt;NonPC, PC&gt;</li>
+                <li>Fix to allow plugin registry to load plugins from "https"</li>
+                <li>Fix to allow recursion in flushing</li>
+                <li>JDO : Fix to @Embedded processing</li>
+                <li>JPA : Allow specification of jdbc type for a field (extension)</li>
+                <li>RDBMS : Fixes to SQL generation for collections of interfaces where FK per implementation</li>
+                <li>RDBMS : Fix to clear/remove in maps where formed using foreign key</li>
+                <li>RDBMS : Support for in-datastore handling of query range for Oracle, DB2</li>
+                <li>RDBMS : Support for MultiTenancy using a discriminator</li>
+                <li>RDBMS : Support for specification of JDBC driver properties with connection pools</li>
+                <li>RDBMS : Fix to boolean usage in some queries</li>
+                <li>HBase : Fix to not serialise the PK by default</li>
+                <li>HBase : Support for "schema evolution : addition of new fields"</li>
+                <li>HBase : Fix to query handling of "!="</li>
+                <li>MongoDB : Support for multiple "AND" clauses on the same field when querying</li>
+                <li>MongoDB : Support for "schema evolution : addition of new fields"</li>
+                <li>Cache : Support for use of Cacheonix as an L2 cache</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

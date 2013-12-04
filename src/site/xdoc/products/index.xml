@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Products</title>
+    </properties>
+
+    <body>
+        <section name="Products">
+        <p>
+            DataNucleus provide a series of products to cover the whole data access, analysis, management and 
+            governance domain. We build our products using a plugin-based architecture leading to shorter time 
+            to market and improved testability of components.         
+        </p>
+        <p>
+            <img src="../images/products_overview.gif" usemap="#products_map" alt=""/>
+            <map id="products_map" name="products_map">
+                <area href="accessplatform.html" shape="rect" coords="64,64,425,169" alt=""/>
+            </map>
+        </p>
+        </section>
+    </body>
+</document>

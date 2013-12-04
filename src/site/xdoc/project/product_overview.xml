@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>DataNucleus : Product Overview</title>
+    </properties>
+
+    <body>
+        <section name="Product Overview">
+            <p>
+                DataNucleus is designed as a heterogenous tool for storage and management of data, using accepted
+                standard APIs. DataNucleus 1.0 supports persistence/retrieval using the JDO1 (JSR 0012), 
+                JDO2.0/JDO2.1 (JSR0243) and JPA 1 (JSR 0220).
+            </p>
+            <p>
+                There are 4 main aspects of persistence that users should be aware of when utilising DataNucleus. 
+                These are
+            </p>
+            <ul>
+                <li><b>Persistence Definition</b> : the means of defining how your Java classes are to be persisted
+                into the datastore</li>
+                <li><b>Persistence API</b> : the programmatic API used for persistence of your objects</li>
+                <li><b>Query Language</b> : the query language by which you can find objects due to certain criteria.</li>
+                <li><b>Datastore</b> : the datastore you are persisting to</li>
+            </ul>
+            <p>
+                It is the aim of DataNucleus to allow use of all "Persistence Definition"s to be used with all
+                "Persistence API"s and to be queried with all "Query Language"s. This gives you, the user, a significant
+                flexibility in being able to pick the best parts of these 3 aspects. With respect to the datastore where
+                the objects are persisted, the JDO API provides datastore agnostic capability, whereas JPA doesn't so you
+                if this aspect is important to you then you should use the JDO API.
+            </p>
+            <p>
+                <img src="../images/product_overview.jpg" border="0" alt="Overview"/>
+            </p>
+
+            <subsection name="Persistence Definitions">
+                <p>
+                    DataNucleus provides support for JDO XML and annotations, as well as JPA XML and annotations.
+                </p>
+            </subsection>
+
+            <subsection name="Persistence APIs">
+                <p>
+                    DataNucleus provides access to the JDO and JPA API's for persisting/retrieving Java objects.
+                    It is hoped to provide additional interfaces in the future, including the Data Mining (JSR 73) 
+					interface.
+                </p>
+                <p>
+                    <img src="../images/product_complex-data-access.jpg" border="0" alt="Complex Data Access"/>
+                </p>
+            </subsection>
+
+            <subsection name="Query Languages">
+                <p>
+                    DataNucleus currently supports querying of persisted objects in RDBMS datastores using JDOQL, JPQL,
+                    and SQL. It supports querying of objects in db4o datastores using JDOQL and DB4O Native
+                    queries. It supports querying of objects in LDAP and Excel datastores using JDOQL.
+                    Future releases will also support MDX and XQuery. Where we feel a query language offers 
+					something we will provide for it.
+                </p>
+                <p>
+                    <img src="../images/product_data-retrieval.jpg" border="0" alt="Data Retrieval"/>
+                </p>
+                <p>
+                    Queries are usually projected in tabular form (row and column) for operational data, and 
+					projected in multidimensional format (multiple axis of data) when dealing with 
+					analytic/aggregated data.
+                </p>
+                <p>
+                    <img src="../images/product_data-projection.jpg" border="0" alt="Data Projection"/>
+                </p>
+            </subsection>
+
+            <subsection name="Datastores">
+                <p>
+                    DataNucleus currently supports persisting of data to a large selection of Relational Database 
+					Management Systems (RDBMS), as well as to DB4O (in DataNucleus 1.2 or later), LDAP,
+                    and Excel documents.
+                    It is planned to extend this in the future to support various file-based storage mechanisms, 
+					as well as OLAP databases.
+                </p>
+                <p>
+                    It is also planned to incorporate pull/push of data from/to multiple datasources in DataNucleus 
+					allowing a single view of the enterprise data enabling the creation of canonical model across 
+					the organization.
+                </p>
+                <p>
+                    <img src="../images/product_data-everywhere.jpg" border="0" alt="Data Everywhere"/>
+                </p>
+            </subsection>
+
+            <subsection name="Capability Enhancement">
+                <p>
+                    DataNucleus has a pluggable framework, allowing extensions to its capabilities using OSGi plugins.
+                    You can utilise many available DataNucleus plugins when persisting your Java objects using 
+                    DataNucleus. Moreover you can even provide your own DataNucleus plugins to enhance its 
+                    capabilities further.
+                </p>
+            </subsection>
+        </section>
+
+    </body>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 2.0 M4 Released">
+            <p>
+                <b>December 7th 2009</b>- DataNucleus Access Platform 2.0 ("Bohr") Milestone 4 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 2.0 Milestone 4</i> includes the following changes
+            </p>
+            <ul>
+                <li>Require use of a JPA2 jar when used for JPA persistence</li>
+                <li>Change handling of JDO @PrimaryKey to not require @Persistent for non-default persistent fields</li>
+                <li>Change generic compilation of subqueries, particularly for JPQL, to allow for multi-level
+                    primary expression</li>
+                <li>Change generic compilation of JPQL "LOCATE" to handle multi-level primary expressions</li>
+                <li>Fix to JDO PersistenceManagerProxy for named queries (typo)</li>
+                <li>Provide framework for bulk object retrieval (available to datastore-specific plugins)</li>
+                <li>Fix handling of query parameters to allow for use of parameters in subqueries</li>
+                <li>Respect "RetainValues" setting for objects that are deleted (so field values can be retained
+                    after the transaction commits, and the object is deleted).</li>
+                <li>Add support for PMF/EMF singleton pattern, via persistence property</li>
+                <li>Add support for case-insensitive persistence properties (previously all were case sensitive)</li>
+                <li>JPA2 : Support for "Metamodel" API</li>
+                <li>JPA2 : Support for TypedQuery</li>
+                <li>JPA2 : Support for Bean Validation</li>
+                <li>JPA : Fix to runtime enhancer</li>
+                <li>Enhancer : add ability to turn on/off capabilities</li>
+                <li>Enhancer : add ability to generate PK classes (including composite)</li>
+                <li>Enhancer : add ability to turn off generation of default constructor</li>
+                <li>Enhancer : add short form of "persistenceUnit" argument</li>
+                <li>RDBMS : Change to use "JPQL2" implementation by default since it passes the JPA1 TCK</li>
+                <li>RDBMS : Fix to JDOQL2/JPQL2 for case where multiple classes share a table and use a discriminator</li>
+                <li>RDBMS : Support for embedded fields in JDOQL2/JPQL2</li>
+                <li>RDBMS : Query range not working for Oracle now fixed</li>
+                <li>RDBMS : Fix to FROM join in JPQL2 for second and subsequent joins</li>
+                <li>RDBMS : Add support to JPQL2 for subquery FROM clauses with multiple joins</li>
+                <li>RDBMS : Fix support in JPQL2 for "COUNT (DISTINCT ...)"</li>
+                <li>RDBMS : Support for JPA2 "TYPE" in JPQL2 implementation</li>
+                <li>RDBMS : Support for "StringExpression == EnumLiteral" in JDOQL2/JPQL2</li>
+                <li>RDBMS : Change to "persistenceUnit" option of SchemaTool to allow short form</li>
+                <li>RDBMS : Fix for read of null BLOB with Oracle</li>
+                <li>Spatial : fix to M2 dependencies to make some optional</li>
+                <li>HBase : add security handling to cater for issues in HBase itself</li>
+                <li>Maven2 plugin : Support for enhancement generating PKs, and turn on/off default constructor</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

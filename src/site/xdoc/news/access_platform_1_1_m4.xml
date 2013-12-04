@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 1.1 M4 Released">
+            <p>
+                <b>Feb 1st 2009</b>- DataNucleus Access Platform 1.1 ("Rutherford") Milestone 4 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 1.1 Milestone 4</i> includes the following changes
+            </p>
+            <ul>
+                <li>Upgrade to NeoDatis 1.9RC1</li>
+                <li>Upgrade to latest JDO 2.3 snapshot including Metadata API</li>
+                <li>Add accessor for available query extensions</li>
+                <li>Support for in-memory evaluation of JDOQL/JPQL subqueries</li>
+                <li>Support for JDO2.3 Metadata API</li>
+                <li>Bug fix to allow registration of persistent classes when loaded by ClassLoader</li>
+                <li>Support for QueryResult toArray/subList</li>
+                <li>RDBMS : Make "request" operations pluggable allowing override of INSERT/UPDATE/DELETE etc</li>
+                <li>RDBMS : Replacement of field fetch process using new SQL API</li>
+                <li>RDBMS : Replacement of object locate process using new SQL API</li>
+                <li>RDBMS : Provision of potential replacement JDOQL implementation, using new SQL API</li>
+                <li>XML : Fix for fields marked transient to not be persisted</li>
+                <li>XML : Provide default XmlID/XmlIDREF based on relation metadata information</li>
+                <li>XML : Fix to implement fetch of fields</li>
+                <li>XML : Support for use of schema/table/column</li>
+                <li>XML : Bug fix for XmlIDREF for collection fields</li>
+                <li>LDAP : Support for hierarchical mapping of relations</li>
+                <li>LDAP : Support for wrappers of primitives</li>
+                <li>LDAP : Support for map/array/collection of Strings/primitives to multivalued LDAP components</li>
+                <li>Dropped support for BCEL enhancer</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

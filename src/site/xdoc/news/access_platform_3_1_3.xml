@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus AccessPlatform 3.1.3 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus AccessPlatform 3.1.3 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_1_3.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Nov 12th 2012</b>- DataNucleus Access Platform 3.1.3 ("Kepler") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
+                <i>Version 3.1.3</i> includes the following changes over 3.1.2
+            </p>
+            <ul>
+                <li>JPA : Fix missing space after filter in criteria query filter/having clauses</li>
+                <li>JPA : Support Criteria parameter() method without name.</li>
+                <li>Fix to JTA transaction manager locator constructors</li>
+                <li>Add support for L2 caching of embedded/serialised fields (disabled by default)</li>
+                <li>Change process for update of an object in L2 cache to avoid concurrent access</li>
+                <li>LDAP : Fix to concurrent modification exception</li>
+                <li>MongoDB : update "native"/"auto" value generator to use "increment" when using numeric PK</li>
+                <li>HBase : make use of Table pool (Simon Kelly)</li>
+                <li>RDBMS : Clean up DeleteRequest code</li>
+                <li>RDBMS : Support for specifying indexes/unique-keys on map join tables</li>
+                <li>Updates to all plugins to place upper limit on Maven dependency versions (pre-3.2 releases)</li>
+                <li>Various other bug fixes and minor improvements</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

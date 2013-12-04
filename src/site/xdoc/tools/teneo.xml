@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Eclipse EMF persistence</title>
+    </properties>
+
+    <body>
+        <section name="Teneo : from UML/XML Schema to Relational Persistence, Persisting Eclipse EMF using DataNucleus">
+            <p>
+                Teneo is a database persistency solution for EMF using DataNucleus/JDO 2.0.
+                Teneo combines the power of the <a href="http://www.eclipse.org/emf">EMF modeling and code generation framework</a> 
+               and the power of storage, caching and querying of sophisticated object-relational mapping software such as DataNucleus.
+            </p>
+            <p>
+                Teneo allows you to start with your model (UML or XML Schema) and automatically generate the java source code and 
+                relational mappings. Teneo takes over much (or even all) of the manual work of creating relational mapping schemes. 
+            </p>
+            <p>
+                The EMF - DataNucleus Persistency solution consists of two main tools:
+            </p>
+            <ol>
+                <li>EMF - DataNucleus OR Mapper: generates object-relational mapping files from the EMF model.</li>
+                <li>EMF - DataNucleus Runtime: takes care of handling EMF specific things such as EMF collections, containment and 
+                    bi-directional relations.</li>
+            </ol>
+    
+            <subsection name="Generate OR Mapping file">
+                <p>
+                    First an EMF model has to be prepared and java source code generated using EMF. The next step is to generate the 
+                    package.jdo file. The package.jdo file describes for a object relational mapping tool how to persist java objects 
+                    to relational tables. 
+                    The package.jdo file can be generated within Eclipse by right-clicking a EMF model (ecore) file and selecting the 
+                    relevant menu item.
+                </p>
+            </subsection>
+
+            <subsection name="Runtime Layer">
+                <p>
+                    EMF objects require specific handling in relation to DataNucleus. This is mainly related to the way EMF handles 
+                    references and collections. Also the EMF resource approach requires specific DataNucleus implementations. To handle 
+                    the EMF specifics, the EMF - DataNucleus runtime layer was developed. This layer is small (about 150kb) but is essential 
+                    to get a working EMF - DataNucleus integration.
+                </p>
+                <p>
+                    The main visible component of the runtime layer is the JpoxDataStore. The JpoxDataStore controls a 
+                    PersistenceManagerFactory and a set of EPackages which are persisted using the PersistenceManagers of this 
+                    PersistenceManagerFactory. When using a PersistenceManager, behind the scenes Teneo takes care of instantiating 
+                    EMF objects and setting/getting EFeatures from the database. Teneo also handles lazy loading of ELists.
+                </p>
+            </subsection>
+
+            <subsection name="JPA/EJB3 Annotations">
+                <p>
+                    Teneo will automatically map the EMF model to an object relational representation. 
+                    However there are situations in which it makes sense to influence or control the mapping. 
+                    For this purpose Teneo supports JPA annotations in the model. 
+                    The annotations can be used to control the way the inheritance structure is mapped to the relational store 
+                    or how efeatures are mapped to database columns. 
+                    Annotations can be specified directly in your model definition or defined separately in a xml file.
+                </p>
+                <p>
+                    The JPA support has been developed in such a way that it is only required to specify annotations for those 
+                    parts of the model for which the automatic mapping logic does not result in the required behavior. For example 
+                    it is possible to specify a column annotation for one efeature in a model while all other efeatures and eclasses 
+                    are automatically handled by Teneo.
+                </p>
+            </subsection>
+
+            <subsection name="Support and information">
+                <p>
+                    Teneo is a project hosted within EMFT at <a href="http://www.eclipse.org/emft/projects/teneo/#teneo">eclipse.org</a>.
+                </p>
+                <p>
+                    Teneo can be downloaded <a href="http://www.eclipse.org/emft/downloads/?proj=teneo">here</a>.
+                </p>
+                <p>
+                    Tutorials and documentation can be found <a href="http://www.elver.org/jpox/index.html">here</a>.
+                </p>
+                <p>
+                    Support is given through the EMFT newsgroup: news://news.eclipse.org/eclipse.technology.emft.
+                </p>
+            </subsection>
+
+            <p>
+                <b>Disclaimer : DataNucleus does not provide support for nor endorse the use of Teneo. We simply provide visibility of its 
+                existence and potential benefits for your organisation.</b>
+            </p>
+        </section>
+    </body>
+</document>

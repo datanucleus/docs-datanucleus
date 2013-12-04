@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus AccessPlatform 3.1.2 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus AccessPlatform 3.1.2 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_1_2.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Sept 27th 2012</b>- DataNucleus Access Platform 3.1.2 ("Kepler") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
+                <i>Version 3.1.2</i> includes the following changes over 3.1.1
+            </p>
+            <ul>
+                <li>Fix to lookup of object inheritance level in some corner-case situations</li>
+                <li>Provide TypeConverters for persisting Serializable object as byte[] or base-64 encoded string</li>
+                <li>Fix clone of JPQL query so that "from" is cloned</li>
+                <li>Log which fields (numbers) are being attached</li>
+                <li>Complete TODO in FetchPlan code for dynamic fetch groups from PM</li>
+                <li>JDO : Fix bug in map key/value metadata handling introduced in 3.1.1</li>
+                <li>JPA : Fix bug in use of Query.getParameters when used by Spring Data JPA</li>
+                <li>XML : Fix to class loading in relation lookup</li>
+                <li>Neo4j : Fix to some JPQL queries causing exception</li>
+                <li>Neo4j : Fix to lazy load iterator for empty result condition</li>
+                <li>Neo4j : Fix to stackoverflow with bidirectional relation retrieval</li>
+                <li>Neo4j : Support persistence of arrays</li>
+                <li>Neo4j : Support persistence of serialised fields</li>
+                <li>Neo4j : Support "increment" value generator</li>
+                <li>MongoDB : Support for capped DB collections (size limit on objects of a type)</li>
+                <li>MongoDB : Fix to replica-set URL string parsing</li>
+                <li>RDBMS : Extend support for stored procedure parameters to other types</li>
+                <li>Various other bug fixes and minor improvements</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

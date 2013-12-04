@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 1.1 M2 Released">
+            <p>
+                <b>Oct 31st 2008</b>- DataNucleus Access Platform 1.1 ("Rutherford") Milestone 2 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 1.1 Milestone 2</i> includes the following changes
+            </p>
+            <ul>
+                <li>Upgrade to ASM 3.1</li>
+                <li>Upgrade to db4o 7.4 java5</li>
+                <li>Upgrade to JDO2.2 final</li>
+                <li>Provide an API for datastore replication for JDO and JPA</li>
+                <li>Improvements to L2 caching to fix problems with objects being garbage collected and returning
+                    old version of objects</li>
+                <li>Fixes to how fields are marked as loaded</li>
+                <li>Fix to handling of collections with non-RDBMS datastores so they aren't treated as serialised</li>
+                <li>Improvement to detach flag DETACH_UNLOAD_FIELDS to also remove the values from the object</li>
+                <li>Fix SQL syntax for non-ANSI joins (e.g Oracle 8i)</li>
+                <li>Remove support for NucleusSQL for RDBMS datastores</li>
+                <li>Support for sequences with H2 datastore</li>
+                <li>Extend RDBMS "update lock" to also apply to object existence check</li>
+                <li>Fix to handling of URLs with DB4O plugin</li>
+                <li>Fix to JPA handling of PostLoad callbacks</li>
+                <li>Fix to LDAP plugin so that the existence check doesnt retrieve any attributes</li>
+                <li>Fix to handling of XMLIdRef annotation with XML plugin</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

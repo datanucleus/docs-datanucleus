@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.0.5 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.0.5 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_0_5.html';</script>
+		        <script language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Jan 11th 2012</b>- DataNucleus Access Platform 3.0.5 ("Newton") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 3.0.5</i> includes the following changes over 3.0.4
+            </p>
+            <ul>
+                <li>Make use of bulk load from L2 cache on use of PM.getObjectsById</li>
+                <li>Support for override of metadata for inherited fields/properties in embedded objects</li>
+                <li>Fix to in-memory query evaluation when an order clause is null</li>
+                <li>Some clean ups for logging</li>
+                <li>Fix to default value of "datanucleus.identifier.case" which was incorrect in 3.0.4</li>
+                <li>RDBMS : dont load all query results when running non-tx when we retain the connection</li>
+                <li>RDBMS : Support for use of sql-type when there are multiple possible for a jdbc-type</li>
+                <li>RDBMS : Support various MySQL sql types such as LONGTEXT, MEDIUMBLOB etc</li>
+                <li>RDBMS : Some improved error messages</li>
+                <li>JSON : Support for enum fields</li>
+                <li>JSON : Support datastore identity</li>
+                <li>JSON : Support 1-1/1-N/M-N relations</li>
+                <li>JSON : Support field types that have long/String converters</li>
+                <li>JSON : Support versioning of objects</li>
+                <li>DB4O : Remove invalid import from OSGi info</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

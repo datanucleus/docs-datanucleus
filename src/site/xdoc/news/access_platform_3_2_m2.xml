@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 3.2 M2 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus Access Platform 3.2 M2 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_2_m2.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>January 1st 2013</b>- DataNucleus Access Platform 3.2 ("Copernicus") Milestone 2 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including relational, web-based, map-based, and documents.
+                <i>Version 3.2 Milestone 2</i> includes the following changes
+            </p>
+            <ul>
+                <li>JDO : ability to mark all classes as detachable, overriding metadata</li>
+                <li>JDO : add convenience accessor for "detachedState" of an object</li>
+                <li>JDO : provide access to the native query performed by JDOQL</li>
+                <li>JPA : add convenience accessor for "detachedState" of an object</li>
+                <li>JPA : provide access to the native query performed by JPQL</li>
+                <li>JPA : support surrogate version on a class</li>
+                <li>JPA : fix to exception throwing when using JTA in a JavaEE environment</li>
+                <li>JPA : support for JPA2.1 "Generate Schema" feature</li>
+                <li>JPA : improved logix for finding a persistence-unit with a name, and flag duplicate units with the same name</li>
+                <li>JPA : default to not add classTransformer in JavaEE environment (so user has to enable it)</li>
+                <li>Update to JMX beans definitions for compliance</li>
+                <li>Bundle (repackaged) ASM into <i>datanucleus-core</i> for cleaner usage</li>
+                <li>Fix missing "PreMainClass" for enhancer so runtime enhancement works</li>
+                <li>Moved "mapped datastores" code into RDBMS plugin (from datanucleus-core) since only used there</li>
+                <li>Add pooling for ExecutionContext and ObjectProvider objects for performance.</li>
+                <li>Fix to persist of N-1 relation with detached owner so we don't get multiple element objects</li>
+                <li>Fix to ClassLoaderImpl/MetaDataUtils to preserve ordering whilst removing dups</li>
+                <li>RDBMS : fix to use of named parameters in range clause of query</li>
+                <li>RDBMS : add statement batching to shifting process for elements in a List</li>
+                <li>RDBMS : fix to schema generation when we have "subclass-table" part way down an inheritance tree</li>
+                <li>MongoDB : improvement for polymorphic queries to make use of discriminator column and handle
+                    all in single query</li>
+                <li>MongoDB : improvement to deletion process to not reload same fields multiple times</li>
+                <li>HBase : support for Bloom filters, in-memory and various other options (Nicolas Seyvet)</li>
+                <li>Excel : make "poi-ooxml" dependency optional since not needed with XLS</li>
+                <li>Various minor bug fixes and improvements</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

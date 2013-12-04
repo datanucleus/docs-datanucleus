@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>JDO Testcase</title>
+    </properties>
+
+    <body>
+        <section name="Problem Reporting : JDO Testcase">
+            <p>
+                As described in the <a href="problem_reporting.html">Problem Reporting guide</a> to reproduce
+                problems we need something in a neutral format. Here we define our accepted format for
+                JDO usage.
+                <b>Note that By attaching a test case to DataNucleus JIRA, you hereby agree that it is a contribution 
+                    to DataNucleus under the terms of the <a href="license.html">Apache 2.0 License</a>.</b>
+            </p>
+
+            <subsection name="GitHub JUnit test, forked from DataNucleus project">
+                <table width="100%" border="0" cellpadding="2" cellspacing="2">
+                    <tr>
+                        <td style="vertical-align: middle; width: 83px;" bgcolor="#FFFFFF" align="center">
+                            <img src="../images/github.png" alt="GitHub" border="0"/>
+                        </td>
+                        <td style="vertical-align: middle; width: 100%;" bgcolor="#FFFFFF">
+                            DataNucleus provides a template JUnit GitHub project at
+                            <a href="https://github.com/datanucleus/test-jdo">datanucleus/test-jdo</a>.
+                            Please fork this and mention the location of your fork on the JIRA issue that it relates
+                            to. Note that there are two JUnit tests in the provided project, one for single-threaded
+                            and one for multi-threaded issues; use the one appropriate to your case.
+                        </td>
+                    </tr>
+                </table>
+            </subsection>
+
+            <subsection name="JUnit test built on DataNucleus test suite">
+                <p>
+                    As an alternative to the above, and where you are familiar with JUnit and are willing to look at the 
+                    <a href="http://www.datanucleus.org/development/test/unittests.html">existing DataNucleus unit tests in SVN</a>
+                    then please create a JUnit test case that utilises our existing suite of sample data etc.
+                    If you provide a testcase in this way your testcase should be a patch against current SVN trunk
+                    of the respective test suite project and it should be attached to the JIRA issue to which it relates. 
+                    To add a JUnit testcase, please follow the 
+                    <a href="../development/test/unittests.html#new_unit_test">new unit test guide</a>
+                </p>
+            </subsection>
+
+            <subsection name="Manual Testcase creation with Main.java">
+                <p>
+                    The final way is what we traditionally used to keep it build system independent and most
+                    convenient to many people. This is as follows
+                </p>
+                <ul>
+                    <li>Create a package "org.datanucleus.test"</li>
+                    <li>Add the basic persistable Java classes to this package. Please give these simple names like 
+                        A, B, C. Calling your classes names that mean something in your language will likely 
+                        mean nothing to us and so we will not have much patience trying to understand them, 
+                        hence using A, B, C etc makes more sense. Keep the number of classes to a strict minimum
+                        to demonstrate a problem.</li>
+                    <li>If using XML metadata, add the <i>package.jdo</i> to this package</li>
+                    <li>If your test case is to demonstrate a problem with DataNucleus SchemaTool or at 
+                        runtime then you need to provide a <i>datanucleus.properties</i> file containing the 
+                        PMF properties required for the datastore to demonstrate the issue. Alternatively
+                        provide a <i>persistence.xml</i> defining the datastore connection.</li>
+                    <li>If your test case is to demonstrate a problem with DataNucleus at runtime (NOT the 
+                        DataNucleus Enhancer/DataNucleus SchemaTool) you then need to
+                        <ul>
+                            <li>Write a <i>Main.java</i> and add to this package org.datanucleus.test - see 
+                                below for an example.</li>
+                            <li>Mark in the <i>Main.java</i> which line causes the error.</li>
+                            <li>Provide information about which version of which datastore should be used.</li>
+                        </ul>
+                    </li>
+                    <li>Your test case should be runnable with JDK 1.6+</li>
+                    <li>Your test case should impose no additional external dependencies.</li>
+                    <li><b>Do not</b> add lines for "System.out". Instead use NucleusLogger messages. This means that 
+                        the messages appear in the log next to the DataNucleus logged messages. "System.out" is as 
+                        much use as a chocolate teapot in the debugging process</li>
+                    <li>Your test case should have at most 4 or 5 classes. Anything more than this is unlikely to 
+                        get our attention without a prior <a href="donations.html">Donation</a>. 
+                        We do not have the time to analyse your application. Of course if you donate then we can 
+                        look at it.</li>
+                    <li><b>A testcase SHOULD NOT INCLUDE jar files, build files, log4j.properties files or any 
+                        other such environment specific stuff. A testcase should be the order of 5Kb NOT 5Mb. 
+                        Any testcase submitted with such unnecessary contents will be rejected.</b> This testcase 
+                        format is the simplest possible and the least users should do is abide by the simplicity 
+                        and just provide what is needed</li>
+                </ul>
+                <p>
+                    The above can then be put in a <b>zip</b> file and attached to the JIRA issue or Forum thread. 
+                    <b>The zip file should look like this</b>. If it doesnt then you will likely be asked to repackage it.
+                    Using something other than zip (or gz) is non-portable so not accepted.
+                </p>
+<source>
+datanucleus.properties
+org/
+org/datanucleus/
+org/datanucleus/test/
+org/datanucleus/test/MyClass1.java
+org/datanucleus/test/MyClass2.java
+org/datanucleus/test/Main.java
+org/datanucleus/test/package.jdo</source><br/>
+                <p>
+                    You can download a sample template from <a href="datanucleus-jdo-test-sample-src.zip">here</a>
+                </p>
+            </subsection>
+
+            <subsection name="Template datanucleus.properties">
+                <p>
+                    A template <i>datanucleus.properties</i> is shown below. Use this as a framework
+                </p>
+                <source><![CDATA[
+javax.jdo.option.ConnectionURL=jdbc:h2:mem:nucleus
+javax.jdo.option.ConnectionDriverName=org.h2.Driver
+javax.jdo.option.ConnectionUserName=sa
+javax.jdo.option.ConnectionPassword=
+
+datanucleus.autoCreateSchema=true
+datanucleus.autoCreateColumns=true]]></source>
+            </subsection>
+
+            <subsection name="Template Main.java for JDO">
+                <p>
+                    A template <i>Main.java</i> for JDO is shown below. Use this as a framework
+                </p>
+                <source><![CDATA[
+package org.datanucleus.test;
+
+import java.util.*;
+import javax.jdo.*;
+import org.datanucleus.util.*;
+
+public class Main
+{
+    static public void main(String[] args)
+    {
+        PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
+
+        PersistenceManager pm = pmf.getPersistenceManager();
+        Transaction tx = pm.currentTransaction();
+        try
+        {
+            tx.begin();
+
+            ... (replace this with your code to persist your objects required to reproduce the problem)
+            MyClass myobj = new MyClass("name");
+            pm.makePersistent(myobj);
+
+            tx.commit();
+        }
+        catch (Exception e)
+        {
+            NucleusLogger.GENERAL.error(">> Exception thrown persisting objects", e);
+            return;
+        }
+        finally
+        {
+            if (tx.isActive())
+            {
+                tx.rollback();
+            }
+        }
+
+        tx = pm.currentTransaction();
+        try
+        {
+            tx.begin();
+
+            ... (add your code here to perform ops to reproduce the problem)
+
+            tx.commit();
+        }
+        catch (Exception e)
+        {
+            NucleusLogger.GENERAL.error(">> Exception thrown retrieving objects", e);
+            return;
+        }
+        finally
+        {
+            if (tx.isActive())
+            {
+                tx.rollback();
+            }
+        }
+        pm.close();
+    }
+}]]></source>
+            </subsection>
+        </section>
+    </body>
+</document>

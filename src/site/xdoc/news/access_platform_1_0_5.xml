@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 1.0.5 Released">
+            <p>
+                <b>April 14th 2009</b>- DataNucleus Access Platform 1.0.5 ("Faraday") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel. It continues
+                from the Java Persistent Objects (JPOX) project.
+                <i>Version 1.0.5</i> includes the following changes
+            </p>
+            <ul>
+                <li>Bug fix so that any remaining non-transactional update when closing the PM 
+                    always goes to the datastore</li>
+                <li>Bug fix to JTA handling of afterCompletion()</li>
+                <li>Bug fix to the enhancer Ant task to allow fork=false</li>
+                <li>RDBMS: Bug fix to the SchemaTool Ant task to allow fork=false</li>
+                <li>XML : Fix to retrieval of objects where a class has no "xpath" specified.</li>
+                <li>Improvement to efficiency of EHCache contains() handling.</li>
+                <li>Bug fix to the reading of @FetchPlan annotation</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+                This is likely to be the final release on the Faraday branch.
+            </p>
+        </section>
+
+    </body>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus Access Platform 2.1 M1 Released">
+            <p>
+                <b>April 2nd 2010</b>- DataNucleus Access Platform 2.1 ("Thomson") Milestone 1 is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, db4o, LDAP, XML, and Excel.
+                <i>Version 2.1 Milestone 1</i> includes the following changes
+            </p>
+            <ul>
+                <li>Addition of plugin for persistence of javax.time (JSR0310) types</li>
+                <li>Fix to a typo in the use of ConnectionFactory when defining the datastore as a DataSource</li>
+                <li>Cleanup to process of creation of L1/L2/Query caches</li>
+                <li>Change generic query compilation expression tree bidirectional for ease of navigation</li>
+                <li>Support generic query compilation of {param}.field</li>
+                <li>Enforce JDO2 spec rules for JDOQL result/grouping/ordering clauses validity</li>
+                <li>Fix to generic query compilation of {variable}.field</li>
+                <li>Fix to generic query compilation of cast expressions</li>
+                <li>Added checks on invalid use of keywords during generic query compialtion</li>
+                <li>Fix to generic query compilation of {array}.length</li>
+                <li>Fix to use of Extent to close all iterators correctly</li>
+                <li>FIx to in-memory evaluation of queries to better handle date equality</li>
+                <li>Fix to getParent() of class/package metadata of JDO Metadata API</li>
+                <li>Fix to use of set() on ListIterator obtained from list wrapper</li>
+                <li>Fix to persistence of object with reference to the same object</li>
+                <li>RDBMS : change to use "JDOQL2" implementation by default. Use "JDOQL-Legacy" if wanting
+                    the old JDOQL implementation.</li>
+                <li>RDBMS : having expression that are not boolean should throw XXXUserException for JDOQL2</li>
+                <li>RDBMS : fix to use of parameters for range and passed in as unnamed to API</li>
+                <li>RDBMS : fix to caching of queries when using String.matches with input parameter for JDOQL2</li>
+                <li>RDBMS : fix to not create indexes for serialised field (problem on MySQL)</li>
+                <li>RDBMS : support override of datastore mapping by user plugins</li>
+                <li>RDBMS : fix to only use CROSS JOIN with Derby from v10.6 onwards</li>
+                <li>RDBMS : fix to use of Boolean expression/literals for JDOQL2</li>
+                <li>RDBMS : fix to candidate query on persistent interface candidate for JDOQL2</li>
+                <li>RDBMS : add support for persistent object "identity" as input parameter for JDOQL2</li>
+                <li>RDBMS : fix to numeric type comparisons for JDOQL2</li>
+                <li>RDBMS : fix to use of parameter in result clause when null for JDOQL2</li>
+                <li>RDBMS : add support for Cast expression in result clause for JDOQL2</li>
+                <li>RDBMS : add support for array of expressions in JDOQL2</li>
+                <li>RDBMS : add support for joins to interface implementations in JDOQL2</li>
+                <li>RDBMS : add support for subquery.contains() in JDOQL2</li>
+                <li>RDBMS : fix handling of DISTINCT in JDOQL2</li>
+                <li>RDBMS : make use of Query imports when resolving classes in instanceof/cast for JDOQL2</li>
+                <li>RDBMS : fix use of navigation of N-1 relation via join table in JDOQL2</li>
+                <li>RDBMS : Delete "JPQL-Legacy" implementation</li>
+                <li>JodaTime : fix handling of null fields</li>
+                <li>JPA : upgrade to use JPA2 "final" jar API</li>
+                <li>Much internal refactoring has also been performed to remove unneeded components
+                    or to simplify the API's for things needed in the 2.1 timeline. Any use of internal
+                    API's by applications will likely need changes.</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>

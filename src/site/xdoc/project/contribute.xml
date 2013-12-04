@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Contribute</title>
+    </properties>
+
+    <body>
+        <section name="Contributing">
+            <p> 
+                DataNucleus is an Open Source development. It is written by many people yet has a broad scope
+                and so is in need of help. Since the software is free, you are benefiting from this
+                work. You have a duty to contribute to the project, particularly if/when you have problems.
+                <i>It should be noted that many people use open source software without the minor intention
+                of contributing anything back to it; that's ok but then should everyone adopt that attitude
+                then things will not get improved, and additionally those people are not in a position to
+                request/expect any improvements that they would like to see (without putting something back in).</i>
+            </p>
+            <p>
+                <b>You can help</b> the project in many ways. Here are some examples
+            </p>
+            <ul>
+                <li><b>Answer questions on the <a href="http://forum.datanucleus.org">Forum</a></b>. 
+                    New users DataNucleus need to learn somewhere just like you did when you first used DataNucleus.
+                    You could monitor the forum when you have free time and attempt to answer people's questions.
+                    People will appreciate it even if you don't know all of the answers.</li>
+                <li><b>Debug problems in the code</b> before reporting them on the Forum. You can isolate
+                    the issue to a particular area of code even if you don't know the solution, and post
+                    your findings on the Forum for one of the developers to pick up and progress further.
+                    <b>Better still contribute patches</b> so it saves our time in working out where the
+                    problem lies. These will be much more valuable to us. Contribute any patches in 
+                    <a href="http://en.wikipedia.org/wiki/Diff#Unified_format" target="_blank">patch format ("diff -u")</a>.
+                    Please see the <a href="../development/coding_standards.html">DataNucleus code format convention</a></li>
+                <li><b>Volunteer to be a developer</b> of DataNucleus. To do this you need to start off by
+                    contributing patches for issues, and demonstrate your commitment to the project.
+                    Once you've done this for a while then we'll invite you to join the project.
+                    You then go to the "Volunteers" section of our Forum and post the developer agreement
+                    (stored in one of the threads in that Forum). Thereafter you can push DataNucleus
+                    further yourself when you have time. Be aware though that once you have been given
+                    commit rights, inactivity for a period of time (e.g 6 months or more) will mean that you 
+                    can lose these rights. Being a committer implies responsibility. 
+                    You could volunteer to work on a particular part of DataNucleus (e.g RDBMS) or all of it,
+                    up to you.</li>
+                <li><b><a href="donations.html">Donate to the project</a></b>. This will help to fund the time of
+                    one of the main developers and will mean that DataNucleus functionality will be expanded faster 
+                    due to your help.</li>
+                <li><b>Contribute documentation or worked examples</b> that can be included in the online documentation.
+                    If you think there is something missing from our documents then you can write it and contribute it
+                    and others will benefit from your work just like you have benefited from our DataNucleus product.
+                    You can contribute these via either the <a href="http://forum.datanucleus.org">Forum</a> or
+                    by raising an issue in <a href="http://issues.datanucleus.org">JIRA</a></li>
+            </ul>
+            <p>
+                <b>Obviously, if you contribute to the system in some way then we are more likely to answer
+                your forum questions, or listen to your ideas, so it's in your interests to participate.</b>
+                We hope that the above has given you some idea how your time can be used to benefit the common goal
+                of having a quality Java persistence solution free for all to use.
+            </p>
+        </section>
+    </body>
+</document>

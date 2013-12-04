@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Services</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus : Commercial Services">
+            <p>
+                With any software, there are times when you need assistance to make full use of it. Here at DataNucleus
+                we want you to make the best of the software that we provide. For that reason we provide both
+                commercial services.
+            </p>
+            <p>
+                The DataNucleus experts are available for 
+                <a href="../services/consulting.html">Consulting</a> for cases
+                where you need somebody intrinsically familiar with the DataNucleus system available
+                to resolve any particular implementation issues.
+            </p>
+            <p>
+                Similarly, if your company would like to build up your own experience in DataNucleus and
+                would like a kick start for this process the DataNucleus experts are available to provide
+                <a href="../services/training.html">Training</a>.
+            </p>
+        </section>
+    </body>
+</document>

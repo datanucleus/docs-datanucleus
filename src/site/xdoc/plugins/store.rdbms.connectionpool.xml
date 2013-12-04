@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>org.datanucleus.store.rdbms.connectionpool</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus ConnectionPool">
+            <p>
+                <i>datanucleus-connectionpool</i> provided datasource pooling when used with RDBMS datastores.
+                <b>It is merged into the <i>datanucleus-rdbms</i> plugin as of version 2.2.0.release and, as such,
+                is now inactive</b>.
+                It supported use of 
+                <a href="http://jakarta.apache.org/commons/dbcp/" target="_blank">Apache DBCP</a>,
+                <a href="http://www.sf.net/projects/c3p0" target="_blank">C3P0</a>,
+                <a href="http://proxool.sourceforge.net" target="_blank">Proxool</a>,
+                <a href="http://www.jolbox.com" target="_blank">BoneCP</a>.
+            </p>
+            <ul>
+                <li>Compile Requirement : JDK1.3+</li>
+                <li>Runtime Requirement : JDK1.3+</li>
+                <li>Latest version : 2.0.3</li>
+                <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCCONPOOL?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
+                <li>License : <a href="../project/license.html">Apache 2</a></li>
+                <li>Javadocs : <a href="../javadocs/store.rdbms.connectionpool/1.0">1.0</a>,
+                    <a href="../javadocs/store.rdbms.connectionpool/2.0">2.0</a></li>
+                <li>Source : <a href="http://datanucleus.svn.sourceforge.net/viewvc/datanucleus/platform/store.rdbms.connectionpool/trunk/">latest</a></li>
+            </ul>
+
+            <subsection name="Download">
+                <p><i>datanucleus-connectionpool</i> is downloadable as following</p>
+                <ul>
+                    <li><b>Releases</b> <a href="http://www.datanucleus.org/downloads/maven2/org/datanucleus/datanucleus-connectionpool/" target="_blank">from Maven2 Repository</a></li>
+                    <li><b>Nightly builds</b> <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus/datanucleus-connectionpool/" target="_blank">from Maven2 Nightly Repository</a></li>
+                </ul>
+                <br/>
+            </subsection>
+
+            <subsection name="Dependencies">
+                <p>
+                    <i>datanucleus-connectionpool</i> is dependent on the following packages of software. 
+                    Click on the name to go to the home page for that software to download it.
+                </p>
+                <table>
+                    <tr>
+                        <th>Package</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th width="150">Required?</th>
+                    </tr>
+                    <tr>
+                        <td><a href="core/index.html">datanucleus-core</a></td>
+                        <td>1.0+</td>
+                        <td>Provides logging, localisation, and other framework facilities for DataNucleus</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><a href="store.rdbms/index.html">datanucleus-rdbms</a></td>
+                        <td>1.0+</td>
+                        <td>Persistence to RDBMS datastores</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.ibiblio.org/maven/commons-dbcp/jars/" target="_blank">commons-dbcp</a></td>
+                        <td>1.1+</td>
+                        <td>Apache Commons DBCP. Connection Pooling</td>
+                        <td>Yes, if using DBCP</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.ibiblio.org/maven/commons-pool/jars/" target="_blank">commons-pool</a></td>
+                        <td>1.1+</td>
+                        <td>Apache Commons Pool.</td>
+                        <td>Yes, if using DBCP</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.ibiblio.org/maven/commons-collections/jars/" target="_blank">commons-collections</a></td>
+                        <td>3.0+</td>
+                        <td>Apache Commons Collections</td>
+                        <td>Yes, if using DBCP</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.ibiblio.org/maven/c3p0/jars/" target="_blank">c3p0</a></td>
+                        <td>0.9.0+</td>
+                        <td>C3P0 Connection Pooling</td>
+                        <td>Yes, if using C3P0</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.ibiblio.org/maven/proxool/jars/" target="_blank">proxool</a></td>
+                        <td></td>
+                        <td>Proxool Connection Pooling</td>
+                        <td>Yes, if using Proxool</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.jolbox.com" target="_blank">bonecp</a></td>
+                        <td>0.6.5</td>
+                        <td>BoneCP</td>
+                        <td>Yes, if using BoneCP</td>
+                    </tr>
+                    <tr>
+                        <td>SLF4J</td>
+                        <td>1.5.6</td>
+                        <td>SLF4J</td>
+                        <td>Yes, if using BoneCP</td>
+                    </tr>
+                    <tr>
+                        <td>Google Collections</td>
+                        <td>1.0</td>
+                        <td>Google Collections library</td>
+                        <td>Yes, if using BoneCP</td>
+                    </tr>
+                </table>
+                <br/>
+                <br/>
+            </subsection>
+        </section>
+
+    </body>
+</document>
