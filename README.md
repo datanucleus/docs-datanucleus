@@ -7,5 +7,4 @@ Makes use of Maven "site" plugin, and requires the "docs-datanucleus-skin" Maven
 You generate the http://www.datanucleus.org website by invoking Maven "site" like this
 mvn clean site
 
-which generates the website under
-target/site
+which generates the website under _target/site_
