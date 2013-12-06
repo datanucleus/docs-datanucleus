@@ -9,10 +9,10 @@
     <body>
         <section name="DataNucleus Source Code Repository">
             <p>
-                DataNucleus uses <a href="http://subversion.tigris.org/">Subversion (SVN)</a> for housing 
-                its source code. The DataNucleus SVN repository is hosted by 
-                <a href="http://www.sf.net/projects/datanucleus/">SourceForge</a>. 
-                You can check out from the SVN repository using
+                DataNucleus uses <a href="http://subversion.tigris.org/">Subversion (SVN)</a> for housing source code for all versions
+                up to and including 3.3.5. The DataNucleus SVN repository is hosted by <a href="http://www.sf.net/projects/datanucleus/">SourceForge</a>.
+                Note that all versions after 3.3.5 have source code hosted on <a href="scr.html">GitHub</a>.
+                You can check out from the SourceForge SVN repository using
             </p>
 <source>
 Read-Only :
@@ -44,11 +44,6 @@ samples/        <- Samples, tutorials etc
 ]]></pre>
 
             <img src="../images/github.png" alt="GitHub" border="0"/>
-            <p>
-                Note that DataNucleus is in the process of moving to GitHub for source code repository.
-                Code for all versions upto and including 3.3.5 will be stored in SourceForge. All versions thereafter
-                will be present in <a href="https://github.com/datanucleus">GitHub</a>.
-            </p>
             <br/>
 
             <subsection name="Platform">
