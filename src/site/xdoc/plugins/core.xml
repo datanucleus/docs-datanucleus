@@ -133,6 +133,7 @@
         </section>
 
         <section name="Logging">
+            <a name="logging"/>
             <p>
                 DataNucleus provides flexibility with logging. You can choose whether
                 to use the popular <a href="http://jakarta.apache.org/log4j/" target="_blank">Log4J</a> 
@@ -190,6 +191,7 @@
         </section>
 
         <section name="Internationalisation of Messages">
+            <a name="internationalisation"/>
             <p>
                 The DataNucleus system is internationalisable hence messages (to log files or exceptions) can
                 be displayed in multiple languages. Currently DataNucleus contains localisation files in the 

@@ -30,10 +30,10 @@
                 <li><b>Fields positioning</b> : place fields at the top of a class</li>
                 <li><b>Logging</b> : use <i>org.datanucleus.util.NucleusLogger</i> which wraps Log4j, JDK1.4 etc.
                     Log as much info as is considered necessary at the appropriate level.
-                    See <a href="core/logging.html">Logging Guide</a> for details</li>
+                    See <a href="../plugins/core.html#logging">Logging Guide</a> for details</li>
                 <li><b>Localisation</b> : all output exception and log messages should be localised.
                     Use <i>org.datanucleus.util.Localiser</i>. 
-                    See <a href="core/i18n.html">Localisation Guide</a> for details</li>
+                    See <a href="../plugins/core.html#internationalisation">Localisation Guide</a> for details</li>
             </ul>
             <p>
                 If you are using Eclipse then we have an 
@@ -172,15 +172,15 @@ class Example
 
         <section name="References">
             <p>
-                In this document we describe just a small set of guidelines. Our references are really 
-                worth a read and must be followed during DataNucleus development.
+                In this document we describe just a small set of guidelines. Some references are really 
+                worth a read, though our particular guidelines above override some of the things here.
             </p>
             <ul>
-                <li><a href="http://java.sun.com/docs/codeconv/" target="_blank">Java Code Conventions (High importance)</a></li>
-                <li><a href="http://java.sun.com/j2se/javadoc/writingdoccomments/index.html" target="_blank">How to Write Doc 
+                <li><a href="http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html" target="_blank">Java Code Conventions (High importance)</a></li>
+                <li><a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html" target="_blank">How to Write Doc 
                     Comments for the JavadocTM Tool</a> (High importance)</li>
-                <li><a href="http://mindprod.com/unmain.html" target="_blank">How To Write Unmaintainable Code (What not to do)</a></li>
-                <li><a href="http://www.ambysoft.com/javaCodingStandards.pdf" target="_blank">Scott Ambler Programming Guidelines 
+                <li><a href="http://mindprod.com/jgloss/unmain.html" target="_blank">How To Write Unmaintainable Code (What not to do)</a></li>
+                <li><a href="http://www.ambysoft.com/essays/codingGuidelines.html" target="_blank">Scott Ambler Programming Guidelines 
                     (Follow something)</a></li>
             </ul>
         </section>
