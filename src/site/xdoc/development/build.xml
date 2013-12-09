@@ -18,8 +18,8 @@
             <a name="maven"/>
             <subsection name="Maven">
                 <p>
-                    All DataNucleus plugins are Maven projects, with a <i>pom.xml</i>. To build and install the
-                    plugin simply type
+                    All DataNucleus plugins are Maven projects, with a <i>pom.xml</i>. 
+                    To build and install the plugin simply type
                 </p>
 <source>mvn clean install</source>
                 <p>
@@ -33,10 +33,12 @@
             <a name="eclipse"/>
             <subsection name="Eclipse">
                 <p>
-                    When building/developing using Eclipse the first thing you need to do is import the
-                    <b>eclipse-build</b> repository. This provides a complete set of third-party dependencies
-                    that are then "exported" for use by all other Eclipse projects (the DataNucleus plugins). You then
-                    need to import all DataNucleus projects you are working on (as well as any dependents, such as
+                    When building/developing using Eclipse the first thing you need to do is install the Eclipse "m2e" plugin (if not already done).
+                    This means that the build of any plugin will build using Maven (and get its dependencies from Maven).
+                    You also should import the <b>eclipse-build</b> repository. This provides a complete set of third-party dependencies
+                    that are then "exported" for use by all other Eclipse projects (the DataNucleus plugins). It is hoped to drop this step
+                    at some point in the near future as many plugins no longer require it.
+                    You then need to import all DataNucleus projects you are working on (as well as any dependents, such as
                     <b>datanucleus-core</b>). 
                 </p>
             </subsection>
