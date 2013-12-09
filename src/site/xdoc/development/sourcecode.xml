@@ -8,7 +8,7 @@
 
     <body>
         <section name="DataNucleus Source Code Repository">
-            <img src="../images/github.png" alt="GitHub" border="0"/>
+            <img src="../images/GitHub-Mark-64px.png" alt="GitHub" border="0"/>
             <p>
                 DataNucleus source code is hosted on <a href="https://github.com/datanucleus">GitHub</a> and uses
                 the <a href="http://git-scm.com//">Git</a> source code version control system.
