@@ -16,7 +16,7 @@
             <ul>
                 <li>Compile Requirement : JDK1.5+</li>
                 <li>Runtime Requirement : JDK1.5+</li>
-                <li>Latest version : 3.2.3</li>
+                <li>Latest version : 3.2.4</li>
                 <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCSPATIAL?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
                 <li>License : <a href="../project/license.html">Apache 2</a></li>
                 <li>Javadocs : <a href="../javadocs/store.types.spatial/3.2">3.2</a>,

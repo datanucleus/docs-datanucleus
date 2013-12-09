@@ -14,7 +14,7 @@
             <ul>
                 <li>Compile Requirement : JDK1.3+</li>
                 <li>Runtime Requirement : JDK1.3+</li>
-                <li>Latest version : 3.3.0.release</li>
+                <li>Latest version : 3.3.1</li>
                 <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCMAVEN?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
                 <li>License : <a href="../project/license.html">Apache 2</a></li>
                 <li>Source : <a href="https://sourceforge.net/p/datanucleus/code/HEAD/tree/tools/maven2/trunk/">latest</a></li>
