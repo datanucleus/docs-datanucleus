@@ -136,8 +136,7 @@ Contributors:
             <a name="codingstandards"/>
             <subsection name="Coding Standards">
                 <p>
-                Coding standards are more complicated to define so please look <a href="coding_standards.html">here</a>
-                for details.
+                    Coding standards are more complicated to define so please look <a href="coding_standards.html">here</a> for details.
                 </p>
             </subsection>
 
@@ -147,8 +146,6 @@ Contributors:
                     DataNucleus has the following mailing lists to aid in tracking development. They are read-only.
                 </p>
                 <ul>
-                    <li><a href="https://lists.sourceforge.net/lists/listinfo/datanucleus-commits">datanucleus-commits</a>
-                        showing all SVN commits for the project</li>
                     <li><a href="https://lists.sourceforge.net/lists/listinfo/datanucleus-issues">datanucleus-issues</a>
                         showing all changes in JIRA issues for the project</li>
                     <li><a href="https://lists.sourceforge.net/lists/listinfo/datanucleus-nightlybuilds">datanucleus-nightlybuilds</a>
@@ -169,7 +166,7 @@ Contributors:
                         Make a note of the revision number</li>
                     <li>Update <i>build.properties</i> so that versions of all required plugins
                         are set, and the version of the product is set.
-                        You can check this change in</li>
+                        Check this change in.</li>
                     <li>Generate the required product archives, and the documentation.</li>
                     <li>Release the archives and documentation on SourceForge</li>
                     <li>Create a directory under ${DATANUCLEUS}/releases/{product_name}/{version}/
@@ -183,26 +180,16 @@ Contributors:
                     When there is a DataNucleus plugin to be released, the following is the release process
                 </p>
                 <ul>
-                    <li>Go to the sub-project that needs releasing and checkout the latest code.
-                        Make a note of the revision number</li>
-                    <li>Update <i>pom.xml</i> and <i>META-INF/MANIFEST.MF</i>
-                        so that the version(s) are set (of the plugin and any dependencies).
-                        You can check these changes in</li>
-                    <li>Build and test the code</li>
-                    <li>Build, install and deploy the plugin (to Nightlabs), using
-                        <source>mvn clean source:jar install assembly:assembly deploy:deploy -DdescriptorId=src</source></li>
-                    <li>Create a directory under ${DATANUCLEUS}/releases/{plugin_name}/{version}/
-                        and put a file in there called <i>revision</i> containing the revision number noted</li>
+                    <li>Use the Maven <i>release</i> plugin as follows : <i>mvn clean release:clean release:prepare release:perform</i></li>
+                    <li>Go to the DataNucleus Sonatype account and check/release/close the repository artifacts</li>
                 </ul>
             </subsection>
 
             <subsection name="Metrics">
                <p> 
-                   DataNucleus originated as JPOX in 2003 and consequently many people have contributed to its 
-                   development over the years, and has been open source since the outset. In terms of metrics of 
-                   the codebase we recommend use of Ohloh, providing number of lines of code, estimated cost etc
-                   to replicate it.<br/>
-<a href="http://www.ohloh.net/projects/datanucleus">Ohloh - <script type="text/javascript" src="http://www.ohloh.net/projects/13308/widgets/project_partner_badge"/></a>
+                   DataNucleus originated as JPOX in 2003 and consequently many people have contributed to its development over the years, 
+                   and has been open source since the outset. In terms of metrics of the codebase you can get a measure of this by looking
+                   at <a href="http://www.ohloh.net/projects/datanucleus">the DataNucleus page on Ohloh</a>.
                 </p>
             </subsection>
         </section>

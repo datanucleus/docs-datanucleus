@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Building DataNucleus</title>
+    </properties>
+
+    <body>
+        <section name="Building DataNucleus">
+            <p>
+                DataNucleus can be easily developed using <a href="#maven">Maven</a>, <a href="#eclipse">Eclipse</a>, 
+                or other IDEs (let us know if you write docs for how to develop DataNucleus with a different IDE).
+                You require JDK1.6+, a Git client (to download/commit <a href="sourcecode.html">DataNucleus Git-based projects</a>) and an editor.
+                DataNucleus is split into several plugin projects and you may need these building in a particular order due to dependencies.
+            </p>
+
+            <a name="maven"/>
+            <subsection name="Maven">
+                <p>
+                    All DataNucleus plugins are Maven projects, with a <i>pom.xml</i>. To build and install the
+                    plugin simply type
+                </p>
+<source>mvn clean install</source>
+                <p>
+                    and the plugin is built and installed in your local Maven repository.
+                    If you are developing some feature that requires updates to, for example core (<b>datanucleus-core</b>), 
+                    <b>an api</b> (e.g <b>datanucleus-api-jdo</b>) and a datastore (e.g <b>datanucleus-rdbms</b>) then you will need
+                    to build these in the same order, core first, then the API, then the datastore.
+                </p>
+            </subsection>
+
+            <a name="eclipse"/>
+            <subsection name="Eclipse">
+                <p>
+                    When building/developing using Eclipse the first thing you need to do is import the
+                    <b>eclipse-build</b> repository. This provides a complete set of third-party dependencies
+                    that are then "exported" for use by all other Eclipse projects (the DataNucleus plugins). You then
+                    need to import all DataNucleus projects you are working on (as well as any dependents, such as
+                    <b>datanucleus-core</b>). 
+                </p>
+            </subsection>
+
+        </section>
+    </body>
+</document>
