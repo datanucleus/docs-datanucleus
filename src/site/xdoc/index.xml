@@ -46,13 +46,13 @@
                         <b>Choose v3.2 if you want JDO3.x/JPA2.0, and choose v3.3 if you want JDO3.x/JPA2.1</b><br/>
                         <b>Version 3.2</b>
  <a href="products/accessplatform_3_2/index.html">[Read More]</a> |
- <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.8">[Download]</a> |
+ <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.9">[Download]</a> |
  <a href="products/accessplatform_3_2/getting_started.html">[Get Started]</a> |
  <a href="project/license.html">[License]</a> |
  <a href="products/accessplatform_3_2/datanucleus-accessplatform-docs.pdf">[PDF Docs]</a><br/>
                         <b>Version 3.3</b>
  <a href="products/accessplatform_3_3/index.html">[Read More]</a> |
- <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.4">[Download]</a> |
+ <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.5">[Download]</a> |
  <a href="products/accessplatform_3_3/getting_started.html">[Get Started]</a> |
  <a href="project/license.html">[License]</a> |
  <a href="products/accessplatform_3_3/datanucleus-accessplatform-docs.pdf">[PDF Docs]</a>
@@ -61,10 +61,10 @@
             </table>
             <br/>
             <div id="TICKER" style="display:none; border-top:2px solid #CCCCCC; border-bottom:2px solid #CCCCCC; overflow:hidden; background-color:#FFFFFF; width:750px" onmouseover="TICKER_PAUSED=true" onmouseout="TICKER_PAUSED=false">
+                <span style='background-color:#f8d64c;'>   10-Dec-2013   </span> -- <a href="news/access_platform_3_3_5.html">DataNucleus AccessPlatform 3.3.5 released</a> ...    
+                <span style='background-color:#d4e3f1;'>   10-Dec-2013   </span> -- <a href="news/access_platform_3_2_9.html">DataNucleus AccessPlatform 3.2.9 released</a> ...    
                 <span style='background-color:#f8d64c;'>   19-Nov-2013   </span> -- <a href="news/access_platform_3_3_4.html">DataNucleus AccessPlatform 3.3.4 released</a> ...    
                 <span style='background-color:#d4e3f1;'>   19-Nov-2013   </span> -- <a href="news/access_platform_3_2_8.html">DataNucleus AccessPlatform 3.2.8 released</a> ...    
-                <span style='background-color:#f8d64c;'>   23-Oct-2013   </span> -- <a href="news/access_platform_3_3_3.html">DataNucleus AccessPlatform 3.3.3 released</a> ...    
-                <span style='background-color:#d4e3f1;'>   23-Oct-2013   </span> -- <a href="news/access_platform_3_2_7.html">DataNucleus AccessPlatform 3.2.7 released</a> ...   
             </div>
             <script type="text/javascript" src="./webticker_lib.js" language="javascript"></script>
 

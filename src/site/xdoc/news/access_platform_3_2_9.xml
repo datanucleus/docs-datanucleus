@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>News</title>
+    </properties>
+
+    <body>
+        <section name="DataNucleus AccessPlatform 3.2.9 Released">
+            <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script type="text/javascript">var dzone_title = 'DataNucleus AccessPlatform 3.2.9 Released';</script>
+                <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_2_9.html';</script>
+		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
+            </div>
+            <p>
+                <b>Dec 10th 2013</b>- DataNucleus Access Platform 3.2.9 ("Copernicus") is released.
+                DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
+                a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
+                <i>Version 3.2.9</i> includes the following changes over 3.2.8
+            </p>
+            <ul>
+                <li>Wrap any exception thrown from JDOHelper.getObjectId so that it meets the JDO spec</li>
+                <li>Fix to class loading for property validators for OSGi</li>
+                <li>Couple of fixes for optimistic relationship management</li>
+                <li>JDO : Change PMF to be Serializable</li>
+                <li>RDBMS : Add support for bulk fetch of multi-valued collection fields of a candidate when in FetchPlan of a query (removes "1+N" problem)</li>
+                <li>RDBMS : Add support for SQLServer to handle JDOQL String.substring with 2 args (Daniel Dai)</li>
+                <li>RDBMS : Add support for JDOQL String.concat (Daniel Dai)</li>
+                <li>RDBMS : Fix to detection of type of backing store required for a collection, using metadata more</li>
+                <li>MongoDB : Add support for specifying the MongoOptions when creating the first connection</li>
+                <li>Spatial : Fix some missing PostGIS methods</li>
+                <li>Some other bug fixes and minor improvements</li>
+            </ul>
+            <p>
+                This release is downloadable under an Apache 2 license from the
+                <a href="http://www.datanucleus.org/project/download.html">DataNucleus community site</a>.
+            </p>
+        </section>
+
+    </body>
+</document>
