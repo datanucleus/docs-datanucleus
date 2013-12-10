@@ -18,80 +18,77 @@
 
         <section name="DataNucleus : End-to-End Tests">
             <p>
-                <b>End-to-End tests</b> also use JUnit, and are available under the <i>tests/accessplatform/trunk</i>
-                part of Subversion. In these tests we persist objects in a datastore, and test the result.
+                <b>End-to-End tests</b> also use JUnit, and are available in the GitHub DataNucleus repository <i>tests</i>.
+                In these tests we persist objects in a datastore, and test the result.
                 There are several scenarios for this type of test, because JDO/JPA have many aspects. 
                 By this we mean that we separate our tests into what they test. When developing anything, the tests 
-                should be the guiding light as to whether you should be checking anything in to SVN. If your change 
-                breaks things, you shouldn't check things in. Each test "scenario" has its own project in SVN with 
-                names like "test.jdo.general", "test.jpa.general", etc.
+                should be the guiding light as to whether you should be checking anything in to GitHub. 
+                <b>If your change breaks things, you shouldn't check things in.</b> 
+                We have tests divided by the persistence API that they are testing; look under the directories
+                <i>jdo</i>, <i>jpa</i> and <i>rest</i>.
             </p>
 
-            <subsection name="test.maven2.parent">
+            <subsection name="framework">
                 <p>
-                    The first thing you require is to obtain and build this project. It is the top level
-                    for all "test" projects.
+                    All DataNucleus end-to-end tests are based around a framework and this requires building first before running
+                    any tests. Navigate into the <i>framework</i> directory and build and install it by typing
                 </p>
                 <source>mvn clean install</source>
-                <p>This builds the jar under "target" and installs it into your Maven2 repository.</p>
+                <p>This builds the jar under "target" and installs it into your Maven repository.</p>
                 <br/>
             </subsection>
 
-            <subsection name="test.framework">
+            <subsection name="framework.maven">
                 <p>
-                    The first thing you require is to build this project. It provides a framework for all test scenarios
-                    and is available in SVN under <i>test/accessplatform/trunk/test.framework</i>.
-                    To build the "test.framework" using Maven, you simply type (from the test.framework project)
+                    This is a Maven plugin that allows some of the tests to be run with different configurations.
+                    You should build and install it by typing
                 </p>
                 <source>mvn clean install</source>
-                <p>This builds the jar under "target" and installs it into your Maven2 repository.</p>
+                <p>This builds the jar under "target" and installs it into your Maven repository.</p>
                 <br/>
             </subsection>
 
-            <subsection name="test.samples">
+            <subsection name="samples">
                 <p>
-                    The next thing you require is to build this project. It provides sample model classes for use 
-                    in the majority of test scenarios and is available in SVN under 
-                    <i>test/accessplatform/trunk/test.samples</i>). These are the classes to be persisted, 
-                    but do not include the information about how they will be persisted (that is specified in 
-                    the individual test suite).
-                    To build the "test.samples" using Maven, you simply type (from the test.samples project)
+                    The <i>samples</i> project provides typical model classes to be persisted, with all different types
+                    of relations. This project doesn't define <i>how</i> the classes are persisted, just what the classes are.
+                    They are then usable by all persistence APIs. You should build and install it by typing
                 </p>
                 <source>mvn clean install</source>
-                <p>This builds the jar under "target" and installs it into your Maven2 repository.</p>
+                <p>This builds the jar under "target" and installs it into your Maven repository.</p>
                 <br/>
             </subsection>
 
             <subsection name="End-to-End Test Scenarios">
                 <p>
-                    So we have now built the <i>test.framework</i> and <i>test.samples</i> projects and
+                    So we have now built the <i>framework</i>, <i>framework.maven</i> and <i>samples</i> projects and
                     are ready to run any of the "scenarios". There are many scenarios including
                 </p>
                 <ul>
                     <li>Tests for JDO API
                         <ul>
-                        <li><b>test.jdo.general</b> - General tests for JDO</li>
-                        <li><b>test.jdo.identity</b> - Tests for JDO that run with both application and datastore identity types</li>
-                        <li><b>test.jdo.jta</b> - Tests for using JTA transactions with JDO</li>
-                        <li><b>test.jdo.spatial</b> - Tests for use spatial types with JDO</li>
-                        <li><b>test.jdo.rdbms</b> - Tests specific to RDBMS, using JDO</li>
-                        <li><b>test.jdo.ldap</b> - Tests specific to LDAP, using JDO</li>
-                        <li><b>test.jdo.excel</b> - Tests specific to Excel, using JDO</li>
-                        <li><b>test.jdo.hbase</b> - Tests for basic handling with HBase, using JDO</li>
-                        <li><b>test.jdo.mongodb</b> - Tests for basic handling with MongoDB, using JDO</li>
+                        <li><b>jdo/general</b> - General tests for JDO</li>
+                        <li><b>jdo/identity</b> - Tests for JDO that run with both application and datastore identity types</li>
+                        <li><b>jdo/jta</b> - Tests for using JTA transactions with JDO</li>
+                        <li><b>jdo/geospatial</b> - Tests for use spatial types with JDO</li>
+                        <li><b>jdo/rdbms</b> - Tests specific to RDBMS, using JDO</li>
+                        <li><b>jdo/ldap</b> - Tests specific to LDAP, using JDO</li>
+                        <li><b>jdo/spreadsheet</b> - Tests specific to Excel and ODF, using JDO</li>
+                        <li><b>jdo/hbase</b> - Tests for basic handling with HBase, using JDO</li>
+                        <li><b>jdo/mongodb</b> - Tests for basic handling with MongoDB, using JDO</li>
                         </ul>
                     </li>
                     <li>Tests for JPA API
                         <ul>
-                        <li><b>test.jpa.general</b> - General tests for JPA</li>
-                        <li><b>test.jpa.jta</b> - Tests for using JTA transaction with JPA</li>
-                        <li><b>test.jpa.spatial</b> - Tests for using spatial types with JPA</li>
-                        <li><b>test.jpa.rdbms</b> - Tests specific to RDBMS, using JPA</li>
+                        <li><b>jpa/general</b> - General tests for JPA</li>
+                        <li><b>jpa/jta</b> - Tests for using JTA transaction with JPA</li>
+                        <li><b>jpa/geospatial</b> - Tests for using spatial types with JPA</li>
+                        <li><b>jpa/rdbms</b> - Tests specific to RDBMS, using JPA</li>
                         </ul>
                     </li>
                     <li>Tests for REST API
                         <ul>
-                        <li><b>test.rest</b> - Tests using the REST API</li>
+                        <li><b>rest/general</b> - Tests using the REST API</li>
                         </ul>
                     </li>
                 </ul>
@@ -119,18 +116,6 @@
                 <br/>
             </subsection>
 
-            <subsection name="JCA Test Scenarios">
-                <p>
-                    The DataNucleus JCA connector test scenarios are the following projects. 
-                    To run these tests you must create the data source, deploy the DataNucleus JCA connector 
-                    and deploy the EJB application.
-                </p>
-                <ul>
-                    <li><b>test.jca.jdo</b> - EJB application with tests for JDO</li>
-                </ul>
-                <br/>
-            </subsection>
-
             <a name="new_unit_test"/>
             <subsection name="Adding Unit Tests">
                 <p>
@@ -150,12 +135,12 @@
             <a name="test_configs"/>
             <subsection name="Alternate Test Configurations">
                 <p>
-                    All tests run with a default test configuration (see the files in <i>test.framework</i> under <i>src/conf</i>).
+                    All tests run with a default test configuration (see the files in <i>framework</i> under <i>src/conf</i>).
                     You can, with some test suites, run alternate test configurations. This is achieved using the
-                    <b>test.framework.maven</b> Maven plugin.
+                    <b>framework.maven</b> Maven plugin.
                 </p>
                 <ol>
-                    <li>Look for a configuration file under <i>src/conf</i> of test.framework such as <i>optimistic-conf.properties</i>.
+                    <li>Look for a configuration file under <i>src/conf</i> of <i>framework</i> such as <i>optimistic-conf.properties</i>.
                         These properties are used to override the default properties</li>
                     <li>Run the tests with <i>-Dtest.configs=optimistic</i> or <i>-Dtest.configs=optimistic,pessimistic</i> for example</li>
                 </ol>
@@ -167,13 +152,13 @@
             <subsection name="Database setup for running tests">
                 <p>
                     Each test project is run against a datastore (as defined above). The configuration of
-                    the datastores is stored under test.framework/src/conf. Some tests require two database instances, 
+                    the datastores is stored under framework/src/conf. Some tests require two database instances, 
                     which is why for every database there exist two files, e.g. "maven.datanucleus.datastore=hsql" refers
                     to both
                 </p>
                 <ul>
-                    <li>test.framework/src/conf/datanucleus-hsql.<b>1</b>.properties, and</li>
-                    <li>test.framework/src/conf/datanucleus-hsql.<b>2</b>.properties</li>
+                    <li>framework/src/conf/datanucleus-hsql.<b>1</b>.properties, and</li>
+                    <li>framework/src/conf/datanucleus-hsql.<b>2</b>.properties</li>
                 </ul>
                 <p>
                 	The default database configured in the test projects is H2. 
