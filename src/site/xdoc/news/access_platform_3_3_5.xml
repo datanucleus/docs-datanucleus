@@ -32,7 +32,7 @@
                 <li>RDBMS : Add support for SQLServer to handle JDOQL String.substring with 2 args (Daniel Dai)</li>
                 <li>RDBMS : Add support for JDOQL String.concat (Daniel Dai)</li>
                 <li>RDBMS : Fix to detection of type of backing store required for a collection, using metadata more</li>
-                <li>MongoDB : Add support for specifying the MongoOptions when creating the first connection</li>
+                <li>MongoDB : Add support for specifying the MongoOptions when creating the first connection (Robin Zhang)</li>
                 <li>Spatial : Fix some missing PostGIS methods</li>
                 <li>Various other bug fixes and minor improvements</li>
             </ul>
