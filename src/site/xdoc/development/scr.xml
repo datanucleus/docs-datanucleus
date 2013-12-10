@@ -27,7 +27,6 @@ git clone https://github.com/datanucleus/{repository-name}.git
                 the web, for example <a href="https://github.com/datanucleus/datanucleus-neo4j">the DataNucleus Neo4j datastore plugin</a>.
                 Note that all plugin repositories are <a href="http://maven.apache.org">Maven projects</a> so you need to
                 understand how to build with Maven to build these plugins.
-                The DataNucleus repositories present over on GitHub include the following
             </p>
 <pre>
 datanucleus-core
@@ -62,33 +61,22 @@ datanucleus-xml
 <pre>
 datanucleus-core
 
-APIs :
-datanucleus-api-jdo
-datanucleus-api-jpa
-datanucleus-api-rest
+APIs :                                Type support :
+datanucleus-api-jdo                   datanucleus-geospatial
+datanucleus-api-jpa                   datanucleus-guava
+datanucleus-api-rest                  datanucleus-jodatime
 
-Datastores :
-datanucleus-excel
-datanucleus-hbase
-datanucleus-json
-datanucleus-ldap
+Datastores :                          Others :
+datanucleus-excel                     datanucleus-cache
+datanucleus-hbase                     datanucleus-jdo-query
+datanucleus-json                      datanucleus-jdo-connector
+datanucleus-ldap                      datanucleus-jpa-query
 datanucleus-mongodb
 datanucleus-neo4j
 datanucleus-neodatis
 datanucleus-odf
 datanucleus-rdbms
 datanucleus-xml
-
-Type support :
-datanucleus-geospatial
-datanucleus-guava
-datanucleus-jodatime
-
-Others :
-datanucleus-cache
-datanucleus-jdo-query
-datanucleus-jdo-connector
-datanucleus-jpa-query
 </pre>
                 <p>
                     All plugins are independently versioned ("master" is the latest branch). This is because they have their own lifecycle, and plugins are
