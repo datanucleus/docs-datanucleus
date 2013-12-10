@@ -23,8 +23,9 @@
                 <li>Search the <a href="http://forum.datanucleus.org">DataNucleus Forum</a> for a similar 
                     situation to see if someone else has had the same issue and maybe resolved it.</li>
                 <li>Try the 
-                    <a href="http://www.datanucleus.org/downloads/maven-nightly/org.datanucleus/jars">latest Nightly Build</a>. 
-                    Things are usually fixed soon after being reported so the issue may no longer be an issue.</li>
+                    <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus">latest Nightly Build</a>. 
+                    Things are usually fixed soon after being reported so the issue may no longer be an issue 
+                    (if there are no jars present in the nightly repo then nothing has changed since the previous release).</li>
                 <li>Search <a href="http://issues.datanucleus.org">DataNucleus JIRA</a> for an issue describing 
                     your situation. If there is one then you can always check the status of the issue and post 
                     against it in JIRA.</li>
