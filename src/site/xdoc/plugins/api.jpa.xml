@@ -13,9 +13,9 @@
                 <b>Note that in versions prior to 3.0 this was called <i>datanucleus-jpa</i></b>
             </p>
             <ul>
-                <li>Compile Requirement : JDK1.5+</li>
-                <li>Runtime Requirement : JDK1.5+</li>
-                <li>Latest version : 3.3.4</li>
+                <li>Compile Requirement : JDK1.6+</li>
+                <li>Runtime Requirement : JDK1.6+</li>
+                <li>Latest version : 3.3.5</li>
                 <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCJPA?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
                 <li>License : <a href="../project/license.html">Apache 2</a></li>
                 <li>Javadocs : <a href="../javadocs/api.jpa/3.3">3.3</a>,
