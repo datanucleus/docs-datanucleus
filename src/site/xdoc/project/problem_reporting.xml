@@ -49,14 +49,60 @@
                 <b>This guide can also be used for providing testcases that demonstrate the need for new 
                     features.</b>
             </p>
+            <p>
+                A test case is needed to be able to reproduce possible issues. We require something that 
+                we can simply take and run ourselves. For this reason we have defined a standard for
+                simplified testcases, for <a href="#jdo">JDO</a>, and for <a href="#jpa">JPA</a> as well as
+                building on our existing testcases in <a href="#github">GitHub</a>. 
+                Please write your testcases using these templates.
+            </p>
 
-            <subsection name="Creating a test case">
+            <a name="jdo"/>
+            <subsection name="JDO Testcase : GitHub JUnit test, cloned from DataNucleus project">
+                <table width="100%" border="0" cellpadding="2" cellspacing="2">
+                    <tr>
+                        <td style="vertical-align: middle; width: 83px;" bgcolor="#FFFFFF" align="center">
+                            <img src="../images/GitHub-Mark-64px.png" alt="GitHub" border="0"/>
+                        </td>
+                        <td style="vertical-align: middle; width: 100%;" bgcolor="#FFFFFF">
+                            DataNucleus provides a template JUnit GitHub project at
+                            <a href="https://github.com/datanucleus/test-jdo">datanucleus/test-jdo</a>.
+                            Please fork this and mention the location of your fork on the JIRA issue that it relates
+                            to. Note that there are two JUnit tests in the provided project, one for single-threaded
+                            and one for multi-threaded issues; use the one appropriate to your case.
+                        </td>
+                    </tr>
+                </table>
+            </subsection>
+
+            <a name="jpa"/>
+            <subsection name="JPA Testcase : GitHub JUnit test, cloned from DataNucleus project">
+                <table width="100%" border="0" cellpadding="2" cellspacing="2">
+                    <tr>
+                        <td style="vertical-align: middle; width: 83px;" bgcolor="#FFFFFF" align="center">
+                            <img src="../images/GitHub-Mark-64px.png" alt="GitHub" border="0"/>
+                        </td>
+                        <td style="vertical-align: middle; width: 100%;" bgcolor="#FFFFFF">
+                            DataNucleus provides a template JUnit GitHub project at
+                            <a href="https://github.com/datanucleus/test-jpa">datanucleus/test-jpa</a>.
+                            Please fork this and mention the location of your fork on the JIRA issue that it relates
+                            to. Note that there are two JUnit tests in the provided project, one for single-threaded
+                            and one for multi-threaded issues; use the one appropriate to your case.
+                        </td>
+                    </tr>
+                </table>
+            </subsection>
+
+            <a name="github"/>
+            <subsection name="JDO/JPA : JUnit test built on DataNucleus test suite">
                 <p>
-                    A test case is needed to be able to reproduce possible issues. We require something that 
-                    we can simply take and run ourselves. For this reason we have defined a standard for
-                    simplified testcases, for <a href="problem_jdo_testcase.html">JDO</a> and for
-                    <a href="problem_jpa_testcase.html">JPA</a>. Please write your testcases using these
-                    templates.
+                    As an alternative to the above, and where you are familiar with JUnit and are willing to look at the 
+                    <a href="http://www.datanucleus.org/development/test/unittests.html">existing DataNucleus unit tests in SVN</a>
+                    then please create a JUnit test case that utilises our existing suite of sample data etc.
+                    If you provide a testcase in this way your testcase should be a patch against current SVN trunk
+                    of the respective test suite project and it should be attached to the JIRA issue to which it relates. 
+                    To add a JUnit testcase, please follow the 
+                    <a href="../development/test/unittests.html#new_unit_test">new unit test guide</a>
                 </p>
             </subsection>
         </section>
