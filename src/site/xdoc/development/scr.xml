@@ -81,6 +81,8 @@ datanucleus-xml
                 </p>
 <pre><![CDATA[
 datanucleus-maven-plugin
+datanucleus-eclipse-plugin
+datanucleus-idea-plugin
 ]]></pre>
                 <p>
                     Like with all plugins, the tools are independently versioned since they have their own lifecycle.
