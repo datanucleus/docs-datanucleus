@@ -36,7 +36,7 @@
                     You should then create a testcase and attach it to the JIRA issue (using "Attach File" 
                     on the issue) - see below.
                     <b>Bugs can only be raised against <u>released versions</u> of DataNucleus.</b> If you 
-                    encounter a bug that only appears in SVN trunk then you should either report it against 
+                    encounter a bug that only appears in GitHub latest then you should either report it against 
                     a JIRA issue related to that item in the current work-in-progress release, or otherwise 
                     report it to developers. This is since something can hardly be a bug if it hasn't been 
                     released yet.
@@ -98,9 +98,9 @@
             <subsection name="JDO/JPA : JUnit test built on DataNucleus test suite">
                 <p>
                     As an alternative to the above, and where you are familiar with JUnit and are willing to look at the 
-                    <a href="http://www.datanucleus.org/development/test/unittests.html">existing DataNucleus unit tests in SVN</a>
+                    <a href="http://www.datanucleus.org/development/test/unittests.html">existing DataNucleus unit tests in GitHub</a>
                     then please create a JUnit test case that utilises our existing suite of sample data etc.
-                    If you provide a testcase in this way your testcase should be a patch against current SVN trunk
+                    If you provide a testcase in this way your testcase should be a patch against current GitHub latest
                     of the respective test suite project and it should be attached to the JIRA issue to which it relates. 
                     To add a JUnit testcase, please follow the 
                     <a href="../development/test/unittests.html#new_unit_test">new unit test guide</a>

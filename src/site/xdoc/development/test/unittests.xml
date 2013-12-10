@@ -9,29 +9,31 @@
     <body>
         <section name="DataNucleus : Component Tests">
             <p>
-                DataNucleus uses JUnit (3.x) for unit testing. The traditional style of "unit" test are included with 
-                the project that they are testing. For example "core" has some "unit" tests, and these are run
-                when you build the project.
+                DataNucleus uses JUnit for unit testing. The traditional style of "unit" test are included with the project that 
+                they are testing. For example "core" has some "unit" tests, and these are run when you build the project.
             </p>
             <br/>
         </section>
 
         <section name="DataNucleus : End-to-End Tests">
             <p>
-                <b>End-to-End tests</b> also use JUnit, and are available in the GitHub DataNucleus repository <i>tests</i>.
+                <b>End-to-End tests</b> also use JUnit, and are available in the GitHub DataNucleus repository <a href="https://github.com/datanucleus/tests">tests</a>.
                 In these tests we persist objects in a datastore, and test the result.
                 There are several scenarios for this type of test, because JDO/JPA have many aspects. 
                 By this we mean that we separate our tests into what they test. When developing anything, the tests 
                 should be the guiding light as to whether you should be checking anything in to GitHub. 
                 <b>If your change breaks things, you shouldn't check things in.</b> 
                 We have tests divided by the persistence API that they are testing; look under the directories
-                <i>jdo</i>, <i>jpa</i> and <i>rest</i>.
+                <a href="https://github.com/datanucleus/tests/tree/master/jdo">jdo</a>, 
+                <a href="https://github.com/datanucleus/tests/tree/master/jpa">jpa</a> and 
+                <a href="https://github.com/datanucleus/tests/tree/master/rest">rest</a>.
             </p>
 
             <subsection name="framework">
                 <p>
                     All DataNucleus end-to-end tests are based around a framework and this requires building first before running
-                    any tests. Navigate into the <i>framework</i> directory and build and install it by typing
+                    any tests. Navigate into the <a href="https://github.com/datanucleus/tests/tree/master/framework">framework</a> 
+                    directory, and build and install it by typing
                 </p>
                 <source>mvn clean install</source>
                 <p>This builds the jar under "target" and installs it into your Maven repository.</p>
@@ -50,9 +52,9 @@
 
             <subsection name="samples">
                 <p>
-                    The <i>samples</i> project provides typical model classes to be persisted, with all different types
-                    of relations. This project doesn't define <i>how</i> the classes are persisted, just what the classes are.
-                    They are then usable by all persistence APIs. You should build and install it by typing
+                    The <a href="https://github.com/datanucleus/tests/tree/master/samples">samples</a> project provides typical model classes 
+                    to be persisted, with all different types of relations. This project doesn't define <i>how</i> the classes are persisted, 
+                    just what the classes are. They are then usable by all persistence APIs. You should build and install it by typing
                 </p>
                 <source>mvn clean install</source>
                 <p>This builds the jar under "target" and installs it into your Maven repository.</p>
@@ -123,8 +125,8 @@
                     you should add a test. Please follow the following process
                 </p>
                 <ol>
-                    <li>Decide which scenario your test fits into (e.g test.jdo.general, test.jpa.general)</li>
-                    <li>Look at the available model samples (test.samples) and choose one.</li>
+                    <li>Decide which scenario your test fits into (e.g jdo/general, jpa/general)</li>
+                    <li>Look at the available model samples and choose one.</li>
                     <li>Write your unit test, extending one of the common base classes, 
                         for example <b>JDOPersistenceTestCase</b>, or <b>JPAPersistenceTestCase</b></li>
                     <li>Run your test.</li>
@@ -135,9 +137,10 @@
             <a name="test_configs"/>
             <subsection name="Alternate Test Configurations">
                 <p>
-                    All tests run with a default test configuration (see the files in <i>framework</i> under <i>src/conf</i>).
+                    All tests run with a default test configuration (see the files in <i>framework</i> under 
+                    <a href="https://github.com/datanucleus/tests/tree/master/framework/src/conf">src/conf</a>).
                     You can, with some test suites, run alternate test configurations. This is achieved using the
-                    <b>framework.maven</b> Maven plugin.
+                    <i>framework.maven</i> Maven plugin.
                 </p>
                 <ol>
                     <li>Look for a configuration file under <i>src/conf</i> of <i>framework</i> such as <i>optimistic-conf.properties</i>.
@@ -152,9 +155,9 @@
             <subsection name="Database setup for running tests">
                 <p>
                     Each test project is run against a datastore (as defined above). The configuration of
-                    the datastores is stored under framework/src/conf. Some tests require two database instances, 
-                    which is why for every database there exist two files, e.g. "maven.datanucleus.datastore=hsql" refers
-                    to both
+                    the datastores is stored under framework <a href="https://github.com/datanucleus/tests/tree/master/framework/src/conf">src/conf</a>. 
+                    Some tests require two database instances, which is why for every database there exist two files, 
+                    e.g. "maven.datanucleus.datastore=hsql" refers to both
                 </p>
                 <ul>
                     <li>framework/src/conf/datanucleus-hsql.<b>1</b>.properties, and</li>
