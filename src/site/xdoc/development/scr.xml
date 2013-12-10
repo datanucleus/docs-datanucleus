@@ -32,33 +32,22 @@ git clone https://github.com/datanucleus/{repository-name}.git
 <pre>
 datanucleus-core
 
-APIs :
-datanucleus-api-jdo
-datanucleus-api-jpa
-datanucleus-api-rest
+APIs :                                Type support :
+datanucleus-api-jdo                   datanucleus-geospatial
+datanucleus-api-jpa                   datanucleus-guava
+datanucleus-api-rest                  datanucleus-jodatime
 
-Datastores :
-datanucleus-excel
-datanucleus-hbase
-datanucleus-json
-datanucleus-ldap
+Datastores :                          Others :
+datanucleus-excel                     datanucleus-cache
+datanucleus-hbase                     datanucleus-jdo-query
+datanucleus-json                      datanucleus-jdo-connector
+datanucleus-ldap                      datanucleus-jpa-query
 datanucleus-mongodb
 datanucleus-neo4j
 datanucleus-neodatis
 datanucleus-odf
 datanucleus-rdbms
 datanucleus-xml
-
-Type support :
-datanucleus-geospatial
-datanucleus-guava
-datanucleus-jodatime
-
-Others :
-datanucleus-cache
-datanucleus-jdo-query
-datanucleus-jdo-connector
-datanucleus-jpa-query
 </pre>
             <p>
                 <b>Note that (previous) source code for all versions up to and including 3.3.5 is stored in <a href="#sourceforge">SourceForge</a>.</b>
