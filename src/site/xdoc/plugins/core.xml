@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>org.datanucleus.core</title>
+        <title>datanucleus-core</title>
     </properties>
 
     <body>
@@ -27,12 +27,12 @@
                                <a href="../../javadocs/core/2.0">2.0</a>,
                                <a href="../../javadocs/core/1.1">1.1</a>,
                                <a href="../../javadocs/core/1.0">1.0</a></li>
-                <li>Source : <a href="https://sourceforge.net/p/datanucleus/code/HEAD/tree/platform/core/trunk/">latest</a></li>
+                <li>Source : <a href="https://github.com/datanucleus/datanucleus-core">latest</a></li>
             </ul>
 
             <subsection name="Source Code">
-                <p>trunk can be checked out as follows</p>
-<source>svn co https://svn.code.sf.net/p/datanucleus/code/platform/core/trunk core</source>
+                <p>The plugin can be checked out as follows</p>
+<source>git clone https://github.com/datanucleus/datanucleus-core.git</source>
                 <br/>
             </subsection>
 

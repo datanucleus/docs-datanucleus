@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>org.datanucleus.ide.eclipse</title>
+        <title>datanucleus-eclipse-plugin</title>
     </properties>
 
     <body>
@@ -13,12 +13,12 @@
                 <a href="http://www.eclipse.org" target="_blank">Eclipse</a> development environment.
             </p>
             <ul>
-                <li>Compile Requirement : JDK1.3+</li>
-                <li>Runtime Requirement : JDK1.3+</li>
-                <li>Latest version : 3.0.1</li>
+                <li>Compile Requirement : JDK1.5+</li>
+                <li>Runtime Requirement : JDK1.5+</li>
+                <li>Latest version : 3.0.4</li>
                 <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCACCECLIPSE?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
                 <li>License : <a href="../project/license.html">Apache 2</a></li>
-                <li>Source : <a href="http://datanucleus.svn.sourceforge.net/viewvc/datanucleus/tools/ide.eclipse/trunk/">latest</a></li>
+                <li>Source : <a href="https://github.com/datanucleus/datanucleus-eclipse-plugin">latest</a></li>
             </ul>
 
             <subsection name="Download">

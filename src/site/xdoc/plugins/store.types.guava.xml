@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>org.datanucleus.store.types.guava</title>
+        <title>datanucleus-guava</title>
     </properties>
 
     <body>
@@ -22,12 +22,12 @@
                                <a href="../javadocs/store.types.guava/3.0">3.0</a>,
                                <a href="../javadocs/store.types.guava/2.2">2.2</a>,
                                <a href="../javadocs/store.types.guava/2.1">2.1</a></li>
-                <li>Source : <a href="https://sourceforge.net/p/datanucleus/code/HEAD/tree/platform/store.types.guava/trunk/">latest</a></li>
+                <li>Source : <a href="https://github.com/datanucleus/datanucleus-guava">latest</a></li>
             </ul>
 
             <subsection name="Source Code">
-                <p>trunk can be checked out as follows</p>
-<source>svn co https://svn.code.sf.net/p/datanucleus/code/platform/store.types.guava/trunk store.types.guava</source>
+                <p>The plugin can be checked out as follows</p>
+<source>git clone https://github.com/datanucleus/datanucleus-guava.git</source>
                 <br/>
             </subsection>
 

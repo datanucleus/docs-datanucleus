@@ -3,26 +3,26 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>org.datanucleus.maven2</title>
+        <title>datanucleus-maven-plugin</title>
     </properties>
 
     <body>
-        <section name="DataNucleus Maven2 Plugin">
+        <section name="DataNucleus Maven Plugin">
             <p>
-                <i>DataNucleus Maven2 Plugin</i> provides a plugin for use of DataNucleus with Maven 2.x.
+                <i>datanucleus-maven-plugin</i> provides a plugin for use of DataNucleus with Maven 2+.
             </p>
             <ul>
-                <li>Compile Requirement : JDK1.3+</li>
-                <li>Runtime Requirement : JDK1.3+</li>
+                <li>Compile Requirement : JDK1.5+</li>
+                <li>Runtime Requirement : JDK1.5+</li>
                 <li>Latest version : 3.3.1</li>
                 <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCMAVEN?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
                 <li>License : <a href="../project/license.html">Apache 2</a></li>
-                <li>Source : <a href="https://sourceforge.net/p/datanucleus/code/HEAD/tree/tools/maven2/trunk/">latest</a></li>
+                <li>Source : <a href="https://github.com/datanucleus/datanucleus-maven-plugin">latest</a></li>
             </ul>
 
             <subsection name="Source Code">
-                <p>trunk can be checked out as follows</p>
-<source>svn co https://svn.code.sf.net/p/datanucleus/code/tools/maven2/trunk maven2</source>
+                <p>The plugin can be checked out as follows</p>
+<source>git clone https://github.com/datanucleus/datanucleus-maven-plugin.git</source>
                 <br/>
             </subsection>
 

@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>org.datanucleus.jdo.query</title>
+        <title>datanucleus-jdo-query</title>
     </properties>
 
     <body>
@@ -12,19 +12,19 @@
                 <i>datanucleus-jdo-query</i> provides support for JDO typesafe query annotation processing
             </p>
             <ul>
-                <li>Compile Requirement : JDK1.5+</li>
+                <li>Compile Requirement : JDK1.6+</li>
                 <li>Runtime Requirement : JDK1.6+</li>
                 <li>Latest version : 3.0.2</li>
                 <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCJDOQUERY?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
                 <li>License : <a href="../project/license.html">Apache 2</a></li>
                 <li>Javadocs : <a href="../javadocs/jdo.query/3.0">3.0</a>,
                                <a href="../javadocs/jdo.query/2.2">2.2</a></li>
-                <li>Source : <a href="https://sourceforge.net/p/datanucleus/code/HEAD/tree/platform/jdo.query/trunk/">latest</a></li>
+                <li>Source : <a href="https://github.com/datanucleus/datanucleus-jdo-query">latest</a></li>
             </ul>
 
             <subsection name="Source Code">
-                <p>trunk can be checked out as follows</p>
-<source>svn co https://svn.code.sf.net/p/datanucleus/code/platform/jdo.query/trunk jdo.query</source>
+                <p>The plugin can be checked out as follows</p>
+<source>git clone https://github.com/datanucleus/datanucleus-jdo-query.git</source>
                 <br/>
             </subsection>
 
