@@ -16,7 +16,7 @@
             <ul>
                 <li>Development of JPA/JDO features</li>
                 <li>Support for improved persistence to existing datastores (e.g Excel, LDAP, XML)</li>
-                <li>Support for persistence to new datastores (e.g Cassandra, Redis)</li>
+                <li>Support for persistence to new datastores (e.g Cassandra)</li>
                 <li>Development of DataNucleus tooling (Eclipse plugin, Maven plugin etc)</li>
                 <li>Performance improvements</li>
                 <li>Documenting the DataNucleus system</li>
@@ -31,9 +31,8 @@
                 to your career.
             </p>
             <p>
-                DataNucleus uses Test Driven Development (TDD). It has 
-                <a href="test/unittests.html">many test suites available</a> and all should be run to 
-                provide stability in the codebase.
+                DataNucleus uses Test Driven Development (TDD). It has <a href="test/unittests.html">many test suites available</a> 
+                and all should be run to provide stability in the codebase.
             </p>
             <p>
                 When you have DataNucleus commit rights (see 
@@ -41,11 +40,11 @@
                 the development process should be as below. Please abide by these simple rules
             </p>
             <ol>
-                <li>Identify <a href="http://issues.datanucleus.org">an issue</a> to work on. Raise a JIRA if it 
+                <li>Identify <a href="http://issues.datanucleus.org">an issue</a> to work on. Raise a JIRA issue if it 
                     doesn't yet exist, and allocate to yourself</li>
                 <li>Develop code, unit tests (as appropriate), and documentation for the issue. 
                     DataNucleus is developed using JDK1.6+.</li>
-                <li>Run all DataNucleus unit tests and JDO2 TCK, and when all pass to the same level as before then
+                <li>Run all DataNucleus tests and the (public) JDO TCK, and when all pass to the same level as before then
                     you can check your code into GitHub</li>
                 <li><b>Broken unit tests or JDO TCK tests MUST BE FIXED ASAP</b>. Others are using GitHub latest too
                     and if you break either the build or the tests then it means they often cannot work effectively.
@@ -95,8 +94,8 @@ Contributors:
 </source>
                 <p>
                 The original contributor is the one who contributes the first version of the file. 
-                A contributor may be a person or an organization - whoever owns the copyright. If the 
-                contributor is an organization, the person may also be indicated. For each additional 
+                A contributor may be a person or an organisation - whoever owns the copyright. If the 
+                contributor is an organisation, the person may also be indicated. For each additional 
                 contributor, indicate the part of the code or contribution that came from the contributor, 
                 especially if it contains an interesting algorithm or data table etc. For clarity, also 
                 indicate the contributor in the actual section of contributed code. Also reference the bug 
@@ -127,8 +126,7 @@ Contributors:
                     are run against all unit tests and TCKs and so stability is typically inherent.
                 </p>
                 <p>
-                    We increment the <i>minor</i> version number when we are changing internal APIs (but not
-                    client facing APIs).
+                    We increment the <i>minor</i> version number when we are changing internal APIs (but not client facing APIs).
                     We increment the <i>major</i> version number when we are changing external (client-facing) APIs.
                 </p>
             </subsection>
@@ -151,37 +149,37 @@ Contributors:
                     <li><a href="https://lists.sourceforge.net/lists/listinfo/datanucleus-nightlybuilds">datanucleus-nightlybuilds</a>
                         showing the result of nightly builds (one mail per day)</li>
                 </ul>
+                <p>
+                    In addition you can subscribe to commits for a particular repository on GitHub should you have interest in a plugin.
+                </p>
             </subsection>
 
             <a name="productrelease"/>
             <subsection name="Product Release Process">
                 <p>
                     When there is a DataNucleus product to be released (e.g AccessPlatform), the following is 
-                    the release process
+                    the release process (administrator role)
                 </p>
                 <ul>
                     <li>Make sure that all required plugin versions are released. See the
-                        <a href="plugin_release.html">plugin release process</a> for details.</li>
-                    <li>Go to the product that needs releasing and checkout the latest code.
-                        Make a note of the revision number</li>
-                    <li>Update <i>build.properties</i> so that versions of all required plugins
-                        are set, and the version of the product is set.
-                        Check this change in.</li>
-                    <li>Generate the required product archives, and the documentation.</li>
+                        <a href="#pluginrelease">plugin release process</a> below for details.</li>
+                    <li>Go to the product that needs releasing update <i>build.properties</i> so that versions of all 
+                        required plugins are set, and the version of the product is set. Check this change in.</li>
+                    <li>Generate the required product archives (zips), and the documentation.</li>
                     <li>Release the archives and documentation on SourceForge</li>
-                    <li>Create a directory under ${DATANUCLEUS}/releases/{product_name}/{version}/
-                        and put a file in there called <i>revision</i> containing the revision number noted</li>
                 </ul>
             </subsection>
 
             <a name="pluginrelease"/>
             <subsection name="Plugin Release Process">
                 <p>
-                    When there is a DataNucleus plugin to be released, the following is the release process
+                    When there is a DataNucleus plugin to be released, the following is the release process (administrator role)
                 </p>
                 <ul>
-                    <li>Use the Maven <i>release</i> plugin as follows : <i>mvn clean release:clean release:prepare release:perform</i></li>
-                    <li>Go to the DataNucleus Sonatype account and check/release/close the repository artifacts</li>
+                    <li>Use the Maven <i>release</i> plugin as follows : <i>mvn clean release:clean release:prepare release:perform</i>.
+                        This updates the version to remove SNAPSHOT, builds source/javadocs/jar, creates a tag and finally copies it to 
+                        Sonatype ready for release.</li>
+                    <li>Go to the DataNucleus Sonatype account and check/release/close the repository artifacts)</li>
                 </ul>
             </subsection>
 

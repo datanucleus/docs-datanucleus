@@ -9,7 +9,7 @@
     <body>
         <section name="Documentation">
             <p>
-                DataNucleus uses Maven <i>site</i> plugin for generating its documentation, and the documentation
+                DataNucleus uses the Maven <i>site</i> plugin for generating its documentation, and the documentation
                 is stored in XDOC format typically.
             </p>
 

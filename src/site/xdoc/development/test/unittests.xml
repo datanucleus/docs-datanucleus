@@ -10,7 +10,9 @@
         <section name="DataNucleus : Component Tests">
             <p>
                 DataNucleus uses JUnit for unit testing. The traditional style of "unit" test are included with the project that 
-                they are testing. For example "core" has some "unit" tests, and these are run when you build the project.
+                they are testing. For example "core" has some "unit" tests, and these are run when you build the project. In general
+                DataNucleus doesn't have many of this style of tests (you're welcome to write some) because the more important aspect
+                of testing is the actual reading/writing involving the datastore (see below).
             </p>
             <br/>
         </section>
