@@ -28,10 +28,10 @@
                 <li><b>Debug problems in the code</b> before reporting them on the Forum. You can isolate
                     the issue to a particular area of code even if you don't know the solution, and post
                     your findings on the Forum for one of the developers to pick up and progress further.
-                    <b>Better still contribute patches</b> so it saves our time in working out where the
-                    problem lies. These will be much more valuable to us. Contribute any patches in 
-                    <a href="http://en.wikipedia.org/wiki/Diff#Unified_format" target="_blank">patch format ("diff -u")</a>.
-                    Please see the <a href="../development/coding_standards.html">DataNucleus code format convention</a></li>
+                    <b>Better still contribute updates</b> so it saves our time in working out where the
+                    problem lies. These will be much more valuable to us. Since we use Git for source code repository
+                    the best way is to fork/clone a particular plugin project and submit a pull request with
+                    your changes. Please see the <a href="../development/coding_standards.html">DataNucleus code format convention</a></li>
                 <li><b>Volunteer to be a developer</b> of DataNucleus. To do this you need to start off by
                     contributing patches for issues, and demonstrate your commitment to the project.
                     Once you've done this for a while then we'll invite you to join the project.
