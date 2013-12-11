@@ -69,8 +69,8 @@ datanucleus-xml
             <subsection name="GitHub : Tests">
                 <p>
                     In order to test DataNucleus capabilities we have many end-to-end tests. In the GitHub DataNucleus project these are available
-                    in the repository <b>datanucleus-tests</b>. Below that you have some framework projects that need building first, then there are
-                    tests split by the persistence API they are for (JDO, JPA, REST, etc).
+                    in the repository <a href="https://github.com/datanucleus/tests">tests</a>. Below that you have some framework projects that need building first, 
+                    then there are tests split by the persistence API they are for (JDO, JPA, REST, etc).
                 </p>
                 <br/>
             </subsection>
@@ -100,7 +100,7 @@ docs-accessplatform
 docs-accessplatform-skin
 ]]></pre>
                 <p>
-                    The "skin" repositories provide a themed-layour for use with the Maven "site" plugin for each of the documentation sites.
+                    The "skin" repositories provide a themed-layout for use with the Maven "site" plugin for each of the documentation sites.
                     Then we have one repository providing the <a href="http://www.datanucleus.org">datanucleus.org</a> website, and one
                     repository providing the <a href="http://www.datanucleus.org/products/accessplatform/">AccessPlatform</a> website.
                 </p>

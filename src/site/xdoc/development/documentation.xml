@@ -18,20 +18,14 @@
                     DataNucleus has a main site <b>datanucleus.org</b> for the overall project and the commercial
                     services that we offer. This site makes use of a "skin" responsible for adding header/footer
                     to all docs as well as the dropdown menus.
-                    This "skin" is available in SVN at
-                </p>
-<code>documentation/datanucleus.org-maven-skin/trunk</code>
-                <p>
+                    This "skin" is available in GitHub at <a href="https://github.com/datanucleus/docs-datanucleus-skin">docs-datanucleus-skin</a>.
                     Now you need to build/install the skin, by typing <i>mvn clean install</i>.
                 </p>
                 <p>
-                    You can access the documentation for <i>datanucleus.org</i> in SVN at
-                </p>
-<code>documentation/datanucleus.org/trunk</code>
-                <p>
+                    The documentation is in GitHub at <a href="https://github.com/datanucleus/docs-datanucleus">docs-datanucleus</a>
                     Now you can build the site itself by typing <i>mvn clean site</i>.
                     The site is then available under <i>target/site</i>.
-                    The documentation is also generated every night from what is in SVN, and this appears on the 
+                    The documentation is also generated every night from what is in GitHub, and this appears on the 
                     website.
                 </p>
             </subsection>
@@ -39,23 +33,14 @@
             <subsection name="AccessPlatform Product Site">
                 <p>
                     The documentation for AccessPlatform uses the same Maven process, and also has its own "skin".
-                    The "skin" is available in SVN at.
-                </p>
-<code>documentation/accessplatform-maven-skin/trunk</code>
-                <p>
+                    This "skin" is available in GitHub at <a href="https://github.com/datanucleus/docs-accessplatform-skin">docs-accessplatform-skin</a>.
                     Now you need to build/install the skin, by typing <i>mvn clean install</i>.
                 </p>
                 <p>
-                    You can access the documentation for <i>AccessPlatform</i> in SVN at
-                </p>
-<code>documentation/accessplatform/trunk</code>
-                <p>
-                    Now you can build the site itself by typing <i>mvn clean site</i> and this is generated under
-                    <i>target/site</i>.
-                    You can also build a PDF of the docs by typing <i>mvn clean pdf:pdf</i>, and this is generated
-                    under <i>target/pdf</i>.
-                    The documentation is also generated every night from what is in SVN, and this appears on the 
-                    website.
+                    The documentation is in GitHub at <a href="https://github.com/datanucleus/docs-accessplatform">docs-accessplatform</a>
+                    Now you can build the site itself by typing <i>mvn clean site</i> and this is generated under <i>target/site</i>.
+                    You can also build a PDF of the docs by typing <i>mvn clean pdf:pdf</i>, and this is generated under <i>target/pdf</i>.
+                    The documentation is also generated every night from what is in GitHub, and this appears on the  website.
                 </p>
             </subsection>
 

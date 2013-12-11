@@ -46,15 +46,15 @@
                 <li>Develop code, unit tests (as appropriate), and documentation for the issue. 
                     DataNucleus is developed using JDK1.6+.</li>
                 <li>Run all DataNucleus unit tests and JDO2 TCK, and when all pass to the same level as before then
-                    you can check your code into SVN</li>
-                <li><b>Broken unit tests or JDO TCK tests MUST BE FIXED ASAP</b>. Others are using SVN trunk too
+                    you can check your code into GitHub</li>
+                <li><b>Broken unit tests or JDO TCK tests MUST BE FIXED ASAP</b>. Others are using GitHub latest too
                     and if you break either the build or the tests then it means they often cannot work effectively.
                     <b>Breakage of unit tests or JDO TCK tests mean that your changes can be rolled back</b></li>
                 <li>Issues that involve many changes should be split, where appropriate, into smaller steps
                     so that you can still pass point 3 above with each check in</li>
                 <li>Where changes are significant and you cannot split them into smaller check-ins (that pass
-                    the tests) should be checked in to your own SVN branch and when complete they should be 
-                    merged into main SVN. If help is needed at this point then other developers should help in 
+                    the tests) should be checked in to your own GitHub branch and when complete they should be 
+                    merged into GitHub 'master'. If help is needed at this point then other developers should help in 
                     merging large changes</li>
                 <li>All check-ins should have a prefix in the description like <i>[NUCCORE-23]</i> for the issue being
                     worked on. Then they will be indexed by JIRA and so we can track changes.</li>
