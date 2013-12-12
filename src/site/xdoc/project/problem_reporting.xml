@@ -29,7 +29,7 @@
                 <li>Search <a href="http://issues.datanucleus.org">DataNucleus JIRA</a> for an issue describing 
                     your situation. If there is one then you can always check the status of the issue and post 
                     against it in JIRA.</li>
-                <li>Start a thread on the <a href="http://forum.datanucleus.org">DataNucleus Forum</a>.</li>
+                <li>Start a thread on the <a href="http://forum.datanucleus.org">DataNucleus Forum</a>. If doing this then seriously consider posting a simple concise testcase (see below) that gives people something that reproduces your problem.</li>
                 <li>If there is nothing obvious incorrect in your situation and it happens in a released 
                     version of DataNucleus then you can raise an issue in 
                     <a href="http://issues.datanucleus.org">DataNucleus JIRA</a>. 
