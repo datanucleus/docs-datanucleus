@@ -69,7 +69,7 @@ datanucleus-xml
                     AccessPlatform version 1.2 using version Y of that plugin because it needs some new functionality.
                 </p>
 
-                <h3 name="Maven"/>
+                <h3>Maven</h3>
                 <p>
                     All DataNucleus plugins are Maven projects, with a <i>pom.xml</i>. 
                     To build and install the plugin using Maven simply type
@@ -84,7 +84,7 @@ datanucleus-xml
                 <br/>
                 <br/>
 
-                <h3 name="Eclipse"/>
+                <h3>Eclipse</h3>
                 <p>
                     When building/developing using Eclipse the first thing you need to do is install the Eclipse "m2e" plugin (if not already done).
                     This means that the build of any plugin will build using Maven (and get its dependencies from Maven).
@@ -126,7 +126,7 @@ datanucleus-idea-plugin
                 <p>
                     The GitHub DataNucleus project also provides the documentation for DataNucleus.
                 </p>
-                <h3 name="datanucleus.org Project Site"/>
+                <h3>datanucleus.org Project Site</h3>
                 <p>
                     DataNucleus has a main site <b>datanucleus.org</b> for the overall project and the commercial
                     services that we offer. This site makes use of a "skin" responsible for adding header/footer
@@ -143,7 +143,7 @@ datanucleus-idea-plugin
                 </p>
                 <br/>
                 <br/>
-                <h3 name="AccessPlatform Product Site"/>
+                <h3>AccessPlatform Product Site</h3>
                 <p>
                     The documentation for AccessPlatform uses the same Maven process, and also has its own "skin".
                     This "skin" is available in GitHub at <a href="https://github.com/datanucleus/docs-accessplatform-skin">docs-accessplatform-skin</a>.
