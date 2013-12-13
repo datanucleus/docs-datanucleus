@@ -3,115 +3,16 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Source Code Repository</title>
+        <title>DataNucleus Source Code</title>
     </properties>
 
     <body>
-        <section name="GitHub : Source Code Repository">
-            <img src="../images/GitHub-Mark-64px.png" alt="GitHub" border="0"/>
+        <section name="DataNucleus Source Code : Legacy Subversion Repository">
             <p>
-                DataNucleus source code is hosted on <a href="https://github.com/datanucleus">GitHub</a> and uses
-                the <a href="http://git-scm.com//">Git</a> source code version control system.
-                You can check out from GitHub using
-            </p>
-<source>
-Using SSH:
-git clone git@github.com:datanucleus/{repository-name}.git
-
-Using HTTPS:
-git clone https://github.com/datanucleus/{repository-name}.git
-</source>
-            <p>
-                Obviously, not everyone will want to check out all DataNucleus project repositories, so use this command
-                for the particular repositories that you require. Note that GitHub repositories are all browsable via
-                the web, for example <a href="https://github.com/datanucleus/datanucleus-neo4j">the DataNucleus Neo4j datastore plugin</a>.
-                Note that all plugin repositories are <a href="http://maven.apache.org">Maven projects</a> so you need to
-                understand how to build with Maven to build these plugins.
+                <b>Note that source code for all versions after 3.3.5 is stored in <a href="sourcecode.html">GitHub</a>.</b>
             </p>
             <p>
-                <b>Note that (previous) source code for all versions up to and including 3.3.5 is stored in <a href="#sourceforge">SourceForge</a>.</b>
-            </p>
-            <br/>
-
-            <subsection name="GitHub : Plugins">
-                <p>
-                    Within the DataNucleus project over on GitHub you have various repositories providing actual DataNucleus plugins.
-                    These are currently
-                </p>
-<pre>
-datanucleus-core
-
-APIs :                                Type support :
-datanucleus-api-jdo                   datanucleus-geospatial
-datanucleus-api-jpa                   datanucleus-guava
-datanucleus-api-rest                  datanucleus-jodatime
-
-Datastores :                          Others :
-datanucleus-excel                     datanucleus-cache
-datanucleus-hbase                     datanucleus-jdo-query
-datanucleus-json                      datanucleus-jdo-connector
-datanucleus-ldap                      datanucleus-jpa-query
-datanucleus-mongodb
-datanucleus-neo4j
-datanucleus-neodatis
-datanucleus-odf
-datanucleus-rdbms
-datanucleus-xml
-</pre>
-                <p>
-                    All plugins are independently versioned ("master" is the latest branch). This is because they have their own lifecycle, and plugins are
-                    bundled together into the "products" (e.g AccessPlatform). So we could have AccessPlatform version 1.1 using version X of a plugin, and 
-                    AccessPlatform version 1.2 using version Y of that plugin because it needs some new functionality.
-                </p>
-                <br/>
-            </subsection>
-
-            <subsection name="GitHub : Tests">
-                <p>
-                    In order to test DataNucleus capabilities we have many end-to-end tests. In the GitHub DataNucleus project these are available
-                    in the repository <a href="https://github.com/datanucleus/tests">tests</a>. Below that you have some framework projects that need building first, 
-                    then there are tests split by the persistence API they are for (JDO, JPA, REST, etc).
-                </p>
-                <br/>
-            </subsection>
-
-            <subsection name="GitHub : Tools">
-                <p>
-                    The GitHub DataNucleus project also provides some tools to help in using DataNucleus. The repositories providing tools are
-                </p>
-<pre><![CDATA[
-datanucleus-maven-plugin
-datanucleus-eclipse-plugin
-datanucleus-idea-plugin
-]]></pre>
-                <p>
-                    Like with all plugins, the tools are independently versioned since they have their own lifecycle.
-                </p>
-                <br/>
-            </subsection>
-            <subsection name="GitHub : Documentation">
-                <p>
-                    The GitHub DataNucleus project also provides the documentation for DataNucleus. The repositories providing documentation are
-                </p>
-<pre><![CDATA[
-docs-datanucleus
-docs-datanucleus-skin
-docs-accessplatform
-docs-accessplatform-skin
-]]></pre>
-                <p>
-                    The "skin" repositories provide a themed-layout for use with the Maven "site" plugin for each of the documentation sites.
-                    Then we have one repository providing the <a href="http://www.datanucleus.org">datanucleus.org</a> website, and one
-                    repository providing the <a href="http://www.datanucleus.org/products/accessplatform/">AccessPlatform</a> website.
-                </p>
-                <br/>
-            </subsection>
-        </section>
-
-        <section name="Legacy Subversion : Source Code Repository">
-            <a name="sourceforge"/>
-            <p>
-                DataNucleus uses <a href="http://subversion.tigris.org/">Subversion (SVN)</a> for housing source code for all versions
+                DataNucleus used <a href="http://subversion.tigris.org/">Subversion (SVN)</a> for housing source code for all versions
                 <b>up to and including 3.3.5</b>. 
                 The legacy DataNucleus SVN repository is hosted by <a href="http://www.sf.net/projects/datanucleus/">SourceForge</a>.
                 <b>Note that this repository will not be updated with fixes etc now. You should use GitHub for that.</b>
