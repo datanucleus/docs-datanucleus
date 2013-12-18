@@ -15,7 +15,7 @@
             <ul>
                 <li>Compile Requirement : JDK1.5+</li>
                 <li>Runtime Requirement : JDK1.5+</li>
-                <li>Latest version : 3.2.0</li>
+                <li>Latest version : 3.2.1</li>
                 <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCXML?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
                 <li>License : <a href="../project/license.html">Apache 2</a></li>
                 <li>Javadocs : <a href="../javadocs/store.xml/3.2">3.2</a>,
@@ -61,13 +61,13 @@
                         <td>Yes</td>
                     </tr>
                     <tr>
-                        <td><a href="http://mirrors.ibiblio.org/pub/mirrors/maven2/javax/xml/bind/jaxb-api/2.1/" target="_blank">jaxb-api</a></td>
+                        <td><a href="http://central.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.11/" target="_blank">jaxb-api</a></td>
                         <td>2.1</td>
                         <td>JAXB API</td>
                         <td>Yes</td>
                     </tr>
                     <tr>
-                        <td><a href="http://mirrors.ibiblio.org/pub/mirrors/maven2/javax/xml/jaxb-impl/" target="_blank">jaxb-impl</a></td>
+                        <td><a href="http://central.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.7/" target="_blank">jaxb-impl</a></td>
                         <td>2.x</td>
                         <td>JAXB Implementation</td>
                         <td>Yes</td>
