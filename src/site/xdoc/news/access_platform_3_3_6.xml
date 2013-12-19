@@ -22,6 +22,7 @@
             <ul>
                 <li>XML : restructured to allow potential of using different JAXB implementations internally</li>
                 <li>XML : add support for XML indentation formatting</li>
+                <li>Cache : upgraded Coherence support to 3.6+</li>
                 <li>Various other bug fixes and minor improvements</li>
             </ul>
             <p>
