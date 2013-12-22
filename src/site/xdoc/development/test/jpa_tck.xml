@@ -15,7 +15,7 @@
                 This is in direct contrast to the JDO standard. We leave it to users to decide how they feel about that.
             </p>
             <p>
-                The tests below were run with JPA TCK 1.0b and DataNucleus SVN trunk (v3.2) on 30/Mar/2012 against 
+                The tests below were run with JPA TCK 1.0b and DataNucleus GitHub master (v3.3) on 20/Dec/2013 against 
                 MySQL 5.0.37.
             </p>
 <source>

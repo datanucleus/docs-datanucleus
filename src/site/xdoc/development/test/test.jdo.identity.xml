@@ -9,7 +9,7 @@
     <body>
         <section name="DataNucleus : Unit Tests - test.jdo.identity">
             <p>
-                <b>test.jdo.identity</b> was run on 14/November/2013 using H2 (1.2) on SVN trunk (3.3)
+                <b>test.jdo.identity</b> was run on 14/November/2013 using H2 (1.2) on GitHub master (3.3)
                 and gave these results
             </p>
 <source><![CDATA[

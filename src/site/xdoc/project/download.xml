@@ -11,8 +11,8 @@
             <p>
                 DataNucleus provides Open Source products that are subject to the 
                 <a href="license.html">Apache 2 License</a>, browsable on this site. You have a choice of download
-                of released versions or alternatively, when requiring a build of the current SVN codebase, 
-                nightly builds freshly generated from SVN trunk around 2AM GMT,
+                of released versions or alternatively, when requiring a build of the current GitHub codebase, 
+                nightly builds freshly generated from GitHub around 2AM GMT,
             </p>
 
             <subsection name="Releases">

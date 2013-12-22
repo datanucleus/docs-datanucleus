@@ -9,7 +9,7 @@
     <body>
         <section name="DataNucleus : Unit Tests - test.jdo.spatial">
             <p>
-                <b>test.jdo.general</b> was run on 12/Jul/2012 using MySQL 5.5 on SVN trunk (3.1)
+                <b>test.jdo.general</b> was run on 20/Dec/2013 using MySQL 5.5 on GitHub master (3.3)
                 and gave these results
             </p>
             <source><![CDATA[

@@ -9,7 +9,7 @@
     <body>
         <section name="JDO TCK">
             <p>
-                DataNucleus SVN passes the JDO TCK, and hence is a fully-compliant implementation of JDO. 
+                DataNucleus GitHub "master" passes the JDO TCK, and hence is a fully-compliant implementation of JDO. 
                 The following shows the results of the TCK as proof of compatibility. 
                 You can, of course, simply run DataNucleus yourself with the JDO TCK (downloadable from the 
                 <a href="http://db.apache.org/jdo" target="_blank">Apache JDO Project</a>). 
@@ -18,7 +18,7 @@
                 As yet there are no other fully compliant implementations of JDO, publishing their results 
                 on a publically visible website; don't believe their claims of compliance unless they post
                 this output below.
-                The tests below were run with DataNucleus SVN (v3.2) on 30/Mar/2013.
+                The tests below were run with DataNucleus GitHub "master" (v3.3) on 20/Dec/2013.
             </p>
             <source>
 app-runonce-junit.txt:

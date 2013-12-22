@@ -25,7 +25,7 @@
                 such as java.awt.Color).
             </p>
             <p>
-                <b>The examples in this guide relate to current DataNucleus SVN. Please consult the DataNucleus 
+                <b>The examples in this guide relate to current DataNucleus GitHub. Please consult the DataNucleus 
                 source code if you are using an earlier version since things have changed recently for user type 
                 mapping</b>
             </p>
