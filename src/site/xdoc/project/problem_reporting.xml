@@ -19,7 +19,9 @@
             <ol>
                 <li>Check your input classes, MetaData and persistence code against the JDO/JPA spec and the 
                     DataNucleus documentation. The majority of situations are errors in input relative to what 
-                    DataNucleus allows.</li>
+                    DataNucleus allows. <b>More importantly than this, READ THE LOG. IT TELLS YOU WHAT IS HAPPENING</b>.
+                    Unwillingness to read such basic log information suggests that you don't want to debug your problem
+                    so ask yourself this question <i>why should we if you can't be bothered?</i></li>
                 <li>Search the <a href="http://forum.datanucleus.org">DataNucleus Forum</a> for a similar 
                     situation to see if someone else has had the same issue and maybe resolved it.</li>
                 <li>Try the 
