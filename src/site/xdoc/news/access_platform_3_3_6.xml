@@ -14,7 +14,7 @@
 		        <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
             </div>
             <p>
-                <b>??th ??? 2014</b>- DataNucleus AccessPlatform 3.3.6 ("Galileo") is released.
+                <b>??th January 2014</b>- DataNucleus AccessPlatform 3.3.6 ("Galileo") is released.
                 DataNucleus Access Platform provides persistence and retrieval of Java objects to/from
                 a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
                 <i>Version 3.3.6</i> includes the following changes over 3.3.5
@@ -23,6 +23,10 @@
                 <li>XML : restructured to allow potential of using different JAXB implementations internally</li>
                 <li>XML : add support for XML indentation formatting</li>
                 <li>Cache : upgraded Coherence support to 3.6+</li>
+                <li>Geospatial : new plugin comprising merged spatial/awtgeom plugins</li>
+                <li>Geospatial : added some missing PostGIS methods and validated against latest PostGIS JDBC driver</li>
+                <li>MongoDB : improved handling of ordering/range parts of query to correct previous contribution</li>
+                <li>MongoDB : upgrade to use latest java driver</li>
                 <li>Various other bug fixes and minor improvements</li>
             </ul>
             <p>
