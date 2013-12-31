@@ -20,6 +20,9 @@
                 <i>Version 3.3.6</i> includes the following changes over 3.3.5
             </p>
             <ul>
+                <li>Auto-generate MANIFEST.MF OSGi information using Maven bundle plugin</li>
+                <li>Change use of StringBuffer to StringBuilder for efficiency</li>
+                <li>JPA : Fix Criteria FromImpl getJoins/getFetches to return empty set when null</li>
                 <li>XML : restructured to allow potential of using different JAXB implementations internally</li>
                 <li>XML : add support for XML indentation formatting</li>
                 <li>Cache : upgraded Coherence support to 3.6+</li>
