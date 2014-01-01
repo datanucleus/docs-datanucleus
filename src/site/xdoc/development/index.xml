@@ -194,6 +194,19 @@ Contributors:
                 </ul>
             </subsection>
 
+            <a name="samplerelease"/>
+            <subsection name="Sample Release Process">
+                <p>
+                    We try to make all samples use Maven and have the same release process, so then the released archive is consistent.
+                    This is the release process for a sample
+                </p>
+                <ul>
+                    <li>Go to samples project and edit the pom.xml for version and dependencies</li>
+                    <li>Create the assembly using <i>mvn clean assembly:assembly</i></li>
+                    <li>Copy the zip file on to SourceForge (or get an admin to do it)</li>
+                </ul>
+            </subsection>
+
             <subsection name="Metrics">
                <p> 
                    DataNucleus originated as JPOX in 2003 and consequently many people have contributed to its development over the years, 

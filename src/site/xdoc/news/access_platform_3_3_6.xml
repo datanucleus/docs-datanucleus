@@ -42,6 +42,7 @@
                 <li>Geospatial : added some missing PostGIS methods and validated against latest PostGIS JDBC driver</li>
                 <li>MongoDB : improved handling of ordering/range parts of query to correct previous contribution</li>
                 <li>MongoDB : upgrade to use latest java driver</li>
+                <li>HBase : fix problem with retrieval of Enum stored as numeric (ordinal)</li>
                 <li>Various other bug fixes and minor improvements</li>
             </ul>
             <p>
