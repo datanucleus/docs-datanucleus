@@ -11,6 +11,7 @@
             <p>
                 <i>datanucleus-awtgeom</i> provides persistence of java.awt.geom types.
                 It builds on top of the basic type handling provided by <i>datanucleus-core</i>.
+                <b>This plugin is now merged into the <i>datanucleus-geospatial</i> plugin</b>
             </p>
             <ul>
                 <li>Compile Requirement : JDK1.5+</li>
