@@ -7,12 +7,14 @@
     </properties>
 
     <body>
-        <section name="DataNucleus Spatial">
+        <section name="DataNucleus Geospatial">
             <p>
-                <i>datanucleus-spatial</i> provided support for persistence of many geometric/spatial datatypes.
-                <b>It is now replaced by the <i>datanucleus-geospatial</i> plugin</b> - see <a href="store.types.geospatial.html">here</a>.
+                <i>datanucleus-geospatial</i> provides support for persistence of many geometric/spatial datatypes.
+                It builds on top of the <i>datanucleus-core</i> persistence capabilities, and is used in conjunction
+                with the <i>datanucleus-rdbms</i> plugin.
             </p>
             <ul>
+                <li>Compile Requirement : JDK1.5+</li>
                 <li>Runtime Requirement : JDK1.5+</li>
                 <li>Latest version : 3.2.4</li>
                 <li>Roadmap : <a href="http://issues.datanucleus.org/browse/NUCSPATIAL?report=com.atlassian.jira.plugin.system.project:roadmap-panel" target="_blank">Via JIRA</a></li>
@@ -28,17 +30,24 @@
                 <li>Source : <a href="https://github.com/datanucleus/datanucleus-geospatial">latest</a></li>
             </ul>
 
+            <subsection name="Source Code">
+                <p>The plugin can be checked out as follows</p>
+<source>git clone https://github.com/datanucleus/datanucleus-geospatial.git</source>
+                <br/>
+            </subsection>
+
             <subsection name="Download">
-                <p><i>datanucleus-spatial</i> is downloadable as following</p>
+                <p><i>datanucleus-geospatial</i> is downloadable as following</p>
                 <ul>
-                    <li><b>Releases</b> <a href="http://repo1.maven.org/maven2/org/datanucleus/datanucleus-spatial/" target="_blank">from Maven Central</a></li>
+                    <li><b>Releases</b> <a href="http://repo1.maven.org/maven2/org/datanucleus/datanucleus-geospatial/" target="_blank">from Maven Central</a></li>
+                    <li><b>Nightly builds</b> <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus/datanucleus-geospatial/" target="_blank">from Maven2 Nightly Repository</a></li>
                 </ul>
                 <br/>
             </subsection>
 
             <subsection name="Dependencies">
                 <p>
-                    <i>datanucleus-spatial</i> is dependent on the following packages of software and this differs 
+                    <i>datanucleus-geospatial</i> is dependent on the following packages of software and this differs 
                     for each mapping scenario. Please refer to the <a href="http://www.datanucleus.org/products/accessplatform/datastores/rdbms_spatial_types.html">RDBMS Spatial Types Guide</a> for 
                     more information about these scenarios.
                 </p>
