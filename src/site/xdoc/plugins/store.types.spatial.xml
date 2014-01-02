@@ -39,8 +39,8 @@
             <subsection name="Download">
                 <p><i>datanucleus-geospatial</i> is downloadable as following</p>
                 <ul>
-                    <li><b>Releases</b> <a href="http://repo1.maven.org/maven2/org/datanucleus/datanucleus-spatial/" target="_blank">from Maven Central</a></li>
-                    <li><b>Nightly builds</b> <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus/datanucleus-spatial/" target="_blank">from Maven2 Nightly Repository</a></li>
+                    <li><b>Releases</b> <a href="http://repo1.maven.org/maven2/org/datanucleus/datanucleus-geospatial/" target="_blank">from Maven Central</a></li>
+                    <li><b>Nightly builds</b> <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus/datanucleus-geospatial/" target="_blank">from Maven2 Nightly Repository</a></li>
                 </ul>
                 <br/>
             </subsection>
