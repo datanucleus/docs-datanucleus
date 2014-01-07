@@ -7,7 +7,64 @@
     </properties>
 
     <body>
-        <section name="Usage">
+        <section name="Why Use DataNucleus ?">
+            <p>
+                Choosing a Java data management platform will come down to your requirements in terms of cost, 
+                functionality, support, etc.
+            </p>
+            <ul>
+                <li><b>DataNucleus is Open Source</b>, meaning that you have full access to the 
+                    source code for all versions of DataNucleus. With this you have the capability to correct 
+                    any errors that you encounter, but also better understand the data management process, 
+                    and you can potentially extend DataNucleus to suit your needs.</li>
+                <li><b>DataNucleus is free</b>. Our license is the <a href="license.html">Apache 2 license</a>, 
+                    providing the code and executables (JARs) free of charge. You are free to use DataNucleus in your 
+                    projects. Please refer to the license for the precise wording. DataNucleus will always remain
+                    Open Source. Our license (Apache 2) is very flexible, much more than the license 
+                    used for some other notable object/relational mapping software which use licenses like 
+                    the LGPL.</li>
+                <li><b>DataNucleus is independent and unstoppable</b>. The source code is open, and is not owned exclusively 
+                    by some company. As such it cannot be bought by a large organisation such as Versant or Oracle and the 
+                    product terminated (as has happened to customers of Kodo, JDO Genie over the last few years) - 
+                    do you want that to happen to you? FYI EclipseLink is Oracle-driven, OpenJPA is IBM-driven and 
+                    Hibernate is RedHat-driven</li>
+                <li><b>DataNucleus is standards driven and standards compliant</b> implementing JDO1, JDO2, 
+                    JDO2.1, JDO2.2, JDO3, JPA1, and JPA2 providing all mandatory items and the majority of optional 
+                    items as well as providing several value-added extensions. Standards compliance safeguards
+                    your applications future allowing you to swap between implementations.</li>
+                <li><b>DataNucleus supports data management for many different types of datastores</b>. 
+                    These include
+                    <a href="http://github.com/datanucleus/datanucleus-rdbms">the vast majority of RDBMS databases on the market today</a>,
+                    <a href="http://github.com/datanucleus/datanucleus-mongodb">MongoDB document store</a>,
+                    <a href="http://github.com/datanucleus/datanucleus-ldap">LDAP</a> and other datastores meaning that 
+                    if you change your datastore in the future you don't need to change your data access 
+                    layer.</li>
+                <li><b>DataNucleus provides outstanding performance</b> when compared with the 
+                    competing technologies.</li>
+                <li><b>DataNucleus does not bring in large numbers of dependencies</b> unlike other 
+                    persistence frameworks (for example, Hibernate) that have to provide a zip file just to 
+                    package all of their requirements up. In fact DataNucleus could be run with just 1 
+                    third-party library (jdo-api.jar) - beat that!</li>
+                <li><b>DataNucleus is quality-driven</b> being developed using a Test Driven Development 
+                    methodology. We have more than 2000 unit tests that are run before any release 
+                    guaranteeing a stable product. In addition we baseline our capabilities against standard 
+                    Java TCKs (JDO, JPA) - the definition of specification compliance. In our 
+                    <a href="http://issues.datanucleus.org">issue tracker</a> you will not find large numbers of 
+                    outstanding high priority items that you have to workaround (unlike what you find in the 
+                    Hibernate, OpenJPA, EclipseLink issue trackers for example)</li>
+                <li><b>DataNucleus provides a level of free support</b> by way of an 
+                    <a href="http://forum.datanucleus.org">online forum</a> and also provides 
+                    <a href="services/index.html#support">commercial support arrangements</a> if you require it.</li>
+                <li><b>DataNucleus <a href="services/index.html">consulting and training</a></b> can be arranged with the developers of DataNucleus.</li>
+                <li><b>DataNucleus is open to contributions/donations</b> allowing individuals to help out and allowing 
+                    companies to sponsor features that they require for their deployments of DataNucleus.</li>
+                <li><b>DataNucleus is plugin-driven</b> using the OSGi standard mechanism, providing plugins to external 
+                    caching software (Coherence, EHCache, etc), to external database-pooling software 
+                    (DBCP, C3P0, etc), and much more.</li>
+            </ul>
+        </section>
+
+        <section name="Used By">
             <p>
                 DataNucleus is used by many companies and groups in their own software.
                 Below are a short subset of those publicisable.
@@ -47,6 +104,80 @@
                     <td width="33%"><a href="http://www.lockheedmartin.com/" target="_blank"><img src="../images/companies/lockheed.png" border="0" alt=""/></a></td>
                 </tr>
             </table>
+        </section>
+
+        <section name="Publicise Your Usage">
+            <p>
+                Have you benefited from DataNucleus and want to publicise your use of it ?
+                You can do this in two ways
+            </p>
+            <subsection name="Write a Testimonial">
+                <p>
+                    Why not write a short testimonal of your usage of DataNucleus. Maybe start by explaining
+                    the problem and what you needed to do. Then explain how DataNucleus addresses what
+                    you need, and how you solved any problems that came up. You don't need to go into
+                    great detail. Then please contact us at<br/>
+                    <b>info [AT] datanucleus [DOT] org</b>
+                </p>
+                <br/>
+            </subsection>
+            
+            <subsection name="Website links">
+                <p>
+                    You can also help by putting one of our logos on your site with a link back to our website.
+                    That way DataNucleus gets publicity and others can benefit. This way the project will
+                    flourish with only a small effort from you. Below are some logos for your use.
+                    Should you have any particular requirements for logo sizes, please contact us.
+                </p>
+            </subsection>
+            <subsection name="DataNucleus logo. 150x40 pixels">
+                <p>
+                    <img src="../images/logos/DataNucleus16-150.jpg" border="0" alt=""/>
+                </p>
+            </subsection>
+            <subsection name="DataNucleus logo. 300x80 pixels">
+                <p>
+                    <img src="../images/logos/DataNucleus16-300.jpg" border="0" alt=""/>
+                </p>
+            </subsection>
+            <!-- subsection name="DataNucleus logo. 1500x400 pixels">
+                <p>
+                    <img src="../images/logos/DataNucleus16-1500.jpg" border="0" width="800" alt=""/>
+                </p>
+            </subsection-->
+
+            <subsection name="DataNucleus AccessPlatform logos">
+                <p>
+                   <!-- img src="../images/logos/DataNucleus_AccessPlatform_32.jpg" border="0"/ -->
+                   <img src="../images/logos/DataNucleus_AccessPlatform_40.jpg" border="0" alt=""/>
+                   <img src="../images/logos/DataNucleus_AccessPlatform_85.jpg" border="0" alt=""/>
+                </p>
+            </subsection>
+
+            <!-- subsection name="DataNucleus AnalysisPlatform logo">
+                <p>
+                   <img src="../images/logos/DataNucleus_AnalysisPlatform_40.jpg" border="0" alt=""/>
+                   <img src="../images/logos/DataNucleus_AnalysisPlatform_85.jpg" border="0" alt=""/>
+                </p>
+            </subsection-->
+
+            <!-- subsection name="Logo color and guidelines">
+                <p>
+                   Pantone color codes provided using Pantone process coated.
+                </p>
+                <p>
+	               <img src="../images/logos/DataNucleus17.jpg" border="0" width="800" alt=""/>
+                </p>
+            </subsection-->
+
+            <subsection name="Download">
+                <p>
+                   <a href="../images/logos/DataNucleus16.eps">EPS Format</a>
+                </p>
+                <p>
+                   <a href="../images/logos/DataNucleus17.jpg">Logo guidelines</a>
+                </p>
+            </subsection>
         </section>
     </body>
 </document>
