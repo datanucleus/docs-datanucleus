@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>PluginPoints</title>
+    </properties>
+
+    <body>
+        <section name="PluginPoints">
+            <p>
+                DataNucleus products are built using a plugin mechanism, allowing plugins to operate together.
+                This plugin mechanism is useful also from a user viewpoint in that you, the user, could provide
+                plugins that use these plugin points and extend the capabilities of DataNucleus.
+                Plugins are loaded by a plugin manager when DataNucleus is initialised at runtime, and this plugin manager uses a 
+                registry mechanism, inspecting jars in the CLASSPATH. The three steps necessary for creating a DataNucleus plugin are
+            </p>
+            <ol>
+                <li>Review the DataNucleus PluginPoint that you will need to implement to generate the plugin, and implement it</li>
+                <li>Create a file <i>plugin.xml</i> at the top level of your JAR defining the plugin details (see the actual PluginPoint docs).</li>
+                <li>Update the META-INF/MANIFEST.MF file contained in the jar so that it includes necessary information for OSGi.</li>
+            </ol>
+            <p>
+                A minimum <i>META-INF/MANIFEST.MF</i> for a plugin jar should look like this
+            </p>
+            <source>
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: myplugin
+Bundle-SymbolicName: mydomain.myplugin
+Bundle-Version: 1.0.0
+Bundle-Vendor: My Company</source>
+            <p>
+                Each plugin extension has attributes. If you want to override an extension that is included in DataNucleus itself then you 
+                need to specify the <b>priority</b> attribute, setting it to an integer (the default plugin has priority=0, so set to higher than this to override it).
+                <b>If you write a DataNucleus plugin and you either want it to be included in the DataNucleus 
+                    distribution, or want it to be listed here then please contact us via the <a href="http://forum.datanucleus.org">DataNucleus Forum</a></b>
+            </p>
+            <p>
+                The current plugin points are
+            </p>
+            <ul>
+                <li><a href="java_types.html">Java Types</a></li>
+                <li><a href="type_converter.html">Type Converter</a></li>
+                <li><a href="persistence_properties.html">Persistence Properties</a></li>
+                <li><a href="store_manager.html">Store Manager</a></li>
+                <li><a href="connection_factory.html">ConnectionFactory</a></li>
+                <li><a href="autostart_mechanism.html">AutoStart Mechanisms</a></li>
+                <li><a href="classloader_resolver.html">ClassLoader Resolvers</a></li>
+                <li><a href="datastoreidentity.html">Datastore Identity</a></li>
+                <li><a href="identity_string_translator.html">Identity String Translator</a></li>
+                <li><a href="identity_key_translator.html">Identity Key Translator</a></li>
+                <li><span class="dir">RDBMS PluginPoints</span>
+                <ul>
+                    <li><a href="rdbms_java_types.html">Java Type Mapping</a></li>
+                    <li><a href="rdbms_datastore_types.html">Datastore Mapping</a></li>
+                    <li><a href="rdbms_datastore_adapter.html">Datastore Adapter</a></li>
+                    <li><a href="rdbms_connection_pool.html">ConnectionPool</a></li>
+                    <li><a href="rdbms_connection_provider.html">ConnectionProvider</a></li>
+                    <li><a href="rdbms_identifier_factory.html">Identifier Factories</a></li>
+                    <li><a href="rdbms_sql_methods.html">SQL Methods</a></li>
+                    <li><a href="rdbms_sql_expressions.html">SQL Expressions</a></li>
+                    <li><a href="rdbms_sql_operations.html">SQL Operations</a></li>
+                    <li><a href="rdbms_sql_table_namer.html">SQL Table Namer</a></li>
+                </ul></li>
+                <li><a href="annotations.html">Annotations</a></li>
+                <li><a href="class_annotation_handler.html">Class Annotations</a></li>
+                <li><a href="member_annotation_handler.html">Member Annotations</a></li>
+                <li><a href="metadata_handler.html">MetaData Handler</a></li>
+                <li><a href="metadata_entityresolver.html">MetaData Entity Resolver</a></li>
+                <li><a href="value_generator.html">Value Generators</a></li>
+                <li><a href="level1_cache.html">Level 1 Cache</a></li>
+                <li><a href="level2_cache.html">Level 2 Cache</a></li>
+                <li><a href="query_cache.html">Query Cache</a></li>
+                <li><a href="store_query_query.html">Query Language</a></li>
+                <li><a href="store_query_methods.html">Query Methods</a></li>
+                <li><a href="management_server.html">Management Server</a></li>
+                <li><a href="jta_locator.html">JTA Locator</a></li>
+            </ul>
+
+            <br/>
+            <subsection name="Plugins in a Non-managed environment">
+                <p>
+                    Non-managed environment is a runtime environment where DataNucleus runs and plug-ins are not 
+                    managed by a container. In this environment the plug-in discovery and lifecycle is managed by DataNucleus.
+                </p>
+                <p>
+                    There is a 1 to N instance relationship from DataNucleus to a plug-in per PMF. More exactly, if only 
+                    one PMF exists, there is only one Plug-in instance for a Connection Pool Plug-in, and if "N" 
+                    PMF exist, there are "N" Plug-in instances for a Connection Pool Plug-in.
+                </p>
+                <p>
+                    JavaSE and JavaEE runtimes are considered <i>non-managed</i> environments.
+                    In non managed environments there is no lifecycle itself of plug-ins. Extensions implemented by 
+                    plug-ins are instantiated on demand and terminated on PMF/EMF closing, PM/EM closing or in another 
+                    form depending in what the extension is used for.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Plugins in a Managed environment">
+                <p>
+                Managed environment is a runtime environment where DataNucleus plug-ins are managed by a container. 
+                The discovery, registry and lifecycle of plug-ins are controlled by the container. 
+                There is no plug-in instance relationship from DataNucleus to a plug-in regarding PMF instances. In 
+                managed environments, there is only one plug-in instance for one or "N" PMFs. Again, this is 
+                managed by the container.
+                </p>
+                <p>
+                DataNucleus supports OSGi containers as managed environment.
+                In OSGi managed environments plug-in lifecycle is determined by OSGi specification. Once 
+                activated, a plug-in is only stopped when the OSGi container finishes its execution, or the 
+                plug-in is stopped by an OSGi command.
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="PluginPoints and Plugins">
+                <p>
+                    A plugin owns a PluginPoint. The behaviour is defined below :-
+                </p>
+                <ul>
+                    <li><b>Lifecycle</b> : Each extension is created by a segment of code during the runtime 
+                        execution, and destroyed/released whenever they are no longer needed. This has no influence 
+                        with the plug-in lifecycle.</li>
+                    <li><b>Manageability</b> : In non managed environments, the plug-ins are managed by DataNucleus 
+                        and maintained with a composition relation to the PMF instance. This allows a plug-in 
+                        "instance" per PMF. If multiple PMFs are created multiple extensions for an extension point 
+                        are instantiated. In managed environments, more precisely in OSGi containers, the plug-ins 
+                        are managed by the OSGi framework. Each plug-in will mostly be a singleton inside the OSGi
+                        container.</li>
+                    <li><b>Registration</b> : In non managed environments all plugins are registered using an 
+                        instance of JDOClassLoaderResolver (so using the current ClassLoader of the 
+                        PMF and the current thread). This means that the /plugin.xml and /META-INF/MANIFEST.MF files 
+                        must be accessible to the classloader. In managed environment this is handled by the 
+                        container.</li>
+                    <li><b>ClassLoading</b> : The classloading in non managed environments is usually made of one 
+                        single ClassLoader, while in managed environments each plug-in has it's own ClassLoader.</li>
+                    <li><b>Configuration</b> : Some Extensions needs to retrieve a configuration that was set in 
+                        the PMF. This means that Plug-ins should not hold singleton / static configurations if they 
+                        want to serve to multiple PMFs at the same time.</li>
+                    <li><b>Constructors/Methods</b> : In order of having consistent and avoid changes to 
+                        extension-point interfaces, the Extension Constructors or Methods (either one) should have 
+                        receive a PMFContext instance as argument. If by the time the Extension Point is designed 
+                        clearly there is usage for a PMFContext, then the Extension-Point does not need to take the 
+                        PMFContext as argument, but keep in mind that a 3rd Extension may need one due to different 
+                        reasons.</li>
+                    <li><b>Instantiation</b> : Inside the DataNucleus Core, regardless if the runtime is OSGi 
+                        managed or non managed, extension instances are created per PMF. DataNucleus Extensions 
+                        should always be created through a PluginManager, regardless if the managed environment 
+                        would allow you to instantiate using their own interfaces. This allows DataNucleus and 
+                        its Plug-ins to run in non managed environments.</li>
+                </ul>
+                <br/>
+            </subsection>
+        </section>
+    </body>
+</document>

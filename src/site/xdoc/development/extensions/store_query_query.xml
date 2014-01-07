@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : Query Language</title>
+        <title>PluginPoints : Query Language</title>
     </properties>
 
     <body>
-        <section name="Plugins : Query Language">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : Query Language">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus provides support for query languages to allow access to the persisted objects.
                 DataNucleus Core supports JDOQL, SQL and JPQL for use with the "rdbms" StoreManager.

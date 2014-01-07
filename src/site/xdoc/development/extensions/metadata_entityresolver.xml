@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : MetaData Entity Resolver</title>
+        <title>PluginPoints : MetaData Entity Resolver</title>
     </properties>
 
     <body>
-        <section name="Plugins : MetaData Entity Resolver">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : MetaData Entity Resolver">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus provides a pluggable framework whereby you can plug in your own DTD or XSD schema support.
                 You can extend DataNucleus's capabilities using the plugin extension <i>org.datanucleus.metadata_entityresolver</i>.

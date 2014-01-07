@@ -3,17 +3,17 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : Connection Provider</title>
+        <title>PluginPoints : Connection Provider</title>
     </properties>
 
     <body>
-        <section name="Plugins : Connection Provider">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : Connection Provider">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus is developed as a plugin-driven framework and one of the components that is 
-                pluggable is the failover mechanism. DataNucleus provides a support for basic 
-                <a href="../failover.html">Failover</a> algorithm, and is structured so that you can easily add 
-                your own failover algorithm and have them usable within your DataNucleus usage.
+                pluggable is the failover mechanism. DataNucleus provides a support for basic failover algorithm, 
+                and is structured so that you can easily add your own failover algorithm and have them usable within 
+                your DataNucleus usage.
             </p>
             <p>
                 Failover algorithm for DataNucleus can be plugged using the plugin extension 
@@ -100,7 +100,7 @@ public interface ConnectionProvider
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
                 <p>
                     So here we have our "ConnectionProvider" class "MyConnectionProvider" which is named "MyName". 

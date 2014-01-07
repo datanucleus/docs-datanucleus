@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : Connection Factory</title>
+        <title>PluginPoints : Connection Factory</title>
     </properties>
 
     <body>
-        <section name="Plugins : Connection Factory">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : Connection Factory">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 Any plugin for a datastore needs a way of connecting to the datastore and linking these
                 connections into the persistence process. This is provided by way of a ConnectionFactory.
@@ -93,7 +93,7 @@ public interface ConnectionFactory
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
                 <p>
                     So now for the datastore "rdbms" we will use this implementation when transactional

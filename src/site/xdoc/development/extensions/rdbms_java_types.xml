@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : User-Defined Data Types</title>
+        <title>PluginPoints : User-Defined Data Types</title>
     </properties>
 
     <body>
-        <section name="Plugins : RDBMS Java Types">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : RDBMS Java Types">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 When persisting a class to an RDBMS datastore there is a <i>mapping</i> process from class/field
                 to table/column. DataNucleus provides a mapping process and allows users to define their own
@@ -143,7 +143,7 @@ public class IPAddressMapping extends ObjectAsStringMapping
                     The most common user-type will map to a String and so can just take this as a template. 
                     If the user-type maps to a Long then they can use <i>ObjectAsLongMapping</i> - the other 
                     convenience mapping available. Note that you also need a MANIFEST.MF as per the 
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="plugins.html">PluginPoints Guide</a>.
                 </p>
                 <p>
                     This is downloadable as a DataNucleus sample from the 
@@ -269,7 +269,7 @@ public class ColorMapping extends SingleFieldMultiMapping
 </plugin>]]></source>
                 <p>
                     Note that we also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                     When using the DataNucleus Enhancer, SchemaTool or Core, DataNucleus automatically searches 
                     for the <i>mapping definition</i> at <b>/plugin.xml</b> files in the CLASSPATH.
                 </p>

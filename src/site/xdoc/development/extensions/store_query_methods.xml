@@ -8,7 +8,7 @@
 
     <body>
         <section name="JDOQL/JPQL : Query Methods">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 JDOQL/JPQL are defined to support particular methods/functions as part of the supported syntax.
                 This support is provided by way of an extension point, with support for these methods/functions
@@ -331,8 +331,7 @@ public class StringToUpperCaseMethodEvaluator implements InvocationEvaluator
                 <p>
                     When we have defined our query method we just need to make it into a DataNucleus plugin. 
                     To do this you simply add a file <i>plugin.xml</i> to your JAR at the root and add a 
-                    MANIFEST.MF as per the <a href="plugins.html">Plugins Guide</a>. 
-                    The file <i>plugin.xml</i> should look like this
+                    MANIFEST.MF. The file <i>plugin.xml</i> should look like this
                 </p>
                 <source><![CDATA[
 <?xml version="1.0"?>
@@ -344,7 +343,7 @@ public class StringToUpperCaseMethodEvaluator implements InvocationEvaluator
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
             </subsection>
 

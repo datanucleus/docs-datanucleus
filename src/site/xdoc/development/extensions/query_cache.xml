@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : Query Cache</title>
+        <title>PluginPoints : Query Cache</title>
     </properties>
 
     <body>
-        <section name="Plugins : Query Cache">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : Query Cache">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus is developed as a plugin-driven framework and one of the components that is 
                 pluggable is the caching of query compilations. DataNucleus provides some inbuilt cache
@@ -122,7 +122,7 @@ public class MyQueryCache implements QueryCache
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
             </subsection>
 

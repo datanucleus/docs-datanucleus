@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : Java Type</title>
+        <title>PluginPoints : Java Type</title>
     </properties>
 
     <body>
-        <section name="Plugins : Java Type">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : Java Type">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus provides capabilities for persistence of particular Java types. Some types are
                 by default persistent, some are by default in the default "fetch-group". Similarly some are
@@ -217,7 +217,7 @@ public class MyDateWrapper extends java.util.Date implements SCO
                     Note that the "override" is specified since this type is provided by DataNucleus itself
                     and so your mapping needs to override it.
                     Note also that you require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
                 <p>
                     Obviously all standard types (such as <i>java.util.Date</i>) already have their values 

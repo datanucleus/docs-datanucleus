@@ -3,16 +3,15 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : Member Annotation Handler</title>
+        <title>PluginPoints : Member Annotation Handler</title>
     </properties>
 
     <body>
-        <section name="Plugins : Member Annotation Handler">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : Member Annotation Handler">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is 
-                the handling of annotations at field-level. DataNucleus provides a support for 
-                <a href="../jdo/annotations.html">JDO</a> and <a href="../jpa/annotations.html">JPA</a> annotations, 
+                the handling of annotations at field-level. DataNucleus provides a support for JDO and JPA annotations, 
                 but is structured so that you can easily add your own annotations and have them usable within your 
                 DataNucleus usage. <b>This extension is for DataNucleus 3.0+</b>
             </p>
@@ -61,7 +60,7 @@ public interface MemberAnnotationHandler
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
                 <p>
                     So here, when the metadata for a member is processed, if it finds the @MyAnnotation annotation

@@ -3,17 +3,16 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : AutoStart Mechanism</title>
+        <title>PluginPoints : AutoStart Mechanism</title>
     </properties>
 
     <body>
-        <section name="Plugins : AutoStart Mechanism">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : AutoStart Mechanism">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable 
-                is the mechanism for <a href="../jdo/autostart.html">starting with knowledge of previously persisted 
-                classes</a>. DataNucleus provides 3 "auto-start" mechanisms, but also allows you to plugin your 
-                own variant.
+                is the mechanism for starting with knowledge of previously persisted classes. 
+                DataNucleus provides 3 "auto-start" mechanisms, but also allows you to plugin your own variant.
             </p>
             <p>
                 DataNucleus can discover the classes that it is managing at runtime, or you can use an "autostart" mechanism
@@ -182,7 +181,7 @@ public class MyAutoStarter extends AbstractAutoStartMechanism
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
             </subsection>
 

@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : Type Converter</title>
+        <title>PluginPoints : Type Converter</title>
     </properties>
 
     <body>
-        <section name="Plugins : Type Converter">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : Type Converter">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus allows you to provide alternate ways of persisting Java types. Whilst it includes the
                 majority of normal converters built-in, you can extend DataNucleus's capabilities using the plugin 
@@ -86,7 +86,7 @@ public class URIStringConverter implements TypeConverter<URI, String>
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
                 <p>
                     The name "dn.uri-string" can be used to refer to this converter from within a 

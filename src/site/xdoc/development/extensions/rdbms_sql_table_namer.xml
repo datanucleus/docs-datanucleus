@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : RDBMS SQL Table Namer</title>
+        <title>PluginPoints : RDBMS SQL Table Namer</title>
     </properties>
 
     <body>
-        <section name="Plugins : RDBMS SQL Table Naming Support">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : RDBMS SQL Table Naming Support">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus is developed as a plugin-driven framework and one of the components that is 
                 pluggable is the support for controlling the naming of table aliases in (some) SQL statements.
@@ -100,7 +100,7 @@ public class MySQLTableNamer implements SQLTableNamer
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
                 <p>
                     So now if we define a query using the extension <i>datanucleus.sqlTableNamingStrategy</i>

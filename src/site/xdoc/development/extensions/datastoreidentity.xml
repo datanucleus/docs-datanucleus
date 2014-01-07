@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : Datastore Identity</title>
+        <title>PluginPoints : Datastore Identity</title>
     </properties>
 
     <body>
-        <section name="Plugins : Datastore Identity">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : Datastore Identity">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is 
                 the class used to represent datastore-identity (for JDO). DataNucleus provides a default 
@@ -281,7 +281,7 @@ public class OIDImpl implements java.io.Serializable, OID
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
                 <p>
                     The name "myoid" should be specified when you create the PersistenceManagerFactory using 

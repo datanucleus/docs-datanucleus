@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : RDBMS Datatypes</title>
+        <title>PluginPoints : RDBMS Datatypes</title>
     </properties>
 
     <body>
-        <section name="Plugins : RDBMS Datastore Types">
-            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+        <section name="PluginPoints : RDBMS Datastore Types">
+            <img src="../../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 When persisting a class to an RDBMS datastore there is a <i>mapping</i> process from class/field
                 to table/column. The most common thing to configure is the 
@@ -287,7 +287,7 @@
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
                 <p>
                     So in this definition we have defined that a field of type "Character" can be mapped

@@ -3,11 +3,11 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Plugins : ClassLoaderResolver</title>
+        <title>PluginPoints : ClassLoaderResolver</title>
     </properties>
 
     <body>
-        <section name="Plugins : ClassLoader Resolvers">
+        <section name="PluginPoints : ClassLoader Resolvers">
             <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
             <p>
                 DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is 
@@ -38,12 +38,12 @@
             </table>
             <br/>
 
-            <subsection name="JDO2 Implementation">
+            <subsection name="JDO Implementation">
                 <p>
                     At runtime, DataNucleus will need to load the classes being persisted. To do this it needs to 
-                    utilise a particular class loading mechanism. The JDO2 specification defines how class-loading is 
+                    utilise a particular class loading mechanism. The JDO specification defines how class-loading is 
                     to operate in a JDO implementation and this is what DataNucleus uses by default. In brief the 
-                    JDO2 class-loading mechanism utilises 3 class loaders
+                    JDO class-loading mechanism utilises 3 class loaders
                 </p>
                 <ul>
                     <li>When creating the PersistenceManagerFactory you can specify a class loader. This is used first 
@@ -233,7 +233,7 @@ public class MyClassLoaderResolver implements ClassLoaderResolver
 </plugin>]]></source>
                 <p>
                     Note that you also require a MANIFEST.MF file as per the
-                    <a href="plugins.html">Plugins Guide</a>.
+                    <a href="index.html">PluginPoints Guide</a>.
                 </p>
             </subsection>
 
