@@ -130,13 +130,10 @@
                     Should you have any particular requirements for logo sizes, please contact us.
                 </p>
             </subsection>
-            <subsection name="DataNucleus logo. 150x40 pixels">
+
+            <subsection name="DataNucleus project logos">
                 <p>
                     <img src="../images/logos/DataNucleus16-150.jpg" border="0" alt=""/>
-                </p>
-            </subsection>
-            <subsection name="DataNucleus logo. 300x80 pixels">
-                <p>
                     <img src="../images/logos/DataNucleus16-300.jpg" border="0" alt=""/>
                 </p>
             </subsection>
@@ -148,7 +145,6 @@
 
             <subsection name="DataNucleus AccessPlatform logos">
                 <p>
-                   <!-- img src="../images/logos/DataNucleus_AccessPlatform_32.jpg" border="0"/ -->
                    <img src="../images/logos/DataNucleus_AccessPlatform_40.jpg" border="0" alt=""/>
                    <img src="../images/logos/DataNucleus_AccessPlatform_85.jpg" border="0" alt=""/>
                 </p>
@@ -170,14 +166,14 @@
                 </p>
             </subsection-->
 
-            <subsection name="Download">
+            <!-- subsection name="Download">
                 <p>
                    <a href="../images/logos/DataNucleus16.eps">EPS Format</a>
                 </p>
                 <p>
                    <a href="../images/logos/DataNucleus17.jpg">Logo guidelines</a>
                 </p>
-            </subsection>
+            </subsection-->
         </section>
     </body>
 </document>
