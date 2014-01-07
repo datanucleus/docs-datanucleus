@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>Plugin Points</title>
+    </properties>
+
+    <body>
+        <section name="Plugin Points">
+            <p>
+                As we have described, DataNucleus products are built using a plugin mechanism, allowing plugins to operate
+                together. The current plugin points are
+            </p>
+            <ul>
+                <li><a href="extensions/java_types.html">Java Types</a></li>
+                <li><a href="extensions/type_converter.html">Type Converter</a></li>
+                <li><a href="extensions/persistence_properties.html">Persistence Properties</a></li>
+                <li><a href="extensions/store_manager.html">Store Manager</a></li>
+                <li><a href="extensions/connection_factory.html">ConnectionFactory</a></li>
+                <li><a href="extensions/autostart_mechanism.html">AutoStart Mechanisms</a></li>
+                <li><a href="extensions/classloader_resolver.html">ClassLoader Resolvers</a></li>
+                <li><a href="extensions/datastoreidentity.html">Datastore Identity</a></li>
+                <li><a href="extensions/identity_string_translator.html">Identity String Translator</a></li>
+                <li><a href="extensions/identity_key_translator.html">Identity Key Translator</a></li>
+                <li><span class="dir">RDBMS Plugin Points</span>
+                <ul>
+                    <li><a href="extensions/rdbms_java_types.html">Java Type Mapping</a></li>
+                    <li><a href="extensions/rdbms_datastore_types.html">Datastore Mapping</a></li>
+                    <li><a href="extensions/rdbms_datastore_adapter.html">Datastore Adapter</a></li>
+                    <li><a href="extensions/rdbms_connection_pool.html">ConnectionPool</a></li>
+                    <li><a href="extensions/rdbms_connection_provider.html">ConnectionProvider</a></li>
+                    <li><a href="extensions/rdbms_identifier_factory.html">Identifier Factories</a></li>
+                    <li><a href="extensions/rdbms_sql_methods.html">SQL Methods</a></li>
+                    <li><a href="extensions/rdbms_sql_expressions.html">SQL Expressions</a></li>
+                    <li><a href="extensions/rdbms_sql_operations.html">SQL Operations</a></li>
+                    <li><a href="extensions/rdbms_sql_table_namer.html">SQL Table Namer</a></li>
+                </ul></li>
+                <li><a href="extensions/annotations.html">Annotations</a></li>
+                <li><a href="extensions/class_annotation_handler.html">Class Annotations</a></li>
+                <li><a href="extensions/member_annotation_handler.html">Member Annotations</a></li>
+                <li><a href="extensions/metadata_handler.html">MetaData Handler</a></li>
+                <li><a href="extensions/metadata_entityresolver.html">MetaData Entity Resolver</a></li>
+                <li><a href="extensions/value_generator.html">Value Generators</a></li>
+                <li><a href="extensions/level1_cache.html">Level 1 Cache</a></li>
+                <li><a href="extensions/level2_cache.html">Level 2 Cache</a></li>
+                <li><a href="extensions/query_cache.html">Query Cache</a></li>
+                <li><a href="extensions/store_query_query.html">Query Language</a></li>
+                <li><a href="extensions/store_query_methods.html">Query Methods</a></li>
+                <li><a href="extensions/management_server.html">Management Server</a></li>
+                <li><a href="extensions/jta_locator.html">JTA Locator</a></li>
+            </ul></li>
+        </section>
+    </body>
+</document>
