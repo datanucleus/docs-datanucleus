@@ -54,8 +54,9 @@
                     Hibernate, OpenJPA, EclipseLink issue trackers for example)</li>
                 <li><b>DataNucleus provides a level of free support</b> by way of an 
                     <a href="http://forum.datanucleus.org">online forum</a> and also provides 
-                    <a href="services/index.html#support">commercial support arrangements</a> if you require it.</li>
-                <li><b>DataNucleus <a href="services/index.html">consulting and training</a></b> can be arranged with the developers of DataNucleus.</li>
+                    <a href="http://www.datanucleus.org/support.html#support">commercial support arrangements</a> if you require it.</li>
+                <li><b>DataNucleus <a href="http://www.datanucleus.org/support.html#timebased_consulting">consulting and training</a></b> 
+                    can be arranged with the developers of DataNucleus.</li>
                 <li><b>DataNucleus is open to contributions/donations</b> allowing individuals to help out and allowing 
                     companies to sponsor features that they require for their deployments of DataNucleus.</li>
                 <li><b>DataNucleus is plugin-driven</b> using the OSGi standard mechanism, providing plugins to external 

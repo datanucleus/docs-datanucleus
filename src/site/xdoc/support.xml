@@ -3,11 +3,39 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
-        <title>Support</title>
+        <title>Support and Services</title>
     </properties>
 
     <body>
+        <section name="DataNucleus Free Support">
+            <a name="free"/>
+            <p>
+                With any software, there are times when you need assistance to make full use of it. Here at DataNucleus
+                we want you to make the best of the software that we provide. For that reason we provide both
+                commercial and free support facilities.
+                DataNucleus provides its own <a href="http://forum.datanucleus.org">online forums</a>
+                providing a place for you to discuss issues you are having. We don't guarantee to provide answers on this
+                forum. It is simply a place where you could get some level of support when people have time.
+                This may not be adequate for some people hence why we provide the commercial version below.
+            </p>
+            <ol>
+                <li>Check the Documentation for <a href="../products/accessplatform/index.html">DataNucleus Access Platform</a> before 
+                    anything else. The answer is usually there, either in a tutorial/example, or in one of the many guides.</li>
+                <li>Look in the <a href="../products/accessplatform/logging.html">DataNucleus Log</a>. 
+                    This usually contains a lot of information that may answer the issue. You can always configure the log to give more output.</li>
+                <li>Try a recent build to see if your version is out of date and the expected result is achieved 
+                    with the latest nightly builds.</li>
+                <li>Go to the <a href="http://forum.datanucleus.org" target="_blank">Online Forum</a> and ask. 
+                    Always try to give as clear a description of the problem as possible, together with your input 
+                    data, and any associated log output.
+                    <b>Please be aware that we have very little time for this type of support and 
+                    contributors to DataNucleus are more likely to get any available free support</b></li>
+            </ol>
+            <br/>
+        </section>
+
         <section name="DataNucleus Commercial Services">
+            <a name="commercial"/>
             <img src="../images/logos/DataNucleus16-300.jpg" border="0" alt=""/>
             <p>
                 DataNucleus is open source software, also providing good documentation and (public) test cases. As a result
@@ -19,7 +47,7 @@
                 Note that we are the only company offering support for DataNucleus software, and we are the only company with
                 committers on this project, and our services are provided at very reasonable prices. 
                 <b>You cannot get better value and a higher level of DataNucleus experience than from us.</b>
-                Our various services are defined below complete with pricing (<i>note that all prices are in UK pounds (GBP) symbolised by the £ symbol</i>)
+                Our various commercial services are defined below complete with pricing (<i>note that all prices are in UK pounds (GBP) symbolised by the £ symbol</i>)
             </p>
             <ul>
                 <li><b><a href="#onsite_consulting">On-Site Consulting</a></b> : DataNucleus consultant(s) come to your site
