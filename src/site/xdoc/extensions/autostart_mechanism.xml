@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>PluginPoints : AutoStart Mechanism</title>
+    </properties>
+
+    <body>
+        <section name="PluginPoints : AutoStart Mechanism">
+            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+            <p>
+                DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable 
+                is the mechanism for starting with knowledge of previously persisted classes. 
+                DataNucleus provides 3 "auto-start" mechanisms, but also allows you to plugin your own variant.
+            </p>
+            <p>
+                DataNucleus can discover the classes that it is managing at runtime, or you can use an "autostart" mechanism
+                to inform DataNucleus of what classes it will be managing. DataNucleus provides a selection of plugins for autostart
+                mechanism.
+                You can extend DataNucleus's capabilities using the plugin extension <i>org.datanucleus.autostart</i>.
+            </p>
+            <table>
+                <tr>
+                    <th>Plugin extension-point</th>
+                    <th>Key</th>
+                    <th>Description</th>
+                    <th width="80">Location</th>
+                </tr>
+                <tr>
+                    <td>org.datanucleus.autostart</td>
+                    <td>classes</td>
+                    <td>AutoStart mechanism specifying the list of classes to be managed</td>
+                    <td>datanucleus-core</td>
+                </tr>
+                <tr>
+                    <td>org.datanucleus.autostart</td>
+                    <td>xml</td>
+                    <td>AutoStart mechanism using an XML file to store the managed classes</td>
+                    <td>datanucleus-core</td>
+                </tr>
+                <tr>
+                    <td>org.datanucleus.autostart</td>
+                    <td>schematable</td>
+                    <td>AutoStart mechanism using a table in the RDBMS datastore to store the managed classes</td>
+                    <td>datanucleus-rdbms</td>
+                </tr>
+            </table>
+            <br/>
+
+            <subsection name="Interface">
+                <p>
+                    Any auto-start mechanism plugin will need to implement <i>org.datanucleus.store.AutoStartMechanism</i>.
+                    <a href="http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/store/autostart/AutoStartMechanism.html" target="_blank"><img src="../images/javadoc.gif" alt=""/></a>
+                    So you need to implement the following interface
+                </p>
+                <source>
+package org.datanucleus.store.autostart;
+
+public interface AutoStartMechanism
+{
+    /** mechanism is disabled if None **/ 
+    public static final String NONE = "None";
+
+    /** mechanism is in Quiet mode **/
+    public static final String MODE_QUIET = "Quiet";
+
+    /** mechanism is in Checked mode **/
+    public static final String MODE_CHECKED = "Checked";
+
+    /** mechanism is in Ignored mode **/
+    public static final String MODE_IGNORED = "Ignored";
+
+    /**
+     * Accessor for the mode of operation.
+     * @return The mode of operation
+     **/
+    String getMode();
+
+    /**
+     * Mutator for the mode of operation.
+     * @param mode The mode of operation
+     **/
+    void setMode(String mode);
+
+    /**
+     * Accessor for the data for the classes that are currently auto started.
+     * @return Collection of {@link StoreData} elements
+     * @throws DatastoreInitialisationException
+     **/
+    Collection getAllClassData() throws DatastoreInitialisationException;
+
+    /**
+     * Starts a transaction for writing (add/delete) classes to the auto start mechanism.
+     */
+    void open();
+
+    /**
+     * Closes a transaction for writing (add/delete) classes to the auto start mechanism.
+     */
+    void close();
+
+    /**
+     * Whether it's open for writing (add/delete) classes to the auto start mechanism.
+     * @return whether this is open for writing 
+     */
+    public boolean isOpen();
+
+    /**
+     * Method to add a class/field (with its data) to the currently-supported list.
+     * @param data The data for the class.
+     **/
+    void addClass(StoreData data);
+
+    /**
+     * Method to delete a class/field that is currently listed as supported in
+     * the internal storage.
+     * It does not drop the schema of the DatastoreClass 
+     * neither the contents of it. It only removes the class from the 
+     * AutoStart mechanism.
+     * TODO Rename this method to allow for deleting fields
+     * @param name The name of the class/field
+     **/
+    void deleteClass(String name);
+
+    /**
+     * Method to delete all classes that are currently listed as supported in
+     * the internal storage. It does not drop the schema of the DatastoreClass 
+     * neither the contents of it. It only removes the classes from the 
+     * AutoStart mechanism.
+     **/
+    void deleteAllClasses();
+
+    /**
+     * Utility to return a description of the storage for this mechanism.
+     * @return The storage description.
+     **/
+    String getStorageDescription();
+}</source>
+                <p>
+                    You can extend <i>org.datanucleus.store.AbstractAutoStartMechanism</i>
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Implementation">
+                <p>
+                    So lets assume that you want to create your own auto-starter <b>MyAutoStarter</b>.
+                </p>
+                <source><![CDATA[
+package mydomain;
+
+import org.datanucleus.store.AutoStartMechanism;
+import org.datanucleus.store.AbstractAutoStartMechanism;
+import org.datanucleus.store.StoreManager;
+import org.datanucleus.ClassLoaderResolver;
+
+public class MyAutoStarter extends AbstractAutoStartMechanism
+{
+    public MyAutoStarter(StoreManager storeMgr, ClassLoaderResolver clr)
+    {
+        super();
+    }
+
+    ... (implement the required methods)
+}]]></source>
+            </subsection>
+
+            <subsection name="Plugin Specification">
+                <p>
+                    When we have defined our "AutoStartMechanism" we just need to make it into a DataNucleus plugin. 
+                    To do this you simply add a file <i>plugin.xml</i> to your JAR at the root. The file
+                    <i>plugin.xml</i> should look like this
+                </p>
+                <source><![CDATA[
+<?xml version="1.0"?>
+<plugin id="mydomain" name="DataNucleus plug-ins" provider-name="My Company">
+    <extension point="org.datanucleus.autostart">
+        <autostart name="myStarter" class-name="mydomain.MyAutoStarter"/>
+    </extension>
+</plugin>]]></source>
+                <p>
+                    Note that you also require a MANIFEST.MF file as per the
+                    <a href="index.html">PluginPoints Guide</a>.
+                </p>
+            </subsection>
+
+            <subsection name="Plugin Usage">
+                <p>
+                    The only thing remaining is to use your new <i>AutoStartMechanism</i> plugin. You do this by 
+                    having your plugin in the CLASSPATH at runtime, and setting the PMF property 
+                    <b>org.datanucleus.autoStartMechanism</b> to <i>myStarter</i> (the name you specified in the 
+                    plugin.xml file).
+                </p>
+            </subsection>
+        </section>
+    </body>
+</document>

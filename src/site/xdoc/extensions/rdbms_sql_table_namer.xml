@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>PluginPoints : RDBMS SQL Table Namer</title>
+    </properties>
+
+    <body>
+        <section name="PluginPoints : RDBMS SQL Table Naming Support">
+            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+            <p>
+                DataNucleus is developed as a plugin-driven framework and one of the components that is 
+                pluggable is the support for controlling the naming of table aliases in (some) SQL statements.
+                DataNucleus provides a few options out of the box.
+                The default is <i>alpha-scheme</i> which names tables based on the table-group they are in
+                and the number in that group, so giving names like A0, A1, A2, B0, B1, C0, D0.
+                It also provides a simpler option <i>t-scheme</i> that names all tables as "T{number}" so
+                T0, T1, T2, T3, etc.
+            </p>
+            <p>
+                The following sections describe how to create your own SQL Table Namer plugin for DataNucleus.
+            </p>
+            <subsection name="Interface">
+                <p>
+                    Any SQL Table Namer plugin will need to implement <i>org.datanucleus.store.rdbms.sql.SQLTableNamer</i>
+                    <a href="http://www.datanucleus.org/javadocs/store.rdbms/latest/org/datanucleus/store/rdbms/sql/SQLTableNamer.html" target="_blank"><img src="../images/javadoc.gif" alt=""/></a>
+                    So you need to implement the following interface
+                </p>
+                <source>
+package org.datanucleus.store.rdbms.sql;
+
+import org.datanucleus.store.rdbms.sql.SQLStatement;
+import org.datanucleus.store.mapped.DatastoreContainerObject;
+
+public interface SQLTableNamer
+{
+    /**
+     * Method to return the alias to use for the specified table.
+     * @param stmt The statement where we will use the table
+     * @param table The table
+     * @return The alias to use
+     */
+    public String getAliasForTable(SQLStatement stmt, DatastoreContainerObject table);
+}</source>
+                <br/>
+            </subsection>
+
+            <subsection name="Implementation">
+                <p>
+                    So there is only one method to provide in your implementation. The arguments to this are
+                </p>
+                <ul>
+                    <li>The SQLStatement that is being constructed and that we create the names for</li>
+                    <li>The table that we want to generate the alias for</li>
+                </ul>
+                <p>
+                    Lets just go through our default namer scheme to understand how it works
+                </p>
+                <source><![CDATA[
+package mydomain;
+
+import org.datanucleus.store.rdbms.sql.SQLTableNamer;
+import org.datanucleus.store.rdbms.sql.SQLStatement;
+import org.datanucleus.store.mapped.DatastoreContainerObject;
+
+public class MySQLTableNamer implements SQLTableNamer
+{
+    public String getAliasForTable(SQLStatement stmt, DatastoreContainerObject table)
+    {
+        if (stmt.getPrimaryTable() == null)
+        {
+            return "T0";
+        }
+        else
+        {
+            return "T" + (stmt.getNumberOfTables() < 0 ? "1" : (stmt.getNumberOfTables()+1));
+        }
+    }
+}]]></source>
+                <p>
+                    So we simply name the primary table of the statement as "T0", and then all subsequent
+                    tables based on the number of the table. That was hard!
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Plugin Specification">
+                <p>
+                    So we now have our custom SQL method and we just need to make this into a DataNucleus 
+                    plugin. To do this you simply add a file <i>plugin.xml</i> to your JAR at the root. 
+                    The file <i>plugin.xml</i> should look like this
+                </p>
+                <source><![CDATA[
+<?xml version="1.0"?>
+<plugin id="mydomain" name="DataNucleus plug-ins" provider-name="My Company">
+    <extension point="org.datanucleus.store.rdbms.sql_tablenamer">
+        <sql-tablenamer name="my-t-scheme" class="mydomain.MySQLTableNamer"/>
+    </extension>
+</plugin>]]></source>
+                <p>
+                    Note that you also require a MANIFEST.MF file as per the
+                    <a href="index.html">PluginPoints Guide</a>.
+                </p>
+                <p>
+                    So now if we define a query using the extension <i>datanucleus.sqlTableNamingStrategy</i>
+                    set to "my-t-scheme" then it will use our table namer.
+                </p>
+            </subsection>
+        </section>
+    </body>
+</document>

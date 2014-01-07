@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>PluginPoints : RDBMS Datatypes</title>
+    </properties>
+
+    <body>
+        <section name="PluginPoints : RDBMS Datastore Types">
+            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+            <p>
+                When persisting a class to an RDBMS datastore there is a <i>mapping</i> process from class/field
+                to table/column. The most common thing to configure is the 
+                <a href="rdbms_java_types.html">Java Type Mapping</a> so that it maps between the java type and the 
+                column(s) in the desired way. We can also configure the mapping to the datastore type. So, for
+                example, we define what JDBC types we can map a particular Java type to. 
+                By "datastore type" we mean the JDBC type, such as BLOB, INT, VARCHAR etc. 
+                DataNucleus provides datastore mappings for the vast majority of JDBC types and the handlings will 
+                almost always be adequate. What you could do though is make a particular Java type persistable
+                using a different JDBC type if you wished.
+            </p>
+            <br/>
+
+            <subsection name="Interface">
+                <p>
+                    To define your own datastore mapping you need to implement
+                    <i>org.datanucleus.store.rdbms.mapping.datastore.DatastoreMapping</i>
+                    <a href="http://www.datanucleus.org/javadocs/store.rdbms/latest/org/datanucleus/store/rdbms/mapping/datastore/DatastoreMapping.html" target="_blank"><img src="../images/javadoc.gif" alt=""/></a>
+                </p>
+                <source>public interface DatastoreMapping
+{
+    /**
+     * Whether the field mapped is nullable.
+     * @return true if is nullable
+     */
+    boolean isNullable();
+
+    /**
+     * The datastore field mapped.
+     * @return the DatastoreField
+     */
+    DatastoreField getDatastoreField();
+
+    /**
+     * The mapping for the java type that this datastore mapping is used by.
+     * This will return null if this simply maps a datastore field in the datastore and has
+     * no associated java type in a class.
+     * @return the JavaTypeMapping
+     */
+    JavaTypeMapping getJavaTypeMapping();
+
+    /**
+     * Accessor for whether the mapping is decimal-based.
+     * @return Whether the mapping is decimal based
+     */
+    boolean isDecimalBased();
+
+    /**
+     * Accessor for whether the mapping is integer-based.
+     * @return Whether the mapping is integer based
+     */
+    boolean isIntegerBased();
+
+    /**
+     * Accessor for whether the mapping is string-based.
+     * @return Whether the mapping is string based
+     */
+    boolean isStringBased();
+
+    /**
+     * Accessor for whether the mapping is bit-based.
+     * @return Whether the mapping is bit based
+     */
+    boolean isBitBased();
+
+    /**
+     * Accessor for whether the mapping is boolean-based.
+     * @return Whether the mapping is boolean based
+     */
+    boolean isBooleanBased();
+
+    /**
+     * Sets a <code>value</code> into <code>preparedStatement</code> 
+     * at position specified by <code>paramIndex</code>. 
+     * @param preparedStatement a datastore object that executes statements in the database 
+     * @param paramIndex the position of the value in the statement
+     * @param value the value
+     */
+    void setBoolean(Object preparedStatement, int paramIndex, boolean value);
+
+    /**
+     * Sets a <code>value</code> into <code>preparedStatement</code> 
+     * at position specified by <code>paramIndex</code>. 
+     * @param preparedStatement a datastore object that executes statements in the database 
+     * @param paramIndex the position of the value in the statement
+     * @param value the value
+     */
+    void setChar(Object preparedStatement, int paramIndex, char value);
+
+    /**
+     * Sets a <code>value</code> into <code>preparedStatement</code> 
+     * at position specified by <code>paramIndex</code>. 
+     * @param preparedStatement a datastore object that executes statements in the database 
+     * @param paramIndex the position of the value in the statement
+     * @param value the value
+     */
+    void setByte(Object preparedStatement, int paramIndex, byte value);
+
+    /**
+     * Sets a <code>value</code> into <code>preparedStatement</code> 
+     * at position specified by <code>paramIndex</code>. 
+     * @param preparedStatement a datastore object that executes statements in the database 
+     * @param paramIndex the position of the value in the statement
+     * @param value the value
+     */
+    void setShort(Object preparedStatement, int paramIndex, short value);
+
+    /**
+     * Sets a <code>value</code> into <code>preparedStatement</code> 
+     * at position specified by <code>paramIndex</code>. 
+     * @param preparedStatement a datastore object that executes statements in the database 
+     * @param paramIndex the position of the value in the statement
+     * @param value the value
+     */
+    void setInt(Object preparedStatement, int paramIndex, int value);
+
+    /**
+     * Sets a <code>value</code> into <code>preparedStatement</code> 
+     * at position specified by <code>paramIndex</code>. 
+     * @param preparedStatement a datastore object that executes statements in the database 
+     * @param paramIndex the position of the value in the statement
+     * @param value the value
+     */
+    void setLong(Object preparedStatement, int paramIndex, long value);
+
+    /**
+     * Sets a <code>value</code> into <code>preparedStatement</code> 
+     * at position specified by <code>paramIndex</code>. 
+     * @param preparedStatement a datastore object that executes statements in the database 
+     * @param paramIndex the position of the value in the statement
+     * @param value the value
+     */
+    void setFloat(Object preparedStatement, int paramIndex, float value);
+
+    /**
+     * Sets a <code>value</code> into <code>preparedStatement</code> 
+     * at position specified by <code>paramIndex</code>. 
+     * @param preparedStatement a datastore object that executes statements in the database 
+     * @param paramIndex the position of the value in the statement
+     * @param value the value
+     */
+    void setDouble(Object preparedStatement, int paramIndex, double value);
+
+    /**
+     * Sets a <code>value</code> into <code>preparedStatement</code> 
+     * at position specified by <code>paramIndex</code>. 
+     * @param preparedStatement a datastore object that executes statements in the database 
+     * @param paramIndex the position of the value in the statement
+     * @param value the value
+     */
+    void setString(Object preparedStatement, int paramIndex, String value);
+
+    /**
+     * Sets a <code>value</code> into <code>preparedStatement</code> 
+     * at position specified by <code>paramIndex</code>. 
+     * @param preparedStatement a datastore object that executes statements in the database 
+     * @param paramIndex the position of the value in the statement
+     * @param value the value
+     */
+    void setObject(Object preparedStatement, int paramIndex, Object value);
+
+    /**
+     * Obtains a value from <code>resultSet</code> 
+     * at position specified by <code>exprIndex</code>. 
+     * @param resultSet an object returned from the datastore with values 
+     * @param exprIndex the position of the value in the result
+     * @return the value
+     */
+    boolean getBoolean(Object resultSet, int exprIndex);
+
+    /**
+     * Obtains a value from <code>resultSet</code> 
+     * at position specified by <code>exprIndex</code>. 
+     * @param resultSet an object returned from the datastore with values 
+     * @param exprIndex the position of the value in the result
+     * @return the value
+     */
+    char getChar(Object resultSet, int exprIndex);
+
+    /**
+     * Obtains a value from <code>resultSet</code> 
+     * at position specified by <code>exprIndex</code>. 
+     * @param resultSet an object returned from the datastore with values 
+     * @param exprIndex the position of the value in the result
+     * @return the value
+     */
+    byte getByte(Object resultSet, int exprIndex);
+
+    /**
+     * Obtains a value from <code>resultSet</code> 
+     * at position specified by <code>exprIndex</code>. 
+     * @param resultSet an object returned from the datastore with values 
+     * @param exprIndex the position of the value in the result
+     * @return the value
+     */
+    short getShort(Object resultSet, int exprIndex);
+
+    /**
+     * Obtains a value from <code>resultSet</code> 
+     * at position specified by <code>exprIndex</code>. 
+     * @param resultSet an object returned from the datastore with values 
+     * @param exprIndex the position of the value in the result
+     * @return the value
+     */
+    int getInt(Object resultSet, int exprIndex);
+
+    /**
+     * Obtains a value from <code>resultSet</code> 
+     * at position specified by <code>exprIndex</code>. 
+     * @param resultSet an object returned from the datastore with values 
+     * @param exprIndex the position of the value in the result
+     * @return the value
+     */
+    long getLong(Object resultSet, int exprIndex);
+
+    /**
+     * Obtains a value from <code>resultSet</code> 
+     * at position specified by <code>exprIndex</code>. 
+     * @param resultSet an object returned from the datastore with values 
+     * @param exprIndex the position of the value in the result
+     * @return the value
+     */
+    float getFloat(Object resultSet, int exprIndex);
+
+    /**
+     * Obtains a value from <code>resultSet</code> 
+     * at position specified by <code>exprIndex</code>. 
+     * @param resultSet an object returned from the datastore with values 
+     * @param exprIndex the position of the value in the result
+     * @return the value
+     */
+    double getDouble(Object resultSet, int exprIndex);
+
+    /**
+     * Obtains a value from <code>resultSet</code> 
+     * at position specified by <code>exprIndex</code>. 
+     * @param resultSet an object returned from the datastore with values 
+     * @param exprIndex the position of the value in the result
+     * @return the value
+     */
+    String getString(Object resultSet, int exprIndex);
+
+    /**
+     * Obtains a value from <code>resultSet</code> 
+     * at position specified by <code>exprIndex</code>. 
+     * @param resultSet an object returned from the datastore with values 
+     * @param exprIndex the position of the value in the result
+     * @return the value
+     */
+    Object getObject(Object resultSet, int exprIndex);
+}</source>
+                <p>
+                    So you can define how to convert the datastore column value to/from common Java types.
+                    Please refer to the existing types in 
+                    <a href="https://sourceforge.net/p/datanucleus/code/HEAD/tree/platform/store.rdbms/trunk/src/java/org/datanucleus/store/rdbms/mapping/datastore/">DataNucleus SVN</a>
+                    for examples. Note that your XXXDatastoreMapping should have a single constructor taking in 
+                    <i>JavaTypeMapping mapping, StoreManager storeMgr, Column col</i>.
+                </p>
+            </subsection>
+
+            <subsection name="Plugin Specification">
+                <p>
+                    To give an example of what the plugin specification looks like
+                </p>
+                <source><![CDATA[
+<?xml version="1.0"?>
+<plugin id="mydomain.myplugins" name="DataNucleus plug-ins" provider-name="My Company">
+    <extension point="org.datanucleus.store.rdbms.rdbms_mapping">
+        <mapping java-type="java.lang.Character" 
+            rdbms-mapping-class="org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping" 
+            jdbc-type="CHAR" sql-type="CHAR" default="true"/>
+        <mapping java-type="java.lang.Character" 
+            rdbms-mapping-class="org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping" 
+            jdbc-type="INTEGER" sql-type="INT" default="false"/>
+    </extension>
+</plugin>]]></source>
+                <p>
+                    Note that you also require a MANIFEST.MF file as per the
+                    <a href="index.html">PluginPoints Guide</a>.
+                </p>
+                <p>
+                    So in this definition we have defined that a field of type "Character" can be mapped
+                    to JDBC type of CHAR or INTEGER (with CHAR the default)
+                </p>
+                <br/>
+            </subsection>
+
+            <subsection name="Missing JDBC definitions">
+                <p>
+                    While DataNucleus attempts to provide all useful JDBC type mappings out of the box, occasionally
+                    you may come across one that is not defined, even though we provide an RDBMSMapping class for that
+                    JDBC type. For example, if you got this error message
+                </p>
+<source>JDBC type XXX declared for field "org.datanucleus.test.MyClass.yyyField" of java type java.lang.YYY cant be mapped for this datastore.</source>
+                <p>
+                    This means that while the JDBC driver may support this JDBC type, we haven't defined it for the
+                    java type "YYY" in the <i>plugin.xml</i> file. All that you need to do is add a <i>plugin.xml</i>
+                    like this
+                </p>
+<source><![CDATA[
+<?xml version="1.0"?>
+<plugin id="mydomain.myplugins" name="DataNucleus plug-ins" provider-name="My Company">
+    <extension point="org.datanucleus.store.rdbms.rdbms_mapping">
+        <mapping java-type="java.lang.YYY" 
+            rdbms-mapping-class="org.datanucleus.store.rdbms.mapping.XXXRDBMSMapping" 
+            jdbc-type="XXX" sql-type="XXX" default="false"/>
+    </extension>
+</plugin>]]></source>
+                <p>
+                    together with MANIFEST.MF to your application, and it will be supported. Obviously if it is of
+                    a type that you think we ought to support out-of-the-box then raise a JIRA on project "NUCRDBMS"
+                    with your plugin.xml definition and mention the datastore it was needed for.
+                </p>
+            </subsection>
+        </section>
+
+    </body>
+</document>

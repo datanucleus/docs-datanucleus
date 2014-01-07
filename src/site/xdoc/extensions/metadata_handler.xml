@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+    <properties>
+        <title>PluginPoints : MetaData Handler</title>
+    </properties>
+
+    <body>
+        <section name="PluginPoints : MetaData Handler">
+            <img src="../images/nucleus_plugin.gif" border="0" alt=""/>
+            <p>
+                DataNucleus has supported JDO metadata from the outset. More than this, it actually provides a 
+                pluggable framework whereby you can plug in your own MetaData support. DataNucleus provides JDO 
+                and JPA metadata support, as well as "persistence.xml".
+                You can extend DataNucleus's capabilities using the plugin extension <i>org.datanucleus.metadata_handler</i>.
+            </p>
+            <table>
+                <tr>
+                    <th>Plugin extension-point</th>
+                    <th>Key</th>
+                    <th>Description</th>
+                    <th width="80">Location</th>
+                </tr>
+                <tr>
+                    <td>org.datanucleus.metadata_handler</td>
+                    <td>jdo</td>
+                    <td>JDO MetaData handler</td>
+                    <td>datanucleus-api-jdo</td>
+                </tr>
+                <tr>
+                    <td>org.datanucleus.metadata_handler</td>
+                    <td>persistence</td>
+                    <td>"persistence.xml" MetaData handler</td>
+                    <td>datanucleus-core</td>
+                </tr>
+                <tr>
+                    <td>org.datanucleus.metadata_handler</td>
+                    <td>jpa</td>
+                    <td>JPA MetaData handler</td>
+                    <td>datanucleus-api-jpa</td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</document>
