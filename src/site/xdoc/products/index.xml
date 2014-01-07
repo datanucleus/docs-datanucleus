@@ -25,7 +25,7 @@
 
             <a name="AccessPlatform"/>
             <subsection name="DataNucleus AccessPlatform">
-                <img src="../images/logos/DataNucleus_AccessPlatform_85.jpg" alt=""/>
+                <!--img src="../images/logos/DataNucleus_AccessPlatform_85.jpg" alt=""/-->
                 <p>
                     DataNucleus AccessPlatform provides persistence and retrieval of data to a range of datastores using a 
                     range of APIs, with a range of query languages. We provide a FactSheet for DataNucleus AccessPlatform in
@@ -61,7 +61,7 @@
                     </tr>
                 </table>
 
-                <h3>Version Status and Documentation</h3>
+                <h4>Version Status and Documentation</h4>
                 <table>
                     <tr>
                         <th>Version</th>
@@ -224,9 +224,9 @@
                         <li><a href="http://github.com/datanucleus/datanucleus-jpa-query">datanucleus-jpa-query</a> : Support for generating JPA criteria query classes</li>
                     </ul></li>
                     <li>Tools<ul>
-                        <li><a href="http://github.com/datanucleus/datanucleus-maven-plugin">Maven</a></li>
-                        <li><a href="http://github.com/datanucleus/datanucleus-eclipse-plugin">Eclipse</a></li>
-                        <li><a href="http://github.com/datanucleus/datanucleus-idea-plugin">Intellij IDEA</a></li>
+                        <li><a href="http://github.com/datanucleus/datanucleus-maven-plugin">Maven</a> : For developing applications using DataNucleus and Maven</li>
+                        <li><a href="http://github.com/datanucleus/datanucleus-eclipse-plugin">Eclipse</a> : For developing application using DataNucleus in Eclipse</li>
+                        <li><a href="http://github.com/datanucleus/datanucleus-idea-plugin">Intellij IDEA</a> : For developing applications using DataNucleus in Intellij IDEA</li>
                     </ul></li>
                     <li>Inactive Plugins<ul>
                         <li><a href="../plugins/enhancer.html">enhancer</a> (now part of datanucleus-core)</li>
@@ -241,6 +241,8 @@
                         <li><a href="../plugins/management.html">management</a> (now part of datanucleus-core)</li>
                     </ul></li>
                 </ul>
+                <br/>
+                <br/>
             </subsection>
 
             <a name="performance"/>
