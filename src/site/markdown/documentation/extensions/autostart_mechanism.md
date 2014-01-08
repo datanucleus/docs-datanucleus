@@ -43,7 +43,7 @@ You can extend DataNucleus's capabilities using the plugin extension _org.datanu
 ### Interface
 
 Any auto-start mechanism plugin will need to implement <i>org.datanucleus.store.AutoStartMechanism</i>.
-[![Javadoc](../images/javadoc.gif)](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/store/autostart/AutoStartMechanism.html)
+[![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/store/autostart/AutoStartMechanism.html)
 So you need to implement the following interface
 
 	package org.datanucleus.store.autostart;
