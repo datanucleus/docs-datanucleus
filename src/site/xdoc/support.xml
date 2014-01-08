@@ -19,9 +19,9 @@
                 This may not be adequate for some people hence why we provide the commercial version below.
             </p>
             <ol>
-                <li>Check the Documentation for <a href="../products/accessplatform/index.html">DataNucleus Access Platform</a> before 
+                <li>Check the Documentation for <a href="products/accessplatform/index.html">DataNucleus Access Platform</a> before 
                     anything else. The answer is usually there, either in a tutorial/example, or in one of the many guides.</li>
-                <li>Look in the <a href="../products/accessplatform/logging.html">DataNucleus Log</a>. 
+                <li>Look in the <a href="products/accessplatform/logging.html">DataNucleus Log</a>. 
                     This usually contains a lot of information that may answer the issue. You can always configure the log to give more output.</li>
                 <li>Try a recent build to see if your version is out of date and the expected result is achieved 
                     with the latest nightly builds.</li>
@@ -36,7 +36,7 @@
 
         <section name="DataNucleus Commercial Services">
             <a name="commercial"/>
-            <img src="../images/logos/DataNucleus16-300.jpg" border="0" alt=""/>
+            <img src="images/logos/DataNucleus16-300.jpg" border="0" alt=""/>
             <p>
                 DataNucleus is open source software, also providing good documentation and (public) test cases. As a result
                 your team could, in principle, train themselves up on the software using the documentation and tests as basis,
@@ -277,33 +277,33 @@
                 <table>
                     <tr>
                         <td width="50%"><a href="http://www.nightlabs.com" target="_blank">
-                            <img src="../images/companies/nightlabs.png" border="0" alt="Nightlabs"/></a></td>
+                            <img src="images/companies/nightlabs.png" border="0" alt="Nightlabs"/></a></td>
                         <td width="50%"><a href="http://www.metamicro.com" target="_blank">
-                            <img src="../images/companies/metamicro.jpg" border="0" alt="Metamicro"/></a></td>
+                            <img src="images/companies/metamicro.jpg" border="0" alt="Metamicro"/></a></td>
                     </tr>
                     <tr>
                         <td bgcolor="#36526c"><a href="http://www.bmc.com" target="_blank">
-                            <img src="../images/companies/bmc.gif" border="0" alt="BMC"/></a></td>
+                            <img src="images/companies/bmc.gif" border="0" alt="BMC"/></a></td>
                         <td><a href="http://www.transcore.com" target="_blank">
-                            <img src="../images/companies/transcore.png" border="0" alt="Transcore"/></a></td>
+                            <img src="images/companies/transcore.png" border="0" alt="Transcore"/></a></td>
                     </tr>
                     <tr>
                         <td width="50%"><a href="http://www.yahoo.com" target="_blank">
-                            <img src="../images/companies/yahoo.gif" border="0" alt="Yahoo"/></a></td>
+                            <img src="images/companies/yahoo.gif" border="0" alt="Yahoo"/></a></td>
                         <td width="50%"><a href="http://www.w4global.com" target="_blank">
-                            <img src="../images/companies/w4.png" border="0" alt="W4"/></a></td>
+                            <img src="images/companies/w4.png" border="0" alt="W4"/></a></td>
                     </tr>
                     <tr>
                         <td width="50%"><a href="http://ge.geglobalresearch.com/" target="_blank">
-                            <img src="../images/companies/ge.png" border="0" alt="General Electric"/></a></td>
+                            <img src="images/companies/ge.png" border="0" alt="General Electric"/></a></td>
                         <td width="50%"><a href="http://www.lockheedmartin.com/" target="_blank">
-                            <img src="../images/companies/lockheed.png" border="0" alt="Lockheed Martin"/></a></td>
+                            <img src="images/companies/lockheed.png" border="0" alt="Lockheed Martin"/></a></td>
                     </tr>
                     <tr>
                         <td width="50%"><a href="http://www.seismicexchange.com/" target="_blank">
-                            <img src="../images/companies/seismicexchange.gif" border="0" alt="Seismic Exchange"/></a></td>
+                            <img src="images/companies/seismicexchange.gif" border="0" alt="Seismic Exchange"/></a></td>
                         <td width="50%"><a href="http://www.livestream.com/" target="_blank">
-                            <img src="../images/companies/livestream.jpg" border="0" alt="LiveStream"/></a></td>
+                            <img src="images/companies/livestream.jpg" border="0" alt="LiveStream"/></a></td>
                     </tr>
                 </table>
             </subsection>

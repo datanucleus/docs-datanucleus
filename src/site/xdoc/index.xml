@@ -16,9 +16,9 @@
             <script src="./jqbanner.js" type="text/javascript"></script>
             <div id="jqb_object">
                 <div class="jqb_slides">
-                    <div class="jqb_slide" title="DataNucleus AccessPlatform" ><a href="http://www.datanucleus.org/products/index.html#AccessPlatform"><img src="images/banner/dn_banner_accessplatform.png" title="" alt=""/></a></div>
-                    <div class="jqb_slide" title="Concerned by licensing costs?" ><a href="http://www.datanucleus.org/products/index.html#AccessPlatform"><img src="images/banner/dn_banner_opensource.png" title="" alt=""/></a></div>
-                    <div class="jqb_slide" title="Want to make it even better?"><a href="http://www.datanucleus.org/development/index.html"><img src="images/banner/dn_banner_development.png" title="" alt=""/></a></div>
+                    <div class="jqb_slide" title="DataNucleus AccessPlatform" ><a href="http://www.datanucleus.org/documentation/products/accessplatform.html"><img src="images/banner/dn_banner_accessplatform.png" title="" alt=""/></a></div>
+                    <div class="jqb_slide" title="Concerned by licensing costs?" ><a href="http://www.datanucleus.org/documentation/products/accessplatform.html"><img src="images/banner/dn_banner_opensource.png" title="" alt=""/></a></div>
+                    <div class="jqb_slide" title="Want to make it even better?"><a href="http://www.datanucleus.org/documentation/development/index.html"><img src="images/banner/dn_banner_development.png" title="" alt=""/></a></div>
                     <div class="jqb_slide" title="Need support?"><a href="http://www.datanucleus.org/support.html#commercial"><img src="images/banner/dn_banner_commercial.png" title="" alt=""/></a></div>
                 </div>
                 <div class="jqb_bar">
@@ -48,13 +48,13 @@
  <a href="products/accessplatform_3_3/index.html">[Read More]</a> |
  <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.5">[Download]</a> |
  <a href="products/accessplatform_3_3/getting_started.html">[Get Started]</a> |
- <a href="project/license.html">[License]</a> |
+ <a href="documentation/license.html">[License]</a> |
  <a href="products/accessplatform_3_3/datanucleus-accessplatform-docs.pdf">[PDF Docs]</a><br/>
                         <b>Version 3.2</b>
  <a href="products/accessplatform_3_2/index.html">[Read More]</a> |
  <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.9">[Download]</a> |
  <a href="products/accessplatform_3_2/getting_started.html">[Get Started]</a> |
- <a href="project/license.html">[License]</a> |
+ <a href="documentation/license.html">[License]</a> |
  <a href="products/accessplatform_3_2/datanucleus-accessplatform-docs.pdf">[PDF Docs]</a>
                     </td>
                 </tr>
@@ -71,11 +71,11 @@
 
             <script src="https://platform.twitter.com/widgets.js" type="text/javascript"/>
             <a href="https://twitter.com/datanucleus" class="twitter-follow-button">Follow @datanucleus</a>
-            <a href="project/donations.html"><img src="images/donate.png" border="0" alt="donate"/></a>
+            <a href="documentation/donations.html"><img src="images/donate.png" border="0" alt="donate"/></a>
             <p>
                 Please note that as well as being freely available open source software, DataNucleus also
                 accepts contributions to make it better still. You can
-                <a href="project/contribute.html">contribute in many many ways</a>, so why not start today?
+                <a href="documentation/development/contribute.html">contribute in many many ways</a>, so why not start today?
             </p>
 
         </section>
