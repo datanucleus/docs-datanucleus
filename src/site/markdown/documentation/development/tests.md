@@ -1,13 +1,16 @@
 <head><title>Tests</title></head>
 
-## DataNucleus : Component Tests
+# Section : [Documentation](../index.html) > [Development](index.html)
+
+
+## Component Tests
 
 DataNucleus uses JUnit for unit testing. The traditional style of "unit" test are included with the project that 
 they are testing. For example "core" has some "unit" tests, and these are run when you build the project. In general
 DataNucleus doesn't have many of this style of tests (you're welcome to write some) because the more important aspect
 of testing is the actual reading/writing involving the datastore (see below).
 
-## DataNucleus : End-to-End Tests
+## End-to-End Tests
 
 __End-to-End tests__ also use JUnit, and are available in the GitHub DataNucleus repository [tests](https://github.com/datanucleus/tests).
 In these tests we persist objects in a datastore, and test the result. There are several scenarios for this type of test, because JDO/JPA 
@@ -88,7 +91,7 @@ except where providing some feature specific to that datastore. Reality is that 
 run such as _test.jdo.mongodb_ for testing MongoDB, which obviously only tests a small subset of what ought to be tested. 
 __Offering your time to make all store plugins more feature complete is the only way this task will be performed.__
 
-<a name="new_unit_test"/>
+
 ### Adding Unit Tests
 
 Where you feel that our unit tests do not adequately cover functionality, you should add a test. Please follow the following process
@@ -100,7 +103,6 @@ Where you feel that our unit tests do not adequately cover functionality, you sh
 5. Raise a JIRA and attach your testcase to the issue
 
 
-<a name="test_configs"/>
 ### Alternate Test Configurations
 
 All tests run with a default test configuration (see the files in _framework_ under 
@@ -389,7 +391,6 @@ Once those are in place then we can talk
 
 
 ## Databases Notes
-<a name="database_notes"/>
 
 ### Database setup for running tests
 
