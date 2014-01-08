@@ -1,5 +1,7 @@
 <head><title>Extensions : Identifier Factories</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Identifier Factories
 ![Plugin](../../images/nucleus_plugin.gif)
 

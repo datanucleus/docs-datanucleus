@@ -1,5 +1,7 @@
 <head><title>Extensions : MetaData Entity Resolver</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : MetaData Entity Resolver
 ![Plugin](../../images/nucleus_plugin.gif)
 

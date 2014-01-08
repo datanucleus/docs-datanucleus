@@ -1,5 +1,7 @@
 <head><title>Extensions : Query Cache</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Query Cache
 ![Plugin](../../images/nucleus_plugin.gif)
 

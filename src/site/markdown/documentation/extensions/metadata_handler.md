@@ -1,5 +1,7 @@
 <head><title>Extensions : MetaData Handler</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : MetaData Handler
 ![Plugin](../../images/nucleus_plugin.gif)
 

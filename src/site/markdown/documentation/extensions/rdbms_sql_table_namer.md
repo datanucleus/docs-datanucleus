@@ -1,5 +1,7 @@
 <head><title>Extensions : RDBMS SQL Table Namer</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : RDBMS SQL Table Naming Support
 ![Plugin](../../images/nucleus_plugin.gif)
 

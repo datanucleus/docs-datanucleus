@@ -1,5 +1,7 @@
 <head><title>Extensions : RDBMS SQL Methods</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : RDBMS SQL Methods Support
 ![Plugin](../../images/nucleus_plugin.gif)
 

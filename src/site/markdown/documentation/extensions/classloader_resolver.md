@@ -1,5 +1,7 @@
 <head><title>Extensions : ClassLoaderResolver</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : ClassLoader Resolvers
 ![Plugin](../../images/nucleus_plugin.gif)
 

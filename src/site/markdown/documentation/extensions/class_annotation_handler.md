@@ -1,5 +1,7 @@
 <head><title>Extensions : Class Annotation Handler</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Class Annotation Handler
 ![Plugin](../../images/nucleus_plugin.gif)
 

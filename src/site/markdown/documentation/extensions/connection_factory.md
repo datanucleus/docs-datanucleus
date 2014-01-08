@@ -1,5 +1,7 @@
 <head><title>Extensions : Connection Factory</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Connection Factory
 ![Plugin](../../images/nucleus_plugin.gif)
 

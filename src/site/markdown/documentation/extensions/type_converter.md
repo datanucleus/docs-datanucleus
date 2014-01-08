@@ -1,5 +1,7 @@
 <head><title>Extensions : Type Converter</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Type Converter
 ![Plugin](../../images/nucleus_plugin.gif)
 

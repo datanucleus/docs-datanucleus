@@ -1,5 +1,7 @@
 <head><title>Extensions : Store Manager</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Store Manager
 ![Plugin](../../images/nucleus_plugin.gif)
 

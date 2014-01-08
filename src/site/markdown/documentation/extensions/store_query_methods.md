@@ -1,5 +1,7 @@
 <head><title>Extensions - InMemory Query Methods</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : JDOQL/JPQL In-Memory Query Methods">
 ![Plugin](../../images/nucleus_plugin.gif)
 

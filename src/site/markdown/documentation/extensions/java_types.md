@@ -1,5 +1,7 @@
 <head><title>Extensions : Java Type</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Java Type
 ![Plugin](../../images/nucleus_plugin.gif)
 

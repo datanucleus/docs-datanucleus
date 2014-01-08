@@ -1,5 +1,7 @@
 <head><title>Products</title></head>
 
+# Section : [Documentation](../index.html) > Products
+
 ## DataNucleus Plugins Documentation
 
 DataNucleus products are built from a series of plugins. Each plugin is an OSGi bundle. 

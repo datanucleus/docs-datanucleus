@@ -1,5 +1,7 @@
 <head><title>Extensions : Value Generators</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Value Generators
 ![Plugin](../../images/nucleus_plugin.gif)
 

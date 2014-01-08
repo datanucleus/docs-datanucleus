@@ -1,5 +1,7 @@
 <head><title>Extensions : RDBMS SQL Operations</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : RDBMS SQL Expression Support
 ![Plugin](../../images/nucleus_plugin.gif)
 

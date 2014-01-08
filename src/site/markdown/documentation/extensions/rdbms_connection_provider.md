@@ -1,5 +1,7 @@
 <head><title>Extensions : Connection Provider</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Connection Provider
 ![Plugin](../../images/nucleus_plugin.gif)
 

@@ -1,5 +1,7 @@
 <head><title>Extensions : JTA Locator</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : JTA Locator
 ![Plugin](../../images/nucleus_plugin.gif)
 

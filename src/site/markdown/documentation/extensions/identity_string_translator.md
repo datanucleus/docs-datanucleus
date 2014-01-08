@@ -1,5 +1,7 @@
 <head><title>Extensions : Identity String Translators</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Identity String Translators
 ![Plugin](../../images/nucleus_plugin.gif)
 

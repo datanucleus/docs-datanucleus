@@ -1,5 +1,7 @@
 <head><title>Extensions : Management Server</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Management Server
 ![Plugin](../../images/nucleus_plugin.gif)
 

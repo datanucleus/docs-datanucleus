@@ -1,5 +1,7 @@
 <head><title>Extensions : Datastore Identity</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Datastore Identity
 ![Plugin](../../images/nucleus_plugin.gif)
 

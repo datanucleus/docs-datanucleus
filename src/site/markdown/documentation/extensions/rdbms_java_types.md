@@ -1,5 +1,7 @@
 <head><title>Extensions : User-Defined Data Types</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : RDBMS Java Types
 ![Plugin](../../images/nucleus_plugin.gif)
 

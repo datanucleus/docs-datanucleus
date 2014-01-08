@@ -1,5 +1,7 @@
 <head><title>Extensions : Level 1 Cache</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Level 1 Cache
 ![Plugin](../../images/nucleus_plugin.gif)
 

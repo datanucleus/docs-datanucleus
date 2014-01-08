@@ -1,5 +1,7 @@
 <head><title>Extensions : RDBMS Datatypes</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : RDBMS Datastore Types
 ![Plugin](../../images/nucleus_plugin.gif)
 

@@ -1,5 +1,7 @@
 <head><title>Extensions : Annotations</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Annotations
 ![Plugin](../../images/nucleus_plugin.gif)
 

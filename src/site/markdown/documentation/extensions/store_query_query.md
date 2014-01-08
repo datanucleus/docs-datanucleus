@@ -1,5 +1,7 @@
 <head><title>Extensions : Query Language</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : Query Language
 ![Plugin](../../images/nucleus_plugin.gif)
 

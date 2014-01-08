@@ -1,5 +1,6 @@
 <head><title>Extensions : Connection Pooling</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
 
 ## Extensions : DataSource Connection pooling
 ![Plugin](../../images/nucleus_plugin.gif)

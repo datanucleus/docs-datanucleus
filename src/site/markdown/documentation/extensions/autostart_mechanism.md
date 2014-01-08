@@ -1,5 +1,7 @@
 <head><title>Extensions : AutoStart Mechanism</title></head>
 
+# Section : [Documentation](../index.html) > [Extensions](index.html)
+
 ## Extensions : AutoStart Mechanism
 ![Plugin](../../images/nucleus_plugin.gif)
 

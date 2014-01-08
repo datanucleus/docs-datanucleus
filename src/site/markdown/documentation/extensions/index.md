@@ -1,5 +1,7 @@
 <head><title>PluginPoints</title></head>
 
+# Section : [Documentation](../index.html) > Extensions
+
 ## DataNucleus Extensions Guide
 
 DataNucleus products are built using a plugin mechanism, allowing plugins to operate together.
