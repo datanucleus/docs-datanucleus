@@ -6,6 +6,8 @@
 	+ [Problem Reporting](problem_reporting.html) : what to do if you have a problem
 	+ [Donations](donations.html) - want to contribute but don't have time/skills required?
 	+ [News](news/index.html) - news about releases of DataNucleus products
+	+ [Acknowledgements](acknowledgements.html) - thanking groups who have helped the project
+	+ [Third Party Tools](thirdparty_tools.html) - some related tools that may help your DataNucleus usage
 
 
 * Products
