@@ -11,8 +11,8 @@
 
 
 * Products
-	+ [DataNucleus AccessPlatform](products/accessplatform.html)
-	+ [DataNucleus Plugins](products/plugins.html)
+	+ [DataNucleus AccessPlatform](products/accessplatform.html) - view documentation for all versions of AccessPlatform
+	+ [DataNucleus Plugins](products/plugins.html) - documentation for individual plugins
 
 
 * [Development](development/index.html)
