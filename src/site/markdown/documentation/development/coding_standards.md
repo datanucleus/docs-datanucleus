@@ -18,10 +18,10 @@ mean that they are necessarily "the best", "the official" or any such title. The
 * __Imports__ : fully specify imports. Do NOT use asterisk notation!
 * __Java Language Level__ : write for JDK1.6 as a minimum. Otherwise make sure that code is wrapped with "JavaUtils" restrictors (e.g 1.7).
 * __Fields positioning__ : place fields at the top of a class.
-* __Logging__ : use _org.datanucleus.util.NucleusLogger_ which wraps Log4j, JDK1.4 etc. Log as much info as is considered necessary at the appropriate level.
-See the [Logging Guide](http://www.datanucleus.org/products/accessplatform/logging.html) for details
-* __Localisation__ : all output exception and log messages should be localised. Use _org.datanucleus.util.Localiser_. 
-See the [localisation guide](../plugins/core.html#internationalisation) for details
+* __Logging__ : use _org.datanucleus.util.NucleusLogger_ which wraps Log4j, java.util.logging etc. Log as much info as is considered necessary at the appropriate level.
+See [org.datanucleus.util.NucleusLogger](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/util/NucleusLogger.html) for details
+* __Localisation__ : all output exception and log messages should be localised. 
+See [org.datanucleus.util.Localiser](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/util/Localiser.html) for details
 
 
 If you are using Eclipse then we have an [XML Configuration](code-conventions-eclipse.xml) to specify in Eclipse.

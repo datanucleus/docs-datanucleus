@@ -20,6 +20,8 @@
 	+ [Source Code](development/sourcecode.html) - get your hands on the code and develop it
 	+ [Testing](development/tests.html) - test processes for developing DataNucleus codebase
 	+ [Coding Standards](development/coding_standards.html) - what coding standards we use
+	+ [Query Process Details](development/query_details.html) - an outline of the query compilation/execution process and the associated DN classes
+	+ [SCO Type Details](development/sco_type_details.html) - an outline of how second-class container type wrappers work internally
 
 
 * [Extensions](extensions/index.html)
