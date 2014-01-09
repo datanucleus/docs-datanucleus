@@ -33,7 +33,7 @@
             <table>
                 <tr>
                     <td>
-                        <a href="products/accessplatform_3_2/index.html"><img src="images/logos/DataNucleus_AccessPlatform_product_3_2.jpg" alt=""/></a> 
+                        <a href="products/accessplatform_3_3/index.html"><img src="images/logos/DataNucleus_AccessPlatform_product_3_2.jpg" alt=""/></a> 
                     </td>
                     <td>
                         <b>Access Platform</b> is our baseline product. 
@@ -46,7 +46,7 @@
                         <b>Choose v3.2 if you want JDO3.x/JPA2.0, and choose v3.3 if you want JDO3.x/JPA2.1</b><br/>
                         <b>Version 3.3</b>
  <a href="products/accessplatform_3_3/index.html">[Read More]</a> |
- <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.5">[Download]</a> |
+ <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.6">[Download]</a> |
  <a href="products/accessplatform_3_3/getting_started.html">[Get Started]</a> |
  <a href="documentation/license.html">[License]</a> |
  <a href="products/accessplatform_3_3/datanucleus-accessplatform-docs.pdf">[PDF Docs]</a><br/>
