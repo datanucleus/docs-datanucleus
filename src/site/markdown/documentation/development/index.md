@@ -73,7 +73,7 @@ For clarity, also indicate the contributor in the actual section of contributed 
 The basic principle is to clearly identify the contribution... especially if it is a separable block of code.
 
 <a name="versioning"/>
-### Versioning">
+### Versioning
 
 There are many different versioning systems in use by software. All typically use _major.minor.revision_ 
 (occasionally with finer grain below that). Some use suffix _alpha_ or _beta_ to reflect how close the software is to full release. 
