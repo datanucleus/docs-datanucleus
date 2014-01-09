@@ -40,13 +40,14 @@ full release of a product, but if doing that always be careful of cross-compatib
 	* [datanucleus-eclipse-plugin](https://github.com/datanucleus/datanucleus-eclipse-plugin) : For developing application using DataNucleus in Eclipse
 	* [datanucleus-idea-plugin](https://github.com/datanucleus/datanucleus-idea-plugin) : For developing applications using DataNucleus in Intellij IDEA
 + Inactive Plugins
-	* [enhancer](../../plugins/enhancer.html) (now part of datanucleus-core)
-	* [java5](../../plugins/java5.html) (now part of datanucleus-core and datanucleus-api-jpa)
-	* [maven1](../../plugins/maven1.html) (no longer used)
-	* [datanucleus-db4o](../../plugins/store.db4o.html) (no longer supported)
-	* [datanucleus-javaxtime](../../plugins/store.types.javaxtime.html) (now part of datanucleus-core)
-	* [datanucleus-awtgeom](../../plugins/store.types.awtgeom.html) (now part of datanucleus-geospatial)
-	* [datanucleus-xmltypeoracle](../../plugins/store.rdbms_mapping_xmltypeoracle.html) (now part of datanucleus-rdbms)
-	* [datanucleus-connectionpool](../../plugins/store.rdbms.connectionpool.html) (now part of datanucleus-rdbms)
-	* [datanucleus-spatial](../../plugins/store.types.spatial.html) (now part of datanucleus-geospatial)
-	* [datanucleus-management](../../plugins/management.html) (now part of datanucleus-core)
+	* datanucleus-enhancer - now part of datanucleus-core
+	* datanucleus-java5 - now part of datanucleus-core and datanucleus-api-jpa
+	* maven1 - no longer used, since Maven1 is deprecated
+	* datanucleus-db4o - no longer supported. Code still present in SourceForge if required
+	* datanucleus-db4o-sql - no longer supported. Code still present in SourceForge if required
+	* datanucleus-javaxtime - now part of datanucleus-core
+	* datanucleus-awtgeom - now part of datanucleus-geospatial
+	* datanucleus-xmltypeoracle - now part of datanucleus-rdbms
+	* datanucleus-connectionpool - now part of datanucleus-rdbms
+	* datanucleus-spatial - now part of datanucleus-geospatial
+	* datanucleus-management - now part of datanucleus-core
