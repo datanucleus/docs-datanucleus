@@ -38,25 +38,25 @@ Java persistence solution free for all to use.
 
 The management and direction of DataNucleus is provided by a small team of experienced individuals.
 
-__Andy Jefferson__ : Based in the UK, and founder of the DataNucleus project. Has worked on the project since
+__Andy Jefferson__ : Founder of the DataNucleus project. Has worked on the project since
 its initiation as JPOX in 2003, and has worked on all plugins. Initiated the support for db4o, ODF, MongoDB, NeoDatis,
 Neo4j, OOXML, EHCache, javax.cache, RDBMS connection pools, and much more. Also wrote version 2 of the plugin for
 GAE/Datastore.
 
+__Baris Ergun__ : Taken over responsibility for the geospatial plugin.
+
+__Renato Garcia__ : worked on the migration to GitHub, test suite flexibility, auto-generation of MANIFESTs, and some more.
+
 __Erik Bengtson__ : Founder of the DataNucleus project. Worked on the project since its initiation
 as JPOX in 2003, until around 2011. Initiated support for Excel, XML, JSON and HBase. Currently inactive.
 
-__Stefan Seelmann__ : Wrote the vast majority of the LDAP plugin, but currently inactive.
+__Stefan Seelmann__ : Wrote the vast majority of the LDAP plugin. Currently inactive.
 
-__Thomas Marti__ : Wrote an amount of the spatial plugin (now renamed to _geospatial_). Currently inactive
+__Thomas Marti__ : Wrote an amount of the spatial plugin (now renamed to _geospatial_). Currently inactive.
 
-__Stefan Schmid__ : Wrote an amount of the spatial plugin (now renamed to _geospatial_). Current inactive
-
-__Baris Ergun__ : Taken over responsibility for the geospatial plugin.
+__Stefan Schmid__ : Wrote an amount of the spatial plugin (now renamed to _geospatial_). Currently inactive.
 
 __Joerg von Frantzius__ : worked on the test suite, and RDBMS areas. Currently inactive.
-
-__Renato Garcia__ : worked on the migration to GitHub, test suite flexibility, auto-generation of MANIFESTs, and some more.
 
 
 In addition to those above, other people have contributed to varying degrees in the development of this software.

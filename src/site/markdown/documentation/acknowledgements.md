@@ -23,7 +23,8 @@ their great software/services allowing us to work much quicker and in a more enj
     </tr>
     <tr>
         <td><a href="http://www.mvnforum.com/" target="_blank"><img src="../images/thirdparty/mvnforum_logo.gif" border="0" alt=""/></a></td>
-        <td><a href="http://www.sf.net/projects/datanucleus/" target="_blank"><img src="http://sourceforge.net/sflogo.php?group_id=86139&amp;type=2" border="0" alt=""/></a></td>
+        <td><a href="http://www.sf.net/" target="_blank"><img src="http://sourceforge.net/sflogo.php?group_id=86139&amp;type=2" border="0" alt="SourceForge Code Hosting"/></a></td>
+        <td><a href="http://www.github.com" target="_blank"><img src="../images/GitHub-Mark-64px.png" border="0" alt="GitHub Code Hosting"/></a></td>
     </tr>
 </table>
 
