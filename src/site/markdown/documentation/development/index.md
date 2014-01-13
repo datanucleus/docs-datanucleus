@@ -1,20 +1,21 @@
-<head><title>Development</title></head>
+<head><title>Development Process</title></head>
 
 # Section : [Documentation](../index.html) > Development
 
-## DataNucleus Development
+## DataNucleus Development Process
 
 DataNucleus is open source, released under the Apache 2 license. As a result you are welcome to develop it further. 
 We require assistance on many areas of the project should you be interested. A few selected areas where work is needed are
 
-* Development of JPA/JDO features
+* Development of API (JPA/JDO/REST) features
 * Support for improved persistence to existing datastores (e.g Excel, LDAP, XML)
 * Support for persistence to new datastores (e.g Cassandra)
-* Development of DataNucleus tooling (Eclipse plugin, Maven plugin etc)
+* Development of DataNucleus tooling (Eclipse plugin, IDEA plugin, JRebel plugin etc)
 * Performance improvements
-* Documenting the DataNucleus system
+* Documenting the DataNucleus system (including samples/tutorials)
 
-If you are interested, please go to the [DataNucleus Forum](http://forum.datanucleus.org/) and raise a thread in the __General Development__ forum. 
+If you are interested, please go to the [DataNucleus Forum](http://forum.datanucleus.org/) and raise a thread in the 
+[Volunteers forum](http://www.datanucleus.org/servlet/forum/listthreads?forum=21) forum. 
 __Please make sure that you have time to spend on DataNucleus development__ before volunteering as this would only waste our time otherwise; we're not 
 interested if you only have a week or so and then disappear off onto something else. There are many interesting parts of the system to work on so 
 this is your chance to get aboard the project; and demonstrating to an employer an involvement in an open source project can be beneficial
@@ -36,6 +37,24 @@ and when complete they should be merged into GitHub 'master'. If help is needed 
 7. All check-ins should have a prefix in the description like _[NUCCORE-23]_ for the issue being worked on. Then they will be indexed by JIRA and so we can track changes.
 8. Mark the JIRA issue as "Resolved" for the next release.
 
+
+<a name="codingstandards"/>
+### Coding Standards
+
+Coding standards are more complicated to define so please look [here](coding_standards.html) for details.
+
+
+<a name="mailinglists"/>
+### Mailing Lists
+
+DataNucleus has the following mailing lists to aid in tracking development. They are read-only.
+
+* [datanucleus-issues](https://lists.sourceforge.net/lists/listinfo/datanucleus-issues) showing all changes in JIRA issues for the project
+* [datanucleus-nightlybuilds](https://lists.sourceforge.net/lists/listinfo/datanucleus-nightlybuilds) showing the result of nightly builds (one mail per day)
+
+In addition you can subscribe to commits for a particular repository on GitHub should you have interest in a plugin.
+
+
 <a name="licensing"/>
 ### Licensing
 
@@ -43,34 +62,6 @@ All contributions to the DataNucleus Project must adhere to the Apache 2 license
 DataNucleus Project downloads may include separately licensed code from third parties as a convenience and where permitted by the third party license, 
 provided this is clearly indicated.
 
-All contributions must contain the following copyright notice.
-
-	/**********************************************************************
-	Copyright (c) 2006 {your name} and others. All rights reserved.
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
-	
-	    http://www.apache.org/licenses/LICENSE-2.0
-	
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
-	
-	Contributors:
-	{year} {contributor1} - {description of contribution}
-	{year} {contributor2} - {description of contribution}
-	    ...
-	**********************************************************************/
-
-
-The original contributor is the one who contributes the first version of the file. A contributor may be a person or an organisation - whoever 
-owns the copyright. If the contributor is an organisation, the person may also be indicated. For each additional contributor, indicate the 
-part of the code or contribution that came from the contributor, especially if it contains an interesting algorithm or data table etc. 
-For clarity, also indicate the contributor in the actual section of contributed code. Also reference the JIRA ID if applicable. 
-The basic principle is to clearly identify the contribution... especially if it is a separable block of code.
 
 <a name="versioning"/>
 ### Versioning
@@ -92,23 +83,6 @@ and TCKs and so stability is typically inherent.
 
 We increment the <i>minor</i> version number when we are changing internal APIs (but not client facing APIs).
 We increment the <i>major</i> version number when we are changing external (client-facing) APIs.
-
-<a name="codingstandards"/>
-### Coding Standards
-
-Coding standards are more complicated to define so please look [here](coding_standards.html) for details.
-
-<a name="mailinglists"/>
-### Mailing Lists
-
-DataNucleus has the following mailing lists to aid in tracking development. They are read-only.
-
-* [datanucleus-issues](https://lists.sourceforge.net/lists/listinfo/datanucleus-issues) showing all changes in JIRA issues for the project
-* [datanucleus-nightlybuilds](https://lists.sourceforge.net/lists/listinfo/datanucleus-nightlybuilds) showing the result of nightly builds (one mail per day)
-
-
-In addition you can subscribe to commits for a particular repository on GitHub should you have interest in a plugin.
-
 
 <a name="productrelease"/>
 ### Product Release Process

@@ -22,6 +22,7 @@ mean that they are necessarily "the best", "the official" or any such title. The
 See [org.datanucleus.util.NucleusLogger](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/util/NucleusLogger.html) for details
 * __Localisation__ : all output exception and log messages should be localised. 
 See [org.datanucleus.util.Localiser](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/util/Localiser.html) for details
+* __Licensing__ : make sure you include the [standard DataNucleus/Apache 2 license copyright header](#Licensing) to all files
 
 
 If you are using Eclipse then we have an [XML Configuration](code-conventions-eclipse.xml) to specify in Eclipse.
@@ -147,6 +148,35 @@ Example with if ... else
 	        }
 	    }
 	}
+
+## Licensing
+
+All contributions to the DataNucleus Project must adhere to the Apache 2 license. Notwithstanding the above, at the discretion of the PMC, 
+DataNucleus Project downloads may include separately licensed code from third parties as a convenience and where permitted by the third party license, 
+provided this is clearly indicated.
+
+All contributions must contain the following copyright notice.
+
+	/**********************************************************************
+	Copyright (c) 2006 {your name} and others. All rights reserved.
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+	
+	    http://www.apache.org/licenses/LICENSE-2.0
+	
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+	
+	Contributors:
+	{year} {contributor1} - {description of contribution}
+	{year} {contributor2} - {description of contribution}
+	    ...
+	**********************************************************************/
+
 
 ## References
 
