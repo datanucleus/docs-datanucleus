@@ -28,14 +28,14 @@ development process should be as below. Please abide by these simple rules
 
 1. Identify [an issue](http://issues.datanucleus.org) to work on. Raise a JIRA issue if it doesn't yet exist, and allocate to yourself
 2. Develop code, unit tests (as appropriate), and documentation for the issue. DataNucleus is developed using JDK1.6+.
-3. Run all DataNucleus tests and the (public) JDO TCK, and when all pass to the same level as before then you can check your code into GitHub.
-4. __Broken unit tests or JDO TCK tests must be fixed ASAP__. Others are using GitHub latest too and if you break either the build or the tests 
+3. Run all DataNucleus tests and the (public) JDO TCK, and when all pass to the same level as before then you can check your code into GitHub. 
+__Broken unit tests or JDO TCK tests must be fixed ASAP__. Others are using GitHub latest too and if you break either the build or the tests 
 then it means they often cannot work effectively. __Breakage of unit tests or JDO TCK tests mean that your changes can be rolled back__.
-5. Issues that involve many changes should be split, where appropriate, into smaller steps so that you can still pass point 3 above with each check in
-6. Where changes are significant and you cannot split them into smaller check-ins (that pass the tests) should be checked in to your own GitHub branch 
+4. Issues that involve many changes should be split, where appropriate, into smaller steps so that you can still pass point 3 above with each check in
+5. Where changes are significant and you cannot split them into smaller check-ins (that pass the tests) should be checked in to your own GitHub branch 
 and when complete they should be merged into GitHub 'master'. If help is needed at this point then other developers should help in merging large changes.
-7. All check-ins should have a prefix in the description like _[NUCCORE-23]_ for the issue being worked on. Then they will be indexed by JIRA and so we can track changes.
-8. Mark the JIRA issue as "Resolved" for the next release.
+6. All check-ins should have a prefix in the description like _[NUCCORE-23]_ for the issue being worked on. Then they will be indexed by JIRA and so we can track changes.
+7. Mark the JIRA issue as "Resolved" for the next release.
 
 
 <a name="codingstandards"/>
@@ -58,9 +58,28 @@ In addition you can subscribe to commits for a particular repository on GitHub s
 <a name="licensing"/>
 ### Licensing
 
-All contributions to the DataNucleus Project must adhere to the Apache 2 license. Notwithstanding the above, at the discretion of the PMC, 
-DataNucleus Project downloads may include separately licensed code from third parties as a convenience and where permitted by the third party license, 
+All contributions to the DataNucleus project must adhere to the Apache 2 license. Notwithstanding that, at the discretion of the administrators of the project, 
+DataNucleus project downloads may include separately licensed code from third parties as a convenience and where permitted by the third party license, 
 provided this is clearly indicated.
+
+
+### Branching
+
+As a general rule, we branch when we're at a point of changing internal/external DataNucleus APIs of a plugin. So, for example, we're developing
+_datanucleus-core_ and want to change some API. The process is as follows
+
+1. Create branch with name "{version}" where the _version_ is the version that is stored in that branch (so the current version).
+2. Update _pom.xml_ of __master__ branch to the next version number (so if we have just created a branch for 3.2 then this will be 3.3.0-SNAPSHOT).
+
+If you are developing a new feature then you can optionally develop it in its own branch, so choose a branch name that is _not a version_ (so doesn't
+conflict with the naming convention above). When you have fully implemented the feature and merged it into master and it is fully tested then you
+should delete the old branch.
+
+
+### Tagging
+
+Tagging is performed when we release a plugin, and the Maven _release_ plugin automatically creates tags with names of `{artifact_id}_{version}`
+(e.g datanucleus-core-3.2.11). Developers shouldn't have any need for adding other tags.
 
 
 <a name="versioning"/>
@@ -83,6 +102,7 @@ and TCKs and so stability is typically inherent.
 
 We increment the <i>minor</i> version number when we are changing internal APIs (but not client facing APIs).
 We increment the <i>major</i> version number when we are changing external (client-facing) APIs.
+
 
 <a name="productrelease"/>
 ### Product Release Process
@@ -115,6 +135,7 @@ release could be delayed, but this is the exception not the norm.
 version to remove SNAPSHOT, builds source/javadocs/jar, creates a tag and finally copies it to Sonatype ready for release.
 * Go to the DataNucleus Sonatype account and check/release/close the repository artifacts)
 
+
 <a name="samplerelease"/>
 ### Sample Release Process
 
@@ -124,6 +145,7 @@ This is the release process for a sample
 * Go to samples project and edit the pom.xml for version and dependencies
 * Create the assembly using _mvn clean assembly:assembly_
 * Copy the zip file on to SourceForge (or get an admin to do it)
+
 
 ### Metrics
 
