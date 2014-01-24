@@ -17,7 +17,7 @@ full release of a product, but if doing that always be careful of cross-compatib
 	* [datanucleus-api-jpa](https://github.com/datanucleus/datanucleus-api-jpa) : Support for persistence using the JPA API
 	* [datanucleus-api-rest](https://github.com/datanucleus/datanucleus-api-rest) : Support for persistence using a REST API
 + Datastores
-	* [datanucleus-cassandra](https://github.com/datanucleus/datanucleus-cassandra) : _Support for persistence to Cassandra_ (preview work-in-progress)
+	* [datanucleus-cassandra](https://github.com/datanucleus/datanucleus-cassandra) : _Support for persistence to Cassandra_ (preview, work-in-progress)
 	* [datanucleus-excel](https://github.com/datanucleus/datanucleus-excel) : Support for persistence to EXCEL
 	* [datanucleus-hbase](https://github.com/datanucleus/datanucleus-hbase) : Support for persistence to HBase
 	* [datanucleus-json](https://github.com/datanucleus/datanucleus-json) : Support for persistence to JSON
