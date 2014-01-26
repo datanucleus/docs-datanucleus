@@ -59,6 +59,7 @@ This release includes the following changes over the previous release
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1102'>NUCCORE-1102</a>] -         Query processing of &quot;NULLS LAST&quot; is being compiled to &quot;NULLS FIRST&quot;, cut and paste error</li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1103'>NUCCORE-1103</a>] -         Eager loading of multi-valued fields fails for collections of type java.util.SortedSet.  This would seem to be due to a bug in SCOUtils.</li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1107'>NUCCORE-1107</a>] -         SchemaTool : should call StoreManager.close to give any datastore connections the opportunity to be closed cleanly</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-263'>NUCJPA-263</a>] -         Support JDBC escape syntax in criteria handling of date literals</li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-735'>NUCRDBMS-735</a>] -         Map.values should return CollectionStore as per NUCCORE-1100 update to MapStore API</li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-736'>NUCRDBMS-736</a>] -         DN generated Invalid query syntax is generated for DB2 LUW in Hive 12</li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-738'>NUCRDBMS-738</a>] -         Firebird : query range from of 0 is incorrectly handled</li>
