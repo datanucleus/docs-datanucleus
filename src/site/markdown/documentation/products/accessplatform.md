@@ -16,7 +16,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <b>DataNucleus AccessPlatform Checklist</b>
 <ul>
 <li><b>Current version(s)</b> :
-<a href="http://www.datanucleus.org/products/accessplatform_3_3/index.html">3.3.6 (Galileo)</a>, 
+<a href="http://www.datanucleus.org/products/accessplatform_3_3/index.html">3.3.7 (Galileo)</a>, 
 <a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">3.2.9 (Copernicus)</a>
 </li>
 <li><b>Old version(s)</b> : 
@@ -52,6 +52,16 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <th>Download</th>
 </tr>
 <tr class="d">
+  <td>4.0 (?)</td>
+  <td>Planning</td>
+  <td>JDO3.1, JPA2.1, REST</td>
+  <td></td>
+  <td><a href="http://forum.datanucleus.org">Free</a>, 
+    <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="d">
   <td>3.3 (Galileo)</td>
   <td>Developed</td>
   <td>JDO3.1, JPA2.1, REST</td>
@@ -60,21 +70,21 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_3_3/index.html">HTML</a></td>
   <td>
-  <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.zip/download">HTML</a> | 
-  <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.pdf/download">PDF</a>
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.zip/download">HTML</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.pdf/download">PDF</a>
   </td>
 </tr>
-<tr class="d">
+<tr>
   <td>3.2 (Copernicus)</td>
-  <td>Developed</td>
+  <td>Retired</td>
   <td>JDO3.1, JPA2.0, REST</td>
   <td>Mar/2013</td>
   <td><a href="http://forum.datanucleus.org">Free</a>, 
-  <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+    <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">HTML</a></td>
   <td>
-  <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.zip/download">HTML</a> | 
-  <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.pdf/download">PDF</a>
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.zip/download">HTML</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.pdf/download">PDF</a>
   </td>
 </tr>
 <tr>
@@ -82,11 +92,11 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>Retired</td>
   <td>JDO3.1, JPA2.0, REST</td>
   <td>Jul/2012</td>
-                        <td><a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
-                        <td><a href="http://www.datanucleus.org/products/accessplatform_3_1/index.html">HTML</a></td>
-                        <td>
-                            <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.1.0.release/datanucleus-accessplatform-docs-3.1.0.zip/download">HTML</a>
-                        </td>
+  <td><a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td><a href="http://www.datanucleus.org/products/accessplatform_3_1/index.html">HTML</a></td>
+  <td>
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.1.0.release/datanucleus-accessplatform-docs-3.1.0.zip/download">HTML</a>
+  </td>
 </tr>
 <tr>
   <td><i>3.0 (Newton)</i></td>
