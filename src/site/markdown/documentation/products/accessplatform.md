@@ -52,7 +52,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <th>Download</th>
 </tr>
 <tr class="d">
-  <td>4.0 (?)</td>
+  <td>4.0 (Einstein)</td>
   <td>Planning</td>
   <td>JDO3.1, JPA2.1, REST</td>
   <td></td>
