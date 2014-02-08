@@ -53,12 +53,12 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
 </tr>
 <tr class="d">
   <td>4.0 (Einstein)</td>
-  <td>Planning</td>
+  <td>Development</td>
   <td>JDO3.1, JPA2.1, REST</td>
   <td></td>
   <td><a href="http://forum.datanucleus.org">Free</a>, 
     <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
-  <td></td>
+  <td><a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">HTML</a></td>
   <td></td>
 </tr>
 <tr class="d">
