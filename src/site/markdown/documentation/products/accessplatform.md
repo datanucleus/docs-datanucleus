@@ -17,9 +17,9 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <ul>
 <li><b>Current version(s)</b> :
 <a href="http://www.datanucleus.org/products/accessplatform_3_3/index.html">3.3.7 (Galileo)</a>, 
-<a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">3.2.9 (Copernicus)</a>
 </li>
 <li><b>Old version(s)</b> : 
+<a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">3.2.9 (Copernicus)</a>
 <a href="http://www.datanucleus.org/products/accessplatform_3_1/index.html">3.1.5 (Kepler)</a>,
 <a href="http://www.datanucleus.org/products/accessplatform_3_0/index.html">3.0.10 (Newton)</a>,
 <a href="http://www.datanucleus.org/products/accessplatform_2_2/index.html">2.2.3 (Geiger)</a>,
@@ -53,7 +53,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
 </tr>
 <tr class="d">
   <td>4.0 (Einstein)</td>
-  <td>Development</td>
+  <td>Developed</td>
   <td>JDO3.1, JPA2.1, REST</td>
   <td></td>
   <td><a href="http://forum.datanucleus.org">Free</a>, 
