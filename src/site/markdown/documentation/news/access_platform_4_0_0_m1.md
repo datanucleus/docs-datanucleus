@@ -17,6 +17,8 @@ This release includes the following changes over the previous release
 ## New Feature
 
 <ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-159'>NUCCORE-159</a>] -         Support for transaction &quot;savepoints&quot;
+</li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1116'>NUCCORE-1116</a>] -         SchemaTool : support create/delete of schema, and rename the current options to reflect that they only processes it for the input classes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1124'>NUCCORE-1124</a>] -         Add ability to specify NamingFactory (non-RDBMS datastores)
@@ -99,7 +101,7 @@ This release includes the following changes over the previous release
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-763'>NUCRDBMS-763</a>] -         Support NUCCORE-1128 (move schema management into StoreSchemaHandler)
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-767'>NUCRDBMS-767</a>] -         OSGi manifest contains old HSQLD driver import
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-767'>NUCRDBMS-767</a>] -         OSGi manifest should also include new HSQLDB (v2.0+) driver import
 </li>
 </ul>
 
