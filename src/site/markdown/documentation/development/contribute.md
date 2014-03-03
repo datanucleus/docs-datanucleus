@@ -23,7 +23,7 @@ Once you've done this for a while then we'll invite you to join the project. You
 (stored in one of the threads in that Forum). Thereafter you can push DataNucleus further yourself when you have time. Be aware though that once you have been given
 commit rights, inactivity for a period of time (e.g 6 months or more) will mean that you can lose these rights. Being a committer implies responsibility. 
 You could volunteer to work on a particular part of DataNucleus (e.g RDBMS) or all of it, up to you.
-* __[Donate to the project](donations.html)__. This will help to fund the time of one of the main developers and will mean that DataNucleus functionality 
+* __[Donate to the project](../donations.html)__. This will help to fund the time of one of the main developers and will mean that DataNucleus functionality 
 will be expanded faster due to your help.
 * __Contribute documentation or worked examples__ that can be included in the online documentation. If you think there is something missing from our documents 
 then you can write it and contribute it and others will benefit from your work just like you have benefited from our DataNucleus product. You can contribute 
