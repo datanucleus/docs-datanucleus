@@ -13,7 +13,7 @@ to define the name of components in the datastore, such as table/columns.
 DataNucleus provides the mechanism to generate datastore identifiers (table/column names) when none 
 are defined by the users metadata/annotations. In addition to the default JDO factory there is also 
 an identifier factory that generates identifiers consistent with the JPA1 specification.
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.store_identifierfactory_.
+You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.store.rdbms.identifierfactory_.
 
 <table>
     <tr>
@@ -23,25 +23,25 @@ You can extend DataNucleus's capabilities using the plugin extension _org.datanu
         <th width="80">Location</th>
     </tr>
     <tr>
-        <td>org.datanucleus.store_identifierfactory</td>
+        <td>org.datanucleus.store.rdbms.identifierfactory</td>
         <td>jpox</td>
         <td>Identifier Factory providing DataNucleus JPOX default namings</td>
         <td>datanucleus-core</td>
     </tr>
     <tr>
-        <td>org.datanucleus.store_identifierfactory</td>
+        <td>org.datanucleus.store.rdbms.identifierfactory</td>
         <td>datanucleus1</td>
         <td>Identifier Factory providing DataNucleus 1.x default namings</td>
         <td>datanucleus-core</td>
     </tr>
     <tr>
-        <td>org.datanucleus.store_identifierfactory</td>
+        <td>org.datanucleus.store.rdbms.identifierfactory</td>
         <td>datanucleus2</td>
         <td>Identifier Factory providing DataNucleus 2.x+ namings</td>
         <td>datanucleus-core</td>
     </tr>
     <tr>
-        <td>org.datanucleus.store_identifierfactory</td>
+        <td>org.datanucleus.store.rdbms.identifierfactory</td>
         <td>jpa</td>
         <td>Identifier Factory providing JPA-compliant namings</td>
         <td>datanucleus-core</td>
@@ -51,11 +51,11 @@ You can extend DataNucleus's capabilities using the plugin extension _org.datanu
 
 ### Interface
 
-Any identifier factory plugin will need to implement _org.datanucleus.store.IdentifierFactory_
-[![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/store/mapped/IdentifierFactory.html).
+Any identifier factory plugin will need to implement _org.datanucleus.store.rdbms.identifier.IdentifierFactory_
+[![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/store.rdbms/latest/org/datanucleus/store/rdbms/identifier/IdentifierFactory.html).
 So you need to implement the following interface
 
-	package org.datanucleus.store;
+	package org.datanucleus.store.rdbms.identifier;
 	
 	public interface IdentifierFactory
 	{
@@ -251,8 +251,8 @@ So you need to implement the following interface
     	DatastoreIdentifier newForeignKeyIdentifier(DatastoreContainerObject table, int seq);
 	}
 
-Be aware that you can extend _org.datanucleus.store.mapped.identifier.AbstractIdentifierFactory_
-[![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/core/org/datanucleus/store/mapped/identifier/AbstractIdentifierFactory.html).
+Be aware that you can extend _org.datanucleus.store.rdbms.identifier.AbstractIdentifierFactory_
+[![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/store.rdbms/org/datanucleus/store/rdbms/identifier/AbstractIdentifierFactory.html).
 
 
 ### Implementation
@@ -261,7 +261,7 @@ Let's assume that you want to provide your own identifier factory _MyIdentifierF
 
 	package mydomain;
 	
-	import org.datanucleus.store.mapped.identifier.AbstractSIdentifierFactory
+	import org.datanucleus.store.rdbms.identifier.AbstractSIdentifierFactory
 	
 	public class MyIdentifierFactory extends AbstractIdentifierFactory
 	{
@@ -287,7 +287,7 @@ _plugin.xml_ to your JAR at the root. The file _plugin.xml_ should look like thi
 
     <?xml version="1.0"?>
     <plugin id="mydomain" name="DataNucleus plug-ins" provider-name="My Company">
-        <extension point="org.datanucleus.store_identifierfactory">
+        <extension point="org.datanucleus.store.rdbms.identifierfactory">
             <identifierfactory name="myfactory" class-name="mydomain.MyIdentifierFactory"/>
         </extension>
     </plugin>]]></source>

@@ -35,6 +35,7 @@ The current plugin points are :-
 * [Persistence Properties](persistence_properties.html)
 * [Store Manager](store_manager.html)
 * [Connection Factory](connection_factory.html)
+* [Identifier NamingFactory](identifier_namingfactory.html)
 * [AutoStart Mechanisms](autostart_mechanism.html)
 * [ClassLoader Resolvers](classloader_resolver.html)
 * [Datastore Identity](datastoreidentity.html)
