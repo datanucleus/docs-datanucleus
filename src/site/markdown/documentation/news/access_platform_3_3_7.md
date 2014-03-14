@@ -3,8 +3,8 @@
 # DataNucleus AccessPlatform 3.3.7
 
 <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
-    <script type="text/javascript">var dzone_title = 'DataNucleus AccessPlatform 3.3.6 Released';</script>
-    <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_3_6.html';</script>
+    <script type="text/javascript">var dzone_title = 'DataNucleus AccessPlatform 3.3.7 Released';</script>
+    <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/news/access_platform_3_3_7.html';</script>
     <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
 </div>
 
