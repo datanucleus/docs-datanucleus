@@ -17,8 +17,7 @@ A _type mapping_ defines the way to convert between an object of the Java type a
 __mutable__ (something that can be updated, such as java.util.Date) and __immutable__ (something that is fixed from 
 the point of construction, such as java.awt.Color).
 
-__The examples in this guide relate to current DataNucleus GitHub. Please consult the DataNucleus 
-source code if you are using an earlier version since things have changed recently for user type mapping__.
+__This guide relates to current DataNucleus GitHub. Please consult the DataNucleus source code if you are using an earlier version since things may be different in other versions__.
 
 
 ### Java type to single column mapping

@@ -8,9 +8,12 @@
 DataNucleus allows you to provide alternate ways of persisting Java types. Whilst it includes the majority of normal converters built-in, 
 you can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.type_converter_.
 
-### Interface
+__This guide relates to current DataNucleus GitHub. Please consult the DataNucleus source code if you are using an earlier version since things may be different in other versions__.
 
-Any value generator plugin will need to implement _org.datanucleus.store.types.converters.TypeConverter_
+
+### TypeConverter Interface
+
+Any type converter plugin will need to implement _org.datanucleus.store.types.converters.TypeConverter_
 [![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/store/types/converters/TypeConverter.html).
 So you need to implement the following interface
 
@@ -32,7 +35,7 @@ So you need to implement the following interface
 	}
 
 
-### Implementation
+### TypeConverter Implementation Example
 
 Let's take an example. If we look at the Java type URI we want to persist it as a String since a native URI type isn't present in datastores. We define our class as
 
@@ -57,6 +60,15 @@ Let's take an example. If we look at the Java type URI we want to persist it as 
 So when converting it for the datastore it will use the _toString()_ form of the URI,
 and will be converted back to a URI (on retrieval from the datastore) using the _URI.create_ method. 
 Obviously this particular TypeConverter is included in DataNucleus, but hopefully it gives an idea of what to do to provide your own.
+
+### Controlling default column length
+
+Some datastore plugins may support schemas where you can put an upper limit on the length of columns (e.g RDBMS). You can build this information
+into your TypeConverter plugin by also implementing the interface
+[![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/store/types/converters/ColumnLengthDefiningTypeConverter.html)
+which simply means adding the method _int getDefaultColumnLength(int columnPosition)_.
+
+
 
 ### Plugin Specification
 

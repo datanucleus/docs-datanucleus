@@ -19,8 +19,9 @@ Note that all plugin repositories are [Maven projects](http://maven.apache.org) 
 with Maven to build these plugins.
 
 DataNucleus can be easily developed using Maven, Eclipse,  or other IDEs (let us know if you write docs for how to develop DataNucleus with a different IDE).
-You require JDK1.6+, a Git client (to download/commit DataNucleus Git-based projects) and an editor.
-__Note that (previous) source code for all versions up to and including 3.3.5 is stored in [SourceForge](sourcecode_sf.html).__
+You require __JDK1.7+__, a __Git client__ (to download/commit DataNucleus Git-based projects) and __an editor__.
+
+[__Note that (previous) source code for all versions up to and including 3.3.5 is stored in [SourceForge](sourcecode_sf.html)__]
 
 ### GitHub : Plugins
 
@@ -34,6 +35,7 @@ APIs :
 [datanucleus-api-rest](https://github.com/datanucleus/datanucleus-api-rest)  
 
 Datastores :  
+[datanucleus-cassandra](https://github.com/datanucleus/datanucleus-cassandra)  
 [datanucleus-excel](https://github.com/datanucleus/datanucleus-excel)  
 [datanucleus-hbase](https://github.com/datanucleus/datanucleus-hbase)  
 [datanucleus-json](https://github.com/datanucleus/datanucleus-json)  
@@ -72,7 +74,7 @@ to build these in the same order, core first, then the API, then the datastore.
 
 #### Building with Eclipse
 
-When building/developing using Eclipse the first thing you need to do is install the Eclipse "m2e" plugin (if not already done).
+When building/developing using Eclipse the first thing you need to do is install the Eclipse __m2e__ plugin (if not already done).
 This means that the build of any plugin will build using Maven (and get its dependencies from Maven).
 You then need to import all DataNucleus projects you are working on. Since each plugin in Eclipse will build using Maven
 you don't need to have all dependent projects present too, just the ones you're working on. 
