@@ -33,7 +33,6 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datastore</li>
 <li><b>Query Languages</b> : JDOQL, JPQL, SQL,
 <i>NeoDatis Criteria</i>, <i>NeoDatis Native</i></li>
-<li><b>JRE required</b> : 1.6+ (v3.1+), 1.5+ (v1.1-3.0), 1.3+ (v1.0)</li>
 </ul>
 </td>
 </tr>
@@ -47,6 +46,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <th>Version</th>
   <th>Status</th>
   <th>APIs</th>
+  <th>JRE</th>
   <th>Released</th>
   <th>Support</th>
   <th>HTML (Online)</th>
@@ -56,6 +56,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>4.0 (Einstein)</td>
   <td>Developed</td>
   <td>JDO3.1, JPA2.1, REST</td>
+  <td>1.7+</td>
   <td></td>
   <td><a href="http://forum.datanucleus.org">Free</a>, 
     <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
@@ -66,6 +67,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>3.3 (Galileo)</td>
   <td>Developed</td>
   <td>JDO3.1, JPA2.1, REST</td>
+  <td>1.6+</td>
   <td>Jun/2013</td>
   <td><a href="http://forum.datanucleus.org">Free</a>, 
   <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
@@ -79,6 +81,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>3.2 (Copernicus)</td>
   <td>Retired</td>
   <td>JDO3.1, JPA2.0, REST</td>
+  <td>1.6+</td>
   <td>Mar/2013</td>
   <td><a href="http://forum.datanucleus.org">Free</a>, 
     <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
@@ -92,6 +95,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>3.1 (Kepler)</td>
   <td>Retired</td>
   <td>JDO3.1, JPA2.0, REST</td>
+  <td>1.6+</td>
   <td>Jul/2012</td>
   <td><a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_3_1/index.html">HTML</a></td>
@@ -103,6 +107,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td><i>3.0 (Newton)</i></td>
   <td>Retired</td>
   <td>JDO3.0, JPA2.0, REST</td>
+  <td>1.5+</td>
   <td>Aug/2011</td>
   <td><a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_3_0/index.html">HTML</a></td>
@@ -114,6 +119,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td><i>2.2 (Geiger)</i></td>
   <td>Retired</td>
   <td>JDO3.0, JPA2.0, REST</td>
+  <td>1.5+</td>
   <td>Dec/2010</td>
   <td>None</td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_2_2/index.html">HTML</a></td>
@@ -126,6 +132,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td><i>2.1 (Thomson)</i></td>
   <td>Retired</td>
   <td>JDO3.0, JPA2.0, REST</td>
+  <td>1.5+</td>
   <td>Jun/2010</td>
   <td>None</td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_2_1/index.html">HTML</a></td>
@@ -137,6 +144,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td><i>2.0 (Bohr)</i></td>
   <td>Retired</td>
   <td>JDO2.2, JPA1.0, REST</td>
+  <td>1.5+</td>
   <td>Jan/2010</td>
   <td>None</td>
   <td>N/A</td>
@@ -149,6 +157,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td><i>1.1 (Rutherford)</i></td>
   <td>Retired</td>
   <td>JDO2.2, JPA1.0, REST</td>
+  <td>1.5+</td>
   <td>Feb/2009</td>
   <td>None</td>
   <td>N/A</td>
@@ -161,6 +170,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td><i>1.0 (Faraday)</i></td>
   <td>Retired</td>
   <td>JDO2.2, JPA1.0, REST</td>
+  <td>1.3+</td>
   <td>Sep/2008</td>
   <td>None</td>
   <td>N/A</td>
