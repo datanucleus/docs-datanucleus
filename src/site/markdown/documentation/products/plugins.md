@@ -29,6 +29,7 @@ full release of a product, but if doing that always be careful of cross-compatib
 	* [datanucleus-rdbms](https://github.com/datanucleus/datanucleus-rdbms) : Support for persistence to RDBMS
 	* [datanucleus-xml](https://github.com/datanucleus/datanucleus-xml) : Support for persistence to XML
 + Other Plugins
+	* [datanucleus-java8](https://github.com/datanucleus/datanucleus-java8) : Support for persisting fields of Java 1.8 types
 	* [datanucleus-cache](https://github.com/datanucleus/datanucleus-cache) : Support for third-party caching tools
 	* [datanucleus-jodatime](https://github.com/datanucleus/datanucleus-jodatime) : Support for persisting fields of Jodatime types
 	* [datanucleus-geospatial](https://github.com/datanucleus/datanucleus-geospatial) : Support for persisting fields of Geospatial types
