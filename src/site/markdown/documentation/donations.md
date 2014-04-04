@@ -80,10 +80,11 @@ means that you can have your name or company name hyper-linked.
 
 <table>
 <tr>
-<th>Individual/Company</th>
-<th>Amount (GBP)</th>
+<th width="200">Individual/Company</th>
+<th width="60">Amount (GBP)</th>
 <th>Reason for donation</th>
 </tr>
+
 <tr>
 <td>
 <a href="http://www.nightlabs.de" target="_blank"><img src="../images/companies/nightlabs.gif" border="0" alt=""/></a>
@@ -115,6 +116,7 @@ means that you can have your name or company name hyper-linked.
 <td>292</td>
 <td>Maven2 availability of artifacts, and buildability of project</td>
 </tr>
+
 <tr>
 <td>
 <a href="http://www.projectocolibri.com/" target="_blank"><img src="../images/companies/colibri.jpg" border="0" alt=""/></a>
@@ -122,6 +124,7 @@ means that you can have your name or company name hyper-linked.
 <td>230</td>
 <td>General donation</td>
 </tr>
+
 <tr>
 <td>
 <a href="http://www.travelmuse.com" target="_blank">TravelMuse</a>
@@ -129,6 +132,7 @@ means that you can have your name or company name hyper-linked.
 <td>167</td>
 <td>NUCRDBMS-38 and general work</td>
 </tr>
+
 <tr>
 <td><a href="http://www.mediaingenuity.com/" target="_blank">Will Becker</a></td>
 <td>167</td>
@@ -146,6 +150,12 @@ means that you can have your name or company name hyper-linked.
 <tr>
 <td>Michael Ghebreyesus and Alexander Ilyin</td>
 <td>67</td>
+<td>General donation</td>
+</tr>
+
+<tr>
+<td><a href="http://forkliftsystems.com/">Forklift Systems</a></td>
+<td>50</td>
 <td>General donation</td>
 </tr>
 </table>
