@@ -80,8 +80,8 @@ means that you can have your name or company name hyper-linked.
 
 <table>
 <tr>
-<th width="200">Individual/Company</th>
-<th width="60">Amount (GBP)</th>
+<th width="250">Individual/Company</th>
+<th width="90">Amount (GBP)</th>
 <th>Reason for donation</th>
 </tr>
 
