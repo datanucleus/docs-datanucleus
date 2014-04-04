@@ -23,14 +23,16 @@ __This guide relates to current DataNucleus GitHub. Please consult the DataNucle
 ### Java type to single column mapping
 
 In DataNucleus version 4.0+ creating a Mapping class is now optional and as long as you have defined a
-TypeConverter then this will be mapped automatically using _TypeConverterMapping_. If you really want to add a mapping
-then just create an implementation of JavaTypeMapping, extending SingleFieldMapping (find an example in GitHub and
-copy it).
+TypeConverter then this will be mapped automatically using _TypeConverterMapping_. For 99.9% of types it should not be necessary to define a 
+JavaTypeMapping as well.
+If you really want to add a mapping then just create an implementation of JavaTypeMapping, extending SingleFieldMapping (find an example in GitHub and copy it).
 
 
 ### Java Type to multiple column mapping
 
-To map any Java type to multiple datastore columns you need also mapping class.
+As we mentioned in the [[Type Converter Guide](type_converter.html)] you can provide a multi-column TypeConverter for this situation.
+You only need a JavaTypeMapping if you want to provide for RDBMS method invocation. The guide below shows you how to do write this mapping.
+
 The simplest way to describe how to define your own mapping is to give an example. Here we'll use the example of the Java AWT class _Color_. 
 This has 3 colour components (red, green, and blue) as well as an alpha component. So here we want to map the Java type 
 java.awt.Color to 4 datastore columns - one for each of the red, green, blue, and alpha components of the colour. 
@@ -55,9 +57,9 @@ To do this we define a mapping class extending the DataNucleus class _org.datanu
     	 * @param table The table holding this mapping
     	 * @param clr the ClassLoaderResolver
     	 */
-    	public void initialize(AbstractMemberMetaData fmd, Table table, ClassLoaderResolver clr)
+    	public void initialize(AbstractMemberMetaData mmd, Table table, ClassLoaderResolver clr)
     	{
-			super.initialize(fmd, table, clr);
+			super.initialize(mmd, table, clr);
 	
      	   	addDatastoreField(ClassNameConstants.INT); // Red
         	addDatastoreField(ClassNameConstants.INT); // Green
@@ -75,31 +77,31 @@ To do this we define a mapping class extending the DataNucleus class _org.datanu
         	return java.awt.Color.red;
     	}
 	
-    	public void setObject(PersistenceManager pm, Object preparedStatement, int[] exprIndex, Object value)
+    	public void setObject(ExecutionContext ec, PreparedStatement ps, int[] exprIndex, Object value)
     	{
         	Color color = (Color) value;
         	if (color == null)
         	{
-            	getDataStoreMapping(0).setObject(preparedStatement, exprIndex[0], null);
-            	getDataStoreMapping(1).setObject(preparedStatement, exprIndex[1], null);
-            	getDataStoreMapping(2).setObject(preparedStatement, exprIndex[2], null);
-            	getDataStoreMapping(3).setObject(preparedStatement, exprIndex[3], null);
+            	getDataStoreMapping(0).setObject(ps, exprIndex[0], null);
+            	getDataStoreMapping(1).setObject(ps, exprIndex[1], null);
+            	getDataStoreMapping(2).setObject(ps, exprIndex[2], null);
+            	getDataStoreMapping(3).setObject(ps, exprIndex[3], null);
         	}
         	else
         	{
-            	getDataStoreMapping(0).setInt(preparedStatement,exprIndex[0],color.getRed());
-            	getDataStoreMapping(1).setInt(preparedStatement,exprIndex[1],color.getGreen());
-            	getDataStoreMapping(2).setInt(preparedStatement,exprIndex[2],color.getBlue());
-            	getDataStoreMapping(3).setInt(preparedStatement,exprIndex[3],color.getAlpha());
+            	getDataStoreMapping(0).setInt(ps, exprIndex[0], color.getRed());
+            	getDataStoreMapping(1).setInt(ps, exprIndex[1], color.getGreen());
+            	getDataStoreMapping(2).setInt(ps, exprIndex[2], color.getBlue());
+            	getDataStoreMapping(3).setInt(ps, exprIndex[3], color.getAlpha());
         	}
     	}
 	
-    	public Object getObject(PersistenceManager pm, Object resultSet, int[] exprIndex)
+    	public Object getObject(ExecutionContext ec, ResultSet rs, int[] exprIndex)
     	{
         	try
         	{
             	// Check for null entries
-            	if (((ResultSet)resultSet).getObject(exprIndex[0]) == null)
+            	if (((ResultSet)rs).getObject(exprIndex[0]) == null)
             	{
             	    return null;
             	}
@@ -109,10 +111,10 @@ To do this we define a mapping class extending the DataNucleus class _org.datanu
             	// Do nothing
         	}
 	
-        	int red = getDataStoreMapping(0).getInt(resultSet,exprIndex[0]); 
-        	int green = getDataStoreMapping(1).getInt(resultSet,exprIndex[1]); 
-        	int blue = getDataStoreMapping(2).getInt(resultSet,exprIndex[2]); 
-        	int alpha = getDataStoreMapping(3).getInt(resultSet,exprIndex[3]);
+        	int red = getDataStoreMapping(0).getInt(rs, exprIndex[0]); 
+        	int green = getDataStoreMapping(1).getInt(rs, exprIndex[1]); 
+        	int blue = getDataStoreMapping(2).getInt(rs, exprIndex[2]); 
+        	int alpha = getDataStoreMapping(3).getInt(rs, exprIndex[3]);
         	return new Color(red,green,blue,alpha);
     	}
 	}

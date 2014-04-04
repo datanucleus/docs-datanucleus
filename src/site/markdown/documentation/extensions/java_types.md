@@ -18,7 +18,7 @@ The attributes that you can set for each Java type are
 * __embedded__ - whether this type is, by default, embedded (true/false)
 * __[wrapper-type](#wrapper-type)__ - class name of the SCO wrapper (if it needs a wrapper)
 * __wrapper-type-backed__ - class name of a SCO wrapper (with backing store)
-* __converter-name__ - name of a TypeConverter to use as the default way of persisting this type when it isn't directly persistable as-is. 
+* __converter-name__ - name of a TypeConverter to use as the __default__ way of persisting this type when it isn't directly persistable as-is. 
 Please refer to [type-converter extension point](type_converter.html) for details of how to define your own type converter
 * __priority__ - Set this to a large number if you are overriding the default handling for a type that is supported out of the box
 
