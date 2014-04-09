@@ -20,7 +20,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">4.0.0.M2 (Einstein)</a>, 
 </li>
 <li><b>Old version(s)</b> : 
-<a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">3.2.9 (Copernicus)</a>
+<a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">3.2.9 (Copernicus)</a>,
 <a href="http://www.datanucleus.org/products/accessplatform_3_1/index.html">3.1.5 (Kepler)</a>,
 <a href="http://www.datanucleus.org/products/accessplatform_3_0/index.html">3.0.10 (Newton)</a>,
 <a href="http://www.datanucleus.org/products/accessplatform_2_2/index.html">2.2.3 (Geiger)</a>,
