@@ -109,7 +109,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>JDO3.0, JPA2.0, REST</td>
   <td>1.5+</td>
   <td>Aug/2011</td>
-  <td><a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td>None</td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_3_0/index.html">HTML</a></td>
   <td>
   <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.0.0.release/datanucleus-accessplatform-docs-3.0.0.zip/download">HTML</a>
