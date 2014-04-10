@@ -4,10 +4,9 @@
 	+ [License for DataNucleus products](license.html)
 	+ [DataNucleus Usage](usage.html)
 	+ [Problem Reporting](problem_reporting.html) : what to do if you have a problem
-	+ [News Releases](news/index.html) : news history for the DataNucleus project
+	+ [News](news/index.html) : news history for the DataNucleus project, including releases
 	+ [Release Schedule](http://www.datanucleus.org/servlet/wiki/display/ENG/Release+and+Plans) : outline of when we think to release versions
 	+ [Donations](donations.html) - want to contribute but don't have time/skills required?
-	+ [News](news/index.html) - news about releases of DataNucleus products
 	+ [Acknowledgements](acknowledgements.html) - thanking groups who have helped the project
 	+ [Third Party Tools](thirdparty_tools.html) - some related tools that may help your DataNucleus usage
 
