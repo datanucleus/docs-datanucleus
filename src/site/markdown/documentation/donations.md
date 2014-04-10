@@ -154,7 +154,7 @@ means that you can have your name or company name hyper-linked.
 </tr>
 
 <tr>
-<td><a href="http://forkliftsystems.com/">Forklift Systems</a></td>
+<td><a href="http://forkliftsystems.com/">Forklift Systems : Nissan & UniCarriers Forklift Dealer</a></td>
 <td>50</td>
 <td>General donation</td>
 </tr>
