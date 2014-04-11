@@ -51,6 +51,7 @@ Type support :
 [datanucleus-geospatial](https://github.com/datanucleus/datanucleus-geospatial)  
 [datanucleus-guava](https://github.com/datanucleus/datanucleus-guava)  
 [datanucleus-jodatime](https://github.com/datanucleus/datanucleus-jodatime)  
+[datanucleus-java8](https://github.com/datanucleus/datanucleus-java8)  
 
 Others :  
 [datanucleus-cache](https://github.com/datanucleus/datanucleus-cache)  
