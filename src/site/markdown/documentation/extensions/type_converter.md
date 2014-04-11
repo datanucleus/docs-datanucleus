@@ -64,9 +64,19 @@ Obviously this particular TypeConverter is included in DataNucleus, but hopefull
 ### Controlling default column length
 
 Some datastore plugins may support schemas where you can put an upper limit on the length of columns (e.g RDBMS). You can build this information
-into your TypeConverter plugin by also implementing the interface
+into your TypeConverter plugin by also implementing the interface ColumnLengthDefiningTypeConverter
 [![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/store/types/converters/ColumnLengthDefiningTypeConverter.html)
 which simply means adding the method _int getDefaultColumnLength(int columnPosition)_.
+
+
+
+### Converting a member to multiple columns
+
+The default is to convert a member type to a single column type in the datastore. DataNucleus allows you to convert to multiple columns, for example imagine
+a type Point that has an _x_ and _y_. You want to persist this into 2 columns, the _x_ stored in column 0, and the _y_ stored in column 1. So now you update your
+TypeConverter to also implement MultiColumnConverter
+[![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/store/types/converters/MultiColumnConverter.html)
+which simply means adding the method _Class[] getDatastoreColumnTypes()_.
 
 
 
