@@ -27,7 +27,7 @@ When you have DataNucleus commit rights (see [this forum thread](http://www.data
 development process should be as below. Please abide by these simple rules
 
 1. Identify [an issue](http://issues.datanucleus.org) to work on. Raise a JIRA issue if it doesn't yet exist, and allocate to yourself
-2. Develop code, unit tests (as appropriate), and documentation for the issue. DataNucleus is developed using JDK1.7+.
+2. Develop code, unit tests (as appropriate), and documentation for the issue. DataNucleus is developed using JDK1.8+ (DataNucleus 3.x is developed with JDK1.7+).
 3. Run all DataNucleus tests and the (public) JDO TCK, and when all pass to the same level as before then you can check your code into GitHub. 
 __Broken unit tests or JDO TCK tests must be fixed ASAP__. Others are using GitHub latest too and if you break either the build or the tests 
 then it means they often cannot work effectively. __Breakage of unit tests or JDO TCK tests mean that your changes can be rolled back__.
@@ -79,7 +79,7 @@ should delete the old branch.
 ### Tagging
 
 Tagging is performed when we release a plugin, and the Maven _release_ plugin automatically creates tags with names of `{artifact_id}_{version}`
-(e.g datanucleus-core-3.2.11). Developers shouldn't have any need for adding other tags.
+(e.g datanucleus-core-3.2.11). Developers shouldn't have any need for adding other _tags_.
 
 
 <a name="versioning"/>
