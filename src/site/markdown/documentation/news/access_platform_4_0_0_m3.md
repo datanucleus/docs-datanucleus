@@ -99,7 +99,7 @@ This release includes the following changes over the previous release
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1194'>NUCCORE-1194</a>] -         Drop support for &lt;extension vendor-name=&quot;jpox&quot; ...&gt;
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-76'>NUCEXCEL-76</a>] -         Support NUCCORE-1197
+<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-76'>NUCEXCEL-76</a>] -         Support NUCCORE-1097
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-50'>NUCCASSANDRA-50</a>] -         If user specified jdbc-type of &quot;char&quot;, override with &quot;varchar&quot; internally (since there is no &quot;char&quot; in Cassandra)
 </li>
@@ -109,27 +109,27 @@ This release includes the following changes over the previous release
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-53'>NUCCASSANDRA-53</a>] -         Move to Datastax Cassandra driver v2.0.1
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-54'>NUCCASSANDRA-54</a>] -         Support NUCCORE-1197
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-54'>NUCCASSANDRA-54</a>] -         Support NUCCORE-1097
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-92'>NUCHBASE-92</a>] -         Support NUCCORE-1197
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-92'>NUCHBASE-92</a>] -         Support NUCCORE-1097
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJSON-49'>NUCJSON-49</a>] -         Use Base64 under org.datanucleus.util instead of own copy
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJSON-51'>NUCJSON-51</a>] -         Support NUCCORE-1197
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJSON-51'>NUCJSON-51</a>] -         Support NUCCORE-1097
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCLDAP-62'>NUCLDAP-62</a>] -         Support NUCCORE-1197
+<li>[<a href='http://issues.datanucleus.org/browse/NUCLDAP-62'>NUCLDAP-62</a>] -         Support NUCCORE-1097
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-144'>NUCMONGODB-144</a>] -         Support NUCCORE-1197
+<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-144'>NUCMONGODB-144</a>] -         Support NUCCORE-1097
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCNEOFORJ-48'>NUCNEOFORJ-48</a>] -         Support NUCCORE-1197
+<li>[<a href='http://issues.datanucleus.org/browse/NUCNEOFORJ-48'>NUCNEOFORJ-48</a>] -         Support NUCCORE-1097
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-57'>NUCODF-57</a>] -         Support NUCCORE-1197
+<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-57'>NUCODF-57</a>] -         Support NUCCORE-1097
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-785'>NUCRDBMS-785</a>] -         Support NUCCORE-1175
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-787'>NUCRDBMS-787</a>] -         SQLMethod method should have signature getExpression(SQLExpression, List&lt;SQLExpression&gt;) i.e include generics
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-789'>NUCRDBMS-789</a>] -         Support NUCCORE-1197
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-789'>NUCRDBMS-789</a>] -         Support NUCCORE-1097
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-791'>NUCRDBMS-791</a>] -         Drop use of &quot;java-version&quot; on java types
 </li>
@@ -139,7 +139,7 @@ This release includes the following changes over the previous release
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCGUAVA-7'>NUCGUAVA-7</a>] -         Support NUCCORE-1175
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCGUAVA-9'>NUCGUAVA-9</a>] -         Support NUCCORE-1197
+<li>[<a href='http://issues.datanucleus.org/browse/NUCGUAVA-9'>NUCGUAVA-9</a>] -         Support NUCCORE-1097
 </li>
 </ul>
 
