@@ -2,7 +2,7 @@
 
 # Section : [Documentation](../index.html) > [Extensions](index.html)
 
-## Extensions : JDOQL/JPQL In-Memory Query Methods">
+## Extensions : JDOQL/JPQL In-Memory Query Methods
 ![Plugin](../../images/nucleus_plugin.gif)
 
 JDOQL/JPQL are defined to support particular methods/functions as part of the supported syntax.
@@ -25,28 +25,28 @@ The plugin extension used here is _org.datanucleus.store_query_methods_.
         <td>org.datanucleus.store_query_methods</td>
         <td>(static)</td>
         <td>Math.abs</td>
-        <td>Use of Math functions for JDO2</td>
+        <td>Use of Math functions for JDO</td>
         <td>datanucleus-core</td>
     </tr>
     <tr>
         <td>org.datanucleus.store_query_methods</td>
         <td>(static)</td>
         <td>Math.sqrt</td>
-        <td>Use of Math functions for JDO2</td>
+        <td>Use of Math functions for JDO</td>
         <td>datanucleus-core</td>
     </tr>
     <tr>
         <td>org.datanucleus.store_query_methods</td>
         <td>(static)</td>
         <td>JDOHelper.getObjectId</td>
-        <td>Use of JDOHelper functions for JDO2</td>
+        <td>Use of JDOHelper functions for JDO</td>
         <td>datanucleus-core</td>
     </tr>
     <tr>
         <td>org.datanucleus.store_query_methods</td>
         <td>(static)</td>
         <td>JDOHelper.getVersion</td>
-        <td>Use of JDOHelper functions for JDO2</td>
+        <td>Use of JDOHelper functions for JDO</td>
         <td>datanucleus-core</td>
     </tr>
     <tr>
@@ -322,8 +322,7 @@ To do this you simply add a file <i>plugin.xml</i> to your JAR at the root and a
 	<?xml version="1.0"?>
 	<plugin id="mydomain" name="DataNucleus plug-ins" provider-name="My Company">
     	<extension point="org.datanucleus.store_query_methods">
-        	<query-method name="toUpperCase" class="java.lang.String"
-            	evaluator="org.datanucleus.query.evaluator.memory.StringToUpperCaseMethodEvaluator"/>
+        	<query-method name="toUpperCase" class="java.lang.String" evaluator="org.datanucleus.query.evaluator.memory.StringToUpperCaseMethodEvaluator"/>
     	</extension>
 	</plugin>
 
