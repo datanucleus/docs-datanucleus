@@ -28,11 +28,11 @@
 
 
 * [Extensions](extensions/index.html)
-	+ [Java Types](extensions/java_types.html)
-	+ [Type Converters](extensions/type_converter.html)
-	+ [Persistence Properties](extensions/persistence_properties.html)
-	+ [Store Manager](extensions/store_manager.html)
-	+ [Connection Factory](extensions/connection_factory.html)
+	+ [Java Types](extensions/java_types.html) - adding support for persisting a Java type
+	+ [Type Converters](extensions/type_converter.html) - adding support for converting a Java type to a particular datastore type
+	+ [Persistence Properties](extensions/persistence_properties.html) - adding a persistence property for use in a plugin
+	+ [Store Manager](extensions/store_manager.html) - adding support for a new datastore
+	+ [Connection Factory](extensions/connection_factory.html) - adding support for connecting to a datastore
 	+ [AutoStart Mechanisms](extensions/autostart_mechanism.html)
 	+ [ClassLoader Resolvers](extensions/classloader_resolver.html)
 	+ [Datastore Identity](extensions/datastoreidentity.html)
@@ -44,11 +44,11 @@
 	+ [XML MetaData Handler](extensions/metadata_handler.html)
 	+ [XML MetaData Entity Resolver](extensions/metadata_entityresolver.html)
 	+ [Value Generator](extensions/value_generator.html)
-	+ [Level 1 Cache](extensions/level1_cache.html)
-	+ [Level 2 Cache](extensions/level2_cache.html)
-	+ [Query Cache](extensions/query_cache.html)
-	+ [Query Language](extensions/store_query_query.html)
-	+ [Query Methods](extensions/store_query_methods.html)
+	+ [Level 1 Cache](extensions/level1_cache.html) - adding support for a third-party L1 cache
+	+ [Level 2 Cache](extensions/level2_cache.html) - adding support for a third-party L2 cache
+	+ [Query Cache](extensions/query_cache.html) - adding support for a third-party query cache
+	+ [Query Language](extensions/store_query_query.html) - adding support for a query language for a datastore
+	+ [Query Methods](extensions/store_query_methods.html) - adding support for in-memory query evaluation of a java method
 	+ [JMX Management](extensions/management_server.html)
 	+ [JTA Locator](extensions/jta_locator.html)
 	+ RDBMS PluginPoints
