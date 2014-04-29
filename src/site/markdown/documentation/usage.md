@@ -17,7 +17,7 @@ software which use licenses like the LGPL.
 As such it cannot be bought by a large organisation such as Versant or Oracle and the product terminated (as has happened to customers 
 of Kodo, JDO Genie over the last few years) - do you want that to happen to you? FYI EclipseLink is Oracle-driven, OpenJPA is IBM-driven and 
 Hibernate is RedHat-driven
-* __DataNucleus is standards driven and standards compliant__ implementing JDO1, JDO2, JDO2.1, JDO2.2, JDO3, JPA1, and JPA2 providing all 
+* __DataNucleus is standards driven and standards compliant__ implementing all JDO and JPA specifications, providing all 
 mandatory items and the majority of optional items as well as providing several value-added extensions. Standards compliance safeguards
 your applications future allowing you to swap between implementations.
 * __DataNucleus supports data management for many different types of datastores__. These include 
@@ -29,7 +29,7 @@ you don't need to change your data access layer.
 * __DataNucleus provides outstanding performance__ when compared with the competing technologies.
 * __DataNucleus does not bring in large numbers of dependencies__ unlike other persistence frameworks (for example, Hibernate) that have 
 to provide a zip file just to package all of their requirements up. In fact DataNucleus could be run with just 1 third-party library 
-(jdo-api.jar) - beat that!
+(jdo-api.jar when using JDO, or persistence-api.jar when using JPA) - beat that!
 * __DataNucleus is quality-driven__ being developed using a Test Driven Development methodology. We have more than 2000 unit tests that 
 are run before any release guaranteeing a stable product. In addition we baseline our capabilities against standard Java TCKs (JDO, JPA) 
 - the definition of specification compliance. In our [issue tracker](http://issues.datanucleus.org) you will not find large numbers of 
