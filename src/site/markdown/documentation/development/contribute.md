@@ -6,9 +6,9 @@
 
 DataNucleus is an Open Source development. It is written by many people yet has a broad scope and so is in need of help. 
 Since the software is free, you are benefiting from this work. You have a duty to contribute to the project, particularly if/when you have problems.
-_It should be noted that many people use open source software without the minor intention of contributing anything back to it; 
+It should be noted that many people use open source software without the minor intention of contributing anything back to it; 
 that's ok but then should everyone adopt that attitude then things will not get improved, and additionally those people are not in a position to
-request/expect any improvements that they would like to see (without putting something back in)._
+request/expect any improvements that they would like to see (without putting something back in).
 
 __You can help the project in many ways__. Here are some examples
 
