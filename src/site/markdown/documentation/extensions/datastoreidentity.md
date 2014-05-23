@@ -102,9 +102,6 @@ The DataNucleus internal implementation is defined as
 	
 	public class OIDImpl implements java.io.Serializable, OID
 	{
-    	/** Localiser for messages. */
-        protected static final transient Localiser LOCALISER = Localiser.getInstance("org.datanucleus.store.Localisation");
-    
         /** Separator to use between fields. */
         private transient static final String oidSeparator = "[OID]";
     
@@ -162,7 +159,7 @@ The DataNucleus internal implementation is defined as
         {
             if (str.length() < 2)
             {
-                throw new IllegalArgumentException(LOCALISER.msg("OID.InvalidValue",str));
+                throw new IllegalArgumentException(Localiser.msg("OID.InvalidValue", str));
             }
     
             int start = 0;

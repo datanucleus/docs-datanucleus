@@ -294,9 +294,6 @@ Let's assume that you want to provide your own method for "String" _toUpperCase 
 
 	public class StringToUpperCaseMethodEvaluator implements InvocationEvaluator
 	{
-    	protected static final Localiser LOCALISER = Localiser.getInstance(
-        	"org.datanucleus.Localisation", NucleusContext.class.getClassLoader());
-
     	public Object evaluate(InvokeExpression expr, Object invokedValue, InMemoryExpressionEvaluator eval)
     	{
         	String method = expr.getOperation(); // Will be "toUpperCase"
@@ -307,8 +304,7 @@ Let's assume that you want to provide your own method for "String" _toUpperCase 
         	}
         	if (!(invokedValue instanceof String))
         	{
-            	throw new NucleusException(LOCALISER.msg("021011", 
-                	method, invokedValue.getClass().getName()));
+            	throw new NucleusException(Localiser.msg("021011", method, invokedValue.getClass().getName()));
         	}
         	return ((String)invokedValue).toUpperCase();
     	}

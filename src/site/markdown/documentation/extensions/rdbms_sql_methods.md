@@ -63,7 +63,7 @@ So if we wanted to support _{String}.length()_ as an example, so we define our c
         	}
         	else
         	{
-            	throw new NucleusException(LOCALISER.msg("060001", "length", expr));
+            	throw new NucleusException(Localiser.msg("060001", "length", expr));
         	}
     	}
 	}
