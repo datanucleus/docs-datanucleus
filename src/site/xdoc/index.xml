@@ -52,7 +52,7 @@
  <a href="products/accessplatform_3_3/datanucleus-accessplatform-docs.pdf">[PDF Docs]</a><br/>
                         <b>Version 4.0</b>
  <a href="products/accessplatform_4_0/index.html">[Read More]</a> |
- <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.m3">[Download]</a> |
+ <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.m4">[Download]</a> |
  <a href="products/accessplatform_4_0/getting_started.html">[Get Started]</a> |
  <a href="documentation/license.html">[License]</a> |
  <a href="products/accessplatform_4_0/datanucleus-accessplatform-docs.pdf">[PDF Docs]</a>
@@ -61,11 +61,11 @@
             </table>
             <br/>
             <div id="TICKER" style="display:none; border-top:2px solid #CCCCCC; border-bottom:2px solid #CCCCCC; overflow:hidden; background-color:#FFFFFF; width:900px" onmouseover="TICKER_PAUSED=true" onmouseout="TICKER_PAUSED=false">
+                <span style='background-color:#84f8b8;'>   28-May-2014   </span> -- <a href="documentation/news/access_platform_4_0_0_m4.html">DataNucleus AccessPlatform 4.0.0.M4 released</a> ...    
                 <span style='background-color:#84f8b8;'>   27-Apr-2014   </span> -- <a href="documentation/news/access_platform_4_0_0_m3.html">DataNucleus AccessPlatform 4.0.0.M3 released</a> ...    
                 <span style='background-color:#84f8b8;'>   01-Apr-2014   </span> -- <a href="documentation/news/access_platform_4_0_0_m2.html">DataNucleus AccessPlatform 4.0.0.M2 released</a> ...    
                 <span style='background-color:#f8d64c;'>   15-Mar-2014   </span> -- <a href="documentation/news/access_platform_3_3_8.html">DataNucleus AccessPlatform 3.3.8 released</a> ...    
                 <span style='background-color:#84f8b8;'>   01-Mar-2014   </span> -- <a href="documentation/news/access_platform_4_0_0_m1.html">DataNucleus AccessPlatform 4.0.0.M1 released</a> ...    
-                <span style='background-color:#f8d64c;'>   28-Jan-2014   </span> -- <a href="documentation/news/access_platform_3_3_7.html">DataNucleus AccessPlatform 3.3.7 released</a> ...    
             </div>
             <script type="text/javascript" src="./webticker_lib.js" language="javascript"></script>
 
