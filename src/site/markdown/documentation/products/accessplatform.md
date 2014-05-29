@@ -65,7 +65,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
 </tr>
 <tr class="d">
   <td>3.3 (Galileo)</td>
-  <td>Maintained</td>
+  <td>Frozen</td>
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.6+</td>
   <td>Jun/2013</td>
