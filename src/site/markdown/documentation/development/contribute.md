@@ -45,7 +45,7 @@ GAE/Datastore.
 
 __Baris Ergun__ : Taken over responsibility for the geospatial plugin.
 
-__Renato Garcia__ : worked on the migration to GitHub, test suite flexibility, auto-generation of MANIFESTs, and some more.
+__Renato Garcia__ : worked on the migration to GitHub, test suite flexibility, auto-generation of MANIFESTs, Jenkins/Solar automation, and some more.
 
 __Erik Bengtson__ : Founder of the DataNucleus project. Worked on the project since its initiation
 as JPOX in 2003, until around 2011. Initiated support for Excel, XML, JSON and HBase. Currently inactive.
