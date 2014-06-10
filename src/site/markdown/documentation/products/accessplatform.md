@@ -61,7 +61,10 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td><a href="http://forum.datanucleus.org">Free</a>, 
     <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">HTML</a></td>
-  <td></td>
+  <td>
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.zip/download">HTML</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.pdf/download">PDF</a>
+  </td>
 </tr>
 <tr class="d">
   <td>3.3 (Galileo)</td>
