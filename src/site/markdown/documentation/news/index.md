@@ -13,7 +13,7 @@
     <th>Publication</th>
 </tr>
 <tr>
-    <td>13th June/2014</td>
+    <td>13/Jun/2014</td>
     <td><a href="access_platform_4_0_0_release.html">AccessPlatform 4.0.0.RELEASE released</a></td>
     <td>DataNucleus team</td>
     <td>DataNucleus</td>
