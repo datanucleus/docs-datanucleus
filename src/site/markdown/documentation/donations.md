@@ -161,6 +161,4 @@ means that you can have your name or company name hyper-linked.
 </table>
 
 The following people/companies have also donated smaller amounts :  
-[Extronis](http://extronis.com/), Guido Anzuoni, Chris Murphy, David Berkman, Wu Hugh, Vieri del Bianco,
-[BadCreditLoans](http://www.badcreditloans.org.uk), [TotallyMoney : Mortgage Comparison Site](http://www.totallymoney.com/),
-[CashDoctors](http://www.cashdoctors.com.au), Medical Equipment Pros, [UnusualHomes](http://www.unusualhomes.co.uk)
+Extronis, Guido Anzuoni, Chris Murphy, David Berkman, Wu Hugh, Vieri del Bianco, BadCreditLoans, TotallyMoney : Mortgage Comparison Site, CashDoctors, Medical Equipment Pros, UnusualHomes
