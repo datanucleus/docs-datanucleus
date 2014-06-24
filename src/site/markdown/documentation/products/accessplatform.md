@@ -23,9 +23,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">3.2.9 (Copernicus)</a>,
 <a href="http://www.datanucleus.org/products/accessplatform_3_1/index.html">3.1.5 (Kepler)</a>,
 <a href="http://www.datanucleus.org/products/accessplatform_3_0/index.html">3.0.10 (Newton)</a>,
-<a href="http://www.datanucleus.org/products/accessplatform_2_2/index.html">2.2.3 (Geiger)</a>,
-<a href="http://www.datanucleus.org/products/accessplatform_2_1/index.html">2.1.4 (Thomson)</a>,
-2.0.5 (Bohr), 1.1.6 (Rutherford), 1.0.5 (Faraday)
+2.2.3 (Geiger), 2.1.4 (Thomson), 2.0.5 (Bohr), 1.1.6 (Rutherford), 1.0.5 (Faraday)
 </li>
 <li><b>License</b> : <a href="../project/license.html">Apache 2</a></li>
 <li><b>APIs Supported</b> : JDO, JPA, <i>REST</i></li>
@@ -115,7 +113,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>None</td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_3_0/index.html">HTML</a></td>
   <td>
-  <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.0.0.release/datanucleus-accessplatform-docs-3.0.0.zip/download">HTML</a>
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.0.0.release/datanucleus-accessplatform-docs-3.0.0.zip/download">HTML</a>
   </td>
 </tr>
 <tr>
@@ -125,10 +123,10 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>1.5+</td>
   <td>Dec/2010</td>
   <td>None</td>
-  <td><a href="http://www.datanucleus.org/products/accessplatform_2_2/index.html">HTML</a></td>
+  <td>N/A</td>
   <td>
-  <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.2.0.release/datanucleus-accessplatform-docs-2.2.0.zip/download">HTML</a> | 
-  <a href="http://www.datanucleus.org/products/accessplatform_2_2/datanucleus-accessplatform.pdf">PDF</a>
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.2.0.release/datanucleus-accessplatform-docs-2.2.0.zip/download">HTML</a> | 
+    <a href="http://www.datanucleus.org/products/accessplatform_2_2/datanucleus-accessplatform.pdf">PDF</a>
   </td>
 </tr>
 <tr>
@@ -138,9 +136,10 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>1.5+</td>
   <td>Jun/2010</td>
   <td>None</td>
-  <td><a href="http://www.datanucleus.org/products/accessplatform_2_1/index.html">HTML</a></td>
-  <td><a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.1.0.release/datanucleus-accessplatform-docs-2.1.0.zip/download">HTML</a> | 
-  <a href="http://www.datanucleus.org/products/accessplatform_2_1/datanucleus-accessplatform.pdf">PDF</a>
+  <td>N/A</td>
+  <td>
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.1.0.release/datanucleus-accessplatform-docs-2.1.0.zip/download">HTML</a> | 
+    <a href="http://www.datanucleus.org/products/accessplatform_2_1/datanucleus-accessplatform.pdf">PDF</a>
   </td>
 </tr>
 <tr>
@@ -153,7 +152,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>N/A</td>
   <td>
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.0.0.release/datanucleus-accessplatform-docs-2.0.0.zip/download">HTML</a> | 
-  <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.0.0.release/datanucleus-accessplatform-docs-2.0.0.pdf/download">PDF</a>
+    <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.0.0.release/datanucleus-accessplatform-docs-2.0.0.pdf/download">PDF</a>
   </td>
 </tr>
 <tr>
@@ -165,8 +164,8 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>None</td>
   <td>N/A</td>
   <td>
-  <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.zip/download">HTML</a> | 
-  <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.pdf/download">PDF</a>
+    <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.zip/download">HTML</a> | 
+    <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.pdf/download">PDF</a>
   </td>
 </tr>
 <tr>
@@ -178,8 +177,8 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>None</td>
   <td>N/A</td>
   <td>
-  <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.zip/download">HTML</a> | 
-  <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.pdf/download">PDF</a>
+    <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.zip/download">HTML</a> | 
+    <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.pdf/download">PDF</a>
   </td>
 </tr>
 </table>
