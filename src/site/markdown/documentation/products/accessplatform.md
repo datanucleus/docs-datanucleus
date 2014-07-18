@@ -17,7 +17,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <ul>
 <li><b>Current version(s)</b> :
 <a href="http://www.datanucleus.org/products/accessplatform_3_3/index.html">3.3.8 (Galileo)</a>, 
-<a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">4.0.0.RELEASE (Einstein)</a>, 
+<a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">4.0.1 (Einstein)</a>, 
 </li>
 <li><b>Old version(s)</b> : 
 <a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">3.2.9 (Copernicus)</a>,
