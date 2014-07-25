@@ -72,7 +72,7 @@ Alternatively you can make the payment via PayPal yourself, and then simply send
 * Whether you want listing in the donor list (and the name you wish to have listed - your name, or your company name for example).
 * Whether your donation is a general donation that we can use to cover our expenses, or whether it is against a particular piece of functionality, or support.
 
-### List of Donors">
+### List of Donors
 
 Below is a list of donors who have supported the DataNucleus project by way of monetary donations. 
 If you donate you can have your name or company name listed here. Donating 50 GBP or more
