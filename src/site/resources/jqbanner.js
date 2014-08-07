@@ -7,13 +7,13 @@
 // 3 - Vertical Scroll
 // 4 - Infinity Horizontal Scroll
 // 5 - Infinity Vertical Scroll
-var jqb_eff = 5;
+var jqb_eff = 4;
 
 //Variables
 var jqb_vCurrent = 0;
 var jqb_vTotal = 0;
-var jqb_vSpeed = 800;
-var jqb_vDuration = 8000;
+var jqb_vSpeed = 1500;
+var jqb_vDuration = 10000;
 var jqb_intInterval = 0;
 var jqb_vGo = 1;
 var jqb_vBusy = false;
