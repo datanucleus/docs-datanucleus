@@ -687,7 +687,7 @@
 </tr>
 <tr>
     <td>25/Apr/2008</td>
-    <td><a href="2008_04_25.html">DataNucleus kickoff</a></td>
+    <td><a href="../../news/2008_04_25.html">DataNucleus kickoff</a></td>
     <td>DataNucleus team</td>
     <td></td>
 </tr>
