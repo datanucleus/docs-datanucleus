@@ -78,19 +78,19 @@ jQuery(document).ready(function() {
 		jqb_fnLoop();
 	});
 	
-	
-	$("#jqb_object").find(".jqb_slide").mouseover(function() {
-		jqb_vIsMouseOver = true;
-	});
-	
-	$("#jqb_object").find(".jqb_slide").mouseout(function() {
-		jqb_vIsMouseOver = false;
-		if(!jqb_vIsPause)
-		{
-			jqb_fnLoop();
-		}
-		
-	});
+// UNCOMMENT THIS TO GET THE BANNER TO LOOP WHEN RECEIVE MOUSEOUT EVENT
+//	$("#jqb_object").find(".jqb_slide").mouseover(function() {
+//		jqb_vIsMouseOver = true;
+//	});
+//	
+//	$("#jqb_object").find(".jqb_slide").mouseout(function() {
+//		jqb_vIsMouseOver = false;
+//		if(!jqb_vIsPause)
+//		{
+//			jqb_fnLoop();
+//		}
+//		
+//	});
 		
 });
 
