@@ -5,7 +5,7 @@
 
 With any software, there are times when you need assistance to make full use of it. Here at DataNucleus we want you to make the best of the 
 software that we provide. For that reason we provide both commercial and free support facilities.
-DataNucleus provides its own [Forum](http://forum.datanucleus.org) providing a place for you to discuss issues you are having. 
+DataNucleus provides its own [__Forum__](http://forum.datanucleus.org) providing a place for you to discuss issues you are having. 
 We don't guarantee to provide answers on this forum. It is simply a place where you could get some level of support when people have time.
 This may not be adequate for some people hence why we provide the commercial version below.
 
@@ -14,7 +14,7 @@ The answer is usually there, either in a tutorial/example, or in one of the many
 2. Look in the [DataNucleus LOG](http://www.datanucleus.org/products/accessplatform/logging.html). This usually contains a lot of information that 
 may answer the issue. You can always configure the log to give more output.
 3. Try a recent build to see if your version is out of date and the expected result is achieved with the latest nightly builds.
-4. Go to the [Forum](http://forum.datanucleus.org) and ask. Always try to give as clear a description of the problem as possible, together with 
+4. Go to the [__DataNucleus Forum__](http://forum.datanucleus.org) and ask. Always try to give as clear a description of the problem as possible, together with 
 your input data, and any associated log output. __Please be aware that we have very little time for this type of support and contributors to 
 DataNucleus are more likely to get any available free support__
 
