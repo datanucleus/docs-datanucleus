@@ -21,41 +21,47 @@ function loadPage(list)
 
   <body class="composite">
     <div id="header">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td><a href="http://www.datanucleus.org"><img src="./images/logos/DataNucleus16-300.jpg" WIDTH="300" HEIGHT="80" BORDER="0"/></a></td>
-          <td><a href="http://www.datanucleus.org/support.html"><img src="http://www.datanucleus.org/images/services/support_consulting.gif" WIDTH="445" HEIGHT="81" BORDER="0"/></a></td>
-        </tr>
-      </table>
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr border="1">
-          <td background="./images/menu_bg.gif" border="1">
-<div align="center"><a href="http://www.datanucleus.org/index.html"><img src="./images/menu_home.gif" border="0"/></a><img src="./images/menu_separator.gif" width="2" height="24"/><a href="http://www.datanucleus.org/documentation/index.html"><img src="./images/menu_documentation.gif" border="0"/></a><img src="./images/menu_separator.gif" width="2" height="24"/><a href="http://www.datanucleus.org/download.html"><img src="./images/menu_download.gif" border="0"/></a><img src="./images/menu_separator.gif" width="2" height="24" /><a href="http://www.datanucleus.org/support.html"><img src="./images/menu_support.gif" border="0"/></a><img src="./images/menu_separator.gif" width="2" height="24" /><a href="http://forum.datanucleus.org"><img src="./images/menu_forum.gif" border="0"/></a><img src="./images/menu_separator.gif" width="2" height="24" /><a href="http://issues.datanucleus.org"><img src="./images/menu_issues.gif" border="0"/></a><img src="./images/menu_separator.gif" width="2" height="24"/><a href="http://wiki.datanucleus.org"><img src="./images/menu_wiki.gif" border="0"/></a><img src="./images/menu_separator.gif" width="2" height="24"/><a href="https://github.com/datanucleus"><img src="./images/menu_sourcecode.gif" border="0"/></a><img src="./images/menu_separator.gif" width="2" height="24"/><a href="http://datanucleus.blogspot.com"><img src="./images/menu_blog.gif" border="0"/></a>
-            </div>
+          <td rowspan="2">
+              <a href="http://www.datanucleus.org"><img src="./images/logos/DataNucleus_70.png" WIDTH="285" HEIGHT="65" BORDER="0"/></a>
           </td>
-        </tr>
-        <tr>
-          <td background="./images/menu_bg_bottom.gif">
-            <img src="./images/menu_bg_bottom.gif" width="1" height="6" />
-          </td>
-        </tr>
-      </table>
 
-      <div id="navigation">
-      <table border="0" cellspacing="0" cellpadding="0" width="100%" height="30">
-        <!-- search, and "links" section of navigation.xml -->
+          <td valign="top" width="100%">
+          </td>
+          <td valign="top" width="137" height="30">
+              <a href="http://www.datanucleus.org/documentation/index.html"><img src="./images/navigation/nav_documentation.png" border="0"/></a>
+          </td>
+          <td valign="top" width="100" height="30">
+              <a href="http://www.datanucleus.org/download.html"><img src="./images/navigation/nav_download.png" border="0"/></a>
+          </td>
+          <td valign="top" width="82" height="30">
+              <a href="http://www.datanucleus.org/support.html"><img src="./images/navigation/nav_support.png" border="0"/></a>
+          </td>
+          <td valign="top" width="113" height="30">
+              <a href="https://github.com/datanucleus"><img src="./images/navigation/nav_sourcecode.png" border="0"/></a>
+          </td>
+          <td valign="top" width="66" height="30">
+              <a href="http://issues.datanucleus.org"><img src="./images/navigation/nav_issues.png" border="0"/></a>
+          </td>
+          <td valign="top" width="53" height="30">
+              <a href="http://wiki.datanucleus.org"><img src="./images/navigation/nav_wiki.png" border="0"/></a>
+          </td>
+          <td valign="top" width="56" height="30">
+              <a href="http://datanucleus.blogspot.com"><img src="./images/navigation/nav_blog.png" border="0"/></a>
+          </td>
+        </tr>
         <tr>
-          <td valign="middle" align="left" nowrap="true" width="100%">
+          <td/>
+          <td colspan="3" nowrap="true">
+            <form action="http://www.google.com/search" method="get" onSubmit="SearchDataNucleusDocs(this)">
+            <input name="q" type="hidden"/>
+            <input name="qfront" type="text" style="width: 120px"/>
+            <input type="submit" value="Search Project"/>
+            </form>
           </td>
-          <td valign="middle" align="center" nowrap="true">
-          <form action="http://www.google.com/search" method="get" onSubmit="SearchDataNucleusDocs(this)">
-          <input name="q" type="hidden"/>
-          <input name="qfront" type="text" style="width: 120px"/>
-          <input type="submit" value="Search Project"/>
-          </form>
-          </td>
-          <td valign="middle" align="right" nowrap="true">
-          <form>Quick Link
+          <td colspan="4" nowrap="true">
+            <form>Quick Link
             <select name="quickLink" onChange="loadPage(this.form.elements[0])" target="_parent._top" onmouseclick="this.focus()" method="POST">
             <option value="http://www.datanucleus.org"></option>
             <option value="http://www.datanucleus.org/download.html">Download</option>
@@ -66,11 +72,11 @@ function loadPage(list)
             <option value="http://www.datanucleus.org/documentation/products/plugins.html">DataNucleus Plugins</option>
             <option value="http://www.datanucleus.org/documentation/development/sourcecode.html">Source Code</option>
             </select>
-          </form>
+            </form>
           </td>
         </tr>
       </table>
-      </div>
+      <hr/>
     </div>
 
     <div id="bodyColumn">
