@@ -1,17 +1,12 @@
 <head><title>Download</title></head>
 
-## DataNucleus Download
+## DataNucleus Releases Download
 
-DataNucleus provides Open Source products that are subject to the [Apache 2 License](documentation/license.html). You have a choice of download
-of released versions or alternatively, when requiring a build of the current GitHub codebase, nightly builds freshly generated from GitHub around 2AM GMT,
-
-Note that DataNucleus software uses the versioning strategy defined [here](documentation/development/index.html#versioning).
-
+DataNucleus provides Open Source products, and you can freely download any __release__ of DataNucleus, together with the associated source code.
+DataNucleus downloads are subject to the [Apache 2 License](documentation/license.html).
+Note that DataNucleus software versioning uses the versioning strategy defined [here](documentation/development/index.html#versioning).
 We hope that you are successful in your use of DataNucleus, and if you have any problems or queries, please contact us using the [Forum](http://forum.datanucleus.org). 
 Be aware that we don't have much time for this free support so you could make a [donation](documentation/donations.html) to further development and pay for our time providing support.
-
-
-### Releases
 
 The first thing to note is that __all DataNucleus releases are "stable"__, in that they all pass all DataNucleus tests and the relevant TCKs, 
 so any referral to some "stable branch" is a concept for other projects; the whole point of TDD is to guarantee stability.
@@ -84,7 +79,11 @@ The principal DataNucleus releases are :-
     </tr>
 </table>
 
-### Nightly Builds
+## DataNucleus Nightly Builds Download
+
+We also provide a build of the current GitHub codebase. These are nightly builds freshly generated from GitHub around 2AM GMT.
+DataNucleus downloads are subject to the [Apache 2 License](documentation/license.html).
+Note that DataNucleus software versioning uses the versioning strategy defined [here](documentation/development/index.html#versioning).
 
 <table width="100%" border="0" cellpadding="2" cellspacing="2">
     <tr>
