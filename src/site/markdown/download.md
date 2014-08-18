@@ -96,11 +96,25 @@ Note that DataNucleus software versioning uses the versioning strategy defined [
             <a href="http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus" target="_blank">
             <b>Nightly build of plugin JARs</b></a> : 
             here you can find all JARs of all plugins that have changed since the most recent release.
-            Add <i>http://www.datanucleus.org/downloads/maven2-nightly/</i> to your POM to pick up from 
-            here.
         </td>
     </tr>
 </table>
+
+If using Maven you simply need to add the following to your _pom.xml_
+
+
+    <repositories>
+        <repository>
+            <id>DN_Nightly_M2_Repo</id>
+            <url>http://www.datanucleus.org/downloads/maven2-nightly/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 
 Please be aware that all nightly builds are development work-in-progress and no guarantee is provided. These builds are typically stable but things may be 
