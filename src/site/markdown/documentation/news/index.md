@@ -13,6 +13,12 @@
     <th>Publication</th>
 </tr>
 <tr>
+    <td>2/Oct/2014</td>
+    <td><a href="access_platform_4_0_3.html">AccessPlatform 4.0.3 released</a></td>
+    <td>DataNucleus team</td>
+    <td>DataNucleus</td>
+</tr>
+<tr>
     <td>29/Aug/2014</td>
     <td><a href="access_platform_4_0_2.html">AccessPlatform 4.0.2 released</a></td>
     <td>DataNucleus team</td>
