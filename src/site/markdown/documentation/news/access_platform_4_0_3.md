@@ -21,6 +21,8 @@ This release includes the following changes over the previous release
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-285'>NUCJPA-285</a>] -         Allow EntityManager.createNativeQuery to create a query using a non-SQL query language
 </li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-21'>NUCCASSANDRA-21</a>] -         Support native Cassandra CQL queries
+</li>
 </ul>
 
 
