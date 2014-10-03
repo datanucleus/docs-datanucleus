@@ -30,7 +30,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <li><b>Datastores Supported</b> : RDBMS, Neo4j, LDAP, Excel (XLS/OOXML), XML, NeoDatis, 
 JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datastore</li>
 <li><b>Query Languages</b> : JDOQL, JPQL, SQL,
-<i>NeoDatis Criteria</i>, <i>NeoDatis Native</i></li>
+<i>NeoDatis Criteria</i>, <i>NeoDatis Native</i>, <i>Cassandra CQL</i></li>
 </ul>
 </td>
 </tr>
