@@ -16,7 +16,7 @@ mean that they are necessarily "the best", "the official" or any such title. The
 * __Braces__ : insert a new line before opening brace and a new line before closing brace. Opening and closing braces should line up vertically.
 * __Line Length__ : max line length 140
 * __Imports__ : fully specify imports. Do NOT use asterisk notation!
-* __Java Language Level__ : write for JDK1.6 as a minimum. Otherwise make sure that code is wrapped with "JavaUtils" restrictors (e.g 1.7).
+* __Java Language Level__ : write for JDK1.7 as a minimum. Anything that requires Java 1.8 should go in the <i>datanucleus-java8</i> plugin. The test suite can use Java 1.8 code.
 * __Fields positioning__ : place fields at the top of a class.
 * __Logging__ : use _org.datanucleus.util.NucleusLogger_ which wraps Log4j, java.util.logging etc. Log as much info as is considered necessary at the appropriate level.
 See [org.datanucleus.util.NucleusLogger](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/util/NucleusLogger.html) for details
