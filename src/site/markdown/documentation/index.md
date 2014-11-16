@@ -21,6 +21,7 @@
 	+ [Source Code](development/sourcecode.html) - get your hands on the code and develop it
 	+ [Testing](development/tests.html) - test processes for developing DataNucleus codebase
 	+ [Coding Standards](development/coding_standards.html) - what coding standards we use
+	+ [Persistence Process Details](development/persistence_process.html) - an outline of the persistence process and the associated DN classes
 	+ [Query Process Details](development/query_details.html) - an outline of the query compilation/execution process and the associated DN classes
 	+ [SCO Type Details](development/sco_type_details.html) - an outline of how second-class container type wrappers work internally
 	+ [Jenkins](http://jenkins.datanucleus.org) - Continuous Integration using Jenkins
