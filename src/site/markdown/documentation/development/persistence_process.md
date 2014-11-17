@@ -44,6 +44,7 @@ If no backing store is present and cascade delete is true then does the cascade 
 
 All persist, remove, field update calls are queued.
 Flush() processes all remove/add/updates that have been queued.
+Call ExecutionContext.getOperationQueue() to see the operations that are queued up waiting to flush.
 
 
 ###persist
