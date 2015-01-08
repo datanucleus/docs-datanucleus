@@ -142,5 +142,5 @@ Obviously, since DataNucleus already supports _java.awt.Color_ there is no need 
 but this demonstrates the way you should do it for any type you wish to add.
 
 If your Java type that you want to map maps direct to a single column then you would instead extend org.datanucleus.store.mapping.SingleFieldMapping 
-and wouldn't need to add the columns yourself. Look at [datanucleus-rdbms](https://github.com/datanucleus/datanucleus-rdbms/tree/master/src/java/org/datanucleus/store/rdbms/mapping/java)
+and wouldn't need to add the columns yourself. Look at [datanucleus-rdbms](https://github.com/datanucleus/datanucleus-rdbms/tree/master/src/main/java/org/datanucleus/store/rdbms/mapping/java)
 for many examples of doing it this way.

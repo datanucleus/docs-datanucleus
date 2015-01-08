@@ -253,7 +253,7 @@ To define your own datastore mapping you need to implement _org.datanucleus.stor
 	}
 
 So you can define how to convert the datastore column value to/from common Java types. Please refer to the existing types in 
-Look at [datanucleus-rdbms](https://github.com/datanucleus/datanucleus-rdbms/tree/master/src/java/org/datanucleus/store/rdbms/mapping/datastore)
+Look at [datanucleus-rdbms](https://github.com/datanucleus/datanucleus-rdbms/tree/master/src/main/java/org/datanucleus/store/rdbms/mapping/datastore)
 for examples. Note that your XXXDatastoreMapping should have a single constructor taking in 
 _JavaTypeMapping mapping, StoreManager storeMgr, Column col_.
 
@@ -263,13 +263,11 @@ To give an example of what the plugin specification looks like
 
 	<?xml version="1.0"?>
 	<plugin id="mydomain.myplugins" name="DataNucleus plug-ins" provider-name="My Company">
-    	<extension point="org.datanucleus.store.rdbms.rdbms_mapping">
-        	<mapping java-type="java.lang.Character" 
-            	rdbms-mapping-class="org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping" 
-            	jdbc-type="CHAR" sql-type="CHAR" default="true"/>
-        	<mapping java-type="java.lang.Character" 
-            	rdbms-mapping-class="org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping" 
-            	jdbc-type="INTEGER" sql-type="INT" default="false"/>
+    	<extension point="org.datanucleus.store.rdbms.datastore_mapping">
+        	<mapping java-type="java.lang.Character" rdbms-mapping-class="org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping" 
+                jdbc-type="CHAR" sql-type="CHAR" default="true"/>
+        	<mapping java-type="java.lang.Character" rdbms-mapping-class="org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping" 
+                jdbc-type="INTEGER" sql-type="INT" default="false"/>
     	</extension>
 	</plugin>
 
@@ -291,9 +289,8 @@ All that you need to do is add a _plugin.xml_
 
 	<?xml version="1.0"?>
 	<plugin id="mydomain.myplugins" name="DataNucleus plug-ins" provider-name="My Company">
-    	<extension point="org.datanucleus.store.rdbms.rdbms_mapping">
-        	<mapping java-type="java.lang.YYY" 
-            	rdbms-mapping-class="org.datanucleus.store.rdbms.mapping.XXXRDBMSMapping" 
+    	<extension point="org.datanucleus.store.rdbms.datastore_mapping">
+        	<mapping java-type="java.lang.YYY" rdbms-mapping-class="org.datanucleus.store.rdbms.mapping.XXXRDBMSMapping" 
             	jdbc-type="XXX" sql-type="XXX" default="false"/>
     	</extension>
 	</plugin>
