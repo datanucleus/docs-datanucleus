@@ -252,7 +252,7 @@ To define your own datastore mapping you need to implement _org.datanucleus.stor
     	Object getObject(Object resultSet, int exprIndex);
 	}
 
-So you can define how to convert the datastore column value to/from common Java types. Please refer to the existing types in 
+So you can define how to convert the datastore column value to/from common Java types.
 Look at [datanucleus-rdbms](https://github.com/datanucleus/datanucleus-rdbms/tree/master/src/main/java/org/datanucleus/store/rdbms/mapping/datastore)
 for examples. Note that your XXXDatastoreMapping should have a single constructor taking in 
 _JavaTypeMapping mapping, StoreManager storeMgr, Column col_.
