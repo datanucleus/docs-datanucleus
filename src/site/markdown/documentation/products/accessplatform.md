@@ -16,7 +16,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <b>DataNucleus AccessPlatform Checklist</b>
 <ul>
 <li><b>Current version(s)</b> :
-<a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">4.1.0.M1 (???)</a>, 
+<a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">4.1.0.M1 (Chadwick)</a>, 
 <a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">4.0.4 (Einstein)</a>, 
 <a href="http://www.datanucleus.org/products/accessplatform_3_3/index.html">3.3.8 (Galileo)</a>
 </li>
@@ -52,7 +52,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <th>Download</th>
 </tr>
 <tr class="d">
-  <td>4.1 (???)</td>
+  <td>4.1 (Chadwick)</td>
   <td>Developed</td>
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.7+</td>
