@@ -24,7 +24,8 @@ The principal DataNucleus releases are :-
             Zip of all DataNucleus plugin jars for a particular datastore and, optionally, jars
             for key dependencies. You can also check the dependencies for 
             <a href="http://www.datanucleus.org/products/accessplatform_3_3/dependencies.html">3.3</a>,
-            <a href="http://www.datanucleus.org/products/accessplatform_4_0/dependencies.html">4.0</a>
+            <a href="http://www.datanucleus.org/products/accessplatform_4_0/dependencies.html">4.0</a>,
+            <a href="http://www.datanucleus.org/products/accessplatform_4_1/dependencies.html">4.1</a>
             separately if you wish. Available from our SourceForge project home page.
         </td>
     </tr>
