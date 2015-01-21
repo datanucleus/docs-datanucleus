@@ -28,10 +28,9 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 </li>
 <li><b>License</b> : <a href="../project/license.html">Apache 2</a></li>
 <li><b>APIs Supported</b> : JDO, JPA, <i>REST</i></li>
-<li><b>Datastores Supported</b> : RDBMS, Neo4j, LDAP, Excel (XLS/OOXML), XML, NeoDatis, 
-JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datastore</li>
-<li><b>Query Languages</b> : JDOQL, JPQL, SQL,
-<i>NeoDatis Criteria</i>, <i>NeoDatis Native</i>, <i>Cassandra CQL</i></li>
+<li><b>Datastores Supported</b> : RDBMS, Neo4j, LDAP, Excel (XLS/OOXML), XML, NeoDatis, JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, 
+    <i>[AppEngine/Datastore, db4o]</i></li>
+<li><b>Query Languages</b> : JDOQL, JPQL, SQL, <i>NeoDatis Criteria</i>, <i>NeoDatis Native</i>, <i>Cassandra CQL</i></li>
 </ul>
 </td>
 </tr>
@@ -57,8 +56,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.7+</td>
   <td></td>
-  <td><a href="http://forum.datanucleus.org">Free</a>, 
-    <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">HTML</a></td>
   <td>
   </td>
@@ -69,8 +67,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.7+</td>
   <td>Jun/2014</td>
-  <td><a href="http://forum.datanucleus.org">Free</a>, 
-    <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">HTML</a></td>
   <td>
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.zip/download">HTML</a> | 
