@@ -83,8 +83,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.6+</td>
   <td>Jun/2013</td>
-  <td><a href="http://forum.datanucleus.org">Free</a>, 
-  <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td><a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_3_3/index.html">HTML</a></td>
   <td>
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.zip/download">HTML</a> | 
@@ -97,8 +96,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>JDO3.1, JPA2.0, REST</td>
   <td>1.6+</td>
   <td>Mar/2013</td>
-  <td><a href="http://forum.datanucleus.org">Free</a>, 
-    <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td><a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">HTML</a></td>
   <td>
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.zip/download">HTML</a> | 
@@ -111,7 +109,7 @@ JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, AppEngine/Datast
   <td>JDO3.1, JPA2.0, REST</td>
   <td>1.6+</td>
   <td>Jul/2012</td>
-  <td><a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td>None</td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_3_1/index.html">HTML</a></td>
   <td>
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.1.0.release/datanucleus-accessplatform-docs-3.1.0.zip/download">HTML</a>
