@@ -103,7 +103,7 @@ The following sections describe how to create your own Level 2 cache plugin for 
 ### Interface
 
 If you have your own Level2 cache you can easily use it with DataNucleus. DataNucleus defines a Level2Cache interface and you need to implement this.
-[![Javadoc](../../images/javadoc.gif)](ttp://www.datanucleus.org/javadocs/core/latest/org/datanucleus/cache/Level2Cache.html).
+[![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/cache/Level2Cache.html).
 
 
 	package org.datanucleus.cache;
