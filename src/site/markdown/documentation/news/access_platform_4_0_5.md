@@ -49,5 +49,7 @@ This release includes the following changes over the previous release
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-80'>NUCEXCEL-80</a>] -         Make sure StoreData is populated before using fetchObject(...)
 </li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-60'>NUCODF-60</a>] -         Make sure StoreData is populated before using fetchObject(...)
+</li>
 </ul>
 
