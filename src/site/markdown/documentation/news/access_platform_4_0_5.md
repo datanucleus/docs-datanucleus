@@ -47,5 +47,7 @@ This release includes the following changes over the previous release
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCLDAP-66'>NUCLDAP-66</a>] -         AttributeStrategy : When reassigning N-1 owner, allow for new owner not yet being persistent
 </li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-80'>NUCEXCEL-80</a>] -         Make sure StoreData is populated before using fetchObject(...)
+</li>
 </ul>
 
