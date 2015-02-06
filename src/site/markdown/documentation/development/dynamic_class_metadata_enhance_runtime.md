@@ -8,8 +8,8 @@ It is possible with DataNucleus to dynamically generate classes in-memory, then 
 and subsequently to generate the Schema for this class, and finally to persist objects. All of this without any physical _"class"_ file. To do so you need to make use of a 
 custom ClassLoader, and the use the various APIs for JDO3+.
 
-_Note : this example was developed for DN2.0. The current version can be found at
-[https://github.com/datanucleus/tests/blob/master/jdo/general/src/test/org/datanucleus/tests/DynamicEnhanceSchemaToolTest.java]]_
+_Note : this example was developed for DN2.0. The current version can be found in
+[GitHub](https://github.com/datanucleus/tests/blob/master/jdo/general/src/test/org/datanucleus/tests/DynamicEnhanceSchemaToolTest.java).
 
 ### Class Generation
 
