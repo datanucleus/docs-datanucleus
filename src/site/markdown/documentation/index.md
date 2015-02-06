@@ -29,6 +29,7 @@
 	+ [Query Process Details](development/query_details.html) - an outline of the query compilation/execution process and the associated DN classes
 	+ [SCO Type Details](development/sco_type_details.html) - an outline of how second-class container type wrappers work internally
 	+ [New Datastore HOWTO](development/new_store_plugin_howto.html) - HOWTO support a new datastore with DataNucleus.
+	+ [Dynamic Class/MetaData/Enhance HOWTO](development/dynamic_class_metadata_enhance_runtime.html) - HOWTO dynamically create classes/metadata, enhance and use at runtime
 
 
 * [Extensions](extensions/index.html)
