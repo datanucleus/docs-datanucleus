@@ -43,6 +43,17 @@ they require for their deployments of DataNucleus.
 to external database-pooling software (DBCP, C3P0, etc), and much more.
 
 
+DataNucleus is _not_ part of the Apache project because
+
+* Apache is a loose collection of projects with no general direction or collaboration so DataNucleus would simply be an independent part of an organisation there, hence no benefit.
+* DataNucleus infrastructure (website availability, Forum, JIRA, nightly builds, release policy etc) is way in advance of anything that Apache has and moving there would be a step 
+backwards in this respect. The Apache website is often unavailable, they only use mailing lists, they don't have a general policy of providing nightly builds, nor has any Apache 
+project got a Forum etc etc
+* Being part of Apache would not guarantee any more committers as demonstrated by many projects that have moved to Apache (and often ended up in the Apache 'attic').
+
+
+
+
 ## Used By
 
 DataNucleus is used by many companies and groups in their own software. Below are a short subset of those publicisable.
