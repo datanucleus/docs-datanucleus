@@ -22,6 +22,7 @@
 	+ [Testing](development/tests.html) - test processes for developing DataNucleus codebase
 	+ [Coding Standards](development/coding_standards.html) - what coding standards we use
 	+ [Plugin Migration](plugin_migration.html) - process for upgrade migration of DataNucleus plugins
+	+ [Schema Migration](development/schema_migration.html) - Migration of the schema for an application during the development process
 	+ [Persistence Process Details](development/persistence_process.html) - an outline of the persistence process and the associated DN classes
 	+ [Query Process Details](development/query_details.html) - an outline of the query compilation/execution process and the associated DN classes
 	+ [SCO Type Details](development/sco_type_details.html) - an outline of how second-class container type wrappers work internally
