@@ -213,8 +213,8 @@ Firstly we need to load our enhanced class into a classloader to use at runtime.
 
 and now we run SchemaTool, using this ClassLoader
 
-   Map props = new HashMap();
-    pro ps.put("javax.jdo.PersistenceManagerFactoryClass","org.datanucleus.api.jdo.JDOPersistenceManagerFactory");
+    Map props = new HashMap();
+    props.put("javax.jdo.PersistenceManagerFactoryClass","org.datanucleus.api.jdo.JDOPersistenceManagerFactory");
     props.put("datanucleus.ConnectionDriverName","org.hsqldb.jdbcDriver");
     props.put("datanucleus.ConnectionURL","jdbc:hsqldb:mem:nucleus");
     props.put("datanucleus.ConnectionUserName","sa");
