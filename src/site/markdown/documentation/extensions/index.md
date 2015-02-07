@@ -116,3 +116,53 @@ a 3rd Extension may need one due to different reasons.
 * __Instantiation__ : Inside the DataNucleus Core, regardless if the runtime is OSGi managed or non managed, extension instances are 
 created per PMF. DataNucleus Extensions should always be created through a PluginManager, regardless if the managed environment 
 would allow you to instantiate using their own interfaces. This allows DataNucleus and its Plug-ins to run in non managed environments.
+
+
+### MANIFEST.MF : Plugin Version
+
+Each DataNucleus bundle uses a version schema that has the following grammar (OSGi 3.0 §3.2.4): _major.minor.micro.qualifier_
+Major, Minor and Macro are numeric values, and qualifier is a alphanumeric.
+
+Each bundle has the version value set in the /META-INF/MANIFEST.MF file, Bundle-Version entry.
+
+    Manifest-Version: 1.0
+    Bundle-ManifestVersion: 2
+    Bundle-Name: DataNucleus Enhancer
+    Bundle-SymbolicName: org.datanucleus.enhancer;singleton:=true
+    Bundle-Vendor: DataNucleus
+    Bundle-Version: 1.2.0.b2
+
+The most common version compatibility policies are (OSGI 3.0 §3.6.2):
+* major - An incompatible update
+* minor - A backward compatible update
+* micro - A change that does not affect the interface: for example, a bug fix
+
+
+### MANIFEST.MF : Dependencies on other bundles
+
+When your bundle depends on another bundle, you must declare it in the /META-INF/MANIFEST.MF file, via the Require-Bundle entry.
+
+For example, the RDBMS plugin (org.datanucleus.store.rdbms) plug-in depends on the core (org.datanucleus) plug-in.
+
+    Manifest-Version: 1.0
+    Bundle-ManifestVersion: 2
+    Bundle-Name: DataNucleus RDBMS
+    Bundle-SymbolicName: org.datanucleus.store.rdbms;singleton:=true
+    Bundle-Vendor: DataNucleus
+    Bundle-Version: 1.2.0.b2
+    Bundle-Localization: plugin
+    Require-Bundle: org.datanucleus
+
+See more on the OSGi 3.0 specification §3.13.1.
+
+If a bundle depends on a specific version of a bundle, you must declare it in the Require-Bundle entry, bundle-version parameter. For example
+
+    Require-Bundle: org.datanucleus;bundle-version=(1.2.0.b2, 2.0)
+
+See more on the OSGi 3.0 specification §3.2.5 and §3.13.1 chapters.
+
+
+### MANIFEST.MF : Generation
+
+All recent DataNucleus releases (v3.2 onwards) use the Maven bundle plugin to auto-generate the MANIFEST.MF file. This means that the version in the pom.xml is taken for the
+bundle version, and the dependencies are auto-generated from imports etc. We recommend that you use this same method for your own plugins.
