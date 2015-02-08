@@ -28,6 +28,7 @@
 	+ [Persistence Process Details](development/persistence_process.html) - an outline of the persistence process and the associated DN classes
 	+ [Query Process Details](development/query_details.html) - an outline of the query compilation/execution process and the associated DN classes
 	+ [SCO Type Details](development/sco_type_details.html) - an outline of how second-class container type wrappers work internally
+	+ [Data Federation](development/data_federation.html) - Data Federation structure within DataNucleus
 	+ [New Datastore HOWTO](development/new_store_plugin_howto.html) - HOWTO support a new datastore with DataNucleus.
 	+ [Dynamic Class/MetaData/Enhance HOWTO](development/dynamic_class_metadata_enhance_runtime.html) - HOWTO dynamically create classes/metadata, enhance and use at runtime
 
