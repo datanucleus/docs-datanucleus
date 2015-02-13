@@ -50,14 +50,14 @@ function loadPage(list)
         </tr>
         <tr>
           <td/>
-          <td colspan="3" nowrap="true">
+          <td colspan="2" nowrap="true">
             <form action="http://www.google.com/search" method="get" onSubmit="SearchDataNucleusDocs(this)">
             <input name="q" type="hidden"/>
             <input name="qfront" type="text" style="width: 100px"/>
             <input type="submit" value="Search Project"/>
             </form>
           </td>
-          <td colspan="3" nowrap="true">
+          <td colspan="4" nowrap="true">
             <form>Quick Link
             <select name="quickLink" onChange="loadPage(this.form.elements[0])" target="_parent._top" onmouseclick="this.focus()" method="POST">
             <option value="http://www.datanucleus.org"></option>
