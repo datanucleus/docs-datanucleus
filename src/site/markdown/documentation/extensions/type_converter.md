@@ -6,7 +6,7 @@
 ![Plugin](../../images/nucleus_plugin.gif)
 
 DataNucleus allows you to provide alternate ways of persisting Java types. Whilst it includes the majority of normal converters built-in, 
-you can extend DataNucleus capabilities using the plugin extension _org.datanucleus.type_converter_.
+you can extend DataNucleus capabilities using the plugin extension "org.datanucleus.type_converter".
 
 __This guide relates to current DataNucleus GitHub. Please consult the DataNucleus source code if you are using an earlier version since things may be different in other versions__.
 
