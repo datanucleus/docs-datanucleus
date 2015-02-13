@@ -44,9 +44,6 @@ function loadPage(list)
           <td valign="top" width="66" height="30">
               <a href="http://issues.datanucleus.org"><img src="./images/navigation/nav_issues.png" border="0"/></a>
           </td>
-          <td valign="top" width="53" height="30">
-              <a href="http://wiki.datanucleus.org"><img src="./images/navigation/nav_wiki.png" border="0"/></a>
-          </td>
           <td valign="top" width="56" height="30">
               <a href="http://datanucleus.wordpress.com"><img src="./images/navigation/nav_blog.png" border="0"/></a>
           </td>
@@ -56,11 +53,11 @@ function loadPage(list)
           <td colspan="3" nowrap="true">
             <form action="http://www.google.com/search" method="get" onSubmit="SearchDataNucleusDocs(this)">
             <input name="q" type="hidden"/>
-            <input name="qfront" type="text" style="width: 120px"/>
+            <input name="qfront" type="text" style="width: 100px"/>
             <input type="submit" value="Search Project"/>
             </form>
           </td>
-          <td colspan="4" nowrap="true">
+          <td colspan="3" nowrap="true">
             <form>Quick Link
             <select name="quickLink" onChange="loadPage(this.form.elements[0])" target="_parent._top" onmouseclick="this.focus()" method="POST">
             <option value="http://www.datanucleus.org"></option>
