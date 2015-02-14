@@ -2,28 +2,36 @@
 
 # Section : [Documentation](../index.html) > [Development](index.html)
 
-## Dynamic Class/MetaData Generation, Enhancement and Runtime Using DataNucleus
+## JDO : Dynamic Class/MetaData Generation, Enhancement and Runtime Using DataNucleus
 
 It is possible with DataNucleus to [dynamically generate classes in-memory](#Class_Generation), then [generate MetaData for this in-memory class](#MetaData_Generation), 
 then to [enhance the in-memory class definition](#Enhancement), and subsequently to [generate the Schema for this class](#SchemaTool), and finally to [persist objects](#Persistence). 
 All of this without any physical _"class"_ file. To do so you need to make use of a custom ClassLoader, and the use the various APIs for JDO3+.
 
-_Note : this example was developed for DN v2.0_. The current version can be found in
+_Note : The current version of this code can be found in_
 [GitHub](https://github.com/datanucleus/tests/blob/master/jdo/general/src/test/org/datanucleus/tests/DynamicEnhanceSchemaToolTest.java).
+
 
 ### Class Generation
 
-    private static byte[] createClass(String className) throws Exception
+This step is needed where we don't actually have any Java class file(s) to persist. If you have your Java class then skip this
+
+    private static byte[] createClass(String className)
+    throws Exception 
     {
         ClassWriter cw = new ClassWriter(0);
         MethodVisitor mv;
         FieldVisitor fv;
 
         String classNameASM = className.replace('.', '/');
-        cw.visit(Opcodes.V1_5, Opcodes.ACC_PUBLIC + Opcodes.ACC_SUPER, classNameASM, null, "java/lang/Object", new String[]{});
+
+        // TODO Use getAsmVersionForJRE instead of V1_6 (requires proper stack map)
+        cw.visit(Opcodes.V1_6, Opcodes.ACC_PUBLIC + Opcodes.ACC_SUPER, classNameASM, null, 
+            "java/lang/Object", new String[]{});
+
         fv = cw.visitField(Opcodes.ACC_PRIVATE, "name", "Ljava/lang/String;", null, null);
         fv.visitEnd();
-    
+
         // Default Constructor
         {
             mv = cw.visitMethod(Opcodes.ACC_PUBLIC, "<init>", "()V", null, null);
@@ -31,7 +39,7 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
             Label l0 = new Label();
             mv.visitLabel(l0);
             mv.visitVarInsn(Opcodes.ALOAD, 0);
-            mv.visitMethodInsn(Opcodes.INVOKESPECIAL, "java/lang/Object", "<init>", "()V");
+            mv.visitMethodInsn(Opcodes.INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
             mv.visitInsn(Opcodes.RETURN);
 
             Label l1 = new Label();
@@ -40,7 +48,7 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
             mv.visitMaxs(1, 1);
             mv.visitEnd();
         }
-    
+
         // String getName()
         {
             mv = cw.visitMethod(Opcodes.ACC_PUBLIC, "getName", "()Ljava/lang/String;", null, null);
@@ -50,14 +58,14 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
             mv.visitVarInsn(Opcodes.ALOAD, 0);
             mv.visitFieldInsn(Opcodes.GETFIELD, classNameASM, "name", "Ljava/lang/String;");
             mv.visitInsn(Opcodes.ARETURN);
-    
+
             Label l1 = new Label();
             mv.visitLabel(l1);
             mv.visitLocalVariable("this", "L" + classNameASM + ";", null, l0, l1, 0);
             mv.visitMaxs(1, 1);
             mv.visitEnd();
         }
-    
+
         // void setName(String)
         {
             mv = cw.visitMethod(Opcodes.ACC_PUBLIC, "setName", "(Ljava/lang/String;)V", null, null);
@@ -70,7 +78,7 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
             Label l1 = new Label();
             mv.visitLabel(l1);
             mv.visitInsn(Opcodes.RETURN);
-    
+
             Label l2 = new Label();
             mv.visitLabel(l2);
             mv.visitLocalVariable("this", "L" + classNameASM + ";", null, l0, l2, 0);
@@ -78,7 +86,7 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
             mv.visitMaxs(2, 2);
             mv.visitEnd();
         }
-    
+
         // Object getProperty(String)
         {
             mv = cw.visitMethod(Opcodes.ACC_PUBLIC, "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", null, null);
@@ -91,7 +99,7 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
             mv.visitLabel(l1);
             mv.visitVarInsn(Opcodes.ALOAD, 1);
             mv.visitLdcInsn("name");
-            mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z");
+            mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
             Label l2 = new Label();
             mv.visitJumpInsn(Opcodes.IFEQ, l2);
             Label l3 = new Label();
@@ -102,7 +110,7 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
             mv.visitLabel(l2);
             mv.visitVarInsn(Opcodes.ALOAD, 2);
             mv.visitInsn(Opcodes.ARETURN);
-    
+
             Label l4 = new Label();
             mv.visitLabel(l4);
             mv.visitLocalVariable("this", "L" + classNameASM + ";", null, l0, l4, 0);
@@ -111,7 +119,7 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
             mv.visitMaxs(2, 3);
             mv.visitEnd();
         }
-    
+
         // void setProperty(String, Object)
         {
             mv = cw.visitMethod(Opcodes.ACC_PUBLIC, "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", null, null);
@@ -120,7 +128,7 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
             mv.visitLabel(l0);
             mv.visitVarInsn(Opcodes.ALOAD, 1);
             mv.visitLdcInsn("name");
-            mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z");
+            mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
             Label l1 = new Label();
             mv.visitJumpInsn(Opcodes.IFEQ, l1);
             Label l2 = new Label();
@@ -131,7 +139,7 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
             mv.visitFieldInsn(Opcodes.PUTFIELD, classNameASM, "name", "Ljava/lang/String;");
             mv.visitLabel(l1);
             mv.visitInsn(Opcodes.RETURN);
-    
+
             Label l3 = new Label();
             mv.visitLabel(l3);
             mv.visitLocalVariable("this", "L" + classNameASM + ";", null, l0, l3, 0);
@@ -144,6 +152,7 @@ _Note : this example was developed for DN v2.0_. The current version can be foun
         return cw.toByteArray();
     }
 
+
 So here we have used ASM to generate the bytes for a simple Java bean style class. So we now load this into a CustomClassLoader to make it accessible
 
     byte[] classBytes = createClass(className);
@@ -153,7 +162,7 @@ So here we have used ASM to generate the bytes for a simple Java bean style clas
 
 ### MetaData Generation
 
-To make use of our generated class we need metadata for how it will be persisted.
+To make use of our generated class we need metadata for how it will be persisted. Omit this step if your class has metadata specified via annotations/XML.
 We firstly need to obtain a JDOMetadata object to populate. This step is covered later. Once we have the JDOMetadata object we need to populate it, so we use the JDO3 Metadata API.
 
     private static void populateMetadata(JDOMetadata jdomd)
@@ -232,12 +241,19 @@ and now we run SchemaTool, using this ClassLoader
     List classNames = new ArrayList();
     classNames.add("test.Client");
     
+    PersistenceNucleusContext nucCtx = pmf.getNucleusContext();
+    StoreManager storeMgr = nucCtx.getStoreManager();
+    if (!(storeMgr instanceof SchemaAwareStoreManager))
+    {
+        // Can't create schema with this datastore
+        return;
+    }
+
     try
     {
         SchemaTool schematool = new SchemaTool();
-        schematool.setDdlFile("target/schema.ddl");
-        schematool.setCompleteDdl(true);
-        schematool.createSchema(pmf, classNames);
+        schematool.setDdlFile("target/schema.ddl").setCompleteDdl(true);
+        schematool.createSchemaForClasses((SchemaAwareStoreManager)storeMgr, classNames);
     }
     catch (Exception e)
     {
