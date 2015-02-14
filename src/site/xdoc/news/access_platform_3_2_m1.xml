@@ -35,7 +35,7 @@
                     as such), and update several to also be in the DFG</li>
                 <li>Change LinkedHashMap support to allow null values</li>
                 <li>Significant refactoring of internal DataNucleus classes (see 
-                    <a href="http://www.datanucleus.org/servlet/wiki/display/ENG/Plugin+migration+between+versions+of+DataNucleus">the Wiki</a></li>
+                    <a href="http://www.datanucleus.org/documentation/plugin_migration.html">this guide</a></li>
                 <li>JPA : Update enhancement contract to throw IllegalXXXException instead of JDOXXXException when
                     some error condition occurs, for less JDO impact on JPA usage</li>
                 <li>JPA : various fixes to Criteria Query conversion to JPQL</li>
