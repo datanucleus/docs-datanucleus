@@ -4,11 +4,11 @@
 
 ## Dynamic Class/MetaData Generation, Enhancement and Runtime Using DataNucleus
 
-It is possible with DataNucleus to dynamically generate classes in-memory, then generate MetaData for this in-memory class, then to enhance the in-memory class definition, 
-and subsequently to generate the Schema for this class, and finally to persist objects. All of this without any physical _"class"_ file. To do so you need to make use of a 
-custom ClassLoader, and the use the various APIs for JDO3+.
+It is possible with DataNucleus to [dynamically generate classes in-memory](#Class_Generation), then [generate MetaData for this in-memory class](#MetaData_Generation), 
+then to [enhance the in-memory class definition](#Enhancement), and subsequently to [generate the Schema for this class](#SchemaTool), and finally to [persist objects](#Persistence). 
+All of this without any physical _"class"_ file. To do so you need to make use of a custom ClassLoader, and the use the various APIs for JDO3+.
 
-_Note : this example was developed for DN2.0. The current version can be found in
+_Note : this example was developed for DN v2.0_. The current version can be found in
 [GitHub](https://github.com/datanucleus/tests/blob/master/jdo/general/src/test/org/datanucleus/tests/DynamicEnhanceSchemaToolTest.java).
 
 ### Class Generation
@@ -18,7 +18,7 @@ _Note : this example was developed for DN2.0. The current version can be found i
         ClassWriter cw = new ClassWriter(0);
         MethodVisitor mv;
         FieldVisitor fv;
-    
+
         String classNameASM = className.replace('.', '/');
         cw.visit(Opcodes.V1_5, Opcodes.ACC_PUBLIC + Opcodes.ACC_SUPER, classNameASM, null, "java/lang/Object", new String[]{});
         fv = cw.visitField(Opcodes.ACC_PRIVATE, "name", "Ljava/lang/String;", null, null);
