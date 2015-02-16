@@ -7,7 +7,7 @@
 
 DataNucleus provides support for query languages to allow access to the persisted objects.
 DataNucleus Core understands JDOQL, SQL and JPQL for use with the whichever StoreManager you decide to implement them for.
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.store_query_query_ to achieve this.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.store_query_query* to achieve this.
 
 <table>
     <tr>

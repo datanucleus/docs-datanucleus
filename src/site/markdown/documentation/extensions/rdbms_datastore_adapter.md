@@ -17,7 +17,7 @@ extend DataNucleus to make the support to a specific database fit better to Data
 The [RDBMS](http://www.datanucleus.org/products/accessplatform/datastores/rdbms.html) page lists 
 all RDBMS databases that have been tested with DataNucleus, and some of these databases has been 
 adapted internally to get a good fit. 
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.store_datastoreadapter_.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.store_datastoreadapter*.
 
 <table>
     <tr>
