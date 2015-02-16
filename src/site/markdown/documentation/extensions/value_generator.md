@@ -9,7 +9,7 @@ DataNucleus is developed as a plugin-driven framework and one of the components 
 the generation of identity or field values. DataNucleus provides a [large selection](http://www.datanucleus.org/products/accessplatform/jdo/value_generation.html) 
 of generators but is structured so that you can easily add your own variant and have it usable within your DataNucleus usage. Below are listed
 some of those available, but each store plugin typically will define its own. The JDO/JPA specs define various that are required.
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.store_valuegenerator_.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.store_valuegenerator*.
 
 <table>
     <tr>

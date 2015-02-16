@@ -7,7 +7,7 @@
 
 DataNucleus has supported JDO metadata from the outset. More than this, it actually provides a pluggable framework whereby you can plug in 
 your own MetaData support. DataNucleus provides JDO and JPA metadata support, as well as "persistence.xml".
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.metadata_handler_.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.metadata_handler*.
 
 
 <table>

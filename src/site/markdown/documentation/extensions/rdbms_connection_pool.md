@@ -5,9 +5,8 @@
 ## Extensions : Connection Pooling
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is 
-pluggable is the pooling of connections to RDBMS datastores. DataNucleus provides a large selection
-of connection pools (DBCP, C3P0, Proxool, BoneCP) but is structured so that you can easily add your 
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the pooling of connections to RDBMS datastores. 
+DataNucleus provides a large selection of connection pools (DBCP, C3P0, Proxool, BoneCP) but is structured so that you can easily add your 
 own variant and have it usable within your DataNucleus usage.
 
 __Note that this plugin point replaces the earlier [RDBMS DataSource ConnectionPool](rdbms_datasource.html)__ (used up to and including 3.2.7 of datanucleus-rdbms).
@@ -15,7 +14,7 @@ __Note that this plugin point replaces the earlier [RDBMS DataSource ConnectionP
 DataNucleus requires a DataSource to define the datastore in use and consequently allows use of 
 connection pooling. DataNucleus provides plugins for various different pooling products, shown below. 
 You can easily define your own plugin for pooling. You can extend DataNucleus's capabilities 
-using the plugin extension _org.datanucleus.store.rdbms.connectionpool_.
+using the plugin extension *org.datanucleus.store.rdbms.connectionpool*.
 
 <table>
     <tr>

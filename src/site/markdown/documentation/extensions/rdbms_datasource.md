@@ -15,7 +15,7 @@ __Note that this plugin point is now discontinued and replaced by [RDBMS Connect
 DataNucleus requires a DataSource to define the datastore in use and consequently allows use of 
 connection pooling. DataNucleus provides plugins for different pooling products - DBCP, C3P0, BoneCP, and
 Proxool. You can easily define your own plugin for pooling. You can extend DataNucleus's capabilities 
-using the plugin extension _org.datanucleus.store.rdbms.datasource_.
+using the plugin extension *org.datanucleus.store.rdbms.datasource*.
 
 
 <table>

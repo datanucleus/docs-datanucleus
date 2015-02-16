@@ -13,7 +13,7 @@ to define the name of components in the datastore, such as table/columns.
 DataNucleus provides the mechanism to generate datastore identifiers (table/column names) when none 
 are defined by the users metadata/annotations. In addition to the default JDO factory there is also 
 an identifier factory that generates identifiers consistent with the JPA1 specification.
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.store.rdbms.identifierfactory_.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.store.rdbms.identifierfactory*.
 
 <table>
     <tr>

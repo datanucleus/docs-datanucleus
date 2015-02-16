@@ -5,10 +5,8 @@
 ## Extensions : RDBMS SQL Methods Support
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is 
-pluggable is the support for JDOQL/JPQL methods in the RDBMS query mechanism. 
-DataNucleus provides support for the majority of SQL methods that you are ever likely
-to need but is structured so that you could add on support for your own easily enough
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the support for JDOQL/JPQL methods in the RDBMS query mechanism. 
+DataNucleus provides support for the majority of SQL methods that you are ever likely to need but is structured so that you could add on support for your own easily enough
 
 The following sections describe how to create your own SQL Method plugin for DataNucleus.
 

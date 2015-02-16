@@ -5,15 +5,14 @@
 ## Extensions : ClassLoader Resolvers
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is 
-the class-loading resolution. DataNucleus provides its own internal class-loader resolver that matches
-the requirements of the JDO specification, but also allows you to plugin your own class loading 
-policy. This class loader resolver is used for runtime operation. The plugin mechanism always operates 
-using an instance of JDOClassLoaderResolver since we need a class loading process to discover the plugins in the first place.
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the class-loading resolution. 
+DataNucleus provides its own internal class-loader resolver that matches the requirements of the JDO specification, but also allows you to plugin 
+your own class loading policy. This class loader resolver is used for runtime operation. The plugin mechanism always operates 
+using an instance of ClassLoaderResolverImpl since we need a class loading process to discover the plugins in the first place.
 
 DataNucleus has to resolve classes at runtime. The JDO specification defines a strict process for 
 resolving classes using specific class loaders. DataNucleus provides a plugin for this JDO process.
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.classloader_resolver_.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.classloader_resolver*.
 
 <table>
     <tr>
@@ -25,7 +24,7 @@ You can extend DataNucleus's capabilities using the plugin extension _org.datanu
     <tr>
     <td>org.datanucleus.classloader_resolver</td>
     <td>jdo</td>
-    <td>ClassLoaderResolver using JDO2 definition</td>
+    <td>ClassLoaderResolver using JDO definition</td>
     <td>datanucleus-core</td>
     </tr>
 </table>

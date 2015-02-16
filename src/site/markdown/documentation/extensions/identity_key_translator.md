@@ -13,7 +13,7 @@ into a standardised key form. Alternatively you could do this in your own code, 
 is provided. This means that in your application you only use your own form of identities.
 
 
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.identity_key_translator_.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.identity_key_translator*.
 
 ### Interface
 

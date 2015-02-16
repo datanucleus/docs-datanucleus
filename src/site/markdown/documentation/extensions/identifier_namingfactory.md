@@ -5,17 +5,15 @@
 ## Extensions : Identifier Naming Factories
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is 
-the naming of datastore identifiers. DataNucleus provides its own internal identifier factories, 
-but also allows you to plugin your own factory. Identifiers are required to define the name of components in the datastore, 
-such as table/columns/indexes.
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the naming of datastore identifiers. 
+DataNucleus provides its own internal identifier factories, but also allows you to plugin your own factory. Identifiers are required to define 
+the name of components in the datastore, such as table/columns/indexes.
 
 DataNucleus provides the mechanism to generate datastore identifiers (table/column names) when none 
 are defined by the users metadata/annotations. In addition to the default JDO factory there is also 
 an identifier factory that generates identifiers consistent with the JPA specification.
-__Note that currently RDBMS doesn't use this extension and instead uses the 
-[RDBMS Identifier Factory](rdbms_identifier_factory.html) extension.
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.identifier_namingfactory_.
+__Note that currently RDBMS doesn't use this extension and instead uses the [RDBMS Identifier Factory](rdbms_identifier_factory.html) extension__.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.identifier_namingfactory*.
 
 <table>
     <tr>

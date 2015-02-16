@@ -7,7 +7,7 @@
 
 DataNucleus exposes runtime metrics via JMX MBeans. Management Servers permits DataNucleus to 
 register its MBeans into a different MBeanServer. Management Servers can be plugged using the 
-plugin extension _org.datanucleus.management_server_. The following plugin extensions are currently available
+plugin extension *org.datanucleus.management_server*. The following plugin extensions are currently available
 
 <table>
     <tr>

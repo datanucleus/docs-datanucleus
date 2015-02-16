@@ -9,7 +9,7 @@ DataNucleus provides capabilities for persistence of particular Java types. Some
 by default persistent, some are by default in the default "fetch-group". Similarly some are
 second class mutable, and hence have their operations intercepted. An extension-point is
 available to define other Java types in this way. You can extend DataNucleus's capabilities to support a particular Java type 
-using the plugin extension _org.datanucleus.java_type_.
+using the plugin extension *org.datanucleus.java_type*.
 
 The attributes that you can set for each Java type are
 

@@ -7,8 +7,7 @@
 
 DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is 
 the handling of annotations at class-level. DataNucleus provides a support for JDO and JPA annotations, 
-but is structured so that you can easily add your own annotations and have them usable within your 
-DataNucleus usage. <b>This extension is for DataNucleus 3.0+</b>
+but is structured so that you can easily add your own annotations and have them usable within your DataNucleus usage.
 
 ### Interface
 
@@ -41,8 +40,7 @@ plugin. To do this you simply add a file _plugin.xml_ to your JAR at the root. T
 	<?xml version="1.0"?>
 	<plugin id="mydomain.annotations" name="DataNucleus plug-ins" provider-name="My Company">
     	<extension point="org.datanucleus.class_annotation_handler">
-        	<class-annotation-handler annotation-class="mydomain.annotations.MyAnnotation" 
-                handler="mydomain.annotations.MyAnnotationHandler"/>
+        	<class-annotation-handler annotation-class="mydomain.annotations.MyAnnotation" handler="mydomain.annotations.MyAnnotationHandler"/>
     	</extension>
 	</plugin>
 

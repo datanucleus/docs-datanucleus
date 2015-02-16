@@ -5,12 +5,11 @@
 ## Extensions : Query Cache
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is 
-pluggable is the caching of query compilations. DataNucleus provides some inbuilt cache
-options, but also allows you to provide your own.
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the caching of query compilations. 
+DataNucleus provides some inbuilt cache options, but also allows you to provide your own.
 
 DataNucleus is able to support third party Query Cache products. 
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.cache_query_.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.cache_query*.
 
 
 <table>

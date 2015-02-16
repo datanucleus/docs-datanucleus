@@ -13,7 +13,7 @@ non-standard String input forms to pm.getObjectById(id) and can provide a plugin
 String into a valid JDO identity. Alternatively you could do this in your own code, but the facility 
 is provided. This means that in your application you only use your own form of identities.
 
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.identity_string_translator_.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.identity_string_translator*.
 
 <table>
 <tr>

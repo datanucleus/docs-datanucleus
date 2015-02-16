@@ -5,13 +5,12 @@
 ## Extensions : AutoStart Mechanism
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable 
-is the mechanism for starting with knowledge of previously persisted classes. 
-DataNucleus provides 3 "auto-start" mechanisms, but also allows you to plugin your own variant.
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the mechanism for starting with 
+knowledge of previously persisted classes. DataNucleus provides 3 "auto-start" mechanisms, but also allows you to plugin your own variant.
 
 DataNucleus can discover the classes that it is managing at runtime, or you can use an "autostart" mechanism
 to inform DataNucleus of what classes it will be managing. DataNucleus provides a selection of plugins for autostart mechanism.
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.autostart_.
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.autostart*.
 
 <table>
     <tr>

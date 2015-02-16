@@ -5,14 +5,12 @@
 ## Extensions : Level 1 Cache
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is 
-the Level 1 caching of objects (between PersistenceManagers for the same PersistenceManagerFactory). 
-The Cache guide (<a href="../jdo/cache.html">JDO</a> or <a href="../jpa/cache.html">JPA</a>) defines 
-three Level 1 caches but is a plugin point so that you can easily add your own variant and have
-it usable within your DataNucleus usage.
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the Level 1 caching of objects 
+(between PM/EMs for the same PMF/EMF). DataNucleus comes with builtin support for three Level 1 caches, but is a plugin point so that you can 
+easily add your own variant and have it usable within your DataNucleus usage.
 
 DataNucleus is able to support third party Level 1 Cache products. There are DataNucleus-provided plugins for
-weak and soft referenced caches. You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.cache_level1_. 
+weak and soft referenced caches. You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.cache_level1*. 
 
 <table>
     <tr>

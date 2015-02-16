@@ -7,7 +7,7 @@
 
 DataNucleus provides support for persisting objects to particular datastores. It provides this capability via a "Store Manager". 
 It provides a Store Manager plugin for many datastores (see below). You can extend DataNucleus's capabilities using the plugin extension 
-_org.datanucleus.store_manager_.
+*org.datanucleus.store_manager*.
 
 <table>
     <tr>

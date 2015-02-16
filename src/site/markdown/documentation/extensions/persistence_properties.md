@@ -9,7 +9,7 @@ DataNucleus is developed as a plugin-driven framework and one of the components 
 pluggable is to allow definition of persistence properties. These properties are used by plugins
 and allow configurability of behaviour. Any plugin can define its own properties.
 
-You can define persistence properties using the plugin extension _org.datanucleus.persistence_properties_.
+You can define persistence properties using the plugin extension *org.datanucleus.persistence_properties*.
 
 ### Plugin Specification
 
@@ -18,8 +18,7 @@ The only thing required is to register the persistence property with DataNucleus
 	<?xml version="1.0"?>
 	<plugin id="mydomain" name="DataNucleus plug-ins" provider-name="My Company">
     	<extension point="org.datanucleus.persistence_properties
-        	<persistence-property name="datanucleus.magicBehaviour" value="false"
-            	validator="org.datanucleus.properties.BooleanPropertyValidator"/>">
+        	<persistence-property name="datanucleus.magicBehaviour" value="false" validator="org.datanucleus.properties.BooleanPropertyValidator"/>">
     	</extension>
 	</plugin>
 

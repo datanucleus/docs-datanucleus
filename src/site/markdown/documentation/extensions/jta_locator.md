@@ -10,7 +10,7 @@ the locator for JTA TransactionManagers (since J2EE doesnt define a standard mec
 DataNucleus provides several plugins for the principal application servers available but is structured 
 so that you can easily add your own variant and have it usable within your DataNucleus usage.
 
-Locators for JTA TransactionManagers can be plugged using the plugin extension _org.datanucleus.jta_locator_. 
+Locators for JTA TransactionManagers can be plugged using the plugin extension *org.datanucleus.jta_locator*.
 These are of relevance when running with JTA transaction and linking in to the JTA transaction of some controlling application server.
 
 <table>

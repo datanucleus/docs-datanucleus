@@ -5,10 +5,8 @@
 ## Extensions : Connection Factory
 ![Plugin](../../images/nucleus_plugin.gif)
 
-Any plugin for a datastore needs a way of connecting to the datastore and linking these
-connections into the persistence process. This is provided by way of a ConnectionFactory.
-This is pluggable so you can define your own and register it for the datastore, and you use the
-plugin extension _org.datanucleus.store_connectionfactory_.
+Any plugin for a datastore needs a way of connecting to the datastore and linking these connections into the persistence process. This is provided by way of a ConnectionFactory.
+This is pluggable so you can define your own and register it for the datastore, and you use the plugin extension *org.datanucleus.store_connectionfactory*.
 This plugin point is intended to be implemented by provider of the datastore plugin.
 Below are two samples that provide this, but you will find at least the transactional one for any datastore plugin.
 
@@ -49,23 +47,20 @@ So you need to implement the following interface
     {
         /**
          * Obtain a connection from the Factory. 
-         * The connection will be enlisted within the {@link org.datanucleus.Transaction} 
-         * associated to the ObjectManager if "enlist" is set to true.
+         * The connection will be enlisted within the {@link org.datanucleus.Transaction} associated to the ExecutionContext if "enlist" is set to true.
          * @param om the ObjectManager
          * @param options Any options for then creating the connection
          * @return the ManagedConnection
          */
-        ManagedConnection getConnection(ObjectManager om, Map options);
+        ManagedConnection getConnection(ExecutionContext ec, org.datanucleus.Transaction transaction, Map options);
     
         /**
-         * Create the ManagedConnection.
-         * Only used by ConnectionManager so do not call this.
-         * @param om ObjectManager (if any)
-         * @param transactionOptions the Transaction options this connection will be enlisted to, 
-         *                           null if non existent
+         * Create the ManagedConnection. Only used by ConnectionManager so do not call this.
+         * @param ec ExecutionContext (if any)
+         * @param transactionOptions the Transaction options this connection will be enlisted to, null if non existent
          * @return The ManagedConnection.
          */
-        ManagedConnection createManagedConnection(ObjectManager om, Map transactionOptions);
+        ManagedConnection createManagedConnection(ExecutionContext ec, Map transactionOptions);
     }
 
 

@@ -5,9 +5,8 @@
 ## Extensions : Member Annotation Handler
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is 
-the handling of annotations at field-level. DataNucleus provides a support for JDO and JPA annotations, 
-but is structured so that you can easily add your own annotations and have them usable within your DataNucleus usage.
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the handling of annotations at field-level. 
+DataNucleus provides support for JDO and JPA annotations, but is structured so that you can easily add your own annotations and have them usable within your DataNucleus usage.
 
 ### Interface
 

@@ -5,11 +5,9 @@
 ## Extensions : RDBMS SQL Table Naming Support
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is 
-pluggable is the support for controlling the naming of table aliases in (some) SQL statements.
-DataNucleus provides a few options out of the box.
-The default is _alpha-scheme_ which names tables based on the table-group they are in
-and the number in that group, so giving names like A0, A1, A2, B0, B1, C0, D0.
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the support for controlling the naming of table aliases 
+in (some) SQL statements. DataNucleus provides a few options out of the box.
+The default is _alpha-scheme_ which names tables based on the table-group they are in and the number in that group, so giving names like A0, A1, A2, B0, B1, C0, D0.
 It also provides a simpler option <i>t-scheme</i> that names all tables as "T{number}" so T0, T1, T2, T3, etc.
 
 The following sections describe how to create your own SQL Table Namer plugin for DataNucleus.

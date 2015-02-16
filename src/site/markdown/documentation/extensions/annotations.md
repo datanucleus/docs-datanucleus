@@ -5,15 +5,13 @@
 ## Extensions : Annotations
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is 
-the reading of annotations. DataNucleus provides a support for JDO and JPA annotations, 
-but is structured so that you can easily add your own annotations and have them  usable within your 
-DataNucleus usage.
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the reading of annotations. 
+DataNucleus provides a support for JDO and JPA annotations, but is structured so that you can easily add your own annotations and have them
+usable within your DataNucleus usage.
 
-DataNucleus supports Java annotations. More than this, it actually provides a pluggable framework 
-whereby you can plug in your own annotations support. The JDO API plugin provides support for JDO
-annotations, and the JPA API plugin provides support for JPA annotations. 
-You can extend DataNucleus's capabilities using the plugin extension _org.datanucleus.annotations_.
+DataNucleus supports Java annotations. More than this, it actually provides a pluggable framework whereby you can plug in your own annotations support. 
+The JDO API plugin provides support for JDO annotations, and the JPA API plugin provides support for JPA annotations. 
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.annotations*.
 
 <table>
     <tr>
@@ -91,8 +89,7 @@ plugin. To do this you simply add a file _plugin.xml_ to your JAR at the root. T
 	<?xml version="1.0"?>
 	<plugin id="mydomain.annotations" name="DataNucleus plug-ins" provider-name="My Company">
     	<extension point="org.datanucleus.annotations">
-        	<annotations annotation-class="mydomain.annotations.MyAnnotationType" 
-                reader="mydomain.annotations.MyAnnotationReader"/>
+        	<annotations annotation-class="mydomain.annotations.MyAnnotationType" reader="mydomain.annotations.MyAnnotationReader"/>
     	</extension>
 	</plugin>
 

@@ -5,15 +5,12 @@
 ## Extensions : Level 2 Cache
 ![Plugin](../../images/nucleus_plugin.gif)
 
-DataNucleus is developed as a plugin-driven framework and one of the components that is 
-pluggable is the Level 2 caching of objects (between PersistenceManagers for the same 
-PersistenceManagerFactory). The Cache guide (JDO or JPA) defines a large selection of Level 2 caches (builtin, 
-Coherence, EHCache, OSCache, SwarmCache) but is structured so that you can easily add your 
-own variant and have it usable within your DataNucleus usage. 
+DataNucleus is developed as a plugin-driven framework and one of the components that is pluggable is the Level 2 caching of objects 
+(between PM/EMs for the same PMF/EMF). DataNucleus provides a large selection of Level 2 caches (builtin-map-based, Coherence, EHCache, OSCache, others) 
+but is structured so that you can easily add your own variant and have it usable within your DataNucleus usage. 
 
-DataNucleus is able to support third party Level 2 Cache products. There are provided plugins
-for EHCache, SwarmCache, OSCache, and Oracle Coherence. You can extend DataNucleus's 
-capabilities using the plugin extension _org.datanucleus.cache_level2_.
+DataNucleus is able to support third party Level 2 Cache products. There are provided plugins for EHCache, SwarmCache, OSCache, and others. 
+You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.cache_level2*.
 
 
 <table>

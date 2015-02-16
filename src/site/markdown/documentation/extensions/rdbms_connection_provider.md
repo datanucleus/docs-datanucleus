@@ -10,7 +10,7 @@ pluggable is the failover mechanism. DataNucleus provides a support for basic fa
 and is structured so that you can easily add your own failover algorithm and have them usable within 
 your DataNucleus usage.
 
-Failover algorithm for DataNucleus can be plugged using the plugin extension _org.datanucleus.store.rdbms.connectionprovider_.
+Failover algorithm for DataNucleus can be plugged using the plugin extension *org.datanucleus.store.rdbms.connectionprovider*.
 
 <table>
     <tr>

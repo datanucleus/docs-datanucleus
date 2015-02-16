@@ -14,8 +14,7 @@ be aware that the JDO2 specification (5.4.3) has strict rules for datastore iden
 
 DataNucleus allows identities to be either datastore or application identity. When using datastore 
 identity it needs to have a class to represent an identity. DataNucleus provides its own default 
-datastore identity class. You can extend DataNucleus's capabilities using the plugin extension 
-_org.datanucleus.store_datastoreidentity_.
+datastore identity class. You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.store_datastoreidentity*.
 
 <table>
 <tr>
