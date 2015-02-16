@@ -51,7 +51,7 @@ The current plugin points are :-
 * [Level 2 Cache](level2_cache.html)
 * [Query Cache](query_cache.html)
 * [Query Language](store_query_query.html)
-* [Query Methods](store_query_methods.html)
+* [Query Methods](query_method_evaluators.html)
 * [JMX Management](management_server.html)
 * [JTA Locator](jta_locator.html)
 * RDBMS PluginPoints

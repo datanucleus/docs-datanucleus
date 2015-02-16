@@ -53,7 +53,7 @@
 	+ [Level 2 Cache](extensions/level2_cache.html) - adding support for a third-party L2 cache
 	+ [Query Cache](extensions/query_cache.html) - adding support for a third-party query cache
 	+ [Query Language](extensions/store_query_query.html) - adding support for a query language for a datastore
-	+ [Query Methods](extensions/store_query_methods.html) - adding support for in-memory query evaluation of a java method
+	+ [Query Methods](extensions/query_method_evaluators.html) - adding support for in-memory query evaluation of a java method
 	+ [JMX Management](extensions/management_server.html)
 	+ [JTA Locator](extensions/jta_locator.html)
 	+ RDBMS PluginPoints
