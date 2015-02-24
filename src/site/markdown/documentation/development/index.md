@@ -149,6 +149,6 @@ This is the release process for a sample
 
 ### Metrics
 
-DataNucleus originated as JPOX in 2003 and consequently many people have contributed to its development over the years, 
-and has been open source since the outset. In terms of metrics of the codebase you can get a measure of this by looking
-at the [DataNucleus page on Ohloh](http://www.ohloh.net/projects/datanucleus).
+DataNucleus originated as JPOX in 2003, becoming DataNucleus in 2008, and consequently many people have contributed to its development over the years 
+and has been open source since the outset. 
+In terms of metrics of the codebase you can get a measure of this by looking at the [DataNucleus page on OpenHub](http://www.openhub.net/p/datanucleus).
