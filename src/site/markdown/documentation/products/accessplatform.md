@@ -191,4 +191,3 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 </tr>
 </table>
 
-Note that we have a [AccessPlatform Feature Matrix](accessplatform_features.html) to better explain what feature is available in which version.
