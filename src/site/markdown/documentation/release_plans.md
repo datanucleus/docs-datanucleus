@@ -105,8 +105,8 @@ All plugins were branched for this release cycle.
 * Branch on release 2.2.1
 * Increased modularity of persistence features
 * Definitive comparison of persistence features across supported datastores
-* [Data Federation]
-* [ENG:API Framework] modularity; each API has its own jar
+* Data Federation
+* API modularity; each API has its own jar
 * Good support for MongoDB, HBase, ODF, Excel
 * Support for SQLite
 * Upgrade to ODFDOM 0.8.7+
@@ -177,7 +177,7 @@ Note : API backward compatibility broken.
 ### Feature Scope for 1.1
 
 * Datastores : Add support for ODF, BigTable
-* JDK1.5\+ from this release onwards. Move enum to store.rdbms, move JDO+annotations to core, move rest to JPA. Merge JDK1.3/1.4 SCO wrappers
+* JDK1.5+ from this release onwards. Move enum to store.rdbms, move JDO+annotations to core, move rest to JPA. Merge JDK1.3/1.4 SCO wrappers
 * Remove NucleusSQL - not strategic direction, and hardly used but have a maintenance cost
 * Provide generic compilation to SQL converter so that we can start to think about replacing RDBMS JDOQL/JPQL and fixing all of those bugs that exist in it.
 
