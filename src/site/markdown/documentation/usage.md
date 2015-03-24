@@ -97,6 +97,7 @@ DataNucleus is used by many companies and groups in their own software. Below ar
 
 <tr>
 <td width="33%"><a href="http://www.lockheedmartin.com/" target="_blank"><img src="../images/companies/lockheed.png" border="0" alt=""/></a></td>
+<td width="33%"><a href="http://www.wildme.org/wildbook/" target="_blank"><img src="../images/companies/wildbook.jpg" border="0" alt=""/></a></td>
 </tr>
 </table>
 
