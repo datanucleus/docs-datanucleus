@@ -9,7 +9,8 @@ If developing plugins for DataNucleus, this page gives information on how to upg
 
 ### 4.0 -> 4.1
 
-* Updated the bytecode enhancement contract to have all classes in "org.datanucleus.enhancement" and use ExecutionContextReference in the enhancement contract rather than ExecutionContext, to minimise class loading requirements.
+* Updated the bytecode enhancement contract to have all classes in _org.datanucleus.enhancement_ and use ExecutionContextReference in the enhancement contract 
+rather than ExecutionContext, to minimise class loading requirements.
 
 
 ### 3.x -> 4.0

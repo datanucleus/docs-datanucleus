@@ -192,7 +192,7 @@ The file _plugin.xml_ will look like this
 	    </extension>
 	</plugin>
 
-Note that the "override" is specified since this type is provided by DataNucleus itself and so your mapping needs to override it.
+Note that the _priority_ is specified since this type is provided by DataNucleus itself and so your mapping needs to override it.
 Note also that you require a MANIFEST.MF file as per the [Extensions Guide](index.html).
 
 Obviously all standard types (such as _java.util.Date_) already have their values defined by DataNucleus itself typically in _datanucleus-core_.
