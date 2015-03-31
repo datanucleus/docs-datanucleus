@@ -38,8 +38,9 @@ A test case is needed to be able to reproduce possible issues. We require someth
 For this reason we have defined a standard for simplified testcases, for [JDO](#jdo), and for [JPA](#jpa) as well as building on our 
 existing testcases in [GitHub](#github). Please write your testcases using these templates and Maven. If a "test" is to demonstrate something in
 the enhancer or SchemaTool then you don't need the "Test" file since running the enhancer/SchemaTool via the Maven plugin will show whatever it is.
+
 __We sadly do not support other build systems for testcases. You may be more familiar with something else but we are the only people providing
-our time here, so Maven is the only way, and the Maven build file is preconfigured in these templates below__.
+our time here, so Maven is the only way, and the Maven build file is preconfigured in these templates below.__
 
 
 <a name="jdo"/>
