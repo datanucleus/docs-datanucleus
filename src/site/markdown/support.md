@@ -14,12 +14,11 @@ The answer is usually there, either in a tutorial/example, or in one of the many
 where you can do things for yourself.
 2. Look in the [DataNucleus LOG](http://www.datanucleus.org/products/accessplatform/logging.html). This usually contains a lot of information that 
 may answer the issue. You can always configure the log to give more output.
-3. Look in the [DataNucleus Wiki](http://www.datanucleus.org/servlet/wiki) where someone may have added something about your situation.
-4. Try a recent build to see if your version is out of date and the expected result is achieved with the latest nightly builds.
-5. Go to the [__DataNucleus Forum__](http://forum.datanucleus.org) and ask. Always try to give as clear a description of the problem as possible, together with 
+3. Try a recent build to see if your version is out of date and the expected result is achieved with the latest nightly builds.
+4. Go to the [__DataNucleus Forum__](http://forum.datanucleus.org) and ask. Always try to give as clear a description of the problem as possible, together with 
 your input data, and any associated log output. __Please be aware that we have very little time for this type of support and contributors to 
 DataNucleus are more likely to get any available free support__
-6. Go over to [Stackoverflow](http://stackoverflow.com/questions/tagged/datanucleus) and post a question tagged as DataNucleus. We don't often go
+5. Go over to [Stackoverflow](http://stackoverflow.com/questions/tagged/datanucleus) and post a question tagged as DataNucleus. We don't often go
 there but you may find people who have experience of your situation to help you.
 
 

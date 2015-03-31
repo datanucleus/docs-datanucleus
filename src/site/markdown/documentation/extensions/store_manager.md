@@ -102,7 +102,7 @@ If you want to implement support for another datastore you can achieve it by imp
 [![Javadoc](../../images/javadoc.gif)](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/store/StoreManager.html).
 
 For a brief guide on starting support for a new datastore, follow this
-[HOWTO](http://www.datanucleus.org/servlet/wiki/display/ENG/HOWTO+Support+a+new+datastore).
+[HOWTO](../development/new_store_plugin_HOWTO.html).
 
 ### Plugin Specification
 

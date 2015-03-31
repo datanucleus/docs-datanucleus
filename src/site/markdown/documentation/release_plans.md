@@ -27,7 +27,7 @@ All plugins were branched for this release cycle.
 
 ### Feature Scope
 
-* Runtime will still be supported as runnable for JDK1.7\+
+* Runtime will still be supported as runnable for JDK1.7+
 * Extend SchemaAwareStoreManager/SchemaTool to add createSchema/dropSchema
 * Upgrade ODF, Excel, HBase, MongoDB plugins to start using "persistable-identity"
 * Clean up NucleusContext "type" and maybe make NucleusContext an interface, and have PersistenceNucleusContext for persistence runtime. Means that we could also add a SchemaNucleusContext later on for schema tool(s)
@@ -37,7 +37,7 @@ All plugins were branched for this release cycle.
 * Upgrade ASM to v5.0
 * Generalise TypeConverters so they can support conversion to multiple datastore column values and usable by all store plugins
 * Support JDK1.8 (including javax.time - so build requirement for java8 plugin at least will be 1.8)
-* Official support for [Cassandra|http://www.datanucleus.org/servlet/wiki/display/ENG/Cassandra] v1.2\+
+* Official support for Cassandra v1.2+
 * Upgrade relevant store plugins to use Table/Column structure and benefit from common features, for ODF, Excel, JSON, MongoDB, Neo4j, HBase
 * Upgrade enhancement process to enhance to org.datanucleus.enhancer.Persistable so that users need to have "datanucleus-core.jar" in the CLASSPATH and not "jdo-api.jar".
 * Drop EclipsePluginRegistry so all OSGi users should use OSGiPluginRegistry
