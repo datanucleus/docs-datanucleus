@@ -25,7 +25,7 @@ If there is one then you can always check the status of the issue and post again
 5. Start a thread on the [Forum](http://forum.datanucleus.org). If doing this then seriously consider posting a simple concise testcase (see below) 
 that gives people something that reproduces your problem.
 6. If there is nothing obvious incorrect in your situation and it happens in a released version of DataNucleus then you can raise an issue in 
-[JIRA](http://issues.datanucleus.org). You should then create a testcase and attach it to the JIRA issue (using "Attach File" 
+[JIRA](http://issues.datanucleus.org). You should then create a minimized testcase and attach it to the JIRA issue (using "Attach File" 
 on the issue) - see below. __Bugs can only be raised against RELEASED versions of DataNucleus.__ If you encounter a bug that only appears in 
 GitHub latest then you should either report it against a JIRA issue related to that item in the current work-in-progress release, or otherwise 
 report it to developers. This is since something can hardly be a bug if it hasn't been released yet. __Please don't take the attitude that this 
@@ -34,9 +34,12 @@ present in all of our tests so yours is different, we aren't psychic so require 
 
 __This guide can also be used for providing testcases that demonstrate the need for new features__.
 
-A test case is needed to be able to reproduce possible issues. We require something that we can simply take and run ourselves.
+A test case is needed to be able to reproduce possible issues. We require something that we can simply take and run ourselves (using Maven).
 For this reason we have defined a standard for simplified testcases, for [JDO](#jdo), and for [JPA](#jpa) as well as building on our 
-existing testcases in [GitHub](#github). Please write your testcases using these templates.
+existing testcases in [GitHub](#github). Please write your testcases using these templates and Maven. If a "test" is to demonstrate something in
+the enhancer or SchemaTool then you don't need the "Test" file since running the enhancer/SchemaTool via the Maven plugin will show whatever it is.
+__We sadly do not support other build systems for testcases. You may be more familiar with something else but we are the only people providing
+our time here, so Maven is the only way, and the Maven build file is preconfigured in these templates below__.
 
 
 <a name="jdo"/>
