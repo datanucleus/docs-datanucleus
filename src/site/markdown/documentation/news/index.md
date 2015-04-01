@@ -601,13 +601,6 @@
     <td>DataNucleus</td>
 </tr>
 <tr>
-    <td>07/Apr/2009</td>
-    <td><a href="../../news/google_app_engine.html">Google AppEngine for Java released</a>
-        using DataNucleus for persistence</td>
-    <td>Google</td>
-    <td>Google.com</td>
-</tr>
-<tr>
     <td>17/Mar/2009</td>
     <td><a href="../../news/access_platform_1_1_1.html">AccessPlatform 1.1.1 released</a></td>
     <td>DataNucleus team</td>

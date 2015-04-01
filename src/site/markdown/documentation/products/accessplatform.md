@@ -29,7 +29,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <li><b>License</b> : <a href="../project/license.html">Apache 2</a></li>
 <li><b>APIs Supported</b> : JDO, JPA, <i>REST</i></li>
 <li><b>Datastores Supported</b> : RDBMS, Neo4j, LDAP, Excel (XLS/OOXML), XML, NeoDatis, JSON, ODF, HBase, Amazon S3, GoogleStorage, MongoDB, Cassandra, 
-    <i>[AppEngine/Datastore, db4o]</i></li>
+    <i>[db4o]</i></li>
 <li><b>Query Languages</b> : JDOQL, JPQL, SQL, <i>NeoDatis Criteria</i>, <i>NeoDatis Native</i>, <i>Cassandra CQL</i></li>
 </ul>
 </td>
