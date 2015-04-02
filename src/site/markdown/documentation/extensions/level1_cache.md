@@ -10,7 +10,7 @@ DataNucleus is developed as a plugin-driven framework and one of the components 
 easily add your own variant and have it usable within your DataNucleus usage.
 
 DataNucleus is able to support third party Level 1 Cache products. There are DataNucleus-provided plugins for
-weak and soft referenced caches. You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.cache_level1*. 
+weak, soft referenced caches etc. You can extend DataNucleus's capabilities using the plugin extension *org.datanucleus.cache_level1*. 
 
 <table>
     <tr>
@@ -33,8 +33,8 @@ weak and soft referenced caches. You can extend DataNucleus's capabilities using
     </tr>
     <tr>
         <td>org.datanucleus.cache_level1</td>
-        <td>hard</td>
-        <td>Hard-referenced cache (HashMap)</td>
+        <td>strong</td>
+        <td>Strong-referenced cache (HashMap)</td>
         <td>datanucleus-core</td>
     </tr>
 </table>
