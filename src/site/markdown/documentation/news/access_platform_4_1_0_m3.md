@@ -8,7 +8,7 @@
     <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
 </div>
 
-__3rd April 2015__ - DataNucleus AccessPlatform 4.1.0.M3 ("Chadwick") is released.
+__4th April 2015__ - DataNucleus AccessPlatform 4.1.0.M3 ("Chadwick") is released.
 DataNucleus Access Platform provides persistence and retrieval of Java objects to/from a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
 This release is available under the [Apache 2 license](http://www.datanucleus.org/documentation/license.html) from our [download page](http://www.datanucleus.org/download.html) 
 This release includes the following changes over the previous release
@@ -27,6 +27,12 @@ This release includes the following changes over the previous release
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-301'>NUCJPA-301</a>] -         Implement CriteriaBuilder &quot;selectSimpleCase&quot;
 </li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-19'>NUCREST-19</a>] -         Support persistence of Maps - see JSON plugin
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-20'>NUCREST-20</a>] -         Support persistence of array fields
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-23'>NUCREST-23</a>] -         Support GZIP encoding on GET response
+</li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-866'>NUCRDBMS-866</a>] -         Support JPQL KEY, VALUE
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-873'>NUCRDBMS-873</a>] -         Support specification of type-converter-name on &lt;element&gt;, &lt;key&gt;, &lt;value&gt;
@@ -40,6 +46,8 @@ This release includes the following changes over the previous release
 <li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-86'>NUCAPIJDO-86</a>] -         Make PersistenceManager support AutoCloseable (JDK1.7+)
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-87'>NUCAPIJDO-87</a>] -         Make JDOQuery implement AutoCloseable
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-17'>NUCREST-17</a>] -         Allow specification of maxFetchDepth on GET requests
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-871'>NUCRDBMS-871</a>] -         Select of KEY or VALUE only selects the &quot;id&quot; of the key/value class currently, but should select the FetchPlan
 </li>
@@ -65,6 +73,8 @@ This release includes the following changes over the previous release
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-300'>NUCJPA-300</a>] -          Implement CriteriaBuilder &quot;selectCase&quot; methods
 </li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-21'>NUCREST-21</a>] -         Should not need to specify &quot;class&quot; in related object when sending PUT/POST
+</li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-862'>NUCRDBMS-862</a>] -         Move AbstractSQLQuery across to RDBMS plugin since no other datastore supports &quot;SQL&quot; in the same way
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-864'>NUCRDBMS-864</a>] -         Support persisting a java.util.Calendar as jdbc-type=&quot;DATE&quot;
@@ -86,6 +96,8 @@ This release includes the following changes over the previous release
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-284'>NUCJPA-284</a>] -         DataNucleus org.datanucleus.api.jpa.criteria.FromImpl.java class has a bug and hence a slightly complex two-level embedded query failed
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-296'>NUCJPA-296</a>] -         Use of EntityGraph with multiple levels only respects top level, subgraphs are stored with null fetchGroupName and discarded
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-16'>NUCREST-16</a>] -         GET using &quot;id&quot; and specified fetchGroup doesn't necessarily respect fetchGroup on return
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJODATIME-22'>NUCJODATIME-22</a>] -         Difference in persistence of LocalDate when persisting to DATE column from 3.2
 </li>
