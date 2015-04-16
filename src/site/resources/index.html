@@ -72,104 +72,236 @@ function loadPage(list)
             </form>
           </td>
         </tr>
+        <tr height="5px">
+        </tr>
       </table>
     </div>
 
-    <div class="clear">
-        <hr/>
+    <!-- DataNucleus -->
+    <div style="background-image:url(./images/site/office.jpg);height:248px;width:100%;background-repeat: no-repeat;background-size:cover;">
+        <center>
+        <br/><br/>
+        <span class="frontpage_largetext">Persisting Java objects is now easy.</span><br/><br/>
+        <span class="frontpage_mediumtext">Transparent persistence. Powerful querying.</span><br/><br/>
+        <span class="frontpage_mediumtext">Use the API your prefer, to a very wide range of datastores.</span><br/><br/>
+        <span class="frontpage_mediumtext">The most standards-compliant Java persistence product.</span><br/><br/>
+        <span class="frontpage_mediumtext">Open Source software, under the Apache 2 license</span>
+        </center>
     </div>
 
-    <div id="bodyColumn">
-        <center>
-        <table border="0">
+    <!-- DN overview image -->
+    <div style="background-image:url(./images/site/dn_water_2.jpg);height:250px;border:1px solid grey;">
+        <center><img src="./images/site/dn_accessplatform_overview.png"/></center>
+    </div>
+
+    <!-- API -->
+    <div class="frontpage1">
+        <div class="frontpage_textlarge">
+            Choose Your API
+        <div/>
+        <table width="100%" cellspacing="10" cellpadding="5">
             <tr>
-                <td colspan="2" align="center">
-                <!-- BANNER -->
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-                <script src="./jqbanner.js" type="text/javascript"></script>
-                <div id="jqb_object">
-                    <div class="jqb_slides">
-                        <div class="jqb_slide" title="DataNucleus AccessPlatform"><a class="externalLink" href="http://www.datanucleus.org/documentation/products/accessplatform.html"><img src="images/banner/dn_banner_accessplatform.png" title="" alt="" /></a></div>
-                        <div class="jqb_slide" title="Define persistence with JDO metadata"><a class="externalLink" href="http://www.datanucleus.org/documentation/products/accessplatform/jdo/api.html"><img src="images/banner/dn_banner_jdo_metadata.png" title="" alt="" /></a></div>
-                        <div class="jqb_slide" title="Use the JDO Persistence API"><a class="externalLink" href="http://www.datanucleus.org/documentation/products/accessplatform/jdo/pmf.html"><img src="images/banner/dn_banner_jdo_api.png" title="" alt="" /></a></div>
-                        <div class="jqb_slide" title="Define persistence with JPA metadata"><a class="externalLink" href="http://www.datanucleus.org/documentation/products/accessplatform/jpa/api.html"><img src="images/banner/dn_banner_jpa_metadata.png" title="" alt="" /></a></div>
-                        <div class="jqb_slide" title="Use the JPA Persistence API"><a class="externalLink" href="http://www.datanucleus.org/documentation/products/accessplatform/jpa/emf.html"><img src="images/banner/dn_banner_jpa_api.png" title="" alt="" /></a></div>
-                        <div class="jqb_slide" title="Concerned by licensing costs?"><a class="externalLink" href="http://www.datanucleus.org/documentation/products/accessplatform.html"><img src="images/banner/dn_banner_opensource.png" title="" alt="" /></a></div>
-                        <div class="jqb_slide" title="Want to make it even better?"><a class="externalLink" href="http://www.datanucleus.org/documentation/development/index.html"><img src="images/banner/dn_banner_development.png" title="" alt="" /></a></div>
-                        <div class="jqb_slide" title="Need support?"><a class="externalLink" href="http://www.datanucleus.org/support.html#commercial"><img src="images/banner/dn_banner_commercial.png" title="" alt="" /></a></div>
+                <td width="5%"/>
+                <td width="30%" valign="top">
+                    <div class="frontpage_textmedium" style="color: #97d5ca;">
+                    Java Data Objects (JDO)
                     </div>
-                    <div class="jqb_bar">
-                        <div class="jqb_info"></div>
-                        <div id="btn_next" class="jqb_btn jqb_btn_next"></div>
-                        <div id="btn_pauseplay" class="jqb_btn jqb_btn_pause"></div>
-                        <div id="btn_prev" class="jqb_btn jqb_btn_prev"></div>
+                    <br/>
+                    <div class="frontpage_textsmall">
+                    Java standard since 2001, providing transparent persistence and datastore agnosticity.
+                    Comes with its own "Java syntax" JDOQL query language so you can use the Java syntax you already know to query your data.
+                    Support JDO3.1.<br/>
+                    <a href="http://www.datanucleus.org/documentation/accessplatform/jdo/api.html">Read More &gt;</a>
                     </div>
-                </div>
                 </td>
+                <td width="30%" valign="top">
+                    <div class="frontpage_textmedium" style="color: #97d5ca;">
+                    Java Persistence API (JPA)
+                    </div>
+                    <br/>
+                    <div class="frontpage_textsmall">
+                    Java standard since 2006, providing easy persistence to RDBMS datastores.
+                    Comes with its own "SQL-like" JPQL query language, so you query your data in a language similar to what your datastore understands.
+                    Support JPA2.1.<br/>
+                    <a href="http://www.datanucleus.org/documentation/accessplatform/jpa/api.html">Read More &gt;</a>
+                    </div>
+                </td>
+                <td width="30%" valign="top">
+                    <div class="frontpage_textmedium" style="color: #97d5ca;">
+                    REST API (JSON)
+                    </div>
+                    <br/>
+                    <div class="frontpage_textsmall">
+                    For web-based applications where you want to request objects from a server, and post object updates to the
+                    server and be able to retrieve those objects at a later date.</br>
+                    <a href="http://www.datanucleus.org/documentation/accessplatform/rest/api.html">Read More &gt;</a>
+                    </div>
+                </td>
+                <td width="5%"/>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Datastore -->
+    <div class="frontpage2">
+        <div class="frontpage_textlarge">
+            Choose Your Datastore
+        </div>
+        <table width="100%" cellspacing="10" cellpadding="5">
+            <tr>
+                <td width="5%"/>
+                <td width="22.5%" valign="top" rowspan="2">
+                    <div class="frontpage_textmedium" style="color: #2385c6;">
+                    RDBMS
+                    </div>
+                    <br/>
+                    <div class="frontpage_textsmall">
+                    Relational databases like PostgreSQL, MySQL, Oracle, SQLServer, DB2, H2 etc have
+                    been the workhorses since the 1980s and won't be going away anytime soon. They store their data relationally, consisting of
+                    tables and columns. Data can be indexed for faster access, and foreign keys can be assigned to provide relational integrity of data.
+                    Data is queried using Structured Query Language (SQL).
+                    </div>
+                </td>
+                <td width="22.5%" valign="top">
+                    <div class="frontpage_textmedium" style="color: #2385c6;">
+                    Map-based
+                    </div>
+                    <br/>
+                    <div class="frontpage_textsmall">
+                    HBase and Cassandra store data in a map-type structure. Features are being added to these datastores rapidly.
+                    </div>
+                </td>
+                <td width="22.5%" valign="top">
+                    <div class="frontpage_textmedium" style="color: #2385c6;">
+                    Graph-based
+                    </div>
+                    <br/>
+                    <div class="frontpage_textsmall">
+                    Neo4j stores data in a graph structure, perfect for allowing navigation between objects.
+                    </div>
+                </td>
+                <td width="22.5%" valign="top">
+                    <div class="frontpage_textmedium" style="color: #2385c6;">
+                    Documents
+                    </div>
+                    <br/>
+                    <div class="frontpage_textsmall">
+                    Spreadsheets like Excel and LibreOffice store their data in XLS, OOXML and ODF formats. You can persist your data
+                    in this format too so that it is easily interchangeable with other parts of your organisation.
+                    XML is a standard document format for interchanging data, and can also be used for storage of data.
+                    </div>
+                </td>
+                <td width="5%"/>
             </tr>
             <tr>
-                <!--td>
-                    <a href="products/accessplatform_4_0/index.html"><img src="images/logos/DataNucleus_AccessPlatform_product.jpg" alt="" /></a> 
-                </td-->
-                <td valign="top" align="left">
-                    <p>
-                        <b>Access Platform</b> is our baseline product. 
-                        It is the most standards-compliant Open Source Java persistence product in existence. 
-                        It is fully compliant with the JDO1, JDO2, JDO2.1, JDO2.2, JDO3, JDO3.1, JPA1, JPA2, JPA2.1 Java 
-                        standard APIs. It also complies with the OGC Simple Feature Specification for persistence of 
-                        geospatial Java types to RDBMS. 
-                        It supports persistence of Java objects to the widest range of databases available in the Java development world,
-                        including RDBMS, MongoDB, Cassandra, Neo4j, Excel, ODF, XML, JSON, LDAP, HBase and many more.
-                        It utilises an OSGi-based plugin mechanism meaning that it is extremely extensible. 
-                        It is also free for use. The benefits for your business are significant.<br />
-                        <b>All currently developed versions support JDO3.x and JPA2.1.</b><br />
-                    </p>
-                    <p>
-                        <b>Version 4.0</b>
- <a href="products/accessplatform_4_0/index.html">[Read More]</a> |
- <a class="externalLink" href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.6">[Download]</a> |
- <a href="products/accessplatform_4_0/getting_started.html">[Get Started]</a> |
- <a href="documentation/license.html">[License]</a> |
- <a href="products/accessplatform_4_0/datanucleus-accessplatform-docs.pdf">[PDF Docs]</a><br />
-                        <b>Version 4.1</b>
- <a href="products/accessplatform_4_1/index.html">[Read More]</a> |
- <a class="externalLink" href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.m3">[Download]</a> |
- <a href="products/accessplatform_4_1/getting_started.html">[Get Started]</a> |
- <a href="documentation/license.html">[License]</a> |
- <a href="products/accessplatform_4_1/datanucleus-accessplatform-docs.pdf">[PDF Docs]</a><br />
-                        <b>Version 3.3</b>
- <a href="products/accessplatform_3_3/index.html">[Read More]</a> |
- <a class="externalLink" href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.8">[Download]</a> |
- <a href="products/accessplatform_3_3/getting_started.html">[Get Started]</a> |
- <a href="documentation/license.html">[License]</a> |
- <a href="products/accessplatform_3_3/datanucleus-accessplatform-docs.pdf">[PDF Docs]</a>
-                    </p>
-                    <p>
-                        Please note that as well as being freely available open source software, DataNucleus also accepts contributions to make it better still. You can
-                        <a href="documentation/development/contribute.html">contribute in many many ways</a>, so why not start today?
-                        You can also support this project and donate money so that we are able to spend more time making DataNucleus better still. 
-                        <a href="documentation/donations.html"><img src="images/donate.png" border="0" alt="donate"/></a>.
-                        <b>If you are looking for commercial support for your use of DataNucleus, then go to the <a href="support.html">support</a> page.</b>
-                    </p>
-                    <p>
-                        <b>Please note that this project is nothing to do with "Google AppEngine". 
-                        Google wrote a plugin for their datastore which used an early version of our software but it is their responsibility.</b>
-                    </p>
+                <td width="5%"/>
+                <td width="22.5%" valign="top">
+                    <div class="frontpage_textmedium" style="color: #2385c6;">
+                    Web-based
+                    </div>
+                    <br/>
+                    <div class="frontpage_textsmall">
+                    Amazon S3 and Google Storage allow data to be stored in essentially "JSON" format, ready to pass around the web via REST.
+                    </div>
                 </td>
+                <td width="22.5%" valign="top">
+                    <div class="frontpage_textmedium" style="color: #2385c6;">
+                    Doc-based
+                    </div>
+                    <br/>
+                    <div class="frontpage_textsmall">
+                    MongoDB stores its data in document structures, utilising a JSON-style, so hence web-accessible, yet also very flexible in
+                    terms of querying.
+                    </div>
+                </td>
+                <td width="22.5%" valign="top">
+                    <div class="frontpage_textmedium" style="color: #2385c6;">
+                    Other
+                    </div>
+                    <br/>
+                    <div class="frontpage_textsmall">
+                    LDAP is a vendor-neutral standard for accessing/maintaining distributed directory services information, such as account information.
+                    </div>
+                </td>
+                <td width="5%"/>
+            </tr>
+        </table>
+    </div>
 
-                <td width="450" valign="top" align="right">
-            <a class="twitter-timeline" href="https://twitter.com/datanucleus" data-widget-id="490842249010225152">Tweets by @datanucleus</a>
+    <!-- Documentation -->
+    <div class="frontpage1" style="background-color: #ffffff; color: black; padding:20px;">
+        <table>
+            <tr>
+                <td width="5%"/>
+                <td width="128"><img src="./images/site/documentation.png" width="128" height="128"/></td>
+                <td width="100%" margin="10">
+                    <div class="frontpage_textmedium" style="text-align: left;">Documentation</div>
+                    <div class="frontpage_textsmall" style="text-align: left;">
+Browse our extensive documentation for recent versions of DataNucleus AccessPlatform.
+Explore the different APIs and features available for each datastore.<br/>
+Version 4.0 : <a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">Browse Online</a> |
+ <a href="http://www.datanucleus.org/products/accessplatform_4_0/datanucleus-accessplatform-docs.pdf">PDF</a><br/>
+Version 4.1 : <a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">Browse Online</a> |
+ <a href="http://www.datanucleus.org/products/accessplatform_4_1/datanucleus-accessplatform-docs.pdf">PDF</a><br/>
+                </div></td>
+                <td width="5%"/>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Download -->
+    <div class="frontpage1" style="background-color: #ffffff; color: black; padding:20px;">
+        <table>
+            <tr>
+                <td width="5%"/>
+                <td width="128"><img src="./images/site/download.png" width="128" height="128"/></td>
+                <td width="100%" margin="10">
+                    <div class="frontpage_textmedium" style="text-align: left;">Download</div>
+                    <div class="frontpage_textsmall" style="text-align: left;">
+Download the latest version as a convenient ZIP file with all dependencies :
+<a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.6">Version 4.0</a> |
+<a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.m3">Version 4.1</a>
+                </div></td>
+                <td width="5%"/>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Support -->
+    <!--div class="frontpage1" style="background-color: #ffffff; color: black; padding:20px;">
+        <div class="frontpage_textsmall">
+        Support is available commercially
+        </div>
+    </div-->
+
+    <!-- Development -->
+    <div class="frontpage1" style="background-color: #ffffff; color: black; padding:20px;">
+        <table>
+            <tr>
+                <td width="5%" rowspan="2"/>
+                <td>
+                <div class="frontpage_textmedium" style="text-align: left;">Contribute</div>
+                <div class="frontpage_textsmall" style="text-align: left;">Explore the codebase on <a href="http://github.com/datanucleus">GitHub</a> and contribute new features or fix bugs</a>
+                We have made all code available under the very flexible <a href="./documentation/license.html">Apache 2</a> License so you have every opportunity to offer
+                your skills to the project.</div>
+                </td>
+                <td width="450" valign="top" align="right" rowspan="2">
+<a class="twitter-timeline" href="https://twitter.com/datanucleus" data-widget-id="490842249010225152">Tweets by @datanucleus</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </td>
+                </div>
+                <td width="5%" rowspan="2"/>
+            </tr>
+            <tr>
+                <td>
+                <div class="frontpage_textmedium" style="text-align: left;">Keep up to date</div>
+                <div class="frontpage_textsmall" style="text-align: left;">Follow the <a href="http://datanucleus.wordpress.com">DataNucleus blog</a> or Twitter (@datanucleus).
+                You can receive updates when features are added, or bugs are fixed that could impact on your application(s).</div>
                 </td>
             </tr>
         </table>
-        </center>
-        <br />
+    </div>
 
-    </div>
-    <div class="clear">
-        <hr/>
-    </div>
     <div id="footer">
         &#169; 2008-2015 <a href="http://www.datanucleus.org/documentation/license.html">DataNucleus</a>. All Rights Reserved.
     </div>
