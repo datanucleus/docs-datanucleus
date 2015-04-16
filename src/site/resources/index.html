@@ -102,6 +102,7 @@ function loadPage(list)
         <table width="100%" cellspacing="10" cellpadding="5">
             <tr>
                 <td width="5%"/>
+                <td width="128"><img src="./images/site/api.png" border="0"/></td>
                 <td width="30%" valign="top">
                     <div class="frontpage_textmedium" style="color: #97d5ca;">
                     Java Data Objects (JDO)
@@ -150,78 +151,51 @@ function loadPage(list)
         <table width="100%" cellspacing="10" cellpadding="5">
             <tr>
                 <td width="5%"/>
-                <td width="22.5%" valign="top" rowspan="2">
-                    <div class="frontpage_textmedium" style="color: #2385c6;">
-                    RDBMS
-                    </div>
-                    <br/>
-                    <div class="frontpage_textsmall">
-                    Relational databases like PostgreSQL, MySQL, Oracle, SQLServer, DB2, H2 etc have
-                    been the workhorses since the 1980s and won't be going away anytime soon. They store their data relationally, consisting of
-                    tables and columns. Data can be indexed for faster access, and foreign keys can be assigned to provide relational integrity of data.
-                    Data is queried using Structured Query Language (SQL).
-                    </div>
-                </td>
-                <td width="22.5%" valign="top">
-                    <div class="frontpage_textmedium" style="color: #2385c6;">
-                    Map-based
-                    </div>
-                    <br/>
-                    <div class="frontpage_textsmall">
-                    HBase and Cassandra store data in a map-type structure. Features are being added to these datastores rapidly.
-                    </div>
-                </td>
-                <td width="22.5%" valign="top">
-                    <div class="frontpage_textmedium" style="color: #2385c6;">
-                    Graph-based
-                    </div>
-                    <br/>
-                    <div class="frontpage_textsmall">
-                    Neo4j stores data in a graph structure, perfect for allowing navigation between objects.
-                    </div>
-                </td>
-                <td width="22.5%" valign="top">
-                    <div class="frontpage_textmedium" style="color: #2385c6;">
-                    Documents
-                    </div>
-                    <br/>
-                    <div class="frontpage_textsmall">
-                    Spreadsheets like Excel and LibreOffice store their data in XLS, OOXML and ODF formats. You can persist your data
-                    in this format too so that it is easily interchangeable with other parts of your organisation.
-                    XML is a standard document format for interchanging data, and can also be used for storage of data.
-                    </div>
-                </td>
-                <td width="5%"/>
-            </tr>
-            <tr>
-                <td width="5%"/>
-                <td width="22.5%" valign="top">
-                    <div class="frontpage_textmedium" style="color: #2385c6;">
-                    Web-based
-                    </div>
-                    <br/>
-                    <div class="frontpage_textsmall">
-                    Amazon S3 and Google Storage allow data to be stored in essentially "JSON" format, ready to pass around the web via REST.
-                    </div>
-                </td>
-                <td width="22.5%" valign="top">
-                    <div class="frontpage_textmedium" style="color: #2385c6;">
-                    Doc-based
-                    </div>
-                    <br/>
-                    <div class="frontpage_textsmall">
-                    MongoDB stores its data in document structures, utilising a JSON-style, so hence web-accessible, yet also very flexible in
-                    terms of querying.
-                    </div>
-                </td>
-                <td width="22.5%" valign="top">
-                    <div class="frontpage_textmedium" style="color: #2385c6;">
-                    Other
-                    </div>
-                    <br/>
-                    <div class="frontpage_textsmall">
-                    LDAP is a vendor-neutral standard for accessing/maintaining distributed directory services information, such as account information.
-                    </div>
+                <td width="128"><img src="./images/site/database.png" border="0"/></td>
+                <td width="100%" valign="top">
+                    <table>
+                        <tr>
+                            <td class="frontpage_textmedium" style="color: #2385c6;text-align: right;vertical-align:top;">RDBMS</td>
+                            <td class="frontpage_textsmall" style="text-align: left;">
+Relational databases like PostgreSQL, MySQL, Oracle, SQLServer, DB2, H2 etc have been the database workhorses since the 1980s and won't be going away anytime soon. 
+Data is stored relationally, consisting of tables and columns, and can be indexed for faster access, with foreign keys assigned to provide relational integrity of data.
+Data is queried using Structured Query Language (SQL).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="frontpage_textmedium" style="color: #2385c6;text-align: right;vertical-align:top;">Map-Based</td>
+                            <td class="frontpage_textsmall" style="text-align: left;">
+                            HBase and Cassandra store data in a map-type structure. Data is queried using their own language.</td>
+                        </tr>
+                        <tr>
+                            <td class="frontpage_textmedium" style="color: #2385c6;text-align: right;vertical-align:top;">Graph-Based</td>
+                            <td class="frontpage_textsmall" style="text-align: left;">
+                            Neo4j stores data in a graph structure, perfect for allowing navigation between objects.</td>
+                        </tr>
+                        <tr>
+                            <td class="frontpage_textmedium" style="color: #2385c6;text-align: right;vertical-align:top;">Documents</td>
+                            <td class="frontpage_textsmall" style="text-align: left;">
+                            Spreadsheets like Excel and LibreOffice store their data in XLS, OOXML and ODF formats. You can persist your data
+                            in this format too so that it is easily interchangeable with other parts of your organisation.
+                            XML is a standard document format for interchanging data, and can also be used for storage of data.</td>
+                        </tr>
+                        <tr>
+                            <td class="frontpage_textmedium" style="color: #2385c6;text-align: right;vertical-align:top;">Web-based</td>
+                            <td class="frontpage_textsmall" style="text-align: left;">
+                            Amazon S3 and Google Storage allow data to be stored in essentially "JSON" format, ready to pass around the web via REST.</td>
+                        </tr>
+                        <tr>
+                            <td class="frontpage_textmedium" style="color: #2385c6;text-align: right;vertical-align:top;">Doc-based</td>
+                            <td class="frontpage_textsmall" style="text-align: left;">
+                            MongoDB stores its data in document structures, utilising a JSON-style, so hence web-accessible, yet also very flexible in
+                            terms of querying.</td>
+                        </tr>
+                        <tr>
+                            <td class="frontpage_textmedium" style="color: #2385c6;text-align: right;vertical-align:top;">Others</td>
+                            <td class="frontpage_textsmall" style="text-align: left;">
+                            LDAP is a vendor-neutral standard for accessing/maintaining distributed directory services information, such as account information.</td>
+                        </tr>
+                    </table>
                 </td>
                 <td width="5%"/>
             </tr>
