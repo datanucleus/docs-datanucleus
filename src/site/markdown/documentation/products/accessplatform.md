@@ -53,7 +53,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <tr class="d">
   <td>4.1 (Chadwick)</td>
   <td>Developed</td>
-  <td>JDO3.1, JPA2.1, REST</td>
+  <td>JDO3.1+, JPA2.1, REST</td>
   <td>1.7+</td>
   <td></td>
   <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
@@ -74,9 +74,9 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.pdf/download">PDF</a>
   </td>
 </tr>
-<tr class="d">
+<tr>
   <td>3.3 (Galileo)</td>
-  <td>Frozen</td>
+  <td>Retired</td>
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.6+</td>
   <td>Jun/2013</td>
