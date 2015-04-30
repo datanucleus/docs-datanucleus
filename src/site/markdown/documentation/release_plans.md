@@ -10,14 +10,13 @@ This is current scope for DataNucleus 4.1. If you think other things ought to be
 
 * Rewrite SCO "update" initialisation to cater for cascade delete and optimisation.
 * JPA KEY, VALUE support
+* JDO 3.2/4.0?
 * Extend 'operation queue' to include persist, update, remove operations, and migrate to not use the dirtyOPs/indirectDirtyOPs?
-* JDO 4.0?
 * Make ClassLoaderResolver clearer and allow update of class definitions (put ClassLoader before all other loaders)?
-* Support Java 1.8 "Optional" ?
 
 ### Release Plans
 
-* __4.1M4 May/June 2015?__
+* __4.1M5 June 2015?__
 
 
 
