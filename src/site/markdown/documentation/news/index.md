@@ -7,8 +7,8 @@
 
 <table>
 <tr>
-    <th>Date</th>
-    <th width="270">Article</th>
+    <th width="100">Date</th>
+    <th>Article</th>
     <th width="150">Author</th>
     <th>Publication</th>
 </tr>
