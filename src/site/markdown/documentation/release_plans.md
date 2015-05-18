@@ -16,7 +16,7 @@ This is current scope for DataNucleus 4.1. If you think other things ought to be
 
 ### Release Plans
 
-* __4.1M5 June 2015?__
+* __4.1 RELEASE May/June 2015?__
 
 
 
