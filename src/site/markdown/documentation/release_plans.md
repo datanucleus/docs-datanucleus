@@ -2,21 +2,34 @@
 
 # Section : [Documentation](index.html) 
 
+## DataNucleus AccessPlatform 4.2
+
+This is current scope for DataNucleus 4.2. If you think other things ought to be included then the answer is simple : get involved.
+
+### Feature Scope
+
+* JDO 3.2/4.0?
+* Extend 'operation queue' to not use the dirtyOPs/indirectDirtyOPs?
+
+### Release Plans
+
+* __4.2.0.m1 July 2015?__
+
+
+
 ## DataNucleus AccessPlatform 4.1
 
-This is current scope for DataNucleus 4.1. If you think other things ought to be included then the answer is simple : get involved.
+This is current scope for DataNucleus 4.1.
 
 ### Feature Scope
 
 * Rewrite SCO "update" initialisation to cater for cascade delete and optimisation.
 * JPA KEY, VALUE support
-* JDO 3.2/4.0?
-* Extend 'operation queue' to include persist, update, remove operations, and migrate to not use the dirtyOPs/indirectDirtyOPs?
-* Make ClassLoaderResolver clearer and allow update of class definitions (put ClassLoader before all other loaders)?
+* Extend 'operation queue' to include persist, update, remove operations
 
 ### Release Plans
 
-* __4.1 RELEASE May/June 2015?__
+* __4.1.1 June/July 2015?__
 
 
 
