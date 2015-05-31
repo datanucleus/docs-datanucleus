@@ -51,6 +51,17 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
   <th>Download</th>
 </tr>
 <tr class="d">
+  <td>4.2 (?)</td>
+  <td>Developed</td>
+  <td>JDO3.2, JPA2.1, REST</td>
+  <td>1.7+</td>
+  <td></td>
+  <td></td>
+  <td><a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">HTML</a></td>
+  <td>
+  </td>
+</tr>
+<tr class="d">
   <td>4.1 (Chadwick)</td>
   <td>Developed</td>
   <td>JDO3.1+, JPA2.1, REST</td>
@@ -77,7 +88,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
   </td>
 </tr>
 <tr>
-  <td>3.3 (Galileo)</td>
+  <td><i>3.3 (Galileo)</i></td>
   <td>Retired</td>
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.6+</td>
@@ -90,7 +101,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
   </td>
 </tr>
 <tr>
-  <td>3.2 (Copernicus)</td>
+  <td><i>3.2 (Copernicus)</i></td>
   <td>Retired</td>
   <td>JDO3.1, JPA2.0, REST</td>
   <td>1.6+</td>
@@ -103,7 +114,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
   </td>
 </tr>
 <tr>
-  <td>3.1 (Kepler)</td>
+  <td><i>3.1 (Kepler)</i></td>
   <td>Retired</td>
   <td>JDO3.1, JPA2.0, REST</td>
   <td>1.6+</td>
