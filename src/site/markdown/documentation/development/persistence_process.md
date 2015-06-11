@@ -5,7 +5,7 @@
 ##Key Classes
 The primary classes to know about are
 *ExecutionContext* - maps across to a PM/EM, and handles the transaction (ExecutionContextImpl)  
-*ObjectProvider* - manages access to a persistent object (JDOStateManager)  
+*ObjectProvider* - manages access to a persistent object (StateManagerImpl)  
 *StoreManager* - manages access to the datastore (RDBMSStoreManager, others)  
 *MetaDataManager* - manages the metadata for the class(es), so how it is persisted  
 
