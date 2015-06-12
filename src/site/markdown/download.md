@@ -37,7 +37,7 @@ The principal DataNucleus releases are :-
             <b>DataNucleus Plugin JARs</b></a> : 
             DataNucleus products are made up of a selection of plugins, and each plugin is also an 
             OSGi bundle. You can download plugins individually, if you wish, as they are released.
-            Available from the <a href="http://central.maven.org/maven2/">Maven Central</a> repository.
+            Available from the <a href="http://central.maven.org/maven2/org/datanucleus/">Maven Central</a> repository.
         </td>
     </tr>
     <tr>
@@ -49,7 +49,7 @@ The principal DataNucleus releases are :-
             <b>Maven Plugin</b></a> : 
             Development of a DataNucleus-enabled project using Maven (2+) would benefit from the DataNucleus 
             Maven plugin providing enhancement of classes and the opportunity to create the database schema.
-            Available from the <a href="http://central.maven.org/maven2/">Maven Central</a> repository.
+            Available from the <a href="http://central.maven.org/maven2/org/datanucleus/datanucleus-maven-plugin/">Maven Central</a> repository.
         </td>
     </tr>
     <tr>
