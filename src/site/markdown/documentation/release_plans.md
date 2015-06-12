@@ -57,7 +57,7 @@ All plugins were branched for this release cycle.
 
 ### Release Plans
 
-* __4.0.7 May 2015?__
+* __4.0.7 June 2015?__
 
 
 
