@@ -16,7 +16,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <b>DataNucleus AccessPlatform Checklist</b>
 <ul>
 <li><b>Current version(s)</b> :
-<a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">4.1.0.RELEASE (Chadwick)</a>, 
+<a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">4.1.1 (Chadwick)</a>, 
 <a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">4.0.6 (Einstein)</a>
 </li>
 <li><b>Old version(s)</b> : 
