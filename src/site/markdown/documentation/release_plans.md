@@ -29,7 +29,7 @@ This is current scope for DataNucleus 4.1.
 
 ### Release Plans
 
-* __4.1.1 June/July 2015?__
+* __4.1.2 July/August 2015?__
 
 
 
