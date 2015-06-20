@@ -56,8 +56,8 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
   <td>JDO3.2, JPA2.1, REST</td>
   <td>1.7+</td>
   <td></td>
-  <td></td>
-  <td><a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">HTML</a></td>
+  <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td><a href="http://www.datanucleus.org/products/accessplatform_4_2/index.html">HTML</a></td>
   <td>
   </td>
 </tr>
