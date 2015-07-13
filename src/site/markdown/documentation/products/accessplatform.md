@@ -51,7 +51,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
   <th>Download</th>
 </tr>
 <tr class="d">
-  <td>4.2 (?)</td>
+  <td>4.2 (Planck)</td>
   <td>Developed</td>
   <td>JDO3.2, JPA2.1, REST</td>
   <td>1.7+</td>
