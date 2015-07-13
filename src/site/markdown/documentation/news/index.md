@@ -19,6 +19,12 @@
     <td>DataNucleus</td>
 </tr>
 <tr>
+    <td>14/Jul/2015</td>
+    <td><a href="access_platform_4_1_2.html">AccessPlatform 4.1.2 released</a></td>
+    <td>DataNucleus team</td>
+    <td>DataNucleus</td>
+</tr>
+<tr>
     <td>13/June/2015</td>
     <td><a href="access_platform_4_1_1.html">AccessPlatform 4.1.1 released</a></td>
     <td>DataNucleus team</td>

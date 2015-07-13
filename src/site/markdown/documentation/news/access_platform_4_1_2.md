@@ -1,14 +1,14 @@
-<head><title>AccessPlatform 4.2.0.M1</title></head>
+<head><title>AccessPlatform 4.1.2</title></head>
 
-# DataNucleus AccessPlatform 4.2.0.M1
+# DataNucleus AccessPlatform 4.1.2
 
 <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
-    <script type="text/javascript">var dzone_title = 'DataNucleus AccessPlatform 4.2.0.M1 Released';</script>
-    <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/documentation/news/access_platform_4_2_0_m1.html';</script>
+    <script type="text/javascript">var dzone_title = 'DataNucleus AccessPlatform 4.1.2 Released';</script>
+    <script type="text/javascript">var dzone_url = 'http://www.datanucleus.org/documentation/news/access_platform_4_1_2.html';</script>
     <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
 </div>
 
-__14th January 2015__ - DataNucleus AccessPlatform 4.1.0.M2 ("Planck") is released.
+__14th July 2015__ - DataNucleus AccessPlatform 4.1.2 ("Chadwick") is released.
 DataNucleus Access Platform provides persistence and retrieval of Java objects to/from a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
 This release is available under the [Apache 2 license](http://www.datanucleus.org/documentation/license.html) from our [download page](http://www.datanucleus.org/download.html) 
 This release includes the following changes over the previous release
@@ -18,10 +18,6 @@ This release includes the following changes over the previous release
 
 <ul>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1325'>NUCCORE-1325</a>] -         Support Java generic TypeVariable where declared by class generic type bounds
-</li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-93'>NUCAPIJDO-93</a>] -         Support specification of &quot;default&quot; TypeConverter via PMF properties
-</li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-95'>NUCAPIJDO-95</a>] -         Support JDO 3.2 AttributeConverter specification via annotations/XML/API
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-314'>NUCJPA-314</a>] -         Support specification of datastore identity using XML metadata
 </li>
@@ -40,28 +36,12 @@ This release includes the following changes over the previous release
 </ul>
 
 
-## Improvement
-
-<ul>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-99'>NUCAPIJDO-99</a>] -         JDOQLTypedQuery : change toString to include any subquery in the string
-</li>
-</ul>
-
-
 ## Task
 
 <ul>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1323'>NUCCORE-1323</a>] -         Add generics for element, key, value to all wrappers and backing stores
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1324'>NUCCORE-1324</a>] -         Bump repackaged ASM to v5.0.4 from 5.0.3
-</li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-33'>NUCAPIJDO-33</a>] -         JDO3.2 : use javax.jdo.query interfaces when typesafe adopted by JDO
-</li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-94'>NUCAPIJDO-94</a>] -         Build against groupId=org.datanucleus artifactId=javax.jdo version=3.2.0-m1-SNAPSHOT
-</li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-97'>NUCAPIJDO-97</a>] -         PMF.addFetchGroups, PMF.removeFetchGroups, PMF.registerMetadata, Query.saveAsNamedQuery should check for permission &quot;getMetadata&quot;
-</li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-98'>NUCAPIJDO-98</a>] -         Support XML XSD/DTD specifications of xmlns.jcp.org and use local copy for those
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-315'>NUCJPA-315</a>] -         Rename @DatastoreIdentity to be @DatastoreId for consistency
 </li>
