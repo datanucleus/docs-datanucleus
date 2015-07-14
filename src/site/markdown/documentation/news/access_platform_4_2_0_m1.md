@@ -8,7 +8,7 @@
     <script type="text/javascript" language="javascript" src="http://widgets.dzone.com/widgets/zoneit.js"></script>
 </div>
 
-__14th July 2015__ - DataNucleus AccessPlatform 4.1.0.M2 ("Planck") is released.
+__14th July 2015__ - DataNucleus AccessPlatform 4.2.0.M1 ("Planck") is released.
 DataNucleus Access Platform provides persistence and retrieval of Java objects to/from a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
 This release is available under the [Apache 2 license](http://www.datanucleus.org/documentation/license.html) from our [download page](http://www.datanucleus.org/download.html) 
 This release includes the following changes over the previous release
