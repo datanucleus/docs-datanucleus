@@ -2,6 +2,19 @@
 
 # Section : [Documentation](index.html) 
 
+## DataNucleus AccessPlatform 5.0
+
+This is current scope for DataNucleus 5.0. If you think other things ought to be included then the answer is simple : get involved.
+
+### Feature Scope
+
+* More flexibility to handle non-JDK collections.
+* Support for JDK 1.8 Optional
+* Support for specific Scala features
+
+
+
+
 ## DataNucleus AccessPlatform 4.2
 
 This is current scope for DataNucleus 4.2. If you think other things ought to be included then the answer is simple : get involved.
@@ -13,7 +26,7 @@ This is current scope for DataNucleus 4.2. If you think other things ought to be
 
 ### Release Plans
 
-* __4.2.0.m1 July 2015?__
+* __4.2.0.m2 August 2015?__
 
 
 
@@ -29,7 +42,7 @@ This is current scope for DataNucleus 4.1.
 
 ### Release Plans
 
-* __4.1.2 July/August 2015?__
+* __4.1.3 August/September 2015?__
 
 
 
@@ -57,7 +70,7 @@ All plugins were branched for this release cycle.
 
 ### Release Plans
 
-* __4.0.7 June 2015?__
+* _No further releases planned; commercial  enquiries required._
 
 
 
