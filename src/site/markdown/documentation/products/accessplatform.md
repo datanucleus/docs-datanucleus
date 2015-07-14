@@ -17,7 +17,7 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
 <ul>
 <li><b>Current version(s)</b> :
 <a href="http://www.datanucleus.org/products/accessplatform_4_2/index.html">4.2.0.M1 (Planck)</a>, 
-<a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">4.1.1 (Chadwick)</a>, 
+<a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">4.1.2 (Chadwick)</a>, 
 <a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">4.0.6 (Einstein)</a>
 </li>
 <li><b>Old version(s)</b> : 
