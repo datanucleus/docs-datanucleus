@@ -76,8 +76,8 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
   </td>
 </tr>
 <tr class="d">
-  <td>4.0 (Einstein)</td>
-  <td>Developed</td>
+  <td><i>4.0 (Einstein)</i></td>
+  <td>Retired</td>
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.7+</td>
   <td>Jun/2014</td>
