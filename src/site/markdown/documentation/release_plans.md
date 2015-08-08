@@ -21,12 +21,12 @@ This is current scope for DataNucleus 4.2. If you think other things ought to be
 
 ### Feature Scope
 
-* JDO 3.2/4.0?
-* Extend 'operation queue' to not use the dirtyOPs/indirectDirtyOPs?
+* JDO 3.2
+* _Extend 'operation queue' to not use the dirtyOPs/indirectDirtyOPs?_
 
 ### Release Plans
 
-* __4.2.0.m2 August 2015?__
+* __4.2.0.m2 August/September 2015?__
 
 
 

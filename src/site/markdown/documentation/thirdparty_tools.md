@@ -18,8 +18,6 @@ DataNucleus project.
 	+ [JDOCurrent](http://www.objectmagic.org/jdo/jdocurrent.html)
 	+ [Eclipse Dali - JPA IDE](http://www.eclipse.org/webtools/dali/)
 	+ [EMSoft Data JDO](http://java.net/projects/emsoft-data-jdo)
-* Closed Source, but free
-	+ [Kumquat DAO](http://www.razoa.com/kumquat.html)
 * Commercial
 	+ [Vestigo Query Browser](http://vestigo.nightlabs.com) - browse your JDO queries graphically
 	+ [Javelin](http://stepaheadsoftware.com/products/javelin/javelin.htm)
