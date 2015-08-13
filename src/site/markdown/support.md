@@ -84,7 +84,10 @@ Purchase of larger number of hours also available.
 
 __DataNucleus__ can provide a level of support to meet your requirements, and rather than having
 fixed off-the-shelf arrangements we prefer to tailor them to your needs. Below we outline some
-typical options that could suit your needs. 
+typical options that could suit your needs. We cannot guarantee the availability of incident support for all problems
+because some problems are simply too complicated to resolve easily; the majority of problems quickly point to where
+the problem is, and what can be done about them, whereas things like some large query syntax is simply not resolvable
+into a single SQL query so we may not be able to provide what you need in that case.
 [Contact Us](mailto:support@datanucleus.com) for details.
 
 * _General Support_ for the most common issues on API usage, defect reporting and bug fixing. It's available for free and on 
