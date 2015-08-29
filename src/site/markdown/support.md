@@ -29,51 +29,22 @@ there but you may find people who have experience of your situation to help you.
 DataNucleus is open source software, also providing good documentation and (public) test cases. As a result
 your team could, in principle, train themselves up on the software using the documentation and tests as basis,
 then when they come across problems look through the code and debug problems and/or develop new features. 
-Often though you don't have the time to devote to such activities so would prefer to out source this aspect of 
-your project. We provide for such situations and, since we wrote the software in the first place, nobody is better
-equipped to explain how to use things and/or resolve your problems and get your project moving forward.
-Note that we are the only company offering support for DataNucleus software, and we are the only company with
-committers on this project, and our services are provided at very reasonable prices. 
+Often though you don't have the time to devote to such activities so would prefer to out source this aspect of your project.
+The developers of DataNucleus are flexible to finding a support solution that meets your needs.
 __You cannot get better value and a higher level of DataNucleus experience than from us.__
 Our various commercial services are defined below complete with pricing (_note that all prices are in UK pounds (GBP) symbolised by the £ symbol_)
 
-* __[On-Site Consulting](#onsite_consulting)__ : DataNucleus consultant(s) come to your site and explain first hand how to resolve the problems you 
-are encountering and/or what is the best practice.
 * __[Time-Based Consulting](#timebased_consulting)__ : DataNucleus consultant(s) are available online at a mutually convenient time to provide answers 
 to your questions via Skype/IRC/IM/phone/etc. Simply pay by the hour as and when needed.
 * __[Support](#support)__ : DataNucleus consultant(s) are available to respond to problems that come up with your deployments, providing workarounds 
 to your problems, or providing rapid fixes. Optionally also allowing for feature additions to meet your requirements.
-* __[Training](#training)__ : DataNucleus consultant(s) can visit your site and provide a training appointment to suit your needs. _Subject to availability_.
-
-<a name="onsite_consulting"/>
-### On-Site Consulting
-
-We deliver on-site engagements to help organisations in achieving 
-high availability and reliability requirements. This also enables a kick-start for projects thus 
-reducing the learning curve for customer staff, and minimizing the risk of project failures. 
-Additionally, engagements can be conducted to deliver proof of concepts with very short schedules.
-
-DataNucleus experts apply their experience and best practices while working with 
-customer staff to assess the environment, architecture, design and operational 
-procedures. As an outcome of the engagement, the DataNucleus experts can deliver a 
-detailed report over the findings, including gaps in architecture, design, 
-recommendations to address potential problems. During the engagement the customer 
-staff will likely become more skilled in the data access architectures in general, and 
-in the DataNucleus product in particular.
-
-<b>Cost</b> : For a European client £900 for a single day, £1750 for 2 days. Reductions for subsequent days. 
-For clients in the rest of the world please <a href="mailto:consulting@datanucleus.com">Contact Us</a> for details. 
-Customers are expected to pay for travel/accommodation expenses in order to fulfil such commitments on their site.
-On-site consulting is not currently available in the USA.
 
 <a name="timebased_consulting"/>
 ### Time-based Consulting
 
-__DataNucleus__ also provides remote consulting using Email/IRC/IM/Skype to provide
-you with the response when you need it to tackle the issues impacting on your project.
-This type of support is where questions come up during your deployment of DataNucleus
-and you need to ask questions for particular situations. You can pay by the hour as and when
-you need it, when a consultant is available.
+__DataNucleus__ developers can provide remote consulting using Email/IRC/IM/Skype to provide you with the response when you need it to tackle the 
+issues impacting on your project. This type of support is where questions come up during your deployment of DataNucleus and you need to ask 
+questions for particular situations. You can pay by the hour as and when you need it, when a developer is available.
 
 __Cost__ : 5 hours = £250, 10 hours = £440, 20 hours = £800.
 Purchase of larger number of hours also available.
@@ -82,12 +53,11 @@ Purchase of larger number of hours also available.
 <a name="support"/>
 ### Support
 
-__DataNucleus__ can provide a level of support to meet your requirements, and rather than having
-fixed off-the-shelf arrangements we prefer to tailor them to your needs. Below we outline some
-typical options that could suit your needs. We cannot guarantee the availability of incident support for all problems
-because some problems are simply too complicated to resolve easily; the majority of problems quickly point to where
-the problem is, and what can be done about them, whereas things like some large query syntax is simply not resolvable
-into a single SQL query so we may not be able to provide what you need in that case.
+__DataNucleus__ developers can provide a level of longer term support to meet your requirements, and rather than having fixed off-the-shelf 
+arrangements we prefer to tailor them to your needs. Below we outline some typical options that could suit your needs. 
+We cannot guarantee the availability of incident support for all problems because some problems are simply too complicated to resolve easily; 
+the majority of problems quickly point to where the problem is, and what can be done about them, whereas things like some large query syntax is 
+simply not resolvable into a single SQL query so we may not be able to provide what you need in that case.
 [Contact Us](mailto:support@datanucleus.com) for details.
 
 * _General Support_ for the most common issues on API usage, defect reporting and bug fixing. It's available for free and on 
@@ -212,35 +182,10 @@ it is needed, then consider the options below
 __Note that all amounts are specified in GBP (symbolised by the £ symbol)__
 
 
-<a name="training"/>
-### DataNucleus Training
-
-__DataNucleus__ can provide on-site training focussing on the needs of customers staff.
-The backbone of DataNucleus training consists of:
-
-* Architectural Persistence Concepts
-* Persistence API choice
-* Object-Relational Mapping
-* Best practices, scalability, performance tuning and capacity planning
-* Administering and monitoring DataNucleus-based applications
-* Testing, debugging and troubleshooting
-* Process Lifecycle : project planning, design and implementation
-
-
-__Cost__ : Please [Contact Us](mailto:support@datanucleus.com) for details.
-
-__Conditions__
-
-* There is no guarantee of service availability. Training would only be available in a location convenient for ourselves, such as Europe.
-Training is not currently available in the USA.
-* DataNucleus experts are English, and Spanish speakers, however training material is only written in the English language.
-* Customers must provide the resources necessary and in a timely manner to enable the DataNucleus expert(s) to perform the engagement.
-
-
 <a name="customers"/>
 ### Customers
 
-We have many clients to whom we have provided services. Below are a small subset.
+There are many clients to whom DataNucleus developers have provided services. Below are a small subset.
 
 <table>
     <tr>
