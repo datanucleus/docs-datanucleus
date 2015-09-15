@@ -11,6 +11,7 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 * More flexibility to handle non-JDK collections.
 * Support for JDK 1.8 Optional
 * Support for specific Scala features
+* _Extend 'operation queue' to not use the dirtyOPs/indirectDirtyOPs?_
 
 
 
@@ -22,11 +23,10 @@ This is current scope for DataNucleus 4.2. If you think other things ought to be
 ### Feature Scope
 
 * JDO 3.2
-* _Extend 'operation queue' to not use the dirtyOPs/indirectDirtyOPs?_
 
 ### Release Plans
 
-* __4.2.0.m3 September 2015?__
+* __4.2.0.release October 2015?__
 
 
 
@@ -42,7 +42,7 @@ This is current scope for DataNucleus 4.1.
 
 ### Release Plans
 
-* __4.1.4 September/October 2015?__
+* __4.1.5 October/November 2015?__
 
 
 
