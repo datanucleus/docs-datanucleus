@@ -26,8 +26,9 @@ You could volunteer to work on a particular part of DataNucleus (e.g RDBMS) or a
 * __[Donate to the project](../donations.html)__. This will help to fund the time of one of the main developers and will mean that DataNucleus functionality 
 will be expanded faster due to your help.
 * __Contribute documentation or worked examples__ that can be included in the online documentation. If you think there is something missing from our documents 
-then you can write it and contribute it and others will benefit from your work just like you have benefited from our DataNucleus product. You can contribute 
-these via either the [Forum](http://forum.datanucleus.org) or by raising an issue in [JIRA](http://issues.datanucleus.org).
+then you can write it and contribute it and others will benefit from your work just like you have benefited from our DataNucleus product. The easiest way to
+contribute is to FORK the appropriate GitHub project and then raise a GitHub PULL REQUEST and we will process it asap. You can also contribute via either the 
+[Forum](http://forum.datanucleus.org) or by raising an issue in [JIRA](http://issues.datanucleus.org).
 
 Obviously, __if you contribute to the system in some way then we are more likely to answer your forum questions, or listen to your ideas, so it's in your 
 interests to participate__. We hope that the above has given you some idea how your time can be used to benefit the common goal of having a quality 
