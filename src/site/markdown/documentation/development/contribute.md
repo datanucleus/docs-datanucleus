@@ -16,8 +16,8 @@ __You can help the project in many ways__. Here are some examples
 You could monitor the forum when you have free time and attempt to answer people's questions. People will appreciate it even if you don't know all of the answers.
 * __Debug problems in the code__ before reporting them on the Forum. You can isolate the issue to a particular area of code even if you don't know the solution, 
 and post your findings on the Forum for one of the developers to pick up and progress further. __Better still, contribute updates__ so it saves our time in working 
-out where the problem lies. These will be much more valuable to us. Since we use Git for source code repository the best way is to fork/clone a particular 
-plugin project and submit a pull request with your changes. Please see the [DataNucleus coding standards](coding_standards.html).
+out where the problem lies. These will be much more valuable to us. Since we use Git for source code repository the best way is to FORK/CLONE a particular 
+GitHub project and submit a GitHub PULL REQUEST with your changes. Please see the [DataNucleus coding standards](coding_standards.html).
 * __Volunteer to be a developer__ of DataNucleus. To do this you need to start off by contributing patches for issues, and demonstrate your commitment to the project.
 Once you've done this for a while then we'll invite you to join the project. You then go to the "Recruitment" section of our Forum and post the developer agreement
 (stored in one of the threads in that Forum). Thereafter you can push DataNucleus further yourself when you have time. Be aware though that once you have been given
@@ -27,7 +27,7 @@ You could volunteer to work on a particular part of DataNucleus (e.g RDBMS) or a
 will be expanded faster due to your help.
 * __Contribute documentation or worked examples__ that can be included in the online documentation. If you think there is something missing from our documents 
 then you can write it and contribute it and others will benefit from your work just like you have benefited from our DataNucleus product. The easiest way to
-contribute is to FORK the appropriate GitHub project and then raise a GitHub PULL REQUEST and we will process it asap. You can also contribute via either the 
+contribute is to FORK/CLONE the appropriate GitHub project and then raise a GitHub PULL REQUEST and we will process it asap. You can also contribute via either the 
 [Forum](http://forum.datanucleus.org) or by raising an issue in [JIRA](http://issues.datanucleus.org).
 
 Obviously, __if you contribute to the system in some way then we are more likely to answer your forum questions, or listen to your ideas, so it's in your 
