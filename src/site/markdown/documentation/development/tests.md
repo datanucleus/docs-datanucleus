@@ -388,6 +388,11 @@ Since the JPA "group" have still not published an official JPA 2.0 / 2.1 API jar
 in the best interests of you the user. The basic minimum should be publish the official JPA API jars, and get a public open source TCK. 
 Once those are in place then we can talk
 
+As a measure of how well DataNucleus is compliant with the JPA TCK, in addition to our own tests, it is also tested as part of the tests written for
+the [Blaze Persistence Framework](https://travis-ci.org/Blazebit/blaze-persistence) and passes their tests as well as the likes of Hibernate, and better
+than EclipseLink, and bear in mind that their tests incorporate no just standard JPA behaviour but also items that have been requested for inclusion
+in later releases of JPA.
+
 
 
 ## Databases Notes
