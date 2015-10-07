@@ -60,6 +60,8 @@ We provide a FactSheet for DataNucleus AccessPlatform in [PDF](datanucleus_acces
   <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td><a href="http://www.datanucleus.org/products/accessplatform_4_2/index.html">HTML</a></td>
   <td>
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.zip/download">HTML</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.pdf/download">PDF</a>
   </td>
 </tr>
 <tr class="d">
