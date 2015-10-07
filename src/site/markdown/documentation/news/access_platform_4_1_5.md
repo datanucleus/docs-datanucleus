@@ -11,6 +11,7 @@
 __8th Octember 2015__ - DataNucleus AccessPlatform 4.1.5 ("Chadwick") is released.
 DataNucleus Access Platform provides persistence and retrieval of Java objects to/from a wide range of datastores including RDBMS, Neo4j, MongoDB, LDAP, XML, and Excel.
 This release is available under the [Apache 2 license](http://www.datanucleus.org/documentation/license.html) from our [download page](http://www.datanucleus.org/download.html) 
+
 This release includes the following changes over the previous release
 
 
