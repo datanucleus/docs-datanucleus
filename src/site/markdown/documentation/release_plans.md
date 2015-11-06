@@ -13,6 +13,10 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 * Support for specific Scala features
 * _Extend 'operation queue' to not use the dirtyOPs/indirectDirtyOPs?_
 
+### Release Plans
+
+* __5.0.0.M1 January 2015?__
+
 
 
 
@@ -26,7 +30,7 @@ This is current scope for DataNucleus 4.2. If you think other things ought to be
 
 ### Release Plans
 
-* __4.2.1 November 2015?__
+* __4.2.2 December 2015?__
 
 
 
@@ -42,7 +46,7 @@ This is current scope for DataNucleus 4.1.
 
 ### Release Plans
 
-* __4.1.6 November 2015?__
+* __4.1.7 December 2015?__
 
 
 
