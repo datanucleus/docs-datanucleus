@@ -11,11 +11,12 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 * More flexibility to handle non-JDK collections.
 * Support for JDK 1.8 Optional
 * Support for specific Scala features
+* Support HBase 1.x
 * _Extend 'operation queue' to not use the dirtyOPs/indirectDirtyOPs?_
 
 ### Release Plans
 
-* __5.0.0.M1 January 2015?__
+* __5.0.0.M1 January 2016?__
 
 
 
