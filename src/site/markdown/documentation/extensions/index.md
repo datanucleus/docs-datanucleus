@@ -28,43 +28,8 @@ need to specify the __priority__ attribute, setting it to an integer (the defaul
 __If you write a DataNucleus plugin and you either want it to be included in the DataNucleus distribution, or want it to be listed here then 
 please contact us via the [Forum](http://forum.datanucleus.org)__
 
-The current plugin points are :-
-
-* [Java Types](java_types.html)
-* [Type Converters](type_converter.html)
-* [Persistence Properties](persistence_properties.html)
-* [Store Manager](store_manager.html)
-* [Connection Factory](connection_factory.html)
-* [Identifier NamingFactory](identifier_namingfactory.html)
-* [AutoStart Mechanisms](autostart_mechanism.html)
-* [ClassLoader Resolvers](classloader_resolver.html)
-* [Datastore Identity](datastoreidentity.html)
-* [Identity String Translator](identity_string_translator.html)
-* [Identity Key Translator](identity_key_translator.html)
-* [Annotations](annotations.html)
-* [Class Annotation Handler](class_annotation_handler.html)
-* [Member Annotation Handler](member_annotation_handler.html)
-* [XML MetaData Handler](metadata_handler.html)
-* [XML MetaData Entity Resolver](metadata_entityresolver.html)
-* [Value Generator](value_generator.html)
-* [Level 1 Cache](level1_cache.html)
-* [Level 2 Cache](level2_cache.html)
-* [Query Cache](query_cache.html)
-* [Query Language](store_query_query.html)
-* [Query Methods](query_method_evaluators.html)
-* [JMX Management](management_server.html)
-* [JTA Locator](jta_locator.html)
-* RDBMS PluginPoints
-	+ [Java Type Mapping](rdbms_java_types.html)
-	+ [Datastore Mapping](rdbms_datastore_types.html)
-	+ [Datastore Adapter](rdbms_datastore_adapter.html)
-	+ [Connection Pool](rdbms_connection_pool.html)
-	+ [Connection Provider](rdbms_connection_provider.html)
-	+ [Identifier Factory](rdbms_identifier_factory.html)
-	+ [SQL Methods](rdbms_sql_methods.html)
-	+ [SQL Expressions](rdbms_sql_expressions.html)
-	+ [SQL Operations](rdbms_sql_operations.html)
-	+ [SQL Table Namer](rdbms_sql_table_namer.html)
+Plugin Points are defined for each DataNucleus release, so some may be available in one version and not in another. Consult the documentation
+of the DataNucleus version that you are using.
 
 
 ### Plugins in a Non-managed environment
