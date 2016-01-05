@@ -19,7 +19,7 @@ Note that all plugin repositories are [Maven projects](http://maven.apache.org) 
 with Maven to build these plugins.
 
 DataNucleus can be easily developed using Maven, Eclipse (plus m2e plugin),  or other IDEs (let us know if you write docs for how to develop DataNucleus with a different IDE).
-You require __JDK1.8+__ (JDK1.7 would be adequate for DN 3.x), a __Git client__ (to download/commit DataNucleus Git-based projects) and __an editor__.
+You require __JDK1.8+__, a __Git client__ (to download/commit DataNucleus Git-based projects) and __an editor__.
 
 [__Note that (previous) source code for all versions up to and including 3.3.5 is stored in [SourceForge](sourcecode_sf.html)__]
 

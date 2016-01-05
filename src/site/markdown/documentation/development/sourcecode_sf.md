@@ -30,6 +30,11 @@ At the top level you will find
 	documentation/  <- Docs
 	samples/        <- Samples, tutorials etc
 
+
+DataNucleus 3.x can be easily developed using Maven, Eclipse (plus m2e plugin),  or other IDEs (let us know if you write docs for how to develop DataNucleus with a different IDE).
+You require __JDK1.7+, an __SVN client__ (to download/commit DataNucleus SVN-based projects) and __an editor__.
+
+
 ### Legacy Subversion : Platform
 
 The "platform" directory contains all source code for the plugins comprising the different DataNucleus products. They are laid

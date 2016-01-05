@@ -17,7 +17,6 @@
 
 
 * [Development](development/index.html)
-	+ [Contribute](development/contribute.html) - contribute to the development process
 	+ [Source Code](development/sourcecode.html) - get your hands on the code and develop it
 	+ [Testing](development/tests.html) - test processes for developing DataNucleus codebase
 	+ [Jenkins](http://jenkins.datanucleus.org) - Continuous Integration using Jenkins
