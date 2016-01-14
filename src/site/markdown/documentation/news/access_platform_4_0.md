@@ -22,6 +22,7 @@ _Version 4.0_ includes the following over 3.2/3.3
 <li>Excel/ODF/JSON/MongoDB/Neo4j/HBase/Cassandra : move to using "core" definition of table/columns meaning access to generalised features tested on other datastores</li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 4.0.6
 
@@ -37,7 +38,6 @@ __Mar 1st 2015__ : _Version 4.0.6_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-854'>NUCRDBMS-854</a>] -         Support NUCCORE-1274
 </li>
 </ul>
-
 
 ## Bug
 
@@ -56,6 +56,7 @@ __Mar 1st 2015__ : _Version 4.0.6_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.0.5
@@ -71,14 +72,12 @@ __Feb 2nd 2015__ : _Version 4.0.5_ includes the following changes
 </li>
 </ul>
 
-
 ## Task
 
 <ul>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-851'>NUCRDBMS-851</a>] -         Add check on CASE &quot;action&quot; expression types for consistency
 </li>
 </ul>
-
 
 ## Bug
 
@@ -95,6 +94,7 @@ __Feb 2nd 2015__ : _Version 4.0.5_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.0.4
@@ -108,7 +108,6 @@ __Nov 15th 2014__ : _Version 4.0.4_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
@@ -120,7 +119,6 @@ __Nov 15th 2014__ : _Version 4.0.4_ includes the following changes
 </li>
 </ul>
 
-
 ## Task
 
 <ul>
@@ -131,7 +129,6 @@ __Nov 15th 2014__ : _Version 4.0.4_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1261'>NUCCORE-1261</a>] -         Backing store wrappers don't need to hold &quot;queued&quot; property
 </li>
 </ul>
-
 
 ## Bug
 
@@ -146,6 +143,7 @@ __Nov 15th 2014__ : _Version 4.0.4_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.0.3
@@ -163,7 +161,6 @@ __Oct 2nd 2014__ : _Version 4.0.3_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
@@ -172,7 +169,6 @@ __Oct 2nd 2014__ : _Version 4.0.3_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-730'>NUCRDBMS-730</a>] -         Persist of M-N relation can be inefficient; currently always does SELECT to see if present then INSERT.
 </li>
 </ul>
-
 
 ## Task
 
@@ -203,7 +199,6 @@ __Oct 2nd 2014__ : _Version 4.0.3_ includes the following changes
 </li>
 </ul>
 
-
 ## Bug
 
 <ul>
@@ -225,6 +220,7 @@ __Oct 2nd 2014__ : _Version 4.0.3_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.0.2
@@ -238,7 +234,6 @@ __Aug 29th 2014__ : _Version 4.0.2_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
@@ -249,7 +244,6 @@ __Aug 29th 2014__ : _Version 4.0.2_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-826'>NUCRDBMS-826</a>] -         Move org.datanucleus.store.rdbms.datasource.DriverManagerDataSource to inner class of DefaultConnectionPoolFactory
 </li>
 </ul>
-
 
 ## Task
 
@@ -267,7 +261,6 @@ __Aug 29th 2014__ : _Version 4.0.2_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCNEOFORJ-52'>NUCNEOFORJ-52</a>] -         Upgrade to Neo4j 2.1
 </li>
 </ul>
-
 
 ## Bug
 
@@ -308,6 +301,7 @@ __Aug 29th 2014__ : _Version 4.0.2_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.0.1
@@ -343,14 +337,12 @@ __Jul 19th 2014__ : _Version 4.0.1_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1237'>NUCCORE-1237</a>] -         CompleteClassTable should check for columns with same name in the table and throw an exception
 </li>
 </ul>
-
 
 ## Task
 
@@ -366,7 +358,6 @@ __Jul 19th 2014__ : _Version 4.0.1_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-806'>NUCRDBMS-806</a>] -         Mappings for Oracle should be merged into org.datanucleus.store.rdbms.mapping.[java|datastore]
 </li>
 </ul>
-
 
 ## Bug
 
@@ -397,6 +388,7 @@ __Jul 19th 2014__ : _Version 4.0.1_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.0.0.RELEASE
@@ -414,7 +406,6 @@ __Jun 13th 2014__ : _Version 4.0 RELEASE_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
@@ -429,7 +420,6 @@ __Jun 13th 2014__ : _Version 4.0 RELEASE_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCSPATIAL-50'>NUCSPATIAL-50</a>] -         JDK 1.8 related javadoc enhancements needed
 </li>
 </ul>
-
 
 ## Task
 
@@ -470,7 +460,6 @@ __Jun 13th 2014__ : _Version 4.0 RELEASE_ includes the following changes
 </li>
 </ul>
 
-
 ## Bug
 
 <ul>
@@ -480,6 +469,7 @@ __Jun 13th 2014__ : _Version 4.0 RELEASE_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.0.0.M4
@@ -498,7 +488,6 @@ __May 29th 2014__ : _Version 4.0 Milestone 4_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJAVAEIGHT-12'>NUCJAVAEIGHT-12</a>] -         Support for OffsetTime, OffsetDateTime
 </li>
 </ul>
-
 
 ## Improvement
 
@@ -526,7 +515,6 @@ __May 29th 2014__ : _Version 4.0 Milestone 4_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-75'>NUCAPIJDO-75</a>] -         Decrease lock contention during PersistenceManager.close()
 </li>
 </ul>
-
 
 ## Task
 
@@ -577,7 +565,6 @@ __May 29th 2014__ : _Version 4.0 Milestone 4_ includes the following changes
 </li>
 </ul>
 
-
 ## Bug
 
 <ul>
@@ -595,6 +582,7 @@ __May 29th 2014__ : _Version 4.0 Milestone 4_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.0.0.M3
@@ -621,7 +609,6 @@ __Apr 27th 2014__ : _Version 4.0 Milestone 3_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJAVAEIGHT-10'>NUCJAVAEIGHT-10</a>] -         Support getHour, getMinute, getSecond, getYear, getMonthValue, getDayOfMonth method invocation on LocalXXX classes with RDBMS
 </li>
 </ul>
-
 
 ## Improvement
 
@@ -653,7 +640,6 @@ __Apr 27th 2014__ : _Version 4.0 Milestone 3_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCGUAVA-8'>NUCGUAVA-8</a>] -         Refactor so that root package is org.datanucleus.store.types.guava
 </li>
 </ul>
-
 
 ## Task
 
@@ -730,7 +716,6 @@ __Apr 27th 2014__ : _Version 4.0 Milestone 3_ includes the following changes
 </li>
 </ul>
 
-
 ## Bug
 
 <ul>
@@ -750,6 +735,7 @@ __Apr 27th 2014__ : _Version 4.0 Milestone 3_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.0.0.M2
@@ -791,7 +777,6 @@ __Apr 1st 2014__ : _Version 4.0 Milestone 2_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
@@ -832,7 +817,6 @@ __Apr 1st 2014__ : _Version 4.0 Milestone 2_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJODATIME-18'>NUCJODATIME-18</a>] -         Add TypeConverters for DateTime -&gt; Timestamp, LocalTime -&gt; Time, LocalDate -&gt; Date and maybe also Timestamp
 </li>
 </ul>
-
 
 ## Task
 
@@ -919,7 +903,6 @@ __Apr 1st 2014__ : _Version 4.0 Milestone 2_ includes the following changes
 </li>
 </ul>
 
-
 ## Bug
 
 <ul>
@@ -945,6 +928,7 @@ __Apr 1st 2014__ : _Version 4.0 Milestone 2_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -1001,7 +985,6 @@ __Mar 1st 2014__ : _Version 4.0 Milestone 1_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
@@ -1042,7 +1025,6 @@ __Mar 1st 2014__ : _Version 4.0 Milestone 1_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-767'>NUCRDBMS-767</a>] -         OSGi manifest should also include new HSQLDB (v2.0+) driver import
 </li>
 </ul>
-
 
 ## Task
 
@@ -1160,7 +1142,6 @@ __Mar 1st 2014__ : _Version 4.0 Milestone 1_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCACHE-38'>NUCCACHE-38</a>] -         Support NUCCORE-1112
 </li>
 </ul>
-
 
 ## Bug
 

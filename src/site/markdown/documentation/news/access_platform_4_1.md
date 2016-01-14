@@ -30,6 +30,7 @@ _Version 4.1_ includes the following over 4.0
 <li>Persistent Properties : you can now use inheritance in persistent properties, overriding getters etc</li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 4.1.8
 
@@ -57,6 +58,7 @@ __Jan 13th 2016__ : _Version 4.1.8_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.1.7
@@ -109,6 +111,7 @@ __Nov 27th 2015__ : _Version 4.1.7_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.1.6
@@ -155,6 +158,7 @@ __Nov 16th 2015__ : _Version 4.1.6_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -236,6 +240,7 @@ __Oct 18th 2015__ : _Version 4.1.5_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.1.4
@@ -282,6 +287,7 @@ __Sept 15th 2015__ : _Version 4.1.4_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 4.1.3
 
@@ -365,6 +371,7 @@ __Aug 16th 2015__ : _Version 4.1.3_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.1.2
@@ -411,6 +418,7 @@ __Jul 14th 2015__ : _Version 4.1.2_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 ## Bug
 
@@ -435,6 +443,7 @@ __Jul 14th 2015__ : _Version 4.1.2_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -483,6 +492,7 @@ __Jun 13th 2015__ : _Version 4.1.1_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -503,7 +513,6 @@ __May 19th 2015__ : _Version 4.1 RELEASE_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
@@ -518,7 +527,6 @@ __May 19th 2015__ : _Version 4.1 RELEASE_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-895'>NUCRDBMS-895</a>] -         Support JPQL &quot;COALESCE&quot;/&quot;NULLIF&quot; with non-numeric arguments
 </li>
 </ul>
-
 
 ## Task
 
@@ -535,7 +543,6 @@ __May 19th 2015__ : _Version 4.1 RELEASE_ includes the following changes
 </li>
 </ul>
 
-
 ## Bug
 
 <ul>
@@ -547,6 +554,7 @@ __May 19th 2015__ : _Version 4.1 RELEASE_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -575,7 +583,6 @@ __May 1st 2015__ : _Version 4.1 Milestone 4_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
@@ -592,7 +599,6 @@ __May 1st 2015__ : _Version 4.1 Milestone 4_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCSPATIAL-54'>NUCSPATIAL-54</a>] -         Support NUCRDBMS-884
 </li>
 </ul>
-
 
 ## Task
 
@@ -618,7 +624,6 @@ __May 1st 2015__ : _Version 4.1 Milestone 4_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-883'>NUCRDBMS-883</a>] -         JPQL should allow ORDER BY using result alias
 </li>
 </ul>
-
 
 ## Bug
 
@@ -649,6 +654,7 @@ __May 1st 2015__ : _Version 4.1 Milestone 4_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.1.0.M3
@@ -680,7 +686,6 @@ __Apr 4th 2015__ : _Version 4.1 Milestone 3_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
@@ -697,7 +702,6 @@ __Apr 4th 2015__ : _Version 4.1 Milestone 3_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-874'>NUCRDBMS-874</a>] -         Upgrade to HikariCP 2.3.5 and add some properties
 </li>
 </ul>
-
 
 ## Task
 
@@ -726,7 +730,6 @@ __Apr 4th 2015__ : _Version 4.1 Milestone 3_ includes the following changes
 </li>
 </ul>
 
-
 ## Bug
 
 <ul>
@@ -752,6 +755,7 @@ __Apr 4th 2015__ : _Version 4.1 Milestone 3_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -767,7 +771,6 @@ __Mar 9th 2015__ : _Version 4.1 Milestone 2_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-290'>NUCJPA-290</a>] -         Provide access to other value generators not in scope of JPA spec
 </li>
 </ul>
-
 
 ## Improvement
 
@@ -797,7 +800,6 @@ __Mar 9th 2015__ : _Version 4.1 Milestone 2_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJODATIME-14'>NUCJODATIME-14</a>] -         Extend Joda time support for LocalDateTime
 </li>
 </ul>
-
 
 ## Task
 
@@ -835,7 +837,6 @@ __Mar 9th 2015__ : _Version 4.1 Milestone 2_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-860'>NUCRDBMS-860</a>] -         Push Enum &quot;value getter method&quot; handling down into datanucleus-core so we can make it available for other store plugins
 </li>
 </ul>
-
 
 ## Bug
 
@@ -882,6 +883,7 @@ __Mar 9th 2015__ : _Version 4.1 Milestone 2_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -896,7 +898,6 @@ __Jan 19th 2015__ : _Version 4.1 Milestone 1_ includes the following changes
 </li>
 </ul>
 
-
 ## Improvement
 
 <ul>
@@ -909,7 +910,6 @@ __Jan 19th 2015__ : _Version 4.1 Milestone 1_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-845'>NUCRDBMS-845</a>] -         Handling of case expression should check for non-Boolean conditional expression, and convert to CaseNumericExpression if possible
 </li>
 </ul>
-
 
 ## Task
 
@@ -933,7 +933,6 @@ __Jan 19th 2015__ : _Version 4.1 Milestone 1_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-846'>NUCRDBMS-846</a>] -         Support boolean Case expressions (just like we do numeric Case expressions)
 </li>
 </ul>
-
 
 ## Bug
 

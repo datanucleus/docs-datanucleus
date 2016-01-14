@@ -20,6 +20,7 @@ __Apr 14th 2009__ : _Version 1.0.5_ includes the following changes
 <li>Bug fix to the reading of @FetchPlan annotation</li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 1.0.4
 
@@ -31,6 +32,7 @@ __Feb 1st 2009__ : _Version 1.0.4_ includes the following changes
 <li>Support for QueryResult toArray/subList</li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 1.0.3
 
@@ -50,6 +52,7 @@ __Dec 11th 2008__ : _Version 1.0.3_ includes the following changes
 <li>Fix to RDBMS large result "count" method to ignore ordering</li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 1.0.2
 
@@ -66,6 +69,7 @@ __Oct 30th 2008__ : _Version 1.0.2_ includes the following changes
 <li>Fix to XMLIDRef handling in XML plugin</li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 1.0.1
 
@@ -84,6 +88,7 @@ __Sept 23rd 2008__ : _Version 1.0.1_ includes the following changes
 <li>Fix bug in LDAP persistence of boolean fields</li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 1.0.0.RELEASE
 
@@ -105,6 +110,7 @@ __Sept 1st 2008__ : _Version 1.0 RELEASE_ includes the following changes
 <li>Bug fix for cascade delete with db4o datastores</li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 1.0.0.M4
 
@@ -136,6 +142,7 @@ __Aug 4th 2008__ : _Version 1.0 Milestone 4_ includes the following changes
 <li>Bug fix to L2 caching for multithreaded operations</li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 1.0.0.M3
 
@@ -176,6 +183,7 @@ __July 6th 2008__ : _Version 1.0 Milestone 3_ includes the following changes
 <li>Bug fix on RDBMS datastores when using subclass-table inheritance and single subclass</li>
 </ul>
 
+<br/>
 
 # DataNucleus AccessPlatform 1.0.0.M2
 
@@ -204,6 +212,8 @@ __June 1st 2008__ : _Version 1.0 Milestone 2_ includes the following changes
 <li>Bug fix to use of "JDOHelper.getObjectId" within JDOQL for composite PK app id cases</li>
 <li>Bug fix to the enhancement of jdoMakeDirty for detached cases to allow for inheritance</li>
 </ul>
+
+<br/>
 
 # DataNucleus AccessPlatform 1.0.0.M1
 

@@ -16,6 +16,7 @@ _Version 4.2_ includes the following over 4.1
 <li>Remove support for methods that were dropped in JDO 3.2</li>
 </ul>
 
+<br/>
 
 
 # DataNucleus AccessPlatform 4.2.3
@@ -45,6 +46,7 @@ __Jan 13th 2016__ : _Version 4.2.3_ includes the following changes
 </ul>
 
 
+<br/>
 
 # DataNucleus AccessPlatform 4.2.2
 
@@ -96,6 +98,7 @@ __Nov 27th 2015__ : _Version 4.2.2_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -145,6 +148,7 @@ __Nov 6th 2015__ : _Version 4.2.1_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -228,6 +232,7 @@ __Oct 9th 2015__ : _Version 4.2 RELEASE_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -287,6 +292,7 @@ __Sept 15th 2015__ : _Version 4.2 Milestone 3_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
@@ -385,6 +391,7 @@ __Aug 16th 2015__ : _Version 4.2 Milestone 2_ includes the following changes
 </li>
 </ul>
 
+<br/>
 
 
 
