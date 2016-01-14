@@ -40,8 +40,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <th>JRE</th>
   <th>Released</th>
   <th>Support</th>
-  <th>HTML (Online)</th>
-  <th>Download</th>
+  <th>Documentation</th>
   <th>Release Notes</th>
 </tr>
 <tr class="d">
@@ -52,9 +51,9 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.7+</td>
   <td>Oct/2015</td>
   <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
-  <td><a href="http://www.datanucleus.org/products/accessplatform_4_2/index.html">HTML</a></td>
   <td>
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.zip/download">HTML</a> | 
+    <a href="http://www.datanucleus.org/products/accessplatform_4_2/index.html">Online</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.zip/download">Download</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.pdf/download">PDF</a>
   </td>
   <td><a href="news/access_platform_4_2.html">HTML</a></td>
@@ -67,9 +66,9 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.7+</td>
   <td>May/2015</td>
   <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
-  <td><a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">HTML</a></td>
   <td>
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/datanucleus-accessplatform-docs-4.1.zip/download">HTML</a> | 
+    <a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">Online</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/datanucleus-accessplatform-docs-4.1.zip/download">Download</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/datanucleus-accessplatform-docs-4.1.pdf/download">PDF</a>
   </td>
   <td><a href="news/access_platform_4_1.html">HTML</a></td>
@@ -82,9 +81,9 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.7+</td>
   <td>Jun/2014</td>
   <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
-  <td><a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">HTML</a></td>
   <td>
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.zip/download">HTML</a> | 
+    <a href="http://www.datanucleus.org/products/accessplatform_4_0/index.html">Online</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.zip/download">Download</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.pdf/download">PDF</a>
   </td>
   <td><a href="news/access_platform_4_0.html">HTML</a></td>
@@ -97,9 +96,9 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.6+</td>
   <td>Jun/2013</td>
   <td><a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
-  <td><a href="http://www.datanucleus.org/products/accessplatform_3_3/index.html">HTML</a></td>
   <td>
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.zip/download">HTML</a> | 
+    <a href="http://www.datanucleus.org/products/accessplatform_3_3/index.html">Online</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.zip/download">Download</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.pdf/download">PDF</a>
   </td>
   <td><a href="news/access_platform_3_3.html">HTML</a></td>
@@ -112,9 +111,9 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.6+</td>
   <td>Mar/2013</td>
   <td><a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
-  <td><a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">HTML</a></td>
   <td>
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.zip/download">HTML</a> | 
+    <a href="http://www.datanucleus.org/products/accessplatform_3_2/index.html">Online</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.zip/download">Download</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.pdf/download">PDF</a>
   </td>
   <td><a href="news/access_platform_3_2.html">HTML</a></td>
@@ -127,9 +126,8 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.6+</td>
   <td>Jul/2012</td>
   <td>None</td>
-  <td><a href="http://www.datanucleus.org/products/accessplatform_3_1/index.html">HTML</a></td>
-  <td>
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.1.0.release/datanucleus-accessplatform-docs-3.1.0.zip/download">HTML</a>
+  <td><a href="http://www.datanucleus.org/products/accessplatform_3_1/index.html">Online</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.1.0.release/datanucleus-accessplatform-docs-3.1.0.zip/download">Download</a>
   </td>
   <td><a href="news/access_platform_3_1.html">HTML</a></td>
 </tr>
@@ -141,9 +139,9 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.5+</td>
   <td>Aug/2011</td>
   <td>None</td>
-  <td><a href="http://www.datanucleus.org/products/accessplatform_3_0/index.html">HTML</a></td>
   <td>
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.0.0.release/datanucleus-accessplatform-docs-3.0.0.zip/download">HTML</a>
+    <a href="http://www.datanucleus.org/products/accessplatform_3_0/index.html">HTML</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.0.0.release/datanucleus-accessplatform-docs-3.0.0.zip/download">Download</a>
   </td>
   <td><a href="news/access_platform_3_0.html">HTML</a></td>
 </tr>
@@ -155,9 +153,8 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.5+</td>
   <td>Dec/2010</td>
   <td>None</td>
-  <td>N/A</td>
   <td>
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.2.0.release/datanucleus-accessplatform-docs-2.2.0.zip/download">HTML</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.2.0.release/datanucleus-accessplatform-docs-2.2.0.zip/download">Download</a> | 
     <a href="http://www.datanucleus.org/products/accessplatform_2_2/datanucleus-accessplatform.pdf">PDF</a>
   </td>
   <td><a href="news/access_platform_2_2.html">HTML</a></td>
@@ -170,9 +167,8 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.5+</td>
   <td>Jun/2010</td>
   <td>None</td>
-  <td>N/A</td>
   <td>
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.1.0.release/datanucleus-accessplatform-docs-2.1.0.zip/download">HTML</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.1.0.release/datanucleus-accessplatform-docs-2.1.0.zip/download">Download</a> | 
     <a href="http://www.datanucleus.org/products/accessplatform_2_1/datanucleus-accessplatform.pdf">PDF</a>
   </td>
   <td><a href="news/access_platform_2_1.html">HTML</a></td>
@@ -185,9 +181,8 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.5+</td>
   <td>Jan/2010</td>
   <td>None</td>
-  <td>N/A</td>
   <td>
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.0.0.release/datanucleus-accessplatform-docs-2.0.0.zip/download">HTML</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.0.0.release/datanucleus-accessplatform-docs-2.0.0.zip/download">Download</a> | 
     <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.0.0.release/datanucleus-accessplatform-docs-2.0.0.pdf/download">PDF</a>
   </td>
   <td><a href="news/access_platform_2_0.html">HTML</a></td>
@@ -200,9 +195,8 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.5+</td>
   <td>Feb/2009</td>
   <td>None</td>
-  <td>N/A</td>
   <td>
-    <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.zip/download">HTML</a> | 
+    <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.zip/download">Download</a> | 
     <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.pdf/download">PDF</a>
   </td>
   <td><a href="news/access_platform_1_1.html">HTML</a></td>
@@ -215,9 +209,8 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>1.3+</td>
   <td>Sep/2008</td>
   <td>None</td>
-  <td>N/A</td>
   <td>
-    <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.zip/download">HTML</a> | 
+    <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.zip/download">Download</a> | 
     <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.pdf/download">PDF</a>
   </td>
   <td><a href="news/access_platform_1_0.html">HTML</a></td>
