@@ -23,7 +23,6 @@ This release includes the following changes over the previous release
 </li>
 </ul>
 
-
 ## Bug
 
 <ul>

@@ -5,7 +5,6 @@
 * [License for DataNucleus products](license.html)
 * [DataNucleus Usage](usage.html)
 * [Problem Reporting](problem_reporting.html) : what to do if you have a problem
-* [News](news/index.html) : news history for the DataNucleus project, including releases
 * [Release Schedule](release_plans.html) : outline of when we think to release versions
 * [Donations](donations.html) - want to contribute but don't have time/skills required?
 * [Acknowledgements](acknowledgements.html) - thanking groups who have helped the project
@@ -43,6 +42,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <th>Support</th>
   <th>HTML (Online)</th>
   <th>Download</th>
+  <th>Release Notes</th>
 </tr>
 <tr class="d">
   <td>4.2 (Planck)</td>
@@ -57,6 +57,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.zip/download">HTML</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.pdf/download">PDF</a>
   </td>
+  <td><a href="news/access_platform_4_2.html">HTML</a></td>
 </tr>
 <tr class="d">
   <td>4.1 (Chadwick)</td>
@@ -71,6 +72,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/datanucleus-accessplatform-docs-4.1.zip/download">HTML</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/datanucleus-accessplatform-docs-4.1.pdf/download">PDF</a>
   </td>
+  <td><a href="news/access_platform_4_1.html">HTML</a></td>
 </tr>
 <tr class="d">
   <td><i>4.0 (Einstein)</i></td>
@@ -85,6 +87,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.zip/download">HTML</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.pdf/download">PDF</a>
   </td>
+  <td><a href="news/access_platform_4_0.html">HTML</a></td>
 </tr>
 <tr>
   <td><i>3.3 (Galileo)</i></td>
@@ -99,6 +102,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.zip/download">HTML</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.pdf/download">PDF</a>
   </td>
+  <td><a href="news/access_platform_3_3.html">HTML</a></td>
 </tr>
 <tr>
   <td><i>3.2 (Copernicus)</i></td>
@@ -113,6 +117,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.zip/download">HTML</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.pdf/download">PDF</a>
   </td>
+  <td><a href="news/access_platform_3_2.html">HTML</a></td>
 </tr>
 <tr>
   <td><i>3.1 (Kepler)</i></td>
@@ -126,6 +131,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.1.0.release/datanucleus-accessplatform-docs-3.1.0.zip/download">HTML</a>
   </td>
+  <td><a href="news/access_platform_3_1.html">HTML</a></td>
 </tr>
 <tr>
   <td><i>3.0 (Newton)</i></td>
@@ -139,6 +145,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.0.0.release/datanucleus-accessplatform-docs-3.0.0.zip/download">HTML</a>
   </td>
+  <td><a href="news/access_platform_3_0.html">HTML</a></td>
 </tr>
 <tr>
   <td><i>2.2 (Geiger)</i></td>
@@ -153,6 +160,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.2.0.release/datanucleus-accessplatform-docs-2.2.0.zip/download">HTML</a> | 
     <a href="http://www.datanucleus.org/products/accessplatform_2_2/datanucleus-accessplatform.pdf">PDF</a>
   </td>
+  <td><a href="news/access_platform_2_2.html">HTML</a></td>
 </tr>
 <tr>
   <td><i>2.1 (Thomson)</i></td>
@@ -167,6 +175,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.1.0.release/datanucleus-accessplatform-docs-2.1.0.zip/download">HTML</a> | 
     <a href="http://www.datanucleus.org/products/accessplatform_2_1/datanucleus-accessplatform.pdf">PDF</a>
   </td>
+  <td><a href="news/access_platform_2_1.html">HTML</a></td>
 </tr>
 <tr>
   <td><i>2.0 (Bohr)</i></td>
@@ -181,6 +190,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.0.0.release/datanucleus-accessplatform-docs-2.0.0.zip/download">HTML</a> | 
     <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.0.0.release/datanucleus-accessplatform-docs-2.0.0.pdf/download">PDF</a>
   </td>
+  <td><a href="news/access_platform_2_0.html">HTML</a></td>
 </tr>
 <tr>
   <td><i>1.1 (Rutherford)</i></td>
@@ -195,6 +205,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
     <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.zip/download">HTML</a> | 
     <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.pdf/download">PDF</a>
   </td>
+  <td><a href="news/access_platform_1_1.html">HTML</a></td>
 </tr>
 <tr>
   <td><i>1.0 (Faraday)</i></td>
@@ -209,6 +220,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
     <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.zip/download">HTML</a> | 
     <a href="http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.pdf/download">PDF</a>
   </td>
+  <td><a href="news/access_platform_1_0.html">HTML</a></td>
 </tr>
 </table>
 
