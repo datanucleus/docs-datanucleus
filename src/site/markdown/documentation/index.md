@@ -140,7 +140,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>Aug/2011</td>
   <td>None</td>
   <td>
-    <a href="http://www.datanucleus.org/products/accessplatform_3_0/index.html">HTML</a> | 
+    <a href="http://www.datanucleus.org/products/accessplatform_3_0/index.html">Online</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.0.0.release/datanucleus-accessplatform-docs-3.0.0.zip/download">Download</a>
   </td>
   <td><a href="news/access_platform_3_0.html">HTML</a></td>
