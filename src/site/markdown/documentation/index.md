@@ -44,6 +44,19 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <th>Release Notes</th>
 </tr>
 <tr class="d">
+  <td>5.0 </td>
+  <td></td>
+  <td>Developed</td>
+  <td>JDO3.2, JPA2.1, REST</td>
+  <td>1.8+</td>
+  <td></td>
+  <td></td>
+  <td>
+    <a href="http://www.datanucleus.org/products/accessplatform_5_0/index.html">Online</a>
+  </td>
+  <td></td>
+</tr>
+<tr class="d">
   <td>4.2 (Planck)</td>
   <td>4.2.3</td>
   <td>Developed</td>
