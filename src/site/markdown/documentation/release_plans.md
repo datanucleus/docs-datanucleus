@@ -8,6 +8,7 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 
 ### Feature Scope
 
+* Requires JRE 1.8+
 * More flexibility to handle non-JDK collections.
 * Support for JDK 1.8 Optional
 * Support for specific Scala features
@@ -16,7 +17,7 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 
 ### Release Plans
 
-* __5.0.0.M1 January 2016?__
+* __5.0.0.M2 March 2016?__
 
 
 
