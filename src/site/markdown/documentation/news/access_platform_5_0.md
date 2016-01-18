@@ -22,7 +22,7 @@ _Version 5.0_ includes the following over 4.2
 
 # DataNucleus AccessPlatform 5.0.0.M1
 
-__Jan 18th 2015__ : _Version 5.0 Milestone 1_ includes the following changes
+__Jan 18th 2016__ : _Version 5.0 Milestone 1_ includes the following changes
 
 ## New Feature
 
