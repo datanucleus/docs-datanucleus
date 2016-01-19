@@ -67,6 +67,10 @@ __Jan 18th 2016__ : _Version 5.0 Milestone 1_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-996'>NUCRDBMS-996</a>] -         JDOQL : when invoking a method on a type that uses a converter, if the method doesn't exist on the type, try on the converted-to type
 </li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCSCALA-4'>NUCSCALA-4</a>] -         Support for &quot;Option&quot;
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCSCALA-5'>NUCSCALA-5</a>] -         Support for &quot;case&quot; classes as SCOs
+</li>
 </ul>
 
 ## Improvement
