@@ -258,7 +258,6 @@ full release of a product, but if doing that always be careful of cross-compatib
 	* [datanucleus-rdbms](https://github.com/datanucleus/datanucleus-rdbms) : Support for persistence to RDBMS
 	* [datanucleus-xml](https://github.com/datanucleus/datanucleus-xml) : Support for persistence to XML
 + Other Plugins
-	* [datanucleus-java8](https://github.com/datanucleus/datanucleus-java8) : Support for persisting fields of Java 1.8 types
 	* [datanucleus-cache](https://github.com/datanucleus/datanucleus-cache) : Support for third-party caching tools
 	* [datanucleus-jodatime](https://github.com/datanucleus/datanucleus-jodatime) : Support for persisting fields of Jodatime types
 	* [datanucleus-geospatial](https://github.com/datanucleus/datanucleus-geospatial) : Support for persisting fields of Geospatial types
@@ -266,6 +265,7 @@ full release of a product, but if doing that always be careful of cross-compatib
 	* [datanucleus-jdo-jca](https://github.com/datanucleus/datanucleus-jdo-jca) : Support for using JDO in JavaEE environments via JCA
 	* [datanucleus-jdo-query](https://github.com/datanucleus/datanucleus-jdo-query) : Support for generating JDO typesafe query classes
 	* [datanucleus-jpa-query](https://github.com/datanucleus/datanucleus-jpa-query) : Support for generating JPA criteria query classes
+	* [datanucleus-java8](https://github.com/datanucleus/datanucleus-java8) : Support for persisting fields of Java 1.8 types in DataNucleus v4.x
 + Tools
 	* [datanucleus-maven-plugin](https://github.com/datanucleus/datanucleus-maven-plugin) : For developing applications using DataNucleus and Maven
 	* [datanucleus-eclipse-plugin](https://github.com/datanucleus/datanucleus-eclipse-plugin) : For developing application using DataNucleus in Eclipse

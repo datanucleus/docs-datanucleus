@@ -7,6 +7,11 @@
 If developing plugins for DataNucleus, this page gives information on how to upgrade them to the latest version(s)
 
 
+### 4.x -> 5.0
+
+* The _datanucleus-java8_ plugin is not used in DataNucleus v5.
+
+
 ### 4.0 -> 4.1
 
 * Updated the bytecode enhancement contract to have all classes in _org.datanucleus.enhancement_ and use ExecutionContextReference in the enhancement contract 
