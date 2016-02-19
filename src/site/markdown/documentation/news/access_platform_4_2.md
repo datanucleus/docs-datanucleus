@@ -18,6 +18,56 @@ _Version 4.2_ includes the following over 4.1
 
 <br/>
 
+# DataNucleus AccessPlatform 4.2.4
+
+__Feb 20th 2016__ : _Version 4.2.4_ includes the following changes
+
+## New Feature
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJAVAEIGHT-23'>NUCJAVAEIGHT-23</a>] -         Backport of NUCCORE-1377
+</li>
+</ul>
+
+## Improvement
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1368'>NUCCORE-1368</a>] -         List of &quot;simple&quot; result classes is very restrictive. Extend to include other commonly used &quot;simple&quot; classes
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1385'>NUCCORE-1385</a>] -         Query parsing can be improved to better cater for quoting and end of line characters
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-25'>NUCREST-25</a>] -         Remove use of NucleusException
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-26'>NUCREST-26</a>] -         Change &quot;jdoql&quot; / &quot;jpql&quot; modes so that they take parameter &quot;query&quot; with the encoded query
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1001'>NUCRDBMS-1001</a>] -         Oracle supports NVARCHAR but JDBC driver doesn't acknowledge it
+</li>
+</ul>
+
+## Task
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1372'>NUCCORE-1372</a>] -         Nondurable classes should not be L2 cached, ever.
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1379'>NUCCORE-1379</a>] -         Dont log about AutoStartMechanism if set to None
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-998'>NUCRDBMS-998</a>] -         Prevent SortedSet (and subclasses) be allocated a ListXXXStore since needs unsorted
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1007'>NUCRDBMS-1007</a>] -         Apparently need a call to ConnectionFactory.setPool() to avoid log message with DBCP2
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJAVAEIGHT-22'>NUCJAVAEIGHT-22</a>] -         Backport of NUCCORE-1376
+</li>
+</ul>
+
+## Bug
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1009'>NUCRDBMS-1009</a>] -         Parameters in group by expressions are not set on the JDBC statement
+</li>
+</ul>
+
+<br/>
+
 
 # DataNucleus AccessPlatform 4.2.3
 
