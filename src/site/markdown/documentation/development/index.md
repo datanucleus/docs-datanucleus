@@ -106,15 +106,15 @@ There are many different versioning systems in use by software. All typically us
 Some use versioning starting at say 1.0.0, and going up from that until some release e.g 1.0.4 that is considered the full release. 
 __DataNucleus uses the following versioning policy__
 
-* When we start a release lifecycle for a product it starts at 1.0 Milestone 1 (1.0.0.M1)
-* Subsequent releases increment the milestone ... 1.0.0.M2, 1.0.0.M3 etc
-* When we feel we are close to a full release we can optionally have 1.0 Release Candidate 1 (1.0.0.RC1)
+* When we start a release lifecycle for a product it starts typically at __Milestone__ 1 (e.g 1.0.0.M1). 
+If we are developing a new plugin that will be used from DataNucleus v5.0 then we will start at 5.0 Milestone 1 (5.0.0.M1) for the new plugin.
+* Subsequent releases increment the milestone ... e.g 1.0.0.M2, 1.0.0.M3 etc
+* When we feel we are close to a full release we can optionally have __Release Candidate__ (e.g 1.0.0.RC1)
 * We have as many release candidates as necessary to get everything feature complete
-* The full release is 1.0.0(.Release)
-* Any subsequent releases in that lifecycle increment the revision number, so 1.0.1, 1.0.2 etc
+* The full release is __Release__ (e.g 1.0.0.Release)
+* Any subsequent releases (after the full release) in that lifecycle increment the revision number, e.g 1.0.1, 1.0.2 etc
 
-The use of "Milestone" rather than "alpha" or "beta" is because all DataNucleus releases are run against all unit tests 
-and TCKs and so stability is typically inherent.
+The use of "Milestone" rather than "alpha" or "beta" is because all DataNucleus releases are run against all unit tests and TCKs and so stability is typically inherent.
 
 We increment the <i>minor</i> version number when we are changing internal APIs (but not client facing APIs).
 We increment the <i>major</i> version number when we are changing external (client-facing) APIs.
