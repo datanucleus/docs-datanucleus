@@ -45,7 +45,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
 </tr>
 <tr class="d">
   <td>5.0 (Schrodinger)</td>
-  <td>5.0.0.M1</td>
+  <td>5.0.0.M2</td>
   <td>Developed</td>
   <td>JDO3.2, JPA2.1, REST</td>
   <td>1.8+</td>

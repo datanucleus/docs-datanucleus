@@ -19,6 +19,132 @@ _Version 5.0_ includes the following over 4.2
 <br/>
 
 
+# DataNucleus AccessPlatform 5.0.0.M2
+
+__Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
+
+## New Feature
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1369'>NUCCORE-1369</a>] -         Add in-memory evaluation support for YearMonth.getYear, YearMonth.getMonthValue, MonthDay.getDayOfMonth, MonthDay.getMonthValue, Period.getMonths, Period.getDays, Period.getYears etc
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1370'>NUCCORE-1370</a>] -         Support conversion from MonthDay to java.sql.Date
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1371'>NUCCORE-1371</a>] -         Support conversion from YearMonth to java.sql.Date
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1374'>NUCCORE-1374</a>] -         Provide ability for a store plugin to set the default TypeConverter to use for a java field type
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1377'>NUCCORE-1377</a>] -         Support conversion of java.time.Instant to java.util.Date
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1380'>NUCCORE-1380</a>] -         Support conversion from Duration to Double (secs.nanos)
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1383'>NUCCORE-1383</a>] -         JPQL : Support YEAR, MONTH, DAY, HOUR, MINUTE, SECOND with java.time types
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1387'>NUCCORE-1387</a>] -         Add in-memory evaluation support for Optional.get, Optional.isPresent
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1388'>NUCCORE-1388</a>] -         Support persistence of java.time.ZonedDateTime as Timestamp / String
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-331'>NUCJPA-331</a>] -         Allow shared relation to be specified using single annotation rather than 3 extension annotations
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1000'>NUCRDBMS-1000</a>] -         Add support for YearMonth.getYear, YearMonth.getMonthValue, MonthDay.getDayOfMonth, MonthDay.getMonthValue, Period.getMonths, Period.getDays, Period.getYears etc
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1003'>NUCRDBMS-1003</a>] -         JDOQL : Support Optional.get(), Optional.isPresent() rather than current automatic referral to underlying type
+</li>
+</ul>
+
+## Improvement
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1368'>NUCCORE-1368</a>] -         List of &quot;simple&quot; result classes is very restrictive. Extend to include other commonly used &quot;simple&quot; classes
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1385'>NUCCORE-1385</a>] -         Query parsing can be improved to better cater for quoting and end of line characters
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1389'>NUCCORE-1389</a>] -         java.awt.Color should be in DFG
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-25'>NUCREST-25</a>] -         Remove use of NucleusException
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-26'>NUCREST-26</a>] -         Change &quot;jdoql&quot; / &quot;jpql&quot; modes so that they take parameter &quot;query&quot; with the encoded query
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-27'>NUCREST-27</a>] -         Extract Google AppEngine code into separate classes so we can make user types pluggable
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1001'>NUCRDBMS-1001</a>] -         Oracle supports NVARCHAR but JDBC driver doesn't acknowledge it
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1004'>NUCRDBMS-1004</a>] -         Temporal query methods contain significant duplication and need rationalising
+</li>
+</ul>
+
+## Task
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1353'>NUCCORE-1353</a>] -         org.datanucleus.store.query.Query has short &quot;type&quot; but ought to be enum. Will need all store plugins updating to match
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1372'>NUCCORE-1372</a>] -         Nondurable classes should not be L2 cached, ever.
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1373'>NUCCORE-1373</a>] -         CalendarStringConverter/DateStringConverter should implement ColumnLengthDefiningTypeConverter
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1376'>NUCCORE-1376</a>] -         Update LocalDateDateConverter, LocalDateTimeDateConverter and LocalTimeDateConverter to use Instant and ZoneId for reliability
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1379'>NUCCORE-1379</a>] -         Dont log about AutoStartMechanism if set to None
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1382'>NUCCORE-1382</a>] -         Change JPQL &quot;MONTH&quot; to evaluate to the month between 1 and 12 (rather than 0 and 11 like now)
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1384'>NUCCORE-1384</a>] -         JPQL : Support YEAR, MONTH, DAY, HOUR, MINUTE, SECOND as in-memory evaluation
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-330'>NUCJPA-330</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-116'>NUCAPIJDO-116</a>] -         Move LocalDateExpression/LocalTimeExpression/LocalDateTimeExpression to javax.jdo
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-118'>NUCAPIJDO-118</a>] -         Allow lifecycle state change from HOLLOW to P_NONTRANS when no tx and field is already loaded
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-119'>NUCAPIJDO-119</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1005'>NUCRDBMS-1005</a>] -         Merge VersionStringMapping, VersionTimestampMapping into VersionMapping. Same for DiscriminatorMapping
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1006'>NUCRDBMS-1006</a>] -         ClassMapping is no longer needed; use type converter
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1007'>NUCRDBMS-1007</a>] -         Apparently need a call to ConnectionFactory.setPool() to avoid log message with DBCP2
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1010'>NUCRDBMS-1010</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-65'>NUCCASSANDRA-65</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-87'>NUCEXCEL-87</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-100'>NUCHBASE-100</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJSON-57'>NUCJSON-57</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCLDAP-67'>NUCLDAP-67</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-166'>NUCMONGODB-166</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCNEODATIS-31'>NUCNEODATIS-31</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCNEOFORJ-57'>NUCNEOFORJ-57</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-64'>NUCODF-64</a>] -         Support NUCCORE-1353
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCXML-56'>NUCXML-56</a>] -         Support NUCCORE-1353
+</li>
+</ul>
+
+## Bug
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-332'>NUCJPA-332</a>] -         If metadata specified using orm.xml only, the entity name is not defaulted
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-333'>NUCJPA-333</a>] -         Criteria multiple join with no join alias results in exception
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-334'>NUCJPA-334</a>] -         Criteria join to a multiple valued path doesn't work.
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1009'>NUCRDBMS-1009</a>] -         Parameters in group by expressions are not set on the JDBC statement
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1012'>NUCRDBMS-1012</a>] -         Using JPA with a OneToMany field that is a Set with join table doesn't create the PK for the join table, but should
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1013'>NUCRDBMS-1013</a>] -         JPQL : join to embedded object generates incorrect SQL
+</li>
+</ul>
+
 
 # DataNucleus AccessPlatform 5.0.0.M1
 
