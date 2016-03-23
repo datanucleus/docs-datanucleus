@@ -165,8 +165,7 @@ This is the release process for a sample
 
 ### Metrics
 
-DataNucleus originated as JPOX in 2003, becoming DataNucleus in 2008, and consequently many people have contributed to its development over the years 
-and has been open source since the outset. 
+DataNucleus originated as JPOX in 2003, becoming DataNucleus in 2008, and consequently many people have contributed to its development over the years and has been open source since the outset. 
 In terms of metrics of the codebase you can get a measure of this by looking at the [DataNucleus page on OpenHub](http://www.openhub.net/p/datanucleus).
 
 
@@ -174,10 +173,9 @@ In terms of metrics of the codebase you can get a measure of this by looking at 
 
 The management and direction of DataNucleus is provided by a small team of experienced individuals.
 
-__Andy Jefferson__ : Founder of the DataNucleus project. Has worked on the project since
-its initiation as JPOX in 2003, and has worked on all plugins. Initiated the support for db4o, ODF, MongoDB, NeoDatis,
-Neo4j, OOXML, Cassandra, javax.cache, RDBMS connection pools, and much more. Also wrote version 2 of the plugin for
-GAE/Datastore.
+__Andy Jefferson__ : Founder of the DataNucleus project. Has worked on the project since its initiation as JPOX in 2003, and has worked on all plugins. 
+Initiated the support for db4o, ODF, MongoDB, NeoDatis, Neo4j, OOXML, Cassandra, javax.cache, RDBMS connection pools, and much more. 
+Also contributed to version 2 of the plugin for GAE/Datastore, subject to the constraints that Google put on it.
 
 __Renato Garcia__ : worked on the migration to GitHub, test suite flexibility, auto-generation of MANIFESTs, Jenkins/Solar automation, and some more.
 
@@ -195,8 +193,7 @@ __Stefan Schmid__ : Wrote an amount of the spatial plugin (now renamed to _geosp
 __Joerg von Frantzius__ : worked on the test suite, and RDBMS areas. _Currently inactive_
 
 
-In addition to those above, other people have contributed to varying degrees in the development of this software.
+In addition to those above, other people have contributed to varying degrees in the development of this software or documentation.
 
-DataNucleus tackles a wide range of problem areas - are you interested in contributing to the DataNucleus 
-project and want to get involved? The best way is to become part of the DataNucleus community and start 
-by contributing patches. From that, gain commit rights. Where you take the project to from there is up to you.
+DataNucleus tackles a wide range of problem areas - are you interested in contributing to the DataNucleus project and want to get involved? 
+The best way is to become part of the DataNucleus community and start by contributing patches. From that, gain commit rights. Where you take the project to from there is up to you.
