@@ -33,8 +33,7 @@ The principal DataNucleus releases are :-
         </td>
         <td style="vertical-align: middle; width: 100%;" bgcolor="#FFFFFF">
             <a href="http://central.maven.org/maven2/org/datanucleus/" target="_blank"><b>DataNucleus Plugin JARs</b></a> : 
-            DataNucleus products are made up of a selection of plugins, and each plugin is also an 
-            OSGi bundle. You can download plugins individually, if you wish, as they are released.
+            DataNucleus products are made up of a selection of plugins, and each plugin is also an OSGi bundle. You can download plugins individually, if you wish, as they are released.
             Available from the <a href="http://central.maven.org/maven2/org/datanucleus/">Maven Central</a> repository.
         </td>
     </tr>
@@ -44,8 +43,7 @@ The principal DataNucleus releases are :-
         </td>
         <td style="vertical-align: middle; width: 100%;" bgcolor="#FFFFFF">
             <a href="http://central.maven.org/maven2/org/datanucleus/datanucleus-maven-plugin" target="_blank"><b>Maven Plugin</b></a> : 
-            Development of a DataNucleus-enabled project using Maven (2+) would benefit from the DataNucleus 
-            Maven plugin providing enhancement of classes and the opportunity to create the database schema.
+            The DataNucleus Maven plugin provides enhancement of classes and the opportunity to manage the database schema.
             Available from the <a href="http://central.maven.org/maven2/org/datanucleus/datanucleus-maven-plugin/">Maven Central</a> repository.
         </td>
     </tr>
@@ -55,10 +53,8 @@ The principal DataNucleus releases are :-
         </td>
         <td style="vertical-align: middle; width: 100%;" bgcolor="#FFFFFF">
             <a href="http://www.datanucleus.org/downloads/eclipse-update" target="_blank"><b>Eclipse Plugin</b></a> : 
-            Development of a DataNucleus-enabled project using Eclipse would benefit from the DataNucleus 
-            Eclipse plugin providing enhancement of classes and the opportunity to create the database 
-            schema. You can download this plugin by adding the DataNucleus "Eclipse Update" site of
-            <i>http://www.datanucleus.org/downloads/eclipse-update</i> to your Eclipse configuration.
+            The DataNucleusEclipse plugin provides enhancement of classes and the opportunity to manage the database schema.
+            You can download this plugin by adding the DataNucleus "Eclipse Update" site of <i>http://www.datanucleus.org/downloads/eclipse-update</i> to your Eclipse configuration.
         </td>
     </tr>
     <tr>
@@ -67,9 +63,9 @@ The principal DataNucleus releases are :-
         </td>
         <td style="vertical-align: middle; width: 100%;" bgcolor="#FFFFFF">
             <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-samples" target="_blank"><b>DataNucleus Samples</b></a> :
-            There are various samples of code for use with DataNucleus available, including the source 
-            files from the tutorial. Available from our SourceForge project home page, with the
-            project housed on <a href="https://github.com/datanucleus?tab=repositories">GitHub</a>.
+            There are various samples of code for use with DataNucleus available, including the source files from the tutorial. 
+            Available from SourceForge for easy download, with the source code projects housed on GitHub for 
+            <a href="https://github.com/datanucleus/samples-jdo">JDO</a> and <a href="https://github.com/datanucleus/samples-jpa">JPA</a>.
         </td>
     </tr>
 </table>
