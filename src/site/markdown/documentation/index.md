@@ -16,7 +16,6 @@
 * [Testing](development/tests.html) - test processes for developing DataNucleus codebase
 * [Jenkins](http://jenkins.datanucleus.org) - Continuous Integration using Jenkins
 * [Sonar](http://sonar.datanucleus.org) - Sonar code analysis
-* [Extensions](development/extensions.html) - DataNucleus extension points
 * [Plugin Migration](plugin_migration.html) - process for upgrade migration of DataNucleus plugins
 * [Schema Migration](development/schema_migration.html) - Migration of the schema for an application during the development process
 * [HOWTO : Supporting a new Datastore](development/new_store_plugin_howto.html) - HOWTO support a new datastore with DataNucleus.

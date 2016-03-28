@@ -163,6 +163,21 @@ This is the release process for a sample
 * Copy the zip file on to SourceForge (or get an admin to do it)
 
 
+### DataNucleus Extensions and Extension-Points
+
+DataNucleus products are built using a plugin mechanism, allowing plugins to operate together.
+This plugin mechanism is useful also from a user viewpoint in that you, the user, could provide plugins that use these plugin points and 
+extend the capabilities of DataNucleus. Plugins are loaded by a plugin manager when DataNucleus is initialised at runtime, and this plugin 
+manager uses a registry mechanism, inspecting jars in the CLASSPATH. The three steps necessary for creating a DataNucleus plugin are
+
+1. Review the DataNucleus Extension-Point that you will need to implement to generate the plugin, and implement it.
+2. Create a file _plugin.xml_ at the top level of your JAR defining the plugin details (see the actual Extension docs).
+3. Update the META-INF/MANIFEST.MF file contained in the jar so that it includes necessary information for OSGi.
+
+Extension points differ from one version of DataNucleus to another, so you should consult the documentation of the version of DataNucleus
+that you are using. The documentation for extensions in the latest version of DataNucleus can be found [here](http://www.datanucleus.org/products/accessplatform/extensions/index.html)
+
+
 ### Metrics
 
 DataNucleus originated as JPOX in 2003, becoming DataNucleus in 2008, and consequently many people have contributed to its development over the years and has been open source since the outset. 
