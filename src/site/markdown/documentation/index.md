@@ -8,7 +8,6 @@
 * [Release Schedule](release_plans.html) : outline of when we think to release versions
 * [Donations](donations.html) - want to contribute but don't have time/skills required?
 * [Acknowledgements](acknowledgements.html) - thanking groups who have helped the project
-* [Third Party Tools](thirdparty_tools.html) - some related tools that may help your DataNucleus usage
 
 # Development
 
