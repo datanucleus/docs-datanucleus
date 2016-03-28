@@ -16,7 +16,7 @@ You could monitor the forum when you have free time and attempt to answer people
 * __Debug problems in the code__ before reporting them on the Forum. You can isolate the issue to a particular area of code even if you don't know the solution, 
 and post your findings on the Forum for one of the developers to pick up and progress further. __Better still, contribute updates__ so it saves our time in working 
 out where the problem lies. These will be much more valuable to us. Since we use Git for source code repository the best way is to FORK/CLONE a particular 
-GitHub project and submit a GitHub PULL REQUEST with your changes. Please see the [DataNucleus coding standards](coding_standards.html).
+GitHub project and submit a GitHub PULL REQUEST with your changes. Please see the [DataNucleus coding standards](sourcecode.html#Coding_Standards).
 * __Volunteer to be a developer__ of DataNucleus. To do this you need to start off by contributing patches for issues, and demonstrate your commitment to the project.
 Once you've done this for a while then we'll invite you to join the project. You then go to the "Recruitment" section of our Forum and post the developer agreement
 (stored in one of the threads in that Forum). Thereafter you can push DataNucleus further yourself when you have time. Be aware though that once you have been given
@@ -57,7 +57,7 @@ and when complete they should be merged into GitHub 'master'. If help is needed 
 <a name="codingstandards"/>
 ### Coding Standards
 
-Coding standards are more complicated to define so please look [here](coding_standards.html) for details.
+Coding standards are more complicated to define so please look [here](sourcecode.html#Coding_Standards) for details.
 
 
 <a name="mailinglists"/>
