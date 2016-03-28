@@ -267,8 +267,8 @@ full release of a product, but if doing that always be careful of cross-compatib
 + Tools
 	* [datanucleus-maven-plugin](https://github.com/datanucleus/datanucleus-maven-plugin) : For developing applications using DataNucleus and Maven
 	* [datanucleus-eclipse-plugin](https://github.com/datanucleus/datanucleus-eclipse-plugin) : For developing application using DataNucleus in Eclipse
-	* [datanucleus-idea-plugin](https://github.com/datanucleus/datanucleus-idea-plugin) : For developing applications using DataNucleus in Intellij IDEA
 + Inactive Plugins
+	* [datanucleus-idea-plugin](https://github.com/datanucleus/datanucleus-idea-plugin) : For developing applications using DataNucleus in Intellij IDEA
 	* datanucleus-enhancer - now part of datanucleus-core
 	* datanucleus-java5 - now part of datanucleus-core and datanucleus-api-jpa
 	* maven1 - no longer used, since Maven1 is deprecated
