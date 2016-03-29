@@ -154,7 +154,7 @@ mean that they are necessarily "the best", "the official" or any such title. The
 * __Braces__ : insert a new line before opening brace and a new line before closing brace. Opening and closing braces should line up vertically.
 * __Line Length__ : max line length 140
 * __Imports__ : fully specify imports. Do NOT use asterisk notation!
-* __Java Language Level__ : write for JDK1.7 as a minimum. Anything that requires Java 1.8 should go in the <i>datanucleus-java8</i> plugin. The test suite can use Java 1.8 code.
+* __Java Language Level__ : write for Java 1.8 as a minimum (v4 of DataNucleus allows Java 1.7).
 * __Fields positioning__ : place fields at the top of a class.
 * __Logging__ : use _org.datanucleus.util.NucleusLogger_ which wraps Log4j, java.util.logging etc. Log as much info as is considered necessary at the appropriate level.
 See [org.datanucleus.util.NucleusLogger](http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/util/NucleusLogger.html) for details
@@ -165,9 +165,7 @@ See [org.datanucleus.util.Localiser](http://www.datanucleus.org/javadocs/core/la
 
 If you are using Eclipse then we have an [XML Configuration](code-conventions-eclipse.xml) to specify in Eclipse.
 
-### Examples
-
-Example of brace policy and other things
+Here we have some examples of brace policy and other things
 
 	package mypackage;
 
@@ -287,16 +285,14 @@ Example with if ... else
 	    }
 	}
 
-## Licensing
 
-All contributions to the DataNucleus Project must adhere to the Apache 2 license. Notwithstanding the above, at the discretion of the PMC, 
-DataNucleus Project downloads may include separately licensed code from third parties as a convenience and where permitted by the third party license, 
-provided this is clearly indicated.
+## Source Code Licensing
 
+All contributions to the DataNucleus Project must adhere to the Apache 2 license. 
 All contributions must contain the following copyright notice.
 
 	/**********************************************************************
-	Copyright (c) 2006 {your name} and others. All rights reserved.
+	Copyright (c) 2016 {your name} and others. All rights reserved.
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
@@ -315,12 +311,6 @@ All contributions must contain the following copyright notice.
 	    ...
 	**********************************************************************/
 
+Notwithstanding the above, at the discretion of the owners of the project, DataNucleus downloads may include separately licensed code from third parties as a convenience 
+and where permitted by the third party license, provided this is clearly indicated.
 
-## References
-
-In this document we describe just a small set of guidelines. Some references are really worth a read, though our particular guidelines above override some of the things here.
-
-* [Java Code Conventions](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html)
-* [How to write doc comments for Javadoc](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html)
-* [How to write unmaintainable code (what not to do)](http://mindprod.com/jgloss/unmain.html)
-* [Scott Ambler Programming Guidelines](http://www.ambysoft.com/essays/codingGuidelines.html)
