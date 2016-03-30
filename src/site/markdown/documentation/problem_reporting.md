@@ -16,17 +16,16 @@ for reporting issues is defined below :-
 The majority of situations are errors in input relative to what DataNucleus allows. __More importantly than this, 
 READ THE LOG. IT TELLS YOU WHAT IS HAPPENING__. Unwillingness to read such basic log information suggests that you 
 don't want to debug your problem so ask yourself this question _why should we if you can't be bothered?_
-2. Search the [Forum](http://forum.datanucleus.org) for a similar situation to see if someone else has had the same issue and maybe resolved it.
+2. Search the [Forum](http://forum.datanucleus.org) or [StackOverflow](http://www.stackoverflow.com) for a similar situation to see if someone else has had the same issue and maybe resolved it.
 3. Try the [latest Nightly Builds](http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus). Things are usually fixed soon after 
-being reported so the issue may no longer be an issue (if there are no jars present in the nightly repo then nothing has changed since the previous 
-release).
+being reported so the issue may no longer be an issue (if there are no jars present in the nightly repo then nothing has changed since the previous release).
 4. Search [JIRA](http://issues.datanucleus.org) for an issue describing your situation. 
 If there is one then you can always check the status of the issue and post against it in JIRA.
 5. Start a thread on the [Forum](http://forum.datanucleus.org). If doing this then seriously consider posting a simple concise testcase (see below) 
 that gives people something that reproduces your problem.
 6. If there is nothing obvious incorrect in your situation and it happens in a released version of DataNucleus then you can raise an issue in 
 [JIRA](http://issues.datanucleus.org). You should then create a minimized testcase and attach it to the JIRA issue (using "Attach File" 
-on the issue) - see below. __Bugs can only be raised against RELEASED versions of DataNucleus.__ 
+on the issue) - see below. __Bugs can only be raised against RELEASED versions of DataNucleus and must have a valid testcase attached that demonstrates the issue.__ 
 If you encounter a bug that only appears in GitHub latest then you should either report it against a JIRA issue related to that item in the current 
 work-in-progress release, or otherwise report it to developers. This is since something can hardly be a bug if it hasn't been released yet.
 __Please don't take the attitude that this testcase requirement somehow doesn't apply to you. It is there to demonstrate a problem, so others can see it. 
