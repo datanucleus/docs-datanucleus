@@ -18,6 +18,46 @@ _Version 4.2_ includes the following over 4.1
 
 <br/>
 
+# DataNucleus AccessPlatform 4.2.5
+
+__Apr 7th 2016__ : _Version 4.2.5_ includes the following changes
+
+## New Feature
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1399'>NUCCORE-1399</a>] -         Add mechanism whereby if there is metadata for a class that is not in the classpath we can just ignore it
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCMAVEN-52'>NUCMAVEN-52</a>] -         Support &quot;datanucleus.metadata.ignoreMetaDataForMissingClasses&quot; via enhancer
+</li>
+</ul>
+
+## Improvement
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1389'>NUCCORE-1389</a>] -         java.awt.Color should be in DFG
+</li>
+</ul>
+
+## Bug
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1391'>NUCCORE-1391</a>] -         SerializableByteBufferConverter should use wrap/remaining to convert to bytes but doesn't
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-332'>NUCJPA-332</a>] -         If metadata specified using orm.xml only, the entity name is not defaulted
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-333'>NUCJPA-333</a>] -         Criteria multiple join with no join alias results in exception
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-334'>NUCJPA-334</a>] -         Criteria join to a multiple valued path doesn't work.
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1013'>NUCRDBMS-1013</a>] -         JPQL : join to embedded object generates incorrect SQL
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1017'>NUCRDBMS-1017</a>] -         Insert of array of persistable objects fails to insert join table when cascade not enabled
+</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 4.2.4
 
 __Feb 20th 2016__ : _Version 4.2.4_ includes the following changes
