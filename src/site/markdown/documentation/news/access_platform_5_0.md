@@ -19,6 +19,131 @@ _Version 5.0_ includes the following over 4.2
 <br/>
 
 
+# DataNucleus AccessPlatform 5.0.0.M3
+
+__Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
+
+## New Feature
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1394'>NUCCORE-1394</a>] -         Add support for JPQL FROM join to a new &quot;root&quot; with ON condition
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1396'>NUCCORE-1396</a>] -         CompleteClassTable and MemberColumnMapping do not support collection element or map key/value conversion. Need to add
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1399'>NUCCORE-1399</a>] -         Add mechanism whereby if there is metadata for a class that is not in the classpath we can just ignore it
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-120'>NUCAPIJDO-120</a>] -         Add support for javax.jdo.query.OptionalExpression
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-335'>NUCJPA-335</a>] -         Support NonDurable Identity as vendor extension
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-67'>NUCCASSANDRA-67</a>] -         Support for java.util.Optional
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-69'>NUCCASSANDRA-69</a>] -         Support persistence of serialised PC fields
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-71'>NUCCASSANDRA-71</a>] -         Support use of TypeConverter on Collection element, Map key and Map value
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-101'>NUCHBASE-101</a>] -         Support for java.util.Optional
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-104'>NUCHBASE-104</a>] -         Support use of TypeConverter on Collection element, Map key and Map value
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-109'>NUCHBASE-109</a>] -         Persist relation fields as &quot;persistableId&quot; like with MongoDB, Excel, ODF, Cassandra, Neo4j, JSON etc
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-88'>NUCEXCEL-88</a>] -         Support for java.util.Optional
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJSON-58'>NUCJSON-58</a>] -         Support for java.util.Optional
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-115'>NUCMONGODB-115</a>] -         Support inherited embedded Map keys/values
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-167'>NUCMONGODB-167</a>] -         Support for java.util.Optional
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-169'>NUCMONGODB-169</a>] -         Support use of TypeConverter on Collection element, Map key and Map value
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCNEOFORJ-58'>NUCNEOFORJ-58</a>] -         Support for java.util.Optional
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-65'>NUCODF-65</a>] -         Support for java.util.Optional
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1018'>NUCRDBMS-1018</a>] -         Add support for JPQL FROM join to a new &quot;root&quot; with ON condition
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCJDOQUERY-24'>NUCJDOQUERY-24</a>] -         Add support for javax.jdo.query.OptionalExpression
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCMAVEN-52'>NUCMAVEN-52</a>] -         Support &quot;datanucleus.metadata.ignoreMetaDataForMissingClasses&quot; via enhancer
+</li>
+</ul>
+
+## Improvement
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-110'>NUCHBASE-110</a>] -         If attempt to use HBase with IDENTITY value generator it throws an exception. Better to switch to INCREMENT and log warning
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1015'>NUCRDBMS-1015</a>] -         Collection.contains allows control over variable join/subquery - should allow the same for Map.containsKey, Map.containsValue
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1016'>NUCRDBMS-1016</a>] -         Collection.contains, Map.containsKey, Map.containsValue can define how a variable is &quot;joined&quot; (subquery or innerjoin) but ought to allow &quot;leftouterjoin&quot; also
+</li>
+</ul>
+
+## Task
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1392'>NUCCORE-1392</a>] -         Marking a member as &quot;serializable&quot; conflicts with the use of a converter
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1393'>NUCCORE-1393</a>] -         Clean up code around ClassLoaderResolverImpl for JRE classes so matches those in ClassNameConstants
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1395'>NUCCORE-1395</a>] -         Add StoreManager supportedOption for serialized collection element, array element, map key, map value
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1397'>NUCCORE-1397</a>] -         Add converter for conversion from BufferedImage to ByteBuffer
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-72'>NUCCASSANDRA-72</a>] -         Support for persisting fields of type BufferedImage
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-68'>NUCCASSANDRA-68</a>] -         Complete support for retrieval of byte[] field
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-102'>NUCHBASE-102</a>] -         HBaseSchemaHandler hasn't been properly upgraded to HBase 1.x
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-105'>NUCHBASE-105</a>] -         HBase fetch of fields doesn't cater for non-persistent fields (transient, transactional)
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1019'>NUCRDBMS-1019</a>] -         Support for NUCCORE-1395 options
+</li>
+</ul>
+
+## Bug
+
+<ul>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1390'>NUCCORE-1390</a>] -         In-memory evaluation of Optional.get doesn't check for isPresent but should
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1391'>NUCCORE-1391</a>] -         SerializableByteBufferConverter should use wrap/remaining to convert to bytes but doesn't
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1398'>NUCCORE-1398</a>] -         In-memory evaluation of MonthDay.getMonthValue and YearMonth.getMonthValue are returning Month object!
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-70'>NUCCASSANDRA-70</a>] -         When using converter on field it should SCO wrap the result on retrieval but currently doesn't
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-89'>NUCEXCEL-89</a>] -         Look up of object doesn't cater for PK field being Date stored as String (i.e use of converter)
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-90'>NUCEXCEL-90</a>] -         ExcelCandidateList (query results) should respect FetchPlan of query
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-103'>NUCHBASE-103</a>] -         Use of TypeConverter fails on persist since doesn't use the converted value
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-106'>NUCHBASE-106</a>] -         Query of NonDurable identity fails, due to unknown type info even though the class is input
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-107'>NUCHBASE-107</a>] -         HBase query comparing Enum field with ordinal value (or name) doesn't evaluate
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-108'>NUCHBASE-108</a>] -         Hbase plugin doesn't cope with fetch of relation field pointing to object that is no longer present. Should just set relation to null
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-111'>NUCHBASE-111</a>] -         Lookup of object when using TypeConverter on PK field fails to find the object
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-168'>NUCMONGODB-168</a>] -         MongoDB v3.x removes support for using java.sql.* so need to pass in java.util.Date
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-66'>NUCODF-66</a>] -         Look up of object doesn't cater for PK field being Date stored as String (i.e use of converter)
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-67'>NUCODF-67</a>] -         ODFCandidateList (query results) should respect FetchPlan of query
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1014'>NUCRDBMS-1014</a>] -         NUCRDBMS-1012 updates to join table PK creation were incomplete. Need further improvement
+</li>
+<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1017'>NUCRDBMS-1017</a>] -         Insert of array of persistable objects fails to insert join table when cascade not enabled
+</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 5.0.0.M2
 
 __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
