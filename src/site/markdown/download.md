@@ -106,6 +106,6 @@ If using Maven you simply need to add the following to your _pom.xml_
 
 
 Please be aware that all nightly builds are development work-in-progress and no guarantee is provided. These builds are typically stable but things may be 
-broke occasionally as new features are added etc. You cannot report issues in JIRA against nightly builds, only against released versions of DataNucleus, 
+broke occasionally as new features are added etc. You cannot report issues in GitHub against nightly builds, only against released versions of DataNucleus, 
 but should report any problems in the ['General Development' Forum](http://forum.datanucleus.org/) if you have an issue with a nightly build, 
 preferably after waiting a few days in case it is a work in progress type situation with a new feature being introduced.

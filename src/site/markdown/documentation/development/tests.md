@@ -100,7 +100,7 @@ Where you feel that our unit tests do not adequately cover functionality, you sh
 2. Look at the available model samples and choose one.
 3. Write your unit test, extending one of the common base classes, for example __JDOPersistenceTestCase__, or __JPAPersistenceTestCase__
 4. Run your test.
-5. Raise a JIRA and attach your testcase to the issue
+5. Raise an issue and attach your testcase to the issue
 
 
 ### Alternate Test Configurations

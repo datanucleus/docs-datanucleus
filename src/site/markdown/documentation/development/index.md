@@ -27,7 +27,7 @@ will be expanded faster due to your help.
 * __Contribute documentation or worked examples__ that can be included in the online documentation. If you think there is something missing from our documents 
 then you can write it and contribute it and others will benefit from your work just like you have benefited from our DataNucleus product. The easiest way to
 contribute is to FORK/CLONE the appropriate GitHub project and then raise a GitHub PULL REQUEST and we will process it asap. You can also contribute via either the 
-[Forum](http://forum.datanucleus.org) or by raising an issue in [JIRA](http://issues.datanucleus.org).
+[Forum](http://forum.datanucleus.org) or by raising an issue against the DataNucleus plugin in question.
 
 Note that involvement in an open source project can significantly improve your employability, since potential employers can see the quality of your code, so this
 is an opportunity to do something positive. Note also __if you contribute to the system in some way then we are more likely to answer your forum questions, or listen to your ideas, 
@@ -42,7 +42,7 @@ DataNucleus uses Test Driven Development (TDD). It has [many test suites availab
 When you have DataNucleus commit rights (see [this forum thread](http://www.datanucleus.org/servlet/forum/viewthread_thread,75)), the 
 development process should be as below. Please abide by these simple rules
 
-1. Identify [an issue](http://issues.datanucleus.org) to work on. Raise a JIRA issue if it doesn't yet exist, and allocate to yourself
+1. Identify an issue to work on for a particular DataNucleus plugin. Raise an issue if it doesn't yet exist, and allocate to yourself.
 2. Develop code, unit tests (as appropriate), and documentation for the issue. DataNucleus is developed using JDK1.8+ (DataNucleus 3.x is developed with JDK1.7+).
 3. Run all DataNucleus tests and the (public) JDO TCK, and when all pass to the same level as before then you can check your code into GitHub. 
 __Broken unit tests or JDO TCK tests must be fixed ASAP__. Others are using GitHub latest too and if you break either the build or the tests 
@@ -50,8 +50,8 @@ then it means they often cannot work effectively. __Breakage of unit tests or JD
 4. Issues that involve many changes should be split, where appropriate, into smaller steps so that you can still pass point 3 above with each check in
 5. Where changes are significant and you cannot split them into smaller check-ins (that pass the tests) should be checked in to your own GitHub branch 
 and when complete they should be merged into GitHub 'master'. If help is needed at this point then other developers should help in merging large changes.
-6. All check-ins should have a prefix in the description like _[NUCCORE-23]_ for the issue being worked on. Then they will be indexed by JIRA and so we can track changes.
-7. Mark the JIRA issue as "Resolved" for the next release.
+6. All check-ins should have a prefix including the issue reference for the issue being worked on. Then they will be indexed by GitHub issues and so we can track changes.
+7. Mark the issue as "Resolved" for the next release.
 
 
 <a name="codingstandards"/>
@@ -63,12 +63,7 @@ Coding standards are more complicated to define so please look [here](sourcecode
 <a name="mailinglists"/>
 ### Mailing Lists
 
-DataNucleus has the following mailing lists to aid in tracking development. They are read-only.
-
-* [datanucleus-issues](https://lists.sourceforge.net/lists/listinfo/datanucleus-issues) showing all changes in JIRA issues for the project
-* [datanucleus-nightlybuilds](https://lists.sourceforge.net/lists/listinfo/datanucleus-nightlybuilds) showing the result of nightly builds (one mail per day)
-
-In addition you can subscribe to commits for a particular repository on GitHub should you have interest in a plugin.
+DataNucleus has no mailing lists as such, but each plugin is developed in GitHub and you can subscribe to notifications about a particular plugin.
 
 
 <a name="licensing"/>
@@ -143,7 +138,7 @@ If a commercial client requires a particular feature or bug fix then a release i
 needs releasing first then it is released before the plugin in question. We try to avoid any changes in internal APIs
 that would affect downstream plugins if not in a new release cycle. The following is the release process (administrator role)
 
-* Check that there are no unresolved issues in JIRA marked against the release version in question and, if necessary complete 
+* Check that there are no unresolved issues marked against the release version in question and, if necessary complete 
 the outstanding ones, or move them to a later version.
 * Should a developer have a good reason for the release not happening (e.g wanting to get another fix in first) then the 
 release could be delayed, but this is the exception not the norm.
