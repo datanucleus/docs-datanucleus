@@ -32,7 +32,7 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1399'>NUCCORE-1399</a>] -         Add mechanism whereby if there is metadata for a class that is not in the classpath we can just ignore it
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-120'>NUCAPIJDO-120</a>] -         Add support for javax.jdo.query.OptionalExpression
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/5'>datanucleud-api-jdo-5</a>] -         Add support for javax.jdo.query.OptionalExpression
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-335'>NUCJPA-335</a>] -         Support NonDurable Identity as vendor extension
 </li>
@@ -177,6 +177,8 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-jdo-query/issues/3'>datanucleus-jdo-query-3</a>] -         Use LocalDateExpression/LocalTimeExpression/LocalDateTimeExpression from javax.jdo (3.2.0.m4+)
 </li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/7'>datanucleus-api-jdo-7</a>] -         Allow use of jta-data-source/non-jta-data-source from persistence.xml as alternative to standard JDO properties
+</li>
 </ul>
 
 ## Improvement
@@ -219,11 +221,11 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-330'>NUCJPA-330</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-116'>NUCAPIJDO-116</a>] -         Move LocalDateExpression/LocalTimeExpression/LocalDateTimeExpression to javax.jdo
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/8'>datanucleus-api-jdo-8</a>] -         Move LocalDateExpression/LocalTimeExpression/LocalDateTimeExpression to javax.jdo
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-118'>NUCAPIJDO-118</a>] -         Allow lifecycle state change from HOLLOW to P_NONTRANS when no tx and field is already loaded
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/6'>datanucleus-api-jdo-6</a>] -         Allow lifecycle state change from HOLLOW to P_NONTRANS when no tx and field is already loaded
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-119'>NUCAPIJDO-119</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/9'>datanucleus-api-jdo-9</a>] -         Support NUCCORE-1353
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1005'>NUCRDBMS-1005</a>] -         Merge VersionStringMapping, VersionTimestampMapping into VersionMapping. Same for DiscriminatorMapping
 </li>
