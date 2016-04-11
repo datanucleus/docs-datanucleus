@@ -64,7 +64,7 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1018'>NUCRDBMS-1018</a>] -         Add support for JPQL FROM join to a new &quot;root&quot; with ON condition
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJDOQUERY-24'>NUCJDOQUERY-24</a>] -         Add support for javax.jdo.query.OptionalExpression
+<li>[<a href='https://github.com/datanucleus/datanucleus-jdo-query/issues/2'>datanucleus-jdo-query-2</a>] -         Add support for javax.jdo.query.OptionalExpression
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCMAVEN-52'>NUCMAVEN-52</a>] -         Support &quot;datanucleus.metadata.ignoreMetaDataForMissingClasses&quot; via enhancer
 </li>
@@ -174,6 +174,8 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1000'>NUCRDBMS-1000</a>] -         Add support for YearMonth.getYear, YearMonth.getMonthValue, MonthDay.getDayOfMonth, MonthDay.getMonthValue, Period.getMonths, Period.getDays, Period.getYears etc
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1003'>NUCRDBMS-1003</a>] -         JDOQL : Support Optional.get(), Optional.isPresent() rather than current automatic referral to underlying type
+</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-jdo-query/issues/3'>datanucleus-jdo-query-3</a>] -         Use LocalDateExpression/LocalTimeExpression/LocalDateTimeExpression from javax.jdo (3.2.0.m4+)
 </li>
 </ul>
 
