@@ -239,7 +239,7 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-87'>NUCEXCEL-87</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-100'>NUCHBASE-100</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/14'>datanucleus-hbase-14</a>] -         Support NUCCORE-1353
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJSON-57'>NUCJSON-57</a>] -         Support NUCCORE-1353
 </li>
@@ -371,7 +371,7 @@ __Jan 18th 2016__ : _Version 5.0 Milestone 1_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-994'>NUCRDBMS-994</a>] -         JPQL : &quot;elem IN collectionField&quot; is invalid syntax but we could map internally as &quot;elem MEMBER OF collectionField&quot;
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-99'>NUCHBASE-99</a>] -         Lack of current HBase support (newest supported version is 0.94)
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/16'>datanucleus-hbase-16</a>] -         Lack of current HBase support (newest supported version is 0.94)
 </li>
 </ul>
 
@@ -495,7 +495,7 @@ __Jan 18th 2016__ : _Version 5.0 Milestone 1_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-995'>NUCRDBMS-995</a>] -         TypeConverterMapping.getJavaType is incorrect when roleForMember is set
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-98'>NUCHBASE-98</a>] -         Cannot auto-create tables without deactivating sanity checks
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/15'>datanucleus-hbase-15</a>] -         Cannot auto-create tables without deactivating sanity checks
 </li>
 </ul>
 
