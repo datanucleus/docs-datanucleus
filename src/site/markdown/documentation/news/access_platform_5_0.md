@@ -48,7 +48,7 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/7'>datanucleus-hbase-7</a>] -         Persist relation fields as &quot;persistableId&quot; like with MongoDB, Excel, ODF, Cassandra, Neo4j, JSON etc
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-88'>NUCEXCEL-88</a>] -         Support for java.util.Optional
+<li>[<a href='https://github.com/datanucleus/datanucleus-excel/issues/5'>datanucleus-excel-5</a>] -         Support for java.util.Optional
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJSON-58'>NUCJSON-58</a>] -         Support for java.util.Optional
 </li>
@@ -115,9 +115,9 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-70'>NUCCASSANDRA-70</a>] -         When using converter on field it should SCO wrap the result on retrieval but currently doesn't
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-89'>NUCEXCEL-89</a>] -         Look up of object doesn't cater for PK field being Date stored as String (i.e use of converter)
+<li>[<a href='https://github.com/datanucleus/datanucleus-excel/issues/6'>datanucleus-excel-6</a>] -         Look up of object doesn't cater for PK field being Date stored as String (i.e use of converter)
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-90'>NUCEXCEL-90</a>] -         ExcelCandidateList (query results) should respect FetchPlan of query
+<li>[<a href='https://github.com/datanucleus/datanucleus-excel/issues/4'>datanucleus-excel-4</a>] -         ExcelCandidateList (query results) should respect FetchPlan of query
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/13'>datanucleus-hbase-13</a>] -         Use of TypeConverter fails on persist since doesn't use the converted value
 </li>
@@ -237,7 +237,7 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-65'>NUCCASSANDRA-65</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-87'>NUCEXCEL-87</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-excel/issues/7'>datanucleus-excel-7</a>] -         Support NUCCORE-1353
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/14'>datanucleus-hbase-14</a>] -         Support NUCCORE-1353
 </li>
