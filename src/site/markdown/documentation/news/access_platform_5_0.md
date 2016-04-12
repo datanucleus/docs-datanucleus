@@ -34,7 +34,7 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/5'>datanucleud-api-jdo-5</a>] -         Add support for javax.jdo.query.OptionalExpression
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-335'>NUCJPA-335</a>] -         Support NonDurable Identity as vendor extension
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/7'>datanucleus-api-jpa-7</a>] -         Support NonDurable Identity as vendor extension
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-cassandra/issues/9'>datanucleus-cassandra-9</a>] -         Support for java.util.Optional
 </li>
@@ -169,7 +169,7 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1388'>NUCCORE-1388</a>] -         Support persistence of java.time.ZonedDateTime as Timestamp / String
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-331'>NUCJPA-331</a>] -         Allow shared relation to be specified using single annotation rather than 3 extension annotations
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/10'>datanucleus-api-jpa-10</a>] -         Allow shared relation to be specified using single annotation rather than 3 extension annotations
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1000'>NUCRDBMS-1000</a>] -         Add support for YearMonth.getYear, YearMonth.getMonthValue, MonthDay.getDayOfMonth, MonthDay.getMonthValue, Period.getMonths, Period.getDays, Period.getYears etc
 </li>
@@ -190,11 +190,13 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1389'>NUCCORE-1389</a>] -         java.awt.Color should be in DFG
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-25'>NUCREST-25</a>] -         Remove use of NucleusException
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-rest/issues/6'>datanucleus-api-rest-6</a>] -         Remove use of NucleusException
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-26'>NUCREST-26</a>] -         Change &quot;jdoql&quot; / &quot;jpql&quot; modes so that they take parameter &quot;query&quot; with the encoded query
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-rest/issues/4'>datanucleus-api-rest-4</a>] -         Change &quot;jdoql&quot; / &quot;jpql&quot; modes so that they take parameter &quot;query&quot; with the encoded query
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCREST-27'>NUCREST-27</a>] -         Extract Google AppEngine code into separate classes so we can make user types pluggable
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-rest/issues/5'>datanucleus-api-rest-5</a>] -         Extract Google AppEngine code into separate classes so we can make user types pluggable
+</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-rest/issues/7'>datanucleus-api-rest-7</a>] -         Split out code for Google "User" and "Key" classes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1001'>NUCRDBMS-1001</a>] -         Oracle supports NVARCHAR but JDBC driver doesn't acknowledge it
 </li>
@@ -219,7 +221,7 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1384'>NUCCORE-1384</a>] -         JPQL : Support YEAR, MONTH, DAY, HOUR, MINUTE, SECOND as in-memory evaluation
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-330'>NUCJPA-330</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/12'>datanucleus-api-jpa-12</a>] -         Support NUCCORE-1353
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/8'>datanucleus-api-jdo-8</a>] -         Move LocalDateExpression/LocalTimeExpression/LocalDateTimeExpression to javax.jdo
 </li>
@@ -260,11 +262,11 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 ## Bug
 
 <ul>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-332'>NUCJPA-332</a>] -         If metadata specified using orm.xml only, the entity name is not defaulted
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/11'>datanucleus-api-jpa-11</a>] -         If metadata specified using orm.xml only, the entity name is not defaulted
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-333'>NUCJPA-333</a>] -         Criteria multiple join with no join alias results in exception
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/9'>datanucleus-api-jpa-9</a>] -         Criteria multiple join with no join alias results in exception
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-334'>NUCJPA-334</a>] -         Criteria join to a multiple valued path doesn't work.
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/8'>datanucleus-api-jpa-8</a>] -         Criteria join to a multiple valued path doesn't work.
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1009'>NUCRDBMS-1009</a>] -         Parameters in group by expressions are not set on the JDBC statement
 </li>
@@ -294,11 +296,11 @@ __Jan 18th 2016__ : _Version 5.0 Milestone 1_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1358'>NUCCORE-1358</a>] -         Allow JPQL to exclude subclasses of the candidate
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-115'>NUCAPIJDO-115</a>] -         Support java.time types in JDO Typesafe
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/12'>datanucleus-api-jdo-12</a>] -         Support java.time types in JDO Typesafe
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-326'>NUCJPA-326</a>] -         Support JPA 2.1 Tuple/TupleElement
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/15'>datanucleus-api-jpa-15</a>] -         Support JPA 2.1 Tuple/TupleElement
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-328'>NUCJPA-328</a>] -         Make EntityManagerFactory, EntityManager implement AutoCloseable
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/18'>datanucleus-api-jpa-18</a>] -         Make EntityManagerFactory, EntityManager implement AutoCloseable
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-939'>NUCRDBMS-939</a>] -         Support parameters in SELECT clause, particularly when as part of subqueries
 </li>
@@ -337,7 +339,7 @@ __Jan 18th 2016__ : _Version 5.0 Milestone 1_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1363'>NUCCORE-1363</a>] -         CompleteClassTable : has check on duplicated column name, but that should not apply when supporting &quot;nested&quot; embedded
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-111'>NUCAPIJDO-111</a>] -         ExpressionImpl has package variables, should be protected to allow extension in other packages
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/13'>datanucleus-api-jdo-13</a>] -         ExpressionImpl has package variables, should be protected to allow extension in other packages
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-935'>NUCRDBMS-935</a>] -         SQLStatement : change handling of selects to retain SQLText until statement generation
 </li>
@@ -390,9 +392,9 @@ __Jan 18th 2016__ : _Version 5.0 Milestone 1_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1367'>NUCCORE-1367</a>] -         Add method to ObjectProvider to return if the version is loaded
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-113'>NUCAPIJDO-113</a>] -         Allow addInstanceLifecycleListener/removeInstanceLifecycleListener usage until first PM is obtained
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/11'>datanucleus-api-jdo-11</a>] -         Allow addInstanceLifecycleListener/removeInstanceLifecycleListener usage until first PM is obtained
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-322'>NUCJPA-322</a>] -         Support AttributeConverter on a collection field to be for the whole field not just the element
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/17'>datanucleus-api-jpa-17</a>] -         Support AttributeConverter on a collection field to be for the whole field not just the element
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-930'>NUCRDBMS-930</a>] -         Extract &quot;lock-for-update&quot; extension of SQLStatement into &quot;public static final&quot; variable
 </li>
@@ -443,13 +445,13 @@ __Jan 18th 2016__ : _Version 5.0 Milestone 1_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1366'>NUCCORE-1366</a>] -         AbstractMemberMetaData.getClassName(false) can return fully qualified name in some situations
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCAPIJDO-112'>NUCAPIJDO-112</a>] -         @Convert specified on field doesn't always get processed. Works fine when using @Persistent(converter=...)
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/10'>datanucleus-api-jdo-10</a>] -         @Convert specified on field doesn't always get processed. Works fine when using @Persistent(converter=...)
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-319'>NUCJPA-319</a>] -         JPA 2.1 has bug in EntityGraph method signatures for Attribute generic type
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/14'>datanucleus-api-jpa-14</a>] -         JPA 2.1 has bug in EntityGraph method signatures for Attribute generic type
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-327'>NUCJPA-327</a>] -         Handling of UniqueConstraint/Index &quot;name&quot; is incorrect
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/13'>datanucleus-api-jpa-13</a>] -         Handling of UniqueConstraint/Index &quot;name&quot; is incorrect
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-329'>NUCJPA-329</a>] -         JPA MetaModel doesn't cater correctly for List&lt;nonPC&gt;, and sets to CollectionAttributeImpl instead of ListAttributeImpl
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/16'>datanucleus-api-jpa-16</a>] -         JPA MetaModel doesn't cater correctly for List&lt;nonPC&gt;, and sets to CollectionAttributeImpl instead of ListAttributeImpl
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-325'>NUCRDBMS-325</a>] -         JDOQL : &quot;instanceof&quot; with inheritance generates incorrect query when using union, in query FILTER
 </li>
