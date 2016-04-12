@@ -42,11 +42,11 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-71'>NUCCASSANDRA-71</a>] -         Support use of TypeConverter on Collection element, Map key and Map value
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-101'>NUCHBASE-101</a>] -         Support for java.util.Optional
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/9'>datanucleus-hbase-9</a>] -         Support for java.util.Optional
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-104'>NUCHBASE-104</a>] -         Support use of TypeConverter on Collection element, Map key and Map value
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/10'>datanucleus-hbase-10</a>] -         Support use of TypeConverter on Collection element, Map key and Map value
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-109'>NUCHBASE-109</a>] -         Persist relation fields as &quot;persistableId&quot; like with MongoDB, Excel, ODF, Cassandra, Neo4j, JSON etc
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/7'>datanucleus-hbase-7</a>] -         Persist relation fields as &quot;persistableId&quot; like with MongoDB, Excel, ODF, Cassandra, Neo4j, JSON etc
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-88'>NUCEXCEL-88</a>] -         Support for java.util.Optional
 </li>
@@ -73,7 +73,7 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 ## Improvement
 
 <ul>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-110'>NUCHBASE-110</a>] -         If attempt to use HBase with IDENTITY value generator it throws an exception. Better to switch to INCREMENT and log warning
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/6'>datanucleus-hbase-6</a>] -         If attempt to use HBase with IDENTITY value generator it throws an exception. Better to switch to INCREMENT and log warning
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1015'>NUCRDBMS-1015</a>] -         Collection.contains allows control over variable join/subquery - should allow the same for Map.containsKey, Map.containsValue
 </li>
@@ -96,9 +96,9 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-68'>NUCCASSANDRA-68</a>] -         Complete support for retrieval of byte[] field
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-102'>NUCHBASE-102</a>] -         HBaseSchemaHandler hasn't been properly upgraded to HBase 1.x
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/4'>datanucleus-hbase-4</a>] -         HBaseSchemaHandler hasn't been properly upgraded to HBase 1.x
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-105'>NUCHBASE-105</a>] -         HBase fetch of fields doesn't cater for non-persistent fields (transient, transactional)
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/3'>datanucleus-hbase-3</a>] -         HBase fetch of fields doesn't cater for non-persistent fields (transient, transactional)
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1019'>NUCRDBMS-1019</a>] -         Support for NUCCORE-1395 options
 </li>
@@ -119,15 +119,15 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCEXCEL-90'>NUCEXCEL-90</a>] -         ExcelCandidateList (query results) should respect FetchPlan of query
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-103'>NUCHBASE-103</a>] -         Use of TypeConverter fails on persist since doesn't use the converted value
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/13'>datanucleus-hbase-13</a>] -         Use of TypeConverter fails on persist since doesn't use the converted value
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-106'>NUCHBASE-106</a>] -         Query of NonDurable identity fails, due to unknown type info even though the class is input
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/8'>datanucleus-hbase-8</a>] -         Query of NonDurable identity fails, due to unknown type info even though the class is input
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-107'>NUCHBASE-107</a>] -         HBase query comparing Enum field with ordinal value (or name) doesn't evaluate
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/11'>datanucleus-hbase-11</a>] -         HBase query comparing Enum field with ordinal value (or name) doesn't evaluate
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-108'>NUCHBASE-108</a>] -         Hbase plugin doesn't cope with fetch of relation field pointing to object that is no longer present. Should just set relation to null
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/5'>datanucleus-hbase-5</a>] -         Hbase plugin doesn't cope with fetch of relation field pointing to object that is no longer present. Should just set relation to null
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCHBASE-111'>NUCHBASE-111</a>] -         Lookup of object when using TypeConverter on PK field fails to find the object
+<li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/12'>datanucleus-hbase-12</a>] -         Lookup of object when using TypeConverter on PK field fails to find the object
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-168'>NUCMONGODB-168</a>] -         MongoDB v3.x removes support for using java.sql.* so need to pass in java.util.Date
 </li>
