@@ -60,7 +60,7 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCNEOFORJ-58'>NUCNEOFORJ-58</a>] -         Support for java.util.Optional
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-65'>NUCODF-65</a>] -         Support for java.util.Optional
+<li>[<a href='https://github.com/datanucleus/datanucleus-odf/issues/5'>datanucleus-odf-4</a>] -         Support for java.util.Optional
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1018'>NUCRDBMS-1018</a>] -         Add support for JPQL FROM join to a new &quot;root&quot; with ON condition
 </li>
@@ -131,9 +131,9 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-168'>NUCMONGODB-168</a>] -         MongoDB v3.x removes support for using java.sql.* so need to pass in java.util.Date
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-66'>NUCODF-66</a>] -         Look up of object doesn't cater for PK field being Date stored as String (i.e use of converter)
+<li>[<a href='https://github.com/datanucleus/datanucleus-odf/issues/2'>datanucleus-odf-2</a>] -         Look up of object doesn't cater for PK field being Date stored as String (i.e use of converter)
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-67'>NUCODF-67</a>] -         ODFCandidateList (query results) should respect FetchPlan of query
+<li>[<a href='https://github.com/datanucleus/datanucleus-odf/issues/3'>datanucleus-odf-3</a>] -         ODFCandidateList (query results) should respect FetchPlan of query
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1014'>NUCRDBMS-1014</a>] -         NUCRDBMS-1012 updates to join table PK creation were incomplete. Need further improvement
 </li>
@@ -251,7 +251,7 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCNEOFORJ-57'>NUCNEOFORJ-57</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCODF-64'>NUCODF-64</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-odf/issues/5'>datanucleus-odf-5</a>] -         Support NUCCORE-1353
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCXML-56'>NUCXML-56</a>] -         Support NUCCORE-1353
 </li>
