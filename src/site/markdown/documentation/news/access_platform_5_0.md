@@ -36,11 +36,11 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCJPA-335'>NUCJPA-335</a>] -         Support NonDurable Identity as vendor extension
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-67'>NUCCASSANDRA-67</a>] -         Support for java.util.Optional
+<li>[<a href='https://github.com/datanucleus/datanucleus-cassandra/issues/9'>datanucleus-cassandra-9</a>] -         Support for java.util.Optional
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-69'>NUCCASSANDRA-69</a>] -         Support persistence of serialised PC fields
+<li>[<a href='https://github.com/datanucleus/datanucleus-cassandra/issues/10'>datanucleus-cassandra-10</a>] -         Support persistence of serialised PC fields
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-71'>NUCCASSANDRA-71</a>] -         Support use of TypeConverter on Collection element, Map key and Map value
+<li>[<a href='https://github.com/datanucleus/datanucleus-cassandra/issues/11'>datanucleus-cassandra-11</a>] -         Support use of TypeConverter on Collection element, Map key and Map value
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/9'>datanucleus-hbase-9</a>] -         Support for java.util.Optional
 </li>
@@ -50,15 +50,15 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-excel/issues/5'>datanucleus-excel-5</a>] -         Support for java.util.Optional
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJSON-58'>NUCJSON-58</a>] -         Support for java.util.Optional
+<li>[<a href='https://github.com/datanucleus/datanucleus-json/issues/3'>datanucleus-json-3</a>] -         Support for java.util.Optional
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-115'>NUCMONGODB-115</a>] -         Support inherited embedded Map keys/values
+<li>[<a href='https://github.com/datanucleus/datanucleus-mongodb/issues/14'>datanucleus-mongodb-14</a>] -         Support inherited embedded Map keys/values
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-167'>NUCMONGODB-167</a>] -         Support for java.util.Optional
+<li>[<a href='https://github.com/datanucleus/datanucleus-mongodb/issues/15'>datanucleus-mongodb-15</a>] -         Support for java.util.Optional
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-169'>NUCMONGODB-169</a>] -         Support use of TypeConverter on Collection element, Map key and Map value
+<li>[<a href='https://github.com/datanucleus/datanucleus-mongodb/issues/13'>datanucleus-mongodb-13</a>] -         Support use of TypeConverter on Collection element, Map key and Map value
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCNEOFORJ-58'>NUCNEOFORJ-58</a>] -         Support for java.util.Optional
+<li>[<a href='https://github.com/datanucleus/datanucleus-neo4j/issues/13'>datanucleus-neo4j-13</a>] -         Support for java.util.Optional
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-odf/issues/5'>datanucleus-odf-4</a>] -         Support for java.util.Optional
 </li>
@@ -92,9 +92,9 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1397'>NUCCORE-1397</a>] -         Add converter for conversion from BufferedImage to ByteBuffer
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-72'>NUCCASSANDRA-72</a>] -         Support for persisting fields of type BufferedImage
+<li>[<a href='https://github.com/datanucleus/datanucleus-cassandra/issues/13'>datanucleus-cassandra-13</a>] -         Support for persisting fields of type BufferedImage
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-68'>NUCCASSANDRA-68</a>] -         Complete support for retrieval of byte[] field
+<li>[<a href='https://github.com/datanucleus/datanucleus-cassandra/issues/12'>datanucleus-cassandra-12</a>] -         Complete support for retrieval of byte[] field
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/4'>datanucleus-hbase-4</a>] -         HBaseSchemaHandler hasn't been properly upgraded to HBase 1.x
 </li>
@@ -113,7 +113,7 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1398'>NUCCORE-1398</a>] -         In-memory evaluation of MonthDay.getMonthValue and YearMonth.getMonthValue are returning Month object!
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-70'>NUCCASSANDRA-70</a>] -         When using converter on field it should SCO wrap the result on retrieval but currently doesn't
+<li>[<a href='https://github.com/datanucleus/datanucleus-cassandra/issues/14'>datanucleus-cassandra-14</a>] -         When using converter on field it should SCO wrap the result on retrieval but currently doesn't
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-excel/issues/6'>datanucleus-excel-6</a>] -         Look up of object doesn't cater for PK field being Date stored as String (i.e use of converter)
 </li>
@@ -129,7 +129,7 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/12'>datanucleus-hbase-12</a>] -         Lookup of object when using TypeConverter on PK field fails to find the object
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-168'>NUCMONGODB-168</a>] -         MongoDB v3.x removes support for using java.sql.* so need to pass in java.util.Date
+<li>[<a href='https://github.com/datanucleus/datanucleus-mongodb/issues/16'>datanucleus-mongodb-16</a>] -         MongoDB v3.x removes support for using java.sql.* so need to pass in java.util.Date
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-odf/issues/2'>datanucleus-odf-2</a>] -         Look up of object doesn't cater for PK field being Date stored as String (i.e use of converter)
 </li>
@@ -235,25 +235,25 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1010'>NUCRDBMS-1010</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCASSANDRA-65'>NUCCASSANDRA-65</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-cassandra/issues/8'>datanucleus-cassandra-8</a>] -         Support NUCCORE-1353
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-excel/issues/7'>datanucleus-excel-7</a>] -         Support NUCCORE-1353
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/14'>datanucleus-hbase-14</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCJSON-57'>NUCJSON-57</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-json/issues/4'>datanucleus-json-4</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCLDAP-67'>NUCLDAP-67</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-ldap/issues/10'>datanucleus-ldap-10</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-166'>NUCMONGODB-166</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-mongodb/issues/16'>datanucleus-mongodb-12</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCNEODATIS-31'>NUCNEODATIS-31</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-neodatis/issues/1'>datanucleus-neodatis-1</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCNEOFORJ-57'>NUCNEOFORJ-57</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-neo4j/issues/12'>datanucleus-neo4j-12</a>] -         Support NUCCORE-1353
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-odf/issues/5'>datanucleus-odf-5</a>] -         Support NUCCORE-1353
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCXML-56'>NUCXML-56</a>] -         Support NUCCORE-1353
+<li>[<a href='https://github.com/datanucleus/datanucleus-xml/issues/4'>datanucleus-xml-4</a>] -         Support NUCCORE-1353
 </li>
 </ul>
 
@@ -418,11 +418,11 @@ __Jan 18th 2016__ : _Version 5.0 Milestone 1_ includes the following changes
 </li>
 <li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-999'>NUCRDBMS-999</a>] -         Support date/time methods on SQLite
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-164'>NUCMONGODB-164</a>] -         Upgrade to MongoDB v3.x
+<li>[<a href='https://github.com/datanucleus/datanucleus-mongodb/issues/10'>datanucleus-mongodb-10</a>] -         Upgrade to MongoDB v3.x
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCMONGODB-165'>NUCMONGODB-165</a>] -         Make sure &quot;ownerMmd&quot; is set for FetchFieldManager when embedded, add TODO to resolve
+<li>[<a href='https://github.com/datanucleus/datanucleus-mongodb/issues/11'>datanucleus-mongodb-11</a>] -         Make sure &quot;ownerMmd&quot; is set for FetchFieldManager when embedded, add TODO to resolve
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCNEOFORJ-56'>NUCNEOFORJ-56</a>] -         Upgrade to Neo4j v2.3
+<li>[<a href='https://github.com/datanucleus/datanucleus-neo4j/issues/11'>datanucleus-neo4j-11</a>] -         Upgrade to Neo4j v2.3
 </li>
 </ul>
 
