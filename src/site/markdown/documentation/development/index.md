@@ -76,7 +76,7 @@ provided this is clearly indicated.
 
 ### Branching
 
-As a general rule, we branch when we're at a point of changing internal/external DataNucleus APIs of a plugin. So, for example, we're developing
+As a general rule, we branch when we're at a point of changing internal/external DataNucleus APIs of a plugin. So, for example, we are developing
 _datanucleus-core_ and want to change some API. The process is as follows
 
 1. Create branch with name "{version}" where the _version_ is the version that is stored in that branch (so the current version).
