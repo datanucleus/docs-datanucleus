@@ -50,7 +50,7 @@ then it means they often cannot work effectively. __Breakage of unit tests or JD
 4. Issues that involve many changes should be split, where appropriate, into smaller steps so that you can still pass point 3 above with each check in
 5. Where changes are significant and you cannot split them into smaller check-ins (that pass the tests) should be checked in to your own GitHub branch 
 and when complete they should be merged into GitHub 'master'. If help is needed at this point then other developers should help in merging large changes.
-6. All check-ins should have a prefix including the issue reference for the issue being worked on. Then they will be indexed by GitHub issues and so we can track changes.
+6. All check-ins should refer to the issue being worked on in their commit message ("#34" contained in the commit message links the commit to issue #34 of that plugin). 
 7. Mark the issue as "Resolved" for the next release.
 
 
