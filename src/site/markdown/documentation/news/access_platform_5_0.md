@@ -26,11 +26,11 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 ## New Feature
 
 <ul>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1394'>NUCCORE-1394</a>] -         Add support for JPQL FROM join to a new &quot;root&quot; with ON condition
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/57'>datanucleus-core-57</a>] -         Add support for JPQL FROM join to a new &quot;root&quot; with ON condition
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1396'>NUCCORE-1396</a>] -         CompleteClassTable and MemberColumnMapping do not support collection element or map key/value conversion. Need to add
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/58'>datanucleus-core-58</a>] -         CompleteClassTable and MemberColumnMapping do not support collection element or map key/value conversion. Need to add
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1399'>NUCCORE-1399</a>] -         Add mechanism whereby if there is metadata for a class that is not in the classpath we can just ignore it
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/56'>datanucleus-core-56</a>] -         Add mechanism whereby if there is metadata for a class that is not in the classpath we can just ignore it
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/5'>datanucleud-api-jdo-5</a>] -         Add support for javax.jdo.query.OptionalExpression
 </li>
@@ -62,7 +62,7 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-odf/issues/5'>datanucleus-odf-4</a>] -         Support for java.util.Optional
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1018'>NUCRDBMS-1018</a>] -         Add support for JPQL FROM join to a new &quot;root&quot; with ON condition
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/38'>datanucleus-rdbms-38</a>] -         Add support for JPQL FROM join to a new &quot;root&quot; with ON condition
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-jdo-query/issues/2'>datanucleus-jdo-query-2</a>] -         Add support for javax.jdo.query.OptionalExpression
 </li>
@@ -75,22 +75,22 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 <ul>
 <li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/6'>datanucleus-hbase-6</a>] -         If attempt to use HBase with IDENTITY value generator it throws an exception. Better to switch to INCREMENT and log warning
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1015'>NUCRDBMS-1015</a>] -         Collection.contains allows control over variable join/subquery - should allow the same for Map.containsKey, Map.containsValue
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/39'>datanucleus-rdbms-39</a>] -         Collection.contains allows control over variable join/subquery - should allow the same for Map.containsKey, Map.containsValue
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1016'>NUCRDBMS-1016</a>] -         Collection.contains, Map.containsKey, Map.containsValue can define how a variable is &quot;joined&quot; (subquery or innerjoin) but ought to allow &quot;leftouterjoin&quot; also
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/42'>datanucleus-rdbms-42</a>] -         Collection.contains, Map.containsKey, Map.containsValue can define how a variable is &quot;joined&quot; (subquery or innerjoin) but ought to allow &quot;leftouterjoin&quot; also
 </li>
 </ul>
 
 ## Task
 
 <ul>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1392'>NUCCORE-1392</a>] -         Marking a member as &quot;serializable&quot; conflicts with the use of a converter
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/59'>datanucleus-core-59</a>] -         Marking a member as &quot;serializable&quot; conflicts with the use of a converter
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1393'>NUCCORE-1393</a>] -         Clean up code around ClassLoaderResolverImpl for JRE classes so matches those in ClassNameConstants
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/62'>datanucleus-core-62</a>] -         Clean up code around ClassLoaderResolverImpl for JRE classes so matches those in ClassNameConstants
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1395'>NUCCORE-1395</a>] -         Add StoreManager supportedOption for serialized collection element, array element, map key, map value
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/60'>datanucleus-core-60</a>] -         Add StoreManager supportedOption for serialized collection element, array element, map key, map value
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1397'>NUCCORE-1397</a>] -         Add converter for conversion from BufferedImage to ByteBuffer
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/61'>datanucleus-core-61</a>] -         Add converter for conversion from BufferedImage to ByteBuffer
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-cassandra/issues/13'>datanucleus-cassandra-13</a>] -         Support for persisting fields of type BufferedImage
 </li>
@@ -100,18 +100,18 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-hbase/issues/3'>datanucleus-hbase-3</a>] -         HBase fetch of fields doesn't cater for non-persistent fields (transient, transactional)
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1019'>NUCRDBMS-1019</a>] -         Support for NUCCORE-1395 options
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/43'>datanucleus-rdbms-43</a>] -         Support for NUCCORE-1395 options
 </li>
 </ul>
 
 ## Bug
 
 <ul>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1390'>NUCCORE-1390</a>] -         In-memory evaluation of Optional.get doesn't check for isPresent but should
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/64'>datanucleus-core-64</a>] -         In-memory evaluation of Optional.get doesn't check for isPresent but should
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1391'>NUCCORE-1391</a>] -         SerializableByteBufferConverter should use wrap/remaining to convert to bytes but doesn't
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/65'>datanucleus-core-65</a>] -         SerializableByteBufferConverter should use wrap/remaining to convert to bytes but doesn't
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCCORE-1398'>NUCCORE-1398</a>] -         In-memory evaluation of MonthDay.getMonthValue and YearMonth.getMonthValue are returning Month object!
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/63'>datanucleus-core-63</a>] -         In-memory evaluation of MonthDay.getMonthValue and YearMonth.getMonthValue are returning Month object!
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-cassandra/issues/14'>datanucleus-cassandra-14</a>] -         When using converter on field it should SCO wrap the result on retrieval but currently doesn't
 </li>
@@ -135,9 +135,9 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 </li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-odf/issues/3'>datanucleus-odf-3</a>] -         ODFCandidateList (query results) should respect FetchPlan of query
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1014'>NUCRDBMS-1014</a>] -         NUCRDBMS-1012 updates to join table PK creation were incomplete. Need further improvement
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/41'>datanucleus-rdbms-41</a>] -         NUCRDBMS-1012 updates to join table PK creation were incomplete. Need further improvement
 </li>
-<li>[<a href='http://issues.datanucleus.org/browse/NUCRDBMS-1017'>NUCRDBMS-1017</a>] -         Insert of array of persistable objects fails to insert join table when cascade not enabled
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/40'>datanucleus-rdbms-40</a>] -         Insert of array of persistable objects fails to insert join table when cascade not enabled
 </li>
 </ul>
 
