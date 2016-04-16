@@ -58,49 +58,28 @@ project got a Forum etc etc
 
 DataNucleus is used by many companies and groups in their own software. Below are a short subset of those publicisable.
 
-<table>
-<tr>
-<td width="33%"><a href="http://code.google.com/appengine/" target="_blank"><img src="../images/usage/appengine.gif" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.vmforce.com/" target="_blank"><img src="../images/usage/vmforce.png" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.redbooks.ibm.com/abstracts/REDP4512.html?Open" target="_blank"><img src="../images/usage/tivoli.gif" border="0" alt=""/></a></td>
-</tr>
+[![AppEngine](../images/usage/appengine.gif)](http://code.google.com/appengine/)
+[![VMForce](../images/usage/vmforce.png)](http://www.vmforce.com/)
+[![IBM Tivoli](../images/usage/tivoli.gif)](http://www.redbooks.ibm.com/abstracts/REDP4512.html?Open)
+[![Yahoo](../images/companies/yahoo.gif)](http://www.yahoo.com)
+[![Roma Framework](../images/usage/roma.jpg)](http://www.romaframework.org)
+[![Colibri](../images/usage/colibri.jpg)](http://www.projectocolibri.com/)
+[![JFire](../images/usage/jfire.png)](http://www.jfire.org)
+[![Metamicro](http://www.datanucleus.com/images/companies/metamicro.jpg)](http://www.metamicro.com)
+[![Travelmuse](http://www.datanucleus.org/images/companies/travelmuse.png)](http://www.travelmuse.com)
+[![HP](http://www.datanucleus.org/images/companies/hp.jpg)](http://www.hp.com)
+[![Livestream](http://www.datanucleus.org/images/companies/livestream.jpg)](http://www.livestream.com)
+[![GE](http://www.datanucleus.org/images/companies/ge.png)](http://ge.geglobalresearch.com/)
+[![StepAhead Software](../images/companies/stepahead.gif)](http://www.stepaheadsoftware.com)
+[![Ridgetop](../images/companies/ridgetop.jpg)](http://www.ridgetop-group.com/)
+[![Seismic Exchange](../images/companies/seismicexchange.gif)](http://www.seismicexchange.com/)
+[![Apache HIVE](../images/companies/apache_hive.jpg)](http://hive.apache.org/)
+[![Apache ISIS](../images/companies/apache_isis.png)](http://isis.apache.org/)
+[![BMC](../images/companies/bmc.gif)](http://www.bmc.com)
+[![Lockheed](../images/companies/lockheed.png)](http://www.lockheedmartin.com/)
+[![Wildbook](../images/companies/wildbook.jpg)](http://www.wildme.org/wildbook/)
+[![Cisco Systems](../images/companies/cisco.png)](http://www.cisco.com)
 
-<tr>
-<td width="33%"><a href="http://www.yahoo.com" target="_blank"><img src="../images/companies/yahoo.gif" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.romaframework.org" target="_blank"><img src="../images/usage/roma.jpg" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.projectocolibri.com/" target="_blank"><img src="../images/usage/colibri.jpg" border="0" alt=""/></a></td>
-</tr>
-
-<tr>
-<td width="33%"><a href="http://www.jfire.org" target="_blank"><img src="../images/usage/jfire.png" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.metamicro.com" target="_blank"><img src="http://www.datanucleus.com/images/companies/metamicro.jpg" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.travelmuse.com" target="_blank"><img src="http://www.datanucleus.org/images/companies/travelmuse.png" border="0" alt=""/></a></td>
-</tr>
-
-<tr>
-<td width="33%"><a href="http://www.hp.com" target="_blank"><img src="http://www.datanucleus.org/images/companies/hp.jpg" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.livestream.com" target="_blank"><img src="http://www.datanucleus.org/images/companies/livestream.jpg" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://ge.geglobalresearch.com/" target="_blank"><img src="http://www.datanucleus.org/images/companies/ge.png" border="0" alt=""/></a></td>
-</tr>
-
-<tr>
-<td width="33%"><a href="http://www.stepaheadsoftware.com" target="_blank"><img src="../images/companies/stepahead.gif" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.ridgetop-group.com/" target="_blank"><img src="../images/companies/ridgetop.jpg" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.seismicexchange.com/" target="_blank"><img src="../images/companies/seismicexchange.gif" border="0" alt=""/></a></td>
-</tr>
-
-<tr>
-<td width="33%"><a href="http://hive.apache.org/" target="_blank"><img src="../images/companies/apache_hive.jpg" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://isis.apache.org/" target="_blank"><img src="../images/companies/apache_isis.png" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.bmc.com" target="_blank"><img src="../images/companies/bmc.gif" border="0" alt=""/></a></td>
-</tr>
-
-<tr>
-<td width="33%"><a href="http://www.lockheedmartin.com/" target="_blank"><img src="../images/companies/lockheed.png" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.wildme.org/wildbook/" target="_blank"><img src="../images/companies/wildbook.jpg" border="0" alt=""/></a></td>
-<td width="33%"><a href="http://www.cisco.com" target="_blank"><img src="../images/companies/cisco.png" border="0" alt=""/></a></td>
-</tr>
-</table>
 
 ## Publicise Your Usage
 
