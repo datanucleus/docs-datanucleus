@@ -79,6 +79,7 @@ DataNucleus is used by many companies and groups in their own software. Below ar
 [![Lockheed](../images/companies/lockheed.png)](http://www.lockheedmartin.com/)
 [![Wildbook](../images/companies/wildbook.jpg)](http://www.wildme.org/wildbook/)
 [![Cisco Systems](../images/companies/cisco.png)](http://www.cisco.com)
+[![Google](../images/companies/google.jpg)](http://www.google.com)
 
 
 ## Publicise Your Usage
