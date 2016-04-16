@@ -187,35 +187,17 @@ __Note that all amounts are specified in GBP (symbolised by the £ symbol)__
 
 There are many clients to whom DataNucleus developers have provided services. Below are a small subset.
 
-<table>
-    <tr>
-        <td width="50%"><a href="http://www.nightlabs.com" target="_blank">
-            <img src="images/companies/nightlabs.png" border="0" alt="Nightlabs"/></a></td>
-        <td width="50%"><a href="http://www.metamicro.com" target="_blank">
-            <img src="images/companies/metamicro.jpg" border="0" alt="Metamicro"/></a></td>
-    </tr>
-    <tr>
-        <td bgcolor="#36526c"><a href="http://www.bmc.com" target="_blank">
-            <img src="images/companies/bmc.gif" border="0" alt="BMC"/></a></td>
-        <td><a href="http://www.transcore.com" target="_blank">
-            <img src="images/companies/transcore.png" border="0" alt="Transcore"/></a></td>
-    </tr>
-    <tr>
-        <td width="50%"><a href="http://www.yahoo.com" target="_blank">
-            <img src="images/companies/yahoo.gif" border="0" alt="Yahoo"/></a></td>
-        <td width="50%"><a href="http://www.w4global.com" target="_blank">
-            <img src="images/companies/w4.png" border="0" alt="W4"/></a></td>
-    </tr>
-    <tr>
-        <td width="50%"><a href="http://ge.geglobalresearch.com/" target="_blank">
-            <img src="images/companies/ge.png" border="0" alt="General Electric"/></a></td>
-        <td width="50%"><a href="http://www.lockheedmartin.com/" target="_blank">
-            <img src="images/companies/lockheed.png" border="0" alt="Lockheed Martin"/></a></td>
-    </tr>
-    <tr>
-        <td width="50%"><a href="http://www.seismicexchange.com/" target="_blank">
-            <img src="images/companies/seismicexchange.gif" border="0" alt="Seismic Exchange"/></a></td>
-        <td width="50%"><a href="http://www.livestream.com/" target="_blank">
-            <img src="images/companies/livestream.jpg" border="0" alt="LiveStream"/></a></td>
-    </tr>
-</table>
+    <img src="images/companies/nightlabs.png" border="0" alt="Nightlabs"/>
+    <img src="images/companies/metamicro.jpg" border="0" alt="Metamicro"/>
+    <img src="images/companies/bmc.gif" border="0" alt="BMC"/>
+    <img src="images/companies/transcore.png" border="0" alt="Transcore"/>
+    <img src="images/companies/yahoo.gif" border="0" alt="Yahoo"/>
+    <img src="images/companies/w4.png" border="0" alt="W4"/>
+    <img src="images/companies/ge.png" border="0" alt="General Electric"/>
+    <img src="images/companies/lockheed.png" border="0" alt="Lockheed Martin"/>
+    <img src="images/companies/seismicexchange.gif" border="0" alt="Seismic Exchange"/>
+    <img src="images/companies/livestream.jpg" border="0" alt="LiveStream"/>
+    <img src="images/companies/cisco.png" border="0" alt="Cisco Systems"/>
+    <img src="images/companies/google.jpg" border="0" alt="Google"/>
+    <img src="images/companies/dat.svg" border="0" alt="DAT"/>
+
