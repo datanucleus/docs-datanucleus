@@ -47,7 +47,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>JDO3.2, JPA2.1, REST</td>
   <td>1.8+</td>
   <td></td>
-  <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td><a href="http://www.datanucleus.org/support.html#free">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td>
     <a href="http://www.datanucleus.org/products/accessplatform_5_0/index.html">Online</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/5.0.0.m1/datanucleus-accessplatform-docs-5.0.zip/download">Download</a> | 
@@ -62,7 +62,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>JDO3.2, JPA2.1, REST</td>
   <td>1.7+</td>
   <td>Oct/2015</td>
-  <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td><a href="http://www.datanucleus.org/support.html#free">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td>
     <a href="http://www.datanucleus.org/products/accessplatform_4_2/index.html">Online</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.zip/download">Download</a> | 
@@ -77,7 +77,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.7+</td>
   <td>May/2015</td>
-  <td><a href="http://forum.datanucleus.org">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
+  <td><a href="http://www.datanucleus.org/support.html#free">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td>
     <a href="http://www.datanucleus.org/products/accessplatform_4_1/index.html">Online</a> | 
     <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/datanucleus-accessplatform-docs-4.1.zip/download">Download</a> | 
