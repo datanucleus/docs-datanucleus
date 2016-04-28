@@ -32,8 +32,8 @@ to provide a zip file just to package all of their requirements up. In fact Data
 (jdo-api.jar when using JDO, or persistence-api.jar when using JPA) - beat that!
 * __DataNucleus is quality-driven__ being developed using a Test Driven Development methodology. We have more than 2000 unit tests that 
 are run before any release guaranteeing a stable product. In addition we baseline our capabilities against standard Java TCKs (JDO, JPA)
-the definition of specification compliance. In our [issue tracker](http://issues.datanucleus.org) you will not find large numbers of 
-outstanding high priority items that you have to workaround (unlike what you find in the Hibernate, OpenJPA, EclipseLink issue trackers for example).
+the definition of specification compliance. With our plugins you will not find large numbers of outstanding high priority issues that you have to workaround 
+(unlike what you find in the Hibernate, OpenJPA, EclipseLink issue trackers for example).
 * __DataNucleus provides a level of free support__ by way of an [online Forum](http://forum.datanucleus.org) and also provides 
 [commercial support arrangements](http://www.datanucleus.org/support.html#support) if you require it.
 * __DataNucleus [consulting](http://www.datanucleus.org/support.html#timebased_consulting)__ can be arranged with the developers of DataNucleus.
