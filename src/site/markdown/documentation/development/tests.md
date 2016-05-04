@@ -411,10 +411,10 @@ The default database configured in the test projects is H2.
 
 Following are notes about running the DataNucleus unit tests with particular databases.
 
-### Oracle 10.2.0
+### Oracle 10.2
 
 If you face the issue _ORA-12519, TNS:no appropriate service handler_, try increasing the parameters _sessions_ and _processes_ to 300 and 
-_open_cursors_ to 1000. To change these values in Oracle, issue the following statements.
+_open\_cursors_ to 1000. To change these values in Oracle, issue the following statements.
 
 
 	alter system set open_cursors = 1000 scope=spfile
@@ -428,8 +428,7 @@ Refer also to the Oracle spfile (see also _initXE.ora_ or _init.ora_)
 	*.open_cursors=1000
 
 
-If you face the issue _ORA-01000: maximum open cursors exceeded_, try increasing the parameter
-_open_cursors_ to 1000 in the file _initXE.ora_ or _init.ora_.
+If you face the issue _ORA-01000: maximum open cursors exceeded_, try increasing the parameter _open\_cursors_ to 1000 in the file _initXE.ora_ or _init.ora_.
 
 	*.open_cursors=1000
 
