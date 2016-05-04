@@ -14,7 +14,6 @@
 * [Development Process](development/index.html)
 * [Source Code](development/sourcecode.html) - get your hands on the code and develop it, with the coding standards we work to
 * [Testing](development/tests.html) - test processes for developing DataNucleus codebase
-* [Jenkins](http://jenkins.datanucleus.org) - Continuous Integration using Jenkins
 * [Sonar](http://sonar.datanucleus.org) - Sonar code analysis
 * [Plugin Migration](plugin_migration.html) - process for upgrade migration of DataNucleus plugins
 * [Schema Migration](development/schema_migration.html) - Migration of the schema for an application during the development process
