@@ -124,6 +124,5 @@ DataNucleus also wishes to thank the companies/developers who have granted our p
 [![GitHub](../images/GitHub-Mark-64px.png)](http://www.github.com)
 
 
-We would also like to thank
-* [LWIS.net](http://www.lwis.net/free-css-drop-down-menu/) for providing a great CSS drop-down menu capability used on some of our docs.
+We would also like to thank [LWIS.net](http://www.lwis.net/free-css-drop-down-menu/) for providing a great CSS drop-down menu capability used on some of our docs.
 
