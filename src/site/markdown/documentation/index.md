@@ -2,12 +2,11 @@
 
 # Project
 
-* [License for DataNucleus products](license.html)
 * [DataNucleus Usage](usage.html)
+* [License for DataNucleus products](license.html)
 * [Problem Reporting](problem_reporting.html) : what to do if you have a problem
 * [Release Schedule](release_plans.html) : outline of when we think to release versions
 * [Donations](donations.html) - want to contribute but don't have time/skills required?
-* [Acknowledgements](acknowledgements.html) - thanking groups who have helped the project
 
 # Development
 

@@ -109,3 +109,21 @@ Should you have any particular requirements for logo sizes, please contact us.
 
 ![Logo1](../images/logos/DataNucleus_AccessPlatform_40.jpg)
 ![Logo2](../images/logos/DataNucleus_AccessPlatform_85.jpg)
+
+
+## Acknowledgements
+
+DataNucleus wishes to thank the hosts for our site.
+[Nightlabs](http://www.nightlabs.com) supported the predecessor to DataNucleus (JPOX) virtually from its inception in 2003, and they also provided hosting for 
+DataNucleus until May 2013.
+[CodeWizards.co (former NightLabs personnel)](http://www.codewizards.co) provide hosting for DataNucleus from May 2013.
+
+
+DataNucleus also wishes to thank the companies/developers who have granted our project use of their great software/services allowing us to work much quicker and in a more enjoyable way.
+[![MvnForum](../images/thirdparty/mvnforum_logo.gif)](http://www.mvnforum.com/)
+[![GitHub](../images/GitHub-Mark-64px.png)](http://www.github.com)
+
+
+We would also like to thank
+* [LWIS.net](http://www.lwis.net/free-css-drop-down-menu/) for providing a great CSS drop-down menu capability used on some of our docs.
+
