@@ -23,7 +23,7 @@ _Version 5.0_ includes the following over 4.2
 
 __May 17th 2016__ : _Version 5.0 Milestone 4_ includes the following changes
 
-## Improvements
+## Enhancements
 
 <ul>
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/74">datanucleus-core-74</a>] - In-memory evaluation : if result fails, throw exception</li>
@@ -32,20 +32,20 @@ __May 17th 2016__ : _Version 5.0 Milestone 4_ includes the following changes
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/66">datanucleus-core-66</a>] - SchemaTool : Support "ignoreMetaDataForMissingClasses"</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/55">datanucleus-core-55</a>] - Support method MONTH_JAVA in-memory</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/54">datanucleus-core-54</a>] - Add in-memory evaluation support for Optional.orElse</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/16">datanucleus-cassandra-16</a> - Add ability to check for existence of records when inserting</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/15">datanucleus-cassandra-15</a> - Support JPA @OrderBy</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/2">datanucleus-cassandra-2</a> - Support JPA @EmbeddedId</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-excel/issues/8">datanucleus-excel-8</a> - Support JPA @OrderBy</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/19">datanucleus-hbase-19</a> - Support CompoundIdentity</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/18">datanucleus-hbase-18</a> - Support JPA @OrderBy</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/17">datanucleus-hbase-17</a> - Support JPA @EmbeddedId</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-json/issues/5">datanucleus-json-5</a> - Support JPA @OrderBy</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/17">datanucleus-mongodb-17</a> - Support JPA @OrderBy</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-odf/issues/6">datanucleus-odf-6</a> - Support JPA @OrderBy</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/48">datanucleus-rdbms-48</a> - Rename of backing store variables so clearer the intent</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/47">datanucleus-rdbms-47</a> - Oracle supports specifying the PRIMARY KEY in the CREATE TABLE statement</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/46">datanucleus-rdbms-46</a> - jdbc timeouts are not propagated for SQL queries</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/37">datanucleus-rdbms-37</a> - Add support for java.util.Optional JDOQL "orElse" method</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/16">datanucleus-cassandra-16</a>] - Add ability to check for existence of records when inserting</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/15">datanucleus-cassandra-15</a>] - Support JPA @OrderBy</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/2">datanucleus-cassandra-2</a>] - Support JPA @EmbeddedId</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-excel/issues/8">datanucleus-excel-8</a>] - Support JPA @OrderBy</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/19">datanucleus-hbase-19</a>] - Support CompoundIdentity</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/18">datanucleus-hbase-18</a>] - Support JPA @OrderBy</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/17">datanucleus-hbase-17</a>] - Support JPA @EmbeddedId</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-json/issues/5">datanucleus-json-5</a>] - Support JPA @OrderBy</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/17">datanucleus-mongodb-17</a>] - Support JPA @OrderBy</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-odf/issues/6">datanucleus-odf-6</a>] - Support JPA @OrderBy</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/48">datanucleus-rdbms-48</a>] - Rename of backing store variables so clearer the intent</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/47">datanucleus-rdbms-47</a>] - Oracle supports specifying the PRIMARY KEY in the CREATE TABLE statement</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/46">datanucleus-rdbms-46</a>] - jdbc timeouts are not propagated for SQL queries</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/37">datanucleus-rdbms-37</a>] - Add support for java.util.Optional JDOQL "orElse" method</li>
 </ul>
 
 ## Bugs
@@ -54,9 +54,9 @@ __May 17th 2016__ : _Version 5.0 Milestone 4_ includes the following changes
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/77">datanucleus-core-77</a>] - NamingFactory do not cater for unique index name for DISCRIMINATOR_COLUMN</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/75">datanucleus-core-75</a>] - CompleteClassTable : mark embedded PK columns as being part of PK</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/67">datanucleus-core-67</a>] - OperationQueue : performAll for backing store should only process for the specified ObjectProvider</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/14">datanucleus-api-jdo-14</a> - Bean Validation : don't fire off validation on prePersist and preStore, just on one</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/19">datanucleus-api-jpa-19</a> - Bean Validation : don't fire off validation on prePersist and preStore, just on one</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/50">datanucleus-rdbms-50</a> - Bulk fetch has bug when trying to handle array case, assumes it is a Collection resulting in NPE</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/14">datanucleus-api-jdo-14</a>] - Bean Validation : don't fire off validation on prePersist and preStore, just on one</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/19">datanucleus-api-jpa-19</a>] - Bean Validation : don't fire off validation on prePersist and preStore, just on one</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/50">datanucleus-rdbms-50</a>] - Bulk fetch has bug when trying to handle array case, assumes it is a Collection resulting in NPE</li>
 </ul>
 
 <br/>
