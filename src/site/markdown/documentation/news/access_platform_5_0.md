@@ -35,17 +35,22 @@ __May 17th 2016__ : _Version 5.0 Milestone 4_ includes the following changes
 <li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/16">datanucleus-cassandra-16</a>] - Add ability to check for existence of records when inserting</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/15">datanucleus-cassandra-15</a>] - Support JPA @OrderBy</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/2">datanucleus-cassandra-2</a>] - Support JPA @EmbeddedId</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/17">datanucleus-cassandra-17</a>] - Make use of new core multi-tenancy helper methods rather than direct access to property</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-excel/issues/8">datanucleus-excel-8</a>] - Support JPA @OrderBy</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/19">datanucleus-hbase-19</a>] - Support CompoundIdentity</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/18">datanucleus-hbase-18</a>] - Support JPA @OrderBy</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/17">datanucleus-hbase-17</a>] - Support JPA @EmbeddedId</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/20">datanucleus-hbase-20</a>] - Make use of new core multi-tenancy helper methods rather than direct access to property</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-json/issues/5">datanucleus-json-5</a>] - Support JPA @OrderBy</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/17">datanucleus-mongodb-17</a>] - Support JPA @OrderBy</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/19">datanucleus-mongodb-19</a>] - Make use of new core multi-tenancy helper methods rather than direct access to property</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-neo4j/issues/14">datanucleus-neo4j-14</a>] - Make use of new core multi-tenancy helper methods rather than direct access to property</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-odf/issues/6">datanucleus-odf-6</a>] - Support JPA @OrderBy</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/48">datanucleus-rdbms-48</a>] - Rename of backing store variables so clearer the intent</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/47">datanucleus-rdbms-47</a>] - Oracle supports specifying the PRIMARY KEY in the CREATE TABLE statement</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/46">datanucleus-rdbms-46</a>] - jdbc timeouts are not propagated for SQL queries</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/37">datanucleus-rdbms-37</a>] - Add support for java.util.Optional JDOQL "orElse" method</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/51">datanucleus-rdbms-51</a>] - Make use of new core multi-tenancy helper methods rather than direct access to property</li>
 </ul>
 
 ## Bugs
