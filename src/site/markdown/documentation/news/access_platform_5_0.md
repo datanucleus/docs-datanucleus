@@ -32,6 +32,7 @@ __May 17th 2016__ : _Version 5.0 Milestone 4_ includes the following changes
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/66">datanucleus-core-66</a>] - SchemaTool : Support "ignoreMetaDataForMissingClasses"</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/55">datanucleus-core-55</a>] - Support method MONTH_JAVA in-memory</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/54">datanucleus-core-54</a>] - Add in-memory evaluation support for Optional.orElse</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/47">datanucleus-core-47</a>] - Provide a persistence property to allow MetadataListener to be registered when a PMF is instantiated, such that it is called prior for any autostart classes</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/16">datanucleus-cassandra-16</a>] - Add ability to check for existence of records when inserting</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/15">datanucleus-cassandra-15</a>] - Support JPA @OrderBy</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/2">datanucleus-cassandra-2</a>] - Support JPA @EmbeddedId</li>
