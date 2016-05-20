@@ -13,6 +13,7 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 * Support for JDK 1.8 Optional
 * Support for specific Scala features
 * Support HBase 1.x
+* Support Cassandra (Datastax) 3.x
 * _Extend 'operation queue' to not use the dirtyOPs/indirectDirtyOPs?_
 * _Stop development of __datanucleus-neodatis__ at some point (at 5.0.0.release?) since the underlying datastore hasn't been updated in 5 years_
 
