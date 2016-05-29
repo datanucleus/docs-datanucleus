@@ -14,9 +14,9 @@ You are free to use DataNucleus in your projects. Please refer to the license fo
 Open Source. Our license (Apache 2) is very flexible, much more than the license used for some other notable object/relational mapping 
 software which use licenses like the LGPL.
 * __DataNucleus is independent and unstoppable__. The source code is open, and is not owned exclusively by some company. 
-As such it cannot be bought by a large organisation such as Versant or Oracle and the product terminated (as has happened to customers 
-of Kodo, JDO Genie over the last few years) - do you want that to happen to you? FYI EclipseLink is Oracle-driven, Hibernate is RedHat-driven and
-OpenJPA is IBM-driven (__Stop Press : [IBM is stopping working on OpenJPA now](https://developer.ibm.com/wasdev/2014/05/28/eclipselink-jpa-provider-liberty-profile/)__).
+As such it cannot be bought by a large organisation such as Versant or Oracle and the product terminated (as has happened to customers of Kodo, JDO Genie over the last few years).
+Do you want that to happen to you? FYI EclipseLink is Oracle-driven and Hibernate is RedHat-driven. 
+For the record OpenJPA was IBM-driven but they stopped development of it in 2014, and it has not changed significantly since.
 * __DataNucleus is standards driven and standards compliant__ implementing all JDO and JPA specifications, providing all 
 mandatory items and the majority of optional items as well as providing several value-added extensions. Standards compliance safeguards
 your applications future allowing you to swap between implementations. The likes of Kundera claim to be "standards compliant" yet don't implement
