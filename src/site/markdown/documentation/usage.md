@@ -19,7 +19,8 @@ of Kodo, JDO Genie over the last few years) - do you want that to happen to you?
 OpenJPA is IBM-driven (__Stop Press : [IBM is stopping working on OpenJPA now](https://developer.ibm.com/wasdev/2014/05/28/eclipselink-jpa-provider-liberty-profile/)__).
 * __DataNucleus is standards driven and standards compliant__ implementing all JDO and JPA specifications, providing all 
 mandatory items and the majority of optional items as well as providing several value-added extensions. Standards compliance safeguards
-your applications future allowing you to swap between implementations.
+your applications future allowing you to swap between implementations. The likes of Kundera claim to be "standards compliant" yet don't implement
+significant features (like supporting XML input for JPA!).
 * __DataNucleus supports data management for many different types of datastores__. These include 
 [the vast majority of RDBMS databases on the market today](http://github.com/datanucleus/datanucleus-rdbms),
 [MongoDB document store](http://github.com/datanucleus/datanucleus-mongodb),
