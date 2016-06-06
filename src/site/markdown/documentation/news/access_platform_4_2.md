@@ -18,6 +18,31 @@ _Version 4.2_ includes the following over 4.1
 
 <br/>
 
+# DataNucleus AccessPlatform 4.2.6
+
+__Jun 6th 2016__ : _Version 4.2.6_ includes the following changes
+
+## Enhancements
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/73'>datanucleus-core-73</a>] - CompleteClassTable : cater for columnMetaData on collection element when intended for field</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/70'>datanucleus-core-70</a>] - Federation : cater for simple use-cases of identity</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/68'>datanucleus-core-68</a>] - OperationQueue : performAll for backing store should only process for the specified ObjectProvider</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/76'>datanucleus-core-76</a>] - CompleteClassTable : mark embedded PK columns as being part of PK</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/78'>datanucleus-core-78</a>] - NamingFactory do not cater for unique index name for DISCRIMINATOR_COLUMN</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/16'>datanucleus-api-jdo-16</a>] - Bean Validation : don't fire off validation on prePersist and preStore, just on one</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/23'>datanucleus-api-jpa-23</a>] - Criteria in(...).not() is ignoring the NOT in the generic compilation (and generated SQL)</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/20'>datanucleus-api-jpa-20</a>] - Bean Validation : don't fire off validation on prePersist and preStore, just on one</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 4.2.5
 
 __Apr 7th 2016__ : _Version 4.2.5_ includes the following changes

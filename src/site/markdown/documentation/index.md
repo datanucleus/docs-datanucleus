@@ -55,7 +55,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
 </tr>
 <tr class="d">
   <td>4.2 (Planck)</td>
-  <td>4.2.5</td>
+  <td>4.2.6</td>
   <td>Developed</td>
   <td>JDO3.2, JPA2.1, REST</td>
   <td>1.7+</td>
@@ -70,7 +70,7 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
 </tr>
 <tr class="d">
   <td>4.1 (Chadwick)</td>
-  <td>4.1.10</td>
+  <td>4.1.11</td>
   <td>Developed</td>
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.7+</td>

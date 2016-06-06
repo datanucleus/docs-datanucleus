@@ -19,7 +19,7 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 
 ### Release Plans
 
-* __5.0.0.M5 June 2016?__
+* __5.0.0.M5 June/July 2016?__
 
 
 
@@ -34,7 +34,7 @@ This is current scope for DataNucleus 4.2. If you think other things ought to be
 
 ### Release Plans
 
-* __4.2.6 June 2016?__
+* __4.2.7 August 2016?__
 
 
 
@@ -50,7 +50,7 @@ This is current scope for DataNucleus 4.1.
 
 ### Release Plans
 
-* __4.1.11 June 2016?__
+* __4.1.12 August 2016?__
 
 
 
