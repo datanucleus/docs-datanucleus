@@ -12,6 +12,7 @@ _Version 5.0_ includes the following over 4.2
 <li>Support added for Java8 Optional</li>
 <li>Support added for HBase v1.1 (hbase-client)</li>
 <li>Support added for Neo4j v2.3</li>
+<li>Support added for Cassandra v3.0</li>
 <li>Support added for MongoDB java driver v3.0</li>
 <li>PostgreSQL : support for persisting collection/array of strings/ints into "array" column type</li>
 </ul>
