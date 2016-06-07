@@ -258,8 +258,8 @@ full release of a product, but if doing that always be careful of cross-compatib
 	* [datanucleus-geospatial](https://github.com/datanucleus/datanucleus-geospatial) : Support for persisting fields of Geospatial types
 	* [datanucleus-guava](https://github.com/datanucleus/datanucleus-guava) : Support for persisting fields of Guava types
 	* [datanucleus-jdo-jca](https://github.com/datanucleus/datanucleus-jdo-jca) : Support for using JDO in JavaEE environments via JCA
-	* [datanucleus-jdo-query](https://github.com/datanucleus/datanucleus-jdo-query) : Support for generating JDO typesafe query classes
-	* [datanucleus-jpa-query](https://github.com/datanucleus/datanucleus-jpa-query) : Support for generating JPA criteria query classes
+	* [datanucleus-jdo-query](https://github.com/datanucleus/datanucleus-jdo-query) : Support for generating JDO Typed "Q" classes
+	* [datanucleus-jpa-query](https://github.com/datanucleus/datanucleus-jpa-query) : Support for generating JPA Criteria "MetaModel" classes
 	* [datanucleus-java8](https://github.com/datanucleus/datanucleus-java8) : Support for persisting fields of Java 1.8 types in DataNucleus v4.x
 + Tools
 	* [datanucleus-maven-plugin](https://github.com/datanucleus/datanucleus-maven-plugin) : For developing applications using DataNucleus and Maven
