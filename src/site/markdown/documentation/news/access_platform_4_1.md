@@ -41,6 +41,7 @@ __Jun 6th 2016__ : _Version 4.1.11_ includes the following changes
 <ul>
 <li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/73'>datanucleus-core-73</a>] - CompleteClassTable : cater for columnMetaData on collection element when intended for field</li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/70'>datanucleus-core-70</a>] - Federation : cater for simple use-cases of identity</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/44'>datanucleus-rdbms-44</a>] - jdbc timeouts are not propagated for SQL queries</li>
 </ul>
 
 ## Bugs
@@ -52,6 +53,7 @@ __Jun 6th 2016__ : _Version 4.1.11_ includes the following changes
 <li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/15'>datanucleus-api-jdo-15</a>] - Bean Validation : don't fire off validation on prePersist and preStore, just on one</li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/23'>datanucleus-api-jpa-23</a>] - Criteria in(...).not() is ignoring the NOT in the generic compilation (and generated SQL)</li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/20'>datanucleus-api-jpa-20</a>] - Bean Validation : don't fire off validation on prePersist and preStore, just on one</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/49'>datanucleus-rdbms-49</a>] - Bulk fetch has bug when trying to handle array case, assumes it is a Collection resulting in NPE</li>
 </ul>
 
 <br/>
