@@ -15,6 +15,49 @@ _Version 5.0_ includes the following over 4.2
 <li>Support added for Cassandra v3.0</li>
 <li>Support added for MongoDB java driver v3.0</li>
 <li>PostgreSQL : support for persisting collection/array of strings/ints into "array" column type</li>
+<li>Improved support for multitenancy</li>
+<li>Improved support for enums</li>
+</ul>
+
+<br/>
+
+
+# DataNucleus AccessPlatform 5.0.0.M5
+
+__Jun 11th 2016__ : _Version 5.0 Milestone 5_ includes the following changes
+
+## Enhancements
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/79">datanucleus-core-79</a>] - Expand multitenancy to allow specification per PM/EM, and optionally via a user provided method</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/82">datanucleus-core-82</a>] - BeanValidationHandler should move to org.datanucleus and remove org.datanucleus.validation package</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/83">datanucleus-core-83</a>] - Refactor {o.d}.query.symbol and {o.d}.query.cache into {o.d}.query.compiler</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/84">datanucleus-core-84</a>] - Refactor {o.d}.store.encryption into {o.d}.store</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/85">datanucleus-core-85</a>] - Refactor {o.d}.store.scostore into {o.d}.store.types.scostore</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/86">datanucleus-core-86</a>] - Refactor {o.d}.store.exceptions into {o.d}.exceptions</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/87">datanucleus-core-87</a>] - InMemory query evaluation doesn't cater for various aspects of Optional</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/88">datanucleus-core-88</a>] - Add javax.cache based cache for QueryCompilation (generic)</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/89">datanucleus-core-89</a>] - Add javax.cache based cache for QueryDatastoreCompilationCache (datastore)</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/90">datanucleus-core-90</a>] - Separate "persistence-by-reachability" at commit out into own handler class</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/91">datanucleus-core-91</a>] - Separate "managed relations" out into own handler class</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/92">datanucleus-core-92</a>] - Refactor {o.d}.management.jmx into {o.d}.management</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/93">datanucleus-core-93</a>] - Generic query compilation ParameterExpression type is often not registered in SymbolTable but should be</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/21">datanucleus-api-jpa-21</a>] - Isolate check for whether native query in JPAQuery and use StoreManager.getNativeQueryLanguage()</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/1">datanucleus-cassandra-1</a>] - Add support for cassandra 3.0</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/18">datanucleus-cassandra-18</a>] - Support upgrade to enum handling</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-excel/issues/9">datanucleus-excel-9</a>] - Support upgrade to enum handling</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/21">datanucleus-hbase-21</a>] - Support upgrade to enum handling</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-json/issues/6">datanucleus-json-6</a>] - Support upgrade to enum handling</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/20">datanucleus-mongodb-20</a>] - Support CompoundIdentity</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/21">datanucleus-mongodb-21</a>] - Support upgrade to enum handling</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-neo4j/issues/15">datanucleus-neo4j-15</a>] - Support upgrade to enum handling</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-odf/issues/7">datanucleus-odf-7</a>] - Support upgrade to enum handling</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/22">datanucleus-api-jpa-22</a>] - Criteria in(...).not() is ignoring the NOT in the generic compilation (and generated SQL)</li>
 </ul>
 
 <br/>
