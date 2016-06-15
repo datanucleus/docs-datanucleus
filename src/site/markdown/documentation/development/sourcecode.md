@@ -51,13 +51,14 @@ Type support :
 [datanucleus-geospatial](https://github.com/datanucleus/datanucleus-geospatial)  
 [datanucleus-guava](https://github.com/datanucleus/datanucleus-guava)  
 [datanucleus-jodatime](https://github.com/datanucleus/datanucleus-jodatime)  
-[datanucleus-java8](https://github.com/datanucleus/datanucleus-java8)  
 
 Others :  
 [datanucleus-cache](https://github.com/datanucleus/datanucleus-cache)  
 [datanucleus-jdo-query](https://github.com/datanucleus/datanucleus-jdo-query)  
 [datanucleus-jdo-jca](https://github.com/datanucleus/datanucleus-jdo-jca)  
 [datanucleus-jpa-query](https://github.com/datanucleus/datanucleus-jpa-query)  
+[datanucleus-java8](https://github.com/datanucleus/datanucleus-java8)  
+
 
 All plugins are independently versioned ("master" is the latest branch). This is because they have their own lifecycle, and plugins are
 bundled together into the "products" (e.g AccessPlatform). So we could have AccessPlatform version 1.1 using version X of a plugin, and 
@@ -69,9 +70,9 @@ All DataNucleus plugins are Maven projects, with a _pom.xml_. To build and insta
 
 	mvn clean install
 
-and the plugin is built and installed in your local Maven repository. If you are developing some feature that requires updates to, 
-for example core (__datanucleus-core__), __an api__ (e.g __datanucleus-api-jdo__) and a datastore (e.g __datanucleus-rdbms__) then you will need
-to build these in the same order, core first, then the API, then the datastore.
+and the plugin is built and installed in your local Maven repository; how simple can it get?. 
+If you are developing some feature that requires updates to, for example __core__ (_datanucleus-core_), __an API__ (e.g _datanucleus-api-jdo_) and a __datastore__ (e.g _datanucleus-rdbms_) 
+then you will need to build these in the same order, core first, then the API, then the datastore.
 
 #### Building with Eclipse
 
@@ -94,7 +95,7 @@ The GitHub DataNucleus project also provides some tools to help in using DataNuc
 
 [datanucleus-maven-plugin](http://github.com/datanucleus/datanucleus-maven-plugin)  
 [datanucleus-eclipse-plugin](http://github.com/datanucleus/datanucleus-eclipse-plugin)  
-[datanucleus-idea-plugin](http://github.com/datanucleus/datanucleus-idea-plugin)
+[datanucleus-idea-plugin](http://github.com/datanucleus/datanucleus-idea-plugin)  (not maintained)  
 
 Like with all plugins, the tools are independently versioned since they have their own lifecycle.
 
