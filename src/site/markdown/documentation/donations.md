@@ -158,6 +158,12 @@ means that you can have your name or company name hyper-linked.
 <td>50</td>
 <td>General donation</td>
 </tr>
+
+<tr>
+<td><a href="http://www.o365cloudexperts.com" title="O365CloudExperts">O365CloudExperts</a></td>
+<td>50</td>
+<td>General donation</td>
+</tr>
 </table>
 
 The following people/companies have also donated smaller amounts :  
