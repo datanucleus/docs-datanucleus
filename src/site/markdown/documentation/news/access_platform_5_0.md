@@ -21,6 +21,54 @@ _Version 5.0_ includes the following over 4.2
 
 <br/>
 
+# DataNucleus AccessPlatform 5.0.0.RELEASE
+
+__Jul 5th 2016__ : _Version 5.0 RELEASE_ includes the following changes over Milestone 5
+
+## Enhancements
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/96">datanucleus-core-96</a>] - InMemory query evaluation should support IN and NOT IN</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/98">datanucleus-core-98</a>] - NamingFactory : name for embedded field doesn't fallback to the column name for the member itself</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/99">datanucleus-core-99</a>] - Move ASM support to v5.1</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/100">datanucleus-core-100</a>] - InMemory query refactoring</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/101">datanucleus-core-101</a>] - StoreDataManager/StoreData needs review, should use enum for type, and maybe key by String</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/102">datanucleus-core-102</a>] - Extract "relation-discriminator-column" etc strings into MetaData class for easy reference</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/106">datanucleus-core-106</a>] - Drop use of "key-increment-by" value generator property</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/107">datanucleus-core-107</a>] - Extract ValueGenerator property strings for easy reference</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/108">datanucleus-core-108</a>] - CompleteClassTable : support property access where property is overridden in subclass</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/18">datanucleus-api-jdo-18</a>] - Make @ReadOnly work at class-level also</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/19">datanucleus-api-jdo-19</a>] - Add @SharedRelation to allow easier specification of shared relations</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/20">datanucleus-api-jdo-20</a>] - Make @ReadOnly work at class-level also</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/24">datanucleus-api-jpa-24</a>] - Support @ReadOnly at class-level or member-level</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/20">datanucleus-cassandra-20</a>] - Query generation needs to detect attempt to navigate through relations to fields of related object</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/22">datanucleus-mongodb-22</a>] - Check for JPQL "FROM" log message should be refined to detect actual joins</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/23">datanucleus-mongodb-23</a>] - Don't create "unique" index on 1-1/N-1 relations</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/24">datanucleus-mongodb-24</a>] - Support more combinations of JPQL IN in-datastore</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/59">datanucleus-rdbms-59</a>] - StringBuilderMapping/StringBufferMapping are no longer used and can be deleted</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/60">datanucleus-rdbms-60</a>] - Log warning on attempt to use transient Persistable object as query parameter</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/63">datanucleus-rdbms-63</a>] - Change "NUCLEUS_TYPE" to "DN_TYPE" for consistency with DataNucleus SQLStatement namings</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/64">datanucleus-rdbms-64</a>] - Throw exception if user attempts to model embedded class with collection element</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/68">datanucleus-rdbms-68</a>] - Updates for Sonar conventions</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/69">datanucleus-rdbms-69</a>] - Support core issue 106</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/70">datanucleus-rdbms-70</a>] - Change persistence property "datanucleus.rdbms.adapter.informixUseSerialForIdentity" to "datanucleus.rdbms.informix.useSerialForIdentity"</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/71">datanucleus-rdbms-71</a>] - Extract MySQL persistent property names into "public static final String"</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/72">datanucleus-rdbms-72</a>] - Change persistence property "datanucleus.rdbms.oracleNlsSortOrder" to "datanucleus.rdbms.oracle.nlsSortOrder"</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cache/issues/1">datanucleus-cache-1</a>] - Drop support for "JCache" provider (javax.cache pre-0.2) </li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/95">datanucleus-core-95</a>] - InMemory query evaluation of YEAR, MONTH, DAY, HOUR, MINUTE, SECOND (JPQL) aren't implemented correctly</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/103">datanucleus-core-103</a>] - version / discriminator index is not created if not specifying column and specifying indexes=true</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/104">datanucleus-core-104</a>] - Fix code typo in ExecutionContextImpl.getManagedObjects</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/23">datanucleus-hbase-23</a>] - Optional test fails with Collection detection</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/61">datanucleus-rdbms-61</a>] - "CaseExpression = null" should be compiled as "IS NULL" but currently isn't</li>
+</ul>
+
+<br/>
+
 
 # DataNucleus AccessPlatform 5.0.0.M5
 
