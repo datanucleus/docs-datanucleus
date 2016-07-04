@@ -40,16 +40,16 @@ Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
 </tr>
 <tr class="d">
   <td>5.0 (Schrodinger)</td>
-  <td>5.0.0.M5</td>
+  <td>5.0.0.RELEASE</td>
   <td>Developed</td>
   <td>JDO3.2, JPA2.1, REST</td>
   <td>1.8+</td>
-  <td></td>
+  <td>Jul/2016</td>
   <td><a href="http://www.datanucleus.org/support.html#free">Free</a>, <a href="http://www.datanucleus.org/support.html#commercial">Commercial</a></td>
   <td>
     <a href="http://www.datanucleus.org/products/accessplatform_5_0/index.html">Online</a> | 
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/5.0.0.m1/datanucleus-accessplatform-docs-5.0.zip/download">Download</a> | 
-    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/5.0.0.m1/datanucleus-accessplatform-docs-5.0.pdf/download">PDF</a>
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/5.0.0.release/datanucleus-accessplatform-docs-5.0.zip/download">Download</a> | 
+    <a href="https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/5.0.0.release/datanucleus-accessplatform-docs-5.0.pdf/download">PDF</a>
   </td>
   <td><a href="news/access_platform_5_0.html">HTML</a></td>
 </tr>
