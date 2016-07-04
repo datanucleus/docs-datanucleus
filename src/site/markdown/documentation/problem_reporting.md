@@ -5,12 +5,11 @@
 
 ## Problem Reporting
 
-While we always aim to release DataNucleus with as few bugs as possible, it is possible that 
-during the release cycle some issues will come up. Our release process uses more than 1500 
-unit tests aimed at reproducing the majority of situations that users may come across, though
-clearly we can never cover all situations with these tests. We also run the JDO3/JPA1 TCKs
-before each release to provide extra checks to reduce the chance of regressions. The process 
-for reporting issues is defined below :-
+While we always aim to release DataNucleus with as few bugs as possible, it is possible that during the release cycle some issues will come up. 
+Our release process uses more than 1500 unit tests aimed at reproducing the majority of situations that users may come across, though
+clearly we can never cover all situations with these tests. 
+We also run the JDO3/JPA1 TCKs before each release to provide extra checks to reduce the chance of regressions. 
+The process for reporting issues is defined below :-
 
 1. Check your input classes, MetaData and persistence code against the JDO/JPA spec and the DataNucleus documentation. 
 The majority of situations are errors in input relative to what DataNucleus allows. __More importantly than this, 
@@ -23,13 +22,15 @@ being reported so the issue may no longer be an issue (if there are no jars pres
 If there is one then you can always check the status of the issue and add a comment against it.
 5. Start a thread on the [Forum](http://forum.datanucleus.org). If doing this then seriously consider posting a simple concise testcase (see below) 
 that gives people something that reproduces your problem.
-6. If there is nothing obvious incorrect in your situation and it happens in a released version of DataNucleus then you can raise an issue against the DataNucleus plugin in question
-You should then create a minimized testcase and attach it to the issue (using "Attach File" on the issue) - see below. 
+6. If there is nothing obvious incorrect in your situation and it happens in a released version of DataNucleus then you can raise an issue against the DataNucleus plugin in question.
+You MUST then create a minimized testcase and attach it to the issue (using "Attach File" on the issue) - see below for testcase definitions. 
 __Bugs can only be raised against RELEASED versions of DataNucleus and must have a valid testcase attached that demonstrates the issue.__ 
-If you encounter a bug that only appears in GitHub latest then you should either report it against an issue related to that item in the current 
+If you encounter a bug that only appears in GitHub latest then you should either report it against an issue related to that item in the current
 work-in-progress release, or otherwise report it to developers. This is since something can hardly be a bug if it hasn't been released yet.
-__Please don't take the attitude that this testcase requirement somehow doesn't apply to you. It is there to demonstrate a problem, so others can see it. 
+__Please don't take the attitude that this testcase requirement somehow doesn't apply to you. It is there to demonstrate a problem, so others can see it.
 Obviously any such problem is not present in all of our tests so yours is different, we aren't psychic so require a testcase.__
+Any problem reports raised without a testcase will be closed.
+
 
 This guide can also be used for providing testcases that demonstrate the need for new features.
 
