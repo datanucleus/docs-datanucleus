@@ -37,7 +37,7 @@ __Jul 5th 2016__ : _Version 5.0 RELEASE_ includes the following changes over Mil
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/106">datanucleus-core-106</a>] - Drop use of "key-increment-by" value generator property</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/107">datanucleus-core-107</a>] - Extract ValueGenerator property strings for easy reference</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/108">datanucleus-core-108</a>] - CompleteClassTable : support property access where property is overridden in subclass</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/18">datanucleus-api-jdo-18</a>] - Make @ReadOnly work at class-level also</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/18">datanucleus-api-jdo-18</a>] - Add @ReadOnly for members as shortcut for insertable=false, updateable=false</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/19">datanucleus-api-jdo-19</a>] - Add @SharedRelation to allow easier specification of shared relations</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/20">datanucleus-api-jdo-20</a>] - Make @ReadOnly work at class-level also</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/24">datanucleus-api-jpa-24</a>] - Support @ReadOnly at class-level or member-level</li>
