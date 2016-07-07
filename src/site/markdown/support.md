@@ -46,9 +46,9 @@ __DataNucleus__ developers can provide remote consulting using Email/IRC/IM/Skyp
 issues impacting on your project. This type of support is where questions come up during your deployment of DataNucleus and you need to ask 
 questions for particular situations. You can pay by the hour as and when you need it, when a developer is available.
 
-__Cost__ : 5 hours = £275, 10 hours = £480, 20 hours = £880.
-Purchase of larger number of hours also available.
-[Contact Us](mailto:consulting@datanucleus.com) for details
+__Cost__ : 5 hours = £275, 10 hours = £500, 20 hours = £900.
+Purchase of larger number of hours also available. [Contact Us](mailto:consulting@datanucleus.com) for details.
+__Note that all amounts are specified in GBP (symbolised by the £ symbol)__
 
 <a name="support"/>
 ### Support
