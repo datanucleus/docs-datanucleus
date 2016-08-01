@@ -32,6 +32,31 @@ _Version 4.1_ includes the following over 4.0
 
 <br/>
 
+# DataNucleus AccessPlatform 4.1.12
+
+__Aug 2nd 2016__ : _Version 4.1.12_ includes the following changes
+
+## Enhancements
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/24'>datanucleus-api-jdo-24</a>] - JDOPersistenceManager.close should null the pmf</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/31'>datanucleus-api-jpa-31</a>] - Null out some variables on close of EM, and assert when EM closed on all query methods</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/81'>datanucleus-rdbms-81</a>] - Cater for PostgreSQL specific default value :: syntax</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/82'>datanucleus-rdbms-82</a>] - ClassAdder mixes table validation with column initialisation. Should be separate</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/84'>datanucleus-rdbms-84</a>] - Allow control over whether to use column default values when a value is null</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/105'>datanucleus-core-105</a>] - Fix code typo in ExecutionContextImpl.getManagedObjects</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/28'>datanucleus-api-jpa-28</a>] - Fix IdentifiableType.getId when using generics</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/29'>datanucleus-api-jpa-29</a>] - Fix IdentifiableType.getVersion when using subtype</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 4.1.11
 
 __Jun 6th 2016__ : _Version 4.1.11_ includes the following changes
