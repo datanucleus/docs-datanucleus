@@ -21,6 +21,46 @@ _Version 5.0_ includes the following over 4.2
 
 <br/>
 
+# DataNucleus AccessPlatform 5.0.1
+
+__Aug 10th 2016__ : _Version 5.0.1_ includes the following changes over 5.0.0.RELEASE
+
+## Enhancements
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/111">datanucleus-core-111</a>] - Refactor query compilation optimisation process so easier to add other optimisers</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/112">datanucleus-core-112</a>] - Enhancer : Don't enhance "bridge" methods</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/113">datanucleus-core-113</a>] - Ignore bridge getter/setter methods when processing annotations</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/116">datanucleus-core-116</a>] - JPQLParser TREAT handling is not flexible enough for all combinations</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/30">datanucleus-api-jpa-30</a>] - Null out some variables on close of EM, and assert when EM closed on all query methods</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/22">datanucleus-api-jdo-22</a>] - Null out some variables on close of PM</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/23">datanucleus-api-jdo-23</a>] - JDOPersistenceManager.close should null the pmf</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/76">datanucleus-rdbms-76</a>] - Query ResultSet has extension that have text-strings. Should extract into "public static final" variables</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/79">datanucleus-rdbms-79</a>] - ClassAdder mixes table validation with column initialisation. Should be separate</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/80">datanucleus-rdbms-80</a>] - Cater for PostgreSQL specific default value :: syntax</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/83">datanucleus-rdbms-83</a>] - Allow control over whether to use column default values when a value is null</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/85">datanucleus-rdbms-85</a>] - Make JDOQL/JPQL single-valued relation navigation join type configurable</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/90">datanucleus-rdbms-90</a>] - Support JPQL "POWER" and JDOQL "Math.power"</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/91">datanucleus-rdbms-91</a>] - Add check on table type before running callbacks</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/93">datanucleus-rdbms-93</a>] - Remove DatastoreAdapter.getOperatorConcat since not used</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/94">datanucleus-rdbms-94</a>] - SQLServer does not support "||" for concatenation of Strings, provide alternative</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-geospatial/issues/1">datanucleus-geospatial-1</a>] - MariaDB 5.3+ supports ST_Distance</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-neo4j/issues/16">datanucleus-neo4j-16</a>] - Support neo4j java driver v3.x</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-excel/issues/10">datanucleus-excel-10</a>] - POI Row.CREATE_NULL_AS_BLANK is deprecated, use MissingCellPolicy.CREATE_NULL_AS_BLANK</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/26">datanucleus-api-jpa-26</a>] - IdentifiableTypeImpl fails to retrieve PK information from MappedSuperClass when using GENERICS</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/27">datanucleus-api-jpa-27</a>] - IdentifiableTypeImpl doesn't read @Version attribute correctly when specified in superclass</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/32">datanucleus-api-jpa-32</a>] - When @Column is specified on Collection<NonPC>/Map<?,NonPC> field it only uses name</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-neo4j/issues/17">datanucleus-neo4j-17</a>] - Fetch of object can sometimes pick related object when clash of field names with other relation</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 5.0.0.RELEASE
 
 __Jul 5th 2016__ : _Version 5.0 RELEASE_ includes the following changes over Milestone 5
