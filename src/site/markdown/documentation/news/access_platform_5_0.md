@@ -54,7 +54,7 @@ __Aug 10th 2016__ : _Version 5.0.1_ includes the following changes over 5.0.0.RE
 <ul>
 <li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/26">datanucleus-api-jpa-26</a>] - IdentifiableTypeImpl fails to retrieve PK information from MappedSuperClass when using GENERICS</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/27">datanucleus-api-jpa-27</a>] - IdentifiableTypeImpl doesn't read @Version attribute correctly when specified in superclass</li>
-<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/32">datanucleus-api-jpa-32</a>] - When @Column is specified on Collection<NonPC>/Map<?,NonPC> field it only uses name</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/32">datanucleus-api-jpa-32</a>] - When @Column is specified on Collection&lt;NonPC&gt;/Map&lt;?,NonPC&gt; field it only uses name</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-neo4j/issues/17">datanucleus-neo4j-17</a>] - Fetch of object can sometimes pick related object when clash of field names with other relation</li>
 </ul>
 
