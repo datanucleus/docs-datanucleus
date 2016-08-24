@@ -32,6 +32,36 @@ _Version 4.1_ includes the following over 4.0
 
 <br/>
 
+# DataNucleus AccessPlatform 4.1.13
+
+__Aug 25th 2016__ : _Version 4.1.13_ includes the following changes
+
+## Enhancements
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/114'>datanucleus-core-114</a>] - Ignore bridge getter/setter methods when processing annotations</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/115'>datanucleus-core-115</a>] - Enhancer : Don't enhance "bridge" methods</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/118'>datanucleus-core-118</a>] - JPQLParser TREAT handling is not flexible enough for all combinations</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/120'>datanucleus-core-120</a>] - JPQL - Support subqueries in update statements</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/92'>datanucleus-rdbms-92</a>] - Add check on table type before running callbacks</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/96'>datanucleus-rdbms-96</a>] - Allow use of subqueries in JPQL UPDATE clause</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/98'>datanucleus-rdbms-98</a>] - Support JPQL query of ElementCollection of embeddable elements</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/29'>datanucleus-api-jdo-29</a>] - JDOPersistenceManagerFactory.getPersistenceManagerFactory(Properties) has inconsistent creation</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/33'>datanucleus-api-jdo-33</a>] - When @Column is specified on Collection<NonPC>/Map<?,NonPC> field it only uses name</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/37'>datanucleus-api-jdo-37</a>] - Invalid persistentAttributeType returned for embeddable property</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/38'>datanucleus-api-jdo-38</a>] - Static metamodel generator generates null for byte[] propertie</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/40'>datanucleus-api-jdo-40</a>] - IdentifiableTypeImpl.getSupertype add null check</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/88'>datanucleus-rdbms-88</a>] - JPQL with subquery using candidate collection via join table fails</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 4.1.12
 
 __Aug 2nd 2016__ : _Version 4.1.12_ includes the following changes
