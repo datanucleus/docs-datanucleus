@@ -52,10 +52,10 @@ __Aug 25th 2016__ : _Version 4.1.13_ includes the following changes
 
 <ul>
 <li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/29'>datanucleus-api-jdo-29</a>] - JDOPersistenceManagerFactory.getPersistenceManagerFactory(Properties) has inconsistent creation</li>
-<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/33'>datanucleus-api-jdo-33</a>] - When @Column is specified on Collection<NonPC>/Map<?,NonPC> field it only uses name</li>
-<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/37'>datanucleus-api-jdo-37</a>] - Invalid persistentAttributeType returned for embeddable property</li>
-<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/38'>datanucleus-api-jdo-38</a>] - Static metamodel generator generates null for byte[] propertie</li>
-<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/40'>datanucleus-api-jdo-40</a>] - IdentifiableTypeImpl.getSupertype add null check</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/33'>datanucleus-api-jdo-33</a>] - When @Column is specified on Collection&lt;NonPC&gt;/Map&lt;?,NonPC&gt; field it only uses name</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/37'>datanucleus-api-jpa-37</a>] - Invalid persistentAttributeType returned for embeddable property</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/38'>datanucleus-api-jpa-38</a>] - Static metamodel generator generates null for byte[] propertie</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/40'>datanucleus-api-jpa-40</a>] - IdentifiableTypeImpl.getSupertype add null check</li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/88'>datanucleus-rdbms-88</a>] - JPQL with subquery using candidate collection via join table fails</li>
 </ul>
 
