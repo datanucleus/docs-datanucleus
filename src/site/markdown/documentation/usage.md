@@ -121,7 +121,6 @@ DataNucleus until May 2013.
 
 
 DataNucleus also wishes to thank the companies/developers who have granted our project use of their great software/services allowing us to work much quicker and in a more enjoyable way.
-[![MvnForum](../images/thirdparty/mvnforum_logo.gif)](http://www.mvnforum.com/)
 [![GitHub](../images/GitHub-Mark-64px.png)](http://www.github.com)
 
 
