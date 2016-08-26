@@ -76,7 +76,7 @@ DataNucleus is used by many companies and groups in their own software. Below ar
 [![Seismic Exchange](../images/companies/seismicexchange.gif)](http://www.seismicexchange.com/)
 [![Apache HIVE](../images/companies/apache_hive.jpg)](http://hive.apache.org/)
 [![Apache ISIS](../images/companies/apache_isis.png)](http://isis.apache.org/)
-[![BMC](../images/companies/bmc.gif)](http://www.bmc.com)
+[![BMC](../images/companies/bmc.png)](http://www.bmc.com)
 [![Lockheed](../images/companies/lockheed.png)](http://www.lockheedmartin.com/)
 [![Wildbook](../images/companies/wildbook.jpg)](http://www.wildme.org/wildbook/)
 [![Cisco Systems](../images/companies/cisco.png)](http://www.cisco.com)
