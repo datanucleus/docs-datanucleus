@@ -21,6 +21,51 @@ _Version 5.0_ includes the following over 4.2
 
 <br/>
 
+# DataNucleus AccessPlatform 5.0.2
+
+__Sep 1st 2016__ : _Version 5.0.2_ includes the following changes over 5.0.1
+
+## Enhancements
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/119">datanucleus-core-119</a>] - JPQL - Support subqueries in update statements</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/121">datanucleus-core-121</a>] - When checking metadata for persistent interface, assumes already loaded!</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/122">datanucleus-core-122</a>] - CompleteClassTable : fix from issue 108 was incomplete</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/28">datanucleus-api-jdo-28</a>] - JDOPersistenceManagerFactory.getPersistenceManagerFactory(Properties) has inconsistent creation</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/31">datanucleus-api-jdo-31</a>] - Query should assert if using a method and is already closed</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/32">datanucleus-api-jdo-32</a>] - Support datanucleus-core issue 121</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/41">datanucleus-api-jpa-41</a>] - Support datanucleus-core issue 121</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/42">datanucleus-api-jpa-42</a>] - Support override of Map embedded value fields</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/95">datanucleus-rdbms-95</a>] - Allow use of subqueries in JPQL UPDATE clause</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/97">datanucleus-rdbms-97</a>] - Support JPQL query of ElementCollection of embeddable elements</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/99">datanucleus-rdbms-99</a>] - Add JPQL JOIN support for array relations</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/105">datanucleus-rdbms-105</a>] - JPA using Map with embedded key is adding extra column to form part of PK of join table, incorrectly</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/21">datanucleus-cassandra-21</a>] - Cassandra ManagedConnection.close should call super.close</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-excel/issues/11">datanucleus-excel-11</a>] - Support for version stored in a field is only part implemented, complete it</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-excel/issues/12">datanucleus-excel-12</a>] - Excel ManagedConnection.close should call super.close</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/24">datanucleus-hbase-24</a>] - HBase ManagedConnection.close should call super.close</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-json/issues/7">datanucleus-json-7</a>] - Support for version stored in a field is only part implemented, complete it</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-json/issues/8">datanucleus-json-8</a>] - JSON ManagedConnection.close should call super.close</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/26">datanucleus-mongodb-26</a>] - MongoDB ManagedConnection.close should call super.close</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-neo4j/issues/18">datanucleus-neo4j-18</a>] - Support for version stored in a field is only part implemented, complete it</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-neo4j/issues/19">datanucleus-neo4j-19</a>] - Neo4j ManagedConnection.close should call super.close</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-odf/issues/9">datanucleus-odf-9</a>] - ODF ManagedConnection.close should call super.close</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/26">datanucleus-api-jdo-26</a>] - Close of JDOQLTypedQuery usually NullPointerExceptions</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/35">datanucleus-api-jpa-35</a>] - Invalid persistentAttributeType returned for embeddable property</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/36">datanucleus-api-jpa-36</a>] - Static metamodel generator generates null for byte[] properties</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/39">datanucleus-api-jpa-39</a>] - NPE in IdentifiableTypeImpl.getSupertype</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/102">datanucleus-rdbms-102</a>] - pm.getObjectById(Class, id) or em.find(Class, id) with COMPLETE-TABLE can throw exception</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/104">datanucleus-rdbms-104</a>] - Creation of join table where element uses COMPLETE-TABLE and root is abstract misses element column</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 5.0.1
 
 __Aug 10th 2016__ : _Version 5.0.1_ includes the following changes over 5.0.0.RELEASE
