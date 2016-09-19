@@ -18,6 +18,33 @@ _Version 4.2_ includes the following over 4.1
 
 <br/>
 
+# DataNucleus AccessPlatform 4.2.9
+
+__Sep 20th 2016__ : _Version 4.2.9_ includes the following changes
+
+## Enhancements
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/125'>datanucleus-core-125</a>] - JPQL : Support TREAT in JOIN clause (Backport of #117)</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/127'>datanucleus-core-127</a>] - Support subqueries in FROM clause</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/43'>datanucleus-api-jpa-43</a>] - Support override of Map embedded value fields</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/108'>datanucleus-rdbms-108</a>] - SQLServer : OFFSET is only appropriate if ORDER BY is used in SQLServer 2012+</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/109'>datanucleus-rdbms-109</a>] - Backport several commits about COMPLETE-TABLE from master</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/113'>datanucleus-rdbms-113</a>] - Support use of JPQL TYPE (JDOQL instanceof) with a type converted comparison value</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/114'>datanucleus-rdbms-114</a>] - Support JPQL JOIN to a TREAT (CAST) expression, backport of #100</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/133'>datanucleus-core-133</a>] - Use of ObjectId with "PersistableIdentity" doesn't retrieve correctly</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/103'>datanucleus-rdbms-103</a>] - pm.getObjectById(Class, id) or em.find(Class, id) with COMPLETE-TABLE can throw exception</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/116'>datanucleus-rdbms-116</a>] - If we have generic (abstract) root class, then abstract subclass specifying generic type, then concrete class fails to pick up the override of generic type</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 4.2.8
 
 __Aug 25th 2016__ : _Version 4.2.8_ includes the following changes
