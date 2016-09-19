@@ -33,7 +33,7 @@ This is current scope for DataNucleus 4.2. If you think other things ought to be
 
 ### Release Plans
 
-* __4.2.9 October 2016?__
+* __4.2.10 November 2016?__
 
 
 
@@ -49,7 +49,7 @@ This is current scope for DataNucleus 4.1.
 
 ### Release Plans
 
-* __4.1.14 October 2016?__
+* __4.1.15 November 2016?__
 
 
 
