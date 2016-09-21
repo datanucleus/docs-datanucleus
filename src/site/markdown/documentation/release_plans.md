@@ -18,7 +18,7 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 
 ### Release Plans
 
-* __5.0.3 October 2016?__
+* __5.0.4 October 2016?__
 
 
 
