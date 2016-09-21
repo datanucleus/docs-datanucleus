@@ -21,6 +21,73 @@ _Version 5.0_ includes the following over 4.2
 
 <br/>
 
+# DataNucleus AccessPlatform 5.0.3
+
+__Sep 22nd 2016__ : _Version 5.0.3_ includes the following changes over 5.0.2
+
+## Enhancements
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/123">datanucleus-core-123</a>] - JPA allows specification of inheritance strategy for tree and seems to assume discriminator for SINGLE-TABLE</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/126">datanucleus-core-126</a>] - Support subqueries in JOIN ON clause</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/128">datanucleus-core-128</a>] - Add StoreSchemaHandler.createDatabase and deleteDatabase to replace createSchema/deleteSchema</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/130">datanucleus-core-130</a>] - AbstractClassMetaData : just use internal Lists and don't allocate arrays</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/19">datanucleus-core-19</a>] - Change MetaData objects so that AbstractClassMetaData/AbstractMemberMetaData have MetaDataManager accessor</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/131">datanucleus-core-131</a>] - Move XXXMetaData.toString to JDOMetaDataManager, JPAMetaDataManager since API specific</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/132">datanucleus-core-132</a>] - When loading metadata, don't load up extensions for other vendors</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/129">datanucleus-core-129</a>] - Use of ObjectId with "PersistableIdentity" doesn't retrieve correctly</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/134">datanucleus-core-134</a>] - Merge TypeConverterHelper into TypeManager. Add caching to TypeConverter member/db types</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/33">datanucleus-api-jdo-33</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/34">datanucleus-api-jdo-34</a>] - Support core-131 : Move JDO XML metadata handling methods to API JDO plugin</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/35">datanucleus-api-jdo-35</a>] - Implement JDO 3.2 Metadata API additions</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/36">datanucleus-api-jdo-36</a>] - Support core-134</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/37">datanucleus-api-jdo-37</a>] - Support JDO 3.2 converter "disabled" settings</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/44">datanucleus-api-jpa-44</a>] - Support core issue 123, add discriminator when inheritance defined as Single-Table for tree</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/45">datanucleus-api-jpa-45</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/46">datanucleus-api-jpa-46</a>] - Support core-134</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-rest/issues/8">datanucleus-api-rest-8</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/22">datanucleus-cassandra-22</a>] - Support core issue 128</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/23">datanucleus-cassandra-23</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-cassandra/issues/24">datanucleus-cassandra-24</a>] - Support core-134</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-excel/issues/13">datanucleus-excel-13</a>] - Support core issue 128</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-excel/issues/14">datanucleus-excel-14</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-excel/issues/15">datanucleus-excel-15</a>] - Support core-134</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/25">datanucleus-hbase-25</a>] - Support core issue 128</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/26">datanucleus-hbase-26</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-hbase/issues/27">datanucleus-hbase-27</a>] - Support core-134</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-json/issues/9">datanucleus-json-9</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-json/issues/10">datanucleus-json-10</a>] - Support core-134</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-ldap/issues/12">datanucleus-ldap-12</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/27">datanucleus-mongodb-27</a>] - Support core issue 128</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/28">datanucleus-mongodb-28</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/29">datanucleus-mongodb-29</a>] - Support core-134</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/30">datanucleus-mongodb-30</a>] - Support core-135</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-neo4j/issues/20">datanucleus-neo4j-20</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-neo4j/issues/21">datanucleus-neo4j-21</a>] - Support core-135</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-odf/issues/10">datanucleus-odf-10</a>] - Support core issue 128</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-odf/issues/11">datanucleus-odf-11</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-odf/issues/12">datanucleus-odf-12</a>] - Support core-134</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/111">datanucleus-rdbms-111</a>] - Add support for DiscriminatorStrategy.ENTITY_NAME</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/100">datanucleus-rdbms-100</a>] - Support JPQL JOIN to a TREAT (CAST) expression</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/89">datanucleus-rdbms-89</a>] - Support relationships between classes using "complete-table" inheritance</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/112">datanucleus-rdbms-112</a>] - Support use of JPQL TYPE (JDOQL instanceof) with a type converted comparison value</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/119">datanucleus-rdbms-119</a>] - Support core issue 128</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/120">datanucleus-rdbms-120</a>] - Support core-19</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/121">datanucleus-rdbms-121</a>] - Support core-134</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/122">datanucleus-rdbms-122</a>] - Support core-135</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/136">datanucleus-core-136</a>] - Some ByteBuffer converters could lead to buffer overflow</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/107">datanucleus-rdbms-107</a>] - SQLServer : OFFSET is only appropriate if ORDER BY is used in SQLServer 2012+</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/115">datanucleus-rdbms-115</a>] - If we have generic (abstract) root class, then abstract subclass specifying generic type, then concrete class fails to pick up the override of generic type</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 5.0.2
 
 __Sep 1st 2016__ : _Version 5.0.2_ includes the following changes over 5.0.1
