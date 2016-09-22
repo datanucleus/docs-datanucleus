@@ -81,6 +81,7 @@ __Sep 22nd 2016__ : _Version 5.0.3_ includes the following changes over 5.0.2
 
 <ul>
 <li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/136">datanucleus-core-136</a>] - Some ByteBuffer converters could lead to buffer overflow</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-mongodb/issues/25">datanucleus-mongodb-25</a>] - NPE when trying to find rootTable</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/107">datanucleus-rdbms-107</a>] - SQLServer : OFFSET is only appropriate if ORDER BY is used in SQLServer 2012+</li>
 <li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/115">datanucleus-rdbms-115</a>] - If we have generic (abstract) root class, then abstract subclass specifying generic type, then concrete class fails to pick up the override of generic type</li>
 </ul>
