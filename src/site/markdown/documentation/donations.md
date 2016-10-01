@@ -164,6 +164,12 @@ means that you can have your name or company name hyper-linked.
 <td>50</td>
 <td>General donation</td>
 </tr>
+
+<tr>
+<td><a href="http://www.standardzilla.com/" title="Standardzilla">Standardzilla</a></td>
+<td>50</td>
+<td>General donation</td>
+</tr>
 </table>
 
 The following people/companies have also donated smaller amounts :  
