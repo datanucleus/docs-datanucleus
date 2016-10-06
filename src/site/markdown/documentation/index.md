@@ -248,7 +248,6 @@ full release of a product, but if doing that always be careful of cross-compatib
 	* [datanucleus-ldap](https://github.com/datanucleus/datanucleus-ldap) : Support for persistence to LDAP
 	* [datanucleus-mongodb](https://github.com/datanucleus/datanucleus-mongodb) : Support for persistence to MongoDB
 	* [datanucleus-neo4j](https://github.com/datanucleus/datanucleus-neo4j) : Support for persistence to Neo4j
-	* [datanucleus-neodatis](https://github.com/datanucleus/datanucleus-neodatis) : Support for persistence to NeoDatis
 	* [datanucleus-odf](https://github.com/datanucleus/datanucleus-odf) : Support for persistence to ODF
 	* [datanucleus-rdbms](https://github.com/datanucleus/datanucleus-rdbms) : Support for persistence to RDBMS
 	* [datanucleus-xml](https://github.com/datanucleus/datanucleus-xml) : Support for persistence to XML
@@ -260,21 +259,22 @@ full release of a product, but if doing that always be careful of cross-compatib
 	* [datanucleus-jdo-jca](https://github.com/datanucleus/datanucleus-jdo-jca) : Support for using JDO in JavaEE environments via JCA
 	* [datanucleus-jdo-query](https://github.com/datanucleus/datanucleus-jdo-query) : Support for generating JDO Typed "Q" classes
 	* [datanucleus-jpa-query](https://github.com/datanucleus/datanucleus-jpa-query) : Support for generating JPA Criteria "MetaModel" classes
-	* [datanucleus-java8](https://github.com/datanucleus/datanucleus-java8) : Support for persisting fields of Java 1.8 types in DataNucleus v4.x
 + Tools
 	* [datanucleus-maven-plugin](https://github.com/datanucleus/datanucleus-maven-plugin) : For developing applications using DataNucleus and Maven
 	* [datanucleus-eclipse-plugin](https://github.com/datanucleus/datanucleus-eclipse-plugin) : For developing application using DataNucleus in Eclipse
 + Inactive Plugins
+	* [datanucleus-neodatis](https://github.com/datanucleus/datanucleus-neodatis) : Support for persistence to NeoDatis. Supported up to and including DataNucleus v5.0
+	* [datanucleus-java8](https://github.com/datanucleus/datanucleus-java8) : Support for persisting fields of Java 1.8 types in DataNucleus v4.x only.
 	* [datanucleus-idea-plugin](https://github.com/datanucleus/datanucleus-idea-plugin) : For developing applications using DataNucleus in Intellij IDEA
-	* datanucleus-enhancer - now part of datanucleus-core
+	* datanucleus-db4o - no longer supported (supported up to and including DataNucleus v3.0). Code still present in SourceForge if required
+	* datanucleus-db4o-sql - no longer supported (supported up to and including DataNucleus v3.0). Code still present in SourceForge if required
 	* datanucleus-java5 - now part of datanucleus-core and datanucleus-api-jpa
-	* maven1 - no longer used, since Maven1 is deprecated
-	* datanucleus-db4o - no longer supported. Code still present in SourceForge if required
-	* datanucleus-db4o-sql - no longer supported. Code still present in SourceForge if required
+	* datanucleus-enhancer - now part of datanucleus-core
 	* datanucleus-javaxtime - now part of datanucleus-core
 	* datanucleus-awtgeom - now part of datanucleus-geospatial
 	* datanucleus-xmltypeoracle - now part of datanucleus-rdbms
 	* datanucleus-connectionpool - now part of datanucleus-rdbms
 	* datanucleus-spatial - now part of datanucleus-geospatial
 	* datanucleus-management - now part of datanucleus-core
+	* maven1 - no longer used, since Maven1 is deprecated
 
