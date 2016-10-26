@@ -21,6 +21,40 @@ _Version 5.0_ includes the following over 4.2
 
 <br/>
 
+# DataNucleus AccessPlatform 5.0.4
+
+__Oct 28th 2016__ : _Version 5.0.4_ includes the following changes over 5.0.3
+
+## Enhancements
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/137">datanucleus-core-137</a>] - Support JPA mappedBy DOT notation with embeddables</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/139">datanucleus-core-139</a>] - Support override of generic members and update with generic type</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/141">datanucleus-core-141</a>] - Remove all remaining multithreaded code from ExecutionContextImpl, move to ExecutionContextThreadedImpl</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/145">datanucleus-core-145</a>] - Support complete range of TYPE JPQL expressions</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/146">datanucleus-core-146</a>] - StoreSchemaHandler.isAutoCreateSchema -> isAutoCreateDatabase</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/47">datanucleus-api-jpa-47</a>] - Support DN javax.persistence Criteria "nulls first"/"nulls last" API</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/124">datanucleus-rdbms-124</a>] - Allow user to override set distinct on jdo queries w/ implicit joins</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/125">datanucleus-rdbms-125</a>] - Override handling for datastore-attributed column is incorrect, doesn't apply value strategy</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/127">datanucleus-rdbms-127</a>] - JDOQL : Add special case of {subquery}.isEmpty()</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/128">datanucleus-rdbms-128</a>] - Support "mappedBy" DOT notation with embeddables in 1-N FK relations</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/129">datanucleus-rdbms-129</a>] - Support query handling of ObjectExpression.is where the type is a Collection of possible types</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/130">datanucleus-rdbms-130</a>] - Support core-146</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/131">datanucleus-rdbms-131</a>] - Schema lookup of catalog/schema doesn't allow for quoting but should</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/132">datanucleus-rdbms-132</a>] - Some JDBC drivers don't return the catalog/schema that a FK relates to</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/134">datanucleus-rdbms-134</a>] - Drop code that checks whether a connection pools jars are present and leave to ConnectionPoolFactory classes</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/135">datanucleus-rdbms-135</a>] - Merge MappedTypeManager into MappingManager</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/138">datanucleus-core-138</a>] - Types of generic MappedSuperClass fail to resolve</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 5.0.3
 
 __Sep 22nd 2016__ : _Version 5.0.3_ includes the following changes over 5.0.2
