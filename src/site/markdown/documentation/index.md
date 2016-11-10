@@ -236,7 +236,7 @@ full release of a product, but if doing that always be careful of cross-compatib
 
 
 + [datanucleus-core](https://github.com/datanucleus/datanucleus-core) : Primary building block of DataNucleus persistence
-+ APIs
++ API Implementations
 	* [datanucleus-api-jdo](https://github.com/datanucleus/datanucleus-api-jdo) : Support for persistence using the JDO API
 	* [datanucleus-api-jpa](https://github.com/datanucleus/datanucleus-api-jpa) : Support for persistence using the JPA API
 	* [datanucleus-api-rest](https://github.com/datanucleus/datanucleus-api-rest) : Support for persistence using a REST API
@@ -259,6 +259,9 @@ full release of a product, but if doing that always be careful of cross-compatib
 	* [datanucleus-jdo-jca](https://github.com/datanucleus/datanucleus-jdo-jca) : Support for using JDO in JavaEE environments via JCA
 	* [datanucleus-jdo-query](https://github.com/datanucleus/datanucleus-jdo-query) : Support for generating JDO Typed "Q" classes
 	* [datanucleus-jpa-query](https://github.com/datanucleus/datanucleus-jpa-query) : Support for generating JPA Criteria "MetaModel" classes
++ Persistence APIs
+	* [javax.jdo](https://github.com/datanucleus/javax.jdo) : JDO API standard for use with JDO applications
+	* [javax.persistence](https://github.com/datanucleus/javax.persistence) : JPA API standard for use with JPA applications
 + Tools
 	* [datanucleus-maven-plugin](https://github.com/datanucleus/datanucleus-maven-plugin) : For developing applications using DataNucleus and Maven
 	* [datanucleus-eclipse-plugin](https://github.com/datanucleus/datanucleus-eclipse-plugin) : For developing application using DataNucleus in Eclipse

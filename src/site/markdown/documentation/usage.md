@@ -30,7 +30,7 @@ you don't need to change your data access layer.
 * __DataNucleus provides outstanding performance__ when compared with the competing technologies.
 * __DataNucleus does not bring in large numbers of dependencies__ unlike other persistence frameworks (for example, Hibernate) that have 
 to provide a zip file just to package all of their requirements up. In fact DataNucleus could be run with just 1 third-party library 
-(jdo-api.jar when using JDO, or persistence-api.jar when using JPA) - beat that!
+(javax.jdo.jar when using JDO, or javax.persistence.jar when using JPA) - beat that!
 * __DataNucleus is quality-driven__ being developed using a Test Driven Development methodology. We have more than 2000 unit tests that 
 are run before any release guaranteeing a stable product. In addition we baseline our capabilities against standard Java TCKs (JDO, JPA)
 the definition of specification compliance. With our plugins you will not find large numbers of outstanding high priority issues that you have to workaround 
