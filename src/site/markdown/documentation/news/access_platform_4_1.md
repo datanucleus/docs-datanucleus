@@ -32,6 +32,30 @@ _Version 4.1_ includes the following over 4.0
 
 <br/>
 
+# DataNucleus AccessPlatform 4.1.15
+
+__Nov 19th 2016__ : _Version 4.1.15_ includes the following changes
+
+## Enhancements
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/154'>datanucleus-core-154</a>] - Add check on use of recursive embedded fields and throw exception</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/148'>datanucleus-core-148</a>] - Support generic compilation of parameters in ORDER BY clause</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/54'>datanucleus-api-jpa-54</a>] - SingularAttribute.getBindableType for embedded object</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/50'>datanucleus-api-jpa-50</a>] - Support DN javax.persistence Criteria "nulls first"/"nulls last" API</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/126'>datanucleus-rdbms-126</a>] - Override handling for datastore-attributed column is incorrect, doesn't apply value strategy (backport of #125)</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/151'>datanucleus-core-151</a>] - Backport of AbstractNamingFactory handling fixes for embedded</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/140'>datanucleus-core-140</a>] - Types of generic MappedSuperClass fail to resolve (backport of #138)</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 4.1.14
 
 __Sep 20th 2016__ : _Version 4.1.14_ includes the following changes
