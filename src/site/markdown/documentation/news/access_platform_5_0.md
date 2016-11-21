@@ -23,7 +23,7 @@ _Version 5.0_ includes the following over 4.2
 
 # DataNucleus AccessPlatform 5.0.5
 
-__Nov ?? 2016__ : _Version 5.0.5_ includes the following changes over 5.0.4
+__Nov 22nd 2016__ : _Version 5.0.5_ includes the following changes over 5.0.4
 
 ## Enhancements
 
