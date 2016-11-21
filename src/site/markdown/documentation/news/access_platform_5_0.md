@@ -21,6 +21,39 @@ _Version 5.0_ includes the following over 4.2
 
 <br/>
 
+# DataNucleus AccessPlatform 5.0.5
+
+__Nov ?? 2016__ : _Version 5.0.5_ includes the following changes over 5.0.4
+
+## Enhancements
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/147">datanucleus-core-147</a>] - Support generic compilation of parameters in ORDER BY clause</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/149">datanucleus-core-149</a>] - Refactor FetchPlanState to org.datanucleus</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/152">datanucleus-core-152</a>] - Add check on use of recursive embedded fields and throw exception</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/38">datanucleus-api-jdo-38</a>] - Add option of having a Query/Extent that is really closed when calling close()</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jdo/issues/39">datanucleus-api-jdo-39</a>] - Support core-149</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/51">datanucleus-api-jpa-51</a>] - Implement Metamodel convenience methods taking entityName</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/52">datanucleus-api-jpa-52</a>] - Support core-149</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-api-jpa/issues/53">datanucleus-api-jpa-53</a>] - SingularAttribute.getBindableType for embedded object</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/138">datanucleus-rdbms-138</a>] - Support embeddable object with 1-N field with join table</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/140">datanucleus-rdbms-140</a>] - Remove McKoi adapter since database has been dead since 2004</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/141">datanucleus-rdbms-141</a>] - Rename MSSQLServerAdapter to SQLServerAdapter</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-rdbms/issues/142">datanucleus-rdbms-142</a>] - Refactor org.datanucleus.store.rdbms.schema.XXXTypeInfo for datastores to org.datanucleus.store.rdbms.adapter</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-geospatial/issues/2">datanucleus-geospatial-2</a>] - Support core-149</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-geospatial/issues/3">datanucleus-geospatial-3</a>] - Mirror rdbms-142 and refactor XXXTypeInfo to same package as XXXAdapter</li>
+<li>[<a href="https://github.com/datanucleus/datanucleus-guava/issues/1">datanucleus-guava-1</a>] - Support core-149</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href="https://github.com/datanucleus/datanucleus-core/issues/150">datanucleus-core-150</a>] - Endless loop in AbstractNamingFactory.getColumnName</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 5.0.4
 
 __Oct 28th 2016__ : _Version 5.0.4_ includes the following changes over 5.0.3
