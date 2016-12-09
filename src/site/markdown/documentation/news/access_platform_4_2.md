@@ -18,6 +18,32 @@ _Version 4.2_ includes the following over 4.1
 
 <br/>
 
+# DataNucleus AccessPlatform 4.2.11
+
+__Dec 10th 2016__ : _Version 4.2.11_ includes the following changes
+
+## Enhancements
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/166'>datanucleus-core-166</a>] - Don't throw exception on unsupported L2 cache pin/unpin methods</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/164'>datanucleus-core-164</a>] - Backport update to setting of default embedded flag when not previously set</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/151'>datanucleus-rdbms-151</a>] - Datanucleus uses "image" type for byte[] and Byte[] by default for SQL Server</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/163'>datanucleus-core-163</a>] - Storing embedded object in L2 cache when has no fields as such can give NPE</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/146'>datanucleus-rdbms-146</a>] - SQLServer : String.length should use LEN instead of CHAR_LENGTH</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/149'>datanucleus-rdbms-149</a>] - Datanucleus 4 renders concat operation wrong for SQL Server</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/152'>datanucleus-rdbms-152</a>] - SQL Server datetime functions "hour","minute","second" don't work on date column</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/153'>datanucleus-rdbms-153</a>] - SQL Server should emulate null precedence</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/157'>datanucleus-rdbms-157</a>] - ForwardQueryResult is processed after full consumption with SQL Server</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 4.2.10
 
 __Nov 19th 2016__ : _Version 4.2.10_ includes the following changes
