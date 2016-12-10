@@ -26,9 +26,9 @@ that gives people something that reproduces your problem.
 You MUST then create a minimized testcase and attach it to the issue (using "Attach File" on the issue) - see below for testcase definitions. 
 __Bugs can only be raised against RELEASED versions of DataNucleus and must have a valid testcase attached that demonstrates the issue.__ 
 If you encounter a bug that only appears in GitHub latest then you should either report it against an issue related to that item in the current
-work-in-progress release, or otherwise report it to developers. This is since something can hardly be a bug if it hasn't been released yet.
+work in progress release, or otherwise report it to developers. This is since something can hardly be a bug if it hasn't been released yet.
 __Please don't take the attitude that this testcase requirement somehow doesn't apply to you. It is there to demonstrate a problem, so others can see it.
-Obviously any such problem is not present in all of our tests so yours is different, we aren't psychic so require a testcase.__
+Obviously any such problem is not present in all of our tests so yours is different, we aren't psychic so require a testcase.__ 
 Any problem reports raised without a testcase will be closed.
 
 
