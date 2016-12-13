@@ -22,8 +22,8 @@
 # Products
 
 DataNucleus AccessPlatform provides persistence and retrieval of data to a range of datastores using a range of APIs, with a range of query languages. 
-It is provided under the Apache 2 license, and supports persistence to the following datastores : RDBMS, Neo4j, LDAP, Excel (XLS/OOXML), XML, NeoDatis, JSON, ODF, HBase, 
-Amazon S3, GoogleStorage, MongoDB, Cassandra, _[db4o]_
+It is provided under the Apache 2 license, and supports persistence to the following datastores : RDBMS, Cassandra, MongoDB, HBase, Neo4j, LDAP, Excel (XLS/OOXML), ODF, XML, JSON, 
+Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 
 
 <table>
