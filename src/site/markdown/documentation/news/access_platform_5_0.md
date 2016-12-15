@@ -21,6 +21,48 @@ _Version 5.0_ includes the following over 4.2
 
 <br/>
 
+# DataNucleus AccessPlatform 5.0.6
+
+__Dec 16th 2016__ : _Version 5.0.6_ includes the following changes
+
+## Enhancements
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/158'>datanucleus-core-158</a>] - Support create-timestamp/update-timestamp for member(s)</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/160'>datanucleus-core-160</a>] - Collection with embeddedOnly element is adding EmbeddedMetaData but shouldn't</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/161'>datanucleus-core-161</a>] - Improved metadata population, avoiding lookups</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/165'>datanucleus-core-165</a>] - Don't throw exception on unsupported L2 cache pin/unpin methods</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/168'>datanucleus-core-168</a>] - javax.cache can throw exceptions, so should catch and log all</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/40'>datanucleus-api-jdo-40</a>] - Support annotations for storing "create-timestamp" and "update-timestamp"</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/41'>datanucleus-api-jdo-41</a>] - Specification of @Embedded adds EmbeddedMetaData even when no attributes set!</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/42'>datanucleus-api-jdo-42</a>] - Support MultiTenancy on a class via @MultiTenant annotation</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jdo/issues/43'>datanucleus-api-jdo-43</a>] - Drop removed "deprecated" methods in javax.jdo.datastore.DataStoreCache</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/55'>datanucleus-api-jpa-55</a>] - Support annotations for storing "create-timestamp" and "update-timestamp"</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/56'>datanucleus-api-jpa-56</a>] - Support MultiTenancy on a class via @MultiTenant annotation</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/57'>datanucleus-api-jpa-57</a>] - Add CriteriaBuilder methods for year, month, day, hour, minute, second for java.util.Date expressions</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/143'>datanucleus-rdbms-143</a>] - Support "create-timestamp" / "update-timestamp" on members</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/144'>datanucleus-rdbms-144</a>] - Checks for container embedded element/key/value aren't complete</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/150'>datanucleus-rdbms-150</a>] - Datanucleus uses "image" type for byte[] and Byte[] by default for SQL Server</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/158'>datanucleus-rdbms-158</a>] - Support embedded fields with relations</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/161'>datanucleus-rdbms-161</a>] - SQL Optimisation : implicit join of identity of some related object should only join when FK not present</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-scala/issues/4'>datanucleus-scala-4</a>] - API changes in core break compilation</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/162'>datanucleus-core-162</a>] - Storing embedded object in L2 cache when has no fields as such can give NPE</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/145'>datanucleus-rdbms-145</a>] - SQLServer : String.length should use LEN instead of CHAR_LENGTH</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/147'>datanucleus-rdbms-147</a>] - SQL Server should emulate null precedence</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/148'>datanucleus-rdbms-148</a>] - SQL Server datetime functions "hour","minute","second" don't work on date column</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/149'>datanucleus-rdbms-149</a>] - Datanucleus 4 renders concat operation wrong for SQL Server</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/154'>datanucleus-rdbms-154</a>] - ForwardQueryResult is processed after full consumption with SQL Server</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/159'>datanucleus-rdbms-159</a>] - Query with multiple roots when using same type as candidate fails to register the alias of the secondary root</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 5.0.5
 
 __Nov 22nd 2016__ : _Version 5.0.5_ includes the following changes over 5.0.4

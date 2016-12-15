@@ -40,7 +40,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 </tr>
 <tr class="d">
   <td>5.0 (Schrodinger)</td>
-  <td>5.0.5</td>
+  <td>5.0.6</td>
   <td>Developed</td>
   <td>JDO3.2, JPA2.1, REST</td>
   <td>1.8+</td>
