@@ -55,7 +55,6 @@ __Dec 16th 2016__ : _Version 5.0.6_ includes the following changes
 <li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/145'>datanucleus-rdbms-145</a>] - SQLServer : String.length should use LEN instead of CHAR_LENGTH</li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/147'>datanucleus-rdbms-147</a>] - SQL Server should emulate null precedence</li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/148'>datanucleus-rdbms-148</a>] - SQL Server datetime functions "hour","minute","second" don't work on date column</li>
-<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/149'>datanucleus-rdbms-149</a>] - Datanucleus 4 renders concat operation wrong for SQL Server</li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/154'>datanucleus-rdbms-154</a>] - ForwardQueryResult is processed after full consumption with SQL Server</li>
 <li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/159'>datanucleus-rdbms-159</a>] - Query with multiple roots when using same type as candidate fails to register the alias of the secondary root</li>
 </ul>
