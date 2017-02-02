@@ -16,6 +16,7 @@ where you can do things for yourself.
 may answer the issue. You can always configure the log to give more output.
 3. Try a [recent build](http://www.datanucleus.org/download.html) to see if your version is out of date and the expected result is achieved with the latest nightly builds.
 4. Go to the [__DataNucleus Forum__](http://forum.datanucleus.org) of [__DataNucleus on Gitter__](https://gitter.im/datanucleus/Lobby) and ask. 
+__Please do not use Twitter and expect answers to support questions; support is not provideable in 140 chars!!__.
 Always try to give as clear a description of the problem as possible, together with 
 your input data, and any associated log output. __Please be aware that we have very little time for this type of support and contributors to 
 DataNucleus are more likely to get any available free support__
