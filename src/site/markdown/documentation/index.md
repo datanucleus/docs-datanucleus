@@ -53,7 +53,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
   </td>
   <td><a href="news/access_platform_5_0.html">HTML</a></td>
 </tr>
-<tr class="d">
+<tr>
   <td>4.2 (Planck)</td>
   <td>4.2.12</td>
   <td>Retired</td>
@@ -68,7 +68,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
   </td>
   <td><a href="news/access_platform_4_2.html">HTML</a></td>
 </tr>
-<tr class="d">
+<tr>
   <td>4.1 (Chadwick)</td>
   <td>4.1.17</td>
   <td>Retired</td>
