@@ -2,6 +2,22 @@
 
 # Section : [Documentation](index.html) 
 
+## DataNucleus AccessPlatform 5.1
+
+This is current scope for DataNucleus 5.1. If you think other things ought to be included then the answer is simple : get involved.
+
+### Feature Scope
+
+* Requires JRE 1.8+
+* Support for soft-delete of objects
+
+### Release Plans
+
+* 5.1.0-m1 Mar 2017?
+
+
+
+
 ## DataNucleus AccessPlatform 5.0
 
 This is current scope for DataNucleus 5.0. If you think other things ought to be included then the answer is simple : get involved.
@@ -18,7 +34,7 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 
 ### Release Plans
 
-* __5.0.7 Jan 2017?__
+* __5.0.7 Feb 2017?__
 
 
 
@@ -33,7 +49,7 @@ This is current scope for DataNucleus 4.2. If you think other things ought to be
 
 ### Release Plans
 
-* __4.2.12 Jan/Feb 2017?__
+* _No further releases planned; commercial  enquiries required._
 
 
 
@@ -49,7 +65,7 @@ This is current scope for DataNucleus 4.1.
 
 ### Release Plans
 
-* __4.1.17 Jan/Feb 2017?__
+* _No further releases planned; commercial  enquiries required._
 
 
 

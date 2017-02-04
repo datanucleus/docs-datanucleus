@@ -56,7 +56,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 <tr class="d">
   <td>4.2 (Planck)</td>
   <td>4.2.12</td>
-  <td>Developed</td>
+  <td>Retired</td>
   <td>JDO3.2, JPA2.1, REST</td>
   <td>1.7+</td>
   <td>Oct/2015</td>
@@ -71,7 +71,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 <tr class="d">
   <td>4.1 (Chadwick)</td>
   <td>4.1.17</td>
-  <td>Developed</td>
+  <td>Retired</td>
   <td>JDO3.1, JPA2.1, REST</td>
   <td>1.7+</td>
   <td>May/2015</td>
