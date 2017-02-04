@@ -32,6 +32,27 @@ _Version 4.1_ includes the following over 4.0
 
 <br/>
 
+# DataNucleus AccessPlatform 4.1.17
+
+__Feb 5th 2016__ : _Version 4.1.17_ includes the following changes
+
+## Enhancements
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/169'>datanucleus-core-169</a>] - javax.cache can throw exceptions, so should catch and log all</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/62'>datanucleus-api-jpa-62</a>] - When in container mode, check on (JTA) transaction being active should include an attempt to join</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/176'>datanucleus-core-176</a>] - TRIM handling for JPQL doesn't cater for multiple component identifiers</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/160'>datanucleus-rdbms-160</a>] - Query with multiple roots when using same type as candidate fails to register the alias of the secondary root</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 4.1.16
 
 __Dec 10th 2016__ : _Version 4.1.16_ includes the following changes
