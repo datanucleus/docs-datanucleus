@@ -15,13 +15,14 @@ where you can do things for yourself.
 2. Look in the [DataNucleus LOG](http://www.datanucleus.org/products/accessplatform/logging.html). This usually contains a lot of information that 
 may answer the issue. You can always configure the log to give more output.
 3. Try a [recent build](http://www.datanucleus.org/download.html) to see if your version is out of date and the expected result is achieved with the latest nightly builds.
-4. Go to the [__DataNucleus Forum__](http://forum.datanucleus.org) of [__DataNucleus on Gitter__](https://gitter.im/datanucleus/Lobby) and ask. 
-__Please do not use Twitter and expect answers to support questions; support is not provideable in 140 chars!!__.
+4. Go to the [__DataNucleus Forum__](http://forum.datanucleus.org) OR [__DataNucleus on Gitter__](https://gitter.im/datanucleus/Lobby) and ask. 
 Always try to give as clear a description of the problem as possible, together with 
 your input data, and any associated log output. __Please be aware that we have very little time for this type of support and contributors to 
 DataNucleus are more likely to get any available free support__
+__Please do not use Twitter and expect answers to support questions; support is not provideable in 140 chars!!__.
 5. If you don't want to report the problem to us as in step 4 then go over to [Stackoverflow](http://stackoverflow.com/questions/tagged/datanucleus) and post a question tagged as DataNucleus. 
 We don't provide support over there but you may find people who have experience of your situation to help you.
+6. If you have a problem and don't report it then it really doesn't say much for your participation in the open source community.
 
 
 <a name="commercial"/>
