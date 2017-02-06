@@ -21,6 +21,31 @@ _Version 5.0_ includes the following over 4.2
 
 <br/>
 
+# DataNucleus AccessPlatform 5.0.7
+
+__Feb 7th 2017__ : _Version 5.0.7_ includes the following changes
+
+## Enhancements
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/172'>datanucleus-core-172</a>] - Allow RANGE in string-based JPQL queries</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/174'>datanucleus-core-174</a>] - Query generic compilation : remove "symbolsTable" List from SymbolTable</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/58'>datanucleus-api-jpa-58</a>] - Support JPQL "RANGE" specification in string queries, so that getMaxResults/getFirstResult return correct info</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/63'>datanucleus-api-jpa-63</a>] - When in container mode, check on (JTA) transaction being active should include an attempt to join</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/162'>datanucleus-rdbms-162</a>] - Allow symbol lookup in parent symbol table, and its parent etc (i.e allow for multiple levels of subqueries and use of aliases)</li>
+</ul>
+
+## Bugs
+
+<ul>
+<li>[<a href='https://github.com/datanucleus/datanucleus-core/issues/175'>datanucleus-core-175</a>] - JPQL parser fails to parse TRIM expression</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-api-jpa/issues/64'>datanucleus-api-jpa-64</a>] - Application-managed EMF should map jta-data-source and non-jta-data-source on to internal persistence property names</li>
+<li>[<a href='https://github.com/datanucleus/datanucleus-rdbms/issues/166'>datanucleus-rdbms-166</a>] - Fix for #137 is flawed and should check for null element metadata</li>
+</ul>
+
+<br/>
+
+
 # DataNucleus AccessPlatform 5.0.6
 
 __Dec 16th 2016__ : _Version 5.0.6_ includes the following changes

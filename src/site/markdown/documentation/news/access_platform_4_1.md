@@ -34,7 +34,7 @@ _Version 4.1_ includes the following over 4.0
 
 # DataNucleus AccessPlatform 4.1.17
 
-__Feb 5th 2016__ : _Version 4.1.17_ includes the following changes
+__Feb 5th 2017__ : _Version 4.1.17_ includes the following changes
 
 ## Enhancements
 

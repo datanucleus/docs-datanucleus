@@ -20,7 +20,7 @@ _Version 4.2_ includes the following over 4.1
 
 # DataNucleus AccessPlatform 4.2.12
 
-__Feb 5th 2016__ : _Version 4.2.12_ includes the following changes
+__Feb 5th 2017__ : _Version 4.2.12_ includes the following changes
 
 ## Enhancements
 
