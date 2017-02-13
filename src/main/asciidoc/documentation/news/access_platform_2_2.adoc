@@ -1,0 +1,203 @@
+[[releasenotes_2_21]]
+= DataNucleus AccessPlatform 2.2 Release Notes
+:_basedir: ../../
+:_imagesdir: images/
+
+The 2.2 release of AccessPlatform is available under the link:../license.html[Apache 2 license] from our link:../../download.html[download page] 
+
+
+_Version 2.2_ includes the following over 2.1
+
+
+* Many improvements to L2 caching
+* Various improvements to connection handling for performance
+* Improved support for persisting containers with null elements
+* JDO : Support for column position specification
+* JDO : Support for a typesafe query API
+* JPA : More complete JPA2 implementation, providing remaining methods
+* RDBMS : Drop legacy JDOQL implementation
+* RDBMS : Provide bundled repackaged connection pool (DBCP)
+* RDBMS : Support for N-1 uni join table relation
+* Other datastores : Support for cascade delete
+* Many bug fixes, and minor feature additions.
+
+
+
+
+== DataNucleus AccessPlatform 2.2.3
+
+__May 8th 2011__ : _Version 2.2.3_ includes the following changes
+
+
+* Fix to use of embedded fields where having a relation to a non-embedded.
+* Allow property methods (getter/setter) to be final
+* OSGi : add optional import of log4j
+* Fix to log messages so we don't call cache.size() since some don't support it
+* Mark SortedSet/SortedMap wrappers as Serializable
+* Add check for null literal in JDOQL parser
+* JPA : Fix to use of @CollectionTable
+* JPA : Improvements to XML metadata handling
+* RDBMS : fix to String.matches type handling
+* Other minor cleanups
+
+- - -
+
+== DataNucleus AccessPlatform 2.2.2
+
+__Feb 24th 2011__ : _Version 2.2.2_ includes the following changes
+
+
+* Add support for associated value mechanism for 1-N maps to reduce the number of SQL statements
+    used (been supported for 1-N lists/sets for 2 yrs)
+* Bug fix to metadata handling for embedded fields, when embedded field definition not provided
+* JPA : Bug fix to query compilation of JPQL "NOT IN (subquery)"
+* JPA : Support for @MapKeyEnumerated to define the type of column
+* JPA : Bug fix to processing of &lt;column&gt; within unique-constraint in XML metadata
+* JPA : Support for multiple inherited @MappedSuperclass
+* RDBMS : Bug fix to race condition in statement batching (Gerd Behrmann)
+* RDBMS : Support for use of "count()" size method when range specified on query
+* RDBMS : Fix to Derby 10.6 change in handling of boolean/integer comparisons
+* RDBMS : Bug fix to Postgresql handling of index generation, now omitting the schema name
+* Other minor cleanups
+
+- - -
+
+== DataNucleus AccessPlatform 2.2.1
+
+__Jan 17th 2011__ : _Version 2.2.1_ includes the following changes
+
+
+* Support for JPQL extension functions "MONTH", "DAY", "YEAR", "HOUR", "MINUTE", "SECOND"
+* When embedding a persistable field, default to the metadata of the embedded class
+* JDO : fix to return type for AVG() in JDOQL to match JDO spec change
+* JPA : Support attribute override for nested embedded members
+* JPA : Support XML "embedded" tag
+* RDBMS : Fix to retrieval of version on object in certain circumstances
+* RDBMS : Fix to Collection.contains check when containing a primitive
+* RDBMS : Add OSGi importPackage of principal JDBC drivers
+* RDBMS : Better treatment of unmapped columns with null values
+* HBase : fix to retrieval when non-persistent fields present
+* HBase : support "native"(JDO)/"auto"(JPA) value generation strategies
+* Enhancer : set default API (JDO) when using annotation processor
+
+- - -
+
+== DataNucleus AccessPlatform 2.2.0.RELEASE
+
+__Dec 10th 2010__ : _Version 2.2 RELEASE_ includes the following changes
+
+
+* Fix to threading of transaction manager calls
+* Fix to threading of startup of services
+* Fix to not L2 cache fields marked as transactional
+* Fix to support cascade delete when using "simple" SCO container classes (all datastores except RDBMS)
+* Fix to detection of inheritance level of application identity object
+* Minor improvement to class loading for querying
+* Fix to non-transactional connection retention to clean out connections when closing the PM/EM
+* Support for bulk update/delete with JDOQL (DataNucleus extension)
+* Fix to deadlock around enlisting of an object in the transaction when updating a field
+* Add the ability to define in metadata which classes are pinned in the L2 cache
+* Several fixes to L2 caching to make use of relation field information
+* JPA : Support for locking
+* JPA : Support for fetch groups (DataNucleus extension)
+* RDBMS : Merge "datanucleus-connectionpool" into RDBMS plugin
+* RDBMS : Provide bundled repackaged DBCP as fallback connection pool
+* RDBMS : Support for N-1 uni join table relations
+* RDBMS : Fix to nontransactional batched inserts so that all statements are flushed
+* RDBMS : Various minor improvements to JDOQL statement generation
+
+- - -
+
+== DataNucleus AccessPlatform 2.2.0.M3
+
+__Nov 13th 2010__ : _Version 2.2 Milestone 3_ includes the following changes
+
+
+* Fix various SCO container classes with respect to adding a null element.
+* Set default for "allow-nulls" on SCO containers based on the Java type behaviour
+* Drop "attachPolicy" and provide complete attachment in default scenario
+* Providing mechanism for per-object locking
+* Couple of fixes to result handling in in-memory query evaluator
+* JDO : Support JDO3.1 PMF.getManagedClasses()
+* JDO : Support for 
+    <a href="http://www.datanucleus.org/products/accessplatform_2_2/jdo/jdoql_typesafe.html">typesafe queries for JDO</a> 
+    using a QueryDSL-like fluent API
+* JDO : More improvements to helpers on NucleusJDOHelper
+* JPA : Outline implementation of JPA2 lock methods
+* JPA : Support use of @PrimaryKeyJoinColumn for 1-1s
+* RDBMS : Allow column reuse for multiple fields of a class
+* RDBMS : Fix to use of subclass-table with 1-1 bidirectional relations
+* RDBMS : Fix to use of lengths with BLOB/CLOB on MySQL
+* RDBMS : Support for querying of (persistent) interfaces
+* RDBMS : Fixes to handling of "allow-nulls" on arrays with join table
+* RDBMS : Add support for LONGVARCHAR with HSQLDB 2.0
+* RDBMS : Add query extension for controlling the join type of variable in JDOQL (1-1 only)
+* RDBMS : Add support for persisting maps with null values
+* RDBMS : Fix to JDOQL Collection.contains() on candidate collection when invalid element type
+* RDBMS : Fix to index/FK creation on Derby to avoid warning messages
+
+- - -
+
+== DataNucleus AccessPlatform 2.2.0.M2
+
+__Oct 20th 2010__ : _Version 2.2 Milestone 2_ includes the following changes
+
+
+* Complete support for JDO3.1 column positioning
+* Improved merge of metadata information when sequence or cascade info specified in annotations
+* Ability to retain the datastore connection for non-transactional operations
+* Fix to a few concurrency bugs around commit/rollback and read/write of objects fields
+* Ability to specify a separate connection pool for non-transactional connections
+* JDOQL : Allow use of method invocation in grouping statements
+* Upgrade to NucleusJDOHelper dirty/loaded methods
+* Fix clean up of dynamic fetch groups when closing query/extent/pm
+* Fix to metadata requirement for map with embedded key/value so &lt;embedded&gt; is not needed
+    when the key/value is marked as embedded-only
+* Fix to PMF startup process so that persistence properties are registered before enablement
+    of some services
+* Fix to output from pm.getObjectsById(emptyCollection);
+* Improve type handling/comparison capabilities of in-memory query evaluator.
+* Basic support for JDO3.1 sequence allocation size and initial value
+* getObjectById/find : Ability to not validate objects obtained from L2 cache
+* RDBMS : change handling of range when not possible in datastore, now handled in the query result
+    rather than loading all rows into memory first.
+* RDBMS : re-enable connection provider plugin point (failover)
+* RDBMS : several minor changes to types available for IBM DB2
+* RDBMS : fix to validation of candidate keys, that prevented creation of some unique keys under
+    some circumstances
+* RDBMS : fix to List.get() when used in result clause of JDOQL query
+* RDBMS : fix to maps of embedded keys/values where key part of value (or vice-versa)
+* RDBMS : fix to retrieval of existing indices on Oracle for some table names
+* RDBMS : fix to SQL queries in a J2EE environment
+* RDBMS : fix to order of creation of tables with SchemaTool
+* RDBMS : some fixes to use of "allowNulls" on collections/arrays - typo
+* JPA : fix to case where sequence name not set
+* JPA : fix to EM.getReference to not validate the object
+* JPA : fix to use of @Enumerated with @Column
+* Enhancer : fix to runtime enhancement, class loading problem
+* Enhancer : fix to error message of override of invalid field
+* Cache : add option to allow retention of cached objects after close of PMF/EMF, for the case
+    where used by other instances
+* LDAP : Remove dependency to "shared-ldap"
+
+- - -
+
+== DataNucleus AccessPlatform 2.2.0.M1
+
+__Jul 15th 2010__ : _Version 2.2 Milestone 1_ includes the following changes
+
+
+* Add support for more generalised column "position" via metadata - likely in JDO3.1
+* Add support for 36-character UUID string generator
+* Improved type safety for queued operations on SCO classes
+* Drop legacy query expressions for "mapped" datastores - use 2.0 if you still require this
+* RDBMS : Drop legacy JDOQL implementation - use 2.0 if you still require this
+* RDBMS : Support for fetching just a FK when the FK is in the candidate query class (avoiding
+    adding a join - performance)
+* RDBMS : Fix for Oracle NLS
+* RDBMS : Fix to SchemaTool for sequence creation
+* Fix to EHCache evict() handling
+* JPA : Criteria Query - Fix to handle fields of superclass
+* JPA : Criteria Query - Fix to not require candidate alias
+* Upgrade provided DBCP dependency to latest
+

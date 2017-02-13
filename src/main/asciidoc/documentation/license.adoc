@@ -3,9 +3,8 @@
 :_basedir: ../
 :_imagesdir: images/
 
-== DataNucleus License
 
-DataNucleus is licensed under an Apache 2 license. The terms and conditions of this are shown below. 
+DataNucleus is licensed under the Apache 2 license. The terms and conditions of this are shown below. 
 You can view the original of this license at http://www.apache.org/licenses/LICENSE-2.0[http://www.apache.org/licenses/LICENSE-2.0].
 
 -----

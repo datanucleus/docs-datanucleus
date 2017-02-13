@@ -1,0 +1,1169 @@
+[[releasenotes_4_0]]
+= DataNucleus AccessPlatform 4.0 Release Notes
+:_basedir: ../../
+:_imagesdir: images/
+
+The 4.0 release of AccessPlatform is available under the link:../license.html[Apache 2 license] from our link:../../download.html[download page] 
+
+
+_Version 4.0_ includes the following over 3.2/3.3
+
+
+* Java 1.8 : Upgrade to ASM v5 to allow for Java 1.8 bytecode changes
+* Java 1.8 : support for the majority of java.time types
+* Changed the bytecode enhancement contract to use an internal definition rather than the JDO contract
+* JPA : no longer needs to have jdo-api.jar present
+* Cassandra : support for Cassandra 1.2+
+* Support for multicolumn TypeConverters (used by RDBMS, Cassandra, Excel, ODF, Neo4j, MongoDB, JSON, HBase)
+* SchemaTool : support for create/delete of a schema (where the datastore supports it)
+* RDBMS : support for HikariCP and DBCP2 connection pools
+* RDBMS : ability to use single connection per PM/EM (rather than 1 for transactional operations, and 1 for non-transactional operations)
+* RDBMS : removed the need to create JavaTypeMapping classes when the user type has a TypeConverter
+* JSON : support for embedded 1-1 relation fields/properties
+* Excel/ODF/JSON/MongoDB/Neo4j/HBase/Cassandra : move to using "core" definition of table/columns meaning access to generalised features tested on other datastores
+
+
+
+
+== DataNucleus AccessPlatform 4.0.6
+
+__Mar 1st 2015__ : _Version 4.0.6_ includes the following changes
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1273[NUCCORE-1273] -         Support for NUCRDBMS-848 for DN 4.0
+
+* http://issues.datanucleus.org/browse/NUCCORE-1274[NUCCORE-1274] -         Support CASE / IF/ELSE &quot;when&quot; conditions that are not completely defined (i.e depend on previous when conditions)
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-854[NUCRDBMS-854] -         Support NUCCORE-1274
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-848[NUCRDBMS-848] -         &quot;max&quot; value generator provides wrong id if 2 objects are persisted in one transaction  
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-856[NUCRDBMS-856] -         ViewImpl seems to have regression in validate() method
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-81[NUCEXCEL-81] -         Numeric object wrapper fields can fail on retrieval due to falling back to TypeConverter
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-82[NUCEXCEL-82] -         StoreEmbeddedFieldManager has incorrect logic in detection of embedded sub field
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-84[NUCEXCEL-84] -         Persist of object with composite PK results in blank row in worksheet before the next inserted object
+
+* http://issues.datanucleus.org/browse/NUCODF-61[NUCODF-61] -         StoreEmbeddedFieldManager has incorrect logic in detection of embedded sub field
+
+
+
+- - -
+
+
+== DataNucleus AccessPlatform 4.0.5
+
+__Feb 2nd 2015__ : _Version 4.0.5_ includes the following changes
+
+=== Improvement
+
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-845[NUCRDBMS-845] -         Handling of case expression should check for non-Boolean conditional expression, and convert to CaseNumericExpression if possible
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-852[NUCRDBMS-852] -         Support query fetch of Collection/Map/Array fields when serialised (i,e stored in single column of owner table).
+
+
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-851[NUCRDBMS-851] -         Add check on CASE &quot;action&quot; expression types for consistency
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-847[NUCRDBMS-847] -         JDOQL statement with multi-tenant PersistenceManager
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-151[NUCMONGODB-151] -         JDOQL COUNT query fails for unknown classes
+
+* http://issues.datanucleus.org/browse/NUCLDAP-66[NUCLDAP-66] -         AttributeStrategy : When reassigning N-1 owner, allow for new owner not yet being persistent
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-80[NUCEXCEL-80] -         Make sure StoreData is populated before using fetchObject(...)
+
+* http://issues.datanucleus.org/browse/NUCODF-60[NUCODF-60] -         Make sure StoreData is populated before using fetchObject(...)
+
+
+
+- - -
+
+
+== DataNucleus AccessPlatform 4.0.4
+
+__Nov 15th 2014__ : _Version 4.0.4_ includes the following changes
+
+=== New Feature
+
+
+* http://issues.datanucleus.org/browse/NUCLDAP-63[NUCLDAP-63] -         Add ability to specify &quot;mapping-strategy&quot; for a field without relying on random &quot;join&quot; information
+
+
+
+=== Improvement
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1262[NUCCORE-1262] -         Simplify Invalid[Class/Member]MetaDataException constructor to just take in params list and no class/member name
+
+* http://issues.datanucleus.org/browse/NUCLDAP-64[NUCLDAP-64] -         StoreFieldManager/FetchFieldManager create an instance of mapping strategy for every objects instance of every basic field!
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-838[NUCRDBMS-838] -         Start restructuring of ClassAdder to allow easier updates/locking in the future
+
+
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1257[NUCCORE-1257] -         AbstractMetaData population moving of ColumnMetaData to element/value when using collection/map is incomplete, should MOVE not COPY
+
+* http://issues.datanucleus.org/browse/NUCCORE-1259[NUCCORE-1259] -         AbstractConnectionFactory/ConnectionFactory should have factoryName and resourceType and not use &quot;options&quot;
+
+* http://issues.datanucleus.org/browse/NUCCORE-1261[NUCCORE-1261] -         Backing store wrappers don't need to hold &quot;queued&quot; property
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1258[NUCCORE-1258] -         transaction options is lost, leading to ISOLATION LEVEL violation
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-80[NUCAPIJDO-80] -         JDOPersistenceManagerFactory.getPersistenceManagerFactory(Map overridingProps) doesn't cater for people abusing API of java.util.Properties
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-60[NUCCASSANDRA-60] -         Make sure resultObjects in CassandraQueryResults are dereferenced
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-792[NUCRDBMS-792] -         Map.containsKey generates invalid query
+
+
+
+- - -
+
+
+== DataNucleus AccessPlatform 4.0.3
+
+__Oct 2nd 2014__ : _Version 4.0.3_ includes the following changes
+
+=== New Feature
+
+
+* http://issues.datanucleus.org/browse/NUCJPA-283[NUCJPA-283] -         Expose access to the underlying connection, so people can perform native operations
+
+* http://issues.datanucleus.org/browse/NUCJPA-285[NUCJPA-285] -         Allow EntityManager.createNativeQuery to create a query using a non-SQL query language
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-21[NUCCASSANDRA-21] -         Support native Cassandra CQL queries
+
+
+
+=== Improvement
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1256[NUCCORE-1256] -         Extend NUCCORE-1233 support for JDOQL &quot;IF ... ELSE IF ... ELSE ...&quot; to require final ELSE or throw exception
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-730[NUCRDBMS-730] -         Persist of M-N relation can be inefficient; currently always does SELECT to see if present then INSERT.
+
+
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1248[NUCCORE-1248] -         NamingFactory.getConstraintName for member should also pass in the class name so we can name indexes when part of table for subclasses
+
+* http://issues.datanucleus.org/browse/NUCCORE-1249[NUCCORE-1249] -         Drop SCOMtoN since we can just check if it is M-N relation or if collection
+
+* http://issues.datanucleus.org/browse/NUCCORE-1250[NUCCORE-1250] -         Add method to MetaDataManager that returns the enhanced method name prefix (i.e &quot;dn&quot;)
+
+* http://issues.datanucleus.org/browse/NUCCORE-1253[NUCCORE-1253] -         Move identity conversion handling into core from api.jdo/api.jpa
+
+* http://issues.datanucleus.org/browse/NUCCORE-1255[NUCCORE-1255] -         Add method for what query language is considered &quot;native&quot; for a store
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-79[NUCAPIJDO-79] -         Add Transaction set/getNontransactionalWriteAutoCommit
+
+* http://issues.datanucleus.org/browse/NUCJPA-282[NUCJPA-282] -         Support @ConstructorResult
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-58[NUCCASSANDRA-58] -         Support NUCCORE-1248
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-59[NUCCASSANDRA-59] -         Support NUCCORE-1255
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-150[NUCMONGODB-150] -         Support NUCCORE-1248
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-827[NUCRDBMS-827] -         Support constructor mappings in SQL query results
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-833[NUCRDBMS-833] -         Support NUCCORE-1255
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1252[NUCCORE-1252] -         ByteArrayByteBufferConverter toMemberType ByteBuffer to byte[] conversion fails
+
+* http://issues.datanucleus.org/browse/NUCCORE-1254[NUCCORE-1254] -         Backed SCO wrappers should not add operations to queue when the owner object is not yet inserted
+
+* http://issues.datanucleus.org/browse/NUCJPA-281[NUCJPA-281] -         CriteriaQuery needs to respect any distinct specified on &quot;select&quot; but currently ignores it
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-57[NUCCASSANDRA-57] -         JPQLQuery should have latest candidate class code (copy from HBase for example)
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-829[NUCRDBMS-829] -         Embedded object causes: IllegalArgumentException: out of field index
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-830[NUCRDBMS-830] -         ResultClassROF can throw exception if it finds an enhancement method in the result class of a query
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-831[NUCRDBMS-831] -         RDBMSStoreManager generates comments which are bad syntax in Mysql
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-832[NUCRDBMS-832] -         Persist of object with Collection (via join table) containing some new and some detached elements doesn't create the join table entries
+
+
+
+
+- - -
+
+== DataNucleus AccessPlatform 4.0.2
+
+__Aug 29th 2014__ : _Version 4.0.2_ includes the following changes
+
+=== New Feature
+
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-814[NUCRDBMS-814] -         Support maxActive on DBCP2 connection pool
+
+
+
+=== Improvement
+
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-823[NUCRDBMS-823] -         SQLite only supports &quot;autoincrement&quot; on INTEGER columns, so should default to that
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-824[NUCRDBMS-824] -         Fields should be ordered by name in insert statement generation
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-826[NUCRDBMS-826] -         Move org.datanucleus.store.rdbms.datasource.DriverManagerDataSource to inner class of DefaultConnectionPoolFactory
+
+
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1241[NUCCORE-1241] -         Support result set value conversion from Long/Integer to Boolean in ClassUtils.convertValue
+
+* http://issues.datanucleus.org/browse/NUCCORE-1242[NUCCORE-1242] -         Fix ByteBuffer converters to handle null input/output
+
+* http://issues.datanucleus.org/browse/NUCCORE-1245[NUCCORE-1245] -         JDO &quot;persistence-capable-superclass&quot; metadata was deprecated in JDO2. Remove it since we use reflection anyway
+
+* http://issues.datanucleus.org/browse/NUCJPA-275[NUCJPA-275] -         Throw NoPersistenceUnitException when not found in creation of EMF via PersistenceProvider
+
+* http://issues.datanucleus.org/browse/NUCJPA-280[NUCJPA-280] -         Enable close of query results at ExecutionContext close
+
+* http://issues.datanucleus.org/browse/NUCNEOFORJ-52[NUCNEOFORJ-52] -         Upgrade to Neo4j 2.1
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1243[NUCCORE-1243] -         OSGI classloading problem
+
+* http://issues.datanucleus.org/browse/NUCCORE-1246[NUCCORE-1246] -         TypeConverter cannot use basic inheritance
+
+* http://issues.datanucleus.org/browse/NUCJPA-277[NUCJPA-277] -         Annotation attribute for @Index &quot;unique&quot; is being used incorrectly
+
+* http://issues.datanucleus.org/browse/NUCJPA-278[NUCJPA-278] -         Some types of fields are setting allowsNull as false when shouldn't, dependent on annotations
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-779[NUCRDBMS-779] -         Without explicit commit, fetching multiple results fails with Firebird
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-790[NUCRDBMS-790] -         Boolean fields are left as null when selecting objects using SQL query
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-815[NUCRDBMS-815] -         NullPointerException when setting multiple Date parameters
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-816[NUCRDBMS-816] -         Incorrect handling of join expressions when using multiple joins
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-817[NUCRDBMS-817] -         Using Collection with class (Discriminator.value_map) with no subclasses (i.e redundant discriminator)
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-818[NUCRDBMS-818] -         Schema Tool throws NullPointerException when @Index name does not match a field
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-819[NUCRDBMS-819] -         HSQL getSecond returns Integer/Decimal depending on millisecs, so should cast to INTEGER
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-820[NUCRDBMS-820] -          PostgreSQL getSecond returns Integer/Decimal depending on millisecs, so should cast to INTEGER
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-821[NUCRDBMS-821] -         SQLTableAlphaNamer doesn't check for lowercase when looking for name clashes
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-822[NUCRDBMS-822] -         possible bug in org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-15[NUCJAVAEIGHT-15] -         HSQL getSecond returns Integer/Decimal depending on millisecs, so should cast to INTEGER
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-16[NUCJAVAEIGHT-16] -         Persist of LocalDateTime/LocalTime is not setting nanos
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-17[NUCJAVAEIGHT-17] -         PostgreSQL getSecond returns Integer/Decimal depending on millisecs, so should cast to INTEGER
+
+
+
+- - -
+
+
+== DataNucleus AccessPlatform 4.0.1
+
+__Jul 19th 2014__ : _Version 4.0.1_ includes the following changes
+
+=== New Feature
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1233[NUCCORE-1233] -         Support JDOQL compilation of &quot;IF (expr) expr ELSE IF (expr) expr ELSE expr&quot;
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-56[NUCCASSANDRA-56] -         Adding support for uuid datastoreType of Cassandra
+
+* http://issues.datanucleus.org/browse/NUCHBASE-96[NUCHBASE-96] -         Support cascade-persist/cascade-update on 1-1/1-N fields
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-78[NUCEXCEL-78] -         Support cascade-persist/cascade-update on 1-1/1-N fields
+
+* http://issues.datanucleus.org/browse/NUCODF-59[NUCODF-59] -         Support cascade-persist/cascade-update on 1-1/1-N fields
+
+* http://issues.datanucleus.org/browse/NUCJSON-53[NUCJSON-53] -         Support cascade-persist/cascade-update on 1-1/1-N fields
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-148[NUCMONGODB-148] -         Support cascade-persist/cascade-update on 1-1/1-N fields
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-807[NUCRDBMS-807] -         Support mapping java.util.UUID to PostgreSQL native &quot;uuid&quot; column type
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-810[NUCRDBMS-810] -         Support for TIME and DATE JDBC data types for MS SQL Server 2008 and newer
+
+* http://issues.datanucleus.org/browse/NUCNEOFORJ-51[NUCNEOFORJ-51] -         Support cascade-persist/cascade-update on 1-1/1-N fields
+
+* http://issues.datanucleus.org/browse/NUCODF-59[NUCODF-59] -         Support cascade-persist/cascade-update on 1-1/1-N fields
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-14[NUCJAVAEIGHT-14] -         Provide Java8 variants of Collection/Map wrappers so that any new methods can be supported.
+
+
+
+=== Improvement
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1237[NUCCORE-1237] -         CompleteClassTable should check for columns with same name in the table and throw an exception
+
+
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1230[NUCCORE-1230] -         Upgrade ASM to 5.0.3
+
+* http://issues.datanucleus.org/browse/NUCCORE-1231[NUCCORE-1231] -         Add basic support for temporal literals as Strings
+
+* http://issues.datanucleus.org/browse/NUCCORE-1236[NUCCORE-1236] -         Support update of L2 cache when refresh() is called
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-805[NUCRDBMS-805] -         Add simple handling of temporal literal as String
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-806[NUCRDBMS-806] -         Mappings for Oracle should be merged into org.datanucleus.store.rdbms.mapping.[java|datastore]
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1235[NUCCORE-1235] -         RDBMSStoreManager.addSchemaCallback does not populate the schemaCallbacks correctly
+
+* http://issues.datanucleus.org/browse/NUCCORE-1239[NUCCORE-1239] -         1-1 Birdirecional relation management fails when using optimistic tx
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-78[NUCAPIJDO-78] -         Creation of implementation of persistent abstract class / interface creates metadata with full name (including package)
+
+* http://issues.datanucleus.org/browse/NUCJPA-274[NUCJPA-274] -         NamedStoredProcedureQueries doesn't set procedure name on processed stored procs metadata
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-55[NUCCASSANDRA-55] -         Could not serialize byte[] @Serialized member on Cassandra store
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-79[NUCEXCEL-79] -         SchemaTool doesn't make full use of generalised Table; should create CompleteClassTable when not present
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-149[NUCMONGODB-149] -         SchemaTool doesn't make full use of generalised Table; should create CompleteClassTable when not present
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-808[NUCRDBMS-808] -         Datanucleus can't find sequence in PostrgreSQL when persistence property 'datanucleus.identifier.case' is set
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-809[NUCRDBMS-809] -         Inconsistent behavior in enum value conversion to/from numeric value in RDBMS using 'enum-value-getter' extension
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-811[NUCRDBMS-811] -         Enum extension &quot;enum-check-constraint&quot; is incorrectly handled if also using extension &quot;enum-value-getter&quot;
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-812[NUCRDBMS-812] -         When executing StoredProcedure with multiple result sets, the close of the first results will close the statement!
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-813[NUCRDBMS-813] -         1-N FK bidir relationship management failing when using optimistic tx
+
+
+- - -
+
+
+
+== DataNucleus AccessPlatform 4.0.0.RELEASE
+
+__Jun 13th 2014__ : _Version 4.0 RELEASE_ includes the following changes
+
+=== New Feature
+
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-147[NUCMONGODB-147] -         Support multicolumn TypeConverters
+
+* http://issues.datanucleus.org/browse/NUCHBASE-94[NUCHBASE-94] -         Support multicolumn TypeConverters
+
+* http://issues.datanucleus.org/browse/NUCNEOFORJ-50[NUCNEOFORJ-50] -         Support multicolumn TypeConverters
+
+
+
+=== Improvement
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1223[NUCCORE-1223] -         org.datanucleus.store.StoreData should have Table field since many store plugins use this now and we should encourage it
+
+* http://issues.datanucleus.org/browse/NUCCORE-1227[NUCCORE-1227] -         UUIDStringConverter should implement ColumnLengthDefiningTypeConverter and set length to 36
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-802[NUCRDBMS-802] -         Change org.datanucleus.store.rdbms.table.Table to extend org.datanucleus.store.schema.table.Table
+
+* http://issues.datanucleus.org/browse/NUCSPATIAL-39[NUCSPATIAL-39] -         Formatting ol files with the latest Datanucleus code convention xml.
+
+* http://issues.datanucleus.org/browse/NUCSPATIAL-50[NUCSPATIAL-50] -         JDK 1.8 related javadoc enhancements needed
+
+
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1121[NUCCORE-1121] -         Remove AbstractMemberMetaData.getColumn since deprecated for some time
+
+* http://issues.datanucleus.org/browse/NUCCORE-1221[NUCCORE-1221] -         NamingFactory getIndexName() methods should be renamed to getConstraintName() so we can use for unique constraint and FK constraint also
+
+* http://issues.datanucleus.org/browse/NUCCORE-1222[NUCCORE-1222] -         Change ForeignKeyMetaData to extend ConstraintMetaData
+
+* http://issues.datanucleus.org/browse/NUCCORE-1224[NUCCORE-1224] -         Refactor Table.getIdentifier -&gt; Table.getName, Column.getIdentifier -&gt; Column.getName
+
+* http://issues.datanucleus.org/browse/NUCCORE-1225[NUCCORE-1225] -         Update JdbcType to use ordinal as the java.sql.Types value allowing lookup in RDBMS
+
+* http://issues.datanucleus.org/browse/NUCCORE-1226[NUCCORE-1226] -         Add persistence property to set the preference for embedding of a PC object
+
+* http://issues.datanucleus.org/browse/NUCCORE-1228[NUCCORE-1228] -         CompleteClassTable should add &quot;column&quot; for nested array/map holder
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-77[NUCEXCEL-77] -         Remove need for SchemaVerifierImpl since does nothing currently anyway
+
+* http://issues.datanucleus.org/browse/NUCODF-58[NUCODF-58] -         Remove need for SchemaVerifierImpl since does nothing currently anyway
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-146[NUCMONGODB-146] -         Change schema management to use org.datanucleus.store.schema.table.Table
+
+* http://issues.datanucleus.org/browse/NUCHBASE-85[NUCHBASE-85] -         HTablePool is deprecated in HBase 0.94.11, 0.95.2 onwards
+
+* http://issues.datanucleus.org/browse/NUCHBASE-93[NUCHBASE-93] -         Change schema management to use org.datanucleus.store.schema.table.Table
+
+* http://issues.datanucleus.org/browse/NUCHBASE-95[NUCHBASE-95] -         Use column name from Table/Column structure and extract familyName/qualifierName from that name
+
+* http://issues.datanucleus.org/browse/NUCJSON-52[NUCJSON-52] -         Remove need for SchemaVerifierImpl since does nothing currently anyway
+
+* http://issues.datanucleus.org/browse/NUCNEOFORJ-49[NUCNEOFORJ-49] -         Use generic Table/Column code for Node/property namings and ditch ad-hoc code
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-803[NUCRDBMS-803] -         Refactor some of the method names around DatastoreIdentifier, Table, Column to make more logical to casual reader
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-804[NUCRDBMS-804] -         Enable TypeConverterMapping.getDefaultLength to use converter length (when defined)
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1204[NUCCORE-1204] -         Object is left in 2nd level cache when commit() fails
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-13[NUCJAVAEIGHT-13] -         Typoe in plugin.xml for InstantLongConverter
+
+
+
+- - -
+
+
+== DataNucleus AccessPlatform 4.0.0.M4
+
+__May 29th 2014__ : _Version 4.0 Milestone 4_ includes the following changes
+
+=== New Feature
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1216[NUCCORE-1216] -         Allow option of Query results being closed when ExecutionContext is closed
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-49[NUCCASSANDRA-49] -         Support schema creation &quot;USING&quot; options via metadata
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-11[NUCJAVAEIGHT-11] -         Add support for Instant persisted as Long (numeric)
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-12[NUCJAVAEIGHT-12] -         Support for OffsetTime, OffsetDateTime
+
+
+
+=== Improvement
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1203[NUCCORE-1203] -         Logging around transactional cache enlist/evict is far from optimum and can just show evictions
+
+* http://issues.datanucleus.org/browse/NUCCORE-1208[NUCCORE-1208] -         Transaction cache cpu improvement
+
+* http://issues.datanucleus.org/browse/NUCCORE-1209[NUCCORE-1209] -         Constructor cache in IdentityManagerImpl
+
+* http://issues.datanucleus.org/browse/NUCCORE-1210[NUCCORE-1210] -         Configuration.getManagerOverrideableProperties() costs quite a lot of cpu during ExecutionContext creation
+
+* http://issues.datanucleus.org/browse/NUCCORE-1212[NUCCORE-1212] -         Change Localisation sub-system to allow each plugin to register its bundle, and specify language/errorCodes via System properties
+
+* http://issues.datanucleus.org/browse/NUCCORE-1213[NUCCORE-1213] -         Cache frequently accessed properties in fields
+
+* http://issues.datanucleus.org/browse/NUCCORE-1214[NUCCORE-1214] -         Cache populated ClassMetadata
+
+* http://issues.datanucleus.org/browse/NUCCORE-1215[NUCCORE-1215] -         org.datanucleus.store.types.SCO should be genericised with the java type it represents
+
+* http://issues.datanucleus.org/browse/NUCCORE-1217[NUCCORE-1217] -         Refactor ExecutionContext callback handler method names to make clearer their usage
+
+* http://issues.datanucleus.org/browse/NUCCORE-1219[NUCCORE-1219] -         Add method to AbstractJavaQuery to compile the query to get just the generic compilation
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-75[NUCAPIJDO-75] -         Decrease lock contention during PersistenceManager.close()
+
+
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1195[NUCCORE-1195] -         Upgrade ASM to 5.0.2
+
+* http://issues.datanucleus.org/browse/NUCCORE-1196[NUCCORE-1196] -         Make StoreManager.getStrategyForNative public
+
+* http://issues.datanucleus.org/browse/NUCCORE-1197[NUCCORE-1197] -         Various ApiAdapter methods are now no longer needed since we use a DataNucleus-centric enhancement contract
+
+* http://issues.datanucleus.org/browse/NUCCORE-1198[NUCCORE-1198] -         Drop org.datanucleus.metadata.PersistenceFlags, now part of Persistable interface
+
+* http://issues.datanucleus.org/browse/NUCCORE-1200[NUCCORE-1200] -         ExecutionContext.newQuery is not needed and all queries should be instantiated via QueryManager
+
+* http://issues.datanucleus.org/browse/NUCCORE-1201[NUCCORE-1201] -         Move query language name conversion to JDO API layer
+
+* http://issues.datanucleus.org/browse/NUCCORE-1205[NUCCORE-1205] -         Add accessor for the StoreManager for the managed object
+
+* http://issues.datanucleus.org/browse/NUCCORE-1206[NUCCORE-1206] -         Add TypeConverter for Calendar to (millis, timezone)
+
+* http://issues.datanucleus.org/browse/NUCCORE-1207[NUCCORE-1207] -         Collection wrappers (with backing store) should likely throw IllegalXXXException when add() fails in the datastore
+
+* http://issues.datanucleus.org/browse/NUCCORE-1211[NUCCORE-1211] -         Change QueryManager to be interface, with default implementation
+
+* http://issues.datanucleus.org/browse/NUCCORE-1218[NUCCORE-1218] -         org.datanucleus.metadata.FieldRole should be enum to give type safety
+
+* http://issues.datanucleus.org/browse/NUCJPA-271[NUCJPA-271] -         Support NUCCORE-1197 removing methods from ApiAdapter
+
+* http://issues.datanucleus.org/browse/NUCJPA-273[NUCJPA-273] -         JPAAnnotationReader has line which sets jdbcType of all boolean fields to SMALLINT. No reason why we need this so disable
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-74[NUCAPIJDO-74] -         Support NUCCORE-1197 removing methods from ApiAdapter
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-794[NUCRDBMS-794] -         Support NUCCORE-1197 removing methods from ApiAdapter
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-796[NUCRDBMS-796] -         Change default Calendar persistence to single column (timestamp)
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-798[NUCRDBMS-798] -         PostgreSQL : support OFFSET/FETCH for ranges
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-799[NUCRDBMS-799] -         PostgreSQL : add dummy BOOLEAN JDBC type
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-801[NUCRDBMS-801] -         PostgreSQL : add dummy TINYINT JDBC type
+
+* http://issues.datanucleus.org/browse/NUCNEODATIS-30[NUCNEODATIS-30] -         Support NUCCORE-1197 removing methods from ApiAdapter
+
+* http://issues.datanucleus.org/browse/NUCACCESS-128[NUCACCESS-128] -         Migrate projects to standard maven 2 layout
+
+* http://issues.datanucleus.org/browse/NUCACCESS-129[NUCACCESS-129] -         Release own version of javax.persistence jar and remove use of EclipseLink JPA API jar
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1199[NUCCORE-1199] -         Improve logic for transient id handling to check for null
+
+* http://issues.datanucleus.org/browse/NUCCORE-1202[NUCCORE-1202] -         Missing release resource in non-tx handling
+
+* http://issues.datanucleus.org/browse/NUCJPA-270[NUCJPA-270] -         JPA spec 2.10.3.1 requires a unique constraint on a OneToOne unidir relation by default
+
+* http://issues.datanucleus.org/browse/NUCJPA-272[NUCJPA-272] -         Query.getParameter methods using position return that parameter is not found for JPQL
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-795[NUCRDBMS-795] -         Query with aggreg.function on single-column calendar field doesn't work due to wrong metadata handling
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-797[NUCRDBMS-797] -         MSSQL OFFSET is not optional when using FETCH
+
+
+
+- - -
+
+
+== DataNucleus AccessPlatform 4.0.0.M3
+
+__Apr 27th 2014__ : _Version 4.0 Milestone 3_ includes the following changes
+
+=== New Feature
+
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-74[NUCEXCEL-74] -         Support multicolumn TypeConverters
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-7[NUCCASSANDRA-7] -         Support in-datastore querying of primary JDOQL/JPQL operations
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-47[NUCCASSANDRA-47] -         Support schema evolution (new columns, delete columns)
+
+* http://issues.datanucleus.org/browse/NUCJSON-47[NUCJSON-47] -         Support multicolumn TypeConverters
+
+* http://issues.datanucleus.org/browse/NUCJSON-50[NUCJSON-50] -         Supported embedded 1-1 fields stored as nested in the JSON object
+
+* http://issues.datanucleus.org/browse/NUCODF-55[NUCODF-55] -         Support multicolumn TypeConverters
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-9[NUCJAVAEIGHT-9] -         Support LocalTime, LocalDate, LocalDateTime getSecond, getMinute, getHour, getDayOfMonth, getMonth, getYear in in-memory query evaluation
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-10[NUCJAVAEIGHT-10] -         Support getHour, getMinute, getSecond, getYear, getMonthValue, getDayOfMonth method invocation on LocalXXX classes with RDBMS
+
+
+
+=== Improvement
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-922[NUCCORE-922] -         JPA : Enhance classes to implement org.datanucleus.enhancer.Persistable to avoid dependency on JDO
+
+* http://issues.datanucleus.org/browse/NUCCORE-1097[NUCCORE-1097] -         Genericise ExecutionContext/ObjectProvider interfaces
+
+* http://issues.datanucleus.org/browse/NUCCORE-1175[NUCCORE-1175] -         Rename &quot;org.datanucleus.store.types.simple&quot; to &quot;org.datanucleus.store.types.wrappers&quot;, and &quot;org.datanucleus.store.types.backed&quot; to &quot;org.datanucleus.store.types.wrappers.backed&quot;
+
+* http://issues.datanucleus.org/browse/NUCCORE-1176[NUCCORE-1176] -         Add TypeConverters for converting Boolean to &quot;Y&quot;/&quot;N&quot; and 1,0
+
+* http://issues.datanucleus.org/browse/NUCCORE-1181[NUCCORE-1181] -         JDOQL/JPQL : add compiler checks for use of aggregate in result clause with incorrect arguments
+
+* http://issues.datanucleus.org/browse/NUCCORE-1186[NUCCORE-1186] -         ValueGeneration class is pointless and should be removed
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-73[NUCAPIJDO-73] -         Support NUCCORE-922 (change bytecode enhancement contract)
+
+* http://issues.datanucleus.org/browse/NUCJPA-269[NUCJPA-269] -         Support NUCCORE-922 (change bytecode enhancement contract)
+
+* http://issues.datanucleus.org/browse/NUCJSON-48[NUCJSON-48] -         javadoc improvements according to JDK1.8 warning and errors
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-782[NUCRDBMS-782] -         Add Expression/Literal for handling TypeConverterMapping so we can avoid having to create Expression/Literal (and hence XXXMapping) for more types
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-8[NUCJAVAEIGHT-8] -         Refactor so that root package is org.datanucleus.store.types.java8
+
+* http://issues.datanucleus.org/browse/NUCJODATIME-20[NUCJODATIME-20] -         Refactor so that root package is org.datanucleus.store.types.jodatime
+
+* http://issues.datanucleus.org/browse/NUCGUAVA-8[NUCGUAVA-8] -         Refactor so that root package is org.datanucleus.store.types.guava
+
+
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-934[NUCCORE-934] -         Restrict all references to PersistenceCapable/Detachable to isolated packages
+
+* http://issues.datanucleus.org/browse/NUCCORE-1173[NUCCORE-1173] -         Remove checks on &quot;stackmapFrames&quot; since we are using JDK 1.7+ now
+
+* http://issues.datanucleus.org/browse/NUCCORE-1174[NUCCORE-1174] -         Upgrade to javax.cache v1.0.0 now that final is out
+
+* http://issues.datanucleus.org/browse/NUCCORE-1177[NUCCORE-1177] -         Rename &quot;org.datanucleus.query.evaluator.memory&quot; to &quot;org.datanucleus.query.inmemory&quot;
+
+* http://issues.datanucleus.org/browse/NUCCORE-1178[NUCCORE-1178] -         Names of in-memory query evaluators are too verbose
+
+* http://issues.datanucleus.org/browse/NUCCORE-1180[NUCCORE-1180] -         Add StoreManager.OPTION_ORM_EMBEDDED_PC_NESTED to signify that the store supports embedding an object nested in the owner object (like JSON)
+
+* http://issues.datanucleus.org/browse/NUCCORE-1182[NUCCORE-1182] -         Split runReachability out of ObjectProvider so that ReachabilityFieldManager is the only place we provide the pbr-at-commit process
+
+* http://issues.datanucleus.org/browse/NUCCORE-1183[NUCCORE-1183] -         Move NullCallbackHandler to org.datanucleus.state
+
+* http://issues.datanucleus.org/browse/NUCCORE-1184[NUCCORE-1184] -         Move ObjectProvider.nullifyFields() to ExecutionContextImpl reachability at commit code
+
+* http://issues.datanucleus.org/browse/NUCCORE-1185[NUCCORE-1185] -         org.datanucleus.query.node adds no value and should be merged into org.datanucleus.query.compiler
+
+* http://issues.datanucleus.org/browse/NUCCORE-1187[NUCCORE-1187] -         ExecutionContext newObjectProviderForEmbedded are simply relays and should be removed; use ObjectProviderFactory direct
+
+* http://issues.datanucleus.org/browse/NUCCORE-1190[NUCCORE-1190] -         Change bytecode enhancement of copyKeyFieldsToObjectId to avoid use of JDOHelper
+
+* http://issues.datanucleus.org/browse/NUCCORE-1191[NUCCORE-1191] -         Remove EclipsePluginRegistry
+
+* http://issues.datanucleus.org/browse/NUCCORE-1194[NUCCORE-1194] -         Drop support for &lt;extension vendor-name=&quot;jpox&quot; ...&gt;
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-76[NUCEXCEL-76] -         Support NUCCORE-1097
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-50[NUCCASSANDRA-50] -         If user specified jdbc-type of &quot;char&quot;, override with &quot;varchar&quot; internally (since there is no &quot;char&quot; in Cassandra)
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-51[NUCCASSANDRA-51] -         IncrementGenerator should use key as &quot;sequence-name&quot; if provided (user input), otherwise &quot;field-name&quot; if for a field, otherwise &quot;root-class-name&quot;
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-52[NUCCASSANDRA-52] -         Detect members using TypeConverter with datastore type of subclass of java.util.Date, and change to converter with datastoreType=java.util.Date
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-53[NUCCASSANDRA-53] -         Move to Datastax Cassandra driver v2.0.1
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-54[NUCCASSANDRA-54] -         Support NUCCORE-1097
+
+* http://issues.datanucleus.org/browse/NUCHBASE-92[NUCHBASE-92] -         Support NUCCORE-1097
+
+* http://issues.datanucleus.org/browse/NUCJSON-49[NUCJSON-49] -         Use Base64 under org.datanucleus.util instead of own copy
+
+* http://issues.datanucleus.org/browse/NUCJSON-51[NUCJSON-51] -         Support NUCCORE-1097
+
+* http://issues.datanucleus.org/browse/NUCLDAP-62[NUCLDAP-62] -         Support NUCCORE-1097
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-144[NUCMONGODB-144] -         Support NUCCORE-1097
+
+* http://issues.datanucleus.org/browse/NUCNEOFORJ-48[NUCNEOFORJ-48] -         Support NUCCORE-1097
+
+* http://issues.datanucleus.org/browse/NUCODF-57[NUCODF-57] -         Support NUCCORE-1097
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-785[NUCRDBMS-785] -         Support NUCCORE-1175
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-787[NUCRDBMS-787] -         SQLMethod method should have signature getExpression(SQLExpression, List&lt;SQLExpression&gt;) i.e include generics
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-789[NUCRDBMS-789] -         Support NUCCORE-1097
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-791[NUCRDBMS-791] -         Drop use of &quot;java-version&quot; on java types
+
+* http://issues.datanucleus.org/browse/NUCSPATIAL-51[NUCSPATIAL-51] -         Add TypeConverter for Rectangle -&gt; x,y,width,height  and fix Point -&gt; x,y to use int
+
+* http://issues.datanucleus.org/browse/NUCSPATIAL-52[NUCSPATIAL-52] -         Add multicolumn TypeConverter for Point2D.Double and Point2D.Float
+
+* http://issues.datanucleus.org/browse/NUCGUAVA-7[NUCGUAVA-7] -         Support NUCCORE-1175
+
+* http://issues.datanucleus.org/browse/NUCGUAVA-9[NUCGUAVA-9] -         Support NUCCORE-1097
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1188[NUCCORE-1188] -         PersistenceUnit &quot;exclude-unlisted-classes&quot; is processed incorrectly ignoring the value in the element
+
+* http://issues.datanucleus.org/browse/NUCCORE-1193[NUCCORE-1193] -         Bad code in JavaUtils.initialiseJREVersion() [in general] // fails on Android [in concrete]
+
+* http://issues.datanucleus.org/browse/NUCJPA-268[NUCJPA-268] -         inconsistent property name: javax.persistence.sql.load-script-source
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-783[NUCRDBMS-783] -         AVG on integral number drops decimals on some databases
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-784[NUCRDBMS-784] -         MapSizeMethod uses wrapper Map rather than java.util.Map!
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-786[NUCRDBMS-786] -         Catch special case SQL method classes (ARRAY etc) to avoid ClassNotResolvedException
+
+* http://issues.datanucleus.org/browse/NUCSPATIAL-49[NUCSPATIAL-49] -         OSGi manifest is missing some package imports
+
+
+
+
+- - -
+
+== DataNucleus AccessPlatform 4.0.0.M2
+
+__Apr 1st 2014__ : _Version 4.0 Milestone 2_ includes the following changes
+
+=== New Feature
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1147[NUCCORE-1147] -         Extend datanucleus.readOnlyDatastore so that it can be specified on a PM
+
+* http://issues.datanucleus.org/browse/NUCCORE-1154[NUCCORE-1154] -         Add TypeConverter extension for converting object to multiple components, from java type to multiple datastore types
+
+* http://issues.datanucleus.org/browse/NUCCORE-1160[NUCCORE-1160] -         Support javax.validation annotations @Size, @NotNull to imply metadata and avoid the need to duplicate that information with JDO/JPA annotations
+
+* http://issues.datanucleus.org/browse/NUCCORE-1163[NUCCORE-1163] -         Allow a TypeConverter to define the default length limit of a String column
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-3[NUCCASSANDRA-3] -         Support optimistic versioning
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-18[NUCCASSANDRA-18] -         Support non-PC collections, maps
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-28[NUCCASSANDRA-28] -         Support members (fields/properties) mapped to more than 1 column
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-29[NUCCASSANDRA-29] -         Default to Session per PMF/EMF, but allow persistence property to set it
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-35[NUCCASSANDRA-35] -         Support compound identity
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-36[NUCCASSANDRA-36] -         Support user-defined TypeConverter on field/property
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-37[NUCCASSANDRA-37] -         Support TypeConverter &quot;autoApply&quot; so user can define default handling for a java type
+
+* http://issues.datanucleus.org/browse/NUCJSON-27[NUCJSON-27] -         Support embedded 1-1 fields
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-771[NUCRDBMS-771] -         Support HikariCP connection pool
+
+* http://issues.datanucleus.org/browse/NUCACCECLIPSE-6[NUCACCECLIPSE-6] -         DataNucleus Context Menu does not appear in Project Explorer
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-7[NUCJAVAEIGHT-7] -         Add support for Duration, Period, Year, Month, DayOfWeek, YearMonth, MonthDay, ZoneId, Instant, OffsetTime, OffsetDateTime, ZonedDateTime
+
+
+
+=== Improvement
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1144[NUCCORE-1144] -         Update NamingFactory to take a set of reserved keywords that an identifier has to be quoted to use
+
+* http://issues.datanucleus.org/browse/NUCCORE-1145[NUCCORE-1145] -         Provide TypeConverters for byte[], int[], float[], etc to ByteBuffer and clean up TypeConversionHelper type safety
+
+* http://issues.datanucleus.org/browse/NUCCORE-1157[NUCCORE-1157] -         Split TypeManager converter helpers out into TypeConverterHelper
+
+* http://issues.datanucleus.org/browse/NUCCORE-1164[NUCCORE-1164] -         Add TypeConverters for javax.time LocalDateTime -&gt; Timestamp, LocalTime -&gt; Time, LocalDate -&gt; Date
+
+* http://issues.datanucleus.org/browse/NUCCORE-1166[NUCCORE-1166] -         Extend CompleteClassTable to support multiple columns per member
+
+* http://issues.datanucleus.org/browse/NUCCORE-1172[NUCCORE-1172] -         Some calls to ObjectProvider.loadUnloadedFields only require relation fields loading
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-25[NUCCASSANDRA-25] -         Change javaType-datastoreType conversion process to use TypeConverters
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-30[NUCCASSANDRA-30] -         Support persistence of members of type Locale (or array of Locale)
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-42[NUCCASSANDRA-42] -         Support cascadePersist/cascadeUpdate for reachability
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-43[NUCCASSANDRA-43] -         Support interface fields
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-75[NUCEXCEL-75] -         Adopt Table/Column/CompleteClassTable data structures rather than ad-hoc index/schema control
+
+* http://issues.datanucleus.org/browse/NUCODF-56[NUCODF-56] -         Adopt Table/Column/CompleteClassTable data structures rather than ad-hoc index/schema control
+
+* http://issues.datanucleus.org/browse/NUCJSON-46[NUCJSON-46] -         Adopt Table/Column/CompleteClassTable data structures rather than ad-hoc index/schema control
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-775[NUCRDBMS-775] -         UUIDMapping, URLMapping, URIMapping can be removed and just fallback to TypeConverterStringMapping to get the same results
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-776[NUCRDBMS-776] -         LocaleMapping, CurrencyMapping, TimeZoneMapping, StringBufferMapping, StringBuilderMapping can be removed and just fallback to TypeConverterStringMapping to get the same results
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-778[NUCRDBMS-778] -         Update mapping/mappingClass lookup process to allow for TypeConverter specified via jdbcType
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-781[NUCRDBMS-781] -         Support multi column TypeConverter and wrap them in a XXXMapping
+
+* http://issues.datanucleus.org/browse/NUCJODATIME-18[NUCJODATIME-18] -         Add TypeConverters for DateTime -&gt; Timestamp, LocalTime -&gt; Time, LocalDate -&gt; Date and maybe also Timestamp
+
+
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1105[NUCCORE-1105] -         Upgrade repackaged ASM to v5 when it is released
+
+* http://issues.datanucleus.org/browse/NUCCORE-1142[NUCCORE-1142] -         Add TypeConverter for Serializable -&gt; java.nio.ByteBuffer
+
+* http://issues.datanucleus.org/browse/NUCCORE-1143[NUCCORE-1143] -         Add StoreManager.OPTION_ORM_FOREIGN_KEYS to signify that the store supports FKs
+
+* http://issues.datanucleus.org/browse/NUCCORE-1146[NUCCORE-1146] -         Add StoreManager.OPTION_APPLICATION_COMPOSITE_ID to signify that the store supports multiple PK fields
+
+* http://issues.datanucleus.org/browse/NUCCORE-1148[NUCCORE-1148] -         Change &quot;datanucleus.identifier.case&quot; 'PreserveCase' to be 'MixedCase' to be match internal namings
+
+* http://issues.datanucleus.org/browse/NUCCORE-1151[NUCCORE-1151] -         In-memory query evaluation : improve ordering support so we can process DyadicExpression, InvokeExpression etc
+
+* http://issues.datanucleus.org/browse/NUCCORE-1152[NUCCORE-1152] -         In-memory query evaluation : support for Map.containsEntry(key,val)
+
+* http://issues.datanucleus.org/browse/NUCCORE-1158[NUCCORE-1158] -         Change TypeManager to be an interface, and have default implementation
+
+* http://issues.datanucleus.org/browse/NUCCORE-1159[NUCCORE-1159] -         Fix NamingFactory index generation to respect user-specified names, and add method for datastore-id, discriminator, multitenancy index
+
+* http://issues.datanucleus.org/browse/NUCCORE-1161[NUCCORE-1161] -         Add TypeConverter for converting java.sql.Timestamp -&gt; String
+
+* http://issues.datanucleus.org/browse/NUCCORE-1162[NUCCORE-1162] -         Fix MultiMap.remove(Object,Object) method to avoid clash with JDK1.8 new Map method
+
+* http://issues.datanucleus.org/browse/NUCCORE-1165[NUCCORE-1165] -         Change javax.time default TypeConverter so we persist as Timestamp/Time/Date wherever possible (hence queryable)
+
+* http://issues.datanucleus.org/browse/NUCCORE-1168[NUCCORE-1168] -         Remove default TypeConverter for java.util.Date/java.sql.Date/java.sql.Time/java.sql.Timestamp/BigDecimal/BigInteger since persistable natively
+
+* http://issues.datanucleus.org/browse/NUCCORE-1169[NUCCORE-1169] -         Remove references to javax.time now that we use a separate plugin for JDK 1.8 time
+
+* http://issues.datanucleus.org/browse/NUCCORE-1170[NUCCORE-1170] -         Store Column &quot;jdbcType&quot; with org.datanucleus.store.schema.table.Column so store plugin don't need to do lookups
+
+* http://issues.datanucleus.org/browse/NUCCORE-1171[NUCCORE-1171] -         Add JdbcType enum and change ColumnMetaData.jdbcType to be of that type
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-10[NUCCASSANDRA-10] -         Support quoted table/column identifiers (i.e case sensitive)
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-23[NUCCASSANDRA-23] -         Add internal table/column definition, to avoid continual column naming lookups
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-32[NUCCASSANDRA-32] -         Add list of reserved keywords and prohibit use of them as identifiers
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-33[NUCCASSANDRA-33] -         Support persistence of Collection&lt;Enum&gt; etc
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-40[NUCCASSANDRA-40] -         Map BigDecimal to Cassandra &quot;decimal&quot; type
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-41[NUCCASSANDRA-41] -         Support java.util.Queue as Cassandra &quot;list&quot; type
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-45[NUCCASSANDRA-45] -         Support null elements in Collection&lt;PC&gt; and null keys in Map&lt;?, PC&gt;
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-46[NUCCASSANDRA-46] -         Support NUCCORE-1157 (TypeConverterHelper)
+
+* http://issues.datanucleus.org/browse/NUCHBASE-90[NUCHBASE-90] -         Support NUCCORE-1157 (TypeConverterHelper)
+
+* http://issues.datanucleus.org/browse/NUCHBASE-91[NUCHBASE-91] -         Optimistic version handling should use VersionHelper to get next version, and only use isVersioned for determining whether to do checks
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-143[NUCMONGODB-143] -         Optimistic version handling should use VersionHelper to get next version, and only use isVersioned for determining whether to do checks
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-72[NUCEXCEL-72] -         Support NUCCORE-1157 (TypeConverterHelper)
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-73[NUCEXCEL-73] -         Optimistic version handling should use VersionHelper to get next version, and only use isVersioned for determining whether to do checks
+
+* http://issues.datanucleus.org/browse/NUCODF-53[NUCODF-53] -         Support NUCCORE-1157 (TypeConverterHelper)
+
+* http://issues.datanucleus.org/browse/NUCODF-54[NUCODF-54] -         Optimistic version handling should use VersionHelper to get next version, and only use isVersioned for determining whether to do checks
+
+* http://issues.datanucleus.org/browse/NUCJSON-45[NUCJSON-45] -         Support NUCCORE-1157 (TypeConverterHelper)
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-769[NUCRDBMS-769] -         Adopt NamingCase instead of IdentifierCase so we have commonality across all store plugin
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-772[NUCRDBMS-772] -         Support NUCCORE-1157 (TypeConverterHelper)
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-773[NUCRDBMS-773] -         Support DBCP2 as connection pool (changed class names from DBCP v1.x)
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-774[NUCRDBMS-774] -         Support NUCCORE-1162, avoid JDK 1.8 naming clash
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-777[NUCRDBMS-777] -         Drop ObjectAsXXXMapping
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-780[NUCRDBMS-780] -         Drop javax.time Mapping/Expression/Literal classes now that we have TypeConverters
+
+* http://issues.datanucleus.org/browse/NUCJODATIME-19[NUCJODATIME-19] -         Drop Mapping/Expression/Literal classes for LocalDate, LocalTime, DateTime since we have TypeConverters now
+
+* http://issues.datanucleus.org/browse/NUCJAVAEIGHT-1[NUCJAVAEIGHT-1] -         Update java.time support to reflect packaging in &quot;Java 8&quot;
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1149[NUCCORE-1149] -         Initialisation of org.datanucleus.store.types.simple.Properties is incorrect
+
+* http://issues.datanucleus.org/browse/NUCCORE-1150[NUCCORE-1150] -         InMemory query evaluation of max/min/avg/sum(arg) when no candidates is returning an integer : should return the type of the arg
+
+* http://issues.datanucleus.org/browse/NUCCORE-1156[NUCCORE-1156] -         java.sql.Timestamp SCO wrapper should also preserve nanos when cloning/detaching etc
+
+* http://issues.datanucleus.org/browse/NUCCORE-1167[NUCCORE-1167] -         NamingFactory column namer when embedded metadata has &lt;column&gt; but no name generates null column name!
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-31[NUCCASSANDRA-31] -         Empty collection fields are being stored as null, and then when read back in are null rather than empty
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-39[NUCCASSANDRA-39] -         User specified table name for &quot;increment&quot; value generator table is not being respected
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-44[NUCCASSANDRA-44] -         Surrogate version should be long or Timestamp for consistency with RDBMS
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-770[NUCRDBMS-770] -         Timestamp maximum precision is milliseconds
+
+* http://issues.datanucleus.org/browse/NUCMAVEN-47[NUCMAVEN-47] -         Exception (Error 87 - commandline too long) when starting the enhancer in forked mode
+
+* http://issues.datanucleus.org/browse/NUCACCECLIPSE-11[NUCACCECLIPSE-11] -         Exception (Error 87 - commandline too long) during the enhancer is called within eclipse (plugin version 3.0.1)
+
+
+
+
+- - -
+
+
+== DataNucleus AccessPlatform 4.0.0.M1
+
+__Mar 1st 2014__ : _Version 4.0 Milestone 1_ includes the following changes
+
+=== New Feature
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-159[NUCCORE-159] -         Support for transaction &quot;savepoints&quot;
+
+* http://issues.datanucleus.org/browse/NUCCORE-1116[NUCCORE-1116] -         SchemaTool : support create/delete of schema, and rename the current options to reflect that they only processes it for the input classes
+
+* http://issues.datanucleus.org/browse/NUCCORE-1124[NUCCORE-1124] -         Add ability to specify NamingFactory (non-RDBMS datastores)
+
+* http://issues.datanucleus.org/browse/NUCCORE-1126[NUCCORE-1126] -         Add support to NamingFactory so that it can provide names for embedded member(s), including nested embedded members
+
+* http://issues.datanucleus.org/browse/NUCCORE-1129[NUCCORE-1129] -         Add persistence property to allow single connection to be used for a PM/EM, shared between transactional and nontransactional operations
+
+* http://issues.datanucleus.org/browse/NUCCORE-1136[NUCCORE-1136] -         Provide method on StoreManager to remove knowledge of a class, so it can be reloaded (by such as JRebel)
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-72[NUCAPIJDO-72] -         Add method to PMF to &quot;unmanage&quot; a class, allowing for it to be reloaded by such as JRebel
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-1[NUCCASSANDRA-1] -         Support basic CRUD operations (CassandraPersistenceHandler)
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-2[NUCCASSANDRA-2] -         Support datastore-identity
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-4[NUCCASSANDRA-4] -         Support schema generation of tables/constraints
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-5[NUCCASSANDRA-5] -         Support schema generation of keyspace (create/drop)
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-8[NUCCASSANDRA-8] -         Support &quot;increment&quot;/&quot;table&quot; value generator
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-9[NUCCASSANDRA-9] -         Support execution and in-memory evaluation of queries
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-11[NUCCASSANDRA-11] -         Support embedded PC fields
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-12[NUCCASSANDRA-12] -         Support serialised fields
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-13[NUCCASSANDRA-13] -         Support multitenancy by discriminator
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-14[NUCCASSANDRA-14] -         Support persistence of Enums
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-15[NUCCASSANDRA-15] -         Support persistence of Maps
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-19[NUCCASSANDRA-19] -         Support DDL with SchemaTool
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-708[NUCRDBMS-708] -         Add ability to create/drop a schema ultimately via SchemaTool
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-760[NUCRDBMS-760] -         Support transaction savepoint API, relaying call to JDBC Connection object
+
+* http://issues.datanucleus.org/browse/NUCMAVEN-45[NUCMAVEN-45] -         Support SchemaTool &quot;createSchema&quot; and &quot;deleteSchema&quot; options
+
+
+
+=== Improvement
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1112[NUCCORE-1112] -         Make NucleusContext an interface, and have implementation(s) for the different contexts. Move static methods into a NucleusContextUtils
+
+* http://issues.datanucleus.org/browse/NUCCORE-1113[NUCCORE-1113] -         Improve efficiency of identity lookups to find class name that it equates to
+
+* http://issues.datanucleus.org/browse/NUCCORE-1128[NUCCORE-1128] -         Move store schema management operations to StoreSchemaHandler
+
+* http://issues.datanucleus.org/browse/NUCCORE-1141[NUCCORE-1141] -         StoreManager &quot;supportedOptions&quot; should be standardised in core rather than just text strings
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-17[NUCCASSANDRA-17] -         Make use of &quot;persistable-identity&quot; when storing relations to persistable objects
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-27[NUCCASSANDRA-27] -         Provide PreparedStatement caching since Cassandra doesn't
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-69[NUCEXCEL-69] -         Use &quot;persistable identity&quot; for storing references to persistable objects instead of &quot;id.toString()&quot;
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-71[NUCEXCEL-71] -         Support NUCCORE-1128 (move schema management into StoreSchemaHandler)
+
+* http://issues.datanucleus.org/browse/NUCJSON-43[NUCJSON-43] -         Use &quot;persistable identity&quot; for storing references to persistable objects instead of &quot;id.toString()&quot;
+
+* http://issues.datanucleus.org/browse/NUCHBASE-89[NUCHBASE-89] -         Support NUCCORE-1128 (move schema management into StoreSchemaHandler)
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-139[NUCMONGODB-139] -         Use &quot;persistable identity&quot; for storing references to persistable objects instead of &quot;id.toString()&quot;
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-141[NUCMONGODB-141] -         Support NUCCORE-1128 (move schema management into StoreSchemaHandler)
+
+* http://issues.datanucleus.org/browse/NUCODF-50[NUCODF-50] -         Use &quot;persistable identity&quot; for storing references to persistable objects instead of &quot;id.toString()&quot;
+
+* http://issues.datanucleus.org/browse/NUCODF-52[NUCODF-52] -         Support NUCCORE-1128 (move schema management into StoreSchemaHandler)
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-757[NUCRDBMS-757] -         getClassNameForObjectID should check on number of concrete candidates, and return if just 1
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-759[NUCRDBMS-759] -         PostgreSQL : support detection of sequence existence using SELECT
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-763[NUCRDBMS-763] -         Support NUCCORE-1128 (move schema management into StoreSchemaHandler)
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-767[NUCRDBMS-767] -         OSGi manifest should also include new HSQLDB (v2.0+) driver import
+
+
+
+=== Task
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1109[NUCCORE-1109] -         Extend SchemaAwareStoreManager to allow for create/delete of an actual schema (where supported)
+
+* http://issues.datanucleus.org/browse/NUCCORE-1110[NUCCORE-1110] -         Drop deprecated MetaDataManager method
+
+* http://issues.datanucleus.org/browse/NUCCORE-1111[NUCCORE-1111] -         Mark any class using &quot;DatastoreUniqueOID&quot; as not being L2 cacheable to avoid problems
+
+* http://issues.datanucleus.org/browse/NUCCORE-1114[NUCCORE-1114] -         Change MetaDataManager to be interface, and have MetaDataManagerImpl as implementation, extended by JDO/JPA APIs
+
+* http://issues.datanucleus.org/browse/NUCCORE-1117[NUCCORE-1117] -         Clean up MetaDataManager interface
+
+* http://issues.datanucleus.org/browse/NUCCORE-1118[NUCCORE-1118] -         Rename StoreManager addClass, addClasses, removeAllClasses to better match their purpose
+
+* http://issues.datanucleus.org/browse/NUCCORE-1119[NUCCORE-1119] -         Remove use of persistence property &quot;datanucleus.metadata.validate&quot; - as deprecated some time back
+
+* http://issues.datanucleus.org/browse/NUCCORE-1120[NUCCORE-1120] -         NucleusContext should be responsible for loading up default properties appropriate to that context, not Configuration
+
+* http://issues.datanucleus.org/browse/NUCCORE-1122[NUCCORE-1122] -         Rename &quot;datanucleus.defaultInheritanceStrategy&quot; to &quot;datanucleus.metadata.defaultInheritanceStrategy&quot;
+
+* http://issues.datanucleus.org/browse/NUCCORE-1123[NUCCORE-1123] -         Change IndexMetaData/UniqueMetaData to not have child ColumnMetaData, just String column name
+
+* http://issues.datanucleus.org/browse/NUCCORE-1125[NUCCORE-1125] -         Support NUCRDBMS-761 (rename to core/RDBMS plugin points)
+
+* http://issues.datanucleus.org/browse/NUCCORE-1127[NUCCORE-1127] -         Refactor schema persistence properties to have standard naming &quot;datanucleus.schema.XXX&quot;
+
+* http://issues.datanucleus.org/browse/NUCCORE-1135[NUCCORE-1135] -         Change JDOImplementationCreator to use current JRE as default rather than 1.3!
+
+* http://issues.datanucleus.org/browse/NUCCORE-1137[NUCCORE-1137] -         Add autoCreateSchema to add database schema if it doesn't exist (for datastores that support it)
+
+* http://issues.datanucleus.org/browse/NUCCORE-1139[NUCCORE-1139] -         Add TypeConverter for BigDecimal-Double and BigInteger-Long for datastores that don't gave high precision types
+
+* http://issues.datanucleus.org/browse/NUCCORE-1140[NUCCORE-1140] -         Add TypeConverter for sql.Date-Date, sql.Time-Date, and sql.Timestamp-Date for datastores that only support java.util.Date
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-68[NUCAPIJDO-68] -         Support NUCCORE-159
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-69[NUCAPIJDO-69] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-70[NUCAPIJDO-70] -         Support NUCCORE-1114
+
+* http://issues.datanucleus.org/browse/NUCAPIJDO-71[NUCAPIJDO-71] -         JDO register process (class instantiation and JDOImplHelper) can register metadata but leave uninitialised
+
+* http://issues.datanucleus.org/browse/NUCJPA-264[NUCJPA-264] -         Default &quot;datanucleus.allowAttachOfTransient&quot; to true for JPA
+
+* http://issues.datanucleus.org/browse/NUCJPA-265[NUCJPA-265] -         Support NUCCORE-159
+
+* http://issues.datanucleus.org/browse/NUCJPA-266[NUCJPA-266] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCJPA-267[NUCJPA-267] -         Support NUCCORE-1114
+
+* http://issues.datanucleus.org/browse/NUCREST-15[NUCREST-15] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-6[NUCCASSANDRA-6] -         Update AccessPlatform docs with Cassandra plugin info
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-16[NUCCASSANDRA-16] -         Add log utility to show CQL statements with ? replaced by value
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-20[NUCCASSANDRA-20] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-22[NUCCASSANDRA-22] -         Support primitive wrappers
+
+* http://issues.datanucleus.org/browse/NUCCASSANDRA-26[NUCCASSANDRA-26] -         Support java.util.TimeZone
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-68[NUCEXCEL-68] -         Support NUCCORE-1109
+
+* http://issues.datanucleus.org/browse/NUCEXCEL-70[NUCEXCEL-70] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCJSON-44[NUCJSON-44] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCHBASE-87[NUCHBASE-87] -         Support NUCCORE-1109
+
+* http://issues.datanucleus.org/browse/NUCHBASE-88[NUCHBASE-88] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCLDAP-61[NUCLDAP-61] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-138[NUCMONGODB-138] -         Support NUCCORE-1109
+
+* http://issues.datanucleus.org/browse/NUCMONGODB-140[NUCMONGODB-140] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCNEOFORJ-47[NUCNEOFORJ-47] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCNEODATIS-29[NUCNEODATIS-29] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCODF-49[NUCODF-49] -         Support NUCCORE-1109
+
+* http://issues.datanucleus.org/browse/NUCODF-51[NUCODF-51] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-753[NUCRDBMS-753] -         Support NUCCORE-1109
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-754[NUCRDBMS-754] -         Remove deprecated JDBCUtils code
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-755[NUCRDBMS-755] -         If DatastoreAdapter doesn't support catalog/schema then don't bother trying to find defaults from datastore connection
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-756[NUCRDBMS-756] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-761[NUCRDBMS-761] -         Move RDBMS plugin point schema definitions from &quot;datanucleus-core&quot; plugin.xml
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-762[NUCRDBMS-762] -         NuoDB adapter updates
+
+* http://issues.datanucleus.org/browse/NUCXML-53[NUCXML-53] -         Support NUCCORE-1112
+
+* http://issues.datanucleus.org/browse/NUCXML-54[NUCXML-54] -         Add flexibility to ConnectionFactory to consider having different XSLT/DOM handlers
+
+* http://issues.datanucleus.org/browse/NUCSPATIAL-36[NUCSPATIAL-36] -         Remove ESRI/ArcGIS and Linar/Jintegra code since was never really ready for release, no docs and no tests
+
+* http://issues.datanucleus.org/browse/NUCSPATIAL-37[NUCSPATIAL-37] -         Drop OracleTypeInfo.SDO_GEOMETRY and move to geospatial
+
+* http://issues.datanucleus.org/browse/NUCSPATIAL-38[NUCSPATIAL-38] -         Support NUCRDBMS-761 (rename to core/RDBMS plugin points)
+
+* http://issues.datanucleus.org/browse/NUCGUAVA-6[NUCGUAVA-6] -         Support NUCRDBMS-761 (rename to core/RDBMS plugin points)
+
+* http://issues.datanucleus.org/browse/NUCJODATIME-17[NUCJODATIME-17] -         Support NUCRDBMS-761 (rename to core/RDBMS plugin points)
+
+* http://issues.datanucleus.org/browse/NUCCACHE-38[NUCCACHE-38] -         Support NUCCORE-1112
+
+
+
+=== Bug
+
+
+* http://issues.datanucleus.org/browse/NUCCORE-1115[NUCCORE-1115] -         TypeManager extraction of datastore type for a TypeConverter can fail when we are using an interface as the member type
+
+* http://issues.datanucleus.org/browse/NUCCORE-1134[NUCCORE-1134] -         PrimaryKeyGenerator equals is incorrect in some situations
+
+* http://issues.datanucleus.org/browse/NUCCORE-1138[NUCCORE-1138] -         L2 cache configuration not reset when getting ExecutionContext from pool
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-758[NUCRDBMS-758] -         Wrong SQL generated for bulk fetch for queries with order by
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-764[NUCRDBMS-764] -         Current handling of &quot;datanucleus.connection.nontx.releaseAfterUse=false&quot; is being applied to schema connections when shouldn't
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-765[NUCRDBMS-765] -         H2 DatastoreAdapter should have SEQUENCES as supported but doesn't currently
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-766[NUCRDBMS-766] -         ManagedConnection.getXAResource is always returning a new XAResource but should return the current resource
+
+* http://issues.datanucleus.org/browse/NUCRDBMS-768[NUCRDBMS-768] -         ResultClassROF because of generate field $jacocoData
+
+* http://issues.datanucleus.org/browse/NUCXML-55[NUCXML-55] -         Setting the 'indent-number' attribute is incompatible with some external XSLT libraries.
+
+
+

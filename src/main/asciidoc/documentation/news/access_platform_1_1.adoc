@@ -1,0 +1,326 @@
+[[releasenotes_1_1]]
+= DataNucleus AccessPlatform 1.1 Release Notes
+:_basedir: ../../
+:_imagesdir: images/
+
+The 1.1 release of AccessPlatform is available under the link:../license.html[Apache 2 license] from our link:../../download.html[download page] 
+
+
+_Version 1.1_ includes the following over 1.0
+
+
+* Requires JDK1.5+
+* Support for in-memory evaluation of JDOQL/JPQL subqueries
+* Support for JDO2 PersistenceManager proxy
+* Support for JDO2.3 Metadata API
+* Support for JDO2.3 Enhancer API
+* Support for JDO2.3 query timeout/cancel API
+* Support for JDO2.2 transaction isolation control
+* JPA2 preview support for datastore cache, @OrderColumn, standardised properties, and various
+    new query methods
+* RDBMS : rewrite of locate, fetch and some select SQL using a new SQL API
+* RDBMS : start of an alternative JDOQL implementation using a new SQL API
+* RDBMS : Support for persistence of interface fields into a single column
+* ODF : Support for persistence/querying of OpenDocument format spreadsheets
+* XML : Added support for 1-1, 1-N, M-N relations
+* XML : Added many improvements in configurability
+* LDAP : Support for various new mapping configurations.
+* LDAP : Support for native querying
+* Support for enhancement as part of the compilation process (JDK1.6+)
+* Dropped support for NucleusSQL query language
+* Dropped support for BCEL enhancer
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.6
+
+__Oct 11th 2009__ : _Version 1.1.6_ includes the following changes
+
+
+* Bug fix to PersistenceManager proxy in multithreaded environments
+* Bug fix to interface mapping strategy "xcalia"
+* LDAP : Add support for enums
+* RDBMS : Bug fix to instanceof when handling possible subclasses
+* RDBMS : Bug fix to detection of discriminator when handling superclasses
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.5
+
+__Jul 15th 2009__ : _Version 1.1.5_ includes the following changes
+
+
+* Support minor changes to JDO2.3 API post 2.3-early-access
+* Bug fix to generic compilation of invoke expressions
+* Bug fix to use of "persistence.xml" in a path with spaces in it
+* Bug fix to JPA query repeated setting of the first postion
+* RDBMS : Bug fix to SchemaTool, broken in 1.1.4
+* RDBMS : Bug fix to querying when enum is null
+* RDBMS : Add support for persisting all date types as a String in a consistent way
+* RDBMS : Revision to nullability handling and joins
+* RDBMS : updates to very minor corner-case possibilities of connection leaks
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.4
+
+__Jun 17th 2009__ : _Version 1.1.4_ includes the following changes
+
+
+* Make the query cache pluggable, allowing use of external caching products
+* Add support for use of Memcache, javax.cache, and EHCache for the query cache
+* Addition of upfront checks on whether the datastore supports particular features
+    so allowing quick fail
+* Bug fix to datastores which don't provide non-transactional connections
+* Simplification of specification of L2 caching, for consistency with L1 cache and
+    Query cache.
+* Improvement to classloading for RDBMS "requests" for use in OSGi containers
+* Change JPA default for discriminator value to use "class name" when no value specified.
+* Improvements to fallback process for persisting a type as a String
+* Add control over cascade delete of map keys, and minor change in default
+* Bug fix to JPQL "LOWER"/"UPPER" compilation
+* Bug fix to List.set() methods when using cascade delete
+* Respect JPA "fetch" setting on 1-1 relations
+* Support JPA "columnDefinition" in a minimalistic way
+* RDBMS : Change fetch process to allow fetching of related (1-1, N-1) objects in same SQL
+* RDBSM : Change to Oracle BLOB/CLOB handling to use new SQL API instead of legacy code.
+* XML : Bug fix to addition of elements to collection of persistent object
+* LDAP : Bug fix to JNDI connection pooling
+* LDAP : Support for persisting embedded elements as child entries
+* LDAP : Support for inheritance in relationships
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.3
+
+__May 15th 2009__ : _Version 1.1.3_ includes the following changes
+
+
+* Add support for REST API
+* Add support for Memcache and javax.cache (JSR107) L2 caches
+* Add support for choosing which JDOQL/JPQL implementation to use.
+* Generic compilation of bulk update statements
+* Support for generic compilation of JPQL "KEY", "VALUE", "ENTRY", "SIZE", "LIKE",
+    "SUBSTRING", "LENGTH", "CONCAT", "TRIM", "LOWER", "UPPER", "LOCATE" keywords
+    as well as fixes to compilation of "NOT BETWEEN", "JOIN FETCH" keywords
+* Fixes to generic compilation of JPQL "Object(a)", from clause
+* Fixes to input parameter handling for generic JPQL/JDOQL queries, including much improved
+    type checking
+* Add support for allowing multiple JPA inheritance strategies in an inheritance tree
+    (JPA extension).
+* Bug fix to replication for embedded-only classes
+* Bug fix to allow handling of multi-level generic annotations
+* Fix to detachAllOnCommit to mean we don't have DN wrappers in detached objects
+    so objects are ready for use in clients.
+* Fix to JPAReplicationManager for multiple objects
+* Fix to use of jtaDataSource for RESOURCE_LOCAL contexts
+* Support for JDO2.3 transaction locking semantics
+* Support for JPA2 @Cacheable
+* Bug fix for specification of generation strategy in orm.xml
+* Bug fix for PK join columns in orm.xml
+* JDOQL2 : Support for Oracle-specific mappings
+* Provision of alternative JPQL implementation for RDBMS "JPQL2"
+* JPQL2 : Support FROM clause join syntaxis
+* JPQL2 : Support case-insensitive identifiers
+* JPQL2 : Support for CURRENT_DATE, CURRENT_TIME, CURRENT_TIMESTAMP
+* JPQL2/JDOQL2 : Cater for input parameters with multiple PK fields
+* Support for dynamic schema updates for interface implementation in 1-N collections
+* Minor bug fixes to SchemaTool
+* Bug fix to the enhancer to close any file that was opened
+* Bug fix to the enhancer for classes with custom PKs using long fields
+* Upgrade to NeoDatis 1.9 final
+* Upgrade to Apache JDO 2.3 "early access" jar
+* Move to use of Geronimo "JPA1" jar for more flexible license
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.2
+
+__Apr 15th 2009__ : _Version 1.1.2_ includes the following changes
+
+
+* Improvements to fix issues in beforeCompletion/afterCompletion for JTA
+* Support for null values in HashMap
+* Generic query compiler support for implicit variables, method invocation on parameters
+* Generic query compiler support for JPQL "MEMBER OF", EXISTS, ALL, ANY, SUM, as well
+    as resolution of entity names.
+* Generic query compiler support for JDOQL "ascending"/"descending" has been fixed
+* Bug fix to caching of generic query compilations to make thread safe.
+* JDO2.3 : Support for future ability to specify read object locking on transaction
+    and on query
+* Level 2 cache : fixes to caching of Object[], Collection&lt;Object&gt;, as well
+    as to ordered lists and the state of returned objects from the L2 cache
+* Managed Relations : support for delete of an object that is present in a collection
+* Support for backwards compatibility with column identifiers consistent with JPOX
+* Support for load of all classes below the root of a persistence-unit, and support for
+    "exclude-unlisted-classes".
+* Fixes to allow correct enhancement of Scala classes
+* Fix support for JPA @Temporal, and complete support for TemporalType on Query API
+* Fix to JPA XML "generated-value" to handle case-sensitivity correctly
+* ODF : Support use of ORM files
+* LDAP : Support use of ORM files
+* Excel : Support use of ORM files
+* RDBMS : JDOQL2 - support for Collection.contains, Map.containsKey, Map.containsValue,
+    Map.get, Map.containsEntry
+* RDBMS : JDOQL2 - support for cast, range, grouping, resultClass, new XXX()
+* RDBMS : JDOQL2 - ArrayLiteral/CollectionLiteral size, contains methods
+* RDBMS : JDOQL2 - support for String.equals(...)
+* RDBMS : JDOQL2 - fixes to aggregate types, case and whether to use UNIONs
+* RDBMS : JDOQL2 - detection of whether a query can be precompiled, and mechanism to
+    convert a parameter into its literal form when not precompilable
+* RDBMS : Fix DB2 schema generation NPE
+* RDBMS : Use of SERIAL8 in Informix for sequence
+* RDBMS : Ability to generate schema with multiple PMFs at the same time
+* RDBMS : Improvement to locking with Derby
+* RDBMS : Fix to indexed="true" for discriminator and version columns
+* XML : Fix to the retrieval of objects when the candidate has no "xpath" specified
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.1
+
+__Mar 17th 2009__ : _Version 1.1.1_ includes the following changes
+
+
+* Added support for generic compilation of long form of Math.XXX, JDOHelper.XXX
+* Added support for parameter.method, parameter.field syntaxis in generic queries
+* Improved in-memory evaluation of queries to skip candidates that fail sub-expressions
+    due to impossible conditions (unimplemented features, or casts etc)
+* Bug fix to always put objects in the L2 cache after a query
+* Bug fix to class loading when user has supplied their own loader
+* Bug fix to JTA with JCA in afterCompletion (Guido Anzuoni)
+* Bug fix to execution of generically compiled queries with parameters so that subsequent
+    invocations use the new parameter values
+* Bug fix to runtime enhancement and use of @Extension with JPA to avoid ClassCastException
+* Improvements to ordered lists to handle some operations that require indexed positions
+* Improvement to object-value-generator to cache the generators
+* Bug fix to JPA @Basic annotation allowing for tagging of custom type fields as persistent
+* RDBMS "JDOQL2" : Improved support for various String methods
+* RDBMS "JDOQL2" : Add support for Math.XXX, JDOHelper.XXX
+* RDBMS "JDOQL2" : Support for static class fields
+* RDBMS "JDOQL2" : Support chained method invocations
+* RDBMS "JDOQL2" : Bug fix to use of parameters when the statement involves unions
+* RDBMS "JDOQL2" : Support for input Extent
+* RDBMS "JDOQL2" : Support for enums
+* RDBMS : Rewrite all backing store "iterator" statements to use new SQL API
+* RDBMS : Separate all native (SQL) statements into their own log category
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.0.RELEASE
+
+__Feb 23rd 2009__ : _Version 1.1 RELEASE_ includes the following changes
+
+
+* Add support for JDK1.6+ enhancement during the compilation.
+* Add support for persistence to Open Document Format (ODF) spreadsheets.
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.0.M4
+
+__Feb 1st 2009__ : _Version 1.1 Milestone 4_ includes the following changes
+
+
+* Upgrade to NeoDatis 1.9RC1
+* Upgrade to latest JDO 2.3 snapshot including Metadata API
+* Add accessor for available query extensions
+* Support for in-memory evaluation of JDOQL/JPQL subqueries
+* Support for JDO2.3 Metadata API
+* Bug fix to allow registration of persistent classes when loaded by ClassLoader
+* Support for QueryResult toArray/subList
+* RDBMS : Make "request" operations pluggable allowing override of INSERT/UPDATE/DELETE etc
+* RDBMS : Replacement of field fetch process using new SQL API
+* RDBMS : Replacement of object locate process using new SQL API
+* RDBMS : Provision of potential replacement JDOQL implementation, using new SQL API
+* XML : Fix for fields marked transient to not be persisted
+* XML : Provide default XmlID/XmlIDREF based on relation metadata information
+* XML : Fix to implement fetch of fields
+* XML : Support for use of schema/table/column
+* XML : Bug fix for XmlIDREF for collection fields
+* LDAP : Support for hierarchical mapping of relations
+* LDAP : Support for wrappers of primitives
+* LDAP : Support for map/array/collection of Strings/primitives to multivalued LDAP components
+* Dropped support for BCEL enhancer
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.0.M3
+
+__Dec 11th 2008__ : _Version 1.1 Milestone 3_ includes the following changes
+
+
+* Upgrade to Apache POI 3.2
+* Upgrade to JDO 2.3 (snapshot)
+* New autostarter taking in metadata filenames
+* Support for pm.getObjectById(String) mimicking custom behaviour of Xcalia 
+    (for people migrating from Xcalia)
+* Support for JDO2 PersistenceManager proxy
+* Support for JPA2 @OrderColumn
+* RDBMS : Support for persisting interface/object fields using a single column.
+    (for compatibility with Kodo/Xcalia, for people migrating from those implementations)
+* Support for JDO2.3 Enhancer API
+* LDAP : Support for native queries rather than performing all in-memory.
+* LDAP : Improvements to distinguishedName handling
+* Support for String.startsWith/endsWith/indexOf with parameter/primary expressions
+* Catch leading/trailing blanks in persistence properties
+* Support for OpenJPA/Kodo style datastore identity (for people migrating from Kodo)
+* Support for Xcalia style datastore identity (for people migrating from Xcalia)
+* Fix for unary minus in generic query mechanism
+* Remove enhancer "verify" mode since no longer used
+* Provide access to class bytes after enhancement via enhancer API
+* Fix to replication in some cases where object didnt exist in datastore 2
+* Fix to RDBMS large result "count" method to ignore ordering
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.0.M2
+
+__Oct 31st 2008__ : _Version 1.1 Milestone 2_ includes the following changes
+
+
+* Upgrade to ASM 3.1
+* Upgrade to db4o 7.4 java5
+* Upgrade to JDO2.2 final
+* Provide an API for datastore replication for JDO and JPA
+* Improvements to L2 caching to fix problems with objects being garbage collected and returning
+    old version of objects
+* Fixes to how fields are marked as loaded
+* Fix to handling of collections with non-RDBMS datastores so they aren't treated as serialised
+* Improvement to detach flag DETACH_UNLOAD_FIELDS to also remove the values from the object
+* Fix SQL syntax for non-ANSI joins (e.g Oracle 8i)
+* Remove support for NucleusSQL for RDBMS datastores
+* Support for sequences with H2 datastore
+* Extend RDBMS "update lock" to also apply to object existence check
+* Fix to handling of URLs with DB4O plugin
+* Fix to JPA handling of PostLoad callbacks
+* Fix to LDAP plugin so that the existence check doesnt retrieve any attributes
+* Fix to handling of XMLIdRef annotation with XML plugin
+
+- - -
+
+== DataNucleus AccessPlatform 1.1.0.M1
+
+__Sept 23rd 2008__ : _Version 1.1 Milestone 1_ includes the following changes
+
+
+* Moved to JDK1.5+ requirement
+* Removal of Java5 plugin, and addition of JPA plugin
+* Support for JDO2.2 transaction isolation specification mechanism
+* Support for JPQL "&lt;&gt;" added to generic query compilation
+* Support for JDOQL "(cast)" added to generic query compilation
+* Support for JPQL bulk delete for db4o, NeoDatis, Excel, XML, LDAP and JSON datastores
+* Support db4o 7.0 or later only
+* Log any invalid/unsupported persistence properties
+* Remove support for NucleusSQL for RDBMS datastores
+* Performance improvement to Excel and XML datastores to not repeatedly open/close the datastore
+* When checking for RDBMS table existence use DatabaseMetaData.getTables for performance
+* Fix logging of initialisation of Derby datastores to remove logged exception
+* Fix logging of initialisation of RDBMS SEQUENCE_TABLE to remove logged exception
+* Fix bug in loading of unloaded fields to cater for corner case
+* Fix bug in persistence of 1-N bidir List using cascade delete
+* Fix available transaction isolation levels for HSQL, H2 datastores
+* Fix bug in DB4O and NeoDatis JDOQL handling of "{alias}.b" syntax
+* Fix bug in Extents with subclasses for Excel, XML, LDAP and JSON datastores
+* Fix bug in LDAP persistence of boolean fields
+

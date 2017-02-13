@@ -1,0 +1,528 @@
+[[releasenotes_3_0]]
+= DataNucleus AccessPlatform 3.0 Release Notes
+:_basedir: ../../
+:_imagesdir: images/
+
+The 3.0 release of AccessPlatform is available under the link:../license.html[Apache 2 license] from our link:../../download.html[download page] 
+
+
+_Version 3.0_ includes the following over 2.2
+
+
+* JDO, JPA, REST APIs split out into separate plugins with JPA no longer piggybacking on JDO.
+* Major restructring to provide initial support for Data Federation
+* Ability to specify classes as "read-only"
+* Major changes with non-transactional operations, providing atomic persistence/delete
+* SchemaTool : added support for ODF, Excel, MongoDB, HBase
+* MongoDB : New plugin for MongoDB document store, providing quite complete feature set
+* HBase : Much enhanced support for HBase map store
+* RDBMS : Added support for SQLite
+* ODF : support added for embedded fields, maps, value generation, query of interfaces
+* Excel : support added for maps, value generation, query of interfaces
+* NeoDatis : support for unique constraints
+* Cache : added support for Xmemcached, and enhanced support for EHCache
+* JDO : Support for "complete-table"
+* JDO : Support for bulk update/delete via typesafe API
+* JPA : support for singleton EMF pattern
+* JPA : support for merge of transient object when it has identity fields mapping to persistent object
+* Now works with JBoss 6+
+* Many bug fixes, and minor feature additions.
+
+
+
+
+== DataNucleus AccessPlatform 3.0.10
+
+__Jun 15h 2012__ : _Version 3.0.10_ includes the following changes
+
+
+* JPA : Fix bug with EMF creation when overriding properties are null.
+* JPA : Fix bug in Criteria FromImpl causing NPE
+* Fix bug preventing objects created using "identity" strategy from being L2 cached
+* Fix bug in string conversion of JDOQL Typesafe into String when including equals clause
+* Add support for detachment of N-1 join table relations.
+* RDBMS : Fix bug in concurrent access with classes with date types persisted as String
+
+
+
+== DataNucleus AccessPlatform 3.0.9
+
+__Mar 28th 2012__ : _Version 3.0.9_ includes the following changes
+
+
+* Change Set proxy to not do clear+addAll on an update
+* Fix bug in removeAll() method of Set proxies
+* Add support for bulk loading of objects when calling pm.getObjectsById()
+* Fix to non-referential flush process to detect new objects correctly
+* Fix to persist of 1-N uni FK Lists to not to update the FK even though already set (less SQL calls)
+* Fix to delete of N side of a 1-N bidir catering for relation not loaded
+* Improved error reporting when detach fails
+* JPA : fix to javax.persistence.XXXDataSource persistence properties
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.8
+
+__Feb 28th 2012__ : _Version 3.0.8_ includes the following changes
+
+
+* Fix to cascade-attach of arrays of persistable types
+* Fix to classloader usage for "persistence.xml" to work with OSGi
+* Minor change to OSGi metadata load (Danny van Leiden)
+* JPA : Fix to "findTypeConversion" extension
+* RDBMS : Support for sequences with Derby 10.6+ (Michael Bouschen)
+* RDBMS : Fix to BLOB/CLOB with non-standard Oracle JDBC driver (Ludovic Galibert)
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.7
+
+__Feb 10th 2012__ : _Version 3.0.7_ includes the following changes
+
+
+* Fix to use of persistence property "datanucleus.storeManagerType"
+* JPA : Support for JPA2.1 Type Convertors
+* JPA : Fix to EM.find to also work for datastore-identity
+* JPA : Update to detection of 1-N UNI FK relations to avoid the need for JPA 'level' persistence property
+* JPA : Add numeric conversion capabilities to EM.find key argument.
+* JDO : Fix to duplicate close of query results when using Extent on non-RDBMS datastores
+* Fix to load of metadata for persistence unit when persistable inner classes present
+* Fix to instantiation of object from identity when root class is abstract and using single-field id
+* RDBMS : Fix to JPQL "INDEX" SQL generation for join table case
+* MongoDB : fix to query with no filter
+* JSON, HBase, MongoDB, Excel, ODF, RDBMS : fix to version of core usable to prohibit v3.1
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.6
+
+__Jan 29th 2012__ : _Version 3.0.6_ includes the following changes
+
+
+* Fix to clear/removeAll methods of backed SCOs for non-RDBMS datastores (e.g GAE)
+* Fix to embedded inheritance mapping treatment of members
+* Add code for generic type converter, compatible with JPA2.1 converters
+* Fix to JPA @EmbeddedId when used in a relation
+* Add validation of "jdbc-type" to only accept valid values
+* Allow for custom scanning for annotated classes (Ales Justin)
+* JDO3.1 : add check for invalid javax.jdo persistence properties
+* JDO3.1 : add security check on PMF.getManagedClasses calls
+* JPA extension : add annotation to support specification of column "position"
+* JPA2.1 : support stored procedure API
+* RDBMS : add support for serialisation of query results
+* RDBMS : fix use of JDOQL cast/instanceof for embedded inherited fields
+* MongoDB : support nondurable identity
+* Excel : support nondurable identity
+* Excel : support embedded PK fields
+* Excel : drop support for extension "sheet" and use standard only now
+* ODF : support embedded PK fields
+* ODF : drop support for extension "sheet" and use standard only now
+* HBase : fix reuse of HTable so we can use HBase 0.90.1+
+* HBase : dont allow table creation/validation if persistence properties not set
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.5
+
+__Jan 11th 2012__ : _Version 3.0.5_ includes the following changes
+
+
+* Make use of bulk load from L2 cache on use of PM.getObjectsById
+* Support for override of metadata for inherited fields/properties in embedded objects
+* Fix to in-memory query evaluation when an order clause is null
+* Some clean ups for logging
+* Fix to default value of "datanucleus.identifier.case" which was incorrect in 3.0.4
+* RDBMS : dont load all query results when running non-tx when we retain the connection
+* RDBMS : Support for use of sql-type when there are multiple possible for a jdbc-type
+* RDBMS : Support various MySQL sql types such as LONGTEXT, MEDIUMBLOB etc
+* RDBMS : Some improved error messages
+* JSON : Support for enum fields
+* JSON : Support datastore identity
+* JSON : Support 1-1/1-N/M-N relations
+* JSON : Support field types that have long/String converters
+* JSON : Support versioning of objects
+* DB4O : Remove invalid import from OSGi info
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.4
+
+__Dec 10th 2011__ : _Version 3.0.4_ includes the following changes
+
+
+* AccessPlatform : drop support for ZIP distributions for db4o and NeoDatis datastores
+* AccessPlatform : add Maven POM artifacts for main AccessPlatform combinations (JDO-RDBMS, JPA-RDBMS, etc)
+* Add ability to turn off Metadata support for XML or annotations, for performance
+* Parameterise all persistence property names for easy referencing
+* Split support for java.awt geometry types into a separate plugin, and complete support for persisting in String form
+* Improve startup process so that NucleusContext, PluginManager are more modular, and so that
+    JPA doesn't create multiple working contexts
+* SchemaTool : improvement to class resolution process when not forking the JVM process
+* Support for Atomikos transaction manager (Matthew Adams)
+* Support batching of L2 cache updates
+* Support L2 cache "mode" to determine which classes are cacheable (JPA "sharedCache.Mode")
+* RDBMS : Improvement to handling of result classes when single column selected
+* RDBMS : Support for embedded inherited objects (likely part of JDO3.1/3.2)
+* MongoDB : fix to handling of bidirectional relations when using IDENTITY strategy
+* HBase : fix problem in table management
+* Cache : support for javax.cache v0.3+ (in datanucleus-cache v3.1.0, while support for the earlier
+    version is in datanucleus-cache v3.0)
+* Eclipse : update to the plugin to move API to general preferences and drop the enhancer "type"
+    since it was not being used
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.3
+
+__Nov 5th 2011__ : _Version 3.0.3_ includes the following changes
+
+
+* Rewrite of significant parts of the L2 cache to now store a map of field values rather than a
+    detached persistable object. This means no locking is needed.
+* Fix to metadata identification of some Object and interface field relation types
+* Fix to query result cache evict-by-class process
+* Fix to generic compilation of implicit query parameters when repeated in the query
+* Change ObjectStringConverter/ObjectLongConverter to use generics for type safety
+* OSGi : Add export version to many MANIFEST entries
+* JDO : Add support for use of javax.validation
+* JDO : Respect persistence-unit "validation-mode" setting
+* JPA : Respect persistence-unit "validation-mode" setting
+* JPA : Add DataNucleus variant of orm.xsd so we can add on vendor specifics
+* Cache : Fix to use of Memcached caches so they can handle all "identity" types
+* Cache : Support Cacheonix as a query result cache
+* RDBMS : Fix to PostgreSQL ESCAPE syntax support
+* RDBMS : Fix to JDOQL "equalsIgnoreCase" handling
+* RDBMS : Fix to query serializeRead to only apply it when in a transaction
+* MongoDB : Support multitenancy via discriminator
+* MongoDB : Only evaluate query filter in-memory if not done completely in-datastore
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.2
+
+__Oct 1st 2011__ : _Version 3.0.2_ includes the following changes
+
+
+* Fix to L2 caching of fields of types Map&lt;PC, NonPC&gt;, Map&lt;NonPC, PC&gt;
+* Fix to allow plugin registry to load plugins from "https"
+* Fix to allow recursion in flushing
+* JDO : Fix to @Embedded processing
+* JPA : Allow specification of jdbc type for a field (extension)
+* RDBMS : Fixes to SQL generation for collections of interfaces where FK per implementation
+* RDBMS : Fix to clear/remove in maps where formed using foreign key
+* RDBMS : Support for in-datastore handling of query range for Oracle, DB2
+* RDBMS : Support for MultiTenancy using a discriminator
+* RDBMS : Support for specification of JDBC driver properties with connection pools
+* RDBMS : Fix to boolean usage in some queries
+* HBase : Fix to not serialise the PK by default
+* HBase : Support for "schema evolution : addition of new fields"
+* HBase : Fix to query handling of "!="
+* MongoDB : Support for multiple "AND" clauses on the same field when querying
+* MongoDB : Support for "schema evolution : addition of new fields"
+* Cache : Support for use of Cacheonix as an L2 cache
+
+
+
+== DataNucleus AccessPlatform 3.0.1
+
+__Aug 27th 2011__ : _Version 3.0.1_ includes the following changes
+
+
+* Improved support for DataNucleus in non-Eclipse OSGi environments (Alexey Sushko)
+* Separate synchronisation of PM/EM access into separate class so not used for majority of use-cases
+* Support for embedded "null-indicator" column/value for JPA (extension)
+* Fix bug in detach() of newly-persistent object that was causing NPE on commit (JPA)
+* Change access to StoreManager to better facilitate data federation
+* JSON : minor change to URL processing
+* RDBMS : Support for JDOQL "JDOHelper.getVersion()"
+* RDBMS : Support SQLServer with table names having spaces
+* RDBMS : Improve support for indexes under SQLServer
+* ODF : Support retrieval of interface field
+* Excel : Support retrieval of interface field
+* MongoDB : Support retrieval of interface field
+* JDO JCA : Better support for JBoss 7
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.0.RELEASE
+
+__Aug 1st 2011__ : _Version 3.0 RELEASE_ includes the following changes
+
+
+* JDO : Add ability to hook into transaction events via listener
+* JPA : Fix problem with DetachAllOnRollback not being set
+* JPA : Fix fetch flag observance when read from XML
+* JPA : Fix problem with singleton EMF pattern
+* Major changes to java type management to support specification of generics by configuration, and
+    to give major speed up in type information access
+* Move SCO container backing store implementations into RDBMS plugin
+* Fix use of version metadata with respect to inheritance of classes, affecting various store plugins
+* Fix problems with non-transactional "commit" and pm/em close process to discard objects that
+    don't need any processing
+* Fix all operations that involve schema updates to respect the "autoCreate" flags (so they now
+    can correctly prevent any schema changes)
+* Fix to queries using result class, to prevent NPE when selecting candidate and defining result class
+    as candidate
+* MongoDB : fix to use of IDENTITY for datastore id
+* MongoDB : fix to querying with inheritance
+* MongoDB : added extra handling of MongoDB numeric types
+* Maven : fix to setting of the CLASSPATH in some situations
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.0.M6
+
+__Jul 10th 2011__ : _Version 3.0 Milestone 6_ includes the following changes
+
+
+* Added the ability to persist transient objects as a way of updating existing persistent objects (application identity only).
+* Added persistence property for control over what is detached (for APIs without fetch groups)
+* Fix to delete of a detached object
+* Fix to SortedSet use of comparator in detaching
+* Evict entries from the query cache when objects of the candidate type are updated/deleted/persisted
+* Fix to use of Collection.add so that it checks on contains() before performing any action
+* Change to make non-transactional operations as not "queued"
+* Allow "detach-on-close" to be run non-transactional
+* Add support for object identity translators for the key value
+* Enhancer : add support for custom detach field access behaviour
+* JPA : Add support for JPA2.1 EMF.unwrap, Cache.unwrap
+* JPA : Set "RetainValues" to default to true for cleaner user feedback
+* JPA : Various fixes around metamodel methods, and exception handling
+* REST : Fix to respect "persistence-unit" definition like it did in v2
+* RDBMS : Initial support for SQLite
+* RDBMS : Fully implements JDOQL String.startsWith(str, int) for Derby, MSSQL
+* RDBMS : Fix Derby handling of composite indexes
+* RDBMS : Fix to make use of connection pool properties
+* MongoDB : Fix to use of IDENTITY fields
+* MongoDB : Fix to authentication handling
+* Many other bug fixes and clean ups
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.0.M5
+
+__Jun 14th 2011__ : _Version 3.0 Milestone 5_ includes the following changes
+
+
+* Add support for custom class-level and field-level annotations.
+* Add support for "native" value generator when field of different type to expected (String &lt;-&gt; long)
+* Fix to in-memory query evaluation of String.substring to cater for IndexOutOfBounds
+* Support for typing of variables in JDO Typesafe queries
+* Fix to not call "fetch" when persisting a new object under some situations
+* Support for persistence of Calendar as a String (where required by the datastore)
+* Provision of query extensions static final Strings for easier refactoring
+* Support for query extensions that are boolean to be specified as that type rather than String
+* Enhancer : allow user plugin bundles
+* JPA : Support for dynamic generation of "persistence-unit"
+* JPA : fix for use of Enum without jdbcType
+* RDBMS : fix to possible lockup due to internal map usage for schema
+* RDBMS : Enable BINARY/VARBINARY support for MySQL
+* RDBMS : Support for max/min of temporal expressions in queries
+* RDBMS : fix to case of subquery that was not precompilable so mark the outer query as not precompilable too
+* RDBMS : fix to Oracle when using DISTINCT to not select BLOB/CLOB columns
+* RDBMS : Migrate to BoneCP 0.7+
+* RDBMS : Support detection of timeout exceptions in JDOQL
+* RDBMS : Fix to some situations of "complete-table" inheritance strategy usage
+* ODF : Support persist of byte[] fields
+* ODF : Support for "increment"/"table" value generator
+* ODF : fix to retrieval of map field
+* Excel : fix to ordering of inserts so we don't overwrite rows/columns
+* Excel : fix to retrieve of map field
+* Excel : Support for "increment"/"table" value generator
+* Excel : Support persist of byte[] fields
+* HBase : Cache datastore-query compilation
+* HBase : Fix to "hbase" dependency maven groupId
+* HBase : Support for persistence of non-serialised map fields
+* HBase : Support use of embedded field references in queries in-datastore
+* HBase : Support for simple parameter values in queries in-datastore
+* MongoDB : fix to "increment" value generator
+* MongoDB : fix to exceptions thrown on MongoDB problems to match JDO/JPA specs
+* MongoDB : Fix to use of specified datastore name
+* MongoDB : Support for schema validation with SchemaTool
+* MongoDB : Support for persistence of Date/Calendar as Date (rather than String)
+* MongoDB : Support for persistence of maps with Enums keys/values
+* MongoDB : Fix to persist of array field
+* MongoDB : Cache datastore-query compilation
+* IDEA : inclusion of plugin for IDEA, previously developed as separate project (downloadable from Intellij also)
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.0.M4
+
+__May 9th 2011__ : _Version 3.0 Milestone 4_ includes the following changes
+
+
+* Fix to embedded field handling for RDBMS where an embedded object has a relation to a
+    non-embedded object.
+* Allow property methods (getter/setter) to be final and still handle persistence
+* Fix to single-string parse for JDOQL/JPQL when using multiple subqueries
+* Fix to JDOQL parse for typesafe query to allow for null literal
+* Fix to persistence of Date as String for those datastores that need it
+* Fix to corner case on retrieval by identity to check inheritance via discriminator
+* Provide mechanism for allowing persistence properties to be specifiable on the EM/PM
+* SchemaTool : support additional properties on delete/validate, and allow DDL for RDBMS on delete
+* Support use with JBoss 6.0
+* OSGi : Fix to handle invalid MANIFEST.MF in external bundles
+* Enhancer : fix to javaagent enhancer to use the same class-loader for all enhancement
+* Enhancer : fix minor FindBugs issues in enhanced code
+* JPA : Fix to caseof mapped-superclass with first child entity using SINGLE_TABLE
+* JPA : Fix to not cache query results with any query since JPA has no mechanism to free them
+* JPA : Fixes to ManagedType.getXXXAttributes
+* JPA : Improvement to Validator exceptions
+* JPA : Fix to selection of aggregate and use of query.getResultList()
+* JDO : Fix to annotation reader for ArrayIndexOutOfBounds
+* MongoDB : Support persistence of Enum fields
+* MongoDB : Fix persistence of Date fields
+* MongoDB : Fix to make sure all SCO fields are wrapped
+* HBase : Change JDOQL/JPQL to evaluate simple filters in the datastore
+* HBase : Support persistence of Enum fields
+* HBase : Fix persistence of Date fields
+* HBase : Fix to make sure all SCO fields are wrapped
+* Excel : Support persistence of Map fields
+* ODF : Support persistence of Map fields
+* ODF : Support SchemaTool creation
+* RDBMS : Fix to use of range in caching of queries
+* RDBMS : Support JDOQL String.equalsIgnoreCase()
+* RDBMS : Fix to when query results are read-in (i.e at commit, rather than at flush) matching
+    when any connection is closing
+* RDBMS : Fix JDOQL/JPQL to check for reference to non-persistent field
+* RDBMS : Support for subqueries in result and order clauses of JDOQL/JPQL queries
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.0.M3
+
+__Apr 2nd 2011__ : _Version 3.0 Milestone 3_ includes the following changes
+
+
+* JDO : Support for JDO 3.1 PersistenceManager property methods.
+* JDO : Support bulk update/delete via typesafe API (extension)
+* JPA : Support &lt;association-override&gt;
+* JPA : Support &lt;discriminator-column&gt; "length"
+* JPA : Support EMF singleton pattern
+* JPA : Bug fixes to @CollectionTable, &lt;inheritance&gt;, and user specification of
+    detachXXX persistence properties
+* OSGi : add optional import of log4j
+* Bug fix so that calls to PC.setXXX for SCO field immediately wraps the field and so can detect
+    subsequent changes
+* Various changes to default values for persistence properties to better suit all supported
+    datastores
+* Fixes to 300+ possible errors shown up by "FindBugs"
+* Improvements to nontransactional persistence process
+* Fixes for JDOQL/JPQL querying with subqueries to correctly cache the compilation, and to cater
+    for nested subqueries
+* Fixes to persistence of nested embedded fields to be independent of ordering
+* Support for "optimised flush" process, particularly for datastores that don't support
+    referential integrity (so we can do bulk inserts, bulk deletes etc)
+* Support for detachAllOnCommit, pbrAtCommit, serializeRead to be specifiable during
+    the lifecycle of a PM/EM
+* Rewrite Query execution process to not use a separate thread
+* SchemaTool : ability to just generate tables, or just generate constraints
+* Cache : support for xmemcached
+* Cache : support for latest versions of EHCache
+* ODF : Upgrade to ODFDOM 0.8.7
+* RDBMS : Enable prepared statement caching, and fix related issue for C3P0
+* RDBMS : Updates to JPQL to support joins relative to joined tables
+* RDBMS : Checks for List.set when using ordered list
+* RDBMS : Fix to table generator to use the initial-value
+* RDBMS : Fix to use of parameters in query ORDER BY clause
+* HBase : support optimised delete of obejcts
+* HBase : support persistence of primitives as raw bytes
+* MongoDB : support optimised insert of objects
+* Enhancer : ability to turn off all System.out
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.0.M2
+
+__Mar 1st 2011__ : _Version 3.0 Milestone 2_ includes the following changes
+
+
+* Change plugin startup process to use DataNucleus plugins only (by default), to ignore
+    any plugins that have invalid MANIFESTs, and by default to omit the validation of
+    bundle dependencies.
+* Add associated value logic to FK maps, to potentially reduce SQL invoked
+* Reduced memory utilisation by dropping ObjectProviderImpl, ExecutionContextImpl
+* Fix to use of embedded objects which was creating too many objects
+* Support marking some classes as "read-only"
+* JDO : Official support for "complete-table" (now part of JDO3.1)
+* JPA : Fix to compilation of JPQL "NOT IN (subquery)" syntax
+* JPA : Support for @MapKeyEnumerated
+* JPA : Fix to Query.setLockMode when "SELECT" - throw exception
+* JPA : EntityManager.close throws IllegalStateException if container managed
+* JPA : Fix metamodel to handle recursion and static fields
+* JPA : Fix processing of &lt;column&gt; within unique-constraints in <i>orm.xml</i>
+* JPA : Add support for setting properties on EntityManager
+* JPA : Fix to &lt;embeddable&gt; trailing tag processing
+* JPA : Fix to use of listeners when specified via annotations and <i>orm.xml</i>
+* RDBMS : Support for JDOQL "interfaceField = :implValue"
+* RDBMS : Fix to race condition in statement batching (Gerd Behrmann)
+* RDBMS : Fix to "count" result size method to allow for ranges
+* RDBMS : Support for PostgreSQL "SIMILAR TO" method in JDOQL ("String.similarTo")
+* Excel : Support for querying interfaces
+* Excel : Support access to native connection
+* ODF : Support for querying interfaces
+* ODF : Support access to native connection
+* XML : Support for querying interfaces
+* HBase : Support for querying interfaces
+* HBase : Support for cascade delete with pessimistic txns
+* HBase : Support discriminators
+* HBase : Support fetch plan on retrieve of objects
+* HBase : Support optimistic checks
+* HBase : Support polymorphic queries
+* HBase : Fix to use of server URL
+* MongoDB : Support for querying interfaces
+* MongoDB : Support access to native connection
+* MongoDB : Support polymorphic queries
+* MongoDB : Support optimistic checks
+* MongoDB : Support for SchemaTool
+* MongoDB : Support "increment"/"table" value generator
+* MongoDB : Support nested embedded persistable fields
+* MongoDB : Support authentication of connections
+* MongoDB : Support cascade delete for pessimistic txns
+* MongoDB : Support embedded 1-1/N-1 as embedded document
+* MongoDB : Support embedded 1-N/M-N as embedded array
+* MongoDB : Support fetch plan on retrieve of objects
+* MongoDB : Support persistence of maps
+* MongoDB : Support embedded maps as embedded array
+* MongoDB : Support versions
+* MongoDB : Support "identity" value generator using MongoDB "_id" field
+* LDAP : Support for "native"/"auto" value generation strategy (to use uuid-hex)
+
+- - -
+
+== DataNucleus AccessPlatform 3.0.0.M1
+
+__Feb 2nd 2011__ : _Version 3.0 Milestone 1_ includes the following changes
+
+
+* Split JDO API into separate "api.jdo" plugin
+* Repackage JPA API into "api.jpa" plugin
+* Repackage Rest API into "api.rest" plugin
+* Basic JSON API added ("api.json") - not yet documented
+* Much refactoring to allow for Data Federation
+* Data Federation : Basic mechanism to specify secondary datastores on PMF/EMF
+* Data Federation : Basic mechanism to specify persistence of class to secondary datastore
+* JDO : Change @Serialized handling to imply @Persistent
+* Support persistence of fields of type Class
+* Change handling of embedded fields so that defaults to column definition of embedded type when
+    embedded details not specified
+* Excel : Support for use with SchemaTool to create/delete worksheets
+* NeoDatis : Support for unique key creation
+* NeoDatis : Build against latest version (1.9.30)
+* HBase : Build against latest version (0.90.0)
+* HBase : Support for relationships
+* HBase : Support for (nested) embedded persistable fields
+* HBase : Support for use with SchemaTool to create/delete tables/families
+* HBase : Support for datastore identity
+* HBase : Support for surrogate versions
+* HBase : Addition of new increment value generator (Peter Rainer)
+* MongoDB : Addition of plugin for basic persistence
+* MongoDB : Support for datastore identity
+* RDBMS : Fix to corner case where version was not being set on a queried object
+* RDBMS : Fix for Derby 10.6 handling of boolean/integer comparisons
+* RDBMS : Fix to collection.contains when using primitive
+* RDBMS : Fix to index creation for PostgreSQL to not prefix the schema name
+* RDBMS : Fix to HSQLDB 1.7 and earlier handling of transaction isolation
+* RDBMS : Fix to iterator handling for datastores that don't evaluate range in the datastore
+
