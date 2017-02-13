@@ -2,7 +2,6 @@
 = DataNucleus Support
 :_basedir: 
 :_imagesdir: images/
-:numbered:
 
 [[free]]
 == Free Support

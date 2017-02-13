@@ -2,9 +2,6 @@
 = Download
 :_basedir: 
 :_imagesdir: images/
-:numbered:
-
-[[free]]
 
 [[releases]]
 == Releases

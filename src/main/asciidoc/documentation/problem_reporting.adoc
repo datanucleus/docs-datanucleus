@@ -3,8 +3,6 @@
 :_basedir: ../
 :_imagesdir: images/
 
-== Problem Reporting
-
 While we always aim to release DataNucleus with as few bugs as possible, it is possible that during the release cycle some issues will come up. 
 Our release process uses more than 1500 unit tests aimed at reproducing the majority of situations that users may come across, though
 clearly we can never cover all situations with these tests. 
@@ -44,7 +42,7 @@ our time here, so Maven is the only way, and the Maven build file is preconfigur
 
 
 [[jdo]]
-=== JDO Testcase
+== JDO Testcase
 image:../images/GitHub-Mark-64px.png[GitHub]
 You can provide a GitHub JUnit test, cloned from a simple DataNucleus GitHub test project template.
 DataNucleus provides a template JUnit GitHub project in repository [test-jdo](https://github.com/datanucleus/test-jdo).
@@ -53,7 +51,7 @@ tests in the provided project, one for single-threaded and one for multi-threade
 
 
 [[jpa]]
-=== JPA Testcase
+== JPA Testcase
 image:../images/GitHub-Mark-64px.png[GitHub]
 You can provide a GitHub JUnit test, cloned from a simple DataNucleus GitHub test project template.
 DataNucleus provides a template JUnit GitHub project in repository [test-jpa](https://github.com/datanucleus/test-jpa).
@@ -62,7 +60,7 @@ tests in the provided project, one for single-threaded and one for multi-threade
 
 
 [[github]]
-=== Contributed test for the DataNucleus test suite
+== Contributed test for the DataNucleus test suite
 
 As an alternative to the above, and where you are familiar with JUnit and are willing to look at the 
 xref:development/tests.html[existing DataNucleus tests in GitHub] then please create a JUnit test case that 
