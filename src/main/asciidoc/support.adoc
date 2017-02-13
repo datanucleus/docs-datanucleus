@@ -1,0 +1,192 @@
+[[support]]
+= DataNucleus Support
+:_basedir: 
+:_imagesdir: images/
+:numbered:
+
+[[free]]
+== Free Support
+
+With any software, there are times when you need assistance to make full use of it. Here at DataNucleus we want you to make the best of the 
+software that we provide. For that reason we provide both commercial and free support facilities.
+DataNucleus provides its own http://forum.datanucleus.org[Forum] providing a place for you to discuss issues you are having. 
+We don't guarantee to provide answers on this forum. It is simply a place where you could get some level of support when people have time.
+This may not be adequate for some people hence why we provide the commercial version below.
+
+. Check the Documentation for http://www.datanucleus.org/products/accessplatform/index.html[DataNucleus AccessPlatform] before anything else. 
+The answer is usually there, either in a tutorial/example, or in one of the many guides. Yes I know you can't be bothered, but then this is 
+where you can do things for yourself.
+. Look in the http://www.datanucleus.org/products/accessplatform/logging.html[DataNucleus LOG]. This usually contains a lot of information that 
+may answer the issue. You can always configure the log to give more output.
+. Try a http://www.datanucleus.org/download.html[recent build] to see if your version is out of date and the expected result is achieved with the latest nightly builds.
+. Go to the http://forum.datanucleus.org[__DataNucleus Forum__] OR https://gitter.im/datanucleus/Lobby[__DataNucleus on Gitter__] and ask. 
+Always try to give as clear a description of the problem as possible, together with 
+your input data, and any associated log output. __Please be aware that we have very little time for this type of support and contributors to 
+DataNucleus are more likely to get any available free support__
+__Please do not use Twitter and expect answers to support questions; support is not provideable in 140 chars!!__.
+. If you don't want to report the problem to us as in step 4 then go over to http://stackoverflow.com/questions/tagged/datanucleus[Stackoverflow] and post a question tagged as DataNucleus. 
+We don't provide support over there but you may find people who have experience of your situation to help you.
+. If you have a problem and don't report it then it really doesn't say much for your participation in the open source community.
+
+
+[[commercial]]
+== Commercial Services
+image::images/logos/DataNucleus16-300.jpg[]
+
+DataNucleus is open source software, also providing good documentation and (public) test cases. As a result
+your team could, in principle, train themselves up on the software using the documentation and tests as basis,
+then when they come across problems look through the code and debug problems and/or develop new features. 
+Often though you don't have the time to devote to such activities so would prefer to out source this aspect of your project.
+The developers of DataNucleus are flexible to finding a support solution that meets your needs.
+__You cannot get better value and a higher level of DataNucleus experience than from us.__
+Our various commercial services are defined below complete with pricing (_note that all prices are in UK pounds (GBP) symbolised by the £ symbol_)
+
+* xref:support.html#timebased_consulting[__Time-Based Consulting__] : DataNucleus consultant(s) are available online at a mutually convenient time to provide answers 
+to your questions via Skype/IRC/IM/phone/etc. Simply pay by the hour as and when needed.
+* xref:support.html#support)[__Support__] : DataNucleus consultant(s) are available to respond to problems that come up with your deployments, providing workarounds 
+to your problems, or providing rapid fixes. Optionally also allowing for feature additions to meet your requirements.
+
+[[timebased_consulting]]
+=== Time-based Consulting
+
+__DataNucleus__ developers can provide remote consulting using Email/IRC/IM/Skype to provide you with the response when you need it to tackle the 
+issues impacting on your project. This type of support is where questions come up during your deployment of DataNucleus and you need to ask 
+questions for particular situations. You can pay by the hour as and when you need it, when a developer is available.
+
+__Cost__ : 5 hours = £270, 10 hours = £520, 20 hours = £1000, 40 hours = £1950, 50 hours = £2450.
+Purchase of larger number of hours also available. mailto:consulting@datanucleus.com[Contact Us] for details.
+__Note that all amounts are specified in GBP (symbolised by the £ symbol)__
+
+
+[[support]]
+=== Support
+
+__DataNucleus__ developers can provide a level of longer term support to meet your requirements, and rather than having fixed off-the-shelf 
+arrangements we prefer to tailor them to your needs. Below we outline some typical options that could suit your needs. 
+We cannot guarantee the availability of incident support for all problems because some problems are simply too complicated to resolve easily; 
+the majority of problems quickly point to where the problem is, and what can be done about them, whereas things like some large query syntax is 
+simply not resolvable into a single SQL query so we may not be able to provide what you need in that case.
+mailto:support@datanucleus.com[Contact Us] for details.
+
+* _General Support_ for the most common issues on API usage, defect reporting and bug fixing. It's available for free and on 
+availability on our online forums though has absolutely no guarantee of availability. If you want to receive support when
+it is needed, then consider the options below
+* _Incident Support_ for dedicated support for a single incident.
+* _Bronze/Gold Support_ for dedicate support covering multiple incidents over an extended period.
+
+[cols="4,2,2,2,2", options="header"]
+.SupportTypes
+|===
+|Feature
+|General Support
+|Incident Support
+|Bronze Support
+|Gold Support
+
+|Software supported
+|http://www.datanucleus.org/products/accessplatform[AccessPlatform]
+|http://www.datanucleus.org/products/accessplatform[AccessPlatform]
+|http://www.datanucleus.org/products/accessplatform[AccessPlatform]
+|http://www.datanucleus.org/products/accessplatform[AccessPlatform]
+
+|Support via Public Forum
+|icon:check[]
+|icon:times[]
+|icon:times[]
+|icon:times[]
+
+|Support via Email
+|icon:times[]
+|icon:check[]
+|icon:check[]
+|icon:check[]
+
+|Support via Phone
+|icon:times[]
+|icon:times[]
+|icon:times[]
+|icon:check[]
+
+|Usage Support
+|icon:check[]
+|icon:check[]
+|icon:check[]
+|icon:check[]
+
+|Design Support
+|icon:exclamation[]
+|icon:check[]
+|icon:check[]
+|icon:check[]
+
+|Priority Bug Fix
+|icon:times[]
+|icon:check[]
+|icon:check[]
+|icon:check[]
+
+|New Feature Support
+|icon:times[]
+|icon:times[]
+|icon:times[]
+|icon:check[]
+
+|Languages
+|English
+|English, Spanish
+|English, Spanish
+|English, Spanish
+
+|Support Days
+|N/A
+|Mon-Fri
+|Mon-Fri
+|Mon-Fri
+
+|Max Response Time
+|No limit
+|3 days
+|2 days
+|2 days
+
+|Number of incidents
+|N/A
+|1
+|4
+|8
+
+|Support validity
+|N/A
+|1 month
+|6 months
+|1 year
+
+|Price (without tax)
+|Free
+|£350
+|£1200 (subsequent incidents charged at £250)
+|£2200 (subsequent incidents charged at £230)
+|===
+
+__Note that all amounts are specified in GBP (symbolised by the £ symbol)__
+
+
+[[customers]]
+=== Customers
+
+There are many clients to whom DataNucleus developers have provided services. Below are a small subset.
+
+image::images/companies/nightlabs.png[Nightlabs]
+image::images/companies/metamicro.jpg[Metamicro]
+image::images/companies/bmc.png[BMC]
+image::images/companies/transcore.png[Transcore]
+image::images/companies/yahoo.png[Yahoo]
+image::images/companies/w4.png[W4]
+image::images/companies/ge.png[General Electric]
+image::images/companies/lockheed.png[Lockheed Martin]
+image::images/companies/seismicexchange.png[Seismic Exchange]
+image::images/companies/livestream.jpg[LiveStream]
+image::images/companies/cisco.png[Cisco Systems]
+image::images/companies/google.jpg[Google]
+image::images/companies/dat.png[DAT]
+

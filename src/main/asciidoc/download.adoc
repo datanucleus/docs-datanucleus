@@ -1,0 +1,76 @@
+[[download]]
+= Download
+:_basedir: 
+:_imagesdir: images/
+:numbered:
+
+[[free]]
+
+[[releases]]
+== Releases
+
+DataNucleus provides Open Source products, and you can freely download any __release__ of DataNucleus, together with the associated source code.
+DataNucleus downloads are subject to the documentation/license.html[Apache 2 License].
+Note that DataNucleus software versioning uses the versioning strategy defined (documentation/development/index.html#versioning[here].
+We hope that you are successful in your use of DataNucleus, and if you have any problems or queries, please contact us using the http://forum.datanucleus.org[Forum]. 
+Be aware that we don't have much time for this free support so you could make a documentation/donations.html[donation] to further development and pay for our time providing support.
+
+The first thing to note is that __all DataNucleus releases are "stable"__, in that they all pass all DataNucleus tests and the relevant TCKs, 
+so any referral to some "stable branch" is a concept for other projects; the whole point of TDD is to guarantee stability.
+The principal DataNucleus releases are :-
+
+* https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform[*DataNucleus AccessPlatform ZIP file*] :
+A zip of all DataNucleus plugin jars for a particular datastore and, optionally, jars for key dependencies. You can also check the dependencies for 
+http://www.datanucleus.org/products/accessplatform_5_0/dependencies.html[v5.0],
+http://www.datanucleus.org/products/accessplatform_4_2/dependencies.html[v4.2] and
+http://www.datanucleus.org/products/accessplatform_4_1/dependencies.html[v4.1] separately if you wish. 
+The zip is available from our SourceForge project home page.
+* http://central.maven.org/maven2/org/datanucleus/[*DataNucleus Plugin JARs (individual)*] : 
+DataNucleus products are made up of a selection of plugins, and each plugin is also an OSGi bundle. You can download plugins individually, if you wish, as they are released.
+Available from the Maven Central repository.
+* http://central.maven.org/maven2/org/datanucleus/datanucleus-maven-plugin[*DataNucleus Maven Plugin*] : 
+The Maven plugin provides enhancement of classes and the opportunity to manage the database schema.
+Available from the Maven Central repository.
+* http://www.datanucleus.org/downloads/eclipse-update[*DataNucleus Eclipse Plugin*] : 
+The Eclipse plugin provides enhancement of classes and the opportunity to manage the database schema.
+You can download this plugin by adding the DataNucleus "Eclipse Update" site of _http://www.datanucleus.org/downloads/eclipse-update_ to your Eclipse configuration.
+* https://sourceforge.net/projects/datanucleus/files/datanucleus-samples[*DataNucleus Samples*] :
+There are various samples of code for use with DataNucleus available, including the source files from the tutorial. 
+Available from SourceForge for easy download, with the source code projects housed on GitHub for 
+https://github.com/datanucleus/samples-jdo[JDO] and https://github.com/datanucleus/samples-jpa[JPA].
+
+
+[[nightlybuilds]]
+== Nightly Builds
+
+We also provide a nightly build of the current GitHub codebase (from GitHub around 2AM GMT).
+DataNucleus downloads are subject to the documentation/license.html[Apache 2 License].
+Note that DataNucleus software versioning uses the versioning strategy defined documentation/development/index.html#versioning[here].
+
+* http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus[*Nightly build of active plugin JARs*] : 
+here you can find all JARs of all plugins that have changed since the most recent release.
+
+
+If using Maven you simply need to add the following to your `pom.xml`
+
+[source,xml]
+-----
+    <repositories>
+        <repository>
+            <id>DN_Nightly_M2_Repo</id>
+            <url>http://www.datanucleus.org/downloads/maven2-nightly/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+-----
+
+
+Please be aware that all nightly builds are development work-in-progress and no guarantee is provided. These builds are typically stable but things may be 
+broke occasionally as new features are added etc. You cannot report issues in GitHub against nightly builds, only against released versions of DataNucleus, 
+but should report any problems in the http://forum.datanucleus.org/[Forum] if you have an issue with a nightly build, 
+preferably after waiting a few days in case it is a work in progress type situation with a new feature being introduced.

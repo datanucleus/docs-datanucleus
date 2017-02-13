@@ -53,10 +53,10 @@
             </button>
 
             <!-- 'style' added to align image with navbar. FIX THIS -->
-            <a class="navbar-brand" href="http://www.datanucleus.org">
+            <a class="navbar-brand" href="<%= (attr :_basedir) %>">
                 <img style="margin-top: -12px;" alt="Brand" src="<%= (attr :_basedir) %>images/datanucleus_icon.png" height="45"/>
             </a>
-            <a class="navbar-brand" href="#">DataNucleus</a>
+            <a class="navbar-brand" href="<%= (attr :_basedir) %>">DataNucleus</a>
 
             <!-- 'style' added to fix height of input box. FIX THIS -->
             <form class="navbar-form navbar-left" role="search" id="search-form" action="https://www.google.com/search" method="get" style="padding: 1px 15px;">
@@ -80,13 +80,25 @@
                         <li><a href="#">Version 4.1</a></li>
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">Development</li>
-                        <li><a href="#">Development Process</a></li>
-                        <li><a href="#">Release Plans</a></li>
-                        <li><a href="#">Problem Reporting</a></li>
+                        <li><a href="<%= (attr :_basedir) %>documentation/development.html">Development Process</a></li>
+                        <li><a href="<%= (attr :_basedir) %>documentation/release_plans.html">Release Plans</a></li>
+                        <li><a href="<%= (attr :_basedir) %>documentation/problem_reporting.html">Problem Reporting</a></li>
                     </ul>
                 </li>
-                <li><a href="<%= (attr :sitebasedir) %>/download.html">Download</a></li>
-                <li><a href="<%= (attr :sitebasedir) %>/support.html">Support</a></li>
+                <li><a href="<%= (attr :_basedir) %>download.html">Download</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<%= (attr :_basedir) %>documentation/problem_reporting.html">Problem Reporting</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Commercial</li>
+                        <li><a href="<%= (attr :_basedir) %>support.html#commercial">DataNucleus Services</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Free</li>
+                        <li><a href="https://forum.datanucleus.org">DataNucleus Forum</a></li>
+                        <li><a href="https://gitter.im/datanucleus/Lobby">Gitter (DataNucleus)</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Source <span class="caret"></span></a>
                     <ul class="dropdown-menu">
