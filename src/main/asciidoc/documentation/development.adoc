@@ -223,23 +223,18 @@ The GitHub DataNucleus project also provides the documentation for DataNucleus.
 ==== Documentation : datanucleus.org Project Site
 
 DataNucleus has a main site __datanucleus.org__ for the overall project and the commercial services that we offer. 
-This site makes use of a "skin" responsible for adding header/footer to all docs as well as the dropdown menus.
-This "skin" is available in GitHub in the repository https://github.com/datanucleus/docs-datanucleus-skin[docs-datanucleus-skin].
-Now you need to build/install the skin, by typing
-
------
-mvn clean install
------
-
+This site uses AsciiDoc format documents, and uses the Maven AsciiDoctor plugin to generate HTML.
+The documents make use of the Bootstrap CSS/Javascript "library" (originally from Twitter), as well as Font-Awesome and some others.
 The documentation is in GitHub in repository https://github.com/datanucleus/docs-datanucleus[docs-datanucleus]
 Now you can build the site itself by typing
 
 -----
-mvn clean site
+mvn clean compile
 -----
 
-The site is then available under _target/site_. The documentation is also generated every night from what is in GitHub, 
-and this appears on the website.
+The site is then available under _target/site_. 
+The documentation is also generated every night from what is in GitHub, and this appears on the website.
+
 
 ==== Documentation : AccessPlatform Product Site
 
@@ -507,7 +502,7 @@ latest release of each related plugin and packaging it. When there is a DataNucl
 the release process (administrator role)
 
 * Make sure that all required plugin versions are released. See the xref:index.html#pluginrelease[plugin release process] below for details.
-* Go to the product that needs releasing update _build.properties_ so that versions of all required plugins are set, and the 
+* Go to the product that needs releasing update `build.properties` so that versions of all required plugins are set, and the 
 version of the product is set. Check this change in.
 * Generate the required product archives (zips), and the documentation.
 * Release the archives and documentation on SourceForge
@@ -528,7 +523,7 @@ the outstanding ones, or move them to a later version.
 release could be delayed, but this is the exception not the norm.
 * Use the Maven _release_ plugin as follows : _mvn clean release:clean release:prepare release:perform_. This updates the 
 version to remove SNAPSHOT, builds source/javadocs/jar, creates a tag and finally copies it to Sonatype ready for release.
-* Go to the DataNucleus Sonatype account and check/release/close the repository artifacts)
+* Go to the DataNucleus Sonatype account and check/release/close the repository artifacts.
 
 
 [[samplerelease]]
