@@ -1,0 +1,558 @@
+[[source_code]]
+= DataNucleus Development Guide
+:_basedir: ../
+:_imagesdir: images/
+
+DataNucleus is an Open Source development. It is written by many people yet has a broad scope and so is in need of help. 
+It is released under an link:license.html[Apache 2 license], so you are welcome to develop it further.
+Since the software is free, you are benefiting from this work. You have a duty to contribute to the project, particularly if/when you have problems.
+It should be noted that many people use open source software without the minor intention of contributing anything back to it; that's ok but then should 
+everyone adopt that attitude then things will not get improved, and additionally those people are not in a position to request/expect any improvements 
+that they would like to see (without putting something back in).
+
+
+__You can help the project in many ways__. Here are some examples
+
+* __Answer questions on the http://forum.datanucleus.org[Forum]__. New users need to learn somewhere just like you did when you first used DataNucleus.
+You could monitor the forum when you have free time and attempt to answer people's questions. People will appreciate it even if you don't know all of the answers.
+* __Debug problems in the code__ before reporting them on the Forum. You can isolate the issue to a particular area of code even if you don't know the solution, 
+and post your findings on the Forum for one of the developers to pick up and progress further. __Better still, contribute updates__ so it saves our time in working 
+out where the problem lies. These will be much more valuable to us. Since we use Git for source code repository the best way is to FORK/CLONE a particular 
+GitHub project and submit a GitHub PULL REQUEST with your changes. Please see the xref:development.html#coding_standards[DataNucleus coding standards].
+* __Volunteer to be a developer__ of DataNucleus. To do this you need to start off by contributing patches for issues, and demonstrate your commitment to the project.
+Once you've done this for a while then we'll invite you to join the project. You then go to the "Recruitment" section of our Forum and post the developer agreement
+(stored in one of the threads in that Forum). Thereafter you can push DataNucleus further yourself when you have time. Be aware though that once you have been given
+commit rights, inactivity for a period of time (e.g 6 months or more) will mean that you can lose these rights. Being a committer implies responsibility. 
+You could volunteer to work on a particular part of DataNucleus (e.g RDBMS) or all of it, up to you.
+* link:../donations.html[__Donate to the project__]. This will help to fund the time of one of the main developers and will mean that DataNucleus functionality 
+will be expanded faster due to your help.
+* __Contribute documentation or worked examples__ that can be included in the online documentation. If you think there is something missing from our documents 
+then you can write it and contribute it and others will benefit from your work just like you have benefited from our DataNucleus product. The easiest way to
+contribute is to FORK/CLONE the appropriate GitHub project and then raise a GitHub PULL REQUEST and we will process it asap. You can also contribute via either the 
+[Forum](http://forum.datanucleus.org) or by raising an issue against the DataNucleus plugin in question.
+
+Note that involvement in an open source project can significantly improve your employability, since potential employers can see the quality of your code, so this
+is an opportunity to do something positive. Note also __if you contribute to the system in some way then we are more likely to answer your forum questions, or listen to your ideas, 
+so it's in your interests to participate__. We hope that the above has given you some idea how your time can be used to benefit the common goal of having a quality 
+Java persistence solution free for all to use.
+
+
+== DataNucleus Development Process
+
+DataNucleus uses Test Driven Development (TDD). It has xref:development.html#development_tests[many test suites available] and all should be run to provide stability in the codebase.
+
+When you have DataNucleus commit rights (see http://www.datanucleus.org/servlet/forum/viewthread_thread,75[this forum thread]), the 
+development process should be as below. Please abide by these simple rules
+
+* Identify an issue to work on for a particular DataNucleus plugin. Raise an issue if it doesn't yet exist, and allocate to yourself.
+* Develop code, unit tests (as appropriate), and documentation for the issue. DataNucleus is developed using JDK1.8+.
+* Run all DataNucleus tests and the (public) JDO TCK, and when all pass to the same level as before then you can check your code into GitHub. 
+__Broken unit tests or JDO TCK tests must be fixed ASAP__. Others are using GitHub latest too and if you break either the build or the tests 
+then it means they often cannot work effectively. __Breakage of unit tests or JDO TCK tests mean that your changes can be rolled back__.
+* Issues that involve many changes should be split, where appropriate, into smaller steps so that you can still pass point 3 above with each check in
+* Where changes are significant and you cannot split them into smaller check-ins (that pass the tests) should be checked in to your own GitHub branch 
+and when complete they should be merged into GitHub 'master'. If help is needed at this point then other developers should help in merging large changes.
+* All check-ins should refer to the issue being worked on in their commit message ("#34" contained in the commit message links the commit to issue #34 of that plugin). 
+* Mark the issue as "Resolved" for the next release.
+
+
+[[mailing_lists]]
+=== Mailing Lists
+
+DataNucleus has no mailing lists as such, but each plugin is developed in GitHub and you can subscribe to notifications about a particular plugin.
+
+
+[[issuetracking]]
+=== Issue Tracking
+
+The DataNucleus project uses GitHub issues for all issue tracking from April 2016 onwards.
+Please navigate to the source code of the plugin in question and use the Issues tab to raise/inspect issues for that plugin.
+
+DataNucleus used JIRA for issue tracking from 2004 until April 2016.
+http://issues.datanucleus.org[DataNucleus JIRA] still exists, and will continue to exist in read-only form for the foreseeable future, so you can see old issues and their resolutions.
+
+
+[[metrics]]
+=== Metrics
+
+DataNucleus originated as JPOX in 2003, becoming DataNucleus in 2008, and consequently many people have contributed to its development over the years and has been open source since the outset. 
+In terms of metrics of the codebase you can get a measure of this by looking at the http://www.openhub.net/p/datanucleus[DataNucleus page on OpenHub].
+
+
+[[team]]
+=== Development Team
+
+The management and direction of DataNucleus is provided by a small team of experienced individuals.
+
+* __Andy Jefferson__ : Founder of the DataNucleus project. Has worked on the project since its initiation as JPOX in 2003, and has worked on all plugins. 
+Initiated the support for db4o, ODF, MongoDB, NeoDatis, Neo4j, OOXML, Cassandra, javax.cache, RDBMS connection pools, and much more. 
+Also contributed to version 2 of the plugin for GAE/Datastore, subject to the constraints that Google put on it.
+* __Renato Garcia__ : worked on the migration to GitHub, test suite flexibility, auto-generation of MANIFESTs, Jenkins/Solar automation, and some more.
+* __Erik Bengtson__ : Founder of the DataNucleus project. Worked on the project since its initiation as JPOX in 2003, until around 2011. 
+Initiated support for Excel, XML, JSON and HBase. _Currently inactive_
+* __Baris Ergun__ : Took over responsibility for the geospatial plugin. _Currently inactive_
+* __Stefan Seelmann__ : Wrote the vast majority of the LDAP plugin. _Currently inactive_
+* __Thomas Marti__ : Wrote an amount of the spatial plugin (now renamed to _geospatial_). _Currently inactive_
+* __Stefan Schmid__ : Wrote an amount of the spatial plugin (now renamed to _geospatial_). _Currently inactive_
+* __Joerg von Frantzius__ : worked on the test suite, and RDBMS areas. _Currently inactive_
+
+In addition to those above, other people have contributed to varying degrees in the development of this software or documentation.
+
+DataNucleus tackles a wide range of problem areas - are you interested in contributing to the DataNucleus project and want to get involved? 
+The best way is to become part of the DataNucleus community and start by contributing patches. From that, gain commit rights. Where you take the project to from there is up to you.
+
+
+
+
+
+
+== Source Code : GitHub Repositories
+
+image:../images/GitHub-Mark-64px.png[GitHub]
+
+DataNucleus source code is hosted on https://github.com/datanucleus[GitHub] and uses the http://git-scm.com/[Git] (distributed) source code version control system. 
+
+NOTE: DataNucleus source code for versions up to and including 3.3.5 were hosted by SourceForge. You can still get the code for those earlier versions by searching on SourceForge. This is not maintained or supported by us.
+
+
+
+You can check out from GitHub using the following.
+
+-----
+# Using SSH
+git clone git@github.com:datanucleus/{repository-name}.git
+
+# Using HTTPS
+git clone https://github.com/datanucleus/{repository-name}.git
+-----
+
+Obviously, not everyone will want to check out all DataNucleus project repositories, so use this command for the particular 
+repositories that you require. Note that GitHub repositories are all browsable via the web, for example 
+https://github.com/datanucleus/datanucleus-neo4j[the DataNucleus Neo4j datastore plugin].
+Note that all plugin repositories are http://maven.apache.org[Maven projects] so you need to understand how to build with Maven to build these plugins.
+
+DataNucleus can be easily developed using Maven, Eclipse (plus m2e plugin),  or other IDEs (let us know if you write docs for how to develop DataNucleus with a different IDE).
+You require __JDK1.8+__, a __Git client__ (to download/commit DataNucleus Git-based projects) and __an editor__.
+
+
+=== GitHub : Plugins
+
+Within the DataNucleus project over on GitHub you have various repositories providing actual DataNucleus plugins. These are currently
+
+https://github.com/datanucleus/datanucleus-core[datanucleus-core]
+
+APIs :  
+https://github.com/datanucleus/datanucleus-api-jdo[datanucleus-api-jdo],
+https://github.com/datanucleus/datanucleus-api-jpa[datanucleus-api-jpa],
+https://github.com/datanucleus/datanucleus-api-rest[datanucleus-api-rest]
+
+Datastores :  
+https://github.com/datanucleus/datanucleus-cassandra[datanucleus-cassandra],
+https://github.com/datanucleus/datanucleus-excel[datanucleus-excel],
+https://github.com/datanucleus/datanucleus-hbase[datanucleus-hbase],
+https://github.com/datanucleus/datanucleus-json[datanucleus-json],
+https://github.com/datanucleus/datanucleus-ldap[datanucleus-ldap],
+https://github.com/datanucleus/datanucleus-mongodb[datanucleus-mongodb],
+https://github.com/datanucleus/datanucleus-neo4j[datanucleus-neo4j],
+https://github.com/datanucleus/datanucleus-neodatis[datanucleus-neodatis],
+https://github.com/datanucleus/datanucleus-odf[datanucleus-odf],
+https://github.com/datanucleus/datanucleus-rdbms[datanucleus-rdbms],
+https://github.com/datanucleus/datanucleus-xml[datanucleus-xml]
+
+Type support :  
+https://github.com/datanucleus/datanucleus-geospatial[datanucleus-geospatial],
+https://github.com/datanucleus/datanucleus-guava[datanucleus-guava],
+https://github.com/datanucleus/datanucleus-jodatime[datanucleus-jodatime]
+
+Others :  
+https://github.com/datanucleus/datanucleus-cache[datanucleus-cache],
+https://github.com/datanucleus/datanucleus-jdo-query[datanucleus-jdo-query],
+https://github.com/datanucleus/datanucleus-jdo-jca[datanucleus-jdo-jca],
+https://github.com/datanucleus/datanucleus-jpa-query[datanucleus-jpa-query]
+
+
+All plugins are independently versioned ("master" is the latest branch). This is because they have their own lifecycle, and plugins are
+bundled together into the "products" (e.g AccessPlatform). So we could have AccessPlatform version 1.1 using version X of a plugin, and 
+AccessPlatform version 2.0 using version Y of that plugin because it needs some new functionality.
+
+==== Building with Maven
+
+All DataNucleus plugins are Maven projects, with a `pom.xml`. To build and install the plugin using Maven simply type
+
+	mvn clean install
+
+and the plugin is built and installed in your local Maven repository; how simple can it get?. 
+If you are developing some feature that requires updates to, for example __core__ (_datanucleus-core_), __an API__ (e.g _datanucleus-api-jdo_) and a __datastore__ (e.g _datanucleus-rdbms_) 
+then you will need to build these in the same order, core first, then the API, then the datastore.
+
+==== Building with Eclipse
+
+When building/developing using Eclipse the first thing you need to do is install the Eclipse __m2e__ plugin (if not already done).
+This means that the build of any plugin will build using Maven (and get its dependencies from Maven).
+You then need to import all DataNucleus projects you are working on. Since each plugin in Eclipse will build using Maven
+you don't need to have all dependent projects present too, just the ones you're working on. 
+
+
+[[github_tests]]
+=== GitHub : Tests
+
+In order to test DataNucleus capabilities we have many end-to-end tests. In the GitHub DataNucleus project these are available
+in the repository https://github.com/datanucleus/tests[tests]. Below that you have some framework projects that need building first, 
+then there are tests split by the persistence API they are for (JDO, JPA, REST, etc).
+
+
+[[github_tools]]
+=== GitHub : Tools
+
+The GitHub DataNucleus project also provides some tools to help in using DataNucleus. The repositories providing tools are
+
+* http://github.com/datanucleus/datanucleus-maven-plugin[datanucleus-maven-plugin] - Maven plugin for enhancement, SchemaTool
+* http://github.com/datanucleus/datanucleus-eclipse-plugin[datanucleus-eclipse-plugin] - Eclipse plugin for enhancement, SchemaTool
+* http://github.com/datanucleus/datanucleus-idea-plugin[datanucleus-idea-plugin] -IDEA plugin for enhancement, SchemaTool _(not maintained)_
+
+Like with all plugins, the tools are independently versioned since they have their own lifecycle.
+
+
+[[github_documentation]]
+=== GitHub : Documentation
+
+The GitHub DataNucleus project also provides the documentation for DataNucleus.
+
+==== Documentation : datanucleus.org Project Site
+
+DataNucleus has a main site __datanucleus.org__ for the overall project and the commercial services that we offer. 
+This site makes use of a "skin" responsible for adding header/footer to all docs as well as the dropdown menus.
+This "skin" is available in GitHub in the repository https://github.com/datanucleus/docs-datanucleus-skin[docs-datanucleus-skin].
+Now you need to build/install the skin, by typing
+
+-----
+mvn clean install
+-----
+
+The documentation is in GitHub in repository https://github.com/datanucleus/docs-datanucleus[docs-datanucleus]
+Now you can build the site itself by typing
+
+-----
+mvn clean site
+-----
+
+The site is then available under _target/site_. The documentation is also generated every night from what is in GitHub, 
+and this appears on the website.
+
+==== Documentation : AccessPlatform Product Site
+
+The documentation for AccessPlatform uses the same Maven process, and also has its own "skin".
+This "skin" is available in GitHub in repository https://github.com/datanucleus/docs-accessplatform-skin[docs-accessplatform-skin].
+Now you need to build/install the skin, by typing
+
+-----
+mvn clean install
+-----
+
+The documentation is in GitHub in repository https://github.com/datanucleus/docs-accessplatform[docs-accessplatform].
+Now you can build the site itself by typing
+
+-----
+mvn clean site
+-----
+
+The site is generated under _target/site_. You can also build a PDF of the docs by typing
+
+-----
+mvn pdf:pdf
+-----
+
+The PDF is generated under _target/pdf_. The documentation is also generated every night from what is in GitHub, and this appears on the  website.
+
+
+[[branching]]
+=== Branching
+
+As a general rule, we branch when we're at a point of changing internal/external DataNucleus APIs of a plugin. So, for example, we are developing
+_datanucleus-core_ and want to change some API. The process is as follows
+
+* Create branch with name "{version}" where the _version_ is the version that is stored in that branch (so the current version).
+* Update `pom.xml` of __master__ branch to the next version number (so if we have just created a branch for 4.2 then this will be 4.3.0-SNAPSHOT).
+
+If you are developing a new feature then you can optionally develop it in its own branch, so choose a branch name that is _not a version_ (so doesn't
+conflict with the naming convention above). When you have fully implemented the feature and merged it into master and it is fully tested then you
+should delete the old branch.
+
+
+[[tagging]]
+=== Tagging
+
+Tagging is performed when we release a plugin, and the Maven _release_ plugin automatically creates tags with names of `{artifact_id}_{version}`
+(e.g datanucleus-core-4.2.11). Developers shouldn't have any need for adding other _tags_.
+
+
+[[versioning]]
+=== Versioning
+
+There are many different versioning systems in use by software. All typically use _major.minor.revision_ 
+(occasionally with finer grain below that). Some use suffix _alpha_ or _beta_ to reflect how close the software is to full release. 
+Some use versioning starting at say 1.0.0, and going up from that until some release e.g 1.0.4 that is considered the full release. 
+__DataNucleus uses the following versioning policy__
+
+* When we start a release lifecycle for a product it starts typically at __Milestone__ 1 (e.g 1.0.0.M1). 
+If we are developing a new plugin that will be used from DataNucleus v5.0 then we will start at 5.0 Milestone 1 (5.0.0.M1) for the new plugin.
+* Subsequent releases increment the milestone ... e.g 1.0.0.M2, 1.0.0.M3 etc
+* When we feel we are close to a full release we can optionally have __Release Candidate__ (e.g 1.0.0.RC1)
+* We have as many release candidates as necessary to get everything feature complete
+* The full release is __Release__ (e.g 1.0.0.Release)
+* Any subsequent releases (after the full release) in that lifecycle increment the revision number, e.g 1.0.1, 1.0.2 etc
+
+The use of "Milestone" rather than "alpha" or "beta" is because all DataNucleus releases are run against all unit tests and TCKs and so stability is typically inherent.
+
+We increment the _minor_ version number when we are changing internal APIs (but not client facing APIs).
+We increment the _major_ version number when we are changing external (client-facing) APIs.
+
+
+
+[[coding_standards]]
+== Coding Standards
+
+Here we provide an overview of the coding standards employed in DataNucleus source code.
+__If you want to work on DataNucleus or contribute code to DataNucleus you are expected to use these coding standards. 
+We know everyone has their own preference but these are ours so you follow them or any contributed code will not be directly included as is__.
+They may differ from Oracle's coding conventions but then those are the conventions of some US company and that doesn't 
+mean that they are necessarily "the best", "the official" or any such title. These are ours, so best get used to it ;-).
+
+* __Indentation__ : 4 characters indent
+* __Tabs__ : no tabs please!
+* __Braces__ : insert a new line before opening brace and a new line before closing brace. Opening and closing braces should line up vertically.
+* __Line Length__ : max line length 140
+* __Imports__ : fully specify imports. Do NOT use asterisk notation!
+* __Java Language Level__ : write for Java 1.8 as a minimum
+* __Fields positioning__ : place fields at the top of a class.
+* __Logging__ : use _org.datanucleus.util.NucleusLogger_ which wraps Log4j, java.util.logging etc. Log as much info as is considered necessary at the appropriate level.
+See http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/util/NucleusLogger.html[org.datanucleus.util.NucleusLogger] for details
+* __Localisation__ : all output exception and log messages should be localised. 
+See http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/util/Localiser.html[org.datanucleus.util.Localiser] for details
+* __Licensing__ : make sure you include the xref:development.html#licensing[standard DataNucleus/Apache 2 license copyright header] to all files
+
+
+If you are using Eclipse then we have an link:code-conventions-eclipse.xml[XML Configuration] to specify in Eclipse.
+
+Here we have some examples of brace policy and other things
+
+[source,java]
+-----
+	package mypackage;
+
+	import java.util.LinkedList;
+
+	public class MyIntStack
+	{
+	    private final LinkedList fStack;
+	
+	    public MyIntStack()
+	    {
+	        fStack = new LinkedList();
+	    }
+	
+	    public int pop()
+	    {
+	        return ((Integer) fStack.removeFirst()).intValue();
+	    }
+	
+	    public void push(int elem)
+	    {
+	        fStack.addFirst(new Integer(elem));
+	    }
+	
+	    public boolean isEmpty()
+	    {
+	        return fStack.isEmpty();
+	    }
+	}
+-----
+
+Example of indentation
+
+[source,java]
+-----
+	class Example
+	{
+	    int[] myArray = {1, 2, 3, 4, 5, 6};
+	    int theInt = 1;
+	    String someString = "Hello";
+	    double aDouble = 3.0;
+	
+	    void foo(int a, int b, int c, int d, int e, int f)
+	    {
+	        switch (a)
+	        {
+	            case 0 :
+	                Other.doFoo();
+	                break;
+	            default :
+	                Other.doBaz();
+	        }
+	    }
+	
+	    void bar(List v)
+	    {
+	        for (int i = 0; i &lt; 10; i++)
+	        {
+	            v.add(new Integer(i));
+	        }
+	    }
+	}
+-----
+
+Example with if ... else
+
+[source,java]
+-----
+	class Example
+	{
+	    void bar()
+	    {
+	        do
+	        {
+	        }
+	        while (true);
+	        try
+	        {
+	        }
+	        catch (Exception e)
+	        {
+	        }
+	    }
+
+	    void foo2()
+	    {
+	        if (true)
+	        {
+	            return;
+	        }
+	        if (true)
+	        {
+	            return;
+	        }
+	        else if (false)
+	        {
+	            return;
+	        }
+	        else
+	        {
+	            return;
+	        }
+	    }
+
+	    void foo(int state)
+	    {
+	        if (true)
+	        {
+	            return;
+	        }
+	        if (true)
+	        {
+	            return;
+	        }
+	        else if (false)
+	        {
+	            return;
+	        }
+	        else
+	        {
+	            return;
+	        }
+	    }
+	}
+-----
+
+
+[[licensing]]
+== Source Code Licensing
+
+All contributions to the DataNucleus project must adhere to the Apache 2 license. 
+Notwithstanding that, at the discretion of the administrators of the project, DataNucleus project downloads may include separately licensed code from 
+third parties as a convenience and where permitted by the third party license, provided this is clearly indicated.
+
+All original contributions must contain the following copyright notice.
+
+-----
+	/**********************************************************************
+	Copyright (c) 2017 {your name} and others. All rights reserved.
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+	
+	    http://www.apache.org/licenses/LICENSE-2.0
+	
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+	
+	Contributors:
+	{year} {contributor1} - {description of contribution}
+	{year} {contributor2} - {description of contribution}
+	    ...
+	**********************************************************************/
+-----
+
+
+
+[[productrelease]]
+=== Product Release Process
+
+DataNucleus AccessPlatform is simply a bundled distribution and is typically released at intervals every 1-2 months, usually taking the 
+latest release of each related plugin and packaging it. When there is a DataNucleus product to be released (e.g AccessPlatform), the following is 
+the release process (administrator role)
+
+* Make sure that all required plugin versions are released. See the xref:index.html#pluginrelease[plugin release process] below for details.
+* Go to the product that needs releasing update _build.properties_ so that versions of all required plugins are set, and the 
+version of the product is set. Check this change in.
+* Generate the required product archives (zips), and the documentation.
+* Release the archives and documentation on SourceForge
+
+
+[[pluginrelease]]
+=== Plugin Release Process
+
+Since DataNucleus development policy is that all current tests should always pass for checked in code then a plugin is
+always in a releasable state. In general changes don't sit in the source repo for more than a month without release.
+If a commercial client requires a particular feature or bug fix then a release is expedited. If some upstream plugin
+needs releasing first then it is released before the plugin in question. We try to avoid any changes in internal APIs
+that would affect downstream plugins if not in a new release cycle. The following is the release process (administrator role)
+
+* Check that there are no unresolved issues marked against the release version in question and, if necessary complete 
+the outstanding ones, or move them to a later version.
+* Should a developer have a good reason for the release not happening (e.g wanting to get another fix in first) then the 
+release could be delayed, but this is the exception not the norm.
+* Use the Maven _release_ plugin as follows : _mvn clean release:clean release:prepare release:perform_. This updates the 
+version to remove SNAPSHOT, builds source/javadocs/jar, creates a tag and finally copies it to Sonatype ready for release.
+* Go to the DataNucleus Sonatype account and check/release/close the repository artifacts)
+
+
+[[samplerelease]]
+=== Sample Release Process
+
+We try to make all samples use Maven and have the same release process, so then the released archive is consistent.
+This is the release process for a sample
+
+* Go to samples project and edit the pom.xml for version and dependencies
+* Create the assembly using _mvn clean assembly:assembly_
+* Copy the zip file on to SourceForge (or get an admin to do it)
+
+
+=== DataNucleus Extensions and Extension-Points
+
+DataNucleus products are built using a plugin mechanism, allowing plugins to operate together.
+This plugin mechanism is useful also from a user viewpoint in that you, the user, could provide plugins that use these plugin points and 
+extend the capabilities of DataNucleus. Plugins are loaded by a plugin manager when DataNucleus is initialised at runtime, and this plugin 
+manager uses a registry mechanism, inspecting jars in the CLASSPATH. The three steps necessary for creating a DataNucleus plugin are
+
+1. Review the DataNucleus Extension-Point that you will need to implement to generate the plugin, and implement it.
+2. Create a file `plugin.xml` at the top level of your JAR defining the plugin details (see the actual Extension docs).
+3. Update the `META-INF/MANIFEST.MF` file contained in the jar so that it includes necessary information for OSGi.
+
+Extension points differ from one version of DataNucleus to another, so you should consult the documentation of the version of DataNucleus
+that you are using. The documentation for extensions in the latest version of DataNucleus can be found http://www.datanucleus.org/products/accessplatform/extensions/index.html[here]
+
+
+include::_development_tests.adoc[leveloffset=+1]

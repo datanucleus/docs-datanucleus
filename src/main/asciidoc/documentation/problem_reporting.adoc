@@ -18,7 +18,7 @@ don't want to debug your problem so ask yourself this question _why should we if
 being reported so the issue may no longer be an issue (if there are no jars present in the nightly repo then nothing has changed since the previous release).
 4. Search the issues for the DataNucleus plugin in question for an issue describing your situation. 
 If there is one then you can always check the status of the issue and add a comment against it.
-5. Start a thread on the [Forum](http://forum.datanucleus.org). If doing this then seriously consider posting a simple concise testcase (see below) 
+5. Start a thread on the http://forum.datanucleus.org[Forum]. If doing this then seriously consider posting a simple concise testcase (see below) 
 that gives people something that reproduces your problem.
 6. If there is nothing obvious incorrect in your situation and it happens in a released version of DataNucleus then you can raise an issue against the DataNucleus plugin in question.
 You MUST then create a minimized testcase and attach it to the issue (using "Attach File" on the issue) - see below for testcase definitions. 
@@ -45,7 +45,7 @@ our time here, so Maven is the only way, and the Maven build file is preconfigur
 == JDO Testcase
 image:../images/GitHub-Mark-64px.png[GitHub]
 You can provide a GitHub JUnit test, cloned from a simple DataNucleus GitHub test project template.
-DataNucleus provides a template JUnit GitHub project in repository [test-jdo](https://github.com/datanucleus/test-jdo).
+DataNucleus provides a template JUnit GitHub project in repository https://github.com/datanucleus/test-jdo[test-jdo].
 Please fork this and mention the location of your fork on the issue that it relates to. Note that there are two JUnit 
 tests in the provided project, one for single-threaded and one for multi-threaded issues; use the one appropriate to your case and delete the other.
 
@@ -54,7 +54,7 @@ tests in the provided project, one for single-threaded and one for multi-threade
 == JPA Testcase
 image:../images/GitHub-Mark-64px.png[GitHub]
 You can provide a GitHub JUnit test, cloned from a simple DataNucleus GitHub test project template.
-DataNucleus provides a template JUnit GitHub project in repository [test-jpa](https://github.com/datanucleus/test-jpa).
+DataNucleus provides a template JUnit GitHub project in repository https://github.com/datanucleus/test-jpa[test-jpa].
 Please fork this and mention the location of your fork on the issue that it relates to. Note that there are two JUnit 
 tests in the provided project, one for single-threaded and one for multi-threaded issues; use the one appropriate to your case and delete the other.
 
@@ -63,7 +63,7 @@ tests in the provided project, one for single-threaded and one for multi-threade
 == Contributed test for the DataNucleus test suite
 
 As an alternative to the above, and where you are familiar with JUnit and are willing to look at the 
-xref:development/tests.html[existing DataNucleus tests in GitHub] then please create a JUnit test case that 
+link:development.html#development_tests[existing DataNucleus tests in GitHub] then please create a JUnit test case that 
 utilises our existing suite of sample data etc. If you provide a testcase in this way your testcase should be a patch against current GitHub latest
 of the respective test suite project and it should be attached to the issue to which it relates. To add a JUnit testcase, please follow the 
-xref:development/tests.html#Adding_Unit_Tests[new unit test guide]
+link:development.html#add_unit_test[new unit test guide]

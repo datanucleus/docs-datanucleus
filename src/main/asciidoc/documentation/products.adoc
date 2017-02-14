@@ -1,0 +1,231 @@
+[[products]]
+= DataNucleus Products
+:_basedir: ../
+:_imagesdir: images/
+
+
+
+== Products
+
+DataNucleus AccessPlatform provides persistence and retrieval of data to a range of datastores using a range of APIs, with a range of query languages. 
+It is provided under the Apache 2 license, and supports persistence to the following datastores : RDBMS, Cassandra, MongoDB, HBase, Neo4j, LDAP, Excel (XLS/OOXML), ODF, XML, JSON, 
+Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
+
+
+[cols="1,1,1,1,1,1,1,1,1", options="header"]
+.Product Releases
+|===
+|Version
+|Latest
+|Status
+|APIs
+|JRE
+|Released
+|Support
+|Documentation
+|Release Notes
+
+|5.0 (Schrodinger)
+|5.0.7
+|Developed
+|JDO3.2, JPA2.1, REST
+|1.8+
+|Jul/2016
+|link:../support.html#free[Free], link:../support.html#commercial[Commercial]
+|http://www.datanucleus.org/products/accessplatform_5_0/index.html[Online],
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/5.0.0.release/datanucleus-accessplatform-docs-5.0.zip/download[Download], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/5.0.0.release/datanucleus-accessplatform-docs-5.0.pdf/download[PDF]
+|link:news/access_platform_5_0.html[HTML]
+
+|4.2 (Planck)
+|4.2.12
+|Retired
+|JDO3.2, JPA2.1, REST
+|1.7+
+|Oct/2015
+|link:../support.html#free[Free], link:../support.html#commercial[Commercial]
+|http://www.datanucleus.org/products/accessplatform_4_2/index.html[Online], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.zip/download[Download],
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.pdf/download[PDF]
+|link:news/access_platform_4_2.html[HTML]
+
+|4.1 (Chadwick)
+|4.1.17
+|Retired
+|JDO3.1, JPA2.1, REST
+|1.7+
+|May/2015
+|link:../support.html#free[Free], link:../support.html#commercial[Commercial]
+|http://www.datanucleus.org/products/accessplatform_4_1/index.html[Online], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/datanucleus-accessplatform-docs-4.1.zip/download[Download], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/datanucleus-accessplatform-docs-4.1.pdf/download[PDF] 
+|link:news/access_platform_4_1.html[HTML]
+
+|_4.0 (Einstein)_
+|4.0.7
+|Retired
+|JDO3.1, JPA2.1, REST
+|1.7+
+|Jun/2014
+|link:../support.html#commercial[Commercial]
+|http://www.datanucleus.org/products/accessplatform_4_0/index.html[Online], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.zip/download[Download], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.pdf/download[PDF]
+|link:news/access_platform_4_0.html[HTML]
+
+|_3.3 (Galileo)_
+|3.3.8
+|Retired
+|JDO3.1, JPA2.1, REST
+|1.6+
+|Jun/2013
+|None
+|http://www.datanucleus.org/products/accessplatform_3_3/index.html[Online], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.zip/download[Download], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.pdf/download[PDF]
+|link:news/access_platform_3_3.html[HTML]
+
+|_3.2 (Copernicus)_
+|3.2.9
+|Retired
+|JDO3.1, JPA2.0, REST
+|1.6+
+|Mar/2013
+|None
+|http://www.datanucleus.org/products/accessplatform_3_2/index.html[Online], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.zip/download[Download], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.pdf/download[PDF]
+|link:news/access_platform_3_2.html[HTML]
+
+|_3.1 (Kepler)_
+|3.1.5
+|Retired
+|JDO3.1, JPA2.0, REST
+|1.6+
+|Jul/2012
+|None
+|http://www.datanucleus.org/products/accessplatform_3_1/index.html[Online], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.1.0.release/datanucleus-accessplatform-docs-3.1.0.zip/download[Download]
+|link:news/access_platform_3_1.html[HTML]
+
+|_3.0 (Newton)_
+|3.0.10
+|Retired
+|JDO3.0, JPA2.0, REST
+|1.5+
+|Aug/2011
+|None
+|http://www.datanucleus.org/products/accessplatform_3_0/index.html[Online], 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.0.0.release/datanucleus-accessplatform-docs-3.0.0.zip/download[Download]
+|link:news/access_platform_3_0.html[HTML]
+
+|_2.2 (Geiger)_
+|2.2.3
+|Retired
+|JDO3.0, JPA2.0, REST
+|1.5+
+|Dec/2010
+|None
+|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.2.0.release/datanucleus-accessplatform-docs-2.2.0.zip/download[Download], 
+http://www.datanucleus.org/products/accessplatform_2_2/datanucleus-accessplatform.pdf[PDF]
+|link:news/access_platform_2_2.html[HTML]
+
+|_2.1 (Thomson)_
+|2.1.4
+|Retired
+|JDO3.0, JPA2.0, REST
+|1.5+
+|Jun/2010
+|None
+|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.1.0.release/datanucleus-accessplatform-docs-2.1.0.zip/download[Download], 
+http://www.datanucleus.org/products/accessplatform_2_1/datanucleus-accessplatform.pdf[PDF]
+|link:news/access_platform_2_1.html[HTML]
+
+|_2.0 (Bohr)_
+|2.0.5
+|Retired
+|JDO2.2, JPA1.0, REST
+|1.5+
+|Jan/2010
+|None
+|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.0.0.release/datanucleus-accessplatform-docs-2.0.0.zip/download[Download], 
+http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.0.0.release/datanucleus-accessplatform-docs-2.0.0.pdf/download[PDF]
+|link:news/access_platform_2_0.html[HTML]
+
+|_1.1 (Rutherford)_
+|1.1.6
+|Retired
+|JDO2.2, JPA1.0, REST
+|1.5+
+|Feb/2009
+|None
+|http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.zip/download[Download], 
+http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.1.0/datanucleus-accessplatform-docs-1.1.0.pdf/download[PDF]
+|link:news/access_platform_1_1.html[HTML]
+
+|_1.0 (Faraday)_
+|1.0.5
+|Retired
+|JDO2.2, JPA1.0, REST
+|1.3+
+|Sep/2008
+|None
+|http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.zip/download[Download], 
+http://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/1.0.0/datanucleus-accessplatform-docs-1.0.0.pdf/download[PDF]
+|link:news/access_platform_1_0.html[HTML]
+|===
+
+
+== Plugins
+
+DataNucleus products are built from a series of plugins. Each plugin is an OSGi bundle. 
+Each plugin provides a level of functionality to the overall DataNucleus platform and the plugins can be individually downloaded if required rather than waiting for the next
+full release of a product, but if doing that always be careful of cross-compatibility of versions of plugins.
+
+
+* https://github.com/datanucleus/datanucleus-core[datanucleus-core] : Primary building block of DataNucleus persistence
+* API Implementations
+** https://github.com/datanucleus/datanucleus-api-jdo[datanucleus-api-jdo] : Support for persistence using the JDO API
+** https://github.com/datanucleus/datanucleus-api-jpa[datanucleus-api-jpa] : Support for persistence using the JPA API
+** https://github.com/datanucleus/datanucleus-api-rest[datanucleus-api-rest] : Support for persistence using a REST API
+* Datastores
+** https://github.com/datanucleus/datanucleus-cassandra[datanucleus-cassandra] : Support for persistence to Cassandra
+** https://github.com/datanucleus/datanucleus-excel[datanucleus-excel] : Support for persistence to Excel
+** https://github.com/datanucleus/datanucleus-hbase[datanucleus-hbase] : Support for persistence to HBase
+** https://github.com/datanucleus/datanucleus-json[datanucleus-json] : Support for persistence to JSON
+** https://github.com/datanucleus/datanucleus-ldap[datanucleus-ldap] : Support for persistence to LDAP
+** https://github.com/datanucleus/datanucleus-mongodb[datanucleus-mongodb] : Support for persistence to MongoDB
+** https://github.com/datanucleus/datanucleus-neo4j[datanucleus-neo4j] : Support for persistence to Neo4j
+** https://github.com/datanucleus/datanucleus-odf[datanucleus-odf] : Support for persistence to ODF
+** https://github.com/datanucleus/datanucleus-rdbms[datanucleus-rdbms] : Support for persistence to RDBMS
+** https://github.com/datanucleus/datanucleus-xml[datanucleus-xml] : Support for persistence to XML
+* Other Plugins
+** https://github.com/datanucleus/datanucleus-cache[datanucleus-cache] : Support for third-party caching tools
+** https://github.com/datanucleus/datanucleus-jodatime[datanucleus-jodatime] : Support for persisting fields of Jodatime types
+** https://github.com/datanucleus/datanucleus-geospatial[datanucleus-geospatial] : Support for persisting fields of Geospatial types
+** https://github.com/datanucleus/datanucleus-guava[datanucleus-guava] : Support for persisting fields of Guava types
+** https://github.com/datanucleus/datanucleus-jdo-jca[datanucleus-jdo-jca] : Support for using JDO in JavaEE environments via JCA
+** https://github.com/datanucleus/datanucleus-jdo-query[datanucleus-jdo-query] : Support for generating JDO Typed "Q" classes
+** https://github.com/datanucleus/datanucleus-jpa-query[datanucleus-jpa-query] : Support for generating JPA Criteria "MetaModel" classes
+* Persistence APIs
+** https://github.com/datanucleus/javax.jdo[javax.jdo] : JDO API standard for use with JDO applications
+** https://github.com/datanucleus/javax.persistence[javax.persistence] : JPA API standard for use with JPA applications
+* Tools
+** https://github.com/datanucleus/datanucleus-maven-plugin[datanucleus-maven-plugin] : For developing applications using DataNucleus and Maven
+** https://github.com/datanucleus/datanucleus-eclipse-plugin[datanucleus-eclipse-plugin] : For developing application using DataNucleus in Eclipse
+* Inactive Plugins
+** https://github.com/datanucleus/datanucleus-neodatis[datanucleus-neodatis] : Support for persistence to NeoDatis. Supported up to and including DataNucleus v5.0
+** https://github.com/datanucleus/datanucleus-java8[datanucleus-java8] : Support for persisting fields of Java 1.8 types in DataNucleus v4.x only.
+** https://github.com/datanucleus/datanucleus-idea-plugin[datanucleus-idea-plugin] : For developing applications using DataNucleus in Intellij IDEA
+** datanucleus-db4o - no longer supported (supported up to and including DataNucleus v3.0). Code still present in SourceForge if required
+** datanucleus-db4o-sql - no longer supported (supported up to and including DataNucleus v3.0). Code still present in SourceForge if required
+** datanucleus-java5 - now part of datanucleus-core and datanucleus-api-jpa
+** datanucleus-enhancer - now part of datanucleus-core
+** datanucleus-javaxtime - now part of datanucleus-core
+** datanucleus-awtgeom - now part of datanucleus-geospatial
+** datanucleus-xmltypeoracle - now part of datanucleus-rdbms
+** datanucleus-connectionpool - now part of datanucleus-rdbms
+** datanucleus-spatial - now part of datanucleus-geospatial
+** datanucleus-management - now part of datanucleus-core
+** maven1 - no longer used, since Maven1 is deprecated
+

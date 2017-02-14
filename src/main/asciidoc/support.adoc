@@ -21,7 +21,7 @@ may answer the issue. You can always configure the log to give more output.
 . Go to the http://forum.datanucleus.org[__DataNucleus Forum__] OR https://gitter.im/datanucleus/Lobby[__DataNucleus on Gitter__] and ask. 
 Always try to give as clear a description of the problem as possible, together with 
 your input data, and any associated log output. __Please be aware that we have very little time for this type of support and contributors to 
-DataNucleus are more likely to get any available free support__
+DataNucleus are more likely to get any available free support__.
 __Please do not use Twitter and expect answers to support questions; support is not provideable in 140 chars!!__.
 . If you don't want to report the problem to us as in step 4 then go over to http://stackoverflow.com/questions/tagged/datanucleus[Stackoverflow] and post a question tagged as DataNucleus. 
 We don't provide support over there but you may find people who have experience of your situation to help you.
@@ -42,7 +42,7 @@ Our various commercial services are defined below complete with pricing (_note t
 
 * xref:support.html#timebased_consulting[__Time-Based Consulting__] : DataNucleus consultant(s) are available online at a mutually convenient time to provide answers 
 to your questions via Skype/IRC/IM/phone/etc. Simply pay by the hour as and when needed.
-* xref:support.html#support)[__Support__] : DataNucleus consultant(s) are available to respond to problems that come up with your deployments, providing workarounds 
+* xref:support.html#support[__Support__] : DataNucleus consultant(s) are available to respond to problems that come up with your deployments, providing workarounds 
 to your problems, or providing rapid fixes. Optionally also allowing for feature additions to meet your requirements.
 
 [[timebased_consulting]]
