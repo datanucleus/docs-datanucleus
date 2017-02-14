@@ -112,7 +112,8 @@ image:../images/GitHub-Mark-64px.png[GitHub]
 
 DataNucleus source code is hosted on https://github.com/datanucleus[GitHub] and uses the http://git-scm.com/[Git] (distributed) source code version control system. 
 
-NOTE: DataNucleus source code for versions up to and including 3.3.5 were hosted by SourceForge. You can still get the code for those earlier versions by searching on SourceForge. This is not maintained or supported by us.
+NOTE: DataNucleus source code for versions up to and including 3.3.5 were hosted by SourceForge. You can still get the code for those earlier versions by searching on SourceForge. 
+This is not maintained or supported by us.
 
 
 
