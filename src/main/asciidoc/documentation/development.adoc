@@ -2,6 +2,7 @@
 = DataNucleus Development Guide
 :_basedir: ../
 :_imagesdir: images/
+:numbered:
 
 DataNucleus is an Open Source development. It is written by many people yet has a broad scope and so is in need of help. 
 It is released under an link:license.html[Apache 2 license], so you are welcome to develop it further.

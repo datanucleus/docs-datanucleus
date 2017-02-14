@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- No caching headers -->
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="expires" content="-1"/>
+
+    <title>DataNucleus Support</title>
+
+    <!--
+        DataNucleus Documentation Template
+        ==================================
+        This template uses 
+        * Bootstrap v3.3.7 (https://getbootstrap.com/) for navbar.
+        * Bootswatch "cosmo" theme for Bootstrap (https://bootswatch.com/cosmo).
+        * Bootstrap TOC plugin v0.4.1 (https://afeld.github.io/bootstrap-toc/)
+          for the table of contents.
+        * jQuery (necessary for Bootstrap's JavaScript plugins)
+        * Font-Awesome for some icons used by Asciidoctor
+        NOTE: tried using Font-Awesome CSS locally but then fails to work!
+    -->
+    <link href="css/bootswatch/3.3.7/bootstrap-cosmo.css" rel="stylesheet"/>
+    <link href="css/bootstrap-toc/0.4.1/bootstrap-toc.min.css" rel="stylesheet"/>
+    <link href="css/frontpage.css" rel="stylesheet"/>
+
+    <link href="css/asciidoctor/foundation.css" rel="stylesheet"/>
+    <link href="css/datanucleus_theme.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap/3.3.7/bootstrap.min.js"></script>
+    <script src="js/bootstrap-toc/0.4.1/bootstrap-toc.min.js"></script>
+
+    <!-- Coderay syntax formatter -->
+    <style type="text/css">
+        /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+/*pre.CodeRay {background-color:#f7f7f8;}*/
+.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
+.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
+table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
+table.CodeRay td{vertical-align: top;line-height:1.45}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
+table.CodeRay td.code{padding:0 0 0 .5em}
+table.CodeRay td.code>pre{padding:0}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#toc">
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- Three line menu button for use on mobile screens -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- 'style' added to align image with navbar. FIX THIS -->
+            <a class="navbar-brand" href="">
+                <img style="margin-top: -12px;" alt="Brand" src="images/datanucleus_icon2.png"/>
+            </a>
+            <a class="navbar-brand" href="">DataNucleus</a>
+
+            <!-- 'style' added to fix height of input box. FIX THIS -->
+            <form class="navbar-form navbar-left" role="search" id="search-form" action="https://www.google.com/search" method="get" style="padding: 1px 15px;">
+                <div class="form-group">
+                    <input name="sitesearch" value="www.datanucleus.org" type="hidden">
+                    <input name="q" type="text" class="form-control" placeholder="Search" style="margin-top: 7px; padding: 1px; border-radius: 5px; height: 30px; vertical-align: middle;">
+                </div>
+            </form>
+        </div>
+
+        <!-- Navbar that will collapse on mobile screens -->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documentation <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="documentation/products.html">Products Overview</a></li>
+                        <li><a href="http://www.datanucleus.org/products/accessplatform_5_1">Version 5.1</a></li>
+                        <li><a href="http://www.datanucleus.org/products/accessplatform_5_0">Version 5.0</a></li>
+                        <li><a href="http://www.datanucleus.org/products/accessplatform_4_2">Version 4.2</a></li>
+                        <li><a href="http://www.datanucleus.org/products/accessplatform_4_1">Version 4.1</a></li>
+                        <li><a href="documentation/usage.html">Usage</a></li>
+                        <li><a href="documentation/donations.html">Donations</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Development</li>
+                        <li><a href="documentation/development.html">Development Guide</a></li>
+                        <li><a href="documentation/release_plans.html">Release Plans</a></li>
+                        <li><a href="documentation/problem_reporting.html">Problem Reporting</a></li>
+                    </ul>
+                </li>
+                <li><a href="download.html">Download</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="documentation/problem_reporting.html">Problem Reporting</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Commercial</li>
+                        <li><a href="support.html#commercial">DataNucleus Services</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Free</li>
+                        <li><a href="https://forum.datanucleus.org">DataNucleus Forum</a></li>
+                        <li><a href="https://gitter.im/datanucleus/Lobby">Gitter (DataNucleus)</a></li>
+                        <li><a href="https://stackoverflow.com/questions/tagged/datanucleus">Stackoverflow (DataNucleus)</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Source <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://github.com/datanucleus">Project</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Plugins</li>
+                        <li><a href="https://github.com/datanucleus/datanucleus-core">datanucleus-core</a></li>
+                        <li><a href="https://github.com/datanucleus/datanucleus-api-jdo">datanucleus-api-jdo</a></li>
+                        <li><a href="https://github.com/datanucleus/datanucleus-api-jpa">datanucleus-api-jpa</a></li>
+                        <li><a href="https://github.com/datanucleus/datanucleus-rdbms">datanucleus-rdbms</a></li>
+                        <li><a href="https://github.com/datanucleus/datanucleus-cassandra">datanucleus-cassandra</a></li>
+                        <li><a href="https://github.com/datanucleus/datanucleus-mongodb">datanucleus-mongodb</a></li>
+                        <li><a href="https://github.com/datanucleus/datanucleus-hbase">datanucleus-hbase</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://datanucleus.wordpress.org">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container marketing">
+      <div class="row" style="color: #2385c6; font-size: 21px;" >
+          <center><img src="./images/frontpage/dn_accessplatform_overview.png"/></center>
+          <p>
+              Transparent persistence. Powerful querying.
+              Use the API your prefer, to a very wide range of datastores.
+              The most standards-compliant Java persistence product.
+              Open Source software, under the Apache 2 license
+              Persisting Java objects is now easy.
+          </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-9">
+          <h2 class="featurette-heading">Choose your Datastore <span class="text-muted">from a very wide range!</span></h2>
+          <p class="lead">Providing access to industry leading RDBMS, map stores such as Cassandra and HBase, the Neo4j graph store, spreadsheets in Excel or OpenOffice formats,
+          JSON formatted Amazon and Google Storage options, the popular MongoDB JSON-like document store, as well as ubiquitous LDAP and others.</p>
+        </div>
+        <div class="col-md-3" style="vertical-align:center;">
+          <img class="featurette-image img-responsive center-block" src="images/frontpage/database.png" alt="Database">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-9 col-md-push-3">
+          <h2 class="featurette-heading" style="color: blue;">Choose the JPA API ? <span class="text-muted">with full support for JPA 2.1</span></h2>
+          <p class="lead">
+              Java standard since 2006, providing easy persistence to RDBMS datastores.
+              Comes with its own "SQL-like" JPQL query language, so you query your data in a language similar to what your datastore understands.
+          </p>
+          <p><a class="btn btn-default" href="http://www.datanucleus.org/products/accessplatform/jpa/api.html" role="button" style="background-color: blue;">Read more &raquo;</a></p>
+        </div>
+        <div class="col-md-3 col-md-pull-9" style="vertical-align:center;">
+          <img class="featurette-image img-responsive center-block" src="images/frontpage/api.png" alt="API image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-9">
+          <h2 class="featurette-heading" style="color: red;">or choose the JDO API ? <span class="text-muted">with full support for JDO 3.2.</span></h2>
+          <p class="lead">
+              Java standard since 2001, providing transparent persistence and datastore agnosticity.
+              Comes with its own "Java syntax" JDOQL query language so you can use the Java syntax you already know to query your data.
+          </p>
+          <p><a class="btn btn-default" href="http://www.datanucleus.org/products/accessplatform/jdo/api.html" role="button" style="background-color: red;">Read more &raquo;</a></p>
+        </div>
+        <div class="col-md-3" style="vertical-align:center;">
+          <img class="featurette-image img-responsive center-block" src="images/frontpage/api.png" alt="API image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-3" style="vertical-align:center;">
+          <img class="featurette-image img-responsive center-block" src="images/frontpage/contribute.png" alt="Contribute image">
+        </div>
+        <div class="col-md-9">
+          <h2 class="featurette-heading">Contribute to its development ? <span class="text-muted">with the latest tools.</span></h2>
+          <p class="lead">
+              Explore the codebase on <a href="http://github.com/datanucleus">GitHub</a> and contribute new features or fix bugs.
+              All code is available under the very flexible <a href="./documentation/license.html">Apache 2</a> License so you have every opportunity to offer
+              your skills to the project. Follow the <a href="http://datanucleus.wordpress.com">DataNucleus blog</a> or <a href="https://twitter.com/datanucleus">Twitter (@datanucleus)</a>.
+              and receive updates when features are added, or bugs are fixed that could impact on your application(s).
+          </p>
+          <p><a class="btn btn-default" href="https://twitter.com/datanucleus" role="button">Go to Twitter &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- Documentation and Download links -->
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-circle" src="images/frontpage/documentation.png" alt="Docs image" width="140" height="140">
+          <h2>Documentation</h2>
+          <p>Extensive documentation covering JDO, JPA and REST APIs, as well as all handling specific to the particular datastores in question</p>
+          <p><a class="btn btn-default" href="http://www.datanucleus.org/products/accessplatform/" role="button">View latest &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-6" style="align: center;">
+          <img class="img-square" src="images/frontpage/download.png" alt="Download image" width="140" height="140">
+          <h2>Download</h2>
+          <p>Download the latest version as a convenient ZIP file with all dependencies.</p>
+          <p><a class="btn btn-default" href="download.html" role="button">Download here &raquo;</a></p>
+        </div>
+      </div>
+
+    </div>
+
+
+<footer style="background-color:#97d5ca; padding: 5px;">
+<div class="container">
+    <!--div class="row">
+        <div class="col-sm-4">
+            <a href="https://forum.datanucleus.org.html">DataNucleus Forum</a>
+        </div>
+        <div class="col-sm-4">
+            <a href="https://gitter.im/datanucleus/Lobby">Gitter</a><br/>
+        </div>
+        <div class="col-sm-4">
+            <a href="https://stackoverflow.com/questions/tagged/datanucleus"><i>Stackoverflow</i></a><br/>
+        </div>
+    </div-->
+    <hr/>
+    <p class="text-center">&copy; 2008-2017 DataNucleus, Licensed under the Apache License, Version 2.0.</p>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 [[problem_reporting]]
-= DataNucleus Problem Reporting
+= DataNucleus Usage
 :_basedir: ../
 :_imagesdir: images/
 
