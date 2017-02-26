@@ -10,7 +10,8 @@ This is current scope for DataNucleus 5.1. If you think other things ought to be
 === Feature Scope
 
 * Requires JRE 1.8+
-* Support for soft-delete of objects
+* Support for version "initial-value" specification.
+* Support for soft-delete of persistent objects.
 
 === Release Plans
 
@@ -27,10 +28,18 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 
 * Requires JRE 1.8+
 * More flexibility to handle non-JDK collections.
-* Support for JDK 1.8 Optional
-* Support for specific Scala features
+* Support for JDK 1.8 Optional for RDBMS, Cassandra, MongoDB, Excel, ODF, Neo4j, HBase, JSON
+* Support for specific Scala features including optional
 * Support HBase 1.x
+* Support HBase related object removal
 * Support Cassandra (Datastax) 3.x
+* Support Neo4j v2.3+
+* Support MongoDB v3.0+ of mongo-java-driver
+* Support for RDBMS SQL Anywhere
+* Support for PostgreSQL persisting collection/array of strings/ints into "array" column type
+* Support for nondurable identity with JPA
+* Support for Enum extension handling for RDBMS, Cassandra, MongoDB, Excel, ODF, Neo4j, HBase, JSON
+* Improved multi-tenancy support, per PMF/EMF, per PM/EM, or per datastore access.
 * Stop development of __datanucleus-neodatis__ at 5.0.0.release since the underlying datastore hasn't been updated in 5 years.
 
 === Release Plans
@@ -46,7 +55,11 @@ This is current scope for DataNucleus 4.2. If you think other things ought to be
 
 === Feature Scope
 
-* JDO 3.2
+* JDO : Support for JDO 3.2 JDOQLTypedQuery replacing DataNucleus JDO Typesafe Query
+* JDO : Support for JDO 3.2 AttributeConverter
+* JDO : JDO 3.2 Query API changes, for fluent calls, and remove need to cast results
+* Support for RDBMS SQL Anywhere
+
 
 === Release Plans
 
@@ -61,8 +74,29 @@ This is current scope for DataNucleus 4.1.
 === Feature Scope
 
 * Rewrite SCO "update" initialisation to cater for cascade delete and optimisation.
-* JPA KEY, VALUE support
 * Extend 'operation queue' to include persist, update, remove operations
+* Minor upgrade to bytecode enhancement contract to allow for separation of enhancement API
+* Rewrite of handling of container field update code.
+* Types : support for Jodatime LocalDateTime
+* JDO : PersistenceManager and Query implementations now implement AutoCloseable
+* JDO : Ability to save a query as a "named" query, for later access
+* JDO : support for JDOQL subqueries in SELECT clause
+* JPA : support for non-standard value generators
+* JPA : support for "KEY", "VALUE" keywords in JPQL
+* JPA : support for parameters in FROM "ON" clause of JPQL
+* JPA : support for JPQL subqueries in SELECT and HAVING clauses
+* JPA : support for JPQL ordering by result alias
+* JPA : support for JPQL "RIGHT OUTER JOIN"
+* JPA : support for AttributeConverters on map key/value and collection element
+* JPA : Ability to save a query as a "named" query, for later access
+* REST : support for map/array fields
+* REST : support for maxFetchDepth on GET requests
+* REST : support for GZIP compression on GET requests
+* MongoDB : much improved relation handling, and support for date and interface fields.
+* RDBMS : support for some HikariCP connection pool properties
+* RDBMS : support for SQL Anywhere
+* Persistent Properties : you can now use inheritance in persistent properties, overriding getters etc
+
 
 === Release Plans
 
@@ -91,6 +125,15 @@ All plugins were branched for this release cycle.
 * Upgrade enhancement process to enhance to org.datanucleus.enhancer.Persistable so that users need to have "datanucleus-core.jar" in the CLASSPATH and not "jdo-api.jar".
 * Drop EclipsePluginRegistry so all OSGi users should use OSGiPluginRegistry
 * Schema Evolution : restructure schema properties to allow for all we will need when adding/removing fields etc
+* JPA : no longer needs to have jdo-api.jar present
+* JPA : allow "native" query for Cassandra
+* Cassandra : support for native CQL queries via JDO or JPA
+* RDBMS : support for HikariCP and DBCP2 connection pools
+* RDBMS : ability to use single connection per PM/EM (rather than 1 for transactional operations, and 1 for non-transactional operations)
+* RDBMS : removed the need to create JavaTypeMapping classes when the user type has a TypeConverter
+* JSON : support for embedded 1-1 relation fields/properties
+* Excel/ODF/JSON/MongoDB/Neo4j/HBase/Cassandra : move to using "core" definition of table/columns meaning access to generalised features tested on other datastores
+
 
 === Release Plans
 
