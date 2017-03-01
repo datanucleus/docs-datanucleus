@@ -238,28 +238,17 @@ The documentation is also generated every night from what is in GitHub, and this
 
 ==== Documentation : AccessPlatform Product Site
 
-The documentation for AccessPlatform uses the same Maven process, and also has its own "skin".
-This "skin" is available in GitHub in repository https://github.com/datanucleus/docs-accessplatform-skin[docs-accessplatform-skin].
-Now you need to build/install the skin, by typing
-
------
-mvn clean install
------
-
-The documentation is in GitHub in repository https://github.com/datanucleus/docs-accessplatform[docs-accessplatform].
+The DataNucleus AccessPlatform (JDO, JPA, REST) docs make use of AsciiDoc format documents, and uses the Maven AsciiDoctor plugin to generate HTML.
+The documents make use of the Bootstrap CSS/Javascript "library" (originally from Twitter), as well as Font-Awesome and some others.
+The documentation is in GitHub in repository https://github.com/datanucleus/docs-datanucleus[docs-datanucleus]
 Now you can build the site itself by typing
 
 -----
-mvn clean site
+mvn clean compile
 -----
 
-The site is generated under _target/site_. You can also build a PDF of the docs by typing
-
------
-mvn pdf:pdf
------
-
-The PDF is generated under _target/pdf_. The documentation is also generated every night from what is in GitHub, and this appears on the  website.
+The site is then available under _target/site_. 
+The documentation is also generated every night from what is in GitHub, and this appears on the website.
 
 
 [[branching]]
