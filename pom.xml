@@ -24,8 +24,7 @@
         <asciidoctor.maven.plugin.version>1.5.3</asciidoctor.maven.plugin.version>
         <asciidoctorj.pdf.version>1.5.0-alpha.11</asciidoctorj.pdf.version>
         <asciidoctorj.version>1.5.4</asciidoctorj.version>
-        <asciidoctorj.diagram.version>1.5.0</asciidoctorj.diagram.version>
-        <incode-asciidoctor-extension-monotree.version>0.0.2</incode-asciidoctor-extension-monotree.version>
+        <!-- asciidoctorj.diagram.version>1.5.0</asciidoctorj.diagram.version-->
         <jruby.version>1.7.21</jruby.version>
 
         <build.dir>${project.basedir}/target/site</build.dir>
@@ -56,16 +55,11 @@
                             <artifactId>asciidoctorj</artifactId>
                             <version>${asciidoctorj.version}</version>
                         </dependency>
-                        <dependency>
+                        <!-- dependency>
                             <groupId>org.asciidoctor</groupId>
                             <artifactId>asciidoctorj-diagram</artifactId>
                             <version>${asciidoctorj.diagram.version}</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.incode.asciidoctor.monotree</groupId>
-                            <artifactId>incode-asciidoctor-extension-monotree</artifactId>
-                            <version>${incode-asciidoctor-extension-monotree.version}</version>
-                        </dependency>
+                        </dependency-->
                     </dependencies>
                     <configuration>
                         <!-- If you set baseDir to ${project.basedir}, top-level includes are resolved relative to the project root -->
@@ -78,30 +72,14 @@
                             <sourcedir>${project.build.sourceDirectory}</sourcedir>
                             <project-version>${project.version}</project-version>
                         </attributes>
-                        <requires>
+                        <!-- requires>
                             <require>asciidoctor-diagram</require>
-                        </requires>
+                        </requires-->
                     </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>rubygems</groupId>
-            <artifactId>asciidoctor-diagram</artifactId>
-            <version>1.2.1</version>
-            <type>gem</type>
-            <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>rubygems</groupId>
-                    <artifactId>asciidoctor</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-    </dependencies>
 
     <profiles>
         <profile>
@@ -119,7 +97,7 @@
                         <executions>
                             <execution>
                                 <id>output-html</id>
-                                <phase>compile</phase>
+                                <phase>generate-resources</phase>
                                 <goals>
                                     <goal>process-asciidoc</goal>
                                 </goals>
@@ -128,9 +106,6 @@
 
                                     <sourceDirectory>src/main/asciidoc/</sourceDirectory>
                                     <outputDirectory>${project.reporting.outputDirectory}/</outputDirectory>
-
-                                    <!-- The gem-maven-plugin appends the scope (e.g., provided) to the gemPath defined in the plugin configuration -->
-                                    <gemPath>${project.build.directory}/gems-provided</gemPath>
 
                                     <sourceHighlighter>coderay</sourceHighlighter>
                                     <templateDir>src/main/template</templateDir>

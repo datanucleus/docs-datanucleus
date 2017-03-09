@@ -294,6 +294,49 @@ We increment the _minor_ version number when we are changing internal APIs (but 
 We increment the _major_ version number when we are changing external (client-facing) APIs.
 
 
+[[productrelease]]
+=== Product Release Process
+
+DataNucleus AccessPlatform is simply a bundled distribution and is typically released at intervals every 1-2 months, usually taking the 
+latest release of each related plugin and packaging it. When there is a DataNucleus product to be released (e.g AccessPlatform), the following is 
+the release process (administrator role)
+
+* Make sure that all required plugin versions are released. See the xref:index.html#pluginrelease[plugin release process] below for details.
+* Go to the product that needs releasing update `build.properties` so that versions of all required plugins are set, and the 
+version of the product is set. Check this change in.
+* Generate the required product archives (zips), and the documentation.
+* Release the archives and documentation on SourceForge
+
+
+[[pluginrelease]]
+=== Plugin Release Process
+
+Since DataNucleus development policy is that all current tests should always pass for checked in code then a plugin is
+always in a releasable state. In general changes don't sit in the source repo for more than a month without release.
+If a commercial client requires a particular feature or bug fix then a release is expedited. If some upstream plugin
+needs releasing first then it is released before the plugin in question. We try to avoid any changes in internal APIs
+that would affect downstream plugins if not in a new release cycle. The following is the release process (administrator role)
+
+* Check that there are no unresolved issues marked against the release version in question and, if necessary complete 
+the outstanding ones, or move them to a later version.
+* Should a developer have a good reason for the release not happening (e.g wanting to get another fix in first) then the 
+release could be delayed, but this is the exception not the norm.
+* Use the Maven _release_ plugin as follows : _mvn clean release:clean release:prepare release:perform_. This updates the 
+version to remove SNAPSHOT, builds source/javadocs/jar, creates a tag and finally copies it to Sonatype ready for release.
+* Go to the DataNucleus Sonatype account and check/release/close the repository artifacts.
+
+
+[[samplerelease]]
+=== Sample Release Process
+
+We try to make all samples use Maven and have the same release process, so then the released archive is consistent.
+This is the release process for a sample
+
+* Go to samples project and edit the pom.xml for version and dependencies
+* Create the assembly using _mvn clean assembly:assembly_
+* Copy the zip file on to SourceForge (or get an admin to do it)
+
+
 
 [[coding_standards]]
 == Coding Standards
@@ -483,50 +526,7 @@ All original contributions must contain the following copyright notice.
 
 
 
-[[productrelease]]
-=== Product Release Process
-
-DataNucleus AccessPlatform is simply a bundled distribution and is typically released at intervals every 1-2 months, usually taking the 
-latest release of each related plugin and packaging it. When there is a DataNucleus product to be released (e.g AccessPlatform), the following is 
-the release process (administrator role)
-
-* Make sure that all required plugin versions are released. See the xref:index.html#pluginrelease[plugin release process] below for details.
-* Go to the product that needs releasing update `build.properties` so that versions of all required plugins are set, and the 
-version of the product is set. Check this change in.
-* Generate the required product archives (zips), and the documentation.
-* Release the archives and documentation on SourceForge
-
-
-[[pluginrelease]]
-=== Plugin Release Process
-
-Since DataNucleus development policy is that all current tests should always pass for checked in code then a plugin is
-always in a releasable state. In general changes don't sit in the source repo for more than a month without release.
-If a commercial client requires a particular feature or bug fix then a release is expedited. If some upstream plugin
-needs releasing first then it is released before the plugin in question. We try to avoid any changes in internal APIs
-that would affect downstream plugins if not in a new release cycle. The following is the release process (administrator role)
-
-* Check that there are no unresolved issues marked against the release version in question and, if necessary complete 
-the outstanding ones, or move them to a later version.
-* Should a developer have a good reason for the release not happening (e.g wanting to get another fix in first) then the 
-release could be delayed, but this is the exception not the norm.
-* Use the Maven _release_ plugin as follows : _mvn clean release:clean release:prepare release:perform_. This updates the 
-version to remove SNAPSHOT, builds source/javadocs/jar, creates a tag and finally copies it to Sonatype ready for release.
-* Go to the DataNucleus Sonatype account and check/release/close the repository artifacts.
-
-
-[[samplerelease]]
-=== Sample Release Process
-
-We try to make all samples use Maven and have the same release process, so then the released archive is consistent.
-This is the release process for a sample
-
-* Go to samples project and edit the pom.xml for version and dependencies
-* Create the assembly using _mvn clean assembly:assembly_
-* Copy the zip file on to SourceForge (or get an admin to do it)
-
-
-=== DataNucleus Extensions and Extension-Points
+== DataNucleus Extensions and Extension-Points
 
 DataNucleus products are built using a plugin mechanism, allowing plugins to operate together.
 This plugin mechanism is useful also from a user viewpoint in that you, the user, could provide plugins that use these plugin points and 
