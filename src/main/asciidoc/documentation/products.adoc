@@ -33,8 +33,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 |Jul/2016
 |link:../support.html#free[Free], link:../support.html#commercial[Commercial]
 |http://www.datanucleus.org/products/accessplatform_5_0/index.html[Online],
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/5.0.0.release/datanucleus-accessplatform-docs-5.0.zip/download[Download], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/5.0.0.release/datanucleus-accessplatform-docs-5.0.pdf/download[PDF]
+https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.0/[Download]
 |link:news/access_platform_5_0.html[HTML]
 
 |4.2 (Planck)
