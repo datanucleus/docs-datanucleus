@@ -1,0 +1,88 @@
+[[releasenotes_5_1]]
+= DataNucleus AccessPlatform 5.1 Release Notes
+:_basedir: ../../
+:_imagesdir: images/
+
+The 5.1 release of AccessPlatform is available under the link:../license.html[Apache 2 license] from our link:../../download.html[download page] 
+
+
+_Version 5.1_ includes the following over 5.0
+
+* Initial support for Soft-Delete
+
+
+
+
+== DataNucleus AccessPlatform 5.1.0.M1
+
+__Mar 17th 2017__ : _Version 5.1 Milestone 1_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/142[datanucleus-core-142] - Enhancement : add dnGetStateManager() method
+* https://github.com/datanucleus/datanucleus-core/issues/159[datanucleus-core-159] - Add enum for SurrogateColumnType and change org.datanucleus.store.schema.table to use it rather than multiple getters
+* https://github.com/datanucleus/datanucleus-core/issues/153[datanucleus-core-153] - Merge VersionHelper into ExecutionContext and allow configuration over version initial value
+* https://github.com/datanucleus/datanucleus-core/issues/178[datanucleus-core-178] - Support specification of initial version number when using VersionStrategy.VERSION_NUMBER
+* https://github.com/datanucleus/datanucleus-core/issues/179[datanucleus-core-179] - VersionStrategy.NONE should imply don't increment any value
+* https://github.com/datanucleus/datanucleus-core/issues/181[datanucleus-core-181] - Add property so that people can contribute new mechanisms for storing "identity" in non-RDBMS datastores
+* https://github.com/datanucleus/datanucleus-core/issues/183[datanucleus-core-183] - Set default for "datanucleus.jtaLocator" to be "autodetect" to match what it does
+* https://github.com/datanucleus/datanucleus-core/issues/184[datanucleus-core-184] - Revise naming schema for all persistence properties related to transactions
+* https://github.com/datanucleus/datanucleus-core/issues/188[datanucleus-core-188] - Add schema/catalog to SequenceMetaData
+* https://github.com/datanucleus/datanucleus-core/issues/190[datanucleus-core-190] - Remove "datanucleus.storeManagerType" since we can determine it from the URL or connection type
+* https://github.com/datanucleus/datanucleus-core/issues/192[datanucleus-core-192] - Drop extension point "org.datanucleus.store_objectvaluegenerator" since never used and better routes available
+* https://github.com/datanucleus/datanucleus-core/issues/182[datanucleus-core-182] - Support join on map KEY
+* https://github.com/datanucleus/datanucleus-core/issues/180[datanucleus-core-180] - Add support for soft-delete of persistable objects
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/44[datanucleus-api-jdo-44] - Support core-142
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/45[datanucleus-api-jdo-45] - Add support for soft-delete, see core-180
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/46[datanucleus-api-jdo-46] - Use of persistence.xml with non-jta-data-source but no jta-data-source should use it as primary
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/59[datanucleus-api-jpa-59] - Support core-142
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/60[datanucleus-api-jpa-60] - Add support for soft-delete, see core-180
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/61[datanucleus-api-jpa-61] - When in container mode, check on (JTA) transaction being active should include an attempt to join
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/70[datanucleus-api-jpa-70] - Support JPA MapKeyClass
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/72[datanucleus-api-jpa-72] - Support SequenceGenerator / <sequence-generator> "schema" / "catalog"
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/75[datanucleus-api-jpa-75] - Support @MapKeyJoinColumn
+* https://github.com/datanucleus/datanucleus-rdbms/issues/21[datanucleus-rdbms-21] - Support SoftDelete of objects
+* https://github.com/datanucleus/datanucleus-rdbms/issues/163[datanucleus-rdbms-163] - Support core-159
+* https://github.com/datanucleus/datanucleus-rdbms/issues/164[datanucleus-rdbms-164] - Update org.datanucleus.store.rdbms.table.Table to use "surrogate" method for mappings
+* https://github.com/datanucleus/datanucleus-rdbms/issues/167[datanucleus-rdbms-167] - Support core-153
+* https://github.com/datanucleus/datanucleus-rdbms/issues/168[datanucleus-rdbms-168] - Consider removing failover plugin point 
+* https://github.com/datanucleus/datanucleus-rdbms/issues/169[datanucleus-rdbms-169] - Support SequenceMetaData "schema"/"catalog" when generating sequence
+* https://github.com/datanucleus/datanucleus-rdbms/issues/172[datanucleus-rdbms-172] - Remove reference to "table-sequence" value generator, since this is "increment"
+* https://github.com/datanucleus/datanucleus-rdbms/issues/173[datanucleus-rdbms-173] - Support JPQL join on KEY(...) where the "..." is the value
+* https://github.com/datanucleus/datanucleus-cassandra/issues/25[datanucleus-cassandra-25] - Support core-159
+* https://github.com/datanucleus/datanucleus-cassandra/issues/26[datanucleus-cassandra-26] - Support core-153
+* https://github.com/datanucleus/datanucleus-cassandra/issues/27[datanucleus-cassandra-27] - Support SoftDelete of objects
+* https://github.com/datanucleus/datanucleus-mongodb/issues/31[datanucleus-mongodb-31] - Support core-159
+* https://github.com/datanucleus/datanucleus-mongodb/issues/32[datanucleus-mongodb-32] - Support core-153
+* https://github.com/datanucleus/datanucleus-mongodb/issues/33[datanucleus-mongodb-33] - Support SoftDelete of objects
+* https://github.com/datanucleus/datanucleus-neo4j/issues/22[datanucleus-neo4j-22] - Support core-159
+* https://github.com/datanucleus/datanucleus-neo4j/issues/23[datanucleus-neo4j-23] - Support core-153
+* https://github.com/datanucleus/datanucleus-neo4j/issues/24[datanucleus-neo4j-24] - Support SoftDelete of objects
+* https://github.com/datanucleus/datanucleus-hbase/issues/28[datanucleus-hbase-28] - Support core-159
+* https://github.com/datanucleus/datanucleus-hbase/issues/29[datanucleus-hbase-29] - Support core-153
+* https://github.com/datanucleus/datanucleus-hbase/issues/30[datanucleus-hbase-30] - Make use of core-181 property to support "HBase Legacy" storage of identity in relations
+* https://github.com/datanucleus/datanucleus-hbase/issues/31[datanucleus-hbase-31] - Support SoftDelete of objects
+* https://github.com/datanucleus/datanucleus-excel/issues/17[datanucleus-excel-17] - Support core-159
+* https://github.com/datanucleus/datanucleus-excel/issues/18[datanucleus-excel-18] - Support core-153
+* https://github.com/datanucleus/datanucleus-odf/issues/13[datanucleus-odf-13] - Support core-159
+* https://github.com/datanucleus/datanucleus-odf/issues/14[datanucleus-odf-14] - Support core-153
+* https://github.com/datanucleus/datanucleus-json/issues/11[datanucleus-json-11] - Support core-159
+* https://github.com/datanucleus/datanucleus-json/issues/12[datanucleus-json-12] - Support core-153
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/177[datanucleus-core-177] - TRIM handling for JPQL doesn't cater for multiple component identifiers
+* https://github.com/datanucleus/datanucleus-core/issues/193[datanucleus-core-193] - If we have an unknown type that extends an existing type, don't fallback if it needs a wrapper
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/65[datanucleus-api-jpa-65] - Application-managed EMF should map jta-data-source and non-jta-data-source on to internal persistence property names
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/67[datanucleus-api-jpa-67] - EMF.createEntityManager passing in props is trying to create new NucleusContext but shouldn't
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/68[datanucleus-api-jpa-68] - PersistenceUnitUtil.isLoaded(Object,String) attempts to resolve if loaded by wrong method
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/74[datanucleus-api-jpa-74] - EMF debug code needs null check
+* https://github.com/datanucleus/datanucleus-rdbms/issues/165[datanucleus-rdbms-165] - Fix for #137 is flawed and should check for null element metadata
+* https://github.com/datanucleus/datanucleus-rdbms/issues/175[datanucleus-rdbms-175] - Collection/Map join table column default names can be incorrect for JPA
+* https://github.com/datanucleus/datanucleus-rdbms/issues/176[datanucleus-rdbms-176] - Collection/Map join table default name can be incorrect for JPA
+* https://github.com/datanucleus/datanucleus-rdbms/issues/178[datanucleus-rdbms-178] - JDOQL will cache datastore compilation regardless of cache setting!
+* https://github.com/datanucleus/datanucleus-mongodb/issues/35[datanucleus-mongodb-35] - Fix handling of mongodb integer-based props
+
+
+
