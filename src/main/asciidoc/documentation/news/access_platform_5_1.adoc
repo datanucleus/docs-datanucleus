@@ -9,6 +9,7 @@ The 5.1 release of AccessPlatform is available under the link:../license.html[Ap
 _Version 5.1_ includes the following over 5.0
 
 * Initial support for Soft-Delete
+* Updated bytecode enhancement for easier StateManager access
 
 
 
