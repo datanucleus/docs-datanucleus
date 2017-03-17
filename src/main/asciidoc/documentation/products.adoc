@@ -25,7 +25,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 |Documentation
 |Release Notes
 
-|5.1 (???)
+|5.1 (Democritus)
 |5.1.0.M1
 |Developed
 |JDO3.2, JPA2.1, REST
