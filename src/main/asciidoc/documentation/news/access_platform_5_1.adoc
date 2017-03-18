@@ -13,6 +13,11 @@ _Version 5.1_ includes the following over 5.0
 
 
 
+== DataNucleus AccessPlatform 5.1.0.M2
+
+__???__ : _Version 5.1 Milestone 2_ includes the following changes
+
+
 
 == DataNucleus AccessPlatform 5.1.0.M1
 
