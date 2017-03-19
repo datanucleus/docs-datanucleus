@@ -20,6 +20,32 @@ _Version 5.0_ includes the following over 4.2
 
 
 
+== DataNucleus AccessPlatform 5.0.8
+
+__Mar 20th 2017__ : _Version 5.0.8_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/194[datanucleus-core-194] - If we have an unknown type that extends an existing type, don't fallback if it needs a wrapper
+* https://github.com/datanucleus/datanucleus-core/issues/195[datanucleus-core-195] - Support join on map key
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/71[datanucleus-api-jpa-71] - Support @MapKeyClass
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/76[datanucleus-api-jpa-76] - Support @MapKeyJoinColumn
+* https://github.com/datanucleus/datanucleus-rdbms/issues/174[datanucleus-rdbms-174] - Support JPQL join on KEY(...) where the "..." is the value
+* https://github.com/datanucleus/datanucleus-rdbms/issues/182[datanucleus-rdbms-182] - JPQL with a result class defined and returning single persistable object needs special treatment
+* https://github.com/datanucleus/datanucleus-rdbms/issues/185[datanucleus-rdbms-185] - JPQL join to new root doesn't cater for UNIONed query statement
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/198[datanucleus-core-198] - Generic compilation of query result "alias" is prone to problems
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/66[datanucleus-api-jpa-66] - EMF.createEntityManager passing in props is trying to create new NucleusContext but shouldn't
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/69[datanucleus-api-jpa-69] - PersistenceUnitUtil.isLoaded(Object,String) attempts to resolve if loaded by wrong method
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/73[datanucleus-api-jpa-73] - EMF debug code needs null check
+* https://github.com/datanucleus/datanucleus-rdbms/issues/179[datanucleus-rdbms-179] - JDOQL will cache datastore compilation regardless of cache setting!
+* https://github.com/datanucleus/datanucleus-mongodb/issues/36[datanucleus-mongodb-36] - Fix handling of mongodb integer-based props
+
+- - -
+
+
 == DataNucleus AccessPlatform 5.0.7
 
 __Feb 7th 2017__ : _Version 5.0.7_ includes the following changes
