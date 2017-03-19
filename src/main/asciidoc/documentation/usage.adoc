@@ -10,7 +10,7 @@ Choosing a Java data management platform will come down to your requirements in 
 * __DataNucleus is Open Source__, meaning that you have full access to the source code for all versions of DataNucleus. 
 With this you have the capability to correct any errors that you encounter, but also better understand the data management process, 
 and you can potentially extend DataNucleus to suit your needs.
-* __DataNucleus is free__. Our license is the license.html[Apache 2 License], providing the code and executables (JARs) free of charge. 
+* __DataNucleus is free__. Our license is the link:license.html[Apache 2 License], providing the code and executables (JARs) free of charge. 
 You are free to use DataNucleus in your projects. Please refer to the license for the precise wording. DataNucleus will always remain
 Open Source. Our license (Apache 2) is very flexible, much more than the license used for some other notable object/relational mapping 
 software which use licenses like the LGPL.
