@@ -101,16 +101,11 @@ You can also help by putting one of our logos on your site with a link back to o
 can benefit. This way the project will flourish with only a small effort from you. Below are some logos for your use.
 Should you have any particular requirements for logo sizes, please contact us.
 
-=== DataNucleus project logos
+=== DataNucleus logos
 
 image:../images/logos/DataNucleus16-150.jpg[]
 image:../images/logos/DataNucleus16-300.jpg[]
 
-
-=== DataNucleus AccessPlatform logos
-
-image:../images/logos/DataNucleus_AccessPlatform_40.jpg[]
-image:../images/logos/DataNucleus_AccessPlatform_85.jpg[]
 
 
 ## Acknowledgements
