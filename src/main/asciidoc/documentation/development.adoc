@@ -239,7 +239,7 @@ The documentation is also generated every night from what is in GitHub, and this
 
 The DataNucleus AccessPlatform (JDO, JPA, REST) docs make use of AsciiDoc format documents, and uses the Maven AsciiDoctor plugin to generate HTML.
 The documents make use of the Bootstrap CSS/Javascript "library" (originally from Twitter), as well as Font-Awesome and some others.
-The documentation is in GitHub in repository https://github.com/datanucleus/docs-datanucleus[docs-datanucleus]
+The documentation is in GitHub in repository https://github.com/datanucleus/docs-accessplatform[docs-accessplatform]
 Now you can build the site itself by typing
 
 -----
