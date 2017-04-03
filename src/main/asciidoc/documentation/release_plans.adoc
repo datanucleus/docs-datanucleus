@@ -15,7 +15,7 @@ This is current scope for DataNucleus 5.1. If you think other things ought to be
 
 === Release Plans
 
-* 5.1.0-m1 Mar/Apr 2017?
+* 5.1.0-m2 Apr 2017?
 
 
 
@@ -44,7 +44,7 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 
 === Release Plans
 
-* __5.0.8 Mar/Apr 2017?__
+* __5.0.9 Apr 2017?__
 
 
 
