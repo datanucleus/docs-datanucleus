@@ -7,10 +7,10 @@
 == Releases
 
 DataNucleus provides Open Source products, and you can freely download any __release__ of DataNucleus, together with the associated source code.
-DataNucleus downloads are subject to the documentation/license.html[Apache 2 License].
-Note that DataNucleus software versioning uses the versioning strategy defined (documentation/development/index.html#versioning[here].
+DataNucleus downloads are subject to the link:documentation/license.html[Apache 2 License].
+Note that DataNucleus software versioning uses the versioning strategy defined link:documentation/development.html#versioning[here].
 We hope that you are successful in your use of DataNucleus, and if you have any problems or queries, please contact us using the http://forum.datanucleus.org[Forum]. 
-Be aware that we don't have much time for this free support so you could make a documentation/donations.html[donation] to further development and pay for our time providing support.
+Be aware that we don't have much time for this free support so you could make a link:documentation/donations.html[donation] to further development and pay for our time providing support.
 
 The first thing to note is that __all DataNucleus releases are "stable"__, in that they all pass all DataNucleus tests and the relevant TCKs, 
 so any referral to some "stable branch" is a concept for other projects; the whole point of TDD is to guarantee stability.
@@ -40,8 +40,8 @@ https://github.com/datanucleus/samples-jdo[JDO] and https://github.com/datanucle
 == Nightly Builds
 
 We also provide a nightly build of the current GitHub codebase (from GitHub around 2AM GMT).
-DataNucleus downloads are subject to the documentation/license.html[Apache 2 License].
-Note that DataNucleus software versioning uses the versioning strategy defined documentation/development/index.html#versioning[here].
+DataNucleus downloads are subject to the link:documentation/license.html[Apache 2 License].
+Note that DataNucleus software versioning uses the versioning strategy defined link:documentation/development.html#versioning[here].
 
 * http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus[*Nightly build of active plugin JARs*] : 
 here you can find all JARs of all plugins that have changed since the most recent release.
