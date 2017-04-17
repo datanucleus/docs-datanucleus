@@ -41,7 +41,7 @@ https://github.com/datanucleus/samples-jdo[JDO] and https://github.com/datanucle
 
 We also provide a nightly build of the current GitHub codebase (from GitHub around 2AM GMT).
 DataNucleus downloads are subject to the link:documentation/license.html[Apache 2 License].
-Note that DataNucleus software versioning uses the versioning strategy defined link:documentation/development.html#versioning[here].
+Note that DataNucleus software uses the versioning strategy defined link:documentation/development.html#versioning[here].
 
 * http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus[*Nightly build of active plugin JARs*] : 
 here you can find all JARs of all plugins that have changed since the most recent release.
