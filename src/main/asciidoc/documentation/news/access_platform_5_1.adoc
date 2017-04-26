@@ -15,9 +15,45 @@ _Version 5.1_ includes the following over 5.0
 
 == DataNucleus AccessPlatform 5.1.0.M2
 
-__???__ : _Version 5.1 Milestone 2_ includes the following changes
+__Apr 27th 2017__ : _Version 5.1 Milestone 2_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/156[datanucleus-core-156] - Support user-provided identity class with className field defining the class of the object
+* https://github.com/datanucleus/datanucleus-core/issues/157[datanucleus-core-157] - ExecutionContextImpl.findObject should have an option of finding an object by particular member(s) that are unique keys
+* https://github.com/datanucleus/datanucleus-core/issues/199[datanucleus-core-199] - Create new object with app id can result in create "id" multiple times
+* https://github.com/datanucleus/datanucleus-core/issues/200[datanucleus-core-200] - Code for creation of new application identity "id" object is in 3 places; use IdentityManager.getApplicationId() only
+* https://github.com/datanucleus/datanucleus-core/issues/201[datanucleus-core-201] - Query.addSubquery should only allow a single variable name to be defined for the subquery
+* https://github.com/datanucleus/datanucleus-core/issues/203[datanucleus-core-203] - WeakValueMap is no longer used; remove it
+* https://github.com/datanucleus/datanucleus-core/issues/204[datanucleus-core-204] - StateManager : object is put in L1 cache too many times
+* https://github.com/datanucleus/datanucleus-core/issues/205[datanucleus-core-205] - Extend L1 and L2 cache to allow caching by a unique key
+* https://github.com/datanucleus/datanucleus-core/issues/206[datanucleus-core-206] - JPQL : Support compilation of NodeType of TYPE when used in result
+* https://github.com/datanucleus/datanucleus-core/issues/207[datanucleus-core-207] - Define SOFTDELETE column name for CompleteClassTable factories
+* https://github.com/datanucleus/datanucleus-core/issues/208[datanucleus-core-208] - Refactor ObjectProvider/StateManager interfaces to simplify the structure
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/47[datanucleus-api-jdo-47] - Support core-156
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/48[datanucleus-api-jdo-48] - Add @ComparatorClass annotation for specifying the comparator of a collection field
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/80[datanucleus-api-jpa-80] - Support override properties for elements of persistence.xml
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/82[datanucleus-api-jpa-82] - Add @ComparatorClass annotation for specifying the comparator of a collection field
+* https://github.com/datanucleus/datanucleus-rdbms/issues/184[datanucleus-rdbms-184] - JPQL join to new root doesn't cater for UNIONed query statement
+* https://github.com/datanucleus/datanucleus-rdbms/issues/186[datanucleus-rdbms-186] - Support core-156
+* https://github.com/datanucleus/datanucleus-rdbms/issues/187[datanucleus-rdbms-187] - Support compilation of JPQL TYPE expression in the result clause when the primary uses discriminator
+* https://github.com/datanucleus/datanucleus-cassandra/issues/29[datanucleus-cassandra-29] - Need to assign type to SOFTDELETE column
+* https://github.com/datanucleus/datanucleus-xml/issues/5[datanucleus-xml-5] - Support core-156
 
 
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/197[datanucleus-core-197] - Generic compilation of query result "alias" is prone to problems
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/78[datanucleus-api-jpa-78] - CriteriaUpdate doesnt register symbol for any ParameterExpression in the update clause
+* https://github.com/datanucleus/datanucleus-cassandra/issues/28[datanucleus-cassandra-28] - Load of query doesnt ensure that all SCOs are wrapped
+* https://github.com/datanucleus/datanucleus-mongodb/issues/37[datanucleus-mongodb-37] - Load of query doesnt ensure that all SCOs are wrapped
+* https://github.com/datanucleus/datanucleus-neo4j/issues/25[datanucleus-neo4j-25] - LazyLoadQueryResult Exception if result is empty when calling size()/isEmpty()
+* https://github.com/datanucleus/datanucleus-neo4j/issues/28[datanucleus-neo4j-28] - Load of query doesnt ensure that all SCOs are wrapped
+* https://github.com/datanucleus/datanucleus-hbase/issues/33[datanucleus-hbase-33] - Load of query doesnt ensure that all SCOs are wrapped
+* https://github.com/datanucleus/datanucleus-odf/issues/15[datanucleus-odf-15] - Load of query doesnt ensure that all SCOs are wrapped
+
+
+- - -
 
 == DataNucleus AccessPlatform 5.1.0.M1
 
