@@ -10,6 +10,7 @@ _Version 5.1_ includes the following over 5.0
 
 * Initial support for Soft-Delete
 * Updated bytecode enhancement for easier StateManager access
+* Support for findByUnique
 
 
 
