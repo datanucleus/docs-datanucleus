@@ -38,6 +38,12 @@
     <script src="<%= (attr :_basedir) %>js/bootstrap/3.3.7/bootstrap.min.js"></script>
     <script src="<%= (attr :_basedir) %>js/bootstrap-toc/0.4.1/bootstrap-toc.min.js"></script>
 
+    <%
+       def is_toc?
+         not (attributes.has_key?('notoc'))
+       end
+    %>
+
     <!-- Coderay syntax formatter -->
     <style type="text/css">
         <%= ::Asciidoctor::Stylesheets.instance.coderay_stylesheet_data %>
@@ -131,19 +137,30 @@
 
 
 <div class="container">
-    <div class="row-fluid">
-        <div class="col-sm-9">
-            <div class="page-title">
-                <h1><%= document.name %></h1>
+    <% if is_toc? then %>
+        <div class="row-fluid">
+            <div class="col-sm-9">
+                <div class="page-title">
+                    <h1><%= document.name %></h1>
+                </div>
+                <div id="doc-content">
+                    <%= document.content %>
+                </div>
             </div>
-            <div id="doc-content">
-                <%= document.content %>
+            <div class="col-sm-3">
+                <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
             </div>
         </div>
-        <div class="col-sm-3">
-            <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+    <% else %>
+        <!-- Front Page, no TOC and no heading -->
+        <div class="row-fluid">
+            <div class="col-sm-12">
+                <div id="doc-content">
+                    <%= document.content %>
+                </div>
+            </div>
         </div>
-    </div>
+    <% end %>
 </div>
 
 <footer style="background-color:#97d5ca; padding: 5px;">

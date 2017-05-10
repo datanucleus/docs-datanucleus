@@ -2,6 +2,7 @@
 = Download
 :_basedir: 
 :_imagesdir: images/
+:notoc:
 
 [[releases]]
 == Releases
