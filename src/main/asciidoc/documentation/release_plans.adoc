@@ -12,10 +12,11 @@ This is current scope for DataNucleus 5.1. If you think other things ought to be
 * Requires JRE 1.8+
 * Support for version "initial-value" specification.
 * Support for soft-delete of persistent objects.
+* Support for views with identity
 
 === Release Plans
 
-* 5.1.0-m2 Apr 2017?
+* 5.1.0-m3 Jun 2017?
 
 
 
@@ -44,7 +45,7 @@ This is current scope for DataNucleus 5.0. If you think other things ought to be
 
 === Release Plans
 
-* __5.0.9 Apr 2017?__
+* __5.0.9 May 2017?__
 
 
 
