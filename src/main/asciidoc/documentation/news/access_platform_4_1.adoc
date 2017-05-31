@@ -8,6 +8,8 @@ The 4.1 release of AccessPlatform is available under the link:../license.html[Ap
 
 _Version 4.1_ includes the following over 4.0
 
+* Rewrite SCO "update" initialisation to cater for cascade delete and optimisation.
+* Extend 'operation queue' to include persist, update, remove operations
 * Minor upgrade to bytecode enhancement contract to allow for separation of enhancement API
 * Rewrite of handling of container field update code.
 * Types : support for Jodatime LocalDateTime
@@ -17,9 +19,9 @@ _Version 4.1_ includes the following over 4.0
 * JPA : support for non-standard value generators
 * JPA : support for "KEY", "VALUE" keywords in JPQL
 * JPA : support for parameters in FROM "ON" clause of JPQL
-* JPA : support for RIGHT OUTER JOIN in FROM clause of JPQL
 * JPA : support for JPQL subqueries in SELECT and HAVING clauses
 * JPA : support for JPQL ordering by result alias
+* JPA : support for JPQL "RIGHT OUTER JOIN"
 * JPA : support for AttributeConverters on map key/value and collection element
 * JPA : Ability to save a query as a "named" query, for later access
 * REST : support for map/array fields
@@ -27,7 +29,13 @@ _Version 4.1_ includes the following over 4.0
 * REST : support for GZIP compression on GET requests
 * MongoDB : much improved relation handling, and support for date and interface fields.
 * RDBMS : support for some HikariCP connection pool properties
+* RDBMS : support for SQL Anywhere
 * Persistent Properties : you can now use inheritance in persistent properties, overriding getters etc
+
+
+- - -
+
+*No further releases planned; commercial enquiries required.*
 
 - - -
 

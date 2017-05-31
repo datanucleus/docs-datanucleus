@@ -29,6 +29,12 @@ _Version 3.0_ includes the following over 2.2
 * Many bug fixes, and minor feature additions.
 
 
+- - -
+
+*No further releases planned; commercial enquiries required.*
+
+- - -
+
 
 
 == DataNucleus AccessPlatform 3.0.10

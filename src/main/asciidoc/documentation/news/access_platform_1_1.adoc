@@ -32,6 +32,10 @@ _Version 1.1_ includes the following over 1.0
 
 - - -
 
+*No further releases planned; commercial enquiries required.*
+
+- - -
+
 == DataNucleus AccessPlatform 1.1.6
 
 __Oct 11th 2009__ : _Version 1.1.6_ includes the following changes

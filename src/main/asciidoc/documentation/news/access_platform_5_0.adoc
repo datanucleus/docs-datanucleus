@@ -8,16 +8,29 @@ The 5.0 release of AccessPlatform is available under the link:../license.html[Ap
 
 _Version 5.0_ includes the following over 4.2
 
-* Minimum java requirement increased to Java8
-* Support added for Java8 Optional
-* Support added for HBase v1.1 (hbase-client)
-* Support added for Neo4j v2.3
-* Support added for Cassandra v3.0
-* Support added for MongoDB java driver v3.0
-* PostgreSQL : support for persisting collection/array of strings/ints into "array" column type
-* Improved support for multitenancy
-* Improved support for enums
+* Requires JRE 1.8+
+* More flexibility to handle non-JDK collections.
+* Support for JDK 1.8 Optional for RDBMS, Cassandra, MongoDB, Excel, ODF, Neo4j, HBase, JSON
+* Support for specific Scala features including optional
+* Support HBase 1.x
+* Support HBase related object removal
+* Support Cassandra (Datastax) 3.x
+* Support Neo4j v2.3+
+* Support MongoDB v3.0+ of mongo-java-driver
+* Support for RDBMS SQL Anywhere
+* Support for PostgreSQL persisting collection/array of strings/ints into "array" column type
+* Support for nondurable identity with JPA
+* Support for Enum extension handling for RDBMS, Cassandra, MongoDB, Excel, ODF, Neo4j, HBase, JSON
+* Improved multi-tenancy support, per PMF/EMF, per PM/EM, or per datastore access.
+* Stop development of __datanucleus-neodatis__ at 5.0.0.release since the underlying datastore hasn't been updated in 5 years.
 
+
+== Future Plans
+
+* __5.0.10 July 2017?__
+
+
+- - -
 
 
 == DataNucleus AccessPlatform 5.0.9

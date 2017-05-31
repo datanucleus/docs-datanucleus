@@ -22,6 +22,12 @@ _Version 2.2_ includes the following over 2.1
 * Many bug fixes, and minor feature additions.
 
 
+- - -
+
+*No further releases planned; commercial enquiries required.*
+
+- - -
+
 
 
 == DataNucleus AccessPlatform 2.2.3

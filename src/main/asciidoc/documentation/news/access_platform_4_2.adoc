@@ -14,6 +14,14 @@ _Version 4.2_ includes the following over 4.1
 * Add support for JDO 3.2 Query API enhancements
 * Add support for JDO 3.2 JDOQL bitwise operations
 * Remove support for methods that were dropped in JDO 3.2
+* Support for RDBMS SQL Anywhere
+
+- - -
+
+*No further releases planned; commercial enquiries required.*
+
+- - -
+
 
 
 == DataNucleus AccessPlatform 4.2.12

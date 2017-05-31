@@ -15,6 +15,9 @@ _Version 3.3_ includes the following over 3.2
 * JPA 2.1 : support for EntityGraphs
 * Several bug fixes, and minor feature additions.
 
+- - -
+
+*No further releases planned; commercial enquiries required.*
 
 - - -
 
