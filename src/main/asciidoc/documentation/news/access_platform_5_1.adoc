@@ -14,6 +14,43 @@ _Version 5.1_ includes the following over 5.0
 
 
 
+== DataNucleus AccessPlatform 5.1.0.M3
+
+__Jun 1st 2017__ : _Version 5.1 Milestone 3_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/210[datanucleus-core-210] - Provide hook for accessing CDI when in an environment that provides it
+* https://github.com/datanucleus/datanucleus-core/issues/211[datanucleus-core-211] - When using JDOQL, if result class specified but no result then result defaults to candidate
+* https://github.com/datanucleus/datanucleus-core/issues/214[datanucleus-core-214] - Support in-memory evaluation of Date.getDayOfWeek
+* https://github.com/datanucleus/datanucleus-core/issues/215[datanucleus-core-215] - Support use of "datanucleus.generateSchema.create.order" and "datanucleus.generateSchema.drop.order"
+* https://github.com/datanucleus/datanucleus-core/issues/216[datanucleus-core-216] - Support a mechanism for forcing version update of an object
+* https://github.com/datanucleus/datanucleus-core/issues/217[datanucleus-core-217] - Add field number to SurrogateColumnType so that we can use when passing in field numbers
+* https://github.com/datanucleus/datanucleus-core/issues/220[datanucleus-core-220] - Provide ExecutionContext.detachObjects so we can potentially do bulk detach
+* https://github.com/datanucleus/datanucleus-core/issues/222[datanucleus-core-222] - Add support for meta annotations, so that users can define their own composite annotations
+* https://github.com/datanucleus/datanucleus-core/issues/223[datanucleus-core-223] - JPA 1-1-UNI via join table maps to N-1-UNI but tries to create unique constraint
+* https://github.com/datanucleus/datanucleus-core/issues/224[datanucleus-core-224] - Move lockMode into LockManager from ObjectProvider
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/51[datanucleus-api-jdo-51] - Allow DN JDO extension annotations to be used as part of meta-annotations
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/49[datanucleus-api-jpa-49] - Support OPTIMISTIC_FORCE_INCREMENT and PESSIMISTIC_FORCE_INCREMENT
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/84[datanucleus-api-jpa-84] - Allow DN JPA extension annotations to be used as part of meta-annotations
+* https://github.com/datanucleus/datanucleus-rdbms/issues/188[datanucleus-rdbms-188] - Support Date.getDayOfWeek / DAY_OF_WEEK(date)
+* https://github.com/datanucleus/datanucleus-rdbms/issues/189[datanucleus-rdbms-189] - Handling of MaxFetchDepth in navigation requests
+* https://github.com/datanucleus/datanucleus-rdbms/issues/192[datanucleus-rdbms-192] - Allow classes to map onto VIEWs when using an identity
+* https://github.com/datanucleus/datanucleus-rdbms/issues/194[datanucleus-rdbms-194] - Make use of SurrogateColumnType.getFieldNumber() instead of RDBMS-specific variant 
+* https://github.com/datanucleus/datanucleus-rdbms/issues/198[datanucleus-rdbms-198] - JDOQL : when checking the validity of a result class, don't perform checks when the user specifies the default Object[]
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/218[datanucleus-core-218] - Default table name for JPA should be the entity name, not the class name
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/49[datanucleus-api-jdo-49] - Query.executeUnique should call setUnique but doesn't!
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/52[datanucleus-api-jdo-52] - JDOQL: default query result does not work with executeResultList
+* https://github.com/datanucleus/datanucleus-rdbms/issues/195[datanucleus-rdbms-195] - Default table name for JPA should be the entity name, not the class name
+* https://github.com/datanucleus/datanucleus-rdbms/issues/197[datanucleus-rdbms-197] - Naming of join table column for N-1 uni, ignores JPA convention
+
+
+- - -
+
 == DataNucleus AccessPlatform 5.1.0.M2
 
 __Apr 27th 2017__ : _Version 5.1 Milestone 2_ includes the following changes
