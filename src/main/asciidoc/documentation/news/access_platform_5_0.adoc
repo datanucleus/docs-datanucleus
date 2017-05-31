@@ -20,6 +20,30 @@ _Version 5.0_ includes the following over 4.2
 
 
 
+== DataNucleus AccessPlatform 5.0.9
+
+__May 31st 2017__ : _Version 5.0.9_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/202[datanucleus-core-202] - Query.addSubquery should only allow a single variable name to be defined for the subquery
+* https://github.com/datanucleus/datanucleus-core/issues/225[datanucleus-core-225] - When using JDOQL, if result class specified but no result then result defaults to candidate
+* https://github.com/datanucleus/datanucleus-core/issues/226[datanucleus-core-226] - Add support for meta annotations, so that users can define their own composite annotations
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/55[datanucleus-api-jdo-55] - Allow DN JDO extension annotations to be used as part of meta-annotations
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/85[datanucleus-api-jpa-85] - Allow DN JPA extension annotations to be used as part of meta-annotations
+* https://github.com/datanucleus/datanucleus-rdbms/issues/191[datanucleus-rdbms-191] - Handling of MaxFetchDepth in navigation requests
+* https://github.com/datanucleus/datanucleus-rdbms/issues/193[datanucleus-rdbms-193] - Allow classes to map onto VIEWs when using an identity
+* https://github.com/datanucleus/datanucleus-rdbms/issues/199[datanucleus-rdbms-199] - JDOQL : when checking the validity of a result class, don't perform checks when the user specifies the default Object[]
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/219[datanucleus-core-219] - Default table name for JPA should be the entity name, not the class name
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/54[datanucleus-api-jdo-54] - JDOQL: default query result does not work with executeResultList
+* https://github.com/datanucleus/datanucleus-rdbms/issues/196[datanucleus-rdbms-196] - Default table name for JPA should be the entity name, not the class name
+
+- - -
+
+
 == DataNucleus AccessPlatform 5.0.8
 
 __Mar 20th 2017__ : _Version 5.0.8_ includes the following changes
