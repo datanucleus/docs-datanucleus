@@ -17,8 +17,9 @@ Unwillingness to read basic log information suggests that you don't want to debu
 being reported so the issue may no longer be an issue (if there are no jars present in the nightly repo then nothing has changed since the previous release).
 4. Search the issues for the DataNucleus plugin in question for an issue describing your situation. 
 If there is one then you can always check the status of the issue and add a comment against it.
-5. Start a thread on the http://forum.datanucleus.org[Forum]. 
+5. Start a thread on the http://forum.datanucleus.org[DataNucleus Forum] OR ask at https://gitter.im/datanucleus/Lobby[__DataNucleus on Gitter__].
 If doing this then seriously consider posting a simple concise testcase (see below) that gives people something that reproduces your problem.
+_You could also try https://stackoverflow.com/questions/tagged/datanucleus[StackOverflow] but note that we do not provide support there_.
 6. If there is nothing obvious incorrect in your situation and it happens in a released version of DataNucleus then you can raise an issue against the DataNucleus plugin in question.
 You MUST then create a minimized testcase and attach it to the issue (using "Attach File" on the issue) - see below for testcase definitions. 
 Any problem reports raised without a testcase will be closed.
