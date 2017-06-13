@@ -77,6 +77,7 @@ http://issues.datanucleus.org[DataNucleus JIRA] still exists, and will continue 
 
 DataNucleus originated as JPOX in 2003, becoming DataNucleus in 2008, and consequently many people have contributed to its development over the years and has been open source since the outset. 
 In terms of metrics of the codebase you can get a measure of this by looking at the http://www.openhub.net/p/datanucleus[DataNucleus page on OpenHub].
+In terms of automated code quality tool reviews, you can see the results of http://sonar.datanucleus.org[Sonar] and https://lgtm.com/search?q=datanucleus[LGTM.com].
 
 
 [[team]]
