@@ -13,6 +13,7 @@ _Version 5.1_ includes the following over 5.0
 * Support for version "initial-value" specification.
 * Support for soft-delete of persistent objects.
 * Support for views with identity
+* Support for Audit @CreateUser/@UpdateUser
 
 
 == Future Plans
