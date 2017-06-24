@@ -14,7 +14,8 @@ _Version 5.1_ includes the following over 5.0
 * Support for soft-delete of persistent objects.
 * Support for views with identity
 * Support for Audit @CreateUser/@UpdateUser
-* Drop support for Swarmcache
+* Add support for Redis L2 cache
+* Drop support for Swarmcache L2 cache
 
 
 == Future Plans
