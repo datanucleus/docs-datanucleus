@@ -20,12 +20,58 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.0-m4 June/July 2017?__
+* __5.1.0-m5 Aug 2017?__
 
 
 - - -
 
 
+== DataNucleus AccessPlatform 5.1.0.M4
+
+__Jul 4th 2017__ : _Version 5.1 Milestone 4_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/227[datanucleus-core-227] - Add FlushMode to ExecutionContext so we can clean up some of the flushing options
+* https://github.com/datanucleus/datanucleus-core/issues/228[datanucleus-core-228] - Rename property "datanucleus.datastoreTransactionFlushLimit" to "datanucleus.flush.auto.objectLimit"
+* https://github.com/datanucleus/datanucleus-core/issues/229[datanucleus-core-229] - Drop SoftValueMap and use ConcurrentReferenceHashMap instead
+* https://github.com/datanucleus/datanucleus-core/issues/230[datanucleus-core-230] - Support @CreateUser, @UpdateUser specifying the current user
+* https://github.com/datanucleus/datanucleus-core/issues/231[datanucleus-core-231] - Rename property "datanucleus.cache.level2.timeout" to "datanucleus.cache.level2.expiryMillis"
+* https://github.com/datanucleus/datanucleus-core/issues/232[datanucleus-core-232] - Many SCO wrappers have synchronised methods but the class they wrap don't; remove the synchronized keyword
+* https://github.com/datanucleus/datanucleus-core/issues/233[datanucleus-core-233] - ConnectionManager should manage all connection activity, but currently some is in StoreManager etc
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/56[datanucleus-api-jdo-56] - Change "supportedAnnotations" to be org.datanucleus.api.jdo.annotations
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/57[datanucleus-api-jdo-57] - Add annotations @CreateUser, @UpdateUser
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/86[datanucleus-api-jpa-86] - Change "supportedAnnotations" to be org.datanucleus.api.jpa.annotations
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/87[datanucleus-api-jpa-87] - Add annotations @CreateUser, @UpdateUser
+* https://github.com/datanucleus/datanucleus-cache/issues/2[datanucleus-cache-2] - Memcached plugins have some synchronised when not necessary
+* https://github.com/datanucleus/datanucleus-cache/issues/3[datanucleus-cache-3] - Drop Swarmcache
+* https://github.com/datanucleus/datanucleus-cache/issues/4[datanucleus-cache-4] - Add simple Redis L2 cache support
+* https://github.com/datanucleus/datanucleus-cassandra/issues/30[datanucleus-cassandra-30] - Check for schema existence of a class is unoptimised and should check for StoreData
+* https://github.com/datanucleus/datanucleus-cassandra/issues/31[datanucleus-cassandra-31] - Support core-233
+* https://github.com/datanucleus/datanucleus-excel/issues/19[datanucleus-excel-19] - Check for schema existence of a class is unoptimised and should check for StoreData
+* https://github.com/datanucleus/datanucleus-excel/issues/20[datanucleus-excel-20] - Support core-233
+* https://github.com/datanucleus/datanucleus-hbase/issues/34[datanucleus-hbase-34] - Check for schema existence of a class is unoptimised and should check for StoreData
+* https://github.com/datanucleus/datanucleus-hbase/issues/35[datanucleus-hbase-35] - Support core-233
+* https://github.com/datanucleus/datanucleus-json/issues/14[datanucleus-json-14] - Support core-233
+* https://github.com/datanucleus/datanucleus-ldap/issues/14[datanucleus-ldap-14] - Support core-233
+* https://github.com/datanucleus/datanucleus-mongodb/issues/38[datanucleus-mongodb-38] - Detect attempt to add index on "_id" field
+* https://github.com/datanucleus/datanucleus-mongodb/issues/40[datanucleus-mongodb-40] - Check for schema existence of a class is unoptimised and should check for StoreData
+* https://github.com/datanucleus/datanucleus-mongodb/issues/41[datanucleus-mongodb-41] - Support core-233
+* https://github.com/datanucleus/datanucleus-neo4j/issues/31[datanucleus-neo4j-31] - Support core-233
+* https://github.com/datanucleus/datanucleus-odf/issues/16[datanucleus-odf-16] - Check for schema existence of a class is unoptimised and should check for StoreData
+* https://github.com/datanucleus/datanucleus-odf/issues/17[datanucleus-odf-17] - Support core-233
+* https://github.com/datanucleus/datanucleus-rdbms/issues/202[datanucleus-rdbms-202] - Add support for @CreateUser, @UpdateUser
+* https://github.com/datanucleus/datanucleus-rdbms/issues/203[datanucleus-rdbms-203] - Processing of query results creates new ResultSetGetter for each row, but could use single per query?
+* https://github.com/datanucleus/datanucleus-rdbms/issues/204[datanucleus-rdbms-204] - Support core-233
+* https://github.com/datanucleus/datanucleus-xml/issues/6[datanucleus-xml-6] - Support core-233
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/200[datanucleus-rdbms-200] - Types not converted in TypeConverterLiteral, causing delegate literal to fail to construct.
+
+
+- - -
 
 == DataNucleus AccessPlatform 5.1.0.M3
 
