@@ -156,7 +156,6 @@ https://github.com/datanucleus/datanucleus-json[datanucleus-json],
 https://github.com/datanucleus/datanucleus-ldap[datanucleus-ldap],
 https://github.com/datanucleus/datanucleus-mongodb[datanucleus-mongodb],
 https://github.com/datanucleus/datanucleus-neo4j[datanucleus-neo4j],
-https://github.com/datanucleus/datanucleus-neodatis[datanucleus-neodatis],
 https://github.com/datanucleus/datanucleus-odf[datanucleus-odf],
 https://github.com/datanucleus/datanucleus-rdbms[datanucleus-rdbms],
 https://github.com/datanucleus/datanucleus-xml[datanucleus-xml]
