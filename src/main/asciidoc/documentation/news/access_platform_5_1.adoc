@@ -17,6 +17,7 @@ _Version 5.1_ includes the following over 5.0
 * Support for CDI injectable AttributeConverters and Entity Listeners.
 * Add support for Redis L2/QueryResults cache
 * Drop support for Swarmcache L2 cache
+* Drop support for Apache DBCP v1 connection pool
 
 
 == Future Plans
