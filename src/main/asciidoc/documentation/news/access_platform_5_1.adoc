@@ -22,7 +22,46 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.0-m5 Aug 2017?__
+* __5.1.1 Aug 2017?__
+
+
+- - -
+
+== DataNucleus AccessPlatform 5.1.0.RELEASE
+
+__Jul 15th 2017__ : _Version 5.1 RELEASE_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/234[datanucleus-core-234] - Migrate QueryCompilationCache to org.datanucleus.store.query.cache
+* https://github.com/datanucleus/datanucleus-core/issues/235[datanucleus-core-235] - Change query caching so that you cannot turn OFF the cache itself (only the caching of a particular query)
+* https://github.com/datanucleus/datanucleus-core/issues/236[datanucleus-core-236] - Move query_method_prefix extension to QueryManager
+* https://github.com/datanucleus/datanucleus-core/issues/237[datanucleus-core-237] - Drop management_server extension since adding no value
+* https://github.com/datanucleus/datanucleus-core/issues/238[datanucleus-core-238] - Move query instantiation to StoreManager to avoid plugin mechanism lookups
+* https://github.com/datanucleus/datanucleus-core/issues/239[datanucleus-core-239] - ValueGeneration process needs revision, better caching in ValueGenerationManager
+* https://github.com/datanucleus/datanucleus-core/issues/240[datanucleus-core-240] - Rework ValueGenerator interface to construct based on whether "unique" or not
+* https://github.com/datanucleus/datanucleus-core/issues/241[datanucleus-core-241] - Add persistence.xml v2.2 XSD
+* https://github.com/datanucleus/datanucleus-core/issues/242[datanucleus-core-242] - Add support for persisting java.time.Period as 3 columns (years, months, days)
+* https://github.com/datanucleus/datanucleus-core/issues/243[datanucleus-core-243] - datanucleus.valuegeneration.transactionAttribute value of "UsePM" should be removed; deprecated long ago
+* https://github.com/datanucleus/datanucleus-core/issues/244[datanucleus-core-244] - IdentityStrategy should really be called ValueGenerationStrategy
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/59[datanucleus-api-jdo-59] - Enable support for stateful AttributeConverter with injected dependencies
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/88[datanucleus-api-jpa-88] - Support hint of "datanucleus.query.ignoreCache" to ignore the cache(s) on query retrieval
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/89[datanucleus-api-jpa-89] - Enable support for stateful AttributeConverter with injected dependencies
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/90[datanucleus-api-jpa-90] - Enable support for stateful Event Listener with injected dependencies
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/91[datanucleus-api-jpa-91] - Add orm.xml v2.2 XSD
+* https://github.com/datanucleus/datanucleus-rdbms/issues/205[datanucleus-rdbms-205] - AbstractClassTable generates ValueGenerator but that should be moved to ValueGeneratorManager
+* https://github.com/datanucleus/datanucleus-rdbms/issues/206[datanucleus-rdbms-206] - Move built-in connection pool plugins to code rather than plugin mechanism
+* https://github.com/datanucleus/datanucleus-rdbms/issues/207[datanucleus-rdbms-207] - Drop DBCP built-in connection pool
+* https://github.com/datanucleus/datanucleus-rdbms/issues/208[datanucleus-rdbms-208] - Move built-in JavaTypeMapping plugins to code rather than plugin mechanism
+* https://github.com/datanucleus/datanucleus-rdbms/issues/209[datanucleus-rdbms-209] - SQLMethod implementations should pass SQLStatement into the getExpression() method
+* https://github.com/datanucleus/datanucleus-rdbms/issues/210[datanucleus-rdbms-210] - SQLOperation implementations should pass just use the first arg to the getExpression() method for SQLExpressionFactory
+* https://github.com/datanucleus/datanucleus-rdbms/issues/211[datanucleus-rdbms-211] - SQLMethod information should be embodied in DatastoreAdapter, and treated as "built-in" rather than in plugin mechanism
+
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/221[datanucleus-core-221] - Collections.sort() on persistent List not saved to database with Java 8
 
 
 - - -
