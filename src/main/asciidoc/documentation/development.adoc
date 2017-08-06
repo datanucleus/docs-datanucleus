@@ -141,14 +141,15 @@ You require __JDK1.8+__, a __Git client__ (to download/commit DataNucleus Git-ba
 
 Within the DataNucleus project over on GitHub you have various repositories providing actual DataNucleus plugins. These are currently
 
+Core:  
 https://github.com/datanucleus/datanucleus-core[datanucleus-core]
 
-APIs :  
+APIs:  
 https://github.com/datanucleus/datanucleus-api-jdo[datanucleus-api-jdo],
 https://github.com/datanucleus/datanucleus-api-jpa[datanucleus-api-jpa],
 https://github.com/datanucleus/datanucleus-api-rest[datanucleus-api-rest]
 
-Datastores :  
+Datastores:  
 https://github.com/datanucleus/datanucleus-cassandra[datanucleus-cassandra],
 https://github.com/datanucleus/datanucleus-excel[datanucleus-excel],
 https://github.com/datanucleus/datanucleus-hbase[datanucleus-hbase],
@@ -160,12 +161,12 @@ https://github.com/datanucleus/datanucleus-odf[datanucleus-odf],
 https://github.com/datanucleus/datanucleus-rdbms[datanucleus-rdbms],
 https://github.com/datanucleus/datanucleus-xml[datanucleus-xml]
 
-Type support :  
+Type support:  
 https://github.com/datanucleus/datanucleus-geospatial[datanucleus-geospatial],
 https://github.com/datanucleus/datanucleus-guava[datanucleus-guava],
 https://github.com/datanucleus/datanucleus-jodatime[datanucleus-jodatime]
 
-Others :  
+Others:  
 https://github.com/datanucleus/datanucleus-cache[datanucleus-cache],
 https://github.com/datanucleus/datanucleus-jdo-query[datanucleus-jdo-query],
 https://github.com/datanucleus/datanucleus-jdo-jca[datanucleus-jdo-jca],
@@ -224,7 +225,7 @@ The GitHub DataNucleus project also provides the documentation for DataNucleus.
 DataNucleus has a main site __datanucleus.org__ for the overall project and the commercial services that we offer. 
 This site uses AsciiDoc format documents, and uses the Maven AsciiDoctor plugin to generate HTML.
 The documents make use of the Bootstrap CSS/Javascript "library" (originally from Twitter), as well as Font-Awesome and some others.
-The documentation is in GitHub in repository https://github.com/datanucleus/docs-datanucleus[docs-datanucleus]
+The documentation is in GitHub in repository https://github.com/datanucleus/docs-datanucleus[docs-datanucleus].
 Now you can build the site itself by typing
 
 -----
@@ -239,7 +240,7 @@ The documentation is also generated every night from what is in GitHub, and this
 
 The DataNucleus AccessPlatform (JDO, JPA, REST) docs make use of AsciiDoc format documents, and uses the Maven AsciiDoctor plugin to generate HTML.
 The documents make use of the Bootstrap CSS/Javascript "library" (originally from Twitter), as well as Font-Awesome and some others.
-The documentation is in GitHub in repository https://github.com/datanucleus/docs-accessplatform[docs-accessplatform]
+The documentation is in GitHub in repository https://github.com/datanucleus/docs-accessplatform[docs-accessplatform].
 Now you can build the site itself by typing
 
 -----
@@ -300,7 +301,7 @@ DataNucleus AccessPlatform is simply a bundled distribution and is typically rel
 latest release of each related plugin and packaging it. When there is a DataNucleus product to be released (e.g AccessPlatform), the following is 
 the release process (administrator role)
 
-* Make sure that all required plugin versions are released. See the xref:index.html#pluginrelease[plugin release process] below for details.
+* Make sure that all required plugin versions are released. See the xref:development.html#pluginrelease[plugin release process] below for details.
 * Go to the product that needs releasing update `build.properties` so that versions of all required plugins are set, and the 
 version of the product is set. Check this change in.
 * Generate the required product archives (zips), and the documentation.
