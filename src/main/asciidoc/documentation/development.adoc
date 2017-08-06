@@ -540,7 +540,7 @@ manager uses a registry mechanism, inspecting jars in the CLASSPATH. The three s
 3. Update the `META-INF/MANIFEST.MF` file contained in the jar so that it includes necessary information for OSGi.
 
 Extension points differ from one version of DataNucleus to another, so you should consult the documentation of the version of DataNucleus
-that you are using. The documentation for extensions in the latest version of DataNucleus can be found http://www.datanucleus.org/products/accessplatform/extensions/index.html[here]
+that you are using. The documentation for extensions in the latest version of DataNucleus can be found http://www.datanucleus.org/products/accessplatform/extensions/extensions.html[here]
 
 
 include::_development_tests.adoc[leveloffset=+1]
