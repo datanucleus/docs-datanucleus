@@ -390,7 +390,7 @@ Sadly I'm not legally allowed to disclose any further details about these tests 
 
 == JPA 2+ TCK
 
-As mentioned in http://datanucleus.blogspot.com/2010/04/jpa-and-role-of-compliance.html[this blog post] we applied for the JPA 2.0 TCK 
+As mentioned in https://datanucleus.wordpress.com/2010/04/16/jpa-and-the-role-of-compliance/[this blog post] we applied for the JPA 2.0 TCK 
 on 8th February 2010. This request was handled by Jonathan Nimer and Patrick Curran at SUN/Oracle. They (eventually) provided us with a form 
 to sign and return to gain access to the JPA2 TCK. This was returned to them at the end of April 2010 to their address of _4150 Network Circle, Santa Clara, CA 95054, USA_. 
 We have since prompted them on more than 3 occasions when we will be getting access to this secret TCK. They have still not provided it
