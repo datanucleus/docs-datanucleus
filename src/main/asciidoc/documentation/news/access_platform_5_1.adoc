@@ -22,7 +22,42 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.1 Aug 2017?__
+* __5.1.2 Sept 2017?__
+
+- - -
+
+== DataNucleus AccessPlatform 5.1.0.RELEASE
+
+__Aug 10th 2017__ : _Version 5.1.1_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/245[datanucleus-core-245] - Allow optimised backing store handling of sort
+* https://github.com/datanucleus/datanucleus-core/issues/246[datanucleus-core-246] - Move newSCOInstance from SCOUtils to TypeManager
+* https://github.com/datanucleus/datanucleus-core/issues/248[datanucleus-core-248] - Wrapper type for a field uses instantiated type to choose the wrapper if possible; make it configurable
+* https://github.com/datanucleus/datanucleus-core/issues/250[datanucleus-core-250] - Add logged warning when user uses a meta-annotation and DUPLICATES an annotation
+* https://github.com/datanucleus/datanucleus-core/issues/252[datanucleus-core-252] - No need to load up TypeConverter(s) when enhancing
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/60[datanucleus-api-jdo-60] - Processing of annotations can load annotations for class multiple times
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/61[datanucleus-api-jdo-61] - Assume ExpressionImpl.eq(null) meant to be using a null literal
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/94[datanucleus-api-jpa-94] - Processing of annotations can load annotations for class multiple times
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/95[datanucleus-api-jpa-95] - Allow specification of sqlType (as well as jdbcType)
+* https://github.com/datanucleus/datanucleus-rdbms/issues/212[datanucleus-rdbms-212] - Update List backing stores in set() method to check if loaded into wrapper, and use that
+* https://github.com/datanucleus/datanucleus-rdbms/issues/213[datanucleus-rdbms-213] - Support use of TypeConverter that convert to byte[]
+* https://github.com/datanucleus/datanucleus-rdbms/issues/214[datanucleus-rdbms-214] - Move built-in SQLExpression/Literal extensions to code rather than plugin mechanism
+* https://github.com/datanucleus/datanucleus-rdbms/issues/215[datanucleus-rdbms-215] - Move entries for "datastore_mapping" plugin point into DatastoreAdaptor as "built-in"
+* https://github.com/datanucleus/datanucleus-rdbms/issues/217[datanucleus-rdbms-217] - Enable internal support for BINARY
+* https://github.com/datanucleus/datanucleus-rdbms/issues/218[datanucleus-rdbms-218] - PostgreSQL JDBC supports SQLXML, so support its use
+* https://github.com/datanucleus/datanucleus-rdbms/issues/219[datanucleus-rdbms-219] - Derby JDBC supports SQLXML, so support its use
+* https://github.com/datanucleus/datanucleus-rdbms/issues/220[datanucleus-rdbms-220] - Support H2 "UUID" column type
+* https://github.com/datanucleus/datanucleus-geospatial/issues/4[datanucleus-geospatial-4] - Mirror rdbms-215 and move plugin.xml entries for datastore_mapping to DatastoreAdapter
+* https://github.com/datanucleus/datanucleus-geospatial/issues/6[datanucleus-geospatial-6] - Mirror rdbms-211 and move plugin.xml entries for sql_method to DatastoreAdapter
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/247[datanucleus-core-247] - Don't attempt to enhance meta-annotation classes
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/92[datanucleus-api-jpa-92] - Entity returned from native query with result class not contained in entity manager
+* https://github.com/datanucleus/datanucleus-rdbms/issues/216[datanucleus-rdbms-216] - Period.getDays() is mapped to incorrect SQLMethod class
 
 
 - - -
