@@ -26,7 +26,7 @@ _Version 5.1_ includes the following over 5.0
 
 - - -
 
-== DataNucleus AccessPlatform 5.1.0.RELEASE
+== DataNucleus AccessPlatform 5.1.1
 
 __Aug 10th 2017__ : _Version 5.1.1_ includes the following changes
 
