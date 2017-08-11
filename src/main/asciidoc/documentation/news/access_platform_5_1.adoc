@@ -49,6 +49,7 @@ __Aug 10th 2017__ : _Version 5.1.1_ includes the following changes
 * https://github.com/datanucleus/datanucleus-rdbms/issues/218[datanucleus-rdbms-218] - PostgreSQL JDBC supports SQLXML, so support its use
 * https://github.com/datanucleus/datanucleus-rdbms/issues/219[datanucleus-rdbms-219] - Derby JDBC supports SQLXML, so support its use
 * https://github.com/datanucleus/datanucleus-rdbms/issues/220[datanucleus-rdbms-220] - Support H2 "UUID" column type
+* https://github.com/datanucleus/datanucleus-rdbms/issues/221[datanucleus-rdbms-221] - Support HSQLDB "UUID" column type (from v2.4)
 * https://github.com/datanucleus/datanucleus-geospatial/issues/4[datanucleus-geospatial-4] - Mirror rdbms-215 and move plugin.xml entries for datastore_mapping to DatastoreAdapter
 * https://github.com/datanucleus/datanucleus-geospatial/issues/6[datanucleus-geospatial-6] - Mirror rdbms-211 and move plugin.xml entries for sql_method to DatastoreAdapter
 
