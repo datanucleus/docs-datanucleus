@@ -138,7 +138,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.
 |Dec/2010
 |None
 |https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.2.0.release/datanucleus-accessplatform-docs-2.2.0.zip/download[Download], 
-http://www.datanucleus.org/products/accessplatform_2_2/datanucleus-accessplatform.pdf[PDF]
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.2.0.release/datanucleus-accessplatform-docs-2.2.0.pdf/download[PDF]
 |link:news/access_platform_2_2.html[HTML]
 
 |_2.1 (Thomson)_
@@ -149,7 +149,7 @@ http://www.datanucleus.org/products/accessplatform_2_2/datanucleus-accessplatfor
 |Jun/2010
 |None
 |https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.1.0.release/datanucleus-accessplatform-docs-2.1.0.zip/download[Download], 
-http://www.datanucleus.org/products/accessplatform_2_1/datanucleus-accessplatform.pdf[PDF]
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/2.1.0.release/datanucleus-accessplatform-docs-2.1.0.pdf/download[PDF]
 |link:news/access_platform_2_1.html[HTML]
 
 |_2.0 (Bohr)_
