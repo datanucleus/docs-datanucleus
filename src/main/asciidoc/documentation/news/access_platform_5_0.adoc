@@ -27,8 +27,29 @@ _Version 5.0_ includes the following over 4.2
 
 == Future Plans
 
-* __5.0.10 July 2017?__
+* __5.0.11 October 2017?__
 
+- - -
+
+
+== DataNucleus AccessPlatform 5.0.10
+
+__Sept 9th 2017__ : _Version 5.0.10_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/259[datanucleus-core-259] - JPQL functions "key" and "value" should be case insensitive, but currently only allows UPPER CASE
+* https://github.com/datanucleus/datanucleus-rdbms/issues/228[datanucleus-rdbms-228] - If a type has an "autoApply" TypeConverter then fall back to that when trying to find its mapping
+* https://github.com/datanucleus/datanucleus-rdbms/issues/233[datanucleus-rdbms-233] - Cater for user incorrect specification of Collection with embedded elements
+* https://github.com/datanucleus/datanucleus-jdo-query/issues/5[datanucleus-jdo-query-5] - Support JSR0380 annotations (Bean Validation 2.0)
+* https://github.com/datanucleus/datanucleus-jpa-query/issues/2[datanucleus-jpa-query-2] - Support JSR0380 annotations (Bean Validation 2.0)
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/93[datanucleus-api-jpa-93] - entity returned from native query with result class not contained in entity manager
+* https://github.com/datanucleus/datanucleus-rdbms/issues/227[datanucleus-rdbms-227] - Backport of 224, for null order handling
+* https://github.com/datanucleus/datanucleus-rdbms/issues/229[datanucleus-rdbms-229] - Period.getDays() is mapped to incorrect SQLMethod class
+* https://github.com/datanucleus/datanucleus-rdbms/issues/231[datanucleus-rdbms-231] - Fix selection of map value
 
 - - -
 
