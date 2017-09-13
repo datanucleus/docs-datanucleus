@@ -22,7 +22,37 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.2 Sept 2017?__
+* __5.1.3 Oct 2017?__
+
+- - -
+
+== DataNucleus AccessPlatform 5.1.2
+
+__Sep 13th 2017__ : _Version 5.1.2_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/254[datanucleus-core-254] - Move "query_method_evaluators" plugin entries to be "built-in"
+* https://github.com/datanucleus/datanucleus-core/issues/255[datanucleus-core-255] - Rework MetaDataParser to simplify the structure and cache more
+* https://github.com/datanucleus/datanucleus-core/issues/256[datanucleus-core-256] - Persistent properties : add check whether the property methods are of the correct signature
+* https://github.com/datanucleus/datanucleus-core/issues/258[datanucleus-core-258] - JPQL functions "key" and "value" should be case insensitive, but currently only allows UPPER CASE
+* https://github.com/datanucleus/datanucleus-core/issues/262[datanucleus-core-262] - EnhancementHelper stores a lot of unused info, and has many unused methods. Clean it up
+* https://github.com/datanucleus/datanucleus-core/issues/263[datanucleus-core-263] - Move EnhancementHelper string constructor handling to ObjectId
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/63[datanucleus-api-jdo-63] - Support for core-255
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/98[datanucleus-api-jpa-98] - Support for core-255
+* https://github.com/datanucleus/datanucleus-rdbms/issues/223[datanucleus-rdbms-223] - If a type has an "autoApply" TypeConverter then fall back to that when trying to find its mapping
+* https://github.com/datanucleus/datanucleus-rdbms/issues/224[datanucleus-rdbms-224] - Null precedence handling broken for MySQL
+* https://github.com/datanucleus/datanucleus-rdbms/issues/225[datanucleus-rdbms-225] - Extend #83 and abstract whether to use default value into superclass method
+* https://github.com/datanucleus/datanucleus-rdbms/issues/232[datanucleus-rdbms-232] - Cater for user incorrect specification of Collection with embedded elements
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/62[datanucleus-api-jdo-62] - AttributeConverter objects registered with PMF are not CDI injected
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/97[datanucleus-api-jpa-97] - When registered converters, make sure we register "autoApply" when already registered
+* https://github.com/datanucleus/datanucleus-rdbms/issues/222[datanucleus-rdbms-222] - IntegerRDBMSMapping.setObject for String is incorrect, only uses first character!
+* https://github.com/datanucleus/datanucleus-rdbms/issues/230[datanucleus-rdbms-230] - Support selecting map value
+
 
 - - -
 
