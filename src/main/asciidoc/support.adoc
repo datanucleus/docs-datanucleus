@@ -8,8 +8,8 @@
 
 With any software, there are times when you need assistance to make full use of it. Here at DataNucleus we want you to make the best of the 
 software that we provide. For that reason we provide both commercial and free support facilities.
-DataNucleus provides its own http://forum.datanucleus.org[Forum] providing a place for you to discuss issues you are having. 
-We don't guarantee to provide answers on this forum. It is simply a place where you could get some level of support when people have time.
+DataNucleus provides access to public discussion/IRC facilities, providing a place for you to discuss issues you are having. 
+We don't guarantee to provide answers, simply providing places where you could get some level of support when people have time.
 This may not be adequate for some people hence why we provide the commercial version below.
 
 . Check the Documentation for http://www.datanucleus.org/products/accessplatform/index.html[DataNucleus AccessPlatform] before anything else. 
@@ -88,7 +88,7 @@ it is needed, then consider the options below
 |http://www.datanucleus.org/products/accessplatform[AccessPlatform]
 |http://www.datanucleus.org/products/accessplatform[AccessPlatform]
 
-|Support via Public Forum
+|Support via Groups.IO/Gitter
 |icon:check[]
 |icon:times[]
 |icon:times[]

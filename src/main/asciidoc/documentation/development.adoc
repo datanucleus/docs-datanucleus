@@ -33,7 +33,7 @@ contribute is to FORK/CLONE the appropriate GitHub project and then raise a GitH
 You can also contribute via either https://groups.io/g/datanucleus/[Groups.IO] or https://gitter.im/datanucleus/Lobby[Gitter] or by raising an issue against the DataNucleus plugin in question.
 
 Note that involvement in an open source project can significantly improve your employability, since potential employers can see the quality of your code, so this
-is an opportunity to do something positive. Note also __if you contribute to the system in some way then we are more likely to answer your forum questions, or listen to your ideas, 
+is an opportunity to do something positive. Note also __if you contribute to the system in some way then we are more likely to answer your questions, or listen to your ideas, 
 so it's in your interests to participate__. We hope that the above has given you some idea how your time can be used to benefit the common goal of having a quality 
 Java persistence solution free for all to use.
 
