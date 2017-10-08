@@ -14,10 +14,11 @@ that they would like to see (without putting something back in).
 
 __You can help the project in many ways__. Here are some examples
 
-* __Answer questions on the http://forum.datanucleus.org[Forum]__. New users need to learn somewhere just like you did when you first used DataNucleus.
-You could monitor the forum when you have free time and attempt to answer people's questions. People will appreciate it even if you don't know all of the answers.
-* __Debug problems in the code__ before reporting them on the Forum. You can isolate the issue to a particular area of code even if you don't know the solution, 
-and post your findings on the Forum for one of the developers to pick up and progress further. __Better still, contribute updates__ so it saves our time in working 
+* __Answer questions on https://groups.io/g/datanucleus/[Groups.IO] or https://gitter.im/datanucleus/Lobby[Gitter]__. 
+New users need to learn somewhere just like you did when you first used DataNucleus.
+You could monitor Groups.IO when you have free time and attempt to answer people's questions. People will appreciate it even if you don't know all of the answers.
+* __Debug problems in the code__ before reporting them on the Groups.IO. You can isolate the issue to a particular area of code even if you don't know the solution, 
+and post your findings on the Groups.IO for one of the developers to pick up and progress further. __Better still, contribute updates__ so it saves our time in working 
 out where the problem lies. These will be much more valuable to us. Since we use Git for source code repository the best way is to FORK/CLONE a particular 
 GitHub project and submit a GitHub PULL REQUEST with your changes. Please see the xref:development.html#coding_standards[DataNucleus coding standards].
 * __Volunteer to be part of the DataNucleus project__. To do this you need to start off by contributing patches for issues, and demonstrate your commitment to the project.
@@ -29,7 +30,7 @@ will be expanded faster due to your help.
 * __Contribute documentation or worked examples__ that can be included in the online documentation. If you think there is something missing from our documents 
 then you can write it and contribute it and others will benefit from your work just like you have benefited from our DataNucleus product. The easiest way to
 contribute is to FORK/CLONE the appropriate GitHub project and then raise a GitHub PULL REQUEST and we will process it asap. 
-You can also contribute via either the http://forum.datanucleus.org[Forum] or by raising an issue against the DataNucleus plugin in question.
+You can also contribute via either https://groups.io/g/datanucleus/[Groups.IO] or https://gitter.im/datanucleus/Lobby[Gitter] or by raising an issue against the DataNucleus plugin in question.
 
 Note that involvement in an open source project can significantly improve your employability, since potential employers can see the quality of your code, so this
 is an opportunity to do something positive. Note also __if you contribute to the system in some way then we are more likely to answer your forum questions, or listen to your ideas, 
@@ -41,8 +42,7 @@ Java persistence solution free for all to use.
 
 DataNucleus uses Test Driven Development (TDD). It has xref:development.html#development_tests[many test suites available] and all should be run to provide stability in the codebase.
 
-When you have DataNucleus commit rights (see http://www.datanucleus.org/servlet/forum/viewthread_thread,75[this forum thread]), the 
-development process should be as below. Please abide by these simple rules
+When you have DataNucleus commit rights the development process should be as below. Please abide by these simple rules
 
 * Identify an issue to work on for a particular DataNucleus plugin. Raise an issue if it doesn't yet exist, and allocate to yourself.
 * Develop code, unit tests (as appropriate), and documentation for the issue. DataNucleus is developed using JDK1.8+.

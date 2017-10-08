@@ -10,7 +10,8 @@
 DataNucleus provides Open Source products, and you can freely download any __release__ of DataNucleus, together with the associated source code.
 DataNucleus downloads are subject to the link:documentation/license.html[Apache 2 License].
 Note that DataNucleus software versioning uses the versioning strategy defined link:documentation/development.html#versioning[here].
-We hope that you are successful in your use of DataNucleus, and if you have any problems or queries, please contact us using the http://forum.datanucleus.org[Forum]. 
+We hope that you are successful in your use of DataNucleus, and if you have any problems or queries, 
+please contact us using https://groups.io/g/datanucleus/[Groups.IO] or https://gitter.im/datanucleus/Lobby[Gitter].
 Be aware that we don't have much time for this free support so you could make a link:documentation/donations.html[donation] to further development and pay for our time providing support.
 
 The first thing to note is that __all DataNucleus releases are "stable"__, in that they all pass all DataNucleus tests and the relevant TCKs, 
@@ -69,5 +70,5 @@ If using Maven you simply need to add the following to your `pom.xml`
 
 Please be aware that all nightly builds are development work-in-progress and no guarantee is provided. These builds are typically stable but things may be 
 broke occasionally as new features are added etc. You cannot report issues in GitHub against nightly builds, only against released versions of DataNucleus, 
-but should report any problems in the http://forum.datanucleus.org/[Forum] if you have an issue with a nightly build, 
+but should report any problems on https://groups.io/g/datanucleus/[Groups.IO] or https://gitter.im/datanucleus/Lobby[Gitter] if you have an issue with a nightly build, 
 preferably after waiting a few days in case it is a work in progress type situation with a new feature being introduced.

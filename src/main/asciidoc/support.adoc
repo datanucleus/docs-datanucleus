@@ -18,7 +18,7 @@ where you can do things for yourself.
 . Look in the http://www.datanucleus.org/products/accessplatform/logging.html[DataNucleus LOG]. This usually contains a lot of information that 
 may answer the issue. You can always configure the log to give more output.
 . Try a xref:download.html#nightlybuilds[recent build] to see if your version is out of date and the expected result is achieved with the latest nightly builds.
-. Go to the http://forum.datanucleus.org[__DataNucleus Forum__] OR https://gitter.im/datanucleus/Lobby[__DataNucleus on Gitter__] and ask. 
+. Go to the https://groups.io/g/datanucleus[__DataNucleus Groups.IO__] OR https://gitter.im/datanucleus/Lobby[__DataNucleus Gitter__] and ask. 
 Always try to give as clear a description of the problem as possible, together with 
 your input data, and any associated log output. __Please be aware that we have very little time for this type of support and contributors to 
 DataNucleus are more likely to get any available free support__.
@@ -68,7 +68,7 @@ simply not resolvable into a single SQL query so we may not be able to provide w
 mailto:support@datanucleus.com[Contact Us] for details.
 
 * _General Support_ for the most common issues on API usage, defect reporting and bug fixing. It's available for free and on 
-availability on our online forums though has absolutely no guarantee of availability. If you want to receive support when
+availability on our online support mechanisms though has absolutely no guarantee of availability. If you want to receive support when
 it is needed, then consider the options below
 * _Incident Support_ for dedicated support for a single incident.
 * _Bronze/Gold Support_ for dedicate support covering multiple incidents over an extended period.
