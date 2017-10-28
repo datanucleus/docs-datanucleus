@@ -506,7 +506,7 @@ __Apr 8th 2016__ : _Version 5.0 Milestone 3_ includes the following changes
 * https://github.com/datanucleus/datanucleus-odf/issues/5[datanucleus-odf-4] -         Support for java.util.Optional
 * https://github.com/datanucleus/datanucleus-rdbms/issues/38[datanucleus-rdbms-38] -         Add support for JPQL FROM join to a new &quot;root&quot; with ON condition
 * https://github.com/datanucleus/datanucleus-jdo-query/issues/2[datanucleus-jdo-query-2] -         Add support for javax.jdo.query.OptionalExpression
-* http://issues.datanucleus.org/browse/NUCMAVEN-52[NUCMAVEN-52] -         Support &quot;datanucleus.metadata.ignoreMetaDataForMissingClasses&quot; via enhancer
+* NUCMAVEN-52 -         Support &quot;datanucleus.metadata.ignoreMetaDataForMissingClasses&quot; via enhancer
 
 === Improvement
 
@@ -553,50 +553,50 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 
 === New Feature
 
-* http://issues.datanucleus.org/browse/NUCCORE-1369[NUCCORE-1369] -         Add in-memory evaluation support for YearMonth.getYear, YearMonth.getMonthValue, MonthDay.getDayOfMonth, MonthDay.getMonthValue, Period.getMonths, Period.getDays, Period.getYears etc
-* http://issues.datanucleus.org/browse/NUCCORE-1370[NUCCORE-1370] -         Support conversion from MonthDay to java.sql.Date
-* http://issues.datanucleus.org/browse/NUCCORE-1371[NUCCORE-1371] -         Support conversion from YearMonth to java.sql.Date
-* http://issues.datanucleus.org/browse/NUCCORE-1374[NUCCORE-1374] -         Provide ability for a store plugin to set the default TypeConverter to use for a java field type
-* http://issues.datanucleus.org/browse/NUCCORE-1377[NUCCORE-1377] -         Support conversion of java.time.Instant to java.util.Date
-* http://issues.datanucleus.org/browse/NUCCORE-1380[NUCCORE-1380] -         Support conversion from Duration to Double (secs.nanos)
-* http://issues.datanucleus.org/browse/NUCCORE-1383[NUCCORE-1383] -         JPQL : Support YEAR, MONTH, DAY, HOUR, MINUTE, SECOND with java.time types
-* http://issues.datanucleus.org/browse/NUCCORE-1387[NUCCORE-1387] -         Add in-memory evaluation support for Optional.get, Optional.isPresent
-* http://issues.datanucleus.org/browse/NUCCORE-1388[NUCCORE-1388] -         Support persistence of java.time.ZonedDateTime as Timestamp / String
+* NUCCORE-1369 -         Add in-memory evaluation support for YearMonth.getYear, YearMonth.getMonthValue, MonthDay.getDayOfMonth, MonthDay.getMonthValue, Period.getMonths, Period.getDays, Period.getYears etc
+* NUCCORE-1370 -         Support conversion from MonthDay to java.sql.Date
+* NUCCORE-1371 -         Support conversion from YearMonth to java.sql.Date
+* NUCCORE-1374 -         Provide ability for a store plugin to set the default TypeConverter to use for a java field type
+* NUCCORE-1377 -         Support conversion of java.time.Instant to java.util.Date
+* NUCCORE-1380 -         Support conversion from Duration to Double (secs.nanos)
+* NUCCORE-1383 -         JPQL : Support YEAR, MONTH, DAY, HOUR, MINUTE, SECOND with java.time types
+* NUCCORE-1387 -         Add in-memory evaluation support for Optional.get, Optional.isPresent
+* NUCCORE-1388 -         Support persistence of java.time.ZonedDateTime as Timestamp / String
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/10[datanucleus-api-jpa-10] -         Allow shared relation to be specified using single annotation rather than 3 extension annotations
-* http://issues.datanucleus.org/browse/NUCRDBMS-1000[NUCRDBMS-1000] -         Add support for YearMonth.getYear, YearMonth.getMonthValue, MonthDay.getDayOfMonth, MonthDay.getMonthValue, Period.getMonths, Period.getDays, Period.getYears etc
-* http://issues.datanucleus.org/browse/NUCRDBMS-1003[NUCRDBMS-1003] -         JDOQL : Support Optional.get(), Optional.isPresent() rather than current automatic referral to underlying type
+* NUCRDBMS-1000 -         Add support for YearMonth.getYear, YearMonth.getMonthValue, MonthDay.getDayOfMonth, MonthDay.getMonthValue, Period.getMonths, Period.getDays, Period.getYears etc
+* NUCRDBMS-1003 -         JDOQL : Support Optional.get(), Optional.isPresent() rather than current automatic referral to underlying type
 * https://github.com/datanucleus/datanucleus-jdo-query/issues/3[datanucleus-jdo-query-3] -         Use LocalDateExpression/LocalTimeExpression/LocalDateTimeExpression from javax.jdo (3.2.0.m4+)
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/7[datanucleus-api-jdo-7] -         Allow use of jta-data-source/non-jta-data-source from persistence.xml as alternative to standard JDO properties
 
 === Improvement
 
-* http://issues.datanucleus.org/browse/NUCCORE-1368[NUCCORE-1368] -         List of &quot;simple&quot; result classes is very restrictive. Extend to include other commonly used &quot;simple&quot; classes
-* http://issues.datanucleus.org/browse/NUCCORE-1385[NUCCORE-1385] -         Query parsing can be improved to better cater for quoting and end of line characters
-* http://issues.datanucleus.org/browse/NUCCORE-1389[NUCCORE-1389] -         java.awt.Color should be in DFG
+* NUCCORE-1368 -         List of &quot;simple&quot; result classes is very restrictive. Extend to include other commonly used &quot;simple&quot; classes
+* NUCCORE-1385 -         Query parsing can be improved to better cater for quoting and end of line characters
+* NUCCORE-1389 -         java.awt.Color should be in DFG
 * https://github.com/datanucleus/datanucleus-api-rest/issues/6[datanucleus-api-rest-6] -         Remove use of NucleusException
 * https://github.com/datanucleus/datanucleus-api-rest/issues/4[datanucleus-api-rest-4] -         Change &quot;jdoql&quot; / &quot;jpql&quot; modes so that they take parameter &quot;query&quot; with the encoded query
 * https://github.com/datanucleus/datanucleus-api-rest/issues/5[datanucleus-api-rest-5] -         Extract Google AppEngine code into separate classes so we can make user types pluggable
 * https://github.com/datanucleus/datanucleus-api-rest/issues/7[datanucleus-api-rest-7] -         Split out code for Google "User" and "Key" classes
-* http://issues.datanucleus.org/browse/NUCRDBMS-1001[NUCRDBMS-1001] -         Oracle supports NVARCHAR but JDBC driver doesn't acknowledge it
-* http://issues.datanucleus.org/browse/NUCRDBMS-1004[NUCRDBMS-1004] -         Temporal query methods contain significant duplication and need rationalising
+* NUCRDBMS-1001 -         Oracle supports NVARCHAR but JDBC driver doesn't acknowledge it
+* NUCRDBMS-1004 -         Temporal query methods contain significant duplication and need rationalising
 
 === Task
 
-* http://issues.datanucleus.org/browse/NUCCORE-1353[NUCCORE-1353] -         org.datanucleus.store.query.Query has short &quot;type&quot; but ought to be enum. Will need all store plugins updating to match
-* http://issues.datanucleus.org/browse/NUCCORE-1372[NUCCORE-1372] -         Nondurable classes should not be L2 cached, ever.
-* http://issues.datanucleus.org/browse/NUCCORE-1373[NUCCORE-1373] -         CalendarStringConverter/DateStringConverter should implement ColumnLengthDefiningTypeConverter
-* http://issues.datanucleus.org/browse/NUCCORE-1376[NUCCORE-1376] -         Update LocalDateDateConverter, LocalDateTimeDateConverter and LocalTimeDateConverter to use Instant and ZoneId for reliability
-* http://issues.datanucleus.org/browse/NUCCORE-1379[NUCCORE-1379] -         Dont log about AutoStartMechanism if set to None
-* http://issues.datanucleus.org/browse/NUCCORE-1382[NUCCORE-1382] -         Change JPQL &quot;MONTH&quot; to evaluate to the month between 1 and 12 (rather than 0 and 11 like now)
-* http://issues.datanucleus.org/browse/NUCCORE-1384[NUCCORE-1384] -         JPQL : Support YEAR, MONTH, DAY, HOUR, MINUTE, SECOND as in-memory evaluation
+* NUCCORE-1353 -         org.datanucleus.store.query.Query has short &quot;type&quot; but ought to be enum. Will need all store plugins updating to match
+* NUCCORE-1372 -         Nondurable classes should not be L2 cached, ever.
+* NUCCORE-1373 -         CalendarStringConverter/DateStringConverter should implement ColumnLengthDefiningTypeConverter
+* NUCCORE-1376 -         Update LocalDateDateConverter, LocalDateTimeDateConverter and LocalTimeDateConverter to use Instant and ZoneId for reliability
+* NUCCORE-1379 -         Dont log about AutoStartMechanism if set to None
+* NUCCORE-1382 -         Change JPQL &quot;MONTH&quot; to evaluate to the month between 1 and 12 (rather than 0 and 11 like now)
+* NUCCORE-1384 -         JPQL : Support YEAR, MONTH, DAY, HOUR, MINUTE, SECOND as in-memory evaluation
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/12[datanucleus-api-jpa-12] -         Support NUCCORE-1353
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/8[datanucleus-api-jdo-8] -         Move LocalDateExpression/LocalTimeExpression/LocalDateTimeExpression to javax.jdo
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/6[datanucleus-api-jdo-6] -         Allow lifecycle state change from HOLLOW to P_NONTRANS when no tx and field is already loaded
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/9[datanucleus-api-jdo-9] -         Support NUCCORE-1353
-* http://issues.datanucleus.org/browse/NUCRDBMS-1005[NUCRDBMS-1005] -         Merge VersionStringMapping, VersionTimestampMapping into VersionMapping. Same for DiscriminatorMapping
-* http://issues.datanucleus.org/browse/NUCRDBMS-1006[NUCRDBMS-1006] -         ClassMapping is no longer needed; use type converter
-* http://issues.datanucleus.org/browse/NUCRDBMS-1007[NUCRDBMS-1007] -         Apparently need a call to ConnectionFactory.setPool() to avoid log message with DBCP2
-* http://issues.datanucleus.org/browse/NUCRDBMS-1010[NUCRDBMS-1010] -         Support NUCCORE-1353
+* NUCRDBMS-1005 -         Merge VersionStringMapping, VersionTimestampMapping into VersionMapping. Same for DiscriminatorMapping
+* NUCRDBMS-1006 -         ClassMapping is no longer needed; use type converter
+* NUCRDBMS-1007 -         Apparently need a call to ConnectionFactory.setPool() to avoid log message with DBCP2
+* NUCRDBMS-1010 -         Support NUCCORE-1353
 * https://github.com/datanucleus/datanucleus-cassandra/issues/8[datanucleus-cassandra-8] -         Support NUCCORE-1353
 * https://github.com/datanucleus/datanucleus-excel/issues/7[datanucleus-excel-7] -         Support NUCCORE-1353
 * https://github.com/datanucleus/datanucleus-hbase/issues/14[datanucleus-hbase-14] -         Support NUCCORE-1353
@@ -613,9 +613,9 @@ __Mar 15th 2016__ : _Version 5.0 Milestone 2_ includes the following changes
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/11[datanucleus-api-jpa-11] -         If metadata specified using orm.xml only, the entity name is not defaulted
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/9[datanucleus-api-jpa-9] -         Criteria multiple join with no join alias results in exception
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/8[datanucleus-api-jpa-8] -         Criteria join to a multiple valued path doesn't work.
-* http://issues.datanucleus.org/browse/NUCRDBMS-1009[NUCRDBMS-1009] -         Parameters in group by expressions are not set on the JDBC statement
-* http://issues.datanucleus.org/browse/NUCRDBMS-1012[NUCRDBMS-1012] -         Using JPA with a OneToMany field that is a Set with join table doesn't create the PK for the join table, but should
-* http://issues.datanucleus.org/browse/NUCRDBMS-1013[NUCRDBMS-1013] -         JPQL : join to embedded object generates incorrect SQL
+* NUCRDBMS-1009 -         Parameters in group by expressions are not set on the JDBC statement
+* NUCRDBMS-1012 -         Using JPA with a OneToMany field that is a Set with join table doesn't create the PK for the join table, but should
+* NUCRDBMS-1013 -         JPQL : join to embedded object generates incorrect SQL
 
 - - -
 
@@ -625,114 +625,114 @@ __Jan 18th 2016__ : _Version 5.0 Milestone 1_ includes the following changes
 
 === New Feature
 
-* http://issues.datanucleus.org/browse/NUCCORE-1339[NUCCORE-1339] -         Support for non-JDK containers
-* http://issues.datanucleus.org/browse/NUCCORE-1342[NUCCORE-1342] -         Support for single element collections (java.util.Optional)
-* http://issues.datanucleus.org/browse/NUCCORE-1343[NUCCORE-1343] -         Allow to specify default nullability for fields using a configuration property.
-* http://issues.datanucleus.org/browse/NUCCORE-1350[NUCCORE-1350] -         Extend NUCCORE-1344 to allow LEFT JOIN FETCH
-* http://issues.datanucleus.org/browse/NUCCORE-1354[NUCCORE-1354] -         Add support for JPQL &quot;INSERT&quot; queries (vendor extension)
-* http://issues.datanucleus.org/browse/NUCCORE-1358[NUCCORE-1358] -         Allow JPQL to exclude subclasses of the candidate
+* NUCCORE-1339 -         Support for non-JDK containers
+* NUCCORE-1342 -         Support for single element collections (java.util.Optional)
+* NUCCORE-1343 -         Allow to specify default nullability for fields using a configuration property.
+* NUCCORE-1350 -         Extend NUCCORE-1344 to allow LEFT JOIN FETCH
+* NUCCORE-1354 -         Add support for JPQL &quot;INSERT&quot; queries (vendor extension)
+* NUCCORE-1358 -         Allow JPQL to exclude subclasses of the candidate
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/12[datanucleus-api-jdo-12] -         Support java.time types in JDO Typesafe
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/15[datanucleus-api-jpa-15] -         Support JPA 2.1 Tuple/TupleElement
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/18[datanucleus-api-jpa-18] -         Make EntityManagerFactory, EntityManager implement AutoCloseable
-* http://issues.datanucleus.org/browse/NUCRDBMS-939[NUCRDBMS-939] -         Support parameters in SELECT clause, particularly when as part of subqueries
-* http://issues.datanucleus.org/browse/NUCRDBMS-944[NUCRDBMS-944] -         Support polymorphic joins when using UNION, so only apply to particular UNIONs
-* http://issues.datanucleus.org/browse/NUCRDBMS-954[NUCRDBMS-954] -         MySQL : allow setting the COLLATION and CHARACTER SET of any tables that are created
-* http://issues.datanucleus.org/browse/NUCRDBMS-958[NUCRDBMS-958] -         Firebird supports date functions using EXTRACT(...)
-* http://issues.datanucleus.org/browse/NUCRDBMS-970[NUCRDBMS-970] -         SQLStatement needs a way of generation where we don't use table aliases, and just use table names
-* http://issues.datanucleus.org/browse/NUCRDBMS-976[NUCRDBMS-976] -         JPQL : BULK INSERT query support
-* http://issues.datanucleus.org/browse/NUCRDBMS-977[NUCRDBMS-977] -         Support persisting a Collection/Map using a TypeConverter for the whole field
-* http://issues.datanucleus.org/browse/NUCRDBMS-983[NUCRDBMS-983] -         Support SAP &quot;SQLAnywhere&quot;
-* http://issues.datanucleus.org/browse/NUCRDBMS-988[NUCRDBMS-988] -         PostgreSQL : Support JDBC type of ARRAY allowing array and Collection fields to be persisted to it
-* http://issues.datanucleus.org/browse/NUCRDBMS-989[NUCRDBMS-989] -         Support embedded object with field stored in join table
-* http://issues.datanucleus.org/browse/NUCRDBMS-996[NUCRDBMS-996] -         JDOQL : when invoking a method on a type that uses a converter, if the method doesn't exist on the type, try on the converted-to type
+* NUCRDBMS-939 -         Support parameters in SELECT clause, particularly when as part of subqueries
+* NUCRDBMS-944 -         Support polymorphic joins when using UNION, so only apply to particular UNIONs
+* NUCRDBMS-954 -         MySQL : allow setting the COLLATION and CHARACTER SET of any tables that are created
+* NUCRDBMS-958 -         Firebird supports date functions using EXTRACT(...)
+* NUCRDBMS-970 -         SQLStatement needs a way of generation where we don't use table aliases, and just use table names
+* NUCRDBMS-976 -         JPQL : BULK INSERT query support
+* NUCRDBMS-977 -         Support persisting a Collection/Map using a TypeConverter for the whole field
+* NUCRDBMS-983 -         Support SAP &quot;SQLAnywhere&quot;
+* NUCRDBMS-988 -         PostgreSQL : Support JDBC type of ARRAY allowing array and Collection fields to be persisted to it
+* NUCRDBMS-989 -         Support embedded object with field stored in join table
+* NUCRDBMS-996 -         JDOQL : when invoking a method on a type that uses a converter, if the method doesn't exist on the type, try on the converted-to type
 * https://github.com/datanucleus/datanucleus-scala/issues/2[datanucleus-scala-2] -         Support for &quot;Option&quot;
 * https://github.com/datanucleus/datanucleus-scala/issues/1[datanucleus-scala-1] -         Support for &quot;case&quot; classes as SCOs
 
 === Improvement
 
-* http://issues.datanucleus.org/browse/NUCCORE-1347[NUCCORE-1347] -         ClassMetaData has &quot;members&quot; that should be genericised to AbstractMemberMetaData, and lookup of member name improved
-* http://issues.datanucleus.org/browse/NUCCORE-1359[NUCCORE-1359] -         Determine Collection element and Map key/value type from TypeVariable when using ParametrizedType within ParameterizedType
-* http://issues.datanucleus.org/browse/NUCCORE-1363[NUCCORE-1363] -         CompleteClassTable : has check on duplicated column name, but that should not apply when supporting &quot;nested&quot; embedded
+* NUCCORE-1347 -         ClassMetaData has &quot;members&quot; that should be genericised to AbstractMemberMetaData, and lookup of member name improved
+* NUCCORE-1359 -         Determine Collection element and Map key/value type from TypeVariable when using ParametrizedType within ParameterizedType
+* NUCCORE-1363 -         CompleteClassTable : has check on duplicated column name, but that should not apply when supporting &quot;nested&quot; embedded
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/13[datanucleus-api-jdo-13] -         ExpressionImpl has package variables, should be protected to allow extension in other packages
-* http://issues.datanucleus.org/browse/NUCRDBMS-935[NUCRDBMS-935] -         SQLStatement : change handling of selects to retain SQLText until statement generation
-* http://issues.datanucleus.org/browse/NUCRDBMS-945[NUCRDBMS-945] -         SQLStatement needs more flexibility with joins; apply to just one union, pass in join type
-* http://issues.datanucleus.org/browse/NUCRDBMS-951[NUCRDBMS-951] -         Index auto creation : detect reuse of fields so we don't try to duplicate indexes
-* http://issues.datanucleus.org/browse/NUCRDBMS-952[NUCRDBMS-952] -         SchemaTool : delete of schema for classes can try to validate the tables structure before dropping, but should just drop the tables if present
-* http://issues.datanucleus.org/browse/NUCRDBMS-955[NUCRDBMS-955] -         Firebird v2 requires use of CHAR_LENGTH for length of VARCHAR fields
-* http://issues.datanucleus.org/browse/NUCRDBMS-959[NUCRDBMS-959] -         MySQL doesn't support &quot;NULLS FIRST | LAST&quot; but does allow ISNULL(...) extra clause to put nulls last (default is first)
-* http://issues.datanucleus.org/browse/NUCRDBMS-962[NUCRDBMS-962] -         Candidate key auto creation : detect reuse of fields so we don't try to duplicate uniques
-* http://issues.datanucleus.org/browse/NUCRDBMS-963[NUCRDBMS-963] -         HSQLDB v2+ doesn't have LONGVARBINARY, so need to provide own mapping
-* http://issues.datanucleus.org/browse/NUCRDBMS-971[NUCRDBMS-971] -         SQLite doesn't provide explicit support for putting nulls last, but can use &quot;{col} IS NULL, {col}&quot;
-* http://issues.datanucleus.org/browse/NUCRDBMS-972[NUCRDBMS-972] -         View creation : skip any token that is a &quot;comment&quot; since some RDBMS don't handle that
-* http://issues.datanucleus.org/browse/NUCRDBMS-973[NUCRDBMS-973] -         Delete tables processing : goes off and calls DatabaseMetaData.getColumns for detection of table existence but could just get table type (quicker!)
-* http://issues.datanucleus.org/browse/NUCRDBMS-978[NUCRDBMS-978] -         Subclass SQLStatement for DeleteStatement, UpdateStatement
-* http://issues.datanucleus.org/browse/NUCRDBMS-980[NUCRDBMS-980] -         Improve method to determine type of ValueGenerator to use reflection and getActualTypeArguments
-* http://issues.datanucleus.org/browse/NUCRDBMS-984[NUCRDBMS-984] -         Query generation can add order clauses to SELECT but doesn't check if they are already present; should do
-* http://issues.datanucleus.org/browse/NUCRDBMS-991[NUCRDBMS-991] -         Support for fetch of ReferenceMapping field when there is a single implementation and using FK
-* http://issues.datanucleus.org/browse/NUCRDBMS-994[NUCRDBMS-994] -         JPQL : &quot;elem IN collectionField&quot; is invalid syntax but we could map internally as &quot;elem MEMBER OF collectionField&quot;
+* NUCRDBMS-935 -         SQLStatement : change handling of selects to retain SQLText until statement generation
+* NUCRDBMS-945 -         SQLStatement needs more flexibility with joins; apply to just one union, pass in join type
+* NUCRDBMS-951 -         Index auto creation : detect reuse of fields so we don't try to duplicate indexes
+* NUCRDBMS-952 -         SchemaTool : delete of schema for classes can try to validate the tables structure before dropping, but should just drop the tables if present
+* NUCRDBMS-955 -         Firebird v2 requires use of CHAR_LENGTH for length of VARCHAR fields
+* NUCRDBMS-959 -         MySQL doesn't support &quot;NULLS FIRST | LAST&quot; but does allow ISNULL(...) extra clause to put nulls last (default is first)
+* NUCRDBMS-962 -         Candidate key auto creation : detect reuse of fields so we don't try to duplicate uniques
+* NUCRDBMS-963 -         HSQLDB v2+ doesn't have LONGVARBINARY, so need to provide own mapping
+* NUCRDBMS-971 -         SQLite doesn't provide explicit support for putting nulls last, but can use &quot;{col} IS NULL, {col}&quot;
+* NUCRDBMS-972 -         View creation : skip any token that is a &quot;comment&quot; since some RDBMS don't handle that
+* NUCRDBMS-973 -         Delete tables processing : goes off and calls DatabaseMetaData.getColumns for detection of table existence but could just get table type (quicker!)
+* NUCRDBMS-978 -         Subclass SQLStatement for DeleteStatement, UpdateStatement
+* NUCRDBMS-980 -         Improve method to determine type of ValueGenerator to use reflection and getActualTypeArguments
+* NUCRDBMS-984 -         Query generation can add order clauses to SELECT but doesn't check if they are already present; should do
+* NUCRDBMS-991 -         Support for fetch of ReferenceMapping field when there is a single implementation and using FK
+* NUCRDBMS-994 -         JPQL : &quot;elem IN collectionField&quot; is invalid syntax but we could map internally as &quot;elem MEMBER OF collectionField&quot;
 * https://github.com/datanucleus/datanucleus-hbase/issues/16[datanucleus-hbase-16] -         Lack of current HBase support (newest supported version is 0.94)
 
 === Task
 
-* http://issues.datanucleus.org/browse/NUCCORE-1346[NUCCORE-1346] -         JDO 3.2 requires change to behaviour at close of EC with active transaction. Make it configurable
-* http://issues.datanucleus.org/browse/NUCCORE-1348[NUCCORE-1348] -         Extend NUCCORE-1338 to EmbeddedMetaData
-* http://issues.datanucleus.org/browse/NUCCORE-1360[NUCCORE-1360] -         Support PK field conversions for types Currency, TimeZone, UUID
-* http://issues.datanucleus.org/browse/NUCCORE-1361[NUCCORE-1361] -         Provide ValueGenerator that generates UUID objects rather than String
-* http://issues.datanucleus.org/browse/NUCCORE-1365[NUCCORE-1365] -         NucleusLogger : provide access to the underlying Logger for a NucleusLogger
-* http://issues.datanucleus.org/browse/NUCCORE-1367[NUCCORE-1367] -         Add method to ObjectProvider to return if the version is loaded
+* NUCCORE-1346 -         JDO 3.2 requires change to behaviour at close of EC with active transaction. Make it configurable
+* NUCCORE-1348 -         Extend NUCCORE-1338 to EmbeddedMetaData
+* NUCCORE-1360 -         Support PK field conversions for types Currency, TimeZone, UUID
+* NUCCORE-1361 -         Provide ValueGenerator that generates UUID objects rather than String
+* NUCCORE-1365 -         NucleusLogger : provide access to the underlying Logger for a NucleusLogger
+* NUCCORE-1367 -         Add method to ObjectProvider to return if the version is loaded
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/11[datanucleus-api-jdo-11] -         Allow addInstanceLifecycleListener/removeInstanceLifecycleListener usage until first PM is obtained
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/17[datanucleus-api-jpa-17] -         Support AttributeConverter on a collection field to be for the whole field not just the element
-* http://issues.datanucleus.org/browse/NUCRDBMS-930[NUCRDBMS-930] -         Extract &quot;lock-for-update&quot; extension of SQLStatement into &quot;public static final&quot; variable
-* http://issues.datanucleus.org/browse/NUCRDBMS-937[NUCRDBMS-937] -         Abstract out ComponentInfo for improved handling of backing store with reference components
-* http://issues.datanucleus.org/browse/NUCRDBMS-946[NUCRDBMS-946] -         Add RIGHT_OUTER_JOIN as option in DatastoreAdapter that can be unsupported (SQLite)
-* http://issues.datanucleus.org/browse/NUCRDBMS-949[NUCRDBMS-949] -         Support date/time methods on SQLite
-* http://issues.datanucleus.org/browse/NUCRDBMS-957[NUCRDBMS-957] -         Firebird v2 requires use of SUBSTRING for substring of VARCHAR fields
-* http://issues.datanucleus.org/browse/NUCRDBMS-960[NUCRDBMS-960] -         Disable value generator &quot;uuid-string&quot; for PostgreSQL since main charsets don't handle it
-* http://issues.datanucleus.org/browse/NUCRDBMS-967[NUCRDBMS-967] -         SQLite doesn't support &quot;ALL|ANY|SOME {subquery}&quot; keyword constructs, so throw exception
-* http://issues.datanucleus.org/browse/NUCRDBMS-968[NUCRDBMS-968] -         SQLite LOCATE / String.indexOf should use INSTR(x,y) rather than LOCATE
-* http://issues.datanucleus.org/browse/NUCRDBMS-969[NUCRDBMS-969] -         SQLite DELETE / UPDATE JPQL should not use alias since these are not supported with SQLite
-* http://issues.datanucleus.org/browse/NUCRDBMS-975[NUCRDBMS-975] -         Provide access to RDBMSQueryCompilation, and to the SQLStatement(s) that the compilation is made up of.
-* http://issues.datanucleus.org/browse/NUCRDBMS-998[NUCRDBMS-998] -         Prevent SortedSet (and subclasses) be allocated a ListXXXStore since needs unsorted
-* http://issues.datanucleus.org/browse/NUCRDBMS-999[NUCRDBMS-999] -         Support date/time methods on SQLite
+* NUCRDBMS-930 -         Extract &quot;lock-for-update&quot; extension of SQLStatement into &quot;public static final&quot; variable
+* NUCRDBMS-937 -         Abstract out ComponentInfo for improved handling of backing store with reference components
+* NUCRDBMS-946 -         Add RIGHT_OUTER_JOIN as option in DatastoreAdapter that can be unsupported (SQLite)
+* NUCRDBMS-949 -         Support date/time methods on SQLite
+* NUCRDBMS-957 -         Firebird v2 requires use of SUBSTRING for substring of VARCHAR fields
+* NUCRDBMS-960 -         Disable value generator &quot;uuid-string&quot; for PostgreSQL since main charsets don't handle it
+* NUCRDBMS-967 -         SQLite doesn't support &quot;ALL|ANY|SOME {subquery}&quot; keyword constructs, so throw exception
+* NUCRDBMS-968 -         SQLite LOCATE / String.indexOf should use INSTR(x,y) rather than LOCATE
+* NUCRDBMS-969 -         SQLite DELETE / UPDATE JPQL should not use alias since these are not supported with SQLite
+* NUCRDBMS-975 -         Provide access to RDBMSQueryCompilation, and to the SQLStatement(s) that the compilation is made up of.
+* NUCRDBMS-998 -         Prevent SortedSet (and subclasses) be allocated a ListXXXStore since needs unsorted
+* NUCRDBMS-999 -         Support date/time methods on SQLite
 * https://github.com/datanucleus/datanucleus-mongodb/issues/10[datanucleus-mongodb-10] -         Upgrade to MongoDB v3.x
 * https://github.com/datanucleus/datanucleus-mongodb/issues/11[datanucleus-mongodb-11] -         Make sure &quot;ownerMmd&quot; is set for FetchFieldManager when embedded, add TODO to resolve
 * https://github.com/datanucleus/datanucleus-neo4j/issues/11[datanucleus-neo4j-11] -         Upgrade to Neo4j v2.3
 
 === Bug
 
-* http://issues.datanucleus.org/browse/NUCCORE-1349[NUCCORE-1349] -         JDOQL/JPQL parse of BigInteger value is parsed internally to be Long and loses precision
-* http://issues.datanucleus.org/browse/NUCCORE-1351[NUCCORE-1351] -         IN predicate unexpectedly gets transformed to EQ predicate
-* http://issues.datanucleus.org/browse/NUCCORE-1355[NUCCORE-1355] -         JPQLSingleStringParser has missing trimRight handling (typo in trimLeft)
-* http://issues.datanucleus.org/browse/NUCCORE-1356[NUCCORE-1356] -         Metadata processing moves ColumnMetaData to ElementMetaData is not embedded/serialised but should also allow for full field type converter case
-* http://issues.datanucleus.org/browse/NUCCORE-1362[NUCCORE-1362] -         Persistable elements contained in Collection/Map that is serialised (whole field) are not detached/attached correctly
-* http://issues.datanucleus.org/browse/NUCCORE-1364[NUCCORE-1364] -         L2 cache of persistable arrays creates incorrect array type for caching
-* http://issues.datanucleus.org/browse/NUCCORE-1366[NUCCORE-1366] -         AbstractMemberMetaData.getClassName(false) can return fully qualified name in some situations
+* NUCCORE-1349 -         JDOQL/JPQL parse of BigInteger value is parsed internally to be Long and loses precision
+* NUCCORE-1351 -         IN predicate unexpectedly gets transformed to EQ predicate
+* NUCCORE-1355 -         JPQLSingleStringParser has missing trimRight handling (typo in trimLeft)
+* NUCCORE-1356 -         Metadata processing moves ColumnMetaData to ElementMetaData is not embedded/serialised but should also allow for full field type converter case
+* NUCCORE-1362 -         Persistable elements contained in Collection/Map that is serialised (whole field) are not detached/attached correctly
+* NUCCORE-1364 -         L2 cache of persistable arrays creates incorrect array type for caching
+* NUCCORE-1366 -         AbstractMemberMetaData.getClassName(false) can return fully qualified name in some situations
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/10[datanucleus-api-jdo-10] -         @Convert specified on field doesn't always get processed. Works fine when using @Persistent(converter=...)
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/14[datanucleus-api-jpa-14] -         JPA 2.1 has bug in EntityGraph method signatures for Attribute generic type
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/13[datanucleus-api-jpa-13] -         Handling of UniqueConstraint/Index &quot;name&quot; is incorrect
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/16[datanucleus-api-jpa-16] -         JPA MetaModel doesn't cater correctly for List&lt;nonPC&gt;, and sets to CollectionAttributeImpl instead of ListAttributeImpl
-* http://issues.datanucleus.org/browse/NUCRDBMS-325[NUCRDBMS-325] -         JDOQL : &quot;instanceof&quot; with inheritance generates incorrect query when using union, in query FILTER
-* http://issues.datanucleus.org/browse/NUCRDBMS-933[NUCRDBMS-933] -         Wrong sql query generated when using type function with joined inheritance without discriminators
-* http://issues.datanucleus.org/browse/NUCRDBMS-934[NUCRDBMS-934] -         Exception about missing field when using (TYPE function with) TABLE_PER_CLASS strategy
-* http://issues.datanucleus.org/browse/NUCRDBMS-938[NUCRDBMS-938] -         Column creation for overridden field can try to create as IDENTITY when no value strategy defined!
-* http://issues.datanucleus.org/browse/NUCRDBMS-941[NUCRDBMS-941] -         Selecting attribute from element collection map value produces wrong sql
-* http://issues.datanucleus.org/browse/NUCRDBMS-942[NUCRDBMS-942] -         Changes to managed entities not detected when element collection is involved
-* http://issues.datanucleus.org/browse/NUCRDBMS-943[NUCRDBMS-943] -         Use of query result aliases when using DatastoreAdapter in quoted case needs quotes adding to SQL
-* http://issues.datanucleus.org/browse/NUCRDBMS-947[NUCRDBMS-947] -         SQLite String.substring should use SUBSTR(x,y,z) rather than SUBSTRING(x FROM y FOR z)
-* http://issues.datanucleus.org/browse/NUCRDBMS-948[NUCRDBMS-948] -         Fix for NUCRDBMS-823 was non-optimum. If using SQLite and IDENTITY but for a Long field, should get LongMapping with IntegerRDBMSMapping
-* http://issues.datanucleus.org/browse/NUCRDBMS-950[NUCRDBMS-950] -         Addition of datanucleus.schema.autoCreateSchema for generating schema can fail on some JDBC drivers that don't support catalog
-* http://issues.datanucleus.org/browse/NUCRDBMS-953[NUCRDBMS-953] -         Schema generation unnecessarily creates indexes for the values of element collections
-* http://issues.datanucleus.org/browse/NUCRDBMS-956[NUCRDBMS-956] -         JPQL : Referring to map key/value from outer query in a subquery can result in extra joins adding in the subquery
-* http://issues.datanucleus.org/browse/NUCRDBMS-961[NUCRDBMS-961] -         Use of persistent property for persistable object (1-1, N-1), and adding override in subclass results in multiple (duplicate) FKs
-* http://issues.datanucleus.org/browse/NUCRDBMS-965[NUCRDBMS-965] -         Use of COMPLETE_TABLE doesn't seem to allow override of PK field column names
-* http://issues.datanucleus.org/browse/NUCRDBMS-974[NUCRDBMS-974] -         Oracle, Firebird require that when using GROUP BY, all non-aggregate SELECT components are in the GROUP BY clause
-* http://issues.datanucleus.org/browse/NUCRDBMS-979[NUCRDBMS-979] -         Query returning result of COMPLETE_TABLE strategy where root class has no table causes exception
-* http://issues.datanucleus.org/browse/NUCRDBMS-981[NUCRDBMS-981] -         Support NUCCORE-1362
-* http://issues.datanucleus.org/browse/NUCRDBMS-985[NUCRDBMS-985] -         SELECT statement generation handling of ordering when multiple cols per order expression should apply quoting as final step but doesnt
-* http://issues.datanucleus.org/browse/NUCRDBMS-986[NUCRDBMS-986] -         Creation of mapping in some cases misses the MultiColumnConverter case and doesnt use TypeConverterMultiMapping
-* http://issues.datanucleus.org/browse/NUCRDBMS-987[NUCRDBMS-987] -         UpdateRequest : only add the version field if it is not present in the passed list of modified fields
-* http://issues.datanucleus.org/browse/NUCRDBMS-992[NUCRDBMS-992] -         Name of candidate key (unique) on join table is not respected
-* http://issues.datanucleus.org/browse/NUCRDBMS-995[NUCRDBMS-995] -         TypeConverterMapping.getJavaType is incorrect when roleForMember is set
+* NUCRDBMS-325 -         JDOQL : &quot;instanceof&quot; with inheritance generates incorrect query when using union, in query FILTER
+* NUCRDBMS-933 -         Wrong sql query generated when using type function with joined inheritance without discriminators
+* NUCRDBMS-934 -         Exception about missing field when using (TYPE function with) TABLE_PER_CLASS strategy
+* NUCRDBMS-938 -         Column creation for overridden field can try to create as IDENTITY when no value strategy defined!
+* NUCRDBMS-941 -         Selecting attribute from element collection map value produces wrong sql
+* NUCRDBMS-942 -         Changes to managed entities not detected when element collection is involved
+* NUCRDBMS-943 -         Use of query result aliases when using DatastoreAdapter in quoted case needs quotes adding to SQL
+* NUCRDBMS-947 -         SQLite String.substring should use SUBSTR(x,y,z) rather than SUBSTRING(x FROM y FOR z)
+* NUCRDBMS-948 -         Fix for NUCRDBMS-823 was non-optimum. If using SQLite and IDENTITY but for a Long field, should get LongMapping with IntegerRDBMSMapping
+* NUCRDBMS-950 -         Addition of datanucleus.schema.autoCreateSchema for generating schema can fail on some JDBC drivers that don't support catalog
+* NUCRDBMS-953 -         Schema generation unnecessarily creates indexes for the values of element collections
+* NUCRDBMS-956 -         JPQL : Referring to map key/value from outer query in a subquery can result in extra joins adding in the subquery
+* NUCRDBMS-961 -         Use of persistent property for persistable object (1-1, N-1), and adding override in subclass results in multiple (duplicate) FKs
+* NUCRDBMS-965 -         Use of COMPLETE_TABLE doesn't seem to allow override of PK field column names
+* NUCRDBMS-974 -         Oracle, Firebird require that when using GROUP BY, all non-aggregate SELECT components are in the GROUP BY clause
+* NUCRDBMS-979 -         Query returning result of COMPLETE_TABLE strategy where root class has no table causes exception
+* NUCRDBMS-981 -         Support NUCCORE-1362
+* NUCRDBMS-985 -         SELECT statement generation handling of ordering when multiple cols per order expression should apply quoting as final step but doesnt
+* NUCRDBMS-986 -         Creation of mapping in some cases misses the MultiColumnConverter case and doesnt use TypeConverterMultiMapping
+* NUCRDBMS-987 -         UpdateRequest : only add the version field if it is not present in the passed list of modified fields
+* NUCRDBMS-992 -         Name of candidate key (unique) on join table is not respected
+* NUCRDBMS-995 -         TypeConverterMapping.getJavaType is incorrect when roleForMember is set
 * https://github.com/datanucleus/datanucleus-hbase/issues/15[datanucleus-hbase-15] -         Cannot auto-create tables without deactivating sanity checks
 
 
