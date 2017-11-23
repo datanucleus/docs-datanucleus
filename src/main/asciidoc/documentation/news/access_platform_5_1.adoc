@@ -22,7 +22,25 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.4 Nov/Dec 2017?__
+* __5.1.5 Dec/Jan 2017?__
+
+- - -
+
+== DataNucleus AccessPlatform 5.1.4
+
+__Nov 24th 2017__ : _Version 5.1.4_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/235[datanucleus-rdbms-235] - MySQL identifiers : support for hyphen ('-')
+* https://github.com/datanucleus/datanucleus-rdbms/issues/236[datanucleus-rdbms-236] - Support turning off primary-key constraint generation for join table (with JPA)
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/268[datanucleus-core-268] - Internal definition of persistence.xsd had incorrect "version" for JPA 2.1 and JPA 2.2.
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/99[datanucleus-api-jpa-99] - Internal definition of orm.xsd had incorrect "version" for JPA 2.2.
+* https://github.com/datanucleus/datanucleus-rdbms/issues/237[datanucleus-rdbms-237] - Schema identifier naming ignores N-1 uni "table" specification in <field>, so defines its own join table name
 
 - - -
 
