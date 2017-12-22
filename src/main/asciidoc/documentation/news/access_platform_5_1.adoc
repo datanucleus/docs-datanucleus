@@ -22,7 +22,28 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.5 Dec/Jan 2017?__
+* __5.1.6 Jan/Feb 2018?__
+
+
+- - -
+
+== DataNucleus AccessPlatform 5.1.5
+
+__Dec 22nd 2017__ : _Version 5.1.5_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/272[datanucleus-core-272] - EnhancementHelper keeps references to classes after deploy/undeploy cycle
+* https://github.com/datanucleus/datanucleus-rdbms/issues/238[datanucleus-rdbms-238] - MySQL identifier quoting according to (MySQL) documentation
+* https://github.com/datanucleus/datanucleus-rdbms/issues/240[datanucleus-rdbms-240] - Allow user to omit datanucleus.connectionDriverName
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/269[datanucleus-core-269] - Metadata#determineSuperClassName fails under certain circumstances
+* https://github.com/datanucleus/datanucleus-jdo-query/issues/6[datanucleus-jdo-query-6] - "static" fields shouldn't be added to Q classes
+* https://github.com/datanucleus/datanucleus-jpa-query/issues/3[datanucleus-jpa-query-3] - public final static fields leak into the meta-model
+
 
 - - -
 
