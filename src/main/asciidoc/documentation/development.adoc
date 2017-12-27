@@ -87,7 +87,7 @@ The management and direction of DataNucleus is provided by a small team of exper
 * __Andy Jefferson__ : Founder of the DataNucleus project. Has worked on the project since its initiation as JPOX in 2003, and has worked on all plugins. 
 Initiated the support for db4o, ODF, MongoDB, NeoDatis, Neo4j, OOXML, Cassandra, javax.cache, RDBMS connection pools, and much more. 
 Also contributed to version 2 of the plugin for GAE/Datastore, subject to the constraints that Google put on it.
-* __Renato Garcia__ : worked on the migration to GitHub, test suite flexibility, auto-generation of MANIFESTs, Jenkins/Solar automation, and some more.
+* __Renato Garcia__ : worked on the migration to GitHub, test suite flexibility, auto-generation of MANIFESTs, Jenkins/Solar automation, and some more. _Currently inactive_
 * __Erik Bengtson__ : Founder of the DataNucleus project. Worked on the project since its initiation as JPOX in 2003, until around 2011. 
 Initiated support for Excel, XML, JSON and HBase. _Currently inactive_
 * __Baris Ergun__ : Took over responsibility for the geospatial plugin. _Currently inactive_
