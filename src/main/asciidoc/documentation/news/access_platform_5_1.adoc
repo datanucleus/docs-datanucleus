@@ -25,6 +25,21 @@ _Version 5.1_ includes the following over 5.0
 * __5.1.6 Jan/Feb 2018?__
 
 
+== DataNucleus AccessPlatform 5.1.6
+
+__???? 2018__ : _Version 5.1.6_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-neo4j/issues/36[datanucleus-neo4j-36] - Support for queries with "IS NULL" / "IS NOT NULL"
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-neo4j/issues/32[datanucleus-neo4j-32] - Retrieval code doesnt handle primitive retrieval when not existing in database
+* https://github.com/datanucleus/datanucleus-neo4j/issues/35[datanucleus-neo4j-35] - Ineqeulity Filter method, .ne() gives QueryExecutionException. 
+
+
 - - -
 
 == DataNucleus AccessPlatform 5.1.5
