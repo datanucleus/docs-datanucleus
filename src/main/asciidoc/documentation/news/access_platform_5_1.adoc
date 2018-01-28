@@ -22,22 +22,33 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.6 Jan/Feb 2018?__
+* __5.1.7 Feb/Mar 2018?__
 
 
 == DataNucleus AccessPlatform 5.1.6
 
-__???? 2018__ : _Version 5.1.6_ includes the following changes
+__Jan 29th 2018__ : _Version 5.1.6_ includes the following changes
 
 === Enhancements
 
+* https://github.com/datanucleus/datanucleus-core/issues/273[datanucleus-core-273] - ClassUtils.getConstructorWithArguments doesn't allow to skip type check of one of the arguments
 * https://github.com/datanucleus/datanucleus-neo4j/issues/36[datanucleus-neo4j-36] - Support for queries with "IS NULL" / "IS NOT NULL"
+* https://github.com/datanucleus/datanucleus-neo4j/issues/38[datanucleus-neo4j-38] - Support String toUpperCase/toLowerCase/trim/trimLeft/trimRight/substring in JDOQL/JPQL
+* https://github.com/datanucleus/datanucleus-neo4j/issues/39[datanucleus-neo4j-39] - Support Numeric cos/sin/tan/acos/asin/atan/toDegrees/toRadians in JDOQL/JPQL
+* https://github.com/datanucleus/datanucleus-rdbms/issues/244[datanucleus-rdbms-244] - JPQL compilation can fail if a parameter is not yet set, and using a null would be invalid
+* https://github.com/datanucleus/datanucleus-jdo-query/issues/8[datanucleus-jdo-query-8] - Rework fix to #5 to avoid conflict with other types
 
 
 === Bugs
 
+* https://github.com/datanucleus/datanucleus-core/issues/274[datanucleus-core-274] - Unable to execute an UPDATE JPQL Query against a domain class that contains 'Set' in its name
+* https://github.com/datanucleus/datanucleus-core/issues/275[datanucleus-core-275] - Lists might appear empty while they are actually not (forEach)
 * https://github.com/datanucleus/datanucleus-neo4j/issues/32[datanucleus-neo4j-32] - Retrieval code doesnt handle primitive retrieval when not existing in database
 * https://github.com/datanucleus/datanucleus-neo4j/issues/35[datanucleus-neo4j-35] - Ineqeulity Filter method, .ne() gives QueryExecutionException. 
+* https://github.com/datanucleus/datanucleus-rdbms/issues/242[datanucleus-rdbms-242] - Query with candidate being base of inheritance tree using "complete-table" strategy fails when overriding the "id" column name
+* https://github.com/datanucleus/datanucleus-rdbms/issues/243[datanucleus-rdbms-243] - JDOQL query fails when using reference to interface field, and implementations share table
+* https://github.com/datanucleus/datanucleus-jpa-query/issues/4[datanucleus-jpa-query-4] - @Basic @Lob ArrayList<byte[]> entity field results in errornous metamodel
+* https://github.com/datanucleus/datanucleus-jpa-query/issues/5[datanucleus-jpa-query-5] - @Basic @Lob Serializable entity field results in errornous metamodel
 
 
 - - -
