@@ -172,7 +172,9 @@ it is needed, then consider the options below
 |£2200 (subsequent incidents charged at £230)
 |===
 
-__Note that all amounts are specified in GBP (symbolised by the £ symbol)__
+NOTE: All amounts are specified in GBP (symbolised by the £ symbol)
+
+NOTE: Full support contract terms can be provided mailto:support@datanucleus.com[upon request].
 
 
 [[customers]]
