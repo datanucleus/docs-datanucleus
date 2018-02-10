@@ -91,8 +91,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.
 |1.6+
 |Jun/2013
 |None
-|http://www.datanucleus.org/products/accessplatform_3_3/index.html[Online], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.zip/download[Download], 
+|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.zip/download[Download], 
 https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.pdf/download[PDF]
 |link:news/access_platform_3_3.html[HTML]
 
@@ -103,8 +102,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.
 |1.6+
 |Mar/2013
 |None
-|http://www.datanucleus.org/products/accessplatform_3_2/index.html[Online], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.zip/download[Download], 
+|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.zip/download[Download], 
 https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.pdf/download[PDF]
 |link:news/access_platform_3_2.html[HTML]
 
@@ -115,8 +113,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.
 |1.6+
 |Jul/2012
 |None
-|http://www.datanucleus.org/products/accessplatform_3_1/index.html[Online], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.1.0.release/datanucleus-accessplatform-docs-3.1.0.zip/download[Download]
+|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.1.0.release/datanucleus-accessplatform-docs-3.1.0.zip/download[Download]
 |link:news/access_platform_3_1.html[HTML]
 
 |_3.0 (Newton)_
@@ -126,8 +123,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.
 |1.5+
 |Aug/2011
 |None
-|http://www.datanucleus.org/products/accessplatform_3_0/index.html[Online], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.0.0.release/datanucleus-accessplatform-docs-3.0.0.zip/download[Download]
+|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.0.0.release/datanucleus-accessplatform-docs-3.0.0.zip/download[Download]
 |link:news/access_platform_3_0.html[HTML]
 
 |_2.2 (Geiger)_
