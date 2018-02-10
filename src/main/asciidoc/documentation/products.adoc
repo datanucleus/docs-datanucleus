@@ -39,7 +39,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.1/[Downloa
 
 |5.0 (Schrodinger)
 |5.0.10
-|Developed
+|Maintained
 |JDO3.2, JPA2.1+, REST
 |1.8+
 |Jul/2016
