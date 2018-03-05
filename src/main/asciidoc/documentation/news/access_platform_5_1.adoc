@@ -22,7 +22,34 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.7 Feb/Mar 2018?__
+* __5.1.8 Apr 2018?__
+
+
+
+== DataNucleus AccessPlatform 5.1.7
+
+__Mar 5th 2018__ : _Version 5.1.7_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/278[datanucleus-core-278] - Support enable/disable on javax.validation annotation shortcuts
+* https://github.com/datanucleus/datanucleus-core/issues/279[datanucleus-core-279] - MetaDataParser assumes SAXParser instance can be shared between threads
+* https://github.com/datanucleus/datanucleus-core/issues/281[datanucleus-core-281] - Ensure that JPQL FROM clauses are bound in generic compilation
+* https://github.com/datanucleus/datanucleus-core/issues/282[datanucleus-core-282] - Implementation of JPQL parsing of KEY, VALUE, ENTRY doesn't cater for having properties starting with those keywords
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/100[datanucleus-api-jpa-100] - Support XML metadata "map-key-convert"
+* https://github.com/datanucleus/datanucleus-neo4j/issues/40[datanucleus-neo4j-40] - Support for String startsWith/endsWith/matches in queries
+* https://github.com/datanucleus/datanucleus-rdbms/issues/248[datanucleus-rdbms-248] - Support more complete specification of CREATE INDEX statement
+* https://github.com/datanucleus/datanucleus-rdbms/issues/249[datanucleus-rdbms-249] - Support more complete specification of CREATE UNIQUE statement
+* https://github.com/datanucleus/datanucleus-rdbms/issues/250[datanucleus-rdbms-250] - Support other scenarios with JPQL "IN" where we have (non-Collection) parameters at either/both sides
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/251[datanucleus-rdbms-251] - When processing update, only ignore field marked as "not for update" when not in where clause
+* https://github.com/datanucleus/datanucleus-rdbms/issues/252[datanucleus-rdbms-252] - JPQL : Use of CASE expression using parameters in UPDATE statement can result in compilation errors
+* https://github.com/datanucleus/datanucleus-rdbms/issues/253[datanucleus-rdbms-253] - Bulk update/delete queries do not use the "precompilable" flag, but should
+
+- - -
 
 
 == DataNucleus AccessPlatform 5.1.6
@@ -47,8 +74,8 @@ __Jan 29th 2018__ : _Version 5.1.6_ includes the following changes
 * https://github.com/datanucleus/datanucleus-neo4j/issues/35[datanucleus-neo4j-35] - Ineqeulity Filter method, .ne() gives QueryExecutionException. 
 * https://github.com/datanucleus/datanucleus-rdbms/issues/242[datanucleus-rdbms-242] - Query with candidate being base of inheritance tree using "complete-table" strategy fails when overriding the "id" column name
 * https://github.com/datanucleus/datanucleus-rdbms/issues/243[datanucleus-rdbms-243] - JDOQL query fails when using reference to interface field, and implementations share table
-* https://github.com/datanucleus/datanucleus-jpa-query/issues/4[datanucleus-jpa-query-4] - @Basic @Lob ArrayList<byte[]> entity field results in errornous metamodel
-* https://github.com/datanucleus/datanucleus-jpa-query/issues/5[datanucleus-jpa-query-5] - @Basic @Lob Serializable entity field results in errornous metamodel
+* https://github.com/datanucleus/datanucleus-jpa-query/issues/4[datanucleus-jpa-query-4] - @Basic @Lob ArrayList<byte[]> entity field results in erroneous metamodel
+* https://github.com/datanucleus/datanucleus-jpa-query/issues/5[datanucleus-jpa-query-5] - @Basic @Lob Serializable entity field results in erroneous metamodel
 
 
 - - -
