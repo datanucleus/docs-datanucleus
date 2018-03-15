@@ -195,4 +195,5 @@ image::images/companies/livestream.jpg[LiveStream]
 image::images/companies/cisco.png[Cisco Systems]
 image::images/companies/google.jpg[Google]
 image::images/companies/dat.png[DAT]
+image::images/companies/swanretail.png[SwanRetail]
 

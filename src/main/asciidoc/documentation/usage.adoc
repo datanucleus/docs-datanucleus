@@ -81,6 +81,7 @@ http://www.lockheedmartin.com/[image:../images/companies/lockheed.png[]]
 http://www.wildme.org/wildbook/[image:../images/companies/wildbook.jpg[]]
 http://www.cisco.com[image:../images/companies/cisco.png[]]
 http://www.google.com[image:../images/companies/google.jpg[]]
+http://www.swanretail.co.uk[image:../images/companies/swanretail.png[]]
 
 
 == Publicise Your Usage
