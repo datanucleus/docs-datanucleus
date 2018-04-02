@@ -28,7 +28,7 @@ _Version 5.1_ includes the following over 5.0
 
 == DataNucleus AccessPlatform 5.1.8
 
-__Apr 1st 2018__ : _Version 5.1.8_ includes the following changes
+__Apr 3rd 2018__ : _Version 5.1.8_ includes the following changes
 
 === Enhancements
 
@@ -48,6 +48,7 @@ __Apr 1st 2018__ : _Version 5.1.8_ includes the following changes
 * https://github.com/datanucleus/datanucleus-core/issues/283[datanucleus-core-283] - When L2 caching embedded object, explicitly set the "id" to null
 * https://github.com/datanucleus/datanucleus-core/issues/285[datanucleus-core-285] - Update of an embedded element does not mark the owner as dirty but should
 * https://github.com/datanucleus/datanucleus-rdbms/issues/262[datanucleus-rdbms-262] - Loading of null Collection<String> (ordered list) for JPA tries to set it up as a List but may be a Set
+* https://github.com/datanucleus/datanucleus-rdbms/issues/267[datanucleus-rdbms-267] - Exception thrown on dynamic schema updates if class has no attributes
 
 - - -
 
