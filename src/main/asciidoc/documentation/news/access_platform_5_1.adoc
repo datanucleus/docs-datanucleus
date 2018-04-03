@@ -41,6 +41,7 @@ __Apr 3rd 2018__ : _Version 5.1.8_ includes the following changes
 * https://github.com/datanucleus/datanucleus-rdbms/issues/261[datanucleus-rdbms-261] - HSQLDB supports String trim of a character, so we should allow that in queries also
 * https://github.com/datanucleus/datanucleus-rdbms/issues/263[datanucleus-rdbms-263] - Rename IndexMapping to OrderIndexMapping to better describe its usage
 * https://github.com/datanucleus/datanucleus-rdbms/issues/265[datanucleus-rdbms-265] - Allow use of @CreateTimestamp/@UpdateTimestamp when non-transactional
+* https://github.com/datanucleus/datanucleus-rdbms/issues/269[datanucleus-rdbms-269] - Allow disabling of SQL syntax checks for native queries
 
 
 === Bugs
