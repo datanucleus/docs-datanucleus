@@ -28,7 +28,7 @@ _Version 5.1_ includes the following over 5.0
 
 == DataNucleus AccessPlatform 5.1.8
 
-__Apr 3rd 2018__ : _Version 5.1.8_ includes the following changes
+__Apr 4th 2018__ : _Version 5.1.8_ includes the following changes
 
 === Enhancements
 
