@@ -50,6 +50,7 @@ __Apr 3rd 2018__ : _Version 5.1.8_ includes the following changes
 * https://github.com/datanucleus/datanucleus-core/issues/285[datanucleus-core-285] - Update of an embedded element does not mark the owner as dirty but should
 * https://github.com/datanucleus/datanucleus-rdbms/issues/262[datanucleus-rdbms-262] - Loading of null Collection<String> (ordered list) for JPA tries to set it up as a List but may be a Set
 * https://github.com/datanucleus/datanucleus-rdbms/issues/267[datanucleus-rdbms-267] - Exception thrown on dynamic schema updates if class has no attributes
+* https://github.com/datanucleus/datanucleus-scala/issues/5[datanucleus-scala-5] - Option[Date] do not work as expected on JDOQL
 
 - - -
 
