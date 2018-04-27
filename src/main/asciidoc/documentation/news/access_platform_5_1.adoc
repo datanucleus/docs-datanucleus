@@ -26,6 +26,28 @@ _Version 5.1_ includes the following over 5.0
 
 
 
+== DataNucleus AccessPlatform 5.1.9
+
+__May ??? 2018__ : _Version 5.1.9_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/288[datanucleus-core-288] - Upgrade ASM to v6.1.1
+* https://github.com/datanucleus/datanucleus-core/issues/289[datanucleus-core-289] - Build against JTA API v1.3, Validation API v2.0
+* https://github.com/datanucleus/datanucleus-geospatial/issues/7[datanucleus-geospatial-7] - Only load such as Oracle JGeometry if present in CLASSPATH
+* https://github.com/datanucleus/datanucleus-rdbms/issues/270[datanucleus-rdbms-270] - Some RDBMS JDBC drivers return "BASE TABLE" instead of "TABLE" for table type.
+* https://github.com/datanucleus/datanucleus-rdbms/issues/271[datanucleus-rdbms-271] - Refresh of table info from database currently refreshes ALL known tables, but should do the one(s) requested only
+* https://github.com/datanucleus/datanucleus-rdbms/issues/272[datanucleus-rdbms-272] - Remove JTA, DBCP from build deps since not required
+* https://github.com/datanucleus/datanucleus-mongodb/issues/45[datanucleus-mongodb-45] - Support for ordering using unknown/invalid fields
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/68[datanucleus-api-jdo-68] - No point creating CDI injected AttributeConverter during enhancement
+
+- - -
+
+
 == DataNucleus AccessPlatform 5.1.8
 
 __Apr 4th 2018__ : _Version 5.1.8_ includes the following changes
