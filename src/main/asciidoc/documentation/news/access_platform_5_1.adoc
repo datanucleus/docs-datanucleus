@@ -22,13 +22,13 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.9 May 2018?__
+* __5.1.10 June 2018?__
 
 
 
 == DataNucleus AccessPlatform 5.1.9
 
-__May ??? 2018__ : _Version 5.1.9_ includes the following changes
+__Apr 28th 2018__ : _Version 5.1.9_ includes the following changes
 
 === Enhancements
 
