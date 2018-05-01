@@ -56,8 +56,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.0/[Downloa
 |Oct/2015
 |link:../support.html#free[Free], link:../support.html#commercial[Commercial]
 |http://www.datanucleus.org/products/accessplatform_4_2/index.html[Online], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.zip/download[Download],
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/datanucleus-accessplatform-docs-4.2.pdf/download[PDF]
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/[Download]
 |link:news/access_platform_4_2.html[HTML]
 
 |4.1 (Chadwick)
@@ -68,8 +67,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.
 |May/2015
 |link:../support.html#free[Free], link:../support.html#commercial[Commercial]
 |http://www.datanucleus.org/products/accessplatform_4_1/index.html[Online], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/datanucleus-accessplatform-docs-4.1.zip/download[Download], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/datanucleus-accessplatform-docs-4.1.pdf/download[PDF] 
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/[Download]
 |link:news/access_platform_4_1.html[HTML]
 
 |_4.0 (Einstein)_
@@ -80,8 +78,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.
 |Jun/2014
 |link:../support.html#commercial[Commercial]
 |http://www.datanucleus.org/products/accessplatform_4_0/index.html[Online], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.zip/download[Download], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/datanucleus-accessplatform-docs-4.0.pdf/download[PDF]
+https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/[Download]
 |link:news/access_platform_4_0.html[HTML]
 
 |_3.3 (Galileo)_
@@ -91,8 +88,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.
 |1.6+
 |Jun/2013
 |None
-|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.zip/download[Download], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/datanucleus-accessplatform-docs-3.3.pdf/download[PDF]
+|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.3.0.release/[Download]
 |link:news/access_platform_3_3.html[HTML]
 
 |_3.2 (Copernicus)_
@@ -102,8 +98,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.
 |1.6+
 |Mar/2013
 |None
-|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.zip/download[Download], 
-https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/datanucleus-accessplatform-docs-3.2.pdf/download[PDF]
+|https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/3.2.0.release/[Download]
 |link:news/access_platform_3_2.html[HTML]
 
 |_3.1 (Kepler)_
