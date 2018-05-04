@@ -25,7 +25,8 @@ _You could also try https://stackoverflow.com/questions/tagged/datanucleus[Stack
 You MUST then create a minimized testcase and attach it to the issue (using "Attach File" on the issue) - see below for testcase definitions. 
 Any problem reports raised without a testcase will be closed.
 *Please don't take the attitude that this testcase requirement somehow doesn't apply to you. It is there to demonstrate a problem, so others can see it.
-Obviously any such problem is not present in all of our tests so yours is different, we aren't psychic so require a testcase.* 
+Obviously any such problem is not present in all of our tests so yours is different, we aren't psychic so it is MANDATORY to provide a testcase.* 
+*ANY "BUG" WITHOUT A TESTCASE WILL BE CLOSED.*
 
 NOTE: Bugs can only be raised against RELEASED versions of DataNucleus and must have a valid testcase attached that demonstrates the issue.
 
