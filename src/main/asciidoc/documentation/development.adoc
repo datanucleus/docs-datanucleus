@@ -277,7 +277,7 @@ Tagging is performed when we release a plugin, and the Maven _release_ plugin au
 There are many different versioning systems in use by software. All typically use _major.minor.revision_ 
 (occasionally with finer grain below that). Some use suffix _alpha_ or _beta_ to reflect how close the software is to full release. 
 Some use versioning starting at say 1.0.0, and going up from that until some release e.g 1.0.4 that is considered the full release. 
-__DataNucleus uses the following versioning policy__
+*DataNucleus uses the following versioning policy*
 
 * When we start a release lifecycle for a product it starts typically at __Milestone__ 1 (e.g 1.0.0.M1). 
 If we are developing a new plugin that will be used from DataNucleus v5.0 then we will start at 5.0 Milestone 1 (5.0.0.M1) for the new plugin.
@@ -291,6 +291,8 @@ The use of "Milestone" rather than "alpha" or "beta" is because all DataNucleus 
 
 We increment the _minor_ version number when we are changing internal APIs (but not client facing APIs).
 We increment the _major_ version number when we are changing external (client-facing) APIs.
+
+TIP: People are always advised to use the latest version on a particular branch, since that release will have all available bug fixes and backports.
 
 
 [[productrelease]]
