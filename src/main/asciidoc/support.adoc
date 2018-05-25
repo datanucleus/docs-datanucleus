@@ -313,16 +313,12 @@ There are no fees or charges for the first request but additional requests for t
 If the data we hold on you is out of date, incomplete or incorrect, you can inform us and your data will be updated.
 * Right of Erasure : If you feel that we should no longer be using your data, you can request that we erase the data we hold.
 When we receive your request we will confirm whether the data has been deleted or the reason why it cannot be deleted (for example because we need it for our legitimate interests 
-or regulatory purpose(s)
+or regulatory purpose(s)).
 * The right to withdraw your consent to the processing at any time for any processing of data to which consent was sought.
-You can withdraw your consent easily by telephone, email or post (see Contact Details) below.
+You can withdraw your consent easily by email or post (see Contact Details) below.
 Withdrawal of your consent will not affect the lawfulness of any processing based on your consent before the receipt of such withdrawal.
 You can also lodge a complaint about our processing of your personal information with the Information Commissioner’s Office.
-
-
-==== Automated Decision Making and Profiling
-
-DataNucleus does not employ any automated decision-making or conduct profiling of Data Subjects.
+* Rights related to automatic decision making : DataNucleus does not employ any automated decision-making or conduct profiling of Data Subjects.
 
 
 ==== IP addresses and Cookies
