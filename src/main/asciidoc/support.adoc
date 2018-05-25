@@ -198,3 +198,144 @@ image::images/companies/dat.png[DAT]
 image::images/companies/swanretail.png[SwanRetail]
 image::images/companies/leidos.png[Leidos]
 
+
+
+
+
+[[privacy]]
+=== Privacy
+
+We are committed to safeguarding the privacy of users of our support services and we will only use the information we collect about you lawfully and in accordance 
+with the Data Protection Act 1998 (the “Act”).
+
+Data Protection legislation and the Act is currently going through a period of change. 
+The introduction of the European Union’s General Data Protection Regulation (GDPR) and the new British Data Protection Bill, which will replace the Act and is currently passing 
+through Parliament is the basis of this change. This Privacy Notice is therefore intended to comply with the Act and GDPR but may change over time.
+
+
+==== Data Subject’s Terms & Conditions
+
+This Privacy Notice forms part of Terms & Conditions and should be read by Data Subjects, i.e. “you,” or an identifiable person using this site and DataNucleus support services (see below).
+
+
+==== The Data Controller
+
+The support services featured on this http://www.datanucleus.org/support.html[website] are owned and operated by DataNucleus. 
+References to “we,” “us,” our,” or “the website” are references to DataNucleus. 
+Our services are operated as self-employed within the UK, run by Andy Jefferson.
+
+
+==== Data Protection Officer (DPO)
+
+The mechanism for Data Subjects to raise concerns regarding the processing of their personal data by DataNucleus is to email: support@datanucleus.org; 
+or send a letter by registered mail to: _DataNucleus, 2 Littledale Close, Derby, United Kingdom_.
+
+
+==== Purpose of Processing Personal Data
+
+We collect contact data to provide support services, and only collect such data when a contract is taken out by a customer, using their provided contact data.
+We do NOT collect any personal data by simply visiting the Website.
+
+
+==== Lawful Basis of Processing Personal Data
+
+Our use of your information is permitted by applicable data protection law:
+
+Because it is necessary for our legitimate interests in pursuing the purposes as set out above, and such interests in each case not being overridden by your privacy interests.
+
+
+==== Categories of Personal Data Processed
+
+The information we hold should be accurate and up to date. 
+The personal information which we hold will be held securely in accordance with our internal data protection and security policies.  
+The type or categories of personal data we will collect about you includes your:
+
+Name;
+Email address;
+Mobile and/or Landline number;
+Skype address;
+Postal address
+
+
+==== Category of Recipients of Personal Data
+
+No personal data will be passed to any other companies or individuals under any circumstances, except when you explicitly authorise it.
+
+
+==== Transfer of Personal Data Outside the EEA (European Economic Area)
+
+Personal data will not be transferred outside of the UK. If this is required, consent will be explicitly requested from you.
+
+
+==== Sensitive Personal Data
+
+We will never collect sensitive personal data about you without your explicit consent and a clear explanation why it is required.
+
+
+==== Sharing with third parties
+
+We will, in general, not share your information with third parties under any circumstances.
+The only exceptions to this would be :
+
+* To external experts where a particular problem that you request support on requires expertise outside of our organisation; in this case we will explicitly request authorisation from you
+to contact them, and what data, if any, should be shared. Such recipients would only have access to your personal information as required by them to perform their functions, 
+and would not be permitted to use such personal information for any other purposes. Any such recipients will be subject to contractual confidentiality obligations.
+* To government or law enforcement authorities if we determine in our sole discretion that we are under a legal obligation to do so.
+
+
+
+==== Data Security
+
+Although we will do our best to protect your personal information, you should be aware that the transmission of information via the internet is not completely secure and we cannot 
+guarantee the security of your personal information transmitted to the Website or any third party; for this reason, any transmission is at your own risk. 
+We will use strict operational procedures and adequate, technical and organisational security measures to prevent any unauthorised access, change, deletion or 
+transmission of this personal information.
+
+
+==== Retention of Personal Data
+
+We keep your data only for as long as we need it. How long we need data depends on what we are using it for, whether that is to provide services to you, for our own legitimate interests 
+(described above) or so that we can comply with the law.
+We will actively review the information we hold and when there is no longer a customer, legal or business need for us to hold it, we will delete it securely.
+This review will include whether a support contract is still active.
+
+
+==== Data Subject’s Rights
+
+You have the following rights with respect to your personal data:
+When exercising any of the rights listed below, in order to process your request, we may need to verify your identity for your security.  
+In such cases we will need you to respond with proof of your identity before you can exercise these rights.
+
+* Right of Access to information we hold on you : At any point you can contact us to request the information we hold on you as well as why we have that information, 
+who has access to the information and where we obtained the information from.Once we have received your request, we will respond within one month.
+There are no fees or charges for the first request but additional requests for the same data may be subject to a reasonable administrative fee.
+* Right of Rectification : The right to correct and update the information we hold on you. 
+If the data we hold on you is out of date, incomplete or incorrect, you can inform us and your data will be updated.
+* Right of Erasure : If you feel that we should no longer be using your data, you can request that we erase the data we hold.
+When we receive your request we will confirm whether the data has been deleted or the reason why it cannot be deleted (for example because we need it for our legitimate interests 
+or regulatory purpose(s)
+* The right to withdraw your consent to the processing at any time for any processing of data to which consent was sought.
+You can withdraw your consent easily by telephone, email or post (see Contact Details) below.
+Withdrawal of your consent will not affect the lawfulness of any processing based on your consent before the receipt of such withdrawal.
+You can also lodge a complaint about our processing of your personal information with the Information Commissioner’s Office.
+
+
+==== Automated Decision Making and Profiling
+
+DataNucleus does not employ any automated decision-making or conduct profiling of Data Subjects.
+
+
+==== IP addresses and Cookies
+
+We do NOT collect information about your computer, your IP address, operating system or browser type.
+
+
+==== Changes to this Policy
+
+We keep this Privacy Notice under regular review and we will place any updates on this Website.
+
+
+==== Contact Details
+
+Please contact us if you have any questions about this Privacy Notice or the information we hold about you or to exercise all relevant rights, queries or complaints at:
+_DataNucleus, 2 Littledale Close, Derby, United Kingdom_.
