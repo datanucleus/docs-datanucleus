@@ -53,7 +53,7 @@ issues impacting on your project. This type of support is where questions come u
 questions for particular situations. You can pay by the hour as and when you need it, when a developer is available.
 
 __Cost__ : 5 hours = £270, 10 hours = £520, 20 hours = £1000, 40 hours = £1950, 50 hours = £2450.
-Purchase of larger number of hours also available. mailto:consulting@datanucleus.com[Contact Us] for details.
+Purchase of larger number of hours also available. mailto:support@datanucleus.com[Contact Us] for details.
 
 NOTE: All amounts are specified in GBP (symbolised by the £ symbol)
 
