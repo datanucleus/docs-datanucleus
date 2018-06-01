@@ -22,8 +22,35 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.10 June 2018?__
+* __5.1.11 July 2018?__
 
+
+
+== DataNucleus AccessPlatform 5.1.10
+
+__Jun 2nd 2018__ : _Version 5.1.10_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/291[datanucleus-core-291] - Add Java 9 automatic module name to MANIFEST
+* https://github.com/datanucleus/datanucleus-core/issues/292[datanucleus-core-292] - No support available for embedded jars of the form jar:file:<app_jar_path>!<path_inside_app_jar>!/plugin.xml
+* https://github.com/datanucleus/datanucleus-core/issues/293[datanucleus-core-293] - Support in-memory query evaluation of List.indexOf(elemExpr)
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/69[datanucleus-api-jdo-69] - Interpret @Embedded as marking the field as persistent (i.e no need for @Persistent)
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/70[datanucleus-api-jdo-70] - Add Java 9 automatic module name to MANIFEST
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/104[datanucleus-api-jpa-104] - Add Java 9 automatic module name to MANIFEST
+* https://github.com/datanucleus/datanucleus-mongodb/issues/48[datanucleus-mongodb-48] - Support various other MongoClient properties
+* https://github.com/datanucleus/datanucleus-rdbms/issues/275[datanucleus-rdbms-275] - Allow case-insensitive lookup of extension
+* https://github.com/datanucleus/datanucleus-rdbms/issues/276[datanucleus-rdbms-276] - Support use of "uuid" PostgreSQL type in relation fields
+* https://github.com/datanucleus/datanucleus-rdbms/issues/280[datanucleus-rdbms-280] - Add Java 9 automatic module name to MANIFEST
+* https://github.com/datanucleus/datanucleus-rdbms/issues/281[datanucleus-rdbms-281] - Allow bulk fetch of Collection/array of non-persistables
+* https://github.com/datanucleus/datanucleus-rdbms/issues/283[datanucleus-rdbms-283] - JDOQL : Provide some support for List.indexOf(elem)
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/277[datanucleus-rdbms-277] - Bulk fetch of array field using join table fails to save the results
+
+- - -
 
 
 == DataNucleus AccessPlatform 5.1.9
