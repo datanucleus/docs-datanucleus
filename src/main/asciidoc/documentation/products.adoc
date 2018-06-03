@@ -26,6 +26,16 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 |Documentation
 |Release Notes
 
+|5.2 (?)
+|
+|Developed
+|JDO3.2, JPA2.2+, REST
+|1.8+
+|
+|link:../support.html#free[Free], link:../support.html#commercial[Commercial]
+|http://www.datanucleus.org/products/accessplatform_5_2/index.html[Online]
+|link:news/access_platform_5_2.html[HTML]
+
 |5.1 (Democritus)
 |5.1.10
 |Developed
@@ -39,7 +49,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.1/[Downloa
 
 |5.0 (Schrodinger)
 |5.0.10
-|Maintained
+|Retired
 |JDO3.2, JPA2.1+, REST
 |1.8+
 |Jul/2016

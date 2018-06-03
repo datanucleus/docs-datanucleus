@@ -1,0 +1,17 @@
+[[releasenotes_5_2]]
+= DataNucleus AccessPlatform 5.2 Release Notes
+:_basedir: ../../
+:_imagesdir: images/
+
+The 5.2 release of AccessPlatform is available under the link:../license.html[Apache 2 license] from our link:../../download.html[download page] 
+
+
+_Version 5.2_ includes the following over 5.1
+
+
+
+== Future Plans
+
+* __5.2.0.M1 Aug 2018?__
+
+
