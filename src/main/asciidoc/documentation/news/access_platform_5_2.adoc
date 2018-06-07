@@ -8,6 +8,7 @@ The 5.2 release of AccessPlatform is available under the link:../license.html[Ap
 
 _Version 5.2_ includes the following over 5.1
 
+* Upgrade to the bytecode enhancement contract to remove unneeded fields/methods (requires re-enhancement).
 
 
 == Future Plans
