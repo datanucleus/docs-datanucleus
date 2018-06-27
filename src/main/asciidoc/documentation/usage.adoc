@@ -83,6 +83,7 @@ http://www.cisco.com[image:../images/companies/cisco.png[]]
 http://www.google.com[image:../images/companies/google.jpg[]]
 http://www.swanretail.co.uk[image:../images/companies/swanretail.png[]]
 http://www.leidos.com[image:../images/companies/leidos.png[]]
+http://www.stva.com[image:../images/companies/stva.png[]]
 
 
 == Publicise Your Usage
