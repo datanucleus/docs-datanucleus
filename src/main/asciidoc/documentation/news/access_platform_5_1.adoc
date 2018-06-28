@@ -25,6 +25,24 @@ _Version 5.1_ includes the following over 5.0
 * __5.1.11 July 2018?__
 
 
+== DataNucleus AccessPlatform 5.1.11
+
+__??? 2018__ : _Version 5.1.11_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/71[datanucleus-api-jdo-71] - Some attributes of @Persistent are not processed when embedded
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/74[datanucleus-api-jdo-74] - JDOQLTyped query doesn't use parent query, but should
+* https://github.com/datanucleus/datanucleus-rdbms/issues/294[datanucleus-rdbms-294] - When fetching an object with a version, set the version before the other fields
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/284[datanucleus-rdbms-284] - Modifications to bulk exists logic in 5.1.10 cause it to try when using Optional
+
+- - -
+
+
 
 == DataNucleus AccessPlatform 5.1.10
 
