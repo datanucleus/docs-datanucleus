@@ -22,22 +22,27 @@ _Version 5.1_ includes the following over 5.0
 
 == Future Plans
 
-* __5.1.11 July 2018?__
+* __5.1.12 September/October 2018?__
 
 
 == DataNucleus AccessPlatform 5.1.11
 
-__??? 2018__ : _Version 5.1.11_ includes the following changes
+__Aug 4th 2018__ : _Version 5.1.11_ includes the following changes
 
 === Enhancements
 
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/71[datanucleus-api-jdo-71] - Some attributes of @Persistent are not processed when embedded
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/74[datanucleus-api-jdo-74] - JDOQLTyped query doesn't use parent query, but should
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/78[datanucleus-api-jdo-78] - JDOQLTyped : handle situation of result being candidate (backport)
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/79[datanucleus-api-jdo-79] - JDOQLTyped : support Expression.cast (backport)
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/80[datanucleus-api-jdo-80] - Implement StringExpression.add(String) (backport)
 * https://github.com/datanucleus/datanucleus-rdbms/issues/294[datanucleus-rdbms-294] - When fetching an object with a version, set the version before the other fields
 
 
 === Bugs
 
+* https://github.com/datanucleus/datanucleus-core/issues/305[datanucleus-core-305] - When updating L2 cached object, make sure that any versioned field is also updated (backport)
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/108[datanucleus-api-jpa-108] - MetaModel SingularAttribute.isOptional can give misleading info (backport)
 * https://github.com/datanucleus/datanucleus-rdbms/issues/284[datanucleus-rdbms-284] - Modifications to bulk exists logic in 5.1.10 cause it to try when using Optional
 
 - - -
