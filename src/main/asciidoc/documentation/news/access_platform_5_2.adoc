@@ -60,6 +60,9 @@ __Sep 1st 2018__ : _Version 5.2 Milestone 1_ includes the following changes
 * https://github.com/datanucleus/datanucleus-rdbms/issues/302[datanucleus-rdbms-302] - HikariCP : allow setting of idleTimeout, and prohibit setting of connectionTestQuery
 * https://github.com/datanucleus/datanucleus-rdbms/issues/303[datanucleus-rdbms-303] - DBCP2 : add ability to set validationTimeout
 * https://github.com/datanucleus/datanucleus-mongodb/issues/50[datanucleus-mongodb-50] - Build against Mongo Java Driver v3.8.0
+* https://github.com/datanucleus/datanucleus-jodatime/issues/3[datanucleus-jodatime-3] - Support rdbms-259
+* https://github.com/datanucleus/datanucleus-geospatial/issues/8[datanucleus-geospatial-8] - Support rdbms-259
+* https://github.com/datanucleus/datanucleus-scala/issues/6[datanucleus-scala-6] - Support rdbms-259
 
 
 === Bugs
