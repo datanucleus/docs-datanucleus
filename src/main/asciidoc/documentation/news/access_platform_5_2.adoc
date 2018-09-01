@@ -10,6 +10,7 @@ _Version 5.2_ includes the following over 5.1
 
 * Upgrade to the bytecode enhancement contract to remove unneeded fields/methods (requires re-enhancement).
 * Upgrade to the bytecode enhancement contract to improve handling of cloning of persistable objects.
+* Implementation of more methods for JDOQLTyped query.
 
 
 == Future Plans
@@ -35,9 +36,9 @@ __Sep 1st 2018__ : _Version 5.2 Milestone 1_ includes the following changes
 * https://github.com/datanucleus/datanucleus-core/issues/303[datanucleus-core-303] - L1/L2 cache has strings in code, should be parametrised
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/72[datanucleus-api-jdo-72] - XML validation sometimes comes up with "Attribute 'version' has a fixed value of '1.0'" for package.jdo, package.orm
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/73[datanucleus-api-jdo-73] - JDOQLTyped query doesn't use parent query, but should
-* https://github.com/datanucleus/datanucleus-api-jdo/issues/75[datanucleus-api-jdo-75] - JDOQLTyped : handle situation of result being candidate
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/75[datanucleus-api-jdo-75] - JDOQLTyped : Handle situation of result being candidate
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/76[datanucleus-api-jdo-76] - JDOQLTyped : Implement StringExpression.add(String)
-* https://github.com/datanucleus/datanucleus-api-jdo/issues/77[datanucleus-api-jdo-77] - JDOQLTyped : support Expression.cast
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/77[datanucleus-api-jdo-77] - JDOQLTyped : Support Expression.cast
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/81[datanucleus-api-jdo-81] - JDOQLTyped : Implement OptionalExpression.add(Expression)
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/82[datanucleus-api-jdo-82] - JDOQLTyped : Support MapExpression.get() methods
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/83[datanucleus-api-jdo-83] - JDOQLTyped : Support Expression.instanceof()
