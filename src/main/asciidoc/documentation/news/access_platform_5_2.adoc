@@ -14,6 +14,61 @@ _Version 5.2_ includes the following over 5.1
 
 == Future Plans
 
-* __5.2.0.M1 Aug 2018?__
+* __5.2.0.M2 Oct 2018?__
+
+
+- - -
+
+== DataNucleus AccessPlatform 5.2.0.M1
+
+__Sep 1st 2018__ : _Version 5.2 Milestone 1_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/261[datanucleus-core-261] - Enhancement contract : clean up "dnFieldTypes", "dnFieldFlags", and EnhancementHelper usage
+* https://github.com/datanucleus/datanucleus-core/issues/264[datanucleus-core-264] - Enhancement contract : consider dropping checkAuthorizedStateManager, registerAuthorizedStateManagerClass
+* https://github.com/datanucleus/datanucleus-core/issues/294[datanucleus-core-294] - Cache of array with a null element isn't handled
+* https://github.com/datanucleus/datanucleus-core/issues/295[datanucleus-core-295] - XML validation sometimes comes up with "Attribute 'version' has a fixed value of '1.0'"
+* https://github.com/datanucleus/datanucleus-core/issues/296[datanucleus-core-296] - Load up TypeConverters when enhancing, since a converter can make a type persistable
+* https://github.com/datanucleus/datanucleus-core/issues/297[datanucleus-core-297] - Throw exception if user selects a value generation strategy that is not supported by the datastore
+* https://github.com/datanucleus/datanucleus-core/issues/298[datanucleus-core-298] - Enhancement contract : clone() method should be enhanced to null dnStateManager/dnFlags
+* https://github.com/datanucleus/datanucleus-core/issues/303[datanucleus-core-303] - L1/L2 cache has strings in code, should be parametrised
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/72[datanucleus-api-jdo-72] - XML validation sometimes comes up with "Attribute 'version' has a fixed value of '1.0'" for package.jdo, package.orm
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/73[datanucleus-api-jdo-73] - JDOQLTyped query doesn't use parent query, but should
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/75[datanucleus-api-jdo-75] - JDOQLTyped : handle situation of result being candidate
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/76[datanucleus-api-jdo-76] - JDOQLTyped : Implement StringExpression.add(String)
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/77[datanucleus-api-jdo-77] - JDOQLTyped : support Expression.cast
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/81[datanucleus-api-jdo-81] - JDOQLTyped : Implement OptionalExpression.add(Expression)
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/82[datanucleus-api-jdo-82] - JDOQLTyped : Support MapExpression.get() methods
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/83[datanucleus-api-jdo-83] - JDOQLTyped : Support Expression.instanceof()
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/106[datanucleus-api-jpa-106] - XML validation sometimes comes up with "Attribute 'version' has a fixed value of '1.0'" for orm.xml
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/109[datanucleus-api-jpa-109] - Support cos/sin/tan/acos/asin/atan/ceil/floor/log/exp/round via CriteriaBuilder
+* https://github.com/datanucleus/datanucleus-rdbms/issues/259[datanucleus-rdbms-259] - Rename org.datanucleus.store.rdbms.mapping.datastore.DatastoreMapping to ColumnMapping
+* https://github.com/datanucleus/datanucleus-rdbms/issues/286[datanucleus-rdbms-286] - Rename extension "datastore_mapping" to "column_mapping"
+* https://github.com/datanucleus/datanucleus-rdbms/issues/287[datanucleus-rdbms-287] - Refactor "org.datanucleus.store.rdbms.mapping.datastore" to "org.datanucleus.store.rdbms.mapping.column"
+* https://github.com/datanucleus/datanucleus-rdbms/issues/290[datanucleus-rdbms-290] - PostgreSQL adapter : remove block restricting the available (SQL) types
+* https://github.com/datanucleus/datanucleus-rdbms/issues/291[datanucleus-rdbms-291] - Provide a mechanism for a DatastoreAdapter to set the default SQL type for a JDBC type
+* https://github.com/datanucleus/datanucleus-rdbms/issues/292[datanucleus-rdbms-292] - Support sequences on MariaDB 10.3+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/293[datanucleus-rdbms-293] - When fetching an object with a version, set the version before the other fields
+* https://github.com/datanucleus/datanucleus-rdbms/issues/295[datanucleus-rdbms-295] - Allow query to override "maxFetchDepth" via query extension
+* https://github.com/datanucleus/datanucleus-rdbms/issues/296[datanucleus-rdbms-296] - Some queries with implicit 1-1 joins can result in joining again for the same thing in the SELECT
+* https://github.com/datanucleus/datanucleus-rdbms/issues/297[datanucleus-rdbms-297] - Support ROUND function
+* https://github.com/datanucleus/datanucleus-rdbms/issues/299[datanucleus-rdbms-299] - "include-soft-deletes" extension for JPQL is not implemented
+* https://github.com/datanucleus/datanucleus-rdbms/issues/300[datanucleus-rdbms-300] - Allow omission of WHERE clause restriction on possible discriminator values
+* https://github.com/datanucleus/datanucleus-rdbms/issues/301[datanucleus-rdbms-301] - Remove getNucleusConnection override since does the same as the superclass
+* https://github.com/datanucleus/datanucleus-rdbms/issues/302[datanucleus-rdbms-302] - HikariCP : allow setting of idleTimeout, and prohibit setting of connectionTestQuery
+* https://github.com/datanucleus/datanucleus-rdbms/issues/303[datanucleus-rdbms-303] - DBCP2 : add ability to set validationTimeout
+* https://github.com/datanucleus/datanucleus-mongodb/issues/50[datanucleus-mongodb-50] - Build against Mongo Java Driver v3.8.0
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/304[datanucleus-core-304] - When updating L2 cached object, make sure that any versioned field is also updated
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/105[datanucleus-api-jpa-105] - Support fix for jpa_spec issue 108 (DN javax.persistence 2.2.1)
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/107[datanucleus-api-jpa-107] - MetaModel SingularAttribute.isOptional can give misleading info
+* https://github.com/datanucleus/datanucleus-rdbms/issues/285[datanucleus-rdbms-285] - Modifications to bulk exists logic in 5.1.10 cause it to try when using Optional
+* https://github.com/datanucleus/datanucleus-rdbms/issues/288[datanucleus-rdbms-288] - Concurrency issue in JoinMapStore
+* https://github.com/datanucleus/datanucleus-rdbms/issues/298[datanucleus-rdbms-298] - Too long select item alias is shortened only for select item even when used in order by
+
 
 
