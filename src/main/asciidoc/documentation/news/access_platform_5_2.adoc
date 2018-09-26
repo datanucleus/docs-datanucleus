@@ -11,6 +11,7 @@ _Version 5.2_ includes the following over 5.1
 * Upgrade to the bytecode enhancement contract to remove unneeded fields/methods (requires re-enhancement).
 * Upgrade to the bytecode enhancement contract to improve handling of cloning of persistable objects.
 * Implementation of more methods for JDOQLTyped query.
+* Upgrade to Apache POI v4.0 (Excel/OOXML datastores)
 
 
 == Future Plans
