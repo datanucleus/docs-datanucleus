@@ -6,11 +6,13 @@
 [[free]]
 == Free Support
 
-With any software, there are times when you need assistance to make full use of it. Here at DataNucleus we want you to make the best of the 
-software that we provide. For that reason we provide both commercial and free support facilities.
+With any software, there are times when you need assistance to make full use of it. 
+Here at DataNucleus we want you to make the best of the software that we provide. 
+For that reason we provide both commercial and free support facilities.
 DataNucleus provides access to public discussion/IRC facilities, providing a place for you to discuss issues you are having. 
 We don't guarantee to provide answers, simply providing places where you could get some level of support when people have time.
-This may not be adequate for some people hence why we provide the commercial version below.
+This may not be adequate for some people hence why we also provide the commercial version further down this page.
+To utilise the free support route :-
 
 . Check the Documentation for http://www.datanucleus.org/products/accessplatform/index.html[DataNucleus AccessPlatform] before anything else. 
 The answer is usually there, either in a tutorial/example, or in one of the many guides. Yes I know you can't be bothered, but then this is 
