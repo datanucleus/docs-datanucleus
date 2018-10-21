@@ -19,13 +19,16 @@ where you can do things for yourself.
 may answer the issue. You can always configure the log to give more output.
 . Try a xref:download.html#nightlybuilds[recent build] to see if your version is out of date and the expected result is achieved with the latest nightly builds.
 . Go to the https://groups.io/g/datanucleus[__DataNucleus Groups.IO__] OR https://gitter.im/datanucleus/Lobby[__DataNucleus Gitter__] and ask. 
-Always try to give as clear a description of the problem as possible, together with 
-your input data, and any associated log output. __Please be aware that we have very little time for this type of support and contributors to 
-DataNucleus are more likely to get any available free support__.
-__Please do not use Twitter and expect answers to support questions__.
+Always try to give as clear a description of the problem as possible, together with your input data, and any associated log output. 
 . If you don't want to report the problem to us as in step 4 then go over to http://stackoverflow.com/questions/tagged/datanucleus[Stackoverflow] and post a question tagged as DataNucleus. 
 We don't provide support over there but you may find people who have experience of your situation to help you.
 . If you have a problem and don't report it then it really doesn't say much for your participation in the open source community.
+
+WARNING: Please do not use Twitter and expect answers to support questions
+
+NOTE: We have very little time for this type of support and contributors to DataNucleus are more likely to get any available free support
+
+
 
 
 [[commercial]]
