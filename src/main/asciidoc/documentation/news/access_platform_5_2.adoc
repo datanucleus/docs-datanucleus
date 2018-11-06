@@ -16,7 +16,41 @@ _Version 5.2_ includes the following over 5.1
 
 == Future Plans
 
-* __5.2.0.M2 Oct 2018?__
+* __5.2.0.M3 Jan 2019?__
+
+
+- - -
+
+== DataNucleus AccessPlatform 5.2.0.M2
+
+__Nov 6th 2018__ : _Version 5.2 Milestone 2_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/308[datanucleus-core-308] - Navigation to find VersionMetaData doesnt allow for multiple superclasses stored in same table
+* https://github.com/datanucleus/datanucleus-core/issues/311[datanucleus-core-311] - Upgrade ASM to v6.2.1
+* https://github.com/datanucleus/datanucleus-core/issues/312[datanucleus-core-312] - CachedPC should implement Comparable<CachedPC> so we can cache SortedMap/SortedSet fields
+* https://github.com/datanucleus/datanucleus-core/issues/313[datanucleus-core-313] - DataFederation : detect the candidate class of a query and route to the appropriate StoreManager
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/84[datanucleus-api-jdo-84] - JDOQLTypedQuery : support StringExpression.startsWith(String, int)
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/85[datanucleus-api-jdo-85] - JDOQLTypedQuery : support OrderExpression.nullsFirst()/nullsLast()
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/86[datanucleus-api-jdo-86] - JDOQLTypedQuery : Support IfElseExpression
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/87[datanucleus-api-jdo-87] - JDOQLTypedQuery : Add vendor extension support for geospatial types
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/88[datanucleus-api-jdo-88] - JDOQLTypedQuery : Add vendor extension support for geospatial helper
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/89[datanucleus-api-jdo-89] - JDOQLTypedQuery : Support NumericExpression avgDistinct/sumDistinct
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/92[datanucleus-api-jdo-92] - JDOQLTypedQuery : Add Expression.as() to specify alias for result clauses
+* https://github.com/datanucleus/datanucleus-rdbms/issues/305[datanucleus-rdbms-305] - StringTrim2Method omits some checks
+* https://github.com/datanucleus/datanucleus-jdo-query/issues/13[datanucleus-jdo-query-13] - Add support for primary geospatial expressions (vendor extension)
+* https://github.com/datanucleus/datanucleus-geospatial/issues/9[datanucleus-geospatial-9] - Support {Geometry}.toBinary()
+* https://github.com/datanucleus/datanucleus-geospatial/issues/10[datanucleus-geospatial-10] - Support all JDOQL object-based methods for Postgis types
+* https://github.com/datanucleus/datanucleus-geospatial/issues/13[datanucleus-geospatial-13] - Support invocation of method bboxTest on Geometry objects
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/90[datanucleus-api-jdo-90] - JDOQLTypedQuery : Creation of PrimaryExpression can omit the left expression
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/91[datanucleus-api-jdo-91] - JDOQLTypedQuery : distinct result setting should be passed to the generic compilation
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/110[datanucleus-api-jpa-110] - Population of Tuple.toArray is incorrect. Missing an "i++"
+
 
 
 - - -
