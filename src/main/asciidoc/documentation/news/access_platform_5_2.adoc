@@ -17,8 +17,28 @@ _Version 5.2_ includes the following over 5.1
 
 == Future Plans
 
-* __5.2.0.M3 Jan 2019?__
+* __5.2.0.M4 Mar 2019?__
 
+
+- - -
+
+== DataNucleus AccessPlatform 5.2.0.M3
+
+__Jan 2nd 2019__ : _Version 5.2 Milestone 3_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/314[datanucleus-core-314] - Support for Java 11 bytecode
+* https://github.com/datanucleus/datanucleus-core/issues/315[datanucleus-core-315] - When loading fields from datastore, add on version field if not yet set 
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/94[datanucleus-api-jdo-94] - JDOQLTypedQuery : cast to persistable subtypes needs to create QXXX expression but currently just creates PersistableExpressionImpl
+* https://github.com/datanucleus/datanucleus-rdbms/issues/308[datanucleus-rdbms-308] - Change query extensions "include-soft-deletes" and "dont-restrict-discriminator" to DataNucleus namespace
+* https://github.com/datanucleus/datanucleus-mongodb/issues/52[datanucleus-mongodb-52] - Support nested embedded collection
+* https://github.com/datanucleus/datanucleus-mongodb/issues/53[datanucleus-mongodb-53] - Support for specifying the MongoDB replica set
+
+
+=== Bugs
+
+None
 
 - - -
 
