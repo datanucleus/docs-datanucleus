@@ -33,6 +33,7 @@ __Mar 1st 2019__ : _Version 5.2 RELEASE_ includes the following changes
 * https://github.com/datanucleus/datanucleus-api-jdo/issues/96[datanucleus-api-jdo-96] - Support further JDOQLTyped query parameter methods in javax.jdo
 * https://github.com/datanucleus/datanucleus-rdbms/issues/311[datanucleus-rdbms-311] - Update to match core #317 change to FlushProcess API
 * https://github.com/datanucleus/datanucleus-rdbms/issues/315[datanucleus-rdbms-315] - Make handling of column default consistent
+* https://github.com/datanucleus/datanucleus-maven-plugin/issues/12[datanucleus-maven-plugin-12] - Java 9/10 compatibility to avoid using add-modules
 
 
 === Bugs
