@@ -31,7 +31,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 |Developed
 |JDO3.2, JPA2.2+, REST
 |1.8+
-|Mar/2018
+|Mar/2019
 |link:../support.html#free[Free], link:../support.html#commercial[Commercial]
 |http://www.datanucleus.org/products/accessplatform_5_2/index.html[Online]
 |link:news/access_platform_5_2.html[HTML]
