@@ -33,7 +33,8 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 |1.8+
 |Mar/2019
 |link:../support.html#free[Free], link:../support.html#commercial[Commercial]
-|http://www.datanucleus.org/products/accessplatform_5_2/index.html[Online]
+|http://www.datanucleus.org/products/accessplatform_5_2/index.html[Online],
+https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.2/[Download]
 |link:news/access_platform_5_2.html[HTML]
 
 |5.1 (Democritus)
