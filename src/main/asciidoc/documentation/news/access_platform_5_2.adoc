@@ -17,14 +17,14 @@ _Version 5.2_ includes the following over 5.1
 
 == Future Plans
 
-* __5.2.1 Apr/May 2019?__
+* __5.2.2 June/July 2019?__
 
 
 - - -
 
 == DataNucleus AccessPlatform 5.2.1
 
-__Mar 1st 2019__ : _Version 5.2.1_ includes the following changes
+__Apr 20th 2019__ : _Version 5.2.1_ includes the following changes
 
 === Enhancements
 
