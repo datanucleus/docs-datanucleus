@@ -22,6 +22,27 @@ _Version 5.2_ includes the following over 5.1
 
 - - -
 
+== DataNucleus AccessPlatform 5.2.1
+
+__Mar 1st 2019__ : _Version 5.2.1_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/319[datanucleus-core-319] - JDOQL : Change default compilation when result class and no result
+* https://github.com/datanucleus/datanucleus-rdbms/issues/317[datanucleus-rdbms-317] - MapEntrySetStore : store normal and locked iterator SQL rather than SelectStatement
+* https://github.com/datanucleus/datanucleus-rdbms/issues/319[datanucleus-rdbms-319] - Oracle 12 supports identity columns
+* https://github.com/datanucleus/datanucleus-rdbms/issues/320[datanucleus-rdbms-320] - Change "AutoIncrement" to "Identity" in DatastoreAdapter to better match generation strategies
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/97[datanucleus-api-jdo-97] - JDOQLTypedQuery executeResultList(Class) and executeResultUnique(Class) should allow result class but no result
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/98[datanucleus-api-jdo-98] - JDOQLTyped : when result class defined but no result, return "DISTINCT this"
+* https://github.com/datanucleus/datanucleus-rdbms/issues/321[datanucleus-rdbms-321] - NPE in UUIDMapping when using customValueStrategy
+
+
+- - -
+
 == DataNucleus AccessPlatform 5.2.0.RELEASE
 
 __Mar 1st 2019__ : _Version 5.2 RELEASE_ includes the following changes
