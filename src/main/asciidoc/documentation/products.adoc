@@ -65,7 +65,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.0/[Downloa
 |JDO3.2, JPA2.1, REST
 |1.7+
 |Oct/2015
-|link:../support.html#free[Free], link:../support.html#commercial[Commercial]
+|link:../support.html#commercial[Commercial]
 |http://www.datanucleus.org/products/accessplatform_4_2/index.html[Online], 
 https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/[Download]
 |link:news/access_platform_4_2.html[HTML]
@@ -76,7 +76,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.
 |JDO3.1, JPA2.1, REST
 |1.7+
 |May/2015
-|link:../support.html#free[Free], link:../support.html#commercial[Commercial]
+|link:../support.html#commercial[Commercial]
 |http://www.datanucleus.org/products/accessplatform_4_1/index.html[Online], 
 https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.1.0.release/[Download]
 |link:news/access_platform_4_1.html[HTML]
@@ -87,7 +87,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.
 |JDO3.1, JPA2.1, REST
 |1.7+
 |Jun/2014
-|link:../support.html#commercial[Commercial]
+|None
 |http://www.datanucleus.org/products/accessplatform_4_0/index.html[Online], 
 https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.0.0.release/[Download]
 |link:news/access_platform_4_0.html[HTML]
