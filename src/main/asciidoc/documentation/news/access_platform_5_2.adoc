@@ -13,11 +13,32 @@ _Version 5.2_ includes the following over 5.1
 * Implementation of more methods for JDOQLTyped query.
 * Upgrade to Apache POI v4.0 (Excel/OOXML datastores)
 * Upgrade to ASM v7.0 (Java 10/11 support)
+* Support for Java 11, 12, 13
 
 
 == Future Plans
 
-* __5.2.2 June/July 2019?__
+* __5.2.3 Dec 2019?__
+
+
+- - -
+
+== DataNucleus AccessPlatform 5.2.2
+
+__Oct 1st 2019__ : _Version 5.2.2_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/322[datanucleus-core-322] - Support for Java 13 and Java 14 bytecode
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/112[datanucleus-api-jpa-112] - Some JPA Query supportedHints are missing currently
+* https://github.com/datanucleus/datanucleus-cassandra/issues/36[datanucleus-cassandra-36] - Support load balancing policy
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/321[datanucleus-core-321] - Multitenancy query cache problem
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/99[datanucleus-api-jdo-99] - Missing isConfigurable() when entering the synchronized block
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/113[datanucleus-api-jpa-113] - JPADataStoreCache : contains/evict don't handle single field case
 
 
 - - -
