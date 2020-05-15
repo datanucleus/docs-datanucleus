@@ -25,7 +25,7 @@ _Version 5.2_ includes the following over 5.1
 
 == DataNucleus AccessPlatform 5.2.3
 
-__Jan 27th 2019__ : _Version 5.2.3_ includes the following changes
+__Jan 27th 2020__ : _Version 5.2.3_ includes the following changes
 
 === Enhancements
 
