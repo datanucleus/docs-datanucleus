@@ -202,6 +202,7 @@ image::images/companies/google.jpg[Google]
 image::images/companies/dat.png[DAT]
 image::images/companies/swanretail.png[SwanRetail]
 image::images/companies/leidos.png[Leidos]
+image::images/companies/groupe-cat.png[Groupe CAT]
 
 
 
