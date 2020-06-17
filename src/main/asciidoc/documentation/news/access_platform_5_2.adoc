@@ -18,7 +18,44 @@ _Version 5.2_ includes the following over 5.1
 
 == Future Plans
 
-* __5.2.4 Jun 2020?__
+* __5.2.5 Aug 2020?__
+
+- - -
+
+== DataNucleus AccessPlatform 5.2.4
+
+__Jun 17th 2020__ : _Version 5.2.4_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/325[datanucleus-core-325] - Fuller support for surrogate CreateUser, CreateTimestamp, UpdateUser, UpdateTimestamp
+* https://github.com/datanucleus/datanucleus-core/issues/326[datanucleus-core-326] - Upgrade ASM to v7.3.1
+* https://github.com/datanucleus/datanucleus-core/issues/339[datanucleus-core-339] - Use Java8 Base64 instead of built-in now that it is in a supported JDK
+* https://github.com/datanucleus/datanucleus-core/issues/346[datanucleus-core-346] - Change "default" java.management type to "platform"
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/104[datanucleus-api-jdo-104] - Fuller support for surrogate CreateUser, CreateTimestamp, UpdateUser, UpdateTimestamp
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/114[datanucleus-api-jpa-114] - Fuller support for surrogate CreateUser, CreateTimestamp, UpdateUser, UpdateTimestamp
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/116[datanucleus-api-jpa-116] - Fallback to using column "length" when specified and not of String type
+* https://github.com/datanucleus/datanucleus-excel/issues/21[datanucleus-excel-21] - Use Java8 Base64 instead of built-in now that it is in a supported JDK
+* https://github.com/datanucleus/datanucleus-json/issues/15[datanucleus-json-15] - Use Java8 Base64 instead of built-in now that it is in a supported JDK
+* https://github.com/datanucleus/datanucleus-odf/issues/18[datanucleus-odf-18] - Use Java8 Base64 instead of built-in now that it is in a supported JDK
+* https://github.com/datanucleus/datanucleus-rdbms/issues/333[datanucleus-rdbms-333] - Fuller support for surrogate CreateUser, CreateTimestamp, UpdateUser, UpdateTimestamp
+* https://github.com/datanucleus/datanucleus-rdbms/issues/334[datanucleus-rdbms-334] - Recent MariaDB JDBC drivers identify the datastore as "mariadb", so map adaptor likewise
+* https://github.com/datanucleus/datanucleus-rdbms/issues/335[datanucleus-rdbms-335] - OracleAdapter should not use NUMERIC SQL type, and should support XMLTYPE
+* https://github.com/datanucleus/datanucleus-rdbms/issues/340[datanucleus-rdbms-340] - Support specification of specific values in CHECK constraint on field (column) for integer/String fields
+* https://github.com/datanucleus/datanucleus-rdbms/issues/341[datanucleus-rdbms-341] - Oracle : support VARBINARY and RAW sql-type for byte[]/Serializable types
+* https://github.com/datanucleus/datanucleus-rdbms/issues/342[datanucleus-rdbms-342] - Allow query comparison with binary literal
+* https://github.com/datanucleus/datanucleus-rdbms/issues/343[datanucleus-rdbms-343] - Rework handling of UUIDMapping in queries so that doesn't just map on to StringXXX
+* https://github.com/datanucleus/datanucleus-rdbms/issues/346[datanucleus-rdbms-346] - Oracle : cater for insert when using v12+ and just an IDENTITY column
+* https://github.com/datanucleus/datanucleus-rdbms/issues/347[datanucleus-rdbms-347] - Support alternate method of retrieving generated keys using column names
+* https://github.com/datanucleus/datanucleus-rdbms/issues/348[datanucleus-rdbms-348] - Use reflection and avoid compile requirement of Oracle JDBC driver<= v10 in classpath
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/342[datanucleus-core-342] - OffsetTimeLongConverter is broken because OffsetTime.from(LocalTime) always throws
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/115[datanucleus-api-jpa-115] - @SqlType is not assigned to its handler
+* https://github.com/datanucleus/datanucleus-rdbms/issues/234[datanucleus-rdbms-234] - PostgreSQL : Exception thrown while persisting null in bytea column
+* https://github.com/datanucleus/datanucleus-rdbms/issues/336[datanucleus-rdbms-336] - PostgreSQL: failure to getObjectById() etc when connected to hot standby due to transaction isolation set to "serializable"
+* https://github.com/datanucleus/datanucleus-rdbms/issues/338[datanucleus-rdbms-338] - PostgreSQL : CLOB being a TEXT not really being a CLOB
 
 
 - - -

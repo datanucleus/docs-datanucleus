@@ -27,7 +27,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 |Release Notes
 
 |5.2
-|5.2.2
+|5.2.4
 |Developed
 |JDO3.2, JPA2.2+, REST
 |1.8+
