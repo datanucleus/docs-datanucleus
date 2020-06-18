@@ -2,6 +2,7 @@
 = DataNucleus License
 :_basedir: ../
 :_imagesdir: images/
+:notoc:
 
 
 DataNucleus is licensed under the Apache 2 license. The terms and conditions of this are shown below. 
