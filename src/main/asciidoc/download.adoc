@@ -23,12 +23,12 @@ A zip of all DataNucleus plugin jars for a particular datastore and, optionally,
 http://www.datanucleus.org/products/accessplatform_5_2/index.html#dependencies[v5.2] and
 http://www.datanucleus.org/products/accessplatform_5_1/index.html#dependencies[v5.1] separately if you wish. 
 The zip is available from our SourceForge project home page.
-* http://central.maven.org/maven2/org/datanucleus/[*DataNucleus Plugin JARs (individual)*] : 
+* https://repo1.maven.org/maven2/org/datanucleus/[*DataNucleus Plugin JARs (individual)*] : 
 DataNucleus products are made up of a selection of plugins, and each plugin is also an OSGi bundle. You can download plugins individually, if you wish, as they are released.
-Available from the Maven Central repository.
-* http://central.maven.org/maven2/org/datanucleus/datanucleus-maven-plugin[*DataNucleus Maven Plugin*] : 
+Available from the https://repo1.maven.org/maven2/org/datanucleus/[Maven Central repository].
+* https://repo1.maven.org/maven2/org/datanucleus/datanucleus-maven-plugin[*DataNucleus Maven Plugin*] : 
 The Maven plugin provides enhancement of classes and the opportunity to manage the database schema.
-Available from the Maven Central repository.
+Available from the https://repo1.maven.org/maven2/org/datanucleus/[Maven Central repository].
 * http://www.datanucleus.org/downloads/eclipse-update[*DataNucleus Eclipse Plugin*] : 
 The Eclipse plugin provides enhancement of classes and the opportunity to manage the database schema.
 You can download this plugin by adding the DataNucleus "Eclipse Update" site of _http://www.datanucleus.org/downloads/eclipse-update_ to your Eclipse configuration.
