@@ -70,6 +70,9 @@ Please navigate to the source code of the plugin in question and use the Issues 
 
 _DataNucleus used JIRA for issue tracking from 2004 until April 2016._
 
+If you think some fix that is in a released version is now a problem again, you should open a *new* issue and refer to the old one, rather than reopening the original issue.
+If you think some fix that is not yet in a released version is still a problem, you should *reopen* the original issue.
+
 
 [[metrics]]
 === Metrics
