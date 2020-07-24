@@ -108,6 +108,7 @@ Should you have any particular requirements for logo sizes, please contact us.
 
 image:../images/logos/datanucleus_300_80.png[]
 image:../images/logos/datanucleus_150_40.png[]
+
 image:../images/logos/datanucleus_db_300_80.png[]
 image:../images/logos/datanucleus_db_150_40.png[]
 
