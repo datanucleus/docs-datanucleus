@@ -22,6 +22,28 @@ _Version 5.2_ includes the following over 5.1
 
 - - -
 
+== DataNucleus AccessPlatform 5.2.5
+
+__?? ???? 2020__ : _Version 5.2.5_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/347[datanucleus-core-347] - Upgrade ASM to v8.0.1
+* https://github.com/datanucleus/datanucleus-core/issues/348[datanucleus-core-348] - Make "datanucleus.sql.syntaxChecks" specifable via property, and rename to "datanucleus.query.sql.syntaxChecks" for consistency
+* https://github.com/datanucleus/datanucleus-core/issues/349[datanucleus-core-349] - Make "datanucleus.jdoql.strict" specifable via property, and rename to "datanucleus.query.jdoql.strict" for consistency
+* https://github.com/datanucleus/datanucleus-core/issues/350[datanucleus-core-350] - Make "datanucleus.jpql.strict" specifable via property, and rename to "datanucleus.query.jpql.strict" for consistency
+* https://github.com/datanucleus/datanucleus-core/issues/352[datanucleus-core-352] - Support version field of type "short" or "java.lang.Short"
+* https://github.com/datanucleus/datanucleus-core/issues/353[datanucleus-core-353] - Support version field of type "java.sql.Date", "java.sql.Time", "java.util.Date", "java.util.Calendar"
+* https://github.com/datanucleus/datanucleus-core/issues/354[datanucleus-core-354] - Support version fields of type "java.time.Instant"
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/118[datanucleus-api-jpa-118] - JPA Column length/precision/scale : only use if not set to defaults
+* https://github.com/datanucleus/datanucleus-rdbms/issues/349[datanucleus-rdbms-349] - JPA Column length/precision/scale : only use if not set to defaults
+* https://github.com/datanucleus/datanucleus-rdbms/issues/350[datanucleus-rdbms-350] - Drop support for Proxool connection pooling
+* https://github.com/datanucleus/datanucleus-rdbms/issues/350[datanucleus-rdbms-351] - Support @CreateTimestamp/@UpdateTimestamp using field of type java.time.Instant
+* https://github.com/datanucleus/datanucleus-rdbms/issues/352[datanucleus-rdbms-352] - Set MySQLAdaptor DATETIME_STORES_MILLISECS based on version of JDBC
+
+
+- - -
+
 == DataNucleus AccessPlatform 5.2.4
 
 __Jun 17th 2020__ : _Version 5.2.4_ includes the following changes
