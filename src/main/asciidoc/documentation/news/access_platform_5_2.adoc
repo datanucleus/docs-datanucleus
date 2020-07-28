@@ -36,7 +36,7 @@ __28th July 2020__ : _Version 5.2.5_ includes the following changes
 * https://github.com/datanucleus/datanucleus-core/issues/353[datanucleus-core-353] - Support version field of type "java.sql.Date", "java.sql.Time", "java.util.Date", "java.util.Calendar"
 * https://github.com/datanucleus/datanucleus-core/issues/354[datanucleus-core-354] - Support version fields of type "java.time.Instant"
 * https://github.com/datanucleus/datanucleus-api-jpa/issues/118[datanucleus-api-jpa-118] - JPA Column length/precision/scale : only use if not set to defaults
-* https://github.com/datanucleus/datanucleus-rdbms/issues/349[datanucleus-rdbms-349] - JPA Column length/precision/scale : only use if not set to defaults
+* https://github.com/datanucleus/datanucleus-rdbms/issues/349[datanucleus-rdbms-349] - Upgrade repackaged DBCP2/Pool2 to v2.7.0/v2.8.0 respectively
 * https://github.com/datanucleus/datanucleus-rdbms/issues/350[datanucleus-rdbms-350] - Drop support for Proxool connection pooling
 * https://github.com/datanucleus/datanucleus-rdbms/issues/350[datanucleus-rdbms-351] - Support @CreateTimestamp/@UpdateTimestamp using field of type java.time.Instant
 * https://github.com/datanucleus/datanucleus-rdbms/issues/352[datanucleus-rdbms-352] - Set MySQLAdaptor DATETIME_STORES_MILLISECS based on version of JDBC
