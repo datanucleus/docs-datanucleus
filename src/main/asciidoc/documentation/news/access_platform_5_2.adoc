@@ -12,8 +12,8 @@ _Version 5.2_ includes the following over 5.1
 * Upgrade to the bytecode enhancement contract to improve handling of cloning of persistable objects.
 * Implementation of more methods for JDOQLTyped query.
 * Upgrade to Apache POI v4.0 (Excel/OOXML datastores)
-* Upgrade to ASM v7.0 (Java 10/11 support)
-* Support for Java 11, 12, 13
+* Upgrade to ASM v7.0 (Java 10/11 support), then ASM v8.0 (Java 12/13 support)
+* Support for Java 10, 11, 12, 13
 
 
 == Future Plans
