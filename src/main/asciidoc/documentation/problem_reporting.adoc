@@ -14,8 +14,7 @@ The majority of situations are errors in input relative to what DataNucleus allo
 Unwillingness to read basic log information suggests that you don't want to debug your problem so ask yourself this question _why should we if you can't be bothered?_
 2. Search https://groups.io/g/datanucleus/[Groups.IO], or https://gitter.im/datanucleus/Lobby[Gitter] for a similar situation 
 to see if someone else has had the same issue and maybe resolved it.
-3. Try the http://www.datanucleus.org/downloads/maven2-nightly/org/datanucleus[latest Nightly Builds]. Things are usually fixed soon after 
-being reported so the issue may no longer be an issue (if there are no jars present in the nightly repo then nothing has changed since the previous release).
+3. Try the latest code from GitHub. Things are usually fixed soon after being reported so the issue may no longer be an issue.
 4. Search the issues for the DataNucleus plugin in question for an issue describing your situation. 
 If there is one then you can always check the status of the issue and add a comment against it.
 5. Start a thread on https://groups.io/g/datanucleus/[Groups.IO] or https://gitter.im/datanucleus/Lobby[Gitter].
