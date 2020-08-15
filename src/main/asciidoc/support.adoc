@@ -35,7 +35,8 @@ NOTE: We have very little time for this type of support and contributors to Data
 
 [[commercial]]
 == Commercial Services
-image::images/logos/DataNucleus16-300.jpg[]
+
+image::images/logos/datanucleus_300_80.png[]
 
 DataNucleus is open source software, also providing good documentation and (public) test cases. As a result
 your team could, in principle, train themselves up on the software using the documentation and tests as basis,
