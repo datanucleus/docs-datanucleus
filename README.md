@@ -7,3 +7,8 @@ The site uses Bootstrap v3.3, Bootstrap-TOC plugin, Font Awesome, and AsciiDoc f
 
 You generate the http://www.datanucleus.org website by invoking Maven "asciidoctor" plugin like this
 'mvn clean compile' which generates the website under _target/site_
+
+
+The generated web-site is suitable to go on a web server such as [Apache](https://httpd.apache.org).
+The simplest form of set up would be what we use for the DataNucleus project. 
+This involves a [Raspberry PI](https://www.raspberrypi.org) with attached SSD, running Raspberry Pi OS, with Apache 2 webserver.
