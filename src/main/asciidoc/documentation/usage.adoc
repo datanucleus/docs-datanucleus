@@ -59,32 +59,32 @@ backwards in this respect. The Apache website is often unavailable, they only us
 
 DataNucleus is used by many companies and groups in their own software. Below are a short subset of those publicisable.
 
-http://code.google.com/appengine/[image:../images/usage/appengine.png[]]
-http://www.vmforce.com/[image:../images/usage/vmforce.png[]]
-http://www.redbooks.ibm.com/abstracts/REDP4512.html?Open[image:../images/usage/tivoli.png[]]
-http://www.yahoo.com[image:../images/companies/yahoo.png[]]
-http://www.romaframework.org[image:../images/usage/roma.jpg[]]
-http://www.projectocolibri.com/[image:../images/usage/colibri.jpg[]]
-http://www.jfire.org[image:../images/usage/jfire.png[]]
-http://www.metamicro.com[image:../images/companies/metamicro.jpg[]]
-http://www.travelmuse.com[image:../images/companies/travelmuse.png[]]
-http://www.hp.com[image:../images/companies/hp.jpg[]]
-http://www.livestream.com[image:../images/companies/livestream.jpg[]]
-http://ge.geglobalresearch.com/[image:../images/companies/ge.png[]]
-http://www.stepaheadsoftware.com[image:../images/companies/stepahead.png[]]
-http://www.ridgetop-group.com/[image:../images/companies/ridgetop.jpg[]]
-http://www.seismicexchange.com/[image:../images/companies/seismicexchange.png[]]
-http://hive.apache.org/[image:../images/companies/apache_hive.jpg[]]
-http://isis.apache.org/[image:../images/companies/apache_isis.png[]]
-http://www.bmc.com[image:../images/companies/bmc.png[]]
-http://www.lockheedmartin.com/[image:../images/companies/lockheed.png[]]
-http://www.wildme.org/wildbook/[image:../images/companies/wildbook.jpg[]]
-http://www.cisco.com[image:../images/companies/cisco.png[]]
-http://www.google.com[image:../images/companies/google.jpg[]]
-http://www.swanretail.co.uk[image:../images/companies/swanretail.png[]]
-http://www.leidos.com[image:../images/companies/leidos.png[]]
-http://www.stva.com[image:../images/companies/stva.png[]]
-http://www.groupecat.com[image:../images/companies/groupe-cat.png[]]
+image:../images/usage/appengine.png[link=http://code.google.com/appengine/]
+image:../images/usage/vmforce.png[link=http://www.vmforce.com/]
+image:../images/usage/tivoli.png[link=http://www.redbooks.ibm.com/abstracts/REDP4512.html?Open]
+image:../images/companies/yahoo.png[link=http://www.yahoo.com]
+image:../images/usage/roma.jpg[link=http://www.romaframework.org]
+image:../images/usage/colibri.jpg[link=http://www.projectocolibri.com/]
+image:../images/usage/jfire.png[]
+image:../images/companies/metamicro.jpg[link=http://www.metamicro.com]
+image:../images/companies/travelmuse.png[link=http://www.travelmuse.com]
+image:../images/companies/hp.jpg[link=http://www.hp.com]
+image:../images/companies/livestream.jpg[link=http://www.livestream.com]
+image:../images/companies/ge.png[link=http://ge.geglobalresearch.com/]
+image:../images/companies/stepahead.png[link=http://www.stepaheadsoftware.com]
+image:../images/companies/ridgetop.jpg[link=http://www.ridgetop-group.com/]
+image:../images/companies/seismicexchange.png[link=http://www.seismicexchange.com/]
+image:../images/companies/apache_hive.jpg[link=http://hive.apache.org/]
+image:../images/companies/apache_isis.png[link=http://isis.apache.org/]
+image:../images/companies/bmc.png[link=http://www.bmc.com]
+image:../images/companies/lockheed.png[link=http://www.lockheedmartin.com/]
+image:../images/companies/wildbook.jpg[link=http://www.wildme.org/wildbook/]
+image:../images/companies/cisco.png[link=http://www.cisco.com]
+image:../images/companies/google.jpg[link=http://www.google.com]
+image:../images/companies/swanretail.png[link=http://www.swanretail.co.uk]
+image:../images/companies/leidos.png[link=http://www.leidos.com]
+image:../images/companies/stva.png[link=http://www.stva.com]
+image:../images/companies/groupe-cat.png[link=http://www.groupecat.com]
 
 
 == Publicise Your Usage
@@ -119,10 +119,10 @@ image:../images/logos/datanucleus_db_150_40.png[]
 
 ## Acknowledgements
 
-DataNucleus wishes to thank the hosts for our site.
+DataNucleus wishes to thank the previous hosts for our site.
 http://www.nightlabs.com[Nightlabs] supported the predecessor to DataNucleus (JPOX) virtually from its inception in 2003, and they also provided hosting for 
 DataNucleus until May 2013.
-http://www.codewizards.co[CodeWizards.co] (former NightLabs personnel) provide hosting for DataNucleus from May 2013.
+http://www.codewizards.co[CodeWizards.co] (former NightLabs personnel) provided hosting for DataNucleus from May 2013 until July 2020.
 
 
 DataNucleus also wishes to thank the companies/developers who have granted our project use of their great software/services allowing us to work much quicker and in a more enjoyable way.
