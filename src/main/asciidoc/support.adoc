@@ -68,7 +68,7 @@ NOTE: Any time-based consulting/support is purchased up-front with a lifetime of
 
 
 
-[[support]]
+[[commercial_support]]
 === Support
 
 __DataNucleus__ developers can provide a level of longer term support to meet your requirements, and rather than having fixed off-the-shelf 
