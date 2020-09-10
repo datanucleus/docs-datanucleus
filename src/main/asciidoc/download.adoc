@@ -29,9 +29,9 @@ Available from the https://repo1.maven.org/maven2/org/datanucleus/[Maven Central
 * https://repo1.maven.org/maven2/org/datanucleus/datanucleus-maven-plugin[*DataNucleus Maven Plugin*] : 
 The Maven plugin provides enhancement of classes and the opportunity to manage the database schema.
 Available from the https://repo1.maven.org/maven2/org/datanucleus/datanucleus-maven-plugin[Maven Central repository].
-* http://www.datanucleus.org/downloads/eclipse-update[*DataNucleus Eclipse Plugin*] : 
+* https://www.datanucleus.org/downloads/eclipse-update[*DataNucleus Eclipse Plugin*] : 
 The Eclipse plugin provides enhancement of classes and the opportunity to manage the database schema.
-You can download this plugin by adding the DataNucleus "Eclipse Update" site of _http://www.datanucleus.org/downloads/eclipse-update_ to your Eclipse configuration.
+You can download this plugin by adding the DataNucleus "Eclipse Update" site of _https://www.datanucleus.org/downloads/eclipse-update_ to your Eclipse configuration.
 * https://sourceforge.net/projects/datanucleus/files/datanucleus-samples[*DataNucleus Samples*] :
 There are various samples of code for use with DataNucleus available, including the source files from the tutorial. 
 Available from SourceForge for easy download, with the source code projects housed on GitHub for 
