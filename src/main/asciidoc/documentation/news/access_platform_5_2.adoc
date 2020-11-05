@@ -18,7 +18,28 @@ _Version 5.2_ includes the following over 5.1
 
 == Future Plans
 
-* __5.2.6 Sep/Oct 2020?__
+* __5.2.7 2021?__
+
+- - -
+
+== DataNucleus AccessPlatform 5.2.6
+
+__5 November 2020__ : _Version 5.2.6_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/357[datanucleus-core-357] - Support JDOQL / JPQL numeric query literals of type Float, Double, BigDecimal, Integer, Long, BigDecimal
+* https://github.com/datanucleus/datanucleus-core/issues/358[datanucleus-core-358] - Complete multitenancy implementation 
+* https://github.com/datanucleus/datanucleus-core/issues/361[datanucleus-core-361] - Allow override of java-type using priority attribute
+* https://github.com/datanucleus/datanucleus-rdbms/issues/355[datanucleus-rdbms-355] - Rename DatastoreAdapter lock options to be consistently named to avoid confusion
+* https://github.com/datanucleus/datanucleus-rdbms/issues/356[datanucleus-rdbms-356] - Query of Array.contains is inflexible for comparable types
+* https://github.com/datanucleus/datanucleus-rdbms/issues/357[datanucleus-rdbms-357] - Support datanucleus-core issue 358, multitenancy read ids
+* https://github.com/datanucleus/datanucleus-rdbms/issues/358[datanucleus-rdbms-358] - Allow PostgreSQL (11+) to be used for store procs
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/353[datanucleus-rdbms-353] - Duplicated ID happen on MS SQL Server If run multiple JVM instance.
+
 
 - - -
 
