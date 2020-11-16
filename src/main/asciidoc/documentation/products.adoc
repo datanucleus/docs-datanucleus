@@ -14,7 +14,6 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 
 
 [cols="1,1,1,1,1,1,1,1,1", options="header"]
-.Product Releases
 |===
 |Version
 |Latest
@@ -25,6 +24,16 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 |Support
 |Documentation
 |Release Notes
+
+|6.0
+|
+|Developed
+|JDO3.2, JPA2.2+, REST
+|9+
+|?
+|link:../support.html#free[Free], link:../support.html#commercial[Commercial]
+|
+|link:news/access_platform_6_0.html[HTML]
 
 |5.2
 |5.2.6
