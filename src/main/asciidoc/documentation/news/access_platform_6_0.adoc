@@ -6,7 +6,7 @@
 The 6.0 release of AccessPlatform is in the planning phase.
 
 
-_Version 6.0_ is currently planned to include the following over 5.1
+_Version 6.0_ is currently planned to include the following over 5.2
 
 * Require minimum Java version 9 (Jigsaw)
 
