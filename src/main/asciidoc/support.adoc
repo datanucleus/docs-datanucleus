@@ -19,7 +19,7 @@ The answer is usually there, either in a tutorial/example, or in one of the many
 where you can do things for yourself.
 . Look in the http://www.datanucleus.org/products/accessplatform/logging.html[DataNucleus LOG]. This usually contains a lot of information that 
 may answer the issue. You can always configure the log to give more output.
-. Try a xref:download.html#nightlybuilds[recent build] to see if your version is out of date and the expected result is achieved with the latest nightly builds.
+. Try a xref:download.html[recent release] to see if your version is out of date, or download the latest code to see if the expected result is then achieved.
 . Go to the https://groups.io/g/datanucleus[__DataNucleus Groups.IO__] OR https://gitter.im/datanucleus/Lobby[__DataNucleus Gitter__] and ask. 
 Always try to give as clear a description of the problem as possible, together with your input data, and any associated log output. 
 *These are the only sites where we provide any free support*.
