@@ -69,7 +69,7 @@ __Apr 22nd 2010__ : _Version 2.0.4_ includes the following changes
 * RDBMS : Fix to generation of indexes for reference fields when having a FK per implementation
     so that the index is created for the implementations FK only
 * JDOQL2 : Fix to use of input parameters with multiple columns
-* Enhancer : when using JDK1.6 and having the enhancer in the CLASSPATH default to not enabling
+* Enhancer : when using Java6 and having the enhancer in the CLASSPATH default to not enabling
     the annotation processor to enhance the class(es) being compiled
 
 - - -

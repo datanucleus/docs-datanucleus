@@ -69,7 +69,7 @@ __Oct 30th 2008__ : _Version 1.0.2_ includes the following changes
 * Upgrade to ASM 3.1
 * Upgrade to JDO 2.2 final jar
 * Bug fixes to L2 caching of object version, and handling of garbage collected objects
-* Removal of a JDK1.5 method so people with JDK1.3/4 can use it
+* Removal of a Java5 method so people with Java 1.3/1.4 can use it
 * Fix to how fields are marked as loaded with application identity
 * Fix to replication of SCO fields
 * Fix to URL handling with DB4O plugin

@@ -30,7 +30,7 @@ __Jan 1st 2014__ : _Version 3.3.6_ includes the following changes
 
 * Auto-generate MANIFEST.MF OSGi information using Maven bundle plugin
 * Change use of StringBuffer to StringBuilder for efficiency
-* Add fix to enhancement contract for JDK1.7+ for getter when using persistence properties
+* Add fix to enhancement contract for Java7+ for getter when using persistence properties
 * Add support for in-memory query evaluation of String.concat
 * Provide fallback API for runtime enhancement
 * Add metadata checks for some common primary-key specification errors

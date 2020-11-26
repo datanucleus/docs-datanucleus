@@ -9,7 +9,7 @@ The 1.1 release of AccessPlatform is available under the link:../license.html[Ap
 _Version 1.1_ includes the following over 1.0
 
 
-* Requires JDK1.5+
+* Requires Java5+
 * Support for in-memory evaluation of JDOQL/JPQL subqueries
 * Support for JDO2 PersistenceManager proxy
 * Support for JDO2.3 Metadata API
@@ -26,7 +26,7 @@ _Version 1.1_ includes the following over 1.0
 * XML : Added many improvements in configurability
 * LDAP : Support for various new mapping configurations.
 * LDAP : Support for native querying
-* Support for enhancement as part of the compilation process (JDK1.6+)
+* Support for enhancement as part of the compilation process (Java6+)
 * Dropped support for NucleusSQL query language
 * Dropped support for BCEL enhancer
 
@@ -216,7 +216,7 @@ __Mar 17th 2009__ : _Version 1.1.1_ includes the following changes
 __Feb 23rd 2009__ : _Version 1.1 RELEASE_ includes the following changes
 
 
-* Add support for JDK1.6+ enhancement during the compilation.
+* Add support for Java6+ enhancement during the compilation.
 * Add support for persistence to Open Document Format (ODF) spreadsheets.
 
 - - -
@@ -308,7 +308,7 @@ __Oct 31st 2008__ : _Version 1.1 Milestone 2_ includes the following changes
 __Sept 23rd 2008__ : _Version 1.1 Milestone 1_ includes the following changes
 
 
-* Moved to JDK1.5+ requirement
+* Moved to Java5+ requirement
 * Removal of Java5 plugin, and addition of JPA plugin
 * Support for JDO2.2 transaction isolation specification mechanism
 * Support for JPQL "&lt;&gt;" added to generic query compilation

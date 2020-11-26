@@ -624,7 +624,7 @@ __Apr 4th 2015__ : _Version 4.1 Milestone 3_ includes the following changes
 
 === Improvement
 
-* NUCAPIJDO-86 -         Make PersistenceManager support AutoCloseable (JDK1.7+)
+* NUCAPIJDO-86 -         Make PersistenceManager support AutoCloseable (Java7+)
 * NUCAPIJDO-87 -         Make JDOQuery implement AutoCloseable
 * NUCREST-17 -         Allow specification of maxFetchDepth on GET requests
 * NUCRDBMS-871 -         Select of KEY or VALUE only selects the &quot;id&quot; of the key/value class currently, but should select the FetchPlan
@@ -675,8 +675,8 @@ __Mar 9th 2015__ : _Version 4.1 Milestone 2_ includes the following changes
 * NUCCORE-1278 -         Persistence property &quot;datanucleus.findObject.typeConversion&quot; should be overrideable on PM/EM basis
 * NUCCORE-1279 -         Support specification of &quot;comparator-name&quot; via extensions on the field rather than just on collection metadata
 * NUCCORE-1280 -         Move all class/member level metadata extensions to &quot;public static final String&quot; fields in org.datanucleus.metadata.MetaData
-* NUCAPIJDO-84 -         Make use of ConcurrentHashMap for pm cache now that we support JDK1.7+ only
-* NUCJPA-293 -         Make use of ConcurrentHashMap for persistence unit metadata now that we support JDK1.7+ only
+* NUCAPIJDO-84 -         Make use of ConcurrentHashMap for pm cache now that we support Java7+ only
+* NUCJPA-293 -         Make use of ConcurrentHashMap for persistence unit metadata now that we support Java7+ only
 * NUCMONGODB-153 -         Support query of 1-1/N-1 reference compared to relation object
 * NUCMONGODB-158 -         Cater for query structure like &quot;field == param&quot; or &quot;field == literal&quot; and the field uses a TypeConverter
 * NUCMONGODB-160 -         java.sql.Time, java.sql.Date are being stored as String when could use &quot;date&quot; Mongo type
@@ -692,7 +692,7 @@ __Mar 9th 2015__ : _Version 4.1 Milestone 2_ includes the following changes
 * NUCCORE-1274 -         Support CASE / IF/ELSE &quot;when&quot; conditions that are not completely defined (i.e depend on previous when conditions)
 * NUCCORE-1276 -         Remove refs to javax.jdo properties/methods
 * NUCCORE-1281 -         Provide handling for Enum &quot;value getter method&quot; so it can be used by all store plugins (currently in RDBMS only)
-* NUCAPIJDO-82 -         Implement JDK1.7 JDOConnectionJDBCImpl methods since using JDK1.7+ now
+* NUCAPIJDO-82 -         Implement Java7 JDOConnectionJDBCImpl methods since using Java7+ now
 * NUCAPIJDO-83 -         Support NUCCORE-1271
 * NUCJPA-291 -         Allow direct access to java.sql.Connection via EM.unwrap when using RDBMS
 * NUCJPA-292 -         Remove use of javax.jdo.option.transactiontype : only need internal DataNucleus property with JPA

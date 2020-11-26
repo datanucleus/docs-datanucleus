@@ -195,7 +195,7 @@ __Apr 26th 2010__ : _Version 2.1 Milestone 2_ includes the following changes
 * JPA : Add support for JPQL "case" expressions
 * JPA : Add support for generation of JPA2 static metamodel classes
 * JPA : Change to handling of "columnDefinition" to expect the type to be included
-* Enhancer : when using JDK1.6 and having the enhancer in the CLASSPATH default to not enabling
+* Enhancer : when using Java6 and having the enhancer in the CLASSPATH default to not enabling
     the annotation processor to enhance the class(es) being compiled
 
 - - -

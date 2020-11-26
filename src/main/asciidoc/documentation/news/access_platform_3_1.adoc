@@ -9,8 +9,8 @@ The 3.1 release of AccessPlatform is available under the link:../license.html[Ap
 _Version 3.1_ includes the following over 3.0
 
 
-* Now aimed at JRE 1.6+ (though many plugins will work with JDK1.5)
-* Enhancer : works with JDK1.7 too, using ASM v4
+* Now aimed at Java6+ (though many plugins will work with Java5)
+* Enhancer : works with Java7 too, using ASM v4
 * javax.time support now present in datanucleus-core
 * Support for <i>atomic</i> non-transactional updates (use of field setters, or SCO mutating methods)
 * Support for monitoring API providing statistics about DataNucleus calls to the datastore etc, and
@@ -167,7 +167,7 @@ __Jul 24th 2012__ : _Version 3.1 RELEASE_ includes the following changes
 * Support for Bitronix transaction manager
 * RDBMS : cater for sql-type being in wrong case
 * RDBMS : Fix to H2 to create index before foreign-key to avoid validation problem
-* Enhancer : fix to only add stackmap frames when the JDK is 1.7 or above (so javap will work).
+* Enhancer : fix to only add stackmap frames when Java7+ (so javap will work).
 * ODF : Fix to persistence of Enum type, and support for java.sql.* types
 * MongoDB : Many improvements to supported types able to be persisted/queried
 * MongoDB : Fixes to use of datastore-identity, and use of NATIVE value generation strategy
@@ -214,7 +214,7 @@ __Jul 8th 2012__ : _Version 3.1 Milestone 5_ includes the following changes
 __Jun 17th 2012__ : _Version 3.1 Milestone 4_ includes the following changes
 
 
-* Enhancer upgraded to use ASM v4, and to support JDK1.7
+* Enhancer upgraded to use ASM v4, and to support Java7
 * Add support for embedded objects with container fields
 * Fix bug in use of type converters for javax.time types
 * SchemaTool : add "delete+create" mode of operation
@@ -226,7 +226,7 @@ __Jun 17th 2012__ : _Version 3.1 Milestone 4_ includes the following changes
 * JDO : Add convenience method to create PMF for a persistence-unit metadata object
 * JPA : Fix couple of NPEs (criteria FromImpl, and EMF with null overriding props)
 * JPA : Fix to creation of listeners for annotations
-* RDBMS : upgraded to support JDK1.7 (JDBC4.1), and require JDK1.6 minimum
+* RDBMS : upgraded to support Java7 (JDBC4.1), and require JDK1.6 minimum
 * RDBMS : Fix to JDOQL "instanceof" handling for some corner cases
 * RDBMS : Fix to JDOQL/JPQL bulk update for some inheritance cases
 * RDBMS : Treat JPQL "FETCH JOIN" to mean add to fetch group

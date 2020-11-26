@@ -226,7 +226,7 @@ __May 14th 2013__ : _Version 3.2.2_ includes the following changes
 __Apr 5th 2013__ : _Version 3.2.1_ includes the following changes
 
 
-* Enhancer : important fix to detection of JDK1.6/1.7 so we add stackmap frames correctly
+* Enhancer : important fix to detection of Java6/7 so we add stackmap frames correctly
 * Fix to attach of elements of collection that aren't yet persistent
 * Fix to attach process of marking of when an object is dirty
 * Fix to cascade-delete of embedded field

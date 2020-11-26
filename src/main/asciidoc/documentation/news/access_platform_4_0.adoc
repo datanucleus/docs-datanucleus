@@ -9,7 +9,7 @@ The 4.0 release of AccessPlatform is available under the link:../license.html[Ap
 _Version 4.0_ includes the following over 3.2/3.3
 
 
-* Runtime will still be supported as runnable for JDK1.7+
+* Runtime will still be supported as runnable for Java7+
 * Extend SchemaAwareStoreManager/SchemaTool to add createSchema/dropSchema
 * Upgrade ODF, Excel, HBase, MongoDB plugins to start using "persistable-identity"
 * Clean up NucleusContext "type" and maybe make NucleusContext an interface, and have PersistenceNucleusContext for persistence runtime. Means that we could also add a SchemaNucleusContext later on for schema tool(s)
@@ -18,7 +18,7 @@ _Version 4.0_ includes the following over 3.2/3.3
 * Move majority of schema operations from StoreManager to StoreSchemaHandler
 * Upgrade ASM to v5.0
 * Generalise TypeConverters so they can support conversion to multiple datastore column values and usable by all store plugins
-* Support JDK1.8 (including javax.time - so build requirement for java8 plugin at least will be 1.8)
+* Support Java8 (including javax.time - so build requirement for java8 plugin at least will be Java8)
 * Official support for Cassandra v1.2+
 * Upgrade relevant store plugins to use Table/Column structure and benefit from common features, for ODF, Excel, JSON, MongoDB, Neo4j, HBase
 * Upgrade enhancement process to enhance to org.datanucleus.enhancer.Persistable so that users need to have "datanucleus-core.jar" in the CLASSPATH and not "jdo-api.jar".
@@ -435,7 +435,7 @@ __Jun 13th 2014__ : _Version 4.0 RELEASE_ includes the following changes
 
 * NUCSPATIAL-39 -         Formatting ol files with the latest Datanucleus code convention xml.
 
-* NUCSPATIAL-50 -         JDK 1.8 related javadoc enhancements needed
+* NUCSPATIAL-50 -         Java8 related javadoc enhancements needed
 
 
 
@@ -647,7 +647,7 @@ __Apr 27th 2014__ : _Version 4.0 Milestone 3_ includes the following changes
 
 * NUCJPA-269 -         Support NUCCORE-922 (change bytecode enhancement contract)
 
-* NUCJSON-48 -         javadoc improvements according to JDK1.8 warning and errors
+* NUCJSON-48 -         javadoc improvements according to Java8 warning and errors
 
 * NUCRDBMS-782 -         Add Expression/Literal for handling TypeConverterMapping so we can avoid having to create Expression/Literal (and hence XXXMapping) for more types
 
@@ -664,7 +664,7 @@ __Apr 27th 2014__ : _Version 4.0 Milestone 3_ includes the following changes
 
 * NUCCORE-934 -         Restrict all references to PersistenceCapable/Detachable to isolated packages
 
-* NUCCORE-1173 -         Remove checks on &quot;stackmapFrames&quot; since we are using JDK 1.7+ now
+* NUCCORE-1173 -         Remove checks on &quot;stackmapFrames&quot; since we are using Java7+ now
 
 * NUCCORE-1174 -         Upgrade to javax.cache v1.0.0 now that final is out
 
@@ -859,13 +859,13 @@ __Apr 1st 2014__ : _Version 4.0 Milestone 2_ includes the following changes
 
 * NUCCORE-1161 -         Add TypeConverter for converting java.sql.Timestamp -&gt; String
 
-* NUCCORE-1162 -         Fix MultiMap.remove(Object,Object) method to avoid clash with JDK1.8 new Map method
+* NUCCORE-1162 -         Fix MultiMap.remove(Object,Object) method to avoid clash with Java8 new Map method
 
 * NUCCORE-1165 -         Change javax.time default TypeConverter so we persist as Timestamp/Time/Date wherever possible (hence queryable)
 
 * NUCCORE-1168 -         Remove default TypeConverter for java.util.Date/java.sql.Date/java.sql.Time/java.sql.Timestamp/BigDecimal/BigInteger since persistable natively
 
-* NUCCORE-1169 -         Remove references to javax.time now that we use a separate plugin for JDK 1.8 time
+* NUCCORE-1169 -         Remove references to javax.time now that we use a separate plugin for Java8 time
 
 * NUCCORE-1170 -         Store Column &quot;jdbcType&quot; with org.datanucleus.store.schema.table.Column so store plugin don't need to do lookups
 
@@ -909,7 +909,7 @@ __Apr 1st 2014__ : _Version 4.0 Milestone 2_ includes the following changes
 
 * NUCRDBMS-773 -         Support DBCP2 as connection pool (changed class names from DBCP v1.x)
 
-* NUCRDBMS-774 -         Support NUCCORE-1162, avoid JDK 1.8 naming clash
+* NUCRDBMS-774 -         Support NUCCORE-1162, avoid Java8 naming clash
 
 * NUCRDBMS-777 -         Drop ObjectAsXXXMapping
 

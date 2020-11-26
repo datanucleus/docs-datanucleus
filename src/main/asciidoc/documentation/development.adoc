@@ -45,7 +45,7 @@ DataNucleus uses Test Driven Development (TDD). It has xref:development.html#dev
 When you have DataNucleus commit rights the development process should be as below. Please abide by these simple rules
 
 * Identify an issue to work on for a particular DataNucleus plugin. Raise an issue if it doesn't yet exist, and allocate to yourself.
-* Develop code, unit tests (as appropriate), and documentation for the issue. DataNucleus is developed using JDK1.8+.
+* Develop code, unit tests (as appropriate), and documentation for the issue. DataNucleus is developed using Java8+.
 * Run all DataNucleus tests and the (public) JDO TCK, and when all pass to the same level as before then you can check your code into GitHub. 
 __Broken unit tests or JDO TCK tests must be fixed ASAP__. Others are using GitHub latest too and if you break either the build or the tests 
 then it means they often cannot work effectively. __Breakage of unit tests or JDO TCK tests mean that your changes can be rolled back__.
@@ -136,9 +136,9 @@ https://github.com/datanucleus/datanucleus-neo4j[the DataNucleus Neo4j datastore
 Note that all plugin repositories are http://maven.apache.org[Maven projects] so you need to understand how to build with Maven to build these plugins.
 
 DataNucleus can be easily developed using Maven, Eclipse (plus m2e plugin),  or other IDEs (let us know if you write docs for how to develop DataNucleus with a different IDE).
-You require __JDK1.8+__, a __Git client__ (to download/commit DataNucleus Git-based projects) and __an editor__.
+You require __Java8+__, a __Git client__ (to download/commit DataNucleus Git-based projects) and __an editor__.
 
-NOTE: All code must be compilable using JDK 1.8 currently.
+NOTE: All code must be compilable using Java8 currently.
 
 
 === GitHub : Plugins

@@ -8,9 +8,9 @@ The 5.0 release of AccessPlatform is available under the link:../license.html[Ap
 
 _Version 5.0_ includes the following over 4.2
 
-* Requires JRE 1.8+
+* Requires Java8+
 * More flexibility to handle non-JDK collections.
-* Support for JDK 1.8 Optional for RDBMS, Cassandra, MongoDB, Excel, ODF, Neo4j, HBase, JSON
+* Support for Java8 Optional for RDBMS, Cassandra, MongoDB, Excel, ODF, Neo4j, HBase, JSON
 * Support for specific Scala features including optional
 * Support HBase 1.x
 * Support HBase related object removal
