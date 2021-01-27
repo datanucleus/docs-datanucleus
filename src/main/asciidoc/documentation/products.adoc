@@ -36,7 +36,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 |link:news/access_platform_6_0.html[HTML]
 
 |5.2
-|5.2.6
+|5.2.7
 |Developed
 |JDO3.2, JPA2.2+, REST
 |8+

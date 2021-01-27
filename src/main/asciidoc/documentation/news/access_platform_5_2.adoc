@@ -18,7 +18,20 @@ _Version 5.2_ includes the following over 5.1
 
 == Future Plans
 
-* __5.2.7 2021?__
+* __5.2.8 2021?__
+
+- - -
+
+== DataNucleus AccessPlatform 5.2.7
+
+__27 January 2021__ : _Version 5.2.7_ includes the following changes
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/363[datanucleus-core-363] - GenerateSchema mode leaves autoCreate/validate turned on
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/106[datanucleus-api-jdo-106] - Memory leak when the ResultSet be closed
+* https://github.com/datanucleus/datanucleus-rdbms/issues/360[datanucleus-rdbms-360] - Synchronizing use of WeakHashMap in AbstractIdentifierFactory
+
 
 - - -
 
@@ -36,7 +49,7 @@ __5 November 2020__ : _Version 5.2.6_ includes the following changes
 * https://github.com/datanucleus/datanucleus-rdbms/issues/357[datanucleus-rdbms-357] - Support datanucleus-core issue 358, multitenancy read ids
 * https://github.com/datanucleus/datanucleus-rdbms/issues/358[datanucleus-rdbms-358] - Allow PostgreSQL (11+) to be used for store procs
 
-=== Enhancements
+=== Bugs
 
 * https://github.com/datanucleus/datanucleus-rdbms/issues/353[datanucleus-rdbms-353] - Duplicated ID happen on MS SQL Server If run multiple JVM instance.
 
