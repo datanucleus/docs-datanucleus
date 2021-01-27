@@ -25,11 +25,12 @@ _Version 5.0_ includes the following over 4.2
 * Stop development of __datanucleus-neodatis__ at 5.0.0.release since the underlying datastore hasn't been updated in 5 years.
 
 
-== Future Plans
+- - -
 
-* __5.0.11 October 2017?__
+*No further releases planned; commercial enquiries required.*
 
 - - -
+
 
 
 == DataNucleus AccessPlatform 5.0.10

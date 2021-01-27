@@ -19,10 +19,11 @@ _Version 5.1_ includes the following over 5.0
 * Drop support for Swarmcache L2 cache
 * Drop support for Apache DBCP v1 connection pool
 
+- - -
 
-== Future Plans
+*No further releases planned; commercial enquiries required.*
 
-* __5.1.12 September/October 2018?__
+- - -
 
 
 == DataNucleus AccessPlatform 5.1.11
