@@ -18,7 +18,31 @@ _Version 5.2_ includes the following over 5.1
 
 == Future Plans
 
-* __5.2.8 2021?__
+* __5.2.9 2021?__
+
+- - -
+
+== DataNucleus AccessPlatform 5.2.8
+
+__17 April 2021__ : _Version 5.2.8_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/365[datanucleus-core-365] - Multitenancy read handler is not as complete as needed
+* https://github.com/datanucleus/datanucleus-core/issues/366[datanucleus-core-366] - Allow ExecutionContext.newObjectId(Class, Object) to pass in key for datastore id
+* https://github.com/datanucleus/datanucleus-core/issues/372[datanucleus-core-372] - Add validators for datanucleus.generateSchema.create.order, datanucleus.generateSchema.drop.order
+* https://github.com/datanucleus/datanucleus-rdbms/issues/361[datanucleus-rdbms-361] - Multitenancy calls could pass in ExecutionContext to allow for overrides
+* https://github.com/datanucleus/datanucleus-rdbms/issues/362[datanucleus-rdbms-362] - Add marker for when an SQLTypeInfo is DN added (artificial) or JDBC provided
+
+=== Bugs
+
+* https://github.com/datanucleus/javax.persistence/issues/13[javax.persistence-13] - jpa persistence xsd mixed version
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/108[datanucleus-api-jdo-108] - Update MultiTenant "disable" handling
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/119[datanucleus-api-jpa-119] - Update MultiTenant "disable" handling
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/120[datanucleus-api-jpa-120] - Remove validators for javax.persistence.schema-generation.create-source, javax.persistence.schema-generation.drop-source
+* https://github.com/datanucleus/datanucleus-rdbms/issues/363[datanucleus-rdbms-363] - Native Sequences with MS SQL Server throws Exception
+* https://github.com/datanucleus/datanucleus-rdbms/issues/364[datanucleus-rdbms-364] - Fixes support for Sequences for SqlServer
+
 
 - - -
 
