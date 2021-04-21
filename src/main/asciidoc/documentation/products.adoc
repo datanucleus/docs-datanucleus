@@ -52,7 +52,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.2/[Downloa
 |JDO3.2, JPA2.2+, REST
 |8+
 |Jul/2017
-|link:../support.html#free[Free], link:../support.html#commercial[Commercial]
+|link:../support.html#commercial[Commercial]
 |http://www.datanucleus.org/products/accessplatform_5_1/index.html[Online],
 https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.1/[Download]
 |link:news/access_platform_5_1.html[HTML]
