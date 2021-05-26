@@ -8,11 +8,49 @@ The 6.0 release of AccessPlatform is in the planning phase.
 
 _Version 6.0_ is currently planned to include the following over 5.2
 
-* Require minimum Java version 9 (Jigsaw)
+* Require minimum Java version 11
+* Support Jakarta Persistence API
+* Support Java module specifications
 
 
 == Future Plans
 
-* __6.0.0.M1 2021?__
+* __6.0.0.M2 2021?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.0.M1
+
+__26 May 2021__ : _Version 6.0.0.M1_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/359[datanucleus-core-359] - Move to ASM v9.1
+* https://github.com/datanucleus/datanucleus-core/issues/361[datanucleus-core-367] - MX4J jar packages up javax.management so unusable under Java 9+
+* https://github.com/datanucleus/datanucleus-core/issues/371[datanucleus-core-371] - Add validators for datanucleus.generateSchema.create.order, datanucleus.generateSchema.drop.order
+* https://github.com/datanucleus/datanucleus-core/issues/373[datanucleus-core-373] - Support loading a schema script from the CLASSPATH
+* https://github.com/datanucleus/datanucleus-core/issues/374[datanucleus-core-374] - Integrate the various schema generation persistence properties
+* https://github.com/datanucleus/datanucleus-core/issues/375[datanucleus-core-375] - Support JPQL function "EXTRACT" and map to underlying datastore functions
+* https://github.com/datanucleus/datanucleus-core/issues/377[datanucleus-core-377] - Add ability to print api-specific ClassMetaData out
+* https://github.com/datanucleus/datanucleus-core/issues/380[datanucleus-core-380] - Refactor org.datanucleus.query to org.datanucleus.store.query
+* https://github.com/datanucleus/datanucleus-core/issues/382[datanucleus-core-382] - Rationalise all log messages when referring to object to use IdentityUtils "PersistableIdentity"
+* https://github.com/datanucleus/datanucleus-core/issues/383[datanucleus-core-383] - Add ApiAdapter method to abstract some metadata default handling
+* https://github.com/datanucleus/datanucleus-core/issues/384[datanucleus-core-384] - Support persistence.xml v3.0
+* https://github.com/datanucleus/datanucleus-core/issues/385[datanucleus-core-385] - Add enhancer API "Jakarta"
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/109[datanucleus-api-jdo-109] - Specifying @Convert doesn't default to making a field persistent
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/110[datanucleus-api-jdo-110] - Support core-377
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/112[datanucleus-api-jdo-112] - Abstract 2 metadata handlings to ApiAdapter
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/122[datanucleus-api-jpa-122] - Support core-377
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/123[datanucleus-api-jpa-123] - Support core-374
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/124[datanucleus-api-jpa-124] - Abstract 2 metadata handlings to ApiAdapter
+* https://github.com/datanucleus/datanucleus-api-jakarta/issues/1[datanucleus-api-jakarta-1] - Initial support for Jakarta Persistence 3.0+
+* https://github.com/datanucleus/datanucleus-jakarta-query/issues/1[datanucleus-jakarta-query-1] - Initial support for Jakarta Persistence Criteria
+* https://github.com/datanucleus/datanucleus-rdbms/issues/377[datanucleus-rdbms-377] - Support alternate method of retrieving generated keys using column names with application identity
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/53[datanucleus-core-53] - Reachability algorith should transition from P NEW to TRANSIENT if object is no longer reachable
+* https://github.com/datanucleus/datanucleus-core/issues/363[datanucleus-core-363] - GenerateSchema mode leaves autoCreate/validate turned on
+* https://github.com/datanucleus/datanucleus-core/issues/378[datanucleus-core-378] - Prevent non-transactional recursive calls to ManagedConnection.close()
 
 - - -

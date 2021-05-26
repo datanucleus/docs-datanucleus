@@ -26,13 +26,14 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 |Release Notes
 
 |6.0
-|
+|6.0.0.m1
 |Developed
 |JDO3.2, JPA2.2+, REST
 |11+
 |?
 |link:../support.html#free[Free], link:../support.html#commercial[Commercial]
-|http://www.datanucleus.org/products/accessplatform_6_0/index.html[Online]
+|http://www.datanucleus.org/products/accessplatform_6_0/index.html[Online],
+https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/6.0/[Download]
 |link:news/access_platform_6_0.html[HTML]
 
 |5.2
