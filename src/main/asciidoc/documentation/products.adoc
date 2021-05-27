@@ -37,7 +37,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/6.0/[Downloa
 |link:news/access_platform_6_0.html[HTML]
 
 |5.2
-|5.2.8
+|5.2.9
 |Developed
 |JDO3.2, JPA2.2+, REST
 |8+
