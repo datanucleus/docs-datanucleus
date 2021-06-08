@@ -138,7 +138,9 @@ Note that all plugin repositories are http://maven.apache.org[Maven projects] so
 DataNucleus can be easily developed using Maven, Eclipse (plus m2e plugin),  or other IDEs (let us know if you write docs for how to develop DataNucleus with a different IDE).
 You require __Java8+__, a __Git client__ (to download/commit DataNucleus Git-based projects) and __an editor__.
 
-NOTE: All code must be compilable using Java8 currently.
+If developing the DataNucleus Eclipse plugin you will need to install the Eclipse PDE addon.
+
+NOTE: All code in v6+ must be compilable using Java 11 currently, whilst code in v5 must be compilable with Java 8.
 
 
 === GitHub : Plugins
