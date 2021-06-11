@@ -400,13 +400,19 @@ or deliberate prevention of access. How do you, the user, feel about an organisa
 
 Since the JPA "group" have still not published an official JPA 2.0 / 2.1 API jar into Maven Central we really feel that their priorities are not 
 in the best interests of you the user. The basic minimum should be publish the official JPA API jars, and get a public open source TCK. 
-Once those are in place then we can talk
+Once those are in place then we can talk.
 
 As a measure of how well DataNucleus is compliant with the JPA TCK, in addition to our own tests, it is also tested as part of the tests written for
 the https://travis-ci.org/Blazebit/blaze-persistence[Blaze Persistence Framework] and passes their tests as well as the likes of Hibernate, and better
-than EclipseLink, and bear in mind that their tests are centred around Hibernate features not DataNucleus features, and incorporate not just standard JPA behaviour but also items 
-that have been requested for inclusion in later releases of JPA.
+than EclipseLink, and bear in mind that their tests are centred around Hibernate features not DataNucleus features, and incorporate not just standard JPA behaviour 
+but also items that have been requested for inclusion in later releases of JPA.
 
+== Jakarta Persistence TCK
+
+There does not seem to be a separate TCK for Jakarta Persistence; it seems to be part of some huge Jakarta EE TCK. 
+Since DataNucleus implements just one part of that we have no time for working out what that means for a Jakarta Persistence implementation.
+The JPA1 TCK had no placeholder for bytecode enhancement and we had to hack in a way of incorporating enhancement, but all files are seemingly different
+here anyway, so unclear how to proceed on that either. If it is important to you, then go and work it out and report back.
 
 
 == Databases Notes
