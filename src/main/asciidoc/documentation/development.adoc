@@ -370,6 +370,7 @@ See http://www.datanucleus.org/javadocs/core/latest/org/datanucleus/util/Localis
 
 
 If you are using Eclipse then we have an link:code-conventions-eclipse.xml[XML Configuration] to specify in Eclipse.
+** Please do NOT reformat existing code. Just format any code that you add **
 
 Here we have some examples of brace policy and other things
 
