@@ -18,7 +18,26 @@ _Version 5.2_ includes the following over 5.1
 
 == Future Plans
 
-* __5.2.10 2021?__
+* __5.2.11 2021?__
+
+- - -
+
+== DataNucleus AccessPlatform 5.2.10
+
+__15 August 2021__ : _Version 5.2.19_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/129[datanucleus-api-jpa-129] - Support DISTINCT aggregates in CriteriaBuilder (javax.persistence 2.2.4+)
+* https://github.com/datanucleus/datanucleus-rdbms/issues/395[datanucleus-rdbms-395] - JoinMapStore internalPut and internalUpdate don't use batching but should allow it
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/380[datanucleus-rdbms-380] - Bulk Delete with multiple joins fails with null pointer exception
+* https://github.com/datanucleus/datanucleus-rdbms/issues/383[datanucleus-rdbms-383] - Use of AVG(DISTINCT ...) with e.g H2 can create invalid SQL
+* https://github.com/datanucleus/datanucleus-rdbms/issues/384[datanucleus-rdbms-384] - Result Class cannot subclass objects with same field names
+* https://github.com/datanucleus/datanucleus-rdbms/issues/392[datanucleus-rdbms-392] - wrong query generated on interface column
+
 
 - - -
 

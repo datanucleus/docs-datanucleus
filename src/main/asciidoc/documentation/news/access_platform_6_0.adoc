@@ -3,7 +3,7 @@
 :_basedir: ../../
 :_imagesdir: images/
 
-The 6.0 release of AccessPlatform is in the planning phase.
+The 6.0 release of AccessPlatform is in the planning/development phase.
 
 
 _Version 6.0_ is currently planned to include the following over 5.2
@@ -15,7 +15,66 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.0.M2 2021?__
+* __6.0.0.M3 2021?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.0.M2
+
+__15 August 2021__ : _Version 6.0.0.M2_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/370[datanucleus-core-370] - Support jpa-spec-297
+* https://github.com/datanucleus/datanucleus-core/issues/386[datanucleus-core-386] - Rename YYYMetaDataHandler to YYYXmlHandler
+* https://github.com/datanucleus/datanucleus-core/issues/387[datanucleus-core-387] - Refactor TransactionImpl, JTATransactionImpl, JTAJCATransactionImpl to org.datanucleus.transaction
+* https://github.com/datanucleus/datanucleus-core/issues/388[datanucleus-core-388] - Drop ClassUtils.convertValue and use TypeConversionHelper.convertTo
+* https://github.com/datanucleus/datanucleus-core/issues/389[datanucleus-core-389] - Add assorted additional conversions for java.time to TypeConversionHelper.convertTo
+* https://github.com/datanucleus/datanucleus-core/issues/390[datanucleus-core-390] - Refactor TypeConversionHelper to org.datanucleus.store.types.converters
+* https://github.com/datanucleus/datanucleus-core/issues/391[datanucleus-core-391] - Allow disabling L1 cache on PM/EM
+* https://github.com/datanucleus/datanucleus-core/issues/392[datanucleus-core-392] - Refactor org.datanucleus.store.*Extent to org.datanucleus.store.query
+* https://github.com/datanucleus/datanucleus-core/issues/394[datanucleus-core-394] - Drop Column extension "index". Was replaced by "position" many years ago
+* https://github.com/datanucleus/datanucleus-core/issues/395[datanucleus-core-395] - NamingFactory : cater for table name specified as "catalog.schema.name"
+* https://github.com/datanucleus/datanucleus-core/issues/400[datanucleus-core-400] - Add MapStore method for the case where we are doing a put() and know the old value (due to caching)
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/113[datanucleus-api-jdo-113] - Replace NucleusJDOHelper with DataNucleusHelperJDO
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/114[datanucleus-api-jdo-114] - Support core-386
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/115[datanucleus-api-jdo-115] - Support core-387
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/116[datanucleus-api-jdo-116] - Support annotations for InstanceCallback methods
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/117[datanucleus-api-jdo-117] - Support @Version on field/property in extension to JDO API
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/125[datanucleus-api-jpa-125] - Replace NucleusJPAHelper with DataNucleusHelperJPA
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/126[datanucleus-api-jpa-126] - Support core-386
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/127[datanucleus-api-jpa-127] - Support core-387
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/128[datanucleus-api-jpa-128] - Support DISTINCT aggregates in CriteriaBuilder (javax.persistence 2.2.4+)
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/130[datanucleus-api-jpa-130] - Drop JPQLHelper and use JPQLQueryHelper
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/131[datanucleus-api-jpa-131] - Support @Index.columnList potential use of ASC|DESC
+* https://github.com/datanucleus/datanucleus-api-jpa/issues/132[datanucleus-api-jpa-132] - Support @MapKeyJoinColumns
+* https://github.com/datanucleus/datanucleus-api-jakarta/issues/2[datanucleus-api-jakarta-2] - Replace NucleusJakartaHelper with DataNucleusHelperJakarta
+* https://github.com/datanucleus/datanucleus-api-jakarta/issues/3[datanucleus-api-jakarta-3] - Support core-386
+* https://github.com/datanucleus/datanucleus-api-jakarta/issues/4[datanucleus-api-jakarta-4] - Support core-387
+* https://github.com/datanucleus/datanucleus-api-jakarta/issues/5[datanucleus-api-jakarta-5] - Support DISTINCT aggregates in CriteriaBuilder (jakarta.persistence 3.0.1+)
+* https://github.com/datanucleus/datanucleus-api-jakarta/issues/7[datanucleus-api-jakarta-7] - Support @Index.columnList potential use of ASC|DESC
+* https://github.com/datanucleus/datanucleus-api-jakarta/issues/8[datanucleus-api-jakarta-8] - Support @MapKeyJoinColumns
+* https://github.com/datanucleus/datanucleus-rdbms/issues/365[datanucleus-rdbms-365] - Move "insertPostProcessing" from MappingCallbacks to own interface, also for updates
+* https://github.com/datanucleus/datanucleus-rdbms/issues/386[datanucleus-rdbms-386] - Determination of how to set fields of ResultClass should be performed once only
+* https://github.com/datanucleus/datanucleus-rdbms/issues/387[datanucleus-rdbms-387] - Support creator expression with parameters having aliases
+* https://github.com/datanucleus/datanucleus-rdbms/issues/388[datanucleus-rdbms-388] - Move support for CREATE INDEX use of ASC|DESC on columns to DatastoreAdapter option
+* https://github.com/datanucleus/datanucleus-rdbms/issues/389[datanucleus-rdbms-389] - Change PrimaryKey to inherit direct from Key
+* https://github.com/datanucleus/datanucleus-rdbms/issues/390[datanucleus-rdbms-390] - Remove "properties" from DatastoreAdapter and use from StoreManager
+* https://github.com/datanucleus/datanucleus-rdbms/issues/391[datanucleus-rdbms-391] - Change datanucleus.rdbms.statementLogging default to JDBC
+* https://github.com/datanucleus/datanucleus-rdbms/issues/394[datanucleus-rdbms-394] - JoinMapStore internalPut and internalUpdate don't use batching but should allow it
+* https://github.com/datanucleus/datanucleus-rdbms/issues/396[datanucleus-rdbms-396] - Move handling of embedded keys/values to JoinMapStore from AbstractMapStore/FKMapStore
+* https://github.com/datanucleus/datanucleus-rdbms/issues/397[datanucleus-rdbms-397] - Make use of MapStore.put(ObjectProvider op, K key, V value, V previousValue, boolean present) with join map cases
+* https://github.com/datanucleus/datanucleus-rdbms/issues/398[datanucleus-rdbms-398] - Provide simple implementation of JoinMapStore.putAll(ObjectProvider, Map, Map)
+* https://github.com/datanucleus/datanucleus-mongodb/issues/58[datanucleus-mongodb-58] - Implement MongoClientUrl to handle parsing of values from Connection URL
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/393[datanucleus-core-393] - Query with result class can give StackOverflow if result has a column not in result class
+* https://github.com/datanucleus/datanucleus-core/issues/398[datanucleus-core-398] - Mutation of SCO field before load of old value can result in incorrect datastore contents
+* https://github.com/datanucleus/datanucleus-rdbms/issues/379[datanucleus-rdbms-379] - Bulk Delete with multiple joins fails with null pointer exception
+* https://github.com/datanucleus/datanucleus-rdbms/issues/381[datanucleus-rdbms-381] - NCharColumnMapping getObject/setObject are inconsistent with CharColumnMapping
+* https://github.com/datanucleus/datanucleus-rdbms/issues/382[datanucleus-rdbms-382] - Use of AVG(DISTINCT ...) with e.g H2 can create invalid SQL
+
 
 - - -
 
