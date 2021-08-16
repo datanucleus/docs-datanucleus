@@ -66,6 +66,7 @@ __15 August 2021__ : _Version 6.0.0.M2_ includes the following changes
 * https://github.com/datanucleus/datanucleus-rdbms/issues/397[datanucleus-rdbms-397] - Make use of MapStore.put(ObjectProvider op, K key, V value, V previousValue, boolean present) with join map cases
 * https://github.com/datanucleus/datanucleus-rdbms/issues/398[datanucleus-rdbms-398] - Provide simple implementation of JoinMapStore.putAll(ObjectProvider, Map, Map)
 * https://github.com/datanucleus/datanucleus-mongodb/issues/58[datanucleus-mongodb-58] - Implement MongoClientUrl to handle parsing of values from Connection URL
+* https://github.com/datanucleus/datanucleus-cassandra/issues/37[datanucleus-cassandra-37] - Change "cassandra.XXX.using" properties to "datanucleus.cassandra.XXX.using"
 
 === Bugs
 
