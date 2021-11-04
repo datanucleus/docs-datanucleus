@@ -85,6 +85,7 @@ image:../images/companies/swanretail.png[link=http://www.swanretail.co.uk]
 image:../images/companies/leidos.png[link=http://www.leidos.com]
 image:../images/companies/stva.png[link=http://www.stva.com]
 image:../images/companies/groupe-cat.png[link=http://www.groupecat.com]
+image:../images/companies/wada.png[link=https://www.wada-ama.org/]
 
 
 == Publicise Your Usage
