@@ -16,7 +16,55 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.0.M3 2021?__
+* __6.0.0.M4 2022?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.0.M3
+
+__8 November 2021__ : _Version 6.0.0.M3_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/403[datanucleus-core-403] - Add retrieveObjects() method to allow for bulk retrieve when objects of same type
+* https://github.com/datanucleus/datanucleus-core/issues/404[datanucleus-core-404] - Add StoreManager.isClosed method
+* https://github.com/datanucleus/datanucleus-core/issues/407[datanucleus-core-407] - Change Multitenancy to be (explicit) class-specified, and not global-specified
+* https://github.com/datanucleus/datanucleus-core/issues/408[datanucleus-core-408] - Mutitenancy tenant an tenant read ids Karnaugh table
+* https://github.com/datanucleus/datanucleus-core/issues/409[datanucleus-core-409] - Add Multitenancy info as MultitenancyMetaData rather than just extensions
+* https://github.com/datanucleus/datanucleus-core/issues/410[datanucleus-core-410] - Add SoftDelete info as SoftDeleteMetaData rather than just extensions
+* https://github.com/datanucleus/datanucleus-core/issues/411[datanucleus-core-411] - Refactor IdentityMetaData to DatastoreIdentityMetaData
+* https://github.com/datanucleus/datanucleus-core/issues/413[datanucleus-core-413] - Implement cascade-detach=false
+* https://github.com/datanucleus/datanucleus-core/issues/414[datanucleus-core-414] - Change "cascade-update" to be "cascade-attach" since it represents JPA CascadeType.MERGE
+* https://github.com/datanucleus/datanucleus-core/issues/417[datanucleus-core-417] - Drop deprecated "enum-getter-by-value", replaced by "enum-value-getter"
+* https://github.com/datanucleus/datanucleus-core/issues/418[datanucleus-core-418] - Migrate "ObjectProvider" to "StateManager"
+* https://github.com/datanucleus/datanucleus-core/issues/419[datanucleus-core-419] - Refactor org.datanucleus.store.types.XXXHandler/Adapter to org.datanucleus.store.types.container
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/119[datanucleus-api-jdo-119] - Use ExecutionContext.retrieveObjects() method to allow for future optimisation
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/120[datanucleus-api-jdo-120] - Extend @MultiTenant to permit allowNulls etc to be defined
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/121[datanucleus-api-jdo-121] - Extend @SoftDelete to permit allowNulls etc to be defined
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/122[datanucleus-api-jdo-122] - Refactor org.datanucleus.api.jdo.metadata.XXXMetadataImpl to org.datanucleus.api.jdo.metadata.api
+* https://github.com/datanucleus/datanucleus-rdbms/issues/399[datanucleus-rdbms-399] - Update Map store handling to make use new putAll() method, and to grab entrySet when current map unknown
+* https://github.com/datanucleus/datanucleus-rdbms/issues/401[datanucleus-rdbms-401] - Delete of owner of 1-1 uni FK relation (not dependent field) can load the related object but needn't
+* https://github.com/datanucleus/datanucleus-rdbms/issues/403[datanucleus-rdbms-403] - Rename query extension "datanucleus.forUpdateNowait" to "datanucleus.query.forUpdateNowait"
+* https://github.com/datanucleus/datanucleus-rdbms/issues/404[datanucleus-rdbms-404] - Rename query extension "datanucleus.useIsNullWhenEqualsNullParameter" to "datanucleus.query.useIsNullWhenEqualsNullParameter"
+* https://github.com/datanucleus/datanucleus-mongodb/issues/59[datanucleus-mongodb-55] - Load of object doesnt check for tenantId when running multitenancy
+* https://github.com/datanucleus/datanucleus-mongodb/issues/60[datanucleus-mongodb-60] - Move to mongodb-driver-legacy v4.3.1
+* https://github.com/datanucleus/datanucleus-mongodb/issues/61[datanucleus-mongodb-61] - Add support for SoftDelete so that a delete just sets the flag rather than deleting
+* https://github.com/datanucleus/datanucleus-cassandra/issues/38[datanucleus-cassandra-38] - Support Cassandra v4
+* https://github.com/datanucleus/datanucleus-cassandra/issues/40[datanucleus-cassandra-40] - Support persistence of java.time types
+* https://github.com/datanucleus/datanucleus-cassandra/issues/41[datanucleus-cassandra-41] - Support SoftDelete lifecycle of operations
+* https://github.com/datanucleus/datanucleus-cassandra/issues/42[datanucleus-cassandra-42] - Support querying of multitenancy / softdelete candidate classes
+* https://github.com/datanucleus/datanucleus-excel/issues/22[datanucleus-excel-22] - Upgrade to POI v5.0.0
+* https://github.com/datanucleus/datanucleus-geospatial/issues/15[datanucleus-geospatial-15] - Change constructor arg for SpatialHelper to RDBMSStoreManager since only for RDBMS
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/401[datanucleus-core-401] - DateStringConverter fails on Java11
+* https://github.com/datanucleus/datanucleus-core/issues/402[datanucleus-core-402] - CalendarStringConverter fails on Java11
+* https://github.com/datanucleus/datanucleus-core/issues/405[datanucleus-core-405] - Mutation of SCO field before load of old value can result in incorrect datastore contents
+* https://github.com/datanucleus/datanucleus-core/issues/416[datanucleus-core-416] - Fix IS EMPTY clause for JPQL queries
+* https://github.com/datanucleus/datanucleus-mongodb/issues/59[datanucleus-mongodb-59] - Load of object doesnt check for tenantId when running multitenancy
+* https://github.com/datanucleus/datanucleus-cassandra/issues/39[datanucleus-cassandra-39] - CassandraQueryResult behaves incorrectly wrt fetchSize
+
 
 - - -
 
