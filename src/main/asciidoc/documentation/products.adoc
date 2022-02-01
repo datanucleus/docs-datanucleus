@@ -47,7 +47,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/6.0/[Downloa
 https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.2/[Download]
 |link:news/access_platform_5_2.html[HTML]
 
-|5.1 (Democritus)
+|_5.1 (Democritus)_
 |5.1.11
 |Retired
 |JDO3.2, JPA2.2+, REST
@@ -58,7 +58,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.2/[Downloa
 https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.1/[Download]
 |link:news/access_platform_5_1.html[HTML]
 
-|5.0 (Schrodinger)
+|_5.0 (Schrodinger)_
 |5.0.10
 |Retired
 |JDO3.2, JPA2.1+, REST
@@ -69,7 +69,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.1/[Downloa
 https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.0/[Download]
 |link:news/access_platform_5_0.html[HTML]
 
-|4.2 (Planck)
+|_4.2 (Planck)_
 |4.2.12
 |Retired
 |JDO3.2, JPA2.1, REST
@@ -79,7 +79,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/5.0/[Downloa
 |https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform/4.2.0.release/[Download]
 |link:news/access_platform_4_2.html[HTML]
 
-|4.1 (Chadwick)
+|_4.1 (Chadwick)_
 |4.1.17
 |Retired
 |JDO3.1, JPA2.1, REST
