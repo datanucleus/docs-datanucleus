@@ -18,7 +18,23 @@ _Version 5.2_ includes the following over 5.1
 
 == Future Plans
 
-* __5.2.11 2021?__
+* __5.2.12 2022?__
+
+- - -
+
+== DataNucleus AccessPlatform 5.2.11
+
+__05 March 2022__ : _Version 5.2.11_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/414[datanucleus-rdbms-414] - Change List backing store code for indexed list to shift in bulk (single statement)
+* https://github.com/datanucleus/datanucleus-rdbms/issues/415[datanucleus-rdbms-415] - Provide mechanism for 1-1 owned / N-1 FK relation to be marked to fetch the "PK" only and not instantiate (when not in FetchPlan)
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/405[datanucleus-rdbms-405] - Updated the default for the DatastoreId.class definition; it should be a BigInt by default
+
 
 - - -
 
