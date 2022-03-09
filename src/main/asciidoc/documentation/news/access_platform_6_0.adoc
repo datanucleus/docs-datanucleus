@@ -16,7 +16,49 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.0.M4 2022?__
+* __6.0.0.M5 2022?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.0.M4
+
+__? ???? 2022__ : _Version 6.0.0.M4_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/29[datanucleus-core-29] - Provide ability for store plugins to load references of related objects and cache them in the ExecutionContext (to save later fetch)
+* https://github.com/datanucleus/datanucleus-core/issues/420[datanucleus-core-420] - Ignore persistence properties of form "datanucleus.schema.generateXXX" when using SchemaTool
+* https://github.com/datanucleus/datanucleus-core/issues/430[datanucleus-core-430] - Move AutoStartMechanism helper code to org.datanucleus.store.autostart package
+* https://github.com/datanucleus/datanucleus-core/issues/431[datanucleus-core-431] - Metadata : provide fast lookup of different type of member
+* https://github.com/datanucleus/datanucleus-core/issues/432[datanucleus-core-432] - Move RDBMSStoreManager getCatalogName, getSchemaName to StoreManager
+* https://github.com/datanucleus/datanucleus-core/issues/434[datanucleus-core-434] - Remove Lock object from StateManagerImpl
+* https://github.com/datanucleus/datanucleus-core/issues/435[datanucleus-core-435] - EmbeddedMetaData : drop memberMetaData and just use members
+* https://github.com/datanucleus/datanucleus-core/issues/436[datanucleus-core-436] - Drop datanucleus.jmxType of "default" (use "platform" instead)
+* https://github.com/datanucleus/datanucleus-core/issues/437[datanucleus-core-437] - Offload StateManagerImpl savedPC, savedLoadedFields, savedPersistenceFlags into separate object
+* https://github.com/datanucleus/datanucleus-core/issues/438[datanucleus-core-438] - Change StateManager for embedded cases to only allow one "owner"
+* https://github.com/datanucleus/datanucleus-core/issues/439[datanucleus-core-439] - Offload StateManagerImpl "activity" into flags bits
+* https://github.com/datanucleus/datanucleus-core/issues/440[datanucleus-core-440] - Load of 1-N BIDIR collection should store owner in StateManager of each element if owner field isn't loaded by default. 
+* https://github.com/datanucleus/datanucleus-core/issues/441[datanucleus-core-441] - Backed SCO Collection wrappers can avoid datastore call on remove(element) if not in the cached collection
+* https://github.com/datanucleus/datanucleus-core/issues/443[datanucleus-core-443] - L2 cache is not updated when stored field is instantiated or when not already present
+* https://github.com/datanucleus/datanucleus-core/issues/444[datanucleus-core-444] - Avoid embedded objects being put in L1 cache
+* https://github.com/datanucleus/datanucleus-core/issues/445[datanucleus-core-445] - Change embedded object handling to ignore lifecycle, since managed by owner object
+* https://github.com/datanucleus/datanucleus-rdbms/issues/370[datanucleus-rdbms-370] - Provide mechanism for 1-1 owned / N-1 FK relation to be marked to fetch the "PK" only and not instantiate (when not in FetchPlan)
+* https://github.com/datanucleus/datanucleus-rdbms/issues/407[datanucleus-rdbms-407] - Table lookups in DatabaseMetaData only use catalog/schema if user-defined but should take default for the database
+* https://github.com/datanucleus/datanucleus-rdbms/issues/408[datanucleus-rdbms-408] - Support H2 v2
+* https://github.com/datanucleus/datanucleus-rdbms/issues/410[datanucleus-rdbms-410] - Change "fetch-fk-only" member extension to equate to recursion-depth=0 feature
+* https://github.com/datanucleus/datanucleus-rdbms/issues/411[datanucleus-rdbms-411] - adds support for google cloud spanner
+* https://github.com/datanucleus/datanucleus-rdbms/issues/412[datanucleus-rdbms-412] - Change JavaTypeMapping getObject/setObject signature for embedded cases
+* https://github.com/datanucleus/datanucleus-rdbms/issues/413[datanucleus-rdbms-413] - Change List backing store code for indexed list to shift in bulk (single statement)
+* https://github.com/datanucleus/datanucleus-rdbms/issues/416[datanucleus-rdbms-416] - ListStore.removeAll() is inefficient for indexed list, should do single "nulling" of list indexes and minimal reorders
+* https://github.com/datanucleus/datanucleus-rdbms/issues/417[datanucleus-rdbms-417] - Fetch of relation at one side of 1-1 bi relation should store the id of the related object in the other side StateManager
+* https://github.com/datanucleus/datanucleus-rdbms/issues/418[datanucleus-rdbms-418] - Allow auto-fetch of (unselected) FK fields in fetch request
+* https://github.com/datanucleus/datanucleus-rdbms/issues/420[datanucleus-rdbms-420] - Provide fallback JDBC type=NUMERIC when MySQL doesnt provide for it
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/27[datanucleus-rdbms-27] - Update of embedded when using pessimistic txns can result in problem in dirty field handling
+* https://github.com/datanucleus/datanucleus-rdbms/issues/406[datanucleus-rdbms-406] - Updated the default for the DatastoreId.class definition; it should be a BigInt by default, from 5.2
+* https://github.com/datanucleus/datanucleus-rdbms/issues/409[datanucleus-rdbms-409] - Specification of column name in <primary-key> block doesnt use identifier case in checks
 
 - - -
 
