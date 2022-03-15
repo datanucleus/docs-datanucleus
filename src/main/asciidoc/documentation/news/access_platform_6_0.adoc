@@ -22,7 +22,7 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == DataNucleus AccessPlatform 6.0.0.M4
 
-__? ???? 2022__ : _Version 6.0.0.M4_ includes the following changes
+__15 March 2022__ : _Version 6.0.0.M4_ includes the following changes
 
 === Enhancements
 
