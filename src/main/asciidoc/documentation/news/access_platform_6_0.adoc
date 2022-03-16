@@ -9,7 +9,7 @@ The 6.0 release of AccessPlatform is in the planning/development phase.
 _Version 6.0_ is currently planned to include the following over 5.2
 
 * Require minimum Java version 11
-* Support Jakarta Persistence API
+* Support Jakarta Persistence API, v3.0 and v3.1
 * Support Java module specifications
 * Support Cassandra v4
 
