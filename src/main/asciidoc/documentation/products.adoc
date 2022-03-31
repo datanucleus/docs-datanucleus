@@ -29,7 +29,7 @@ Amazon S3, GoogleStorage, _[db4o, NeoDatis]_
 |6.0.0.m4
 |Developed
 |JDO3.2, JPA2.2+, REST
-|11+
+|11-17
 |?
 |link:../support.html#free[Free], link:../support.html#commercial[Commercial]
 |http://www.datanucleus.org/products/accessplatform_6_0/index.html[Online],
