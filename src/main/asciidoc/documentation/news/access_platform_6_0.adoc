@@ -16,7 +16,59 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.0.M5 2022?__
+* __6.0.0.RELEASE 2022?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.0.M5
+
+__07 May 2022__ : _Version 6.0.0.M5_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/446[datanucleus-core-446] - Support Jakarta LOCAL_DATE, LOCAL_TIME, LOCAL_DATETIME
+* https://github.com/datanucleus/datanucleus-core/issues/447[datanucleus-core-447] - Upgrade ASM to v9.3
+* https://github.com/datanucleus/datanucleus-core/issues/448[datanucleus-core-448] - Support POWER, ROUND function evaluation for in-memory queries
+* https://github.com/datanucleus/datanucleus-core/issues/449[datanucleus-core-449] - Support ATAN2 function evaluation for in-memory queries
+* https://github.com/datanucleus/datanucleus-core/issues/450[datanucleus-core-450] - Support COT function evaluation for in-memory queries
+* https://github.com/datanucleus/datanucleus-core/issues/451[datanucleus-core-451] - Support COSH, SINH, TANH function evaluation for in-memory queries
+* https://github.com/datanucleus/datanucleus-core/issues/457[datanucleus-core-457] - Remove many toLowerCase in properties/extension handling for efficiency
+* https://github.com/datanucleus/datanucleus-core/issues/458[datanucleus-core-458] - ClassUtils.newInstance has a constructor cache, but the benefit is dubious
+* https://github.com/datanucleus/datanucleus-core/issues/460[datanucleus-core-460] - Move all SCO wrapper creation to SCOUtils
+* https://github.com/datanucleus/datanucleus-core/issues/461[datanucleus-core-461] - Drop use of org.datanucleus.util.MultiMap, use Java standard classes for same benefit
+* https://github.com/datanucleus/datanucleus-core/issues/462[datanucleus-core-462] - Change logging default to Log4J v2, and allow use of NullLogger
+* https://github.com/datanucleus/datanucleus-core/issues/463[datanucleus-core-463] - Add property to permit updating all candidate fields on query result processing
+* https://github.com/datanucleus/datanucleus-core/issues/464[datanucleus-core-464] - Add ability to treat java.util.Date (and java.sql.Date, Time, Timestamp) as non-mutable
+* https://github.com/datanucleus/datanucleus-core/issues/467[datanucleus-core-467] - Support recursion-depth=0 on DFG fields
+* https://github.com/datanucleus/datanucleus-core/issues/468[datanucleus-core-468] - Remove support for fetch-fk-only
+* https://github.com/datanucleus/datanucleus-core/issues/469[datanucleus-core-469] - Deprecate XMLAutoStarter
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/123[datanucleus-api-jdo-123] - Support JDO XSD/DTD file at https://db.apache.org/jdo/xmlns/
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/126[datanucleus-api-jdo-126] - Add convenience method to return the fields of a class that are in the current FetchPlan
+* https://github.com/datanucleus/datanucleus-api-jakarta/issues/9[datanucleus-api-jakarta-9] - Support jakarta-315
+* https://github.com/datanucleus/datanucleus-api-jakarta/issues/10[datanucleus-api-jakarta-10] - Support ln, power, sign, round, floor, ceiling for jakarta-171, jakarta-351
+* https://github.com/datanucleus/datanucleus-api-jakarta/issues/11[datanucleus-api-jakarta-11] - Support localDate, localTime, localDateTime on CriteriaBuilder
+* https://github.com/datanucleus/datanucleus-rdbms/issues/423[datanucleus-rdbms-423] - Support Jakarta LOCAL_DATE, LOCAL_TIME, LOCAL_DATETIME
+* https://github.com/datanucleus/datanucleus-rdbms/issues/424[datanucleus-rdbms-424] - Support SIGN SQL function
+* https://github.com/datanucleus/datanucleus-rdbms/issues/425[datanucleus-rdbms-425] - Support ATAN2 SQL function
+* https://github.com/datanucleus/datanucleus-rdbms/issues/426[datanucleus-rdbms-426] - Support COT SQL function
+* https://github.com/datanucleus/datanucleus-rdbms/issues/427[datanucleus-rdbms-427] - Support COSH, SINH, TANH SQL functions
+* https://github.com/datanucleus/datanucleus-rdbms/issues/430[datanucleus-rdbms-430] - SQLite v3.30.0 adds support for ORDER BY ... NULLS FIRST|LAST
+* https://github.com/datanucleus/datanucleus-rdbms/issues/432[datanucleus-rdbms-432] - Use of Calendar for timezone handling in result set interfacing is creating clones maybe unnecesarily
+* https://github.com/datanucleus/datanucleus-rdbms/issues/434[datanucleus-rdbms-434] - Support "PARTITIONED TABLE" table type from DatabaseMetadata
+* https://github.com/datanucleus/datanucleus-rdbms/issues/436[datanucleus-rdbms-436] - Support updating of all candidate fields when processing query results
+* https://github.com/datanucleus/datanucleus-rdbms/issues/439[datanucleus-rdbms-439] - Expand fetch-fk-only to only automatically apply if recursionDepth is not set from default.
+* https://github.com/datanucleus/datanucleus-rdbms/issues/441[datanucleus-rdbms-441] - Remove support for fetch-fk-only
+
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/453[datanucleus-core-453] - Don't L2 cache a field that is a DN Collection instance
+* https://github.com/datanucleus/datanucleus-core/issues/454[datanucleus-core-454] - Compound identity with embedded persistable creates StateManager that is not embedded
+* https://github.com/datanucleus/datanucleus-core/issues/456[datanucleus-core-456] - Support QueryResultCache "none" setting
+* https://github.com/datanucleus/datanucleus-core/issues/465[datanucleus-core-465] - FetchPlanForClass.getRecursionDepthForMember doesn't take in to account dynamically defined groups
+* https://github.com/datanucleus/datanucleus-rdbms/issues/431[datanucleus-rdbms-431] - datanucleus.query.useFetchPlan is seemingly not working
+* https://github.com/datanucleus/datanucleus-rdbms/issues/438[datanucleus-rdbms-438] - Update PR #375 so that it gets the identifier name not the column name
+
 
 - - -
 
@@ -56,7 +108,7 @@ __15 March 2022__ : _Version 6.0.0.M4_ includes the following changes
 
 === Bugs
 
-* https://github.com/datanucleus/datanucleus-core/issues/27[datanucleus-rdbms-27] - Update of embedded when using pessimistic txns can result in problem in dirty field handling
+* https://github.com/datanucleus/datanucleus-core/issues/27[datanucleus-core-27] - Update of embedded when using pessimistic txns can result in problem in dirty field handling
 * https://github.com/datanucleus/datanucleus-rdbms/issues/406[datanucleus-rdbms-406] - Updated the default for the DatastoreId.class definition; it should be a BigInt by default, from 5.2
 * https://github.com/datanucleus/datanucleus-rdbms/issues/409[datanucleus-rdbms-409] - Specification of column name in <primary-key> block doesnt use identifier case in checks
 
