@@ -20,8 +20,8 @@ The principal DataNucleus releases are :-
 
 * https://sourceforge.net/projects/datanucleus/files/datanucleus-accessplatform[*DataNucleus AccessPlatform ZIP file*] :
 A zip of all DataNucleus plugin jars for a particular datastore and, optionally, jars for key dependencies. You can also check the dependencies for 
-http://www.datanucleus.org/products/accessplatform_5_2/index.html#dependencies[v5.2] and
-http://www.datanucleus.org/products/accessplatform_5_1/index.html#dependencies[v5.1] separately if you wish. 
+http://www.datanucleus.org/products/accessplatform_6_0/index.html#dependencies[v6.0] and
+http://www.datanucleus.org/products/accessplatform_5_2/index.html#dependencies[v5.2] separately if you wish. 
 The zip is available from our SourceForge project home page.
 * https://repo1.maven.org/maven2/org/datanucleus/[*DataNucleus Plugin JARs (individual)*] : 
 DataNucleus products are made up of a selection of plugins, and each plugin is also an OSGi bundle. You can download plugins individually, if you wish, as they are released.
