@@ -15,7 +15,25 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.0.RELEASE 2022?__
+* __6.0.1 2022?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.0.RELEASE
+
+__25 June 2022__ : _Version 6.0.0.RELEASE_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/470[datanucleus-core-470] - Drop XMLAutoStarter, deprecated in 6.0.0.m5
+* https://github.com/datanucleus/datanucleus-core/issues/473[datanucleus-core-473] - Refactor DNStateManager.unloadField to take in field number
+* https://github.com/datanucleus/datanucleus-core/issues/475[datanucleus-core-475] - Rationalise enums for query language
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/474[datanucleus-core-474] - IllegalMonitorStateException being thrown during lock release when datanucleus.multithreaded=true
+* https://github.com/datanucleus/datanucleus-rdbms/issues/443[datanucleus-rdbms-443] - Handling of insert audit attributes (user, timestamp) is incorrect when specified on a field
+
 
 - - -
 
