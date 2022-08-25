@@ -15,7 +15,22 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.1 2022?__
+* __6.0.2 2022?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.1
+
+__25 August 2022__ : _Version 6.0.1_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-jdo-query/issues/19[datanucleus-jdo-query-19] - Support generics on Optional field in generated class
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/444[datanucleus-rdbms-444] - Regression with SQL Server caused by #408
+
 
 - - -
 
