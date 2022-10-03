@@ -25,7 +25,7 @@ donations [AT] datanucleus [DOT] org
 === How to Donate : Stripe
 
 The second way to donate is to use Stripe. The disadvantage of Stripe is that a (small) percentage of any monies donated is taken by Stripe. 
-If you wish to donate to the DataNucleus project go to https://buy.stripe.com/14kbKX35qfUm9c49AA[this payment form].
+If you wish to donate to the DataNucleus project go to https://buy.stripe.com/14kbKX35qfUm9c49AA[this payment form, window=_blank].
 
 === List of Donors
 
