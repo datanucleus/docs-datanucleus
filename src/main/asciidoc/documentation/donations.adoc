@@ -1,0 +1,106 @@
+[[products]]
+= DataNucleus Donations
+:_basedir: ../
+:_imagesdir: images/
+
+
+== Donations
+
+
+DataNucleus is an Open Source development. 
+It is written by volunteers in their spare time. They receive no payment for their development work (both providing the software, and for their time answering your 
+questions on the forum), and as a user you are benefiting from this effort. 
+The DataNucleus project additionally incurs some costs in providing this software, in terms of hosting, and domain registration.
+
+As an alternative to joining with us in writing DataNucleus, the DataNucleus project is open to receive donations to help fund the project. 
+These donations will initially cover the expenses incurred by hosting etc, but can be targeted at particular bug fixes, feature requests, or providing email support 
+to aid your project use of DataNucleus. Thanks for your support.
+
+=== How to Donate : Bank Transfer
+
+The first way to donate is to make a bank transfer, and you can arrange this by contacting one of the project administrators using the email 
+donations [AT] datanucleus [DOT] org
+
+
+=== How to Donate : Stripe
+
+The second way to donate is to use Stripe. The disadvantage of Stripe is that a (small) percentage of any monies donated is taken by Stripe. 
+If you wish to donate to the DataNucleus project go to https://buy.stripe.com/14kbKX35qfUm9c49AA[this payment form].
+
+=== List of Donors
+
+Below is a list of donors who have supported the DataNucleus project by way of monetary donations. If you donate you can have your name or company name listed here. 
+Donating 50 GBP or more means that you can have your name or company name hyper-linked.
+
+
+[cols="1,1,1", options="header"]
+|===
+|Individual/Company
+|Amount(GBP)
+|Reason for donation
+
+|image:../images/companies/nightlabs.png[Nightlabs, link=http://www.nightlabs.de]
+|1250
+|JCA development, and general DataNucleus work
+
+|image:../images/companies/google.jpg[Google, link=http://www.google.com]
+|417
+|Efficient bulk retrieval (pm.getObjectsById) for RDBMS
+
+|image:../images/companies/ikentoo.png[iKentoo, link=http://www.ikentoo.com]
+|292
+|L2 caching problem solving/improvements
+
+|image:../images/companies/ridgetop.jpg[Ridgetop Group, link=http://www.ridgetop-group.com]
+|292
+|Maven2 availability of artifacts, and buildability of project
+
+|image:../images/companies/colibri.jpg[Projecto Colibri, link=http://www.projectocolibri.com/]
+|230
+|General donation
+
+|http://www.travelmuse.com[Travelmuse]
+|167
+|NUCRDBMS-38 and general work
+
+|http://www.mediaingenuity.com/[Will Becker]
+|167
+|General donation
+
+|image:../images/companies/stepahead.png[StepAhead Software, link=http://stepaheadsoftware.com/products/javelin/javelin.htm]
+|133
+|General donation
+
+|http://www.siptize.com/[Siptize]
+|80
+|General donation
+
+|Michael Ghebreyesus and Alexander Ilyin
+|67
+|General donation
+
+|http://forkliftsystems.com/[ForkLift Systems Inc]
+|50
+|General donation
+
+|http://www.o365cloudexperts.com[365CloudExperts]
+|50
+|General donation
+
+|http://www.standardzilla.com/[StandardZilla]
+|50
+|General donation
+
+|http://www.top10-websitehosting.co.uk/[Top-10 Website Hosting]
+|50
+|General donation
+
+|https://www.nationalforkliftfoundation.com/[National ForkLift Foundation]
+|50
+|General donation
+|===
+
+
+The following people/companies have also donated smaller amounts : 
+Extronis, Guido Anzuoni, Chris Murphy, David Berkman, Wu Hugh, Vieri del Bianco, BadCreditLoans, TotallyMoney : Mortgage Comparison Site, 
+CashDoctors, Medical Equipment Pros, UnusualHomes, Maciej Węgorkiewicz
