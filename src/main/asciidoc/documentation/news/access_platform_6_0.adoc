@@ -15,7 +15,27 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.2 2022?__
+* __6.0.3 2022?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.2
+
+__3 October 2022__ : _Version 6.0.2_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/478[datanucleus-core-478] - Improve thread safety of statistics
+* https://github.com/datanucleus/datanucleus-rdbms/issues/451[datanucleus-rdbms-451] - Remove column mapping to JDBC type FLOAT for SQL Server
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/479[datanucleus-core-479] - Closing PersistenceManager can cause deadlocks when datanucleus.multithreaded=true
+* https://github.com/datanucleus/datanucleus-rdbms/issues/447[datanucleus-rdbms-447] - Fix illegal precision spec for MySQL TINYTEXT
+* https://github.com/datanucleus/datanucleus-rdbms/issues/448[datanucleus-rdbms-448] - Support TINYBLOB on MySQL/MariaDB without size specifier, as per TINYTEXT
+* https://github.com/datanucleus/datanucleus-rdbms/issues/449[datanucleus-rdbms-449] - Fix incomplete fix for #444
+* https://github.com/datanucleus/datanucleus-rdbms/issues/450[datanucleus-rdbms-450] - Search of setter function in ResultClassROF.getObject() is broken
+
 
 - - -
 
