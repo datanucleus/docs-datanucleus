@@ -15,7 +15,24 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.3 2022?__
+* __6.0.4 2023?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.3
+
+__2 January 2023__ : _Version 6.0.3_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/482[datanucleus-core-482] - Support Java 20
+* https://github.com/datanucleus/datanucleus-rdbms/issues/456[datanucleus-rdbms-456] - PostgreSQL: Use BIGSERIAL when identity column is mapped to BIGINT
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/452[datanucleus-rdbms-452] - NullPointerException in ResultClassROF.getObject() in 6.0.2
+* https://github.com/datanucleus/datanucleus-rdbms/issues/454[datanucleus-rdbms-454] - Missing argType cache in ResultClassROF
+
 
 - - -
 
