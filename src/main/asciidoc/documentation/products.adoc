@@ -38,7 +38,7 @@ https://sourceforge.net/projects/datanucleus/files/datanucleus-docs/6.0/[Downloa
 
 |5.2
 |5.2.11
-|Developed
+|Retired
 |JDO3.2, JPA2.2+, REST
 |8-14
 |Mar/2019
