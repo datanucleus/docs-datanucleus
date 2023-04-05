@@ -19,6 +19,26 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 - - -
 
+== DataNucleus AccessPlatform 6.0.4
+
+__5 April 2023__ : _Version 6.0.4_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-rdbms/issues/462[datanucleus-rdbms-462] - Support bulk-fetch on a Collection when field is empty
+* https://github.com/datanucleus/datanucleus-rdbms/issues/463[datanucleus-rdbms-463] - Improved support for the SQL XML type.
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/484[datanucleus-core-484] - Fix warning log line in ColumnMetaData
+* https://github.com/datanucleus/datanucleus-rdbms/issues/457[datanucleus-rdbms-457] - ResultClassROF can fail to set fields/properties when JDBC driver returns unassignable type
+* https://github.com/datanucleus/datanucleus-rdbms/issues/459[datanucleus-rdbms-459] - datanucleus.query.jdoql.{varName}.join extension does not work when "varName" is not lower case
+* https://github.com/datanucleus/datanucleus-geospatial/issues/17[datanucleus-geospatial-17] - Fixed OSGi issues which prevents bundle from starting
+* https://github.com/datanucleus/datanucleus-jodatime/issues/4[datanucleus-jodatime-4] - Fixed OSGi issues which prevents bundle from starting
+
+
+- - -
+
 == DataNucleus AccessPlatform 6.0.3
 
 __2 January 2023__ : _Version 6.0.3_ includes the following changes
