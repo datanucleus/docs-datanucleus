@@ -15,7 +15,28 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.4 2023?__
+* __6.0.6 2023?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.5
+
+__13 August 2023__ : _Version 6.0.5_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/488[datanucleus-core-488] - Enabled using java logger - even if Log4j is present
+* https://github.com/datanucleus/datanucleus-rdbms/issues/468[datanucleus-rdbms-468] - Support ConnectionInitSQL with HikariCP
+* https://github.com/datanucleus/datanucleus-rdbms/issues/471[datanucleus-rdbms-471] - Enabled builtin DBCP connection pool to act on auto-commit and max-lifetime
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/485[datanucleus-core-485] - TypeConversion for boolean not working with Oracle
+* https://github.com/datanucleus/datanucleus-core/issues/490[datanucleus-core-490] - Fixed having single field of abstract type using recursion depth 0
+* https://github.com/datanucleus/datanucleus-rdbms/issues/470[datanucleus-rdbms-470] - Fixed problem in handling of DB column mapped into multiple fields
+* https://github.com/datanucleus/datanucleus-rdbms/issues/475[datanucleus-rdbms-475] - Fixed SQL query leak resulting in OutOfMemory
+* https://github.com/datanucleus/datanucleus-rdbms/issues/476[datanucleus-rdbms-476] - Fixed having single field of abstract type using recursion depth 0
+
 
 - - -
 
