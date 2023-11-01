@@ -29,7 +29,7 @@ __1 November 2023__ : _Version 6.0.6_ includes the following changes
 * https://github.com/datanucleus/datanucleus-core/issues/496[datanucleus-core-496] - Performance optimization
 * https://github.com/datanucleus/datanucleus-core/issues/497[datanucleus-core-497] - Making it easier to extend StateManagerImpl
 * https://github.com/datanucleus/datanucleus-core/issues/498[datanucleus-core-498] - Get URL to the manifest file if plugin URL starts with 'bundle'
-* https://github.com/datanucleus/datanucleus-core/issues/499[datanucleus-core-499] - EUpgrade ASM to v9.6
+* https://github.com/datanucleus/datanucleus-core/issues/499[datanucleus-core-499] - Upgrade ASM to v9.6
 * https://github.com/datanucleus/datanucleus-rdbms/issues/477[datanucleus-rdbms-477] - Added option to allow implementing custom discriminator with DiscriminatorDefiner metadata option
 * https://github.com/datanucleus/datanucleus-rdbms/issues/478[datanucleus-rdbms-478] - PostgreSQLAdapter : change default IsolationForSchemaCreation to READ_COMMITTED
 * https://github.com/datanucleus/datanucleus-rdbms/issues/481[datanucleus-rdbms-481] - Making it easier to extend JoinSetStore in custom code.
