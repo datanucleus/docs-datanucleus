@@ -15,7 +15,33 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.7 2024?__
+* __6.0.8 May 2024?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.7
+
+__3 February 2024__ : _Version 6.0.7_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/502[datanucleus-core-502] - Replace hard-coded property String with PropertyNames constants
+* https://github.com/datanucleus/datanucleus-core/issues/503[datanucleus-core-503] - Replace hardcode string with PropertyNames constant
+* https://github.com/datanucleus/datanucleus-core/issues/504[datanucleus-core-504] - Better extendability.
+* https://github.com/datanucleus/datanucleus-core/issues/505[datanucleus-core-505] - Added extension-point for LockManager. Added option for specifying max value for version-number when using version-number strategy with optimistic locking.
+* https://github.com/datanucleus/datanucleus-core/issues/506[datanucleus-core-506] - Added new L2 Cache update mode: datastore-read-only. With this mode L2 cache is only updated on datastre-read and NOT at commit. A custom commit listener can be made to control L2 cache population during commit if required.
+* https://github.com/datanucleus/datanucleus-core/issues/507[datanucleus-core-507] - Added options for better controlling the flush process.
+* https://github.com/datanucleus/datanucleus-core/issues/508[datanucleus-core-508] -Improvements to ExecutionContext.findObject and Level 1 cache handling.
+* https://github.com/datanucleus/datanucleus-core/issues/509[datanucleus-core-509] - Added option for having custom cache implementation for ExecutionContextImpl.enlistedSMCache. Also added performance accessor for value-set of this cache.
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/128[datanucleus-api-jdo-128] - Improved optimistic-lock exception handling on commit.
+* https://github.com/datanucleus/datanucleus-rdbms/issues/485[datanucleus-rdbms-485] - Enabled nullable application identity fields for RDBMS engine (not for schema generation) to allow for mapping on to legacy schemas without primary key
+* https://github.com/datanucleus/datanucleus-rdbms/issues/486[datanucleus-rdbms-486] - Added option for supplying custom FlushProcess. Also improved support for SQL batching inserts/updates/deletes combined with optimistic lock handling.
+* https://github.com/datanucleus/datanucleus-rdbms/issues/487[datanucleus-rdbms-487] - Added RDBMS extension for member to specify that updates to member should not trigger version update when using optimistic locking.
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/500[datanucleus-core-500] - Bulk fetch of empty collections can cause ClassCastException when calling setter with a different collection implementation
+
 
 - - -
 
@@ -37,7 +63,7 @@ __1 November 2023__ : _Version 6.0.6_ includes the following changes
 
 === Bugs
 
-* https://github.com/datanucleus/datanucleus-rdbms/issues/479[datanucleus-rdbms-479] - Issue #470 doesn't allow for discriminatorColumnName not being in different cas
+* https://github.com/datanucleus/datanucleus-rdbms/issues/479[datanucleus-rdbms-479] - Issue #470 doesn't allow for discriminatorColumnName not being in different case
 * https://github.com/datanucleus/datanucleus-rdbms/issues/480[datanucleus-rdbms-480] - Fixes for querying M-1 UNI directional with join table mappings (and setting them)
 
 
