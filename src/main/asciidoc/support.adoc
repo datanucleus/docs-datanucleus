@@ -7,12 +7,10 @@
 == Free Support
 
 With any software, there are times when you need assistance to make full use of it. 
-Here at DataNucleus we want you to make the best of the software that we provide. 
-For that reason we provide both commercial and free support facilities.
+Here at DataNucleus we want you to make the best of the software that we provide, and we provide a level of free support.
 DataNucleus provides access to public discussion/IRC facilities, providing a place for you to discuss issues you are having. 
 We don't guarantee to provide answers, simply providing places where you could get some level of support when people have time.
 This may not be adequate for some people hence why we also provide the commercial version further down this page.
-To utilise the free support route :-
 
 . Check the Documentation for http://www.datanucleus.org/products/accessplatform/index.html[DataNucleus AccessPlatform] before anything else. 
 The answer is usually there, either in a tutorial/example, or in one of the many guides. Yes I know you can't be bothered, but then this is 
@@ -33,185 +31,10 @@ NOTE: We have very little time for this type of support and contributors to Data
 
 
 
-[[commercial]]
-== Commercial Services
-
-image::images/logos/datanucleus_300_80.png[]
-
-DataNucleus is open source software, also providing good documentation and (public) test cases. As a result
-your team could, in principle, train themselves up on the software using the documentation and tests as basis,
-then when they come across problems look through the code and debug problems and/or develop new features. 
-Often though you don't have the time to devote to such activities so would prefer to out source this aspect of your project.
-The developers of DataNucleus are flexible to finding a support solution that meets your needs.
-__You cannot get better value and a higher level of DataNucleus experience than from us.__
-Our various commercial services are defined below complete with pricing (_note that all prices are in UK pounds (GBP) symbolised by the £ symbol_)
-
-* xref:support.html#timebased_consulting[__Time-Based Consulting__] : DataNucleus consultant(s) are available online at a mutually convenient time to provide answers 
-to your questions via Skype/IRC/IM/phone/etc. Simply pay by the hour as and when needed.
-* xref:support.html#support[__Support__] : DataNucleus consultant(s) are available to respond to problems that come up with your deployments, providing workarounds 
-to your problems, or providing rapid fixes. Optionally also allowing for feature additions to meet your requirements.
-
-[[timebased_consulting]]
-=== Time-based Consulting
-
-__DataNucleus__ developers can provide remote consulting using Email/IRC/IM/Skype to provide you with the response when you need it to tackle the 
-issues impacting on your project. This type of support is where questions come up during your deployment of DataNucleus and you need to ask 
-questions for particular situations. You can pay by the hour as and when you need it, when a developer is available.
-
-__Cost__ : 5 hours = £270, 10 hours = £520, 20 hours = £1000, 40 hours = £1950, 50 hours = £2450.
-Purchase of larger number of hours also available. mailto:support@datanucleus.com[Contact Us] for details.
-
-NOTE: All amounts are specified in GBP (symbolised by the £ symbol)
-
-NOTE: Any time-based consulting/support is purchased up-front with a lifetime of 1 year from purchase to use all hours.
-
-
-
-
-[[commercial_support]]
-=== Support
-
-__DataNucleus__ developers can provide a level of longer term support to meet your requirements, and rather than having fixed off-the-shelf 
-arrangements we prefer to tailor them to your needs. Below we outline some typical options that could suit your needs. 
-We cannot guarantee the availability of incident support for all problems because some problems are simply too complicated to resolve easily; 
-the majority of problems quickly point to where the problem is, and what can be done about them, whereas things like some large query syntax is 
-simply not resolvable into a single SQL query so we may not be able to provide what you need in that case.
-mailto:support@datanucleus.com[Contact Us] for details.
-
-* _General Support_ for the most common issues on API usage, defect reporting and bug fixing. It's available for free and on 
-availability on our online support mechanisms though has absolutely no guarantee of availability. If you want to receive support when
-it is needed, then consider the options below
-* _Incident Support_ for dedicated support for a single incident.
-* _Bronze/Gold Support_ for dedicate support covering multiple incidents over an extended period.
-
-[cols="4,2,2,2,2", options="header"]
-.SupportTypes
-|===
-|Feature
-|General Support
-|Incident Support
-|Bronze Support
-|Gold Support
-
-|Software supported
-|http://www.datanucleus.org/products/accessplatform[AccessPlatform]
-|http://www.datanucleus.org/products/accessplatform[AccessPlatform]
-|http://www.datanucleus.org/products/accessplatform[AccessPlatform]
-|http://www.datanucleus.org/products/accessplatform[AccessPlatform]
-
-|Support via Groups.IO/Gitter
-|icon:check[]
-|icon:times[]
-|icon:times[]
-|icon:times[]
-
-|Support via Email
-|icon:times[]
-|icon:check[]
-|icon:check[]
-|icon:check[]
-
-|Support via Phone
-|icon:times[]
-|icon:times[]
-|icon:times[]
-|icon:check[]
-
-|Usage Support
-|icon:check[]
-|icon:check[]
-|icon:check[]
-|icon:check[]
-
-|Design Support
-|icon:exclamation[]
-|icon:check[]
-|icon:check[]
-|icon:check[]
-
-|Priority Bug Fix
-|icon:times[]
-|icon:check[]
-|icon:check[]
-|icon:check[]
-
-|New Feature Support
-|icon:times[]
-|icon:times[]
-|icon:times[]
-|icon:check[]
-
-|Languages
-|English
-|English, Spanish
-|English, Spanish
-|English, Spanish
-
-|Support Days
-|N/A
-|Mon-Fri
-|Mon-Fri
-|Mon-Fri
-
-|Max Response Time
-|No limit
-|3 days
-|2 days
-|2 days
-
-|Number of incidents
-|N/A
-|1
-|4
-|8
-
-|Support validity
-|N/A
-|1 month
-|6 months
-|1 year
-
-|Price (without tax)
-|Free
-|£350
-|£1200 (subsequent incidents charged at £250)
-|£2200 (subsequent incidents charged at £230)
-|===
-
-NOTE: All amounts are specified in GBP (symbolised by the £ symbol)
-
-NOTE: Full support contract terms can be provided mailto:support@datanucleus.com[upon request].
-
-
-[[customers]]
-=== Customers
-
-There are many clients to whom DataNucleus developers have provided services. Below are a small subset.
-
-image::images/companies/nightlabs.png[Nightlabs]
-image::images/companies/metamicro.jpg[Metamicro]
-image::images/companies/bmc.png[BMC]
-image::images/companies/transcore.png[Transcore]
-image::images/companies/yahoo.png[Yahoo]
-image::images/companies/w4.png[W4]
-image::images/companies/ge.png[General Electric]
-image::images/companies/lockheed.png[Lockheed Martin]
-image::images/companies/seismicexchange.png[Seismic Exchange]
-image::images/companies/livestream.jpg[LiveStream]
-image::images/companies/cisco.png[Cisco Systems]
-image::images/companies/google.jpg[Google]
-image::images/companies/dat.png[DAT]
-image::images/companies/swanretail.png[SwanRetail]
-image::images/companies/leidos.png[Leidos]
-image::images/companies/groupe-cat.png[Groupe CAT]
-image::images/companies/wada.png[WADA]
-
-
-
 
 
 [[privacy]]
-=== Privacy
+== Privacy
 
 We are committed to safeguarding the privacy of users of our support services and we will only use the information we collect about you lawfully and in accordance 
 with the Data Protection Act 1998 (the “Act”).
@@ -221,38 +44,38 @@ The introduction of the European Union’s General Data Protection Regulation (G
 through Parliament is the basis of this change. This Privacy Notice is therefore intended to comply with the Act and GDPR but may change over time.
 
 
-==== Data Subject’s Terms & Conditions
+=== Data Subject’s Terms & Conditions
 
 This Privacy Notice forms part of Terms & Conditions and should be read by Data Subjects, i.e. “you,” or an identifiable person using this site and DataNucleus support services (see below).
 
 
-==== The Data Controller
+=== The Data Controller
 
 The support services featured on this http://www.datanucleus.org/support.html[website] are owned and operated by DataNucleus. 
 References to “we,” “us,” our,” or “the website” are references to DataNucleus. 
 Our services are operated as self-employed within the UK, run by Andy Jefferson.
 
 
-==== Data Protection Officer (DPO)
+=== Data Protection Officer (DPO)
 
 The mechanism for Data Subjects to raise concerns regarding the processing of their personal data by DataNucleus is to email: support@datanucleus.org; 
 or send a letter by registered mail to: _DataNucleus, 2 Littledale Close, Derby, United Kingdom_.
 
 
-==== Purpose of Processing Personal Data
+=== Purpose of Processing Personal Data
 
 We collect contact data to provide support services, and only collect such data when a contract is taken out by a customer, using their provided contact data.
 We do NOT collect any personal data by simply visiting the Website.
 
 
-==== Lawful Basis of Processing Personal Data
+=== Lawful Basis of Processing Personal Data
 
 Our use of your information is permitted by applicable data protection law:
 
 Because it is necessary for our legitimate interests in pursuing the purposes as set out above, and such interests in each case not being overridden by your privacy interests.
 
 
-==== Categories of Personal Data Processed
+=== Categories of Personal Data Processed
 
 The information we hold should be accurate and up to date. 
 The personal information which we hold will be held securely in accordance with our internal data protection and security policies.  
@@ -265,22 +88,22 @@ Skype address;
 Postal address
 
 
-==== Category of Recipients of Personal Data
+=== Category of Recipients of Personal Data
 
 No personal data will be passed to any other companies or individuals under any circumstances, except when you explicitly authorise it.
 
 
-==== Transfer of Personal Data Outside the EEA (European Economic Area)
+=== Transfer of Personal Data Outside the EEA (European Economic Area)
 
 Personal data will not be transferred outside of the UK. If this is required, consent will be explicitly requested from you.
 
 
-==== Sensitive Personal Data
+=== Sensitive Personal Data
 
 We will never collect sensitive personal data about you without your explicit consent and a clear explanation why it is required.
 
 
-==== Sharing with third parties
+=== Sharing with third parties
 
 We will, in general, not share your information with third parties under any circumstances.
 The only exceptions to this would be :
@@ -292,7 +115,7 @@ and would not be permitted to use such personal information for any other purpos
 
 
 
-==== Data Security
+=== Data Security
 
 Although we will do our best to protect your personal information, you should be aware that the transmission of information via the internet is not completely secure and we cannot 
 guarantee the security of your personal information transmitted to the Website or any third party; for this reason, any transmission is at your own risk. 
@@ -300,7 +123,7 @@ We will use strict operational procedures and adequate, technical and organisati
 transmission of this personal information.
 
 
-==== Retention of Personal Data
+=== Retention of Personal Data
 
 We keep your data only for as long as we need it. How long we need data depends on what we are using it for, whether that is to provide services to you, for our own legitimate interests 
 (described above) or so that we can comply with the law.
@@ -308,7 +131,7 @@ We will actively review the information we hold and when there is no longer a cu
 This review will include whether a support contract is still active.
 
 
-==== Data Subject’s Rights
+=== Data Subject’s Rights
 
 You have the following rights with respect to your personal data:
 When exercising any of the rights listed below, in order to process your request, we may need to verify your identity for your security.  
@@ -329,17 +152,17 @@ You can also lodge a complaint about our processing of your personal information
 * Rights related to automatic decision making : DataNucleus does not employ any automated decision-making or conduct profiling of Data Subjects.
 
 
-==== IP addresses and Cookies
+=== IP addresses and Cookies
 
 We do NOT collect information about your computer, your IP address, operating system or browser type.
 
 
-==== Changes to this Policy
+=== Changes to this Policy
 
 We keep this Privacy Notice under regular review and we will place any updates on this Website.
 
 
-==== Contact Details
+=== Contact Details
 
 Please contact us if you have any questions about this Privacy Notice or the information we hold about you or to exercise all relevant rights, queries or complaints at:
 _DataNucleus, 2 Littledale Close, Derby, United Kingdom_.
