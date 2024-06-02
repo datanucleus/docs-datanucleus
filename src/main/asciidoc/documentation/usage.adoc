@@ -36,8 +36,7 @@ to provide a zip file just to package all of their requirements up. In fact Data
 are run before any release guaranteeing a stable product. In addition we baseline our capabilities against standard Java TCKs (JDO, JPA)
 the definition of specification compliance. With our plugins you will not find large numbers of outstanding high priority issues that you have to workaround 
 (unlike what you find in the Hibernate, OpenJPA, EclipseLink issue trackers for example).
-* __DataNucleus provides a level of free support__ by way of https://groups.io/g/datanucleus/[Groups.IO] or https://gitter.im/datanucleus/Lobby[Gitter] 
-and also provides xref:../support.html#support[commercial support arrangements] if you require it.
+* __DataNucleus provides a level of free support__ by way of https://groups.io/g/datanucleus/[Groups.IO] or https://gitter.im/datanucleus/Lobby[Gitter].
 * __DataNucleus xref:../support.html#timebased_consulting[consulting]__ can be arranged with the developers of DataNucleus.
 * __DataNucleus is open to contributions/donations__ allowing individuals to help out and allowing companies to sponsor features that 
 they require for their deployments of DataNucleus.

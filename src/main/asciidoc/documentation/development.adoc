@@ -228,7 +228,7 @@ The GitHub DataNucleus project also provides the documentation for DataNucleus.
 
 ==== Documentation : datanucleus.org Project Site
 
-DataNucleus has a main site __datanucleus.org__ for the overall project and the commercial services that we offer. 
+DataNucleus has a main site __datanucleus.org__ for the overall project and the services that we offer. 
 This site uses AsciiDoc format documents, and uses the Maven AsciiDoctor plugin to generate HTML.
 The documents make use of the Bootstrap CSS/Javascript "library" (originally from Twitter), as well as Font-Awesome and some others.
 The documentation is in GitHub in repository https://github.com/datanucleus/docs-datanucleus[docs-datanucleus].
@@ -321,7 +321,7 @@ version of the product is set. Check this change in.
 
 Since DataNucleus development policy is that all current tests should always pass for checked in code then a plugin is
 always in a releasable state. In general changes don't sit in the source repo for more than a month without release.
-If a commercial client requires a particular feature or bug fix then a release is expedited. If some upstream plugin
+If a commercial client requires a particular feature or bug fix then a release can be expedited. If some upstream plugin
 needs releasing first then it is released before the plugin in question. We try to avoid any changes in internal APIs
 that would affect downstream plugins if not in a new release cycle. The following is the release process (administrator role)
 

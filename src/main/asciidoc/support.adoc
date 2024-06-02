@@ -10,7 +10,6 @@ With any software, there are times when you need assistance to make full use of 
 Here at DataNucleus we want you to make the best of the software that we provide, and we provide a level of free support.
 DataNucleus provides access to public discussion/IRC facilities, providing a place for you to discuss issues you are having. 
 We don't guarantee to provide answers, simply providing places where you could get some level of support when people have time.
-This may not be adequate for some people hence why we also provide the commercial version further down this page.
 
 . Check the Documentation for http://www.datanucleus.org/products/accessplatform/index.html[DataNucleus AccessPlatform] before anything else. 
 The answer is usually there, either in a tutorial/example, or in one of the many guides. Yes I know you can't be bothered, but then this is 
