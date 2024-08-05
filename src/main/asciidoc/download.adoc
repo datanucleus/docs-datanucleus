@@ -11,7 +11,7 @@ DataNucleus provides Open Source products, and you can freely download any __rel
 DataNucleus downloads are subject to the link:documentation/license.html[Apache 2 License].
 Note that DataNucleus software versioning uses the versioning strategy defined link:documentation/development.html#versioning[here].
 We hope that you are successful in your use of DataNucleus, and if you have any problems or queries, 
-please contact us using https://groups.io/g/datanucleus/[Groups.IO] or https://gitter.im/datanucleus/Lobby[Gitter].
+please contact us using https://groups.io/g/datanucleus/[Groups.IO].
 Be aware that we don't have much time for this free support so you could make a link:documentation/donations.html[donation] to further development and pay for our time providing support.
 
 The first thing to note is that __all DataNucleus releases are "stable"__, in that they all pass all DataNucleus tests and the relevant TCKs, 

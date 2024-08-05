@@ -17,7 +17,7 @@ where you can do things for yourself.
 . Look in the http://www.datanucleus.org/products/accessplatform/logging.html[DataNucleus LOG]. This usually contains a lot of information that 
 may answer the issue. You can always configure the log to give more output.
 . Try a xref:download.html[recent release] to see if your version is out of date, or download the latest code to see if the expected result is then achieved.
-. Go to the https://groups.io/g/datanucleus[__DataNucleus Groups.IO__] OR https://gitter.im/datanucleus/Lobby[__DataNucleus Gitter__] and ask. 
+. Go to the https://groups.io/g/datanucleus[__DataNucleus Groups.IO__] and ask. 
 Always try to give as clear a description of the problem as possible, together with your input data, and any associated log output. 
 *These are the only sites where we provide any free support*.
 . If you have a problem and don't report it, or report it on a third party site that we don't use then it really doesn't say much for your 
