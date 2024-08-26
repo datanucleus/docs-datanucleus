@@ -15,7 +15,28 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.8 May 2024?__
+* __6.0.9 2024?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.8
+
+__26 August 2024__ : _Version 6.0.8_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/129[datanucleus-api-jdo-129] - Improved nested exception handling
+* https://github.com/datanucleus/datanucleus-rdbms/issues/490[datanucleus-rdbms-490] - JDOQLQuery should throw exception if datastore does not support query canceling
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/512[datanucleus-core-512] - Better extendability of L2CacheRetrieveFieldManager and ManagedConnection.
+* https://github.com/datanucleus/datanucleus-core/issues/514[datanucleus-core-514] - Fixed error message
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/132[datanucleus-api-jdo-132] - Missing extensions in IndexMetaData when multiple indices are defined at class-level via @Index annotation
+* https://github.com/datanucleus/datanucleus-rdbms/issues/488[datanucleus-rdbms-488] - Bugfixed support for nullable primary-keys. Now also works when PK isn't first fields in Persistable Class.
+* https://github.com/datanucleus/datanucleus-rdbms/issues/491[datanucleus-rdbms-491] - SQLStatement#getSQLText implementations are not thread-safe
+* https://github.com/datanucleus/datanucleus-rdbms/issues/492[datanucleus-rdbms-492] - Introduce locking for SQLStatement#getSQLText
+* https://github.com/datanucleus/datanucleus-rdbms/issues/496[datanucleus-rdbms-496] - [MYSQL] Column name mismatch when checking for primary key specifications
 
 - - -
 
