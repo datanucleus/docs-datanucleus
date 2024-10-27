@@ -15,7 +15,25 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.9 2024?__
+* __6.0.10 2025?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.9
+
+__27 October 2024__ : _Version 6.0.9_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/518[datanucleus-core-518] - Improved commit performance for RDBMS based installations. Specifically performance has been improved in larger commits using batching
+* https://github.com/datanucleus/datanucleus-rdbms/issues/497[datanucleus-rdbms-497] - Improved commit performance for RDBMS based installations. Specifically performance has been improved in larger commits using batching.
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/517[datanucleus-core-517] - Ensure EC flushMode is reset before reuse
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/134[datanucleus-api-jdo-134] - Apply #133 to master (6.0) branch
+* https://github.com/datanucleus/datanucleus-api-jdo/issues/137[datanucleus-api-jdo-137] - Fix to JDOQL typed query with result clause of candidate
+* https://github.com/datanucleus/datanucleus-rdbms/issues/498[datanucleus-rdbms-498] - Change default for Calendar for Date timezone cloning so that returning a clone is the default
 
 - - -
 
