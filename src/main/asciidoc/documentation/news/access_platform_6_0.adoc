@@ -15,7 +15,25 @@ _Version 6.0_ is currently planned to include the following over 5.2
 
 == Future Plans
 
-* __6.0.10 2025?__
+* __6.0.11 2025?__
+
+- - -
+
+== DataNucleus AccessPlatform 6.0.10
+
+__26 April 2025__ : _Version 6.0.10_ includes the following changes
+
+=== Enhancements
+
+* https://github.com/datanucleus/datanucleus-core/issues/522[datanucleus-core-522] - Support for ASM v9.7.1 (Java 23 and 24)
+* https://github.com/datanucleus/datanucleus-core/issues/525[datanucleus-core-525] - Upgrade ASM to v9.8 (Java 25)
+* https://github.com/datanucleus/datanucleus-excel/issues/24[datanucleus-excel-24] - Move to Apache POI 5.4.1
+
+=== Bugs
+
+* https://github.com/datanucleus/datanucleus-core/issues/600[datanucleus-core-600] - Reading embedded non trivial data type runs into endless loop
+* https://github.com/datanucleus/datanucleus-rdbms/issues/500[datanucleus-rdbms-500] - enum-check-constraint extension generates duplicate constraints for H2
+* https://github.com/datanucleus/datanucleus-rdbms/issues/501[datanucleus-rdbms-501] - SQLException during value generation leads to (non transactional) connection leak
 
 - - -
 
